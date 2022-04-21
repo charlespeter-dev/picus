@@ -1,0 +1,42 @@
+[ {
+  "id" : "a23592fd-bfd7-bf61-97fb-ef8cc8ccaaba",
+  "name" : "speaker_image",
+  "display_width" : null,
+  "label" : "Speaker Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4078036/events%20template/Speaker%201@2x.png",
+    "alt" : "Speaker Image",
+    "width" : "400",
+    "height" : "400"
+  }
+}, {
+  "id" : "f980ed38-283f-24a8-7280-93dd854bffc3",
+  "name" : "speaker_name",
+  "display_width" : null,
+  "label" : "Speaker Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Speaker Name"
+}, {
+  "id" : "06f43da7-7eeb-baaa-25d8-a1e8fcc1b81f",
+  "name" : "speaker_title",
+  "display_width" : null,
+  "label" : "Speaker Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Speaker Title, Company"
+} ]

@@ -1,0 +1,28 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+<header class="header">
+  <div class="header__container content-wrapper">
+
+    {# Header logo column #}
+    <div class="header__logo header__logo--main" tabindex="1">
+      <!-- test2-->
+      {% module 'site_logo' path='@hubspot/logo' alt="Picus Logo" link='https://www.picussecurity.com/' %}
+    </div>
+    {# End header logo column #}
+
+    {# Header navigation column #}
+    <div class="header__column">
+
+      {# Header navigation row one #}
+      <div class="header__row-1 custom-menu-primary">
+        {% module "menu" path="@hubspot/menu" id="32333696309" %}
+      </div>
+      {# End header navigation row one #}
+
+    </div>
+    {# End header navigation column #}
+
+  </div>
+</header>

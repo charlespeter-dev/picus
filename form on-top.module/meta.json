@@ -1,0 +1,20 @@
+{
+  "content_tags" : [ {
+    "name" : "OTHER_INDUSTRY",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_BLOG",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  } ],
+  "extra_classes" : "widget-type-form",
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "https://static.hsappstatic.net/cms-default-modules/static-1.164/img/icon/high-forms.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 30962441560,
+  "label" : "Form",
+  "is_available_for_new_content" : true
+}

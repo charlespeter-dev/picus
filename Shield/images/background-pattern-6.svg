@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="568.447" viewBox="0 0 1366 568.447">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ebebeb"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_63" data-name="Group 63" transform="translate(0 -768.063)">
+    <g id="Group_62" data-name="Group 62" transform="translate(30.762)">
+      <path id="Path_280" data-name="Path 280" d="M90.524,98.619l-63,.049L-30.135-73.15H32.581Z" transform="translate(1115.48 841.502)" fill="url(#linear-gradient)"/>
+      <path id="Path_281" data-name="Path 281" d="M30.839,13.651-1,13.676-30.135-73.15H1.558Z" transform="translate(1038.373 875.502)" fill="url(#linear-gradient)"/>
+      <path id="Path_243" data-name="Path 243" d="M-30.762,568.273h875L667.733-.174H-30.762Z" transform="translate(0 768.237)" fill="#ebebeb"/>
+    </g>
+    <g id="arrow_forward-24px" transform="translate(812 1272)">
+      <path id="Path_278" data-name="Path 278" d="M0,0H12V12H0Z" fill="none"/>
+      <path id="Path_279" data-name="Path 279" d="M8,4l-.7.7,2.79,2.8H4v1h6.085L7.3,11.3,8,12l4-4Z" transform="translate(-2 -2)" fill="#e8055d"/>
+    </g>
+    <rect id="Rectangle_170" data-name="Rectangle 170" width="101" height="158" transform="translate(1265 793)" fill="#fff"/>
+  </g>
+</svg>

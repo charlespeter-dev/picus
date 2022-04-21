@@ -1,0 +1,331 @@
+[ {
+  "id" : "235a9fe0-5473-97ab-1fd2-d27a067de9e9",
+  "name" : "calendar_box",
+  "display_width" : null,
+  "label" : "Calendar Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 4,
+    "max" : 16,
+    "sorting_label_field" : "15d9d457-396c-98f0-e99d-9c29c66df094",
+    "default" : 12
+  },
+  "children" : [ {
+    "id" : "15d9d457-396c-98f0-e99d-9c29c66df094",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Webinar Title"
+  }, {
+    "id" : "e09f8085-bf94-7880-c28d-c4f5f61ceea5",
+    "name" : "calendar_image",
+    "display_width" : null,
+    "label" : "Calendar Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    }
+  }, {
+    "id" : "f6b652dd-562b-282d-aa46-2e24d098999a",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "b43277f0-c778-dd32-960c-163ba19be567",
+    "name" : "archive",
+    "display_width" : null,
+    "label" : "Archive",
+    "required" : false,
+    "locked" : false,
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  }, {
+    "title" : "Webinar Title",
+    "calendar_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/MITRE%20TOP10%20Calendar.004.jpeg",
+      "alt" : "MITRE TOP10 Calendar.004",
+      "width" : 179,
+      "height" : 159,
+      "max_width" : 179,
+      "max_height" : 159
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "boolean_field" : false
+  } ]
+} ]

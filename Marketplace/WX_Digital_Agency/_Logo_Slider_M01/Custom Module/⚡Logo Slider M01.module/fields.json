@@ -1,0 +1,321 @@
+[ {
+  "id" : "76fb387b-e82f-b643-33da-a4352e1c00a1",
+  "name" : "top_space",
+  "display_width" : null,
+  "label" : "Top Space",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 0,
+  "max" : 300,
+  "step" : 1,
+  "type" : "number",
+  "default" : 0
+}, {
+  "id" : "d3dc0c41-5bb7-49fc-13b2-74cb70ffe9b9",
+  "name" : "bottom_space",
+  "display_width" : null,
+  "label" : "Bottom Space",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 0,
+  "max" : 300,
+  "step" : 1,
+  "type" : "number",
+  "default" : 0
+}, {
+  "id" : "0096832f-66b5-cd77-482f-83be807ae3cd",
+  "name" : "animation",
+  "display_width" : null,
+  "label" : "Animation",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "no_animation", "No Animation " ], [ "wow fadeInDown", "FadeInDown" ], [ "wow fadeInLeft", "FadeInLeft" ], [ "wow fadeInRight", "FadeInRight " ], [ "wow zoomIn ", "ZoomIn" ], [ "wow bounceInUp", "BounceInUp" ], [ "wow slideInDown", "Slide In Down" ], [ "wow slideInLeft", "Slide InLeft" ], [ "wow slideInRight", "SlideInRight" ] ],
+  "type" : "choice",
+  "default" : "wow fadeInLeft"
+}, {
+  "id" : "2a1a3f5c-5a6c-b48f-b1e9-efe579095ffe",
+  "name" : "background_color1",
+  "display_width" : null,
+  "label" : "Background color",
+  "help_text" : "Add a background color. Tip: use Coolors.co to generate color schemes!",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#f8f8f8",
+    "opacity" : 100
+  }
+}, {
+  "id" : "90c5c9d6-3d69-0b4f-b791-b7c86e65811c",
+  "name" : "font_selector_required",
+  "display_width" : null,
+  "label" : "Font Selector Required",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "464d87a5-55a3-009f-8637-652165984520",
+  "name" : "font_selector",
+  "display_width" : null,
+  "label" : "Font Selector",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "90c5c9d6-3d69-0b4f-b791-b7c86e65811c",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "size" : 12,
+    "size_unit" : "px",
+    "color" : "#000",
+    "styles" : { }
+  }
+}, {
+  "id" : "fbec5ad1-6a95-754b-6667-59aeae859631",
+  "name" : "header_required",
+  "display_width" : null,
+  "label" : "Header Required",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "b2feb906-ada8-fe81-7d0a-f7e32aab1a3e",
+  "name" : "top_header",
+  "display_width" : null,
+  "label" : "Top Header",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "fbec5ad1-6a95-754b-6667-59aeae859631",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "richtext",
+  "default" : "<h2 style=\"text-align: center;\"><strong>Logo Section</strong></h2>"
+}, {
+  "id" : "f49a4ac7-390d-7d13-60bd-b28f1ec7a749",
+  "name" : "logo_group",
+  "display_width" : null,
+  "label" : "Logo Group",
+  "help_text" : "Show your clients some love, get your brands out, and make an impact.",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "3e667aed-a049-fefc-56be-9308089c9929",
+    "default" : 7
+  },
+  "children" : [ {
+    "id" : "3e667aed-a049-fefc-56be-9308089c9929",
+    "name" : "logo1",
+    "display_width" : null,
+    "label" : "Logo",
+    "help_text" : "Show your clients some love, get your brands out, and make an impact. ",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://www.wx.agency/hubfs/Modularized/Logo/Modularized.svg",
+      "alt" : "",
+      "width" : 400,
+      "height" : 400
+    }
+  }, {
+    "id" : "db9edc86-70eb-3510-c863-3962f866dfb2",
+    "name" : "link_required",
+    "display_width" : null,
+    "label" : "Link Required",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "446de636-e98a-62e5-9763-fabe7eb0b9d8",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "db9edc86-70eb-3510-c863-3962f866dfb2",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 6900559437
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "logo1" : {
+      "src" : "https://www.wx.agency/hubfs/Modularized/Logo/Modularized.svg",
+      "alt" : "",
+      "width" : 400,
+      "height" : 400
+    },
+    "link_required" : false,
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 6900559437
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo1" : {
+      "src" : "https://www.wx.agency/hubfs/Modularized/Logo/Modularized.svg",
+      "alt" : "",
+      "width" : 400,
+      "height" : 400
+    },
+    "link_required" : false,
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 6900559437
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo1" : {
+      "src" : "https://www.wx.agency/hubfs/Modularized/Logo/Modularized.svg",
+      "alt" : "",
+      "width" : 400,
+      "height" : 400
+    },
+    "link_required" : false,
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 6900559437
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo1" : {
+      "src" : "https://www.wx.agency/hubfs/Modularized/Logo/Modularized.svg",
+      "alt" : "",
+      "width" : 400,
+      "height" : 400
+    },
+    "link_required" : false,
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 6900559437
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo1" : {
+      "src" : "https://www.wx.agency/hubfs/Modularized/Logo/Modularized.svg",
+      "alt" : "",
+      "width" : 400,
+      "height" : 400
+    },
+    "link_required" : false,
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 6900559437
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo1" : {
+      "src" : "https://www.wx.agency/hubfs/Modularized/Logo/Modularized.svg",
+      "alt" : "",
+      "width" : 400,
+      "height" : 400
+    },
+    "link_required" : false,
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 6900559437
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo1" : {
+      "src" : "https://www.wx.agency/hubfs/Modularized/Logo/Modularized.svg",
+      "alt" : "",
+      "width" : 400,
+      "height" : 400
+    },
+    "link_required" : false,
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 6900559437
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "ff26d02e-5244-a430-3844-d9a690a88d64",
+  "name" : "slider_arrow_required",
+  "display_width" : null,
+  "label" : "Slider Arrow Required",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "9fea36e0-a220-1666-3b3b-33144e485eb9",
+  "name" : "jquery_min_js_required",
+  "display_width" : null,
+  "label" : "Add jQuery To The Module",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

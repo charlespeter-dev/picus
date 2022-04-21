@@ -1,0 +1,37 @@
+[ {
+  "id" : "bc703446-0beb-6dd2-b001-f8015bbdd584",
+  "name" : "cta_text",
+  "display_width" : null,
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Download Now",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Download Now"
+}, {
+  "id" : "80cf1b03-509a-3bb7-51c1-32978349cb95",
+  "name" : "cta_url",
+  "display_width" : null,
+  "label" : "CTA URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "6fdbf28a-cdc7-6823-a8bc-54c8ac95a1ce",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>{{ contact.hubspot_owner_id.signature }}</p>"
+} ]

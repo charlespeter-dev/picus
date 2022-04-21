@@ -1,0 +1,78 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* These includes are optional, but helpful. */
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+/* @group ======== [ django.module.parallax-focus.css ] ======= */
+/* @group Layout ---------------------------------------------- */
+    
+	.parallax-focus.module {
+		text-align: center }
+	
+	.parallax-focus.module .parallax-focus-wrapper {
+        padding: 160px 60px;
+		float: none;
+		margin: 0 auto;
+		max-width: 1600px }
+	
+	.parallax-focus.module h2 {
+		margin: 0 0 60px 0;
+		color: {{ secondaryColor }};
+		font-size: 52px;
+		font-weight: 500 }
+	
+	.parallax-focus.module .text-block {
+		float: none;
+		margin: 0 auto 60px auto;
+		max-width: 80%;
+		color: #BEB9B5;
+		font-size: 20px }
+		
+/* @end */
+/* @group Responsive ------------------------------------------ */
+
+    @media (max-width:768px) {
+
+		.parallax-focus.module .parallax-focus-wrapper {
+			padding: 60px 30px }	
+
+		.parallax-focus.module h2 {
+			margin: 0 0 40px 0;
+			font-size: 42px }
+		
+		.parallax-focus.module .text-block {
+			max-width: 100%;
+			font-size: 20px }			
+	}
+
+	@media (max-width:520px) {
+	
+		.parallax-focus.module .parallax-focus-wrapper {
+			padding: 40px 16px}
+		
+		.parallax-focus.module h2 {
+			margin: 0 0 30px 0;
+			font-size: 32px }
+		
+		.parallax-focus.module .text-block {
+			font-size: 18px }
+		
+	}
+	
+/* @end */
+/* @end */

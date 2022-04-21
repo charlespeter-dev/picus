@@ -1,0 +1,30 @@
+{# Build Nav #}
+<div class="pillar" id="pillar__index" style="{% if module.enable_top_spacing %}padding-top: {{ module.top_spacing}}px; margin-top: -{{ module.top_spacing}}px;{% endif %}">
+  {% if module.table_of_contents_title is truthy %}<h3>{{module.table_of_contents_title}}</h3>{% endif %}
+  <ol class="pillar__navigation">
+    {% for nav in module.section_block %}
+    {# Strip special characters for ID #}
+    {% set sectionId = nav.title|replace(" ","-")|regex_replace("[^0-9A-Za-z_-]", "") ~ loop.index %}
+    <li><a href="#{{ sectionId }}" class="pillar__scroll"><span class="pillar_tab">{{ nav.title }}</span></a></li>
+    {% endfor %}
+  </ol>
+
+  {# Build Content #}
+  {% for section in module.section_block %}
+  {# Strip special characters for ID #}
+  {% set sectionId = section.title|replace(" ","-")|regex_replace("[^0-9A-Za-z_-]", "") ~ loop.index %}
+  <div class="pillar__chapter" id="{{ sectionId }}" style="{% if module.enable_top_spacing %}padding-top: {{ module.top_spacing}}px; margin-top: -{{ module.top_spacing}}px;{% endif %}">
+    <h2>{{ section.title }}</h2>
+    <div class="pillar__content">
+      {{ section.contents }}
+      {% if module.enable_back_to_top %}
+      <div class="pillar__btc">
+        <a href="#pillar__index" class="pillar__scroll">
+          {{ module.back_to_top }}
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

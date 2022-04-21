@@ -1,0 +1,39 @@
+[ {
+  "id" : "8763cd78-662f-dbc5-c046-64b2ce137c25",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Name of this article"
+}, {
+  "id" : "e81b6e60-ec74-e09a-165b-05bcc391168d",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>This is main content of your newsletter article. Hopefully it's about something people love. Like cute animals or ROI.</p>\n<p>Try to maintain a balance between educational and promotional content. It's recommended to lean heavily towards the educational end of the spectrum. Focus on sending your subscribers educational, relevant, timely information.</p>\n<p>{{cta('c3072c1b-d4b3-43b8-9f0a-3f297846b6bf')}}</p>\n<p>&nbsp;</p>"
+}, {
+  "id" : "b23ea421-bff7-566e-21b2-27970ccd641e",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/2574624/skyline-placeholder.jpg",
+    "alt" : "skyline-placeholder.jpg",
+    "width" : "600",
+    "height" : "320"
+  }
+} ]

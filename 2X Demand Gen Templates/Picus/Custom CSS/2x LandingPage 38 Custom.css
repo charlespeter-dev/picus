@@ -1,0 +1,114 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+ul
+{
+  margin-left:18px; 
+}
+
+li
+{
+  padding-bottom:1em; 
+}
+.text-area ul
+{
+ list-style-type:square !important; 
+}
+#formSection.formContainer .form-title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #00395C;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+#formSection.formContainer .input {
+  margin-bottom:20px;
+}
+#formSection.formContainer .actions
+{
+    border: 3px solid #d33;
+    background: #D60059;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    width: 100% !important;
+}
+#formSection.formContainer .hs-button {
+    border: 0;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height:21px;
+    font-weight: bold;
+}
+#formSection
+{
+  margin-top:-20px !important;
+  color:#00395C;
+  font-size:12px;
+  line-height:18px;
+}
+#formSection label
+{
+  margin-bottom:7px;
+  font-weight:bold;
+  font-size:14px;
+  line-height:17px;
+  color:#00395C;
+}
+#formSection label span.hs-form-required
+{
+  color:#D60059; 
+}
+#formSection ul
+{
+  list-style-type:none !important;
+  margin-left:0;
+}
+#formSection ul li
+{
+  padding-bottom:0px;
+}
+#formSection ul li input[type=checkbox]
+{
+  margin-top:-11px;
+}
+#formSection ul li label
+{
+  font-weight:400;
+  font-size:12px;
+  line-height:18px;
+}
+#formSection a,
+#formSection a:active,
+#formSection a:focus
+{
+  color:#D60059; 
+}
+.footer-container-wrapper
+{
+  padding:0px;
+  background:#00395C;
+}
+.footer-container-wrapper p
+{
+  color:#E6EAED;
+  font-size:12px;
+  line-height:15px;
+}
+#formSection .hs-input[type=text],
+#formSection .hs-input[type=email],
+#formSection .hs-input[type=tel]
+{
+ width:100%; 
+}

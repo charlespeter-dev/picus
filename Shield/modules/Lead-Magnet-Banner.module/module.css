@@ -1,0 +1,43 @@
+.lm-banner {
+  position: absolute; 
+  top: 85px;
+  opacity: 0;
+  animation: fadeIn 0.75s ease-in-out both;
+  animation-delay: 2s;
+  width: 100%;
+}
+.lm-banner-contain {
+  position: relative; 
+}
+.lm-banner-content {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.lm-img {
+  padding-top: 10px;
+}
+.lm-text {
+  padding-right: 30px;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  padding-top: 30px;
+}
+.lm-text p {
+  font-size: 0.75rem;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}

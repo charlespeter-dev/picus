@@ -1,0 +1,39 @@
+<!-- created by Grow International --> 
+{% if module.enable_related_posts %}
+  <section class="gi-related" {% if module.block_margin %}style="margin-top: {{ module.margin_top }}px; margin-bottom: {{ module.margin_bottom }}px;"{% endif %}> 
+    {% if module.enable_block_title %}
+      <h2 class="gi-related__block-title">{% inline_text field="block_title" value="{{ module.block_title }}" %}</h2>
+    {% endif %}
+    <div class="gi-related__wrap {% if module.row_oriented %}gi-related__wrap--row{% endif %}">
+      {% macro blog_post_formatter(blog_post) %}
+      <div class="gi-related__item {% if module.row_oriented %}gi-related__item--{{ module.items_in_a_row }}{% endif %}">
+        {% if module.enable_image_block %}
+          <a href="{{blog_post.url}}">
+            {% if blog_post.featured_image %}
+              <div class="gi-related__img" style="background-image: url({{ blog_post.featured_image }})"></div>
+            {% endif %}
+          </a>
+        {% endif %}
+        {% if module.enable_tags_block %}
+          <div class="gi-related__tags">
+            {% if blog_post.tagList|length > 0 %}{% endif %}{{ blog_post.tagList|join(" | ") }}
+          </div>
+        {% endif %}
+        <a href="{{blog_post.url}}">
+          <h3 class="gi-related__title {% if module.row_oriented %}gi-related__title--row{% endif %}">{{ blog_post.name }}</h3>
+        </a>
+        {% if module.enable_author_block %}
+          <div class="gi-related__author">
+            <img class="gi-related__author-img" {% if module.author_photo_rounded %}style="border-radius: 50%"{% endif %} src="{{ blog_post.blogAuthor.avatar }}">
+            <div class="gi-related__info">
+              <span class="gi-related__author-name">{{ blog_post.blogAuthor }}</span>
+              <p class="gi-related__date">{{ blog_post.publishDate|datetimeformat('%d.%m.%Y') }}</p>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      {% endmacro %}
+      {% related_blog_posts limit={{ module.number_of_related_posts }}, post_formatter="blog_post_formatter" %}
+    </div>
+  </section>
+{% endif %}

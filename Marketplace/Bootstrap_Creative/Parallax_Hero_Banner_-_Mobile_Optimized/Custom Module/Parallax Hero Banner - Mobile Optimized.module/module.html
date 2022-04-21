@@ -1,0 +1,106 @@
+{####################################
+Parallax Hero Banner - Mobile Optimized
+v1.2
+Jacob Lett - Need help? https://bootstrapcreative.com/docs/
+#####################################
+
+Add a parallax hero banner to your page and control how it appears on mobile on desktop.
+- Prevent background image distortion by adding a mobile sized image 
+- Select the type of call to action you would like to use and add a custom CSS class to your button
+- Turn off parallax if you want
+#-----------------------------------#}
+
+<div id="hs-hero-{{ name }}" class="hs-hero {% if module.background.parallax_background %}parallax{% endif %}">
+  <div class="centered padding-vertical-0 hs-hero__content hs-hero__content--{{ module.settings.button_alignment }}"> 
+    <main>
+      <h1>{% inline_text field="heading" value="{{ module.heading }}" %}</h1>
+      {% inline_rich_text field="main_content" value="{{ module.main_content }}" %}
+    </main>
+    <footer>
+      
+      {% if module.call_to_action.what_type_of_cta is equalto "cta" %}
+          {% cta guid="{{ module.call_to_action.cta }}" %}
+      {% else %}
+      
+          {% set href = module.call_to_action.link_field.url.href %}
+          {% if module.call_to_action.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" 
+          {% if module.call_to_action.custom_button_css_class %}class="{{ module.call_to_action.custom_button_css_class }}"{% endif %} 
+          {% if module.call_to_action.link_field.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.call_to_action.link_field.no_follow %}rel="nofollow"{% endif %}
+          >
+        
+            {% inline_text field="call_to_action.link_text" value="{{ module.call_to_action.link_text }}" %}
+          </a>
+      
+ 
+{% endif %}
+    </footer>
+  </div>
+</div>
+
+{% require_head %}
+<link rel="prefetch" href="{{ module.background.background_image_mobile.src }}">
+<link rel="prefetch" href="{{ module.background.background_image_tablet.src }}">
+<link rel="prefetch" href="{{ module.background.background_image_desktop.src }}">
+{% end_require_head %}
+
+{% require_css %}
+<style>
+  /* Dynamic Background Styles */
+  #hs-hero-{{ name }}.hs-hero:before {
+    background-color: {{ module.background.overlay_color }};
+    opacity: .{{ module.background.overlay_opacity }};
+  }
+  #hs-hero-{{ name }}.hs-hero {
+    transition: background 0.1s linear;
+    
+    background-image: url('{{ module.background.background_image_mobile.src }}');
+    {% if module.background.parallax_background %}
+    background-attachment: fixed;
+    {% endif %}
+
+     padding-top:{{ module.settings.padding_mobile }}px;
+     padding-bottom:{{ module.settings.padding_mobile }}px;  
+  }
+  
+    #hs-hero-{{ name }}.hs-hero * {
+    color: {{ module.settings.text_color }};
+  }
+  
+.hs-hero__content main {
+  font-size: 1em;
+  
+}
+  
+/*  tablet  */
+@media only screen and (min-width: 576px) {
+  .hs-hero__content main {
+    font-size: 1em;
+  }
+  
+   #hs-hero-{{ name }}.hs-hero {
+     {% if module.background.background_image_tablet.src %}
+      background-image: url('{{ module.background.background_image_tablet.src }}');
+     {% else %}
+       background-image: url('{{ module.background.background_image_desktop.src }}');
+     {% endif %}
+      
+      padding-top:{{ module.settings.padding_tablet }}px;
+      padding-bottom:{{ module.settings.padding_tablet }}px;
+  }
+}
+  
+/*  desktop  */
+@media only screen and (min-width: 768px) {
+   #hs-hero-{{ name }}.hs-hero {
+      background-image: url('{{ module.background.background_image_desktop.src }}');
+      padding-top:{{ module.settings.padding_desktop }}px;
+      padding-bottom:{{ module.settings.padding_desktop }}px;
+  }
+}  
+  
+</style>
+{% end_require_css %}

@@ -1,0 +1,187 @@
+{
+  "follow_up_type_automation.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_automation.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_automation.label" : {
+    "message" : "Add to workflow",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_automation.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.label" : {
+    "message" : "Send a follow-up email",
+    "description" : null,
+    "placeholders" : null
+  },
+  "follow_up_type_simple.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.default.message" : {
+    "message" : "Thanks for submitting the form.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.label" : {
+    "message" : "Form",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "form on-top",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.label" : {
+    "message" : "Send form notifications to specified email addresses instead of the form defaults",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_are_overridden.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.label" : {
+    "message" : "Email Addresses",
+    "description" : null,
+    "placeholders" : null
+  },
+  "notifications_override_email_addresses.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.label" : {
+    "message" : "Salesforce campaign",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sfdc_campaign.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.label" : {
+    "message" : "Email",
+    "description" : null,
+    "placeholders" : null
+  },
+  "simple_email_for_live_id.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Form Title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

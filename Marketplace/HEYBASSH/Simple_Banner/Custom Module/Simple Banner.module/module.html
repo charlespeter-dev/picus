@@ -1,0 +1,31 @@
+<div class="hero-banner" 
+     style="
+        min-height:{{ module.style_settings.minimum_banner_height }}px;
+        padding-top:{{ module.style_settings.top_space_banner }}px;
+        padding-bottom:{{ module.style_settings.bottom_space_banner }}px;
+     {% if module.banner_image.src %}       
+        background-image: url('{{ module.banner_image.src }}')
+     {% endif %}
+           "
+  >
+  <div class="hero-banner--container {{ module.alignment }}">
+    <h1>
+      {{ module.heading }}
+    </h1>
+    <div class="hero-banner--subheading">
+      {{ module.subheading }}
+    </div>
+    {% if module.button_link_field.url.href %}
+      {% set href = module.button_link_field.url.href %}
+      {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="hero-banner--button"
+        {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+        {% if module.link_field.no_follow %}rel="nofollow"{% endif %}
+        >
+        {{ module.button_text }}
+      </a>
+    {% endif %}
+  </div>
+</div>

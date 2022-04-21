@@ -1,0 +1,217 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_v4.5.2.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_fontAwesome_4.7.0.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/override-hubspot_March2021.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/custom-Olympia_June2021.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "color:#1D1D1B;",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_164611400248971",
+        "label" : "2x Full Image Width - Banner",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "schema_version" : 2,
+          "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Full Image Width - Banner",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "2x Full Image Width - Banner",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_164611389452534",
+        "label" : "ThankYou_Page_Module_107",
+        "type" : "custom_widget",
+        "params" : {
+          "body_content_mobile" : [ {
+            "bottom_spacing_mobile" : "mb-3",
+            "content_text" : "Your Download is Ready",
+            "font_color" : {
+              "color" : "#DD3333",
+              "opacity" : 100
+            },
+            "font_size" : "30px",
+            "font_weight" : "bold",
+            "line_height" : "34px"
+          }, {
+            "bottom_spacing_mobile" : "mb-5",
+            "content_text" : "A copy has also been sent to your email.",
+            "font_color" : {
+              "color" : "#1D1D1B",
+              "opacity" : 100
+            },
+            "font_size" : "20px",
+            "font_weight" : "normal",
+            "line_height" : "23px"
+          } ],
+          "css_style" : "margin-bottom:40px;",
+          "css_id" : "",
+          "body_content_desktop" : [ {
+            "bottom_spacing_desktop" : "mb-md-3",
+            "content_text" : "Your Download is Ready",
+            "font_color" : {
+              "color" : "#DD3333",
+              "opacity" : 100
+            },
+            "font_size" : "30px",
+            "font_weight" : "bold",
+            "line_height" : "34px"
+          }, {
+            "bottom_spacing_desktop" : "mb-md-5",
+            "content_text" : "A copy has also been sent to your email.",
+            "font_color" : {
+              "color" : "#1D1D1B",
+              "opacity" : 100
+            },
+            "font_size" : "20px",
+            "font_weight" : "normal",
+            "line_height" : "23px"
+          } ],
+          "css_class" : "",
+          "schema_version" : 2,
+          "information_text" : {
+            "richtext_field" : "<p style=\"font-size: 16px; line-height: 20px;\"><span style=\"font-family: Arial, Helvetica, sans-serif;\">Need more information? Contact us via email at <a style=\"color: #dd3333; text-decoration: underline;\" href=\"mailto:info@copperfield.com\" rel=\"noopener\">info@copperfield.com</a> or call us at <a style=\"color: #dd3333; text-decoration: underline;\" href=\"tel:800-247-3305\">800-247-3305</a> for more information.</span></p>"
+          },
+          "path" : "/2X Demand Gen Templates/Custom Modules/ThankYou_Page_Module_107",
+          "per_widget_wrapper_html" : "",
+          "logo_field" : {
+            "override_inherited_src" : true
+          },
+          "button_text" : "DOWNLOAD NOW",
+          "right_image" : {
+            "alt" : "thumbnail",
+            "height" : 328,
+            "loading" : "lazy",
+            "max_height" : 362,
+            "max_width" : 254,
+            "size_type" : "auto_custom_max",
+            "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/107/thumbnail.png",
+            "width" : 230
+          },
+          "wrapping_html" : "",
+          "widget_name" : "ThankYou_Page_Module_107",
+          "css_id_str" : "",
+          "overrideable" : true,
+          "right_image_inline_style" : "max-width:254px;"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "margin-bottom:40px;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_162396323564865",
+        "label" : "Olympia_Footer_April2021",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "w-100 text-center text-white py-3",
+          "schema_version" : 2,
+          "path" : "/2X Demand Gen Templates/Custom Modules/2x_footer",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "Olympia_Footer_June2021",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "w-100 text-center text-white py-3",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

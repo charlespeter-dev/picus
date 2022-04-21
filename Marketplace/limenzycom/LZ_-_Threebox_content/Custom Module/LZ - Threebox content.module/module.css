@@ -1,0 +1,71 @@
+.page-center{
+  width:1170px;
+  margin:0 auto;
+
+}
+.box-with-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.boxs {
+  flex-basis: 30%;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.box-with-content .boxs .bottom-content{
+  padding:0px 20px;
+}
+.box-with-content .boxs .top-image img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+.box-with-content .boxs .readmore-cta1{
+padding:20px;
+
+}
+/*************Responsive Styles*****************/
+/***************iPhone Portrait**************/
+@media only screen and (max-width: 479px) and (min-width: 320px){
+ .page-center{
+    width: 90%;
+    margin:0 auto;
+  }
+  .boxs {
+    flex-basis:100%;
+  }
+}
+
+/**********************iPhone Landscape*************/
+@media only screen and (max-width: 767px) and (min-width: 480px){
+.page-center{
+    width: 90%;
+    margin:0 auto;
+  } 
+  .boxs {
+    flex-basis:45%;
+  }
+}
+/*************************iPad Portrait***************/
+@media only screen and (max-width: 985px) and (min-width: 768px){
+.page-center{
+    width: 90%;
+    margin: 0 auto;
+  } 
+ .boxs {
+    flex-basis:45%;
+  }
+ 
+}
+/**************iPad Landscape***************/
+@media only screen and ( max-width: 1024px ) and (min-width: 986px){
+.page-center{
+    width: 90%;
+    margin:0 auto;
+  } 
+
+
+}
+/*******************************************/

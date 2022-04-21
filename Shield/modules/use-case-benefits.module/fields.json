@@ -1,0 +1,150 @@
+[ {
+  "id" : "a1ad8866-3ebd-9c9b-e548-0ac7584fe4c3",
+  "name" : "display_benefits",
+  "display_width" : null,
+  "label" : "Display Benefits",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "6fd06959-53c6-4920-a377-1ddf16431125",
+  "name" : "benefit",
+  "display_width" : null,
+  "label" : "Benefit",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : 4,
+    "sorting_label_field" : "1109ab67-852b-8d52-762b-69d9334a4837",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "4479da14-44ae-aff0-cef7-dd19e6038323",
+    "name" : "benefits_icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Icons/shield-icon-tickdoc.svg",
+      "alt" : "shield-icon-tickdoc",
+      "width" : 54,
+      "height" : 54,
+      "max_width" : 54,
+      "max_height" : 54
+    }
+  }, {
+    "id" : "1109ab67-852b-8d52-762b-69d9334a4837",
+    "name" : "benefits_title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Title"
+  }, {
+    "id" : "d8587003-1583-0ec6-03ae-3eacab59a993",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt dolor libero, ut hendrerit augue ultricies vitae. Sed consectetur, nibh sit amet fermentum sodales, urna metus ultrices odio, in laoreet nulla diam eget mi.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "benefits_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Icons/shield-icon-tickdoc.svg",
+      "alt" : "shield-icon-tickdoc",
+      "width" : 54,
+      "height" : 54,
+      "max_width" : 54,
+      "max_height" : 54
+    },
+    "benefits_title" : "Title",
+    "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt dolor libero, ut hendrerit augue ultricies vitae. Sed consectetur, nibh sit amet fermentum sodales, urna metus ultrices odio, in laoreet nulla diam eget mi.</p>"
+  }, {
+    "benefits_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Icons/shield-icon-tickdoc.svg",
+      "alt" : "shield-icon-tickdoc",
+      "width" : 54,
+      "height" : 54,
+      "max_width" : 54,
+      "max_height" : 54
+    },
+    "benefits_title" : "Title",
+    "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt dolor libero, ut hendrerit augue ultricies vitae. Sed consectetur, nibh sit amet fermentum sodales, urna metus ultrices odio, in laoreet nulla diam eget mi.</p>"
+  }, {
+    "benefits_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Icons/shield-icon-tickdoc.svg",
+      "alt" : "shield-icon-tickdoc",
+      "width" : 54,
+      "height" : 54,
+      "max_width" : 54,
+      "max_height" : 54
+    },
+    "benefits_title" : "Title",
+    "description" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt dolor libero, ut hendrerit augue ultricies vitae. Sed consectetur, nibh sit amet fermentum sodales, urna metus ultrices odio, in laoreet nulla diam eget mi.</p>"
+  } ]
+}, {
+  "id" : "88b64d2e-d812-4b80-fcb3-41b32e3d5a43",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/Shield/Backgrounds/background-pattern-15.svg",
+    "alt" : "background-pattern-15",
+    "width" : 1368,
+    "height" : 399,
+    "max_width" : 1368,
+    "max_height" : 399
+  }
+}, {
+  "id" : "4c8e02ef-c764-38e6-3582-700ffd2472e8",
+  "name" : "background_colour",
+  "display_width" : null,
+  "label" : "Background Colour",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "fb27238e-3c2d-9152-4a7c-42453775b424",
+  "name" : "text_color",
+  "display_width" : null,
+  "label" : "Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+} ]

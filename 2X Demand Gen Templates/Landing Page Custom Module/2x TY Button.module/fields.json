@@ -1,0 +1,96 @@
+[ {
+  "id" : "8a1b567f-752e-e895-5129-35fed13dd656",
+  "name" : "cta_text",
+  "display_width" : null,
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "CTA Text",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "DOWNLOAD NOW"
+}, {
+  "id" : "f8926788-3067-86a7-ac49-40166a6ceda0",
+  "name" : "cta_link",
+  "display_width" : null,
+  "label" : "CTA Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "http://google.com",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "92470657-0462-13e9-68ef-89ce5c672959",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#D60059",
+    "opacity" : 100
+  }
+}, {
+  "id" : "f645ba1f-aa3d-a0be-bf2d-fc44eabb69d6",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "2f55c02e-046d-a08c-d172-6437790da420",
+  "name" : "cta_width",
+  "display_width" : null,
+  "label" : "CTA Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "CTA Width",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "321px"
+}, {
+  "id" : "844e8136-e008-be93-44a6-70fd3fecd790",
+  "name" : "cta_height",
+  "display_width" : null,
+  "label" : "CTA Height",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "CTA Height",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "40px"
+}, {
+  "id" : "d8d2d510-9aa1-9561-c615-0f28f1c96b87",
+  "name" : "border_radius",
+  "display_width" : null,
+  "label" : "Border Radius",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Border Radius",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "3px"
+} ]

@@ -1,0 +1,103 @@
+[ {
+  "id" : "580fcf7b-294c-e3bd-06b8-f0239360dbd5",
+  "name" : "checklist_id",
+  "display_width" : null,
+  "label" : "Checklist ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "This id need to be unique in every module",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "UniqueID"
+}, {
+  "id" : "04a80e76-e392-03a7-b2df-69fef3803340",
+  "name" : "item_label",
+  "display_width" : null,
+  "label" : "Item Label",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "469ae694-252c-ee0a-bcd4-30c5673a3946",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text Field",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "88917a84-30d5-6340-c5be-bfe0ffda405b",
+    "name" : "checked",
+    "display_width" : null,
+    "label" : "Checked",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "checked" : true
+  }
+}, {
+  "id" : "46241041-9998-58ab-fea9-370742541406",
+  "name" : "unchecked_background",
+  "display_width" : null,
+  "label" : "Unchecked Background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#eee",
+    "opacity" : 100
+  }
+}, {
+  "id" : "23243f53-68e8-4c01-4070-d5d3de566ca2",
+  "name" : "unchecked_background_hover",
+  "display_width" : null,
+  "label" : "Unchecked Background Hover",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#69bd45",
+    "opacity" : 100
+  }
+}, {
+  "id" : "019c0f3e-a411-5d86-e377-b7ed104c86f3",
+  "name" : "checked_background",
+  "display_width" : null,
+  "label" : "Checked Background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#2196f3",
+    "opacity" : 100
+  }
+}, {
+  "id" : "e17d8628-850e-0e51-8e32-18dd64863025",
+  "name" : "checkmark",
+  "display_width" : null,
+  "label" : "Checkmark",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff",
+    "opacity" : 100
+  }
+} ]

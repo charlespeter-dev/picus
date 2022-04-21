@@ -1,0 +1,307 @@
+[ {
+  "id" : "c7150381-c85b-b111-3769-342a2517a4e1",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "help_text" : "This text will display beside the icons.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Share",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Share"
+}, {
+  "id" : "5994b0a9-8199-3320-5288-226a0cdec6df",
+  "name" : "override_sharing_url",
+  "display_width" : null,
+  "label" : "Override Sharing URL",
+  "help_text" : "Do you want to share a different page? Select this option to manually override the sharing URL. By default the sharing buttons will share the URL of the page they are placed on. For default settings, leave this option deselected.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "5ee1a287-fb42-abe5-476b-8eae39dbe12a",
+  "name" : "share_url",
+  "display_width" : null,
+  "label" : "Custom Sharing URL",
+  "help_text" : "To manually set the link that will be shared, add the full url to this field.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "5994b0a9-8199-3320-5288-226a0cdec6df",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "placeholder" : "https://www.insertwebsitehere.com",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "154ebdb5-019c-1d9b-1dd3-c098ac9fd6a8",
+  "name" : "tweet_text",
+  "display_width" : null,
+  "label" : "Tweet Text",
+  "help_text" : "This text will automatically appear within the tweet. By default this is set to the page title. To manually set the tweet text, enter it into this field.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Insert your tweet content here!",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "9f556ceb-4116-0f50-0956-75b84e8c963d",
+  "name" : "tweet_hashtags",
+  "display_width" : null,
+  "label" : "Tweet Hashtags",
+  "help_text" : "By default this is set to the website name. To manually set hashtags, enter them into this field, separated by commas and without hash symbols. e.g. \"Simon, HubSpot\"",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "HubSpot, Inbound, Marketing",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c6f8d9e2-2ba2-c42f-fbf5-f7059cf58d2e",
+  "name" : "appearance",
+  "display_width" : null,
+  "label" : "Appearance (Please note these will override your default CSS)",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "49e17565-6662-7872-35ed-6c6db095bd81",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text field",
+    "required" : false,
+    "locked" : true,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Placeholder"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_field" : "Placeholder"
+  }
+}, {
+  "id" : "4c5338c2-bf36-c024-b567-7eb844388433",
+  "name" : "custom_styling",
+  "display_width" : null,
+  "label" : "Custom Styling",
+  "help_text" : "Select this option to add colors and other styling options to the icons.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "9cd944a0-abb3-0aee-270c-027c43a07519",
+  "name" : "network_brand_colours",
+  "display_width" : null,
+  "label" : "Network Brand Colors",
+  "help_text" : "Select this option to style each icon according to the social network branding colors. Please note this will override other color settings in this module.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "4c5338c2-bf36-c024-b567-7eb844388433",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "dc10702e-6740-181c-37d0-a9e33693476b",
+  "name" : "icon_size",
+  "display_width" : null,
+  "label" : "Icon Size",
+  "help_text" : "Set the font size of the icons e.g. \"30px\"",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "4c5338c2-bf36-c024-b567-7eb844388433",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "placeholder" : "30px",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "30px"
+}, {
+  "id" : "5650b0e3-145c-018e-44f4-ac46e7bcf6a5",
+  "name" : "color",
+  "display_width" : null,
+  "label" : "Icon Color",
+  "help_text" : "Color picker for social icons.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "4c5338c2-bf36-c024-b567-7eb844388433",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#000",
+    "opacity" : 100
+  }
+}, {
+  "id" : "263fa984-63f8-786b-044c-8594d7ef250d",
+  "name" : "hover_colour",
+  "display_width" : null,
+  "label" : "Icon Hover Color",
+  "help_text" : "Color picker for social icons hover state. This colour will appear when the user hovers over the icon with a mouse.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "4c5338c2-bf36-c024-b567-7eb844388433",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#23d3ea",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ef3edb89-d00b-9085-049f-00348de0d95c",
+  "name" : "margin",
+  "display_width" : null,
+  "label" : "Space Between Icons",
+  "help_text" : "Add a value here to set the spacing (margin) between each icon.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "4c5338c2-bf36-c024-b567-7eb844388433",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "placeholder" : "6px",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "6px"
+}, {
+  "id" : "9f3ca3f5-196e-a491-ba9d-c541de8befdc",
+  "name" : "icon_background_size",
+  "display_width" : null,
+  "label" : "Icon Background Size",
+  "help_text" : "This setting changes the size of the icon background.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "ac04b32e-3f98-de4d-c92f-5cb3652f0eaa",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "placeholder" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "ac04b32e-3f98-de4d-c92f-5cb3652f0eaa",
+  "name" : "icon_background_colour",
+  "display_width" : null,
+  "label" : "Icon Background",
+  "help_text" : "Select this option to add a background colour to the icons.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "4c5338c2-bf36-c024-b567-7eb844388433",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "4aed758f-d2b4-5acb-cf29-a44ff31d89da",
+  "name" : "background_colour",
+  "display_width" : null,
+  "label" : "Icon Background Color",
+  "help_text" : "Color picker for social icons background.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "ac04b32e-3f98-de4d-c92f-5cb3652f0eaa",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#eaeaea",
+    "opacity" : 100
+  }
+}, {
+  "id" : "95b09eb6-3407-d55b-23cf-bc668c809b27",
+  "name" : "icon_background_hover_color",
+  "display_width" : null,
+  "label" : "Icon Background Hover Color",
+  "help_text" : "Select this option to add a hover background colour to the icons.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "ac04b32e-3f98-de4d-c92f-5cb3652f0eaa",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "76b68ad0-747a-af63-4420-b9d077df3659",
+  "name" : "circle_icon",
+  "display_width" : null,
+  "label" : "Circle Icon",
+  "help_text" : "Selecting this option will change the icon shape to a circle.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "ac04b32e-3f98-de4d-c92f-5cb3652f0eaa",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

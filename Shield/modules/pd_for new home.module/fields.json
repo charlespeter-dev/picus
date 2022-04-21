@@ -1,0 +1,121 @@
+[ {
+  "id" : "5382b7a4-5160-8f3b-c143-581ecaccf821",
+  "name" : "icon_field",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.14.0",
+  "type" : "icon",
+  "default" : { }
+}, {
+  "id" : "84030a91-3e62-e656-1339-559a079c59b0",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Picus Threat Library"
+}, {
+  "id" : "72d606cd-2a0a-8c21-bb49-7c42f9e208cb",
+  "name" : "summary",
+  "display_width" : null,
+  "label" : "Summary",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Picus Threat Library offers the most extensive available adversarial content, mapped to frameworks such as MITRE ATT&amp;CK, based on intelligence, threat hunting and research effort by the Picus Labs.</p>"
+}, {
+  "id" : "154eb961-abaa-d86b-3d9d-5329177a81ff",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "7759d6d2-d06e-4cbf-91ea-d8159c2b8a43"
+}, {
+  "id" : "e9626b5c-3214-2f4b-4e99-da95e283e371",
+  "name" : "add_background_image",
+  "display_width" : null,
+  "label" : "Add Background Image",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "72ea25f5-b96e-469c-2423-df3e4322817c",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "e9626b5c-3214-2f4b-4e99-da95e283e371",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "9b1434bb-1551-167e-bad5-aaf2d021f235",
+  "name" : "custom_height",
+  "display_width" : null,
+  "label" : "Custom Height",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "e6380fef-d819-1c5f-59d7-5d412e54c706",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "e6380fef-d819-1c5f-59d7-5d412e54c706",
+    "name" : "breakpoint",
+    "display_width" : null,
+    "label" : "Breakpoint",
+    "help_text" : "Determine maximum screen size at which this breakpoint applies, highest breakpoint should be first",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 500,
+    "step" : 10,
+    "type" : "number",
+    "default" : 600
+  }, {
+    "id" : "d9722fc8-f983-3201-b374-c4b99f3f4079",
+    "name" : "height",
+    "display_width" : null,
+    "label" : "Height",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 350,
+    "max" : 1000,
+    "step" : 1,
+    "type" : "number",
+    "default" : 357
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "breakpoint" : 600,
+    "height" : 357
+  }
+} ]

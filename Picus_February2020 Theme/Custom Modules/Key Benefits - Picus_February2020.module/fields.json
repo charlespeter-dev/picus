@@ -1,0 +1,54 @@
+[ {
+  "id" : "e79b2251-7c53-9e7f-88c9-0b13badc7b67",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Key Benefits"
+}, {
+  "id" : "a8cd9e41-025a-2a94-861e-1b3d2a527a68",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Continuous &amp; Real World Cyber-Threat Simulation"
+}, {
+  "id" : "d25b187f-81a1-f2bc-03ae-68ce1e09e273",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<ul>\n<li>No technology dependency</li>\n<li>No security vendor or version dependency</li>\n<li>Works in the Production Environment</li>\n<li>Functions in the most complex environments</li>\n<li>Pinpoints weaknesses and strengths of your defense layers in real-time</li>\n<li>Modules: HTTP/HTTPS/Endpoint/Email</li>\n</ul>"
+}, {
+  "id" : "c6829238-85be-28fb-a006-26a5fef8cd7f",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/platform-flow@3x.png",
+    "alt" : "Continuous Real World Cyber-Threat Simulation",
+    "width" : 540,
+    "height" : 118,
+    "max_width" : 1738,
+    "max_height" : 380
+  }
+} ]

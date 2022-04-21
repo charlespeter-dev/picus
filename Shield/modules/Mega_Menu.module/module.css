@@ -1,0 +1,378 @@
+.mm-bg {
+  background-color: #fff;
+}
+.hs-blog-post div.custom-menu-primary-mega div.hs-menu-item a {
+  color: #fff;
+}
+.hs-blog-post .mm-bg div.custom-menu-primary-mega div.hs-menu-item a {
+  color: #444;
+}
+.hs-blog-post .mm-bg .header__logo img {
+  filter: unset;
+}
+.hs-blog-post .mm-bg .header__logo--main:after {
+  background-image: none;
+}
+.extra-menu ul {
+  width: 100%;
+  padding-left: 2px;
+  margin-top: -25px;
+}
+.extra-menu ul li {
+  display: inline-block;
+  float: left !important;
+  width: auto !important;
+  margin-right: 25px;
+}
+.extra-menu ul li a {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.custom-menu-primary-mega div.hs-item-has-children {
+  position: relative;
+}
+.custom-menu-primary-mega div.hs-item-has-children:after {
+  position: absolute;
+  content: '';
+  background-image: url('https://www.picussecurity.com/hubfs/Shield/Images/mega-menu-down-arrow.png');
+  width: 7px;
+  height: 4px;
+  right: 5px;
+  top: 4px;
+}
+.custom-menu-primary-mega div.hs-menu-item {
+    float: left;
+}
+
+div.custom-menu-primary-mega div.hs-menu-item {
+    display: inline-block;
+    position: relative;
+    padding: 0px 18px 32px;
+    font-size: 12px;
+    background: deepink;
+  }
+  div.custom-menu-primary-mega div.hs-menu-item a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  header.scroll div.custom-menu-primary-mega div.hs-menu-item a {
+    color: #fff;
+  }
+  div.custom-menu-primary-mega div.hs-menu-item a:hover,
+  div.custom-menu-primary-mega .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-menu-depth-1 a:hover {
+    color:#E8055D;
+    text-decoration: none;
+  }
+  div.custom-menu-primary-mega div.hs-menu-item a:hover {
+    
+  }
+  div.custom-menu-primary-mega div.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  div.custom-menu-primary-mega div.dropdown:nth-of-type(2):hover:before {
+    margin-left: 6%;
+  }
+  div.custom-menu-primary-mega div.dropdown:nth-of-type(3):hover:before {
+    margin-left: 2.2%;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+    position: absolute;
+    top: 83px;
+    background-color: #e8e8e8;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 30px;
+    min-height: 325px;
+    border-bottom: 2px solid #002A3B;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content h3 {
+    color: #00293b;
+    font-weight: bold;
+  }
+  div.custom-menu-primary-mega div.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    background-image: url(https://www.picussecurity.com/hubfs/Shield/Images/mega-menu-background-2.png);
+    background-repeat: no-repeat;
+    background-position: 110% 101%;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content div.page-center {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .overview,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .menu1,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .menu2 {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    min-height: 282px;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu1,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu2,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu3 {
+    width: 21%;
+    float: left;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu1,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu2,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu3 {
+    margin-right: 3%;
+    width: 22%;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .overview {
+    width: 20%;
+    font-size: 16px;
+    padding-right: 3%;
+    text-transform: none;
+    padding-top: 10px;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .overview h3 {
+    color:#004285;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .overview p,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .overview a {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .menu1,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .menu2,
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .menu3 {
+    padding-top: 10px;
+  }
+  div.custom-menu-primary-mega div.custom-menu-primary-mega .hs-menu-wrapper > ul {
+    float: left;
+  }
+  div.custom-menu-primary-mega div.custom-menu-primary-mega .hs-menu-wrapper > ul,
+  div.custom-menu-primary-mega div.custom-menu-primary-mega .hs-menu-wrapper > ul > li {
+    background: transparent;
+  }
+  div.custom-menu-primary-mega .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-menu-depth-1 {
+    float: none;
+    width: 80%;
+    margin-bottom: 16px;
+  }
+  div.custom-menu-primary-mega .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-menu-depth-1 a {
+    color: #00293b;
+    font-size: 16px;
+    text-transform: none;
+    line-height: 1.15em;
+  }
+  div.custom-menu-primary-mega .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-menu-depth-1 a span {
+    color:#888888;
+    font-size: 0.8em;
+  }
+  div.custom-menu-primary-mega .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-menu-depth-1 a:hover {
+    color:rgb(255,54,136);
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  div.custom-menu-primary-mega .dropdown-content .resources .post-image {
+    width: 100%; 
+    height: 158px; 
+    background-size: cover; 
+    background-position: center;
+  }
+  div.custom-menu-primary-mega .dropdown-content .resources .menu-post-content {
+    padding: 20px;
+  }
+  div.custom-menu-primary-mega .dropdown-content .resources .resource-post {
+    background: #fff;
+  }
+  div.custom-menu-primary-mega .dropdown-content .resources .menu-post-content h4 {
+    text-transform: none;
+    min-height: 80px;
+  }
+
+  /* Mobile menu */
+  div.custom-menu-primary-mega a.icon {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .custom-menu-primary-mega ul li.hs-menu-depth-1:last-of-type {
+      border: none;
+      background: none;
+      color: #00293b;
+      padding: 0;
+      font-weight: normal;
+      margin-top: 0px;
+     
+    }
+    
+    .custom-menu-primary-mega div.menu-button:last-of-type > a.get-your-free-demo {
+      border: 2px solid #d60059;
+      border-radius: 3px;
+      background: #d60059;
+      color: #fff;
+      padding: 10px 15px;
+      margin-top: -12px;
+      margin-right: 0;
+      transition: all .3s ease;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .custom-menu-primary-mega div.menu-button:last-of-type > a.test-log4shell-attacks {
+      border: 2px solid #d60059;
+      background: #d60059;
+      color: #fff;
+      padding: 10px 15px;
+      margin-top: -12px;
+      margin-right: 0;
+      transition: all .3s ease;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 769px) {
+    .header__logo--main {
+      padding-top: 12px;
+      margin-top: -8px; 
+    }
+    header.scroll div.custom-menu-primary-mega div.hs-menu-item a {
+      color: unset;
+    }
+    .hs-blog-post .header__logo img, .header.scroll .header__logo img {
+        filter: unset;
+    }
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu1, 
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu2 {
+      padding-top: 20px;
+    }
+    .menu-type.resources.three-col {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .extra-menu ul {
+      margin-top: 20px;
+    }
+    div.custom-menu-primary-mega div.hs-menu-item a {
+      color: #002C46;
+    }
+    .header__row-2,
+    .header__navigation {
+      display: none;
+    }
+    .header__row-2.active,
+    .header__navigation.active {
+      display: inline-block;
+      background: #f7f7f7;
+      margin-top: 30px;
+      padding-top: 35px;
+      border-top: 2px solid #002A3B;
+      border-bottom: 2px solid #002A3B;
+    }
+    div.custom-menu-primary-mega div.dropdown {
+      width: 100%;
+    }
+    div.custom-menu-primary-mega div.hs-menu-item {
+      padding-bottom: 40px;
+    }
+    div.custom-menu-primary-mega div.menu-button {
+      width: 100%;
+    }
+    div.custom-menu-primary-mega div.menu-button a {
+      font-size: 18px;
+    }
+    div.custom-menu-primary-mega div.hs-item-has-children a,
+    div.custom-menu-primary-mega div.menu-button a {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    div.custom-menu-primary-mega div.hs-menu-item:last-of-type a {
+      padding: 0;
+    }
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .overview {
+      display: none;
+    }
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu1, 
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu2, 
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu3,
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .two-col .menu1, 
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .two-col .menu2,
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu1, 
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu2, 
+    div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu3 {
+      width: 100%;
+      border-left: none;
+      border-right: none;
+    }
+    div.custom-menu-primary-mega div.dropdown .dropdown-content {
+      top: 32px;
+    }
+    div.custom-menu-primary-mega div.dropdown:not(.no-hover):hover .dropdown-content {
+      visibility: visible;
+      opacity: 1;
+    }
+    div.custom-menu-primary-mega div.dropdown.no-hover:hover .dropdown-content {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .sub-menu-back {
+      margin-bottom: 20px;
+    }
+    div.custom-menu-primary-mega .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-menu-depth-1 a {
+      font-size: 16px;
+    }
+    .dt-mobile-burger {
+      position: absolute;
+      right: 30px;
+      top: 35px;
+      display: block !important;
+    }
+    .dt-mobile-burger .burger.hide,
+    .dt-mobile-burger .close {
+      display: none;
+    }
+    .dt-mobile-burger .close.show {
+      display: block;
+    }
+    div.custom-menu-primary-mega div.dropdown:hover .dropdown-content {
+      background-image: none;
+    }
+    div.custom-menu-primary-mega .dropdown-content .resources .menu-post-content h4 {
+      text-transform: none;
+      min-height: 10px;
+    }
+    .custom-menu-primary-mega div.hs-item-has-children:after {
+      top: 7px;
+    }
+  }
+@media screen and (min-width: 600px) and (max-width: 769px) {
+  .header__navigation.active {
+    margin-top: 50px;
+    position: absolute;
+    left: 0;
+  }
+  .header__logo--main {
+    padding-top: 9px;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content {
+    top: 0px;
+  }
+  .sub-menu-back {
+    display: block !important;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu1, div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu2, div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col .menu3, div.custom-menu-primary-mega div.dropdown .dropdown-content .two-col .menu1, div.custom-menu-primary-mega div.dropdown .dropdown-content .two-col .menu2 {
+    width: 33%;
+  }
+  div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu1, div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu2, div.custom-menu-primary-mega div.dropdown .dropdown-content .three-col.resources .menu3 {
+    width: 30%;
+  }
+  div.custom-menu-primary-mega .dropdown-content .resources .menu-post-content h4 {
+    min-height: 100px;
+  }
+}

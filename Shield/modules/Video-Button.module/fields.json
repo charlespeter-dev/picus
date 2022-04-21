@@ -1,0 +1,29 @@
+[ {
+  "id" : "title",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Watch now"
+}, {
+  "id" : "9405d7e4-23c7-e519-eeb7-ee6ac6fe481d",
+  "name" : "videoplayer_field",
+  "display_width" : null,
+  "label" : "Video",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 36361787018,
+    "height" : 1080,
+    "width" : 1920
+  }
+} ]

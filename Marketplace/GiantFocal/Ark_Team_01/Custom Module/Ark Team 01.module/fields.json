@@ -1,0 +1,831 @@
+[ {
+  "id" : "ee948e55-e68d-13a8-ce15-2d30c84ce438",
+  "name" : "enable_section",
+  "display_width" : null,
+  "label" : "Enable Section",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "e24e6081-1c79-5269-43a3-b94a70ba64ce",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f30ce7ff-0fc3-723b-9c81-36667f20c371",
+    "name" : "background_setting",
+    "display_width" : null,
+    "label" : "Background",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "ae0dccfc-11b3-209f-f8a1-b17c26dad452",
+      "name" : "background_type",
+      "display_width" : null,
+      "label" : "Background Type",
+      "required" : true,
+      "locked" : false,
+      "display" : "select",
+      "placeholder" : "Search",
+      "choices" : [ [ "solid", "Solid Color" ], [ "gradient", "Gradient Color" ], [ "image", "Image Background" ] ],
+      "type" : "choice",
+      "default" : "solid"
+    }, {
+      "id" : "111444f3-eeb1-fac8-3d78-5affc283c654",
+      "name" : "background_image",
+      "display_width" : null,
+      "label" : "Background Image (1920x1080)",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "ae0dccfc-11b3-209f-f8a1-b17c26dad452",
+        "controlling_value_regex" : "image",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "responsive" : false,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Blog_01/blog_01_bg.jpg",
+        "alt" : "blog_01_bg",
+        "width" : 1920,
+        "height" : 1280
+      }
+    }, {
+      "id" : "e9831296-2db6-8eab-8b65-a10e46f87a48",
+      "name" : "overlay",
+      "display_width" : null,
+      "label" : "Overlay",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "ae0dccfc-11b3-209f-f8a1-b17c26dad452",
+        "controlling_value_regex" : "image",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "f3812b2c-c37a-fc63-da39-5ccc7205d99c",
+      "name" : "overlay_color",
+      "display_width" : null,
+      "label" : "Overlay Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "ae0dccfc-11b3-209f-f8a1-b17c26dad452",
+        "controlling_value_regex" : "image",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#000000",
+        "opacity" : 30
+      }
+    }, {
+      "id" : "0bf49634-21e8-57aa-94d6-d1ac450f1f2b",
+      "name" : "solid_color",
+      "display_width" : null,
+      "label" : "Solid Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "ae0dccfc-11b3-209f-f8a1-b17c26dad452",
+        "controlling_value_regex" : "solid",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "527d3fc7-f3ee-3b86-612b-78ea478041d4",
+      "name" : "parallax",
+      "display_width" : null,
+      "label" : "Parallax",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "ae0dccfc-11b3-209f-f8a1-b17c26dad452",
+        "controlling_value_regex" : null,
+        "operator" : "NOT_EMPTY",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "942acf3f-9594-c5df-0181-7fc6f77f77f6",
+      "name" : "gradient_color_01",
+      "display_width" : null,
+      "label" : "Gradient Color 01",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "ae0dccfc-11b3-209f-f8a1-b17c26dad452",
+        "controlling_value_regex" : "gradient",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#f3f3f3",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "7be3c451-d744-9b87-3c6e-8df557123b31",
+      "name" : "gradient_color_02",
+      "display_width" : null,
+      "label" : "Gradient Color 02",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "ae0dccfc-11b3-209f-f8a1-b17c26dad452",
+        "controlling_value_regex" : "gradient",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "background_type" : "solid",
+      "background_image" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Blog_01/blog_01_bg.jpg",
+        "alt" : "blog_01_bg",
+        "width" : 1920,
+        "height" : 1280
+      },
+      "overlay" : true,
+      "overlay_color" : {
+        "color" : "#000000",
+        "opacity" : 30
+      },
+      "solid_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "parallax" : true,
+      "gradient_color_01" : {
+        "color" : "#f3f3f3",
+        "opacity" : 100
+      },
+      "gradient_color_02" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "e3bd22f8-186d-a1c2-12eb-353d8bf86564",
+    "name" : "typography",
+    "display_width" : null,
+    "label" : "Typography",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "21d88dea-409a-9cd0-5cb6-da74b82cf4e8",
+      "name" : "font_color",
+      "display_width" : null,
+      "label" : "Font Color",
+      "required" : true,
+      "locked" : false,
+      "display" : "select",
+      "placeholder" : "Search",
+      "choices" : [ [ "default", "Default" ], [ "white", "White" ], [ "custom", "Custom" ] ],
+      "type" : "choice",
+      "default" : "default"
+    }, {
+      "id" : "55d7abc3-ec8f-ac76-c0c1-30983eac8b95",
+      "name" : "custom_font_color",
+      "display_width" : null,
+      "label" : "Custom Font Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "21d88dea-409a-9cd0-5cb6-da74b82cf4e8",
+        "controlling_value_regex" : "custom",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "font_color" : "default",
+      "custom_font_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "beeb2c91-071b-65d5-d611-344cd28a9cfd",
+    "name" : "layout",
+    "display_width" : null,
+    "label" : "Layout & Spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "1be81651-5ffa-aa92-e517-f9e6b5fa8330",
+      "name" : "top_padding",
+      "display_width" : null,
+      "label" : "Top Padding (In Pixel)",
+      "help_text" : "In Pixel",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 80
+    }, {
+      "id" : "e57ab0ae-6a6c-a234-249d-134e49458fea",
+      "name" : "bottom_padding",
+      "display_width" : null,
+      "label" : "Bottom Padding (In Pixel)",
+      "help_text" : "In Pixel",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 80
+    }, {
+      "id" : "f0a0dc35-9f01-d920-0ab8-e319a25ccabf",
+      "name" : "enable_page_center",
+      "display_width" : null,
+      "label" : "Enable Page Center",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "33952dd7-b3c4-e1c9-0775-c775105ab6bc",
+      "name" : "overwrite_page_center",
+      "display_width" : null,
+      "label" : "Overwrite Page Center",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "f0a0dc35-9f01-d920-0ab8-e319a25ccabf",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "9d2a0f79-e8a9-f7ea-0ff6-02cf71d3fd07",
+      "name" : "page_center_size",
+      "display_width" : null,
+      "label" : "Page Center Size (In Pixel)",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "33952dd7-b3c4-e1c9-0775-c775105ab6bc",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "display" : "slider",
+      "min" : 0,
+      "max" : 2400,
+      "step" : 1,
+      "type" : "number"
+    }, {
+      "id" : "151d8967-54dc-b227-fa25-95eb6e199599",
+      "name" : "custom_id",
+      "display_width" : null,
+      "label" : "Custom ID",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "d566a761-5614-56f8-84b2-cd5687e05968",
+      "name" : "custom_css_classes",
+      "display_width" : null,
+      "label" : "Custom CSS Classes",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "top_padding" : 80,
+      "bottom_padding" : 80,
+      "enable_page_center" : true,
+      "overwrite_page_center" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_setting" : {
+      "background_type" : "solid",
+      "background_image" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Blog_01/blog_01_bg.jpg",
+        "alt" : "blog_01_bg",
+        "width" : 1920,
+        "height" : 1280
+      },
+      "overlay" : true,
+      "overlay_color" : {
+        "color" : "#000000",
+        "opacity" : 30
+      },
+      "solid_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "parallax" : true,
+      "gradient_color_01" : {
+        "color" : "#f3f3f3",
+        "opacity" : 100
+      },
+      "gradient_color_02" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    },
+    "typography" : {
+      "font_color" : "default",
+      "custom_font_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    },
+    "layout" : {
+      "top_padding" : 80,
+      "bottom_padding" : 80,
+      "enable_page_center" : true,
+      "overwrite_page_center" : false
+    }
+  }
+}, {
+  "id" : "2982a949-f83f-ce1a-efff-b9a5ecea001a",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0419b610-6a64-d0d7-43c8-49eee05f91bc",
+    "name" : "section_intro",
+    "display_width" : null,
+    "label" : "Section Intro",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "582e330c-dd8b-df81-2ab7-6a90e98d7d61",
+      "name" : "enable_intro",
+      "display_width" : null,
+      "label" : "Enable Intro",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "d828f3b6-1bb0-57dd-59ad-7be46640f488",
+      "name" : "sub_heading_text",
+      "display_width" : null,
+      "label" : "Sub Heading Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "The Magnificent"
+    }, {
+      "id" : "2ba8fbae-abb2-1875-f614-2575b8cefd6c",
+      "name" : "heading_text",
+      "display_width" : null,
+      "label" : "Heading Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Ark Team 01"
+    }, {
+      "id" : "9a5a8d7b-7b49-05e3-de78-c83b1c733c2c",
+      "name" : "heading_size",
+      "display_width" : null,
+      "label" : "Heading Size",
+      "required" : true,
+      "locked" : false,
+      "display" : "select",
+      "placeholder" : "Search",
+      "choices" : [ [ "h1", "H1" ], [ "h2", "H2" ], [ "h3", "H3" ], [ "h4", "H4" ] ],
+      "type" : "choice",
+      "default" : "h2"
+    }, {
+      "id" : "ed200e46-a412-0fe4-2634-0fa4641c7839",
+      "name" : "description_text",
+      "display_width" : null,
+      "label" : "Description Text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque gravida gravida. Duis ullamcorper justo arcu, id tempor massa molestie vel. Sed in felis ac massa feugiat.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "enable_intro" : true,
+      "sub_heading_text" : "The Magnificent",
+      "heading_text" : "Ark Team 01",
+      "heading_size" : "h2",
+      "description_text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque gravida gravida. Duis ullamcorper justo arcu, id tempor massa molestie vel. Sed in felis ac massa feugiat.</p>"
+    }
+  }, {
+    "id" : "50f39c1a-e3f3-122b-cdc7-2aa4c4aff83b",
+    "name" : "team_repeater_settings",
+    "display_width" : null,
+    "label" : "Team Repeater Settings",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2c10e6b3-e8ad-8b6d-8d1f-cda00c28cc30",
+      "name" : "team_repeater_of_column",
+      "display_width" : null,
+      "label" : "Team Repeater Grid",
+      "required" : true,
+      "locked" : false,
+      "display" : "select",
+      "placeholder" : "Search",
+      "choices" : [ [ "three-column", "3 Column" ], [ "four-column", "4 Column" ] ],
+      "type" : "choice",
+      "default" : "four-column"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "team_repeater_of_column" : "four-column"
+    }
+  }, {
+    "id" : "f6b56062-3797-4a4b-4a8c-8b6908432a79",
+    "name" : "team_repeater",
+    "display_width" : null,
+    "label" : "Team Repeater",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : "2fd9816e-d2d5-19ea-ef27-6cf8b17f0bc4",
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "cb0abfd5-80e9-502e-cf84-129b319c29c3",
+      "name" : "portrait",
+      "display_width" : null,
+      "label" : "Portrait (260x350)",
+      "required" : false,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      }
+    }, {
+      "id" : "2fd9816e-d2d5-19ea-ef27-6cf8b17f0bc4",
+      "name" : "complete_name",
+      "display_width" : null,
+      "label" : "Complete Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Jane Doe"
+    }, {
+      "id" : "2973a82f-17e4-cf91-772b-28e4acf8be81",
+      "name" : "job_title",
+      "display_width" : null,
+      "label" : "Job Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Chief Executive Officer"
+    }, {
+      "id" : "6d89013a-88db-8a35-ac6c-b458f1bf88ab",
+      "name" : "enable_social_links",
+      "display_width" : null,
+      "label" : "Enable Social Links",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "148cdd7a-27db-b85d-5014-3165da6f2e76",
+      "name" : "facebook_url",
+      "display_width" : null,
+      "label" : "Facebook URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "6d89013a-88db-8a35-ac6c-b458f1bf88ab",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "#"
+    }, {
+      "id" : "e990ab46-513a-05e1-3613-6df2d1604de4",
+      "name" : "instagram_url",
+      "display_width" : null,
+      "label" : "Instagram URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "6d89013a-88db-8a35-ac6c-b458f1bf88ab",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "#"
+    }, {
+      "id" : "123c319a-5566-51a3-68c5-67647ccd091b",
+      "name" : "linkedin_url",
+      "display_width" : null,
+      "label" : "Linkedin URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "6d89013a-88db-8a35-ac6c-b458f1bf88ab",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "#"
+    }, {
+      "id" : "85cbe6bd-27ec-2a0c-5845-8e903a540828",
+      "name" : "twitter_url",
+      "display_width" : null,
+      "label" : "Twitter URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "6d89013a-88db-8a35-ac6c-b458f1bf88ab",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "#"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "portrait" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      },
+      "complete_name" : "Jane Doe",
+      "job_title" : "Chief Executive Officer",
+      "enable_social_links" : true,
+      "facebook_url" : "#",
+      "instagram_url" : "#",
+      "linkedin_url" : "#",
+      "twitter_url" : "#"
+    }, {
+      "portrait" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      },
+      "complete_name" : "Jane Doe",
+      "job_title" : "Chief Executive Officer",
+      "enable_social_links" : true,
+      "facebook_url" : "#",
+      "instagram_url" : "#",
+      "linkedin_url" : "#",
+      "twitter_url" : "#"
+    }, {
+      "portrait" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      },
+      "complete_name" : "Jane Doe",
+      "job_title" : "Chief Executive Officer",
+      "enable_social_links" : true,
+      "facebook_url" : "#",
+      "instagram_url" : "#",
+      "linkedin_url" : "#",
+      "twitter_url" : "#"
+    }, {
+      "portrait" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      },
+      "complete_name" : "Jane Doe",
+      "job_title" : "Chief Executive Officer",
+      "enable_social_links" : true,
+      "facebook_url" : "#",
+      "instagram_url" : "#",
+      "linkedin_url" : "#",
+      "twitter_url" : "#"
+    } ]
+  }, {
+    "id" : "02db8a11-5287-64b8-7b0e-2235e46a08a2",
+    "name" : "section_footer",
+    "display_width" : null,
+    "label" : "Section Footer",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "111acfb5-b48e-db4c-fc13-a135341898a8",
+      "name" : "enable_section_footer",
+      "display_width" : null,
+      "label" : "Enable Section Footer",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "5f7bb6ce-a3f6-22bb-6bd9-082b1c9060d2",
+      "name" : "section_footer_text",
+      "display_width" : null,
+      "label" : "Section Footer Text",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "111acfb5-b48e-db4c-fc13-a135341898a8",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "richtext",
+      "default" : "<p class=\"ark-text-align-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>\n<p class=\"ark-text-align-center\"><a class=\"ark-btn ark-btn-primary\" href=\"#\">Read More</a></p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "enable_section_footer" : true,
+      "section_footer_text" : "<p class=\"ark-text-align-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>\n<p class=\"ark-text-align-center\"><a class=\"ark-btn ark-btn-primary\" href=\"#\">Read More</a></p>"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "section_intro" : {
+      "enable_intro" : true,
+      "sub_heading_text" : "The Magnificent",
+      "heading_text" : "Ark Team 01",
+      "heading_size" : "h2",
+      "description_text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque gravida gravida. Duis ullamcorper justo arcu, id tempor massa molestie vel. Sed in felis ac massa feugiat.</p>"
+    },
+    "team_repeater_settings" : {
+      "team_repeater_of_column" : "four-column"
+    },
+    "team_repeater" : [ {
+      "portrait" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      },
+      "complete_name" : "Jane Doe",
+      "job_title" : "Chief Executive Officer",
+      "enable_social_links" : true,
+      "facebook_url" : "#",
+      "instagram_url" : "#",
+      "linkedin_url" : "#",
+      "twitter_url" : "#"
+    }, {
+      "portrait" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      },
+      "complete_name" : "Jane Doe",
+      "job_title" : "Chief Executive Officer",
+      "enable_social_links" : true,
+      "facebook_url" : "#",
+      "instagram_url" : "#",
+      "linkedin_url" : "#",
+      "twitter_url" : "#"
+    }, {
+      "portrait" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      },
+      "complete_name" : "Jane Doe",
+      "job_title" : "Chief Executive Officer",
+      "enable_social_links" : true,
+      "facebook_url" : "#",
+      "instagram_url" : "#",
+      "linkedin_url" : "#",
+      "twitter_url" : "#"
+    }, {
+      "portrait" : {
+        "src" : "https://cdn2.hubspot.net/hubfs/2333817/GiantFocal_Marketplace/Ark/Team_01/team-04.jpg",
+        "alt" : "team-04",
+        "width" : 260,
+        "height" : 350
+      },
+      "complete_name" : "Jane Doe",
+      "job_title" : "Chief Executive Officer",
+      "enable_social_links" : true,
+      "facebook_url" : "#",
+      "instagram_url" : "#",
+      "linkedin_url" : "#",
+      "twitter_url" : "#"
+    } ],
+    "section_footer" : {
+      "enable_section_footer" : true,
+      "section_footer_text" : "<p class=\"ark-text-align-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>\n<p class=\"ark-text-align-center\"><a class=\"ark-btn ark-btn-primary\" href=\"#\">Read More</a></p>"
+    }
+  }
+} ]

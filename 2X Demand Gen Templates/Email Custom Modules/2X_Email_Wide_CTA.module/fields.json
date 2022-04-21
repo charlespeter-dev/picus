@@ -1,0 +1,78 @@
+[ {
+  "id" : "bc703446-0beb-6dd2-b001-f8015bbdd584",
+  "name" : "cta_text",
+  "display_width" : null,
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "CTA Text",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "DOWNLOAD NOW"
+}, {
+  "id" : "80cf1b03-509a-3bb7-51c1-32978349cb95",
+  "name" : "cta_url",
+  "display_width" : null,
+  "label" : "CTA URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "dd733965-c782-64cd-5e3b-74bdbc6d53bf",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#D60059",
+    "opacity" : 100
+  }
+}, {
+  "id" : "99544028-1936-1bdc-bb6a-c092ac0dd44f",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "e06dbd1c-a69c-a3ea-1f01-6ac255f25b03",
+  "name" : "font_size",
+  "display_width" : null,
+  "label" : "Font Size",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Font Size",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "16px"
+}, {
+  "id" : "edcbd3a7-066f-4aaf-2051-611208896b56",
+  "name" : "line_height",
+  "display_width" : null,
+  "label" : "Line Height",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Line Height",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "18px"
+} ]

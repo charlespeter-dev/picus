@@ -1,0 +1,367 @@
+<section id="announcement_bar_{{ module.section_name }}" class={% if module.section_style.position %} {{"top"}} {% else %} {{"bottom"}} {% endif %} >
+  <div class="announcement_bar_sec paddding_size text-align-center">
+    <div class="annoncement_display">
+      <div id="new_timer"></div>
+      <div  class="content_color paragraph_padding {% if module.timer_style.timer_show_or_hide %} {{"content_width"}} {% else %} {{"content_width_when_timer_hide"}} {% endif %} ">   {# Announcement Description Start#}
+        <span class="content_margin"> {{ module.announcement_details.announcebar_text }} </span>
+			</div>
+       {% if module.button_style.button_type == "external_url" %}     
+        <a class="link_button  btn_shake button_width {% if module.button_style.shaky_button %} {{"noanimate"}} {% endif %}" id="announcement_bar_{{ module.section_name }}_btn-shake" href="{{ module.button_style.external_website_url.url.href }}">{{ module.button_style.button_text }}</a>
+       {% elif module.button_style.button_type == "metting_link"   %}
+        <a class="link_button  btn_shake button_width {% if module.button_style.shaky_button %} {{"noanimate"}} {% endif %}" id="announcement_bar_{{ module.section_name }}_btn-shake" href="{{ module.button_style.meeting_link }}">{{ module.button_style.button_text }}</a>
+       {% elif module.button_style.button_type == "page_or_blog"  %}
+        <a class="link_button  btn_shake button_width {% if module.button_style.shaky_button %} {{"noanimate"}} {% endif %}" id="announcement_bar_{{ module.section_name }}_btn-shake" href="{{ module.button_style.blog_field }}">{{ module.button_style.button_text }}</a>
+       {% elif module.button_style.button_type == "phone_number"  %}
+        <a class="link_button  btn_shake button_width {% if module.button_style.shaky_button %} {{"noanimate"}} {% endif %}" id="announcement_bar_{{ module.section_name }}_btn-shake" href="tel:{{ module.button_style.phone_number }}">{{ module.button_style.button_text }}</a>
+        {% endif %}
+      <div class="cross_icon_sec">
+			  <button id="announcement_bar_{{ module.section_name }}_close_button"><i class="fa fa-times-circle"></i></button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Start JS  -->
+{{ require_js("https://code.jquery.com/jquery-3.5.1.js", "head") }}
+{% require_js %}
+<script>
+  function updateTimer() {
+    future = new Date('{{ module.timer_style.announce_time }}'.replace(/-/g, "/"));
+    now = new Date();
+    diff = future - now;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor(diff / (1000 * 60 * 60));
+    mins = Math.floor(diff / (1000 * 60));
+    secs = Math.floor(diff / 1000);
+
+    d = days;
+    h = hours - days * 24;
+    m = mins - hours * 60;
+    s = secs - mins * 60;
+
+    document.getElementById("new_timer")
+        .innerHTML =
+        '<div>' + d + '<span>Days</span></div>' +
+        '<div>' + h + '<span>Hours</span></div>' +
+        '<div>' + m + '<span>Minutes</span></div>' +
+        '<div>' + s + '<span>Seconds</span></div>';
+}
+setInterval('updateTimer()', 1000);
+//   Timer With Autohide Function
+  function announcement_bar_{{ module.section_name }}_makeTimer() {
+					var endTime = new Date("{{ module.timer_style.type_of_time_set }}");
+					endTime = (Date.parse(endTime) / 1000);
+					var now = new Date();
+					now = (Date.parse(now) / 1000);
+					var timeLeft = endTime - now;
+					var days = Math.floor(timeLeft / 86400);
+					var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+					var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+					var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+		
+					if (hours < "10") { hours = "0" + hours; }
+					if (minutes < "10") { minutes = "0" + minutes; }
+					if (seconds < "10") { seconds = "0" + seconds; }
+					if (timeLeft <= "0") {
+					clearInterval(timeinterval);
+					$("#announcement_bar_{{ module.section_name }}").hide();
+				}
+					$("#announcement_bar_{{ module.section_name }}_days").html(days);
+					$("#announcement_bar_{{ module.section_name }}_hours").html(hours);
+					$("#announcement_bar_{{ module.section_name }}_minutes").html(minutes);
+					$("#announcement_bar_{{ module.section_name }}_seconds").html(seconds);
+			}
+			var timeinterval = setInterval(function() { announcement_bar_{{ module.section_name }}_makeTimer(); }, 1000);
+
+  
+//   //   Close Button Hide Function  
+    function closeHide(){
+				$(document).ready(function(){
+  					$("#announcement_bar_{{ module.section_name }}_close_button").click(function(){
+    					$("#announcement_bar_{{ module.section_name }}").hide();
+  					});
+				});
+			}
+			closeHide();
+  
+      
+            
+//     Timer Show/Hide Function
+	var buttonTimer = document.getElementById("new_timer");
+	var timerButton = {{ module.timer_style.timer_show_or_hide }}; 
+	function timer_hide(){
+		 if (timerButton){
+		 	buttonTimer.style.display = "";
+		 }else{
+		 	buttonTimer.style.display = "none";
+		 }
+	}
+  timer_hide();
+      
+//  Button Shake ON/OFF Function
+	var content = document.getElementById("announcement_bar_{{ module.section_name }}_btn-shake");
+	var change = {{ module.button_style.shaky_button }}; 
+	function auto_change(){
+		 if (change) {
+		 	animation.style.animation = "";
+		 }
+	}
+  auto_change();
+            
+
+</script>
+{% end_require_js %}
+<!-- End JS -->
+
+
+<!-- Start CSS -->
+{{ require_css("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css") }}
+{% require_css %}
+<style>
+ #announcement_bar_{{ module.section_name }} .content_margin p {
+   margin: 0;
+  }
+  .text-align-center{
+    text-align: center;
+  } 
+#new_timer {
+       text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    color: {{ module.timer_style.timer_text_color.color }};
+    background-color: {{ module.timer_style.timer_background_color.color }};
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: auto;
+    padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#new_timer div {
+    min-width: 50px;
+}
+
+#new_timer div span {
+    color:{{ module.timer_style.timer_text_color.color }};
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+}
+  #announcement_bar_{{ module.section_name }}{
+        background-color: {{ module.section_style.section_background_color.color }};
+    position :fixed;
+    width:100%;
+    box-shadow: 0 1px 3px 2px rgba(0,0,0,.15);
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    min-height: 80px;
+  }
+  
+  #announcement_bar_{{ module.section_name }}.top{
+    top:0;
+    left:0;
+  }
+  
+    #announcement_bar_{{ module.section_name }}.bottom{
+    bottom:0;
+    left:0;
+  }
+ 
+  #announcement_bar_{{ module.section_name }} .announcement_bar_sec{
+
+    color:{{ module.section_style.font_color.color }};
+    font-size:25px;
+    width:100%;
+  }
+  #announcement_bar_{{ module.section_name }} .paddding_size{
+	  padding: {{ module.section_style.padding_top_bottom }}px {{ module.section_style.padding_left_right }}px;   
+  }
+  #announcement_bar_{{ module.section_name }} .annoncement_display{
+	  display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+  }
+
+  #announcement_bar_{{ module.section_name }} .timer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #announcement_bar_{{ module.section_name }} .timer_width{
+    width:25%;
+  }
+
+  #announcement_bar_{{ module.section_name }} .timer_container{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center
+    font-size: 30px;
+    color: {{ module.timer_style.timer_text_color.color }};
+    background-color: {{ module.timer_style.timer_background_color.color }};
+    min-width: 60px;
+  }
+  #announcement_bar_{{ module.section_name }} .timer_label{
+    position: absolute;
+    color: {{ module.timer_style.timer_label_text_color.color }};
+    font-size: 15px;
+    bottom: -20px;
+    margin: 0 !important;
+  }
+  #announcement_bar_{{ module.section_name }} .content_width{
+    width: 60%;
+    margin: 0 15px;
+  }
+  #announcement_bar_{{ module.section_name }} .content_color{
+    color:{{ module.announcement_details.text_color.color }};
+  }
+  #announcement_bar_{{ module.section_name }} .content_width_when_timer_hide{
+    width: 85%;
+    margin-right: 30px;
+  }
+  #announcement_bar_{{ module.section_name }} .cross_icon_sec{
+   position:absolute;
+   top:-3px;
+   right:0;
+
+  }
+  #announcement_bar_{{ module.section_name }} .cross_icon_sec button{
+	 background-color: Transparent;
+   background-repeat:no-repeat;
+   border: none;
+   overflow: hidden;
+   color: {{ module.cross_button_style.cross_button_color.color }};
+   font-size: 35px;
+    cursor: pointer;
+        width: auto;
+    padding: 0;
+  }
+  #announcement_bar_{{ module.section_name }} .cross_icon_sec button i{
+	 text-decoration: none;
+	 font-size: 35px;
+  }
+  #announcement_bar_{{ module.section_name }} .cross_icon_sec button:focus{
+   outline:none;
+  }
+  #announcement_bar_{{ module.section_name }} .button_width{
+   width: 15%;
+  }
+  #announcement_bar_{{ module.section_name }} .link_button{
+   background-color: {{ module.button_style.button_background_color.color }};
+   color: {{ module.button_style.button_text_color.color }};
+   text-decoration: none;
+	 margin: auto;
+	 border: none;
+   font-size: 15px;
+	 padding: 8px 20px;
+	 font-weight: bold;
+	 text-transform: capitalize;
+   min-width:75px;
+   display: inline-block;
+  }
+  #announcement_bar_{{ module.section_name }} .link_button:hover{
+	 background-color: {{ module.button_style.button_hover_color.color }};
+	 border: none;
+  }
+  #announcement_bar_{{ module.section_name }} .link_button:focus{
+	 outline:none;
+  }
+  #announcement_bar_{{ module.section_name }} .btn_shake {
+   -webkit-animation-name: shake-with-delay;
+           animation-name: shake-with-delay;
+   -webkit-animation-duration: 6s;
+           animation-duration: 6s;
+   -webkit-animation-iteration-count: infinite;
+           animation-iteration-count: infinite;;
+  }
+  
+  #announcement_bar_{{ module.section_name }} .noanimate{
+    animation:none;
+  }
+
+  @-webkit-keyframes shake-with-delay {
+  from, 16%, to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  1.6%, 4.8%, 8%, 11.2%, 14.4% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+  3.2%, 6.4%, 9.6%, 12.8% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes shake-with-delay {
+  from, 16%, to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  1.6%, 4.8%, 8%, 11.2%, 14.4% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+  3.2%, 6.4%, 9.6%, 12.8% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+}
+
+/* Media Query */
+@media screen and (max-width: 767px) {
+ #announcement_bar_{{ module.section_name }} .annoncement_display {
+    display: block;
+  }
+  #announcement_bar_{{ module.section_name }} .paddding_size{
+	  padding:30px 15px;   
+  }
+  #announcement_bar_{{ module.section_name }} .timer{
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  #announcement_bar_{{ module.section_name }} .content_width{
+     width: 100%;
+     margin: 0;
+  }
+   #announcement_bar_{{ module.section_name }} .content_width_when_timer_hide{
+     width: 100%;
+     margin-right: 0;
+     
+  }
+  #announcement_bar_{{ module.section_name }} .paragraph_padding p{
+  padding: 10px 0;
+  }
+}
+  @media only screen 
+and (min-device-width : 768px) 
+    and (max-device-width : 1024px) {
+
+      #announcement_bar_{{ module.section_name }} .paddding_size{
+      padding: 20px 35px;
+      }
+  }
+</style>
+{% end_require_css %}
+<!-- End CSS -->

@@ -1,0 +1,112 @@
+[ {
+  "id" : "ac8c0003-0cb5-8f4d-d1b8-d1a109b64d87",
+  "name" : "person_photo",
+  "display_width" : null,
+  "label" : "Photo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/alper.png",
+    "alt" : "alper",
+    "width" : 256,
+    "height" : 256,
+    "max_width" : 256,
+    "max_height" : 256
+  }
+}, {
+  "id" : "85cf23cf-7cd1-3c82-1cd5-515274a78e77",
+  "name" : "person_name",
+  "display_width" : null,
+  "label" : "Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Person Name"
+}, {
+  "id" : "a09c1f9d-97d2-f62c-b34a-b56c94d6e582",
+  "name" : "job_title",
+  "display_width" : null,
+  "label" : "Job Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Job Title"
+}, {
+  "id" : "7d1cc594-12c1-8b7b-4043-5ce12c12234a",
+  "name" : "bio",
+  "display_width" : null,
+  "label" : "Bio",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt placerat dolor, sed accumsan sapien bibendum et. Pellentesque iaculis nunc metus, ut fermentum nunc pharetra a. Etiam ac ultrices ligula.</p>"
+}, {
+  "id" : "46de32ba-1328-40ef-8465-cbb21960b337",
+  "name" : "linkedin_url",
+  "display_width" : null,
+  "label" : "LinkedIn URL",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.linkedin.com/in/hamdi-alper-memis-cfa-1503a3a/"
+}, {
+  "id" : "f0bfa760-654d-ad27-e9ce-22a1df596e8e",
+  "name" : "github_url",
+  "display_width" : null,
+  "label" : "GitHub URL",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://github.com/"
+}, {
+  "id" : "c8d9d28f-298b-60de-2dba-c8327ca7d156",
+  "name" : "twitter_url",
+  "display_width" : null,
+  "label" : "Twitter URL",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://twitter.com"
+}, {
+  "id" : "1d2ad1e4-627c-86a0-f05f-6293d40e18c0",
+  "name" : "light_theme",
+  "display_width" : null,
+  "label" : "Light Theme",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "529df2e4-9313-dc65-6271-508a5ceef12f",
+  "name" : "section_name",
+  "display_width" : null,
+  "label" : "Section Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "team"
+} ]

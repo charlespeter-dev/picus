@@ -1,0 +1,344 @@
+[ {
+  "id" : "f3ad3f1b-0ae9-0f6b-f6b9-4aee73005b13",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Catchy and Descriptive Headline"
+}, {
+  "id" : "fa3131a1-3108-0834-ea06-782170819044",
+  "name" : "main_content",
+  "display_width" : null,
+  "label" : "Main content",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p style=\"text-align: center;\"><span>Supporting content. Use this content to add context to the headline and to encourage people to click the CTA. Keep it short and use the rest of the page for more granular details.</span></p>"
+}, {
+  "id" : "705a7cbc-98db-c146-50b0-1f8375d81621",
+  "name" : "call_to_action",
+  "display_width" : null,
+  "label" : "Call to Action",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "def862ff-8be1-9b7b-8327-1447bc3a6c27",
+    "name" : "what_type_of_cta",
+    "display_width" : null,
+    "label" : "What type of CTA?",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "cta", "HubSpot CTA" ], [ "link", "Link" ] ],
+    "type" : "choice"
+  }, {
+    "id" : "b1eddb1e-10fa-7734-650d-d1975c8c89b9",
+    "name" : "cta",
+    "display_width" : null,
+    "label" : "CTA",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "def862ff-8be1-9b7b-8327-1447bc3a6c27",
+      "controlling_value_regex" : "cta",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "cta"
+  }, {
+    "id" : "6113629a-14eb-b416-af7f-fa4518e8f0bd",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "def862ff-8be1-9b7b-8327-1447bc3a6c27",
+      "controlling_value_regex" : "link",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "a782250c-f7b0-49e8-6061-68a07d87e9af",
+    "name" : "custom_button_css_class",
+    "display_width" : null,
+    "label" : "Custom Button CSS Class",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "def862ff-8be1-9b7b-8327-1447bc3a6c27",
+      "controlling_value_regex" : "link",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "hs-button primary"
+  }, {
+    "id" : "683fa174-3f2d-7802-648a-8adb72551913",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "def862ff-8be1-9b7b-8327-1447bc3a6c27",
+      "controlling_value_regex" : "link",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "custom_button_css_class" : "hs-button primary"
+  }
+}, {
+  "id" : "24d8aa56-92d4-2802-6808-61bbc1444cfd",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "help_text" : "Why do I need two background images?\nMobile devices have very narrow screen widths so it is often not ideal to load large background images for these sizes. A better approach would be to use a square cropped image for mobile and a rectangle cropped image for desktop. This will prevent image distortion and slow loading times on mobile devices.",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "01dd8128-b15c-8d90-f744-335ce161cd2f",
+    "name" : "background_image_desktop",
+    "display_width" : null,
+    "label" : "Background image - Desktop",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "http://design-assets.hubspot.com/hubfs/laptop_bg.jpg",
+      "alt" : "laptop_bg",
+      "width" : 1200,
+      "height" : 777
+    }
+  }, {
+    "id" : "ca7332c7-b184-cb9d-315e-644925f3b4eb",
+    "name" : "background_image_mobile",
+    "display_width" : null,
+    "label" : "Background image - Mobile",
+    "help_text" : "",
+    "inline_help_text" : "500px x 500px<br>\n1000px x 1000px (retina)",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/1637283/laptop_bg.jpeg",
+      "alt" : "laptop_bg",
+      "width" : 777,
+      "height" : 777
+    }
+  }, {
+    "id" : "9f4c8717-e150-5aba-0c0e-4798da386dd9",
+    "name" : "background_image_tablet",
+    "display_width" : null,
+    "label" : "Background image - Tablet",
+    "help_text" : "",
+    "inline_help_text" : "800px x 500px<br>\n1600px x 1000px (retina)",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/1637283/laptop_bg.jpeg",
+      "alt" : "laptop_bg",
+      "width" : 777,
+      "height" : 777
+    }
+  }, {
+    "id" : "a9325c75-6cff-636c-e4b7-c9f6c0cacc1a",
+    "name" : "overlay_color",
+    "display_width" : null,
+    "label" : "Overlay color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : "#252731"
+  }, {
+    "id" : "7fb51a1d-f212-dc35-923b-3b10cc3f3858",
+    "name" : "overlay_opacity",
+    "display_width" : null,
+    "label" : "Overlay opacity %",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 80
+  }, {
+    "id" : "8605e393-1261-626b-9688-87478bdca95b",
+    "name" : "parallax_background",
+    "display_width" : null,
+    "label" : "Parallax Background",
+    "inline_help_text" : "Parallax background images need to be as tall as the device height to prevent zoomed and blurry images. <br>500px x 1000px<br>1000px x 2000px (retina)",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_image_desktop" : {
+      "src" : "http://design-assets.hubspot.com/hubfs/laptop_bg.jpg",
+      "alt" : "laptop_bg",
+      "width" : 1200,
+      "height" : 777
+    },
+    "background_image_mobile" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/1637283/laptop_bg.jpeg",
+      "alt" : "laptop_bg",
+      "width" : 777,
+      "height" : 777
+    },
+    "background_image_tablet" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/1637283/laptop_bg.jpeg",
+      "alt" : "laptop_bg",
+      "width" : 777,
+      "height" : 777
+    },
+    "overlay_color" : "#252731",
+    "overlay_opacity" : 80,
+    "parallax_background" : true
+  }
+}, {
+  "id" : "74ee9f89-14a1-5cf8-c967-d249b725b6b8",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "Settings",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c2da7858-dda5-6de3-c232-ddb758949a24",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text color",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : "#fff"
+  }, {
+    "id" : "714aa279-8656-508f-97b7-0d3867d27dc8",
+    "name" : "padding_desktop",
+    "display_width" : null,
+    "label" : "Banner padding in pixels - desktop",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 500,
+    "step" : 1,
+    "type" : "number",
+    "default" : 100
+  }, {
+    "id" : "84b0acd3-c8d2-7ae2-df06-93d091911615",
+    "name" : "padding_tablet",
+    "display_width" : null,
+    "label" : "Banner padding in pixels - tablet",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 500,
+    "step" : 1,
+    "type" : "number",
+    "default" : 100
+  }, {
+    "id" : "0ae92a4f-e2f0-783f-c7e5-8f35cc4341e1",
+    "name" : "padding_mobile",
+    "display_width" : null,
+    "label" : "Banner padding in pixels - mobile",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 500,
+    "step" : 1,
+    "type" : "number",
+    "default" : 50
+  }, {
+    "id" : "29e184ff-a563-bfb2-2ba0-935eaed1bb65",
+    "name" : "button_alignment",
+    "display_width" : null,
+    "label" : "Button alignment",
+    "help_text" : "",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "Search",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "type" : "choice",
+    "default" : "center"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_color" : "#fff",
+    "padding_desktop" : 100,
+    "padding_tablet" : 100,
+    "padding_mobile" : 50,
+    "button_alignment" : "center"
+  }
+} ]

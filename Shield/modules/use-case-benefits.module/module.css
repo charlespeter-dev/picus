@@ -1,0 +1,21 @@
+.benefits-3-col { 
+  background-size: cover;
+  padding: 50px 0 30px;
+}
+.benefits-3-col div.content-wrapper { 
+  display: flex; 
+  align-items: flex-start; 
+}
+.benefits-3-col div.benefit-item {
+  flex: 0 1 auto;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+}
+.benefits-3-col div.benefit-item img {
+  margin: 0 auto;
+}
+.benefits-3-col div.benefit-item h3 {
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,162 @@
+{#  -----------------------------------------------------------------------
+    Developed By  : GiantFocal
+    Website       : https://www.giantfocal.com/
+    Support       : admin@giantfocal.com
+------------------------------------------------------------------------- #}
+
+{% if module.enable_section %}
+{# Start #}
+
+<div id="{{ module.settings.layout.custom_id }}" class="ark {{ name }} ark-team-01 {% if module.settings.background_setting.background_type == 'image' && module.settings.background_setting.parallax %}ark-parallax{% endif %} {% if module.settings.background_setting.background_type == 'image' and module.settings.background_setting.overlay %}ark-overlay{% endif %} {{ module.settings.layout.custom_css_classes }}" 
+	{% if module.settings.background_setting.background_type == 'solid' %}style="background-color:{{ module.settings.background_setting.solid_color.color }};"
+	{% elif module.settings.background_setting.background_type == 'gradient' %}
+	{% elif module.settings.background_setting.background_type == 'image' %}style="background-image:url('{{ module.settings.background_setting.background_image.src }}');"
+	{% else %}
+	{% endif %}>
+
+  {# ----- Parallax ----- #}
+  {% if module.settings.background_setting.background_type == 'image' and module.settings.background_setting.parallax %}
+  	<img class="ark-parallax-img" src="{{ module.settings.background_setting.background_image.src }}" alt="">
+  {% endif %}
+  {# ----- /Parallax ----- #}
+  
+  
+  {# ----- Section Intro ----- #}
+  {% if module.content.section_intro.enable_intro %}
+    <div class="ark-section-intro ark-element-animation">
+      {# ----- Page Center ----- #}
+      <div class="ark-page-center ark-text-align-center {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %}">
+        {% if module.content.section_intro.sub_heading_text %}<p class="ark-section-intro-subheading">{{ module.content.section_intro.sub_heading_text }}</p>{% endif %}
+        {% if module.content.section_intro.heading_text %}
+          {% if module.content.section_intro.heading_size == 'h1' %}
+            <h1 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h1>
+          {% elif module.content.section_intro.heading_size == 'h2' %}
+            <h2 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h2>
+          {% elif module.content.section_intro.heading_size == 'h3' %}
+            <h3 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h3>
+          {% else %}
+            <h4 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h4>
+          {% endif %}
+        {% endif %}
+        {% if module.content.section_intro.description_text %}
+          <div class="ark-section-intro-description">
+            {{ module.content.section_intro.description_text }}
+          </div>
+        {% endif %}
+      </div>
+      {# ----- /Page Center ----- #}
+    </div>
+  {% endif %}
+  {# ----- /Section Intro ----- #}
+
+  	
+	{# ----- Team ----- #}
+	<div class="{% if module.settings.layout.enable_page_center %}ark-page-center{% endif %}">
+		<div class="ark-team-01-flex {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %}">
+			<!-- Team Repeater -->
+				{% for item in module.content.team_repeater %}
+					<div class="ark-team-01-box ark-element-animation">
+						{% if item.portrait.src %}
+							<img src="{{ item.portrait.src }}" alt="{{ item.portrait.alt }}" width="{{ item.portrait.width }}" height="{{ item.portrait.height }}">
+						{% endif %}
+						<h4>{{ item.complete_name }}</h4>
+						<p class="ark-team-01-box-job">{{ item.job_title }}</p>
+            {% if item.enable_social_links %}
+              <div class="ark-team-01-box-social">
+                {% if item.facebook_url %}<a href="{{ item.facebook_url }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>{% endif %}
+                {% if item.instagram_url %}<a href="{{ item.instagram_url }}"><i class="fa fa-instagram" aria-hidden="true"></i></a>{% endif %}
+                {% if item.linkedin_url %}<a href="{{ item.linkedin_url }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>{% endif %}
+                {% if item.twitter_url %}<a href="{{ item.twitter_url }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>{% endif %}
+              </div>
+            {% endif %}
+					</div>
+				{% endfor %}
+			<!-- /team Repeater -->
+		</div>
+	</div>
+	{# ----- /Team ----- #}
+
+
+  {# ----- Section Footer ----- #}
+  {% if module.content.section_footer.enable_section_footer %}
+    <div class="ark-section-footer {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %} ark-element-animation">
+      <div class="ark-page-center">
+        {{ module.content.section_footer.section_footer_text }}
+      </div>
+    </div>
+  {% endif %}
+  {# ----- /Section Footer ----- #}  
+
+</div>
+
+
+{# =============== CSS Styling =============== #}
+{% require_css %}
+<style>
+  {# Section padding size #}
+  .{{ name }} {
+    padding: {{ (module.settings.layout.top_padding / 16) }}em 0 {{ (module.settings.layout.bottom_padding / 16) }}em;
+  }
+
+  {# Image overlay #}
+  {% if module.settings.background_setting.overlay and module.settings.background_setting.background_type == 'image' %}
+  .{{ name }}:before {
+    background: {{ module.settings.background_setting.overlay_color.color }};
+    opacity: {{ module.settings.background_setting.overlay_color.opacity/100 }};
+  }
+  {% endif %}
+
+  {# Typography - Font Color #}
+  {% if module.settings.typography.font_color == 'custom' %}
+  .{{ name }} *:not(a) {
+    color: {{ module.settings.typography.custom_font_color.color }};
+  }
+  {% endif %}
+  
+  {# Overwrite page center size #}
+  {% if module.settings.layout.overwrite_page_center %}
+    .{{ name }} .ark-page-center {
+      max-width: {{ module.settings.layout.page_center_size }}px;
+    }
+  {% endif %}
+
+  {# Gradient BG #}
+  {% if module.settings.background_setting.background_type == 'gradient' %}
+  	.{{ name }} {
+      background: {{ module.settings.background_setting.gradient_color_01.color }}; 
+      background: -moz-linear-gradient(-45deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%, {{ module.settings.background_setting.gradient_color_02.color }} 100%); 
+      background: -webkit-linear-gradient(-45deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%,{{ module.settings.background_setting.gradient_color_02.color }} 100%); 
+      background: linear-gradient(135deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%,{{ module.settings.background_setting.gradient_color_02.color }} 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ module.settings.background_setting.gradient_color_01.color }}', endColorstr='{{ module.settings.background_setting.gradient_color_02.color }}',GradientType=1 );
+    }
+  {% endif %}
+  
+  {# Team number of Column #}
+  {% if module.content.team_repeater_settings.team_repeater_of_column == 'three-column' %}
+    @media (min-width:768px) {
+      .{{ name }} .ark-team-01-box  {
+        -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+        margin: 0 0 20px;
+      }
+    }
+  {% endif %}
+  {% if module.content.team_repeater_settings.team_repeater_of_column == 'four-column' %}
+    @media (min-width:768px) {
+      .{{ name }} .ark-team-01-box {
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+        margin: 0 0 20px;
+      }
+    }
+  {% endif %}
+  
+  
+</style>
+{% end_require_css %}
+{# =============== /CSS Styling =============== #}
+
+
+
+{# End #}
+{% endif %}

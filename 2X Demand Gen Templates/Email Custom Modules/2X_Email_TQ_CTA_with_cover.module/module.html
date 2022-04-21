@@ -1,0 +1,208 @@
+<table align="center" border="0"
+       cellpadding="0" cellspacing="0"
+       width="100%">
+  <tbody>
+    <tr>
+      <td align="center"
+          valign="top">
+        <table
+               align="center"
+               border="0"
+               cellpadding="0"
+               cellspacing="0"
+               class="em_wrapper"
+               style="width:510px;"
+               width="510">
+          <tbody>
+            <tr>
+              <td align="center"
+                  valign="top">
+                <table
+                       align="left"
+                       border="0"
+                       cellpadding="0"
+                       cellspacing="0"
+                       class="em_wrapper"
+                       style="width:256px;"
+                       width="256">
+                  <tbody>
+                    <tr>
+                      <td height="13"
+                          style="height:13x; line-height:0px; font-size:0px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <!--desktop title -->
+                    <tr
+                        class="em_hide1">
+                      <td align="{{ module.title.title_alignment }}"
+                          class="em_grey em_{{ module.title.title_alignment }} "
+                          pardot-region="half_width_description"
+                          style="font-family: Arial, sans-serif; font-size:{{ module.title.title_font_size }}; padding:0px;
+                                 line-height:{{ module.title.title_line_height }}!important; color:{{ module.title.title_color.color }};font-weight:{{ module.title.title_font_weight }};">
+                        {{ module.title.title }}
+                      </td>
+                    </tr>  
+                    <!--desktop title end-->
+                    <!--mobile title -->
+                    <tr class="mobile_tr">
+                      <td align="center"
+                          class="em_grey"
+                          pardot-region="half_width_description"
+                          style="font-family: Arial, sans-serif; font-size:{{ module.title.title_font_size }}; padding:0px;
+                                 line-height:{{ module.title.title_line_height }}; color:{{ module.title.title_color.color }};font-weight:{{ module.title.title_font_weight }};">
+                          {{ module.title.title }}
+                      </td>
+                    </tr>
+                    <!--mobile title end-->
+                    <tr>
+                      <td height="20"
+                          style="height:20px; line-height:0px; font-size:0px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                     <tr
+                        style="">
+                       <!--mobile_center -->
+                      <td align="{{ module.subtitle.subtitle_alignment }}"
+                          class="em_{{ module.subtitle.subtitle_alignment }}"
+                          style="font-family: Arial, sans-serif; font-size:{{ module.subtitle.subtitle_font_size }}; line-height:{{ module.subtitle.subtitle_line_height }}; 
+                                 color:{{ module.subtitle.subtitle_color.color }};font-weight:{{ module.subtitle.subtitle_font_weight }};">
+                        {{ module.subtitle.subtitle_text }}
+                      </td>
+                    </tr>                    
+                    <tr>
+                      <td height="20"
+                          style="height:20px; line-height:0px; font-size:0px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top">
+                        <!--CTA-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;"
+                               width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="center" bgcolor="{{ module.cta.cta_background_color.color }}" 
+                                  style="border:0px solid {{ module.cta.cta_background_color.color }}; color:{{ module.cta.cta_color.color }}!important;" valign="top">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                       style="width:100%;" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" height="40" bgcolor="{{ module.cta.cta_background_color.color }}" 
+                                          style="font-family: Arial, sans-serif; 
+                                                 font-size:16px; background-color:{{ module.cta.cta_background_color.color }}; 
+                                                 color:{{ module.cta.cta_color.color }}!important; font-weight:bold;" 
+                                          valign="middle">
+                                        <a href="{{ module.cta.cta_url.href }}" 
+                                           style="text-decoration:none; color:{{ module.cta.cta_color.color }}; display:block; 
+                                                  line-height:40px; font-size:16px;  -webkit-text-size-adjust:none;" 
+                                           target="_blank">{{ module.cta.cta_text }}</a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!--CTA-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="00"
+                          style="height:00px; line-height:0px; font-size:0px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+<!--                     <tr>
+                      <td align="center"
+                          height="70"
+                          class=" hide_sm_br em_hide"
+                          style="font-family: Arial, sans-serif; font-size:16px; 
+                                 line-height:18px; color:#444444; font-weight:400; text-align: center;">
+                          {% inline_rich_text field="below_cta_text" value="{{ module.below_cta_text }}" %}
+                      </td>
+                    </tr>       -->
+                    
+                  </tbody>
+                </table>
+
+
+                <table
+                       align="right"
+                       border="0"
+                       cellpadding="0"
+                       cellspacing="0"
+                       class="em_wrapper"
+                       style="width:220px;"
+                       width="220">
+                  <tbody>
+                    <tr>
+                    <td height="10"></td>
+                    </tr>
+                    <tr
+                        style="">
+                      <td align="center"
+                          class="em_pad"
+                          pardot-region="half_width_image"
+                          valign="top">
+                        {% if module.thumbnail_image.src %}
+                          {% set sizeAttrs = 'width="{{ module.thumbnail_image.width }}" height="{{ module.thumbnail_image.height }}"' %}
+                          {% if module.thumbnail_image.size_type == 'auto' %}
+                            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                          {% elif module.thumbnail_image.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ module.thumbnail_image.max_width }}" 
+                                                height="{{ module.thumbnail_image.max_height }}" 
+                                                style="max-width: 100%; height: auto;"' %}
+                          {% endif %}
+                           {% set loadingAttr = module.thumbnail_image.loading != 'disabled' ? 'loading="{{ module.thumbnail_image.loading }}"' : '' %}
+                          <a href="{{ module.cta_url.href }}" target="_blank">
+                            <img class="custom_img" src="{{ module.thumbnail_image.src }}" 
+                                 alt="{{ module.thumbnail_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}></a>
+                        {% endif %}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="0"
+          style="height:0px; line-height:0px; font-size:0px;">
+        &nbsp;</td>
+    </tr>
+    
+    <tr class="mobile_tr">
+      <td align="{{ module.last_text.mobile.choice_field }}"
+          height="{{ module.last_text.height }}"
+          class=" hide_sm_br"
+          style="font-family: Arial, sans-serif; font-size:16px; line-height:18px; color:#444444; font-weight:400; text-align: {{ module.last_text.mobile.choice_field }};">
+         {{ module.last_text.mobile.text }}
+      </td>
+    </tr>
+    <tr class="em_hide1">
+      <td align="{{ module.last_text.desktop.alignment }}"
+          height="{{ module.last_text.height }}"
+          class=" hide_sm_br"
+          style="font-family: Arial, sans-serif; font-size:16px; line-height:18px; color:#444444; font-weight:400; text-align: {{ module.last_text.desktop.alignment }};">
+          {{ module.last_text.desktop.text }}
+      </td> 
+    </tr>
+    <!--tr>
+      <td height="20"
+          style="height:20px; line-height:0px; font-size:0px;">
+        &nbsp;</td>
+    </tr--> 
+    <tr class="em_hide_desktop">
+      <td height="8"
+          style="height:8px; line-height:0px; font-size:0px;">
+        &nbsp;
+      </td>
+    </tr>
+  </tbody>
+</table>

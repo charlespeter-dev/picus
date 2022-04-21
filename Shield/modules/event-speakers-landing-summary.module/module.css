@@ -1,0 +1,49 @@
+.landing-speakers .landing-event-details {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.landing-speakers .landing-event-details p {
+  font-size: 16px;
+}
+.landing-speakers .landing-event-details h3, .landing-speakers .landing-event-details a {
+  color: #fff;
+}
+.landing-speakers .landing-event-speaker div.speaker-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+}
+.landing-speakers .landing-event-speaker {
+  text-align: center;
+  color: #fff;
+  background: #07394F;
+  height: 575px;
+}
+.landing-speakers .landing-event-speaker div.speaker-info p.speaker-name {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 30px;
+}
+.landing-speakers .landing-event-speaker div.speaker-info p.speaker-title {
+  color: #fff;
+}
+.landing-speakers .landing-event-speaker div.speaker-info img.company-logo {
+
+}
+@media only screen and (max-width: 767px) {
+  .landing-speakers { 
+    padding: 20px;
+  }
+  .landing-speakers .landing-event-details {
+    height: 225px;
+    text-align: center;
+  }
+}

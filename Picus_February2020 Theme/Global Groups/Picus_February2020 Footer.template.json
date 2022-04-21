@@ -1,0 +1,641 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1581672474185215",
+        "label" : "Footer",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "custom-footer",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1581672429514125",
+            "label" : "Footer Top",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "custom-footer-top",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_1388499702410506",
+                "label" : "Footer Left",
+                "type" : "cell",
+                "params" : {
+                  "cell" : false,
+                  "cells" : [ ],
+                  "css_class" : "custom-footer-left",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "root" : false,
+                  "row" : false,
+                  "starting_html" : "",
+                  "value" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1581674447036279",
+                    "label" : "Footer Logo",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "cm-footer-logo",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "html" : "<a href=\"/\"><img src=\"//cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/picuslogowhite.svg\" alt=\"Picus Security\" title=\"Picus Security\"></a>",
+                      "overrideable" : false,
+                      "path" : "@hubspot/rich_text",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Rich Text",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1581674569732524",
+                    "label" : "Footer Menu",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "cm-footer-menu",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "id" : 25850230024,
+                      "overrideable" : false,
+                      "path" : "@hubspot/menu",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Menu",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1581674452653304",
+                    "label" : "Footer Links",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "cm-footer-links",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 6,
+                        "name" : "module_1581674460843315",
+                        "label" : "Column",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "cm-footer-col",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_1581674451213296",
+                            "label" : "Title",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<strong>Personas</strong>",
+                              "overrideable" : false,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "schema_version" : 2,
+                              "widget_name" : "Rich Text",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_1581674467595328",
+                            "label" : "Simple Menu",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "menu_tree" : [ {
+                                "isPublished" : true,
+                                "pageLinkId" : 25993513852,
+                                "pageLinkName" : "Security Manager",
+                                "isDeleted" : false,
+                                "categoryId" : 1,
+                                "subCategory" : "site_page",
+                                "contentType" : "site_page",
+                                "state" : "PUBLISHED_OR_SCHEDULED",
+                                "linkLabel" : "Security Manager",
+                                "type" : "PAGE_LINK",
+                                "children" : [ ]
+                              }, {
+                                "isPublished" : true,
+                                "pageLinkId" : 25993700603,
+                                "pageLinkName" : "Defensive Manager",
+                                "isDeleted" : false,
+                                "categoryId" : 1,
+                                "subCategory" : "site_page",
+                                "contentType" : "site_page",
+                                "state" : "PUBLISHED_OR_SCHEDULED",
+                                "linkLabel" : "Defensive Manager",
+                                "type" : "PAGE_LINK",
+                                "children" : [ ]
+                              }, {
+                                "isPublished" : true,
+                                "pageLinkId" : 25980860985,
+                                "pageLinkName" : "Offensive Manager",
+                                "isDeleted" : false,
+                                "categoryId" : 1,
+                                "subCategory" : "site_page",
+                                "contentType" : "site_page",
+                                "state" : "PUBLISHED_OR_SCHEDULED",
+                                "linkLabel" : "Offensive Manager",
+                                "type" : "PAGE_LINK",
+                                "children" : [ ]
+                              } ],
+                              "overrideable" : false,
+                              "path" : "@hubspot/simple_menu",
+                              "per_widget_wrapper_html" : "",
+                              "schema_version" : 2,
+                              "widget_name" : "Simple Menu",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "6" : {
+                        "x" : 6,
+                        "w" : 6,
+                        "name" : "module_1581674487045374",
+                        "label" : "Column",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "cm-footer-col",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_1581674487045375",
+                            "label" : "Title",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<strong>Use Cases</strong>",
+                              "overrideable" : false,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "schema_version" : 2,
+                              "widget_name" : "Rich Text",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_1581674487045376",
+                            "label" : "Simple Menu",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "menu_tree" : [ {
+                                "isPublished" : true,
+                                "pageLinkId" : 26046440426,
+                                "pageLinkName" : "Security Investments",
+                                "isDeleted" : false,
+                                "categoryId" : 1,
+                                "subCategory" : "site_page",
+                                "contentType" : "site_page",
+                                "state" : "PUBLISHED_OR_SCHEDULED",
+                                "linkLabel" : "Underutilized Security Investments",
+                                "type" : "PAGE_LINK",
+                                "children" : [ ]
+                              }, {
+                                "isPublished" : true,
+                                "pageLinkId" : 26046440252,
+                                "pageLinkName" : "Sense of Safety",
+                                "isDeleted" : false,
+                                "categoryId" : 1,
+                                "subCategory" : "site_page",
+                                "contentType" : "site_page",
+                                "state" : "PUBLISHED_OR_SCHEDULED",
+                                "linkLabel" : "A False Sense Of Safety",
+                                "type" : "PAGE_LINK",
+                                "children" : [ ]
+                              } ],
+                              "overrideable" : false,
+                              "path" : "@hubspot/simple_menu",
+                              "per_widget_wrapper_html" : "",
+                              "schema_version" : 2,
+                              "widget_name" : "Simple Menu",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_1581675030694744",
+                "label" : "Footer Right",
+                "type" : "cell",
+                "params" : {
+                  "cell" : false,
+                  "cells" : [ ],
+                  "css_class" : "custom-footer-right",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "root" : false,
+                  "row" : false,
+                  "starting_html" : "",
+                  "value" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1581675418861830",
+                    "label" : "Footer Social Shares - Picus_February2020",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "path" : "/Picus_February2020 Theme/Custom Modules/Footer Social Shares - Picus_February2020",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Footer Social Shares - Picus_February2020",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1581676330711859",
+                    "label" : "Footer Contact Details - Picus_February2020",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "path" : "/Picus_February2020 Theme/Custom Modules/Footer Contact Details - Picus_February2020",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Footer Contact Details - Picus_February2020",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1581672483971243",
+            "label" : "Footer Bottom",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "custom-footer-bottom",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1581672483971244",
+                "label" : "Page Center",
+                "type" : "cell",
+                "params" : {
+                  "cell" : false,
+                  "cells" : [ ],
+                  "css_class" : "page-center",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "root" : false,
+                  "row" : false,
+                  "starting_html" : "",
+                  "value" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 4,
+                    "name" : "module_1581676468959938",
+                    "label" : "Horizontal Spacer",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "hidden-phone",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "path" : "@hubspot/horizontal_spacer",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Horizontal Spacer",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "4" : {
+                    "x" : 4,
+                    "w" : 4,
+                    "name" : "module_1581672483971245",
+                    "label" : "Copyright",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "cm-copyright",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "html" : "<p>Copyright ©2020. All rights reserved.</p>",
+                      "overrideable" : false,
+                      "path" : "@hubspot/rich_text",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Rich Text",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "8" : {
+                    "x" : 8,
+                    "w" : 4,
+                    "name" : "module_1581676463271925",
+                    "label" : "Horizontal Spacer",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "hidden-phone",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "path" : "@hubspot/horizontal_spacer",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Horizontal Spacer",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

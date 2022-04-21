@@ -1,0 +1,14 @@
+[ {
+  "id" : "4ba9479c-339e-2576-28ac-404f5d700981",
+  "name" : "addthis_profile_id",
+  "display_width" : null,
+  "label" : "AddThis Profile ID",
+  "help_text" : "To find your User ID: Go to your dashboard https://www.addthis.com/dashboard Then click the \"Three Dots\" in the navigation beside \"Get The Code\"",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "ra-5ab8d220b48f9c2b"
+} ]

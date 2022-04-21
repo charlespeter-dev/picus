@@ -1,0 +1,40 @@
+<div class="how-picus-works-wrapper">
+  <div class="global-row platform-about" style="background-image: url('{{ module.background_image.src }}');">
+    <div class="page-center">
+      <div id="how-does-picus-work" class="platform-navigator"></div>
+      <div class="colsm12 col-centered">
+        {% if module.title %}
+          <div class="about-header">
+            <h2>{{ module.title }}</h2>
+          </div>
+        {% endif %}
+        <div class="about-grid">
+          <div class="row">
+            {% for item in module.items %}
+              <div class="colmd6 col12">
+                {% if item.image.src %}
+                  <img class="visible-phone" src="{{ item.image.src }}" alt="{{ item.image.alt }}" title="{{ item.image.title }}">
+                  <div class="hidden-phone how-piucus-works-item-image" style="background-image: url('{{ item.image.src }}');" title="{{ item.image.title }}"></div>
+                {% endif %}
+                {% if item.heading %}<h3>{{ item.heading }}</h3>{% endif %}
+                {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+              </div>
+              {% if loop.index == 2 %}
+                <div class="colsm7 col8 col-centered about-flow">
+                  <img src="//cdn2.hubspot.net/hubfs/7048931/arrows@3x.png" alt="Flow Arrows" title="Flow Arrows">
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% if module.bottom_image.src %}
+        <div class="row bottomimg">
+          <div class="col12 col-centered">
+            <img src="{{ module.bottom_image.src }}" alt="{{ module.bottom_image.alt }}" title="{{ module.bottom_image.alt }}">
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

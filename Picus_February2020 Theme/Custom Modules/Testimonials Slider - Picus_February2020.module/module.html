@@ -1,0 +1,17 @@
+<div class="testimonials-slider-wrapper">
+  <div class="global-row mainpage-testimonials">
+    <div class="page-center">
+      <div class="testimonials">
+        {% for item in module.items %}
+          <div>
+            <p class="content">{{ item.quote }}</p>
+            <div class="author">
+              <p class="name">{{ item.author_name }}</p>
+              <p class="title">{{ item.designation }}{% if item.designation and item.company %} at {% endif %}{{ item.company }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

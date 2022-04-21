@@ -1,0 +1,36 @@
+<div class="series-listing-archive">
+  {% for item in module.listing %}
+    <div class="listing-detail" style="background-image: url('{{ item.background_image.src }}');">
+      {% if item.links.webinar_link %}
+      <a href="{{ item.links.webinar_link_detail.url.href }}" class="main-link">
+      {% endif %}  
+      <h2>{{ item.details.title }}</h2>
+      {% if item.links.webinar_link %}
+      </a>
+      {% endif %} 
+      {% if item.details.logo.src %}
+        {% set sizeAttrs = 'width="{{ item.details.logo.width }}" height="{{ item.details.logo.height }}"' %}
+        {% if item.details.logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.details.logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.details.logo.max_width }}px; max-height: {{ item.details.logo.max_height }}px"' %}
+        {% endif %}
+         {% set loadingAttr = item.details.logo.loading != 'disabled' ? 'loading="{{ item.details.logo.loading }}"' : '' %}
+        <img src="{{ item.details.logo.src }}" alt="{{ item.details.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      <div class="links">
+        <p>
+          {% if item.links.webinar_link %}
+             <a href="{{ item.links.webinar_link_detail.url.href }}">View Webinar</a>
+        	{% endif %}
+          {% if item.links.download_link %}
+             <a href="{{ item.links.download_link_detail.url.href }}">Take Course</a>
+        	{% endif %}
+          {% if item.links.webinar_link %}
+             <a href="{{ item.links.blog_link_detail.url.href }}">Read Blog</a>
+        	{% endif %}
+        </p>
+      </div>
+    </div>   
+  {% endfor %}
+</div>

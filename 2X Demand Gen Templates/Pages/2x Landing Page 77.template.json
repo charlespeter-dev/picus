@@ -1,0 +1,808 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/CSS/bootstrap_v4.5.2.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/CSS/bootstrap_fontAwesome_4.7.0.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/CSS/override-hubspot.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/CSS/custom-olympia-77.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_163720543968921",
+        "label" : "Image",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "schema_version" : 2,
+          "path" : "@hubspot/linked_image",
+          "per_widget_wrapper_html" : "",
+          "img" : {
+            "size_type" : "auto",
+            "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/77/banner.png",
+            "alt" : "banner",
+            "loading" : "disabled",
+            "width" : 4200,
+            "height" : 1083,
+            "max_width" : 4200,
+            "max_height" : 1083
+          },
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "Image",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_163671123636150",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container px-0 bodyContent",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_163671127505863",
+            "label" : "Page Center, Content Wrapper",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_163671130261479",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "mainContent",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1636711603543199",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_163671133233094",
+                        "label" : "Module group",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "col-12",
+                          "per_widget_wrapper_html" : "",
+                          "css_style" : "",
+                          "wrapping_html" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "overrideable" : false
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_163720611939956",
+                            "label" : "Rich Text",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "schema_version" : 2,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "css_style" : "",
+                              "html" : "<p style=\"font-size: 22px; line-height: 1.25; text-align: center;\"><span style=\"font-family: Arial, Helvetica, sans-serif;\"><strong><span style=\"color: #dd3333;\">Factory-Built Fireplace Change Outs</span></strong></span></p>\n<p style=\"font-size: 35px; line-height: 1; text-align: center;\"><span style=\"font-family: Arial, Helvetica, sans-serif;\"><strong>Hands on Rip &amp; Replace Training</strong></span></p>",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "Rich Text",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_1637207279577367",
+                            "label" : "2x Button Flexible",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "text-center",
+                              "schema_version" : 2,
+                              "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Button Flexible",
+                              "per_widget_wrapper_html" : "",
+                              "css_style" : "margin-top:20px;margin-bottom:40px;",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "2x Button Flexible",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "text-center",
+                            "cssStyle" : "margin-top:20px;margin-bottom:40px;",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "col-12",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "mainContent",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "container px-0 bodyContent",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1637207454288382",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "custom-background",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "padding-top:40px;",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_16372114315881315",
+            "label" : "Page Center, Content Wrapper",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container px-0 bodyContent",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_16372114315881316",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "mainContent",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_16372114315881317",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_16372114315881318",
+                        "label" : "Module group",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "col-12 left-section text-center text-lg-left",
+                          "per_widget_wrapper_html" : "",
+                          "css_style" : "",
+                          "wrapping_html" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "overrideable" : false
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 3,
+                            "name" : "module_1637207465537384",
+                            "label" : "Rich Text",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "col-12 col-lg-4",
+                              "schema_version" : 2,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "css_style" : "",
+                              "html" : "<p style=\"font-size: 20px; line-height: 1.5;\"><span style=\"color: #dd3333; font-family: Arial, Helvetica, sans-serif;\"><strong>TIME: 8:30am – 5:00pm</strong></span></p>\n<p style=\"font-size: 20px; line-height: 1.5;\"><span style=\"color: #dd3333; font-family: Arial, Helvetica, sans-serif;\"><strong>COST: $499 per person</strong></span></p>\n<p style=\"font-size: 20px; line-height: 1.5;\"><span style=\"color: #dd3333; font-family: Arial, Helvetica, sans-serif;\"><strong>CEUs: 12 TBD</strong></span></p>\n<hr class=\"d-none d-lg-block\" style=\"border-bottom: 1px solid #7F7F7F; width: 108px; margin-left: 0;\">\n<p style=\"font-size: 18px; line-height: 1.8;\"><em><span style=\"color: #000000;\"><span style=\"font-family: Arial, Helvetica, sans-serif;\"><strong>Lunch provided by Copperfield</strong></span></span></em></p>\n<hr class=\"d-block d-lg-none\" style=\"border-bottom: 1px solid #7F7F7F; width: 108px; margin: auto; margin-bottom: 1em;\">",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "Rich Text",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "col-12 col-lg-4",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          },
+                          "3" : {
+                            "x" : 3,
+                            "w" : 5,
+                            "name" : "module_1637208198406733",
+                            "label" : "Rich Text",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "col-12 col-lg-1 d-none d-lg-block",
+                              "schema_version" : 2,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "css_style" : "",
+                              "html" : "<div style=\"height: 111px; width: 2px; background-color: #7f7f7f; margin-top: 50%;\">&nbsp;</div>",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "Rich Text",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "col-12 col-lg-1 d-none d-lg-block",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          },
+                          "8" : {
+                            "x" : 8,
+                            "w" : 4,
+                            "name" : "module_1637207469449386",
+                            "label" : "Rich Text",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "col-12 col-lg-7 custom-lister",
+                              "schema_version" : 2,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "css_style" : "",
+                              "html" : "<p style=\"font-size: 20px; line-height: 1.5;\"><strong><span style=\"color: #dd3333; font-family: Arial, Helvetica, sans-serif;\">Register for this two-day training to learn:</span></strong></p>\n<ul style=\"font-size: 18px;\">\n<li><span style=\"font-family: Arial, Helvetica, sans-serif;\">Inspection &amp; Sales</span></li>\n<li><span style=\"font-family: Arial, Helvetica, sans-serif;\">Firestops</span></li>\n<li><span style=\"font-family: Arial, Helvetica, sans-serif;\">Chase Access</span></li>\n<li><span style=\"font-family: Arial, Helvetica, sans-serif;\">Unit Change Outs (Wood &amp; Gas)</span></li>\n<li><span style=\"font-family: Arial, Helvetica, sans-serif;\">Elbow Supports</span></li>\n<li><span style=\"font-family: Arial, Helvetica, sans-serif;\">Facings Kits</span></li>\n</ul>",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "Rich Text",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "col-12 col-lg-7 custom-lister",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "col-12 left-section text-center text-lg-left",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "mainContent",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container px-0 bodyContent",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_16372110327421235",
+            "label" : "2x-put-background",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "schema_version" : 2,
+              "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x-put-background",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "widget_name" : "2x-put-background",
+              "css_id_str" : "",
+              "overrideable" : true
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "custom-background",
+        "cssStyle" : "padding-top:40px;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16372117928781506",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "desktop-footer-space",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_16372118384091525",
+            "label" : "Page Center, Content Wrapper",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container px-0 bodyContent",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_16372118384091526",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "mainContent",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_16372118384091527",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_16372118384091528",
+                        "label" : "Module group",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "col-12 left-section text-center",
+                          "per_widget_wrapper_html" : "",
+                          "css_style" : "",
+                          "wrapping_html" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "overrideable" : false
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_16372118649661562",
+                            "label" : "Rich Text",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "schema_version" : 2,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "css_style" : "margin:40px;margin-bottom:20px;",
+                              "html" : "<p style=\"text-align: center; font-size: 28px; line-height: 1;\"><span style=\"font-family: Arial, Helvetica, sans-serif;\"><strong>2022 Schedule</strong></span></p>",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "Rich Text",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "margin:40px;margin-bottom:20px;",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_16372131653881672",
+                            "label" : "Image",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "schema_version" : 2,
+                              "path" : "@hubspot/linked_image",
+                              "per_widget_wrapper_html" : "",
+                              "img" : {
+                                "size_type" : "auto",
+                                "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/77/schedule.jpg",
+                                "alt" : "schedule",
+                                "loading" : "disabled",
+                                "width" : 1156,
+                                "height" : 660,
+                                "max_width" : 1156,
+                                "max_height" : 660
+                              },
+                              "css_style" : "margin-bottom:40px;",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "Image",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "margin-bottom:40px;",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_16372132080491694",
+                            "label" : "Rich Text",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "schema_version" : 2,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "css_style" : "",
+                              "html" : "<p style=\"font-size: 16px; line-height: 1; text-align: center;\"><em><span style=\"font-family: Arial, Helvetica, sans-serif;\">*Pre-registration is required</span></em></p>\n<p style=\"font-size: 16px; line-height: 1; text-align: center;\"><em><span style=\"font-family: Arial, Helvetica, sans-serif;\">*On-site registration will not be accepted</span></em></p>\n<p style=\"font-size: 16px; line-height: 1; text-align: center;\"><em><span style=\"font-family: Arial, Helvetica, sans-serif;\">*Registration is NOT open to manufacturers or distributors</span></em></p>",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "Rich Text",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_16372133246341804",
+                            "label" : "2x Button Flexible",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "schema_version" : 2,
+                              "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Button Flexible",
+                              "per_widget_wrapper_html" : "",
+                              "css_style" : "margin-top:20px;margin-bottom:34px;",
+                              "wrapping_html" : "",
+                              "css_id" : "",
+                              "widget_name" : "2x Button Flexible",
+                              "css_id_str" : "",
+                              "overrideable" : true
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "margin-top:20px;margin-bottom:34px;",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "col-12 left-section text-center",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "mainContent",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container px-0 bodyContent",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "desktop-footer-space",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1636712236820498",
+        "label" : "2x Footer",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "w-100 text-center text-white",
+          "schema_version" : 2,
+          "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Footer",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "2x Footer",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "w-100 text-center text-white",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

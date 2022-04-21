@@ -1,0 +1,15 @@
+{% if module.display_banner %}
+<div class="use-case-cta" style="background: url('{{ module.image_field.src }}');">
+   <div class="content-wrapper">
+     <div class="message wow fadeIn" data-wow-delay="0.75">
+       {{ module.message }}
+     </div>
+     <div class="cta-one wow fadeIn">
+       {% cta guid="{{ module.cta_1 }}" %}
+     </div>
+     <div class="cta-two wow fadeIn">
+       {% cta guid="{{ module.cta_2 }}" %}
+     </div>
+   </div>
+</div>
+{% endif %}

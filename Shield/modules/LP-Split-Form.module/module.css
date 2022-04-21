@@ -1,0 +1,23 @@
+.lp-split-form {
+  padding: 20px 20px 30px 25px;
+  position: fixed;
+  width: 544px;
+  z-index: 10000;
+}
+.lp-split-form h3 {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media screen and (max-width: 600px) {
+  .lp-split-form {
+    position: relative;
+    width: auto;
+  }
+  .header__logo img {
+    margin-top: 0px;
+  }
+  .landing-form .dnd_area-column-5-padding {
+    padding-left: 40px !important;
+  }
+}

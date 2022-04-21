@@ -1,0 +1,11 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 31779987337,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Coded Files/Picus_February2020-main.js",
+    "name" : "Picus_February2020-main.js"
+  } ],
+  "is_available_for_new_content" : true
+}

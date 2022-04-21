@@ -1,0 +1,70 @@
+.row-lp {
+  position: relative;  
+  padding-bottom: 0;
+}
+
+.row-lp:before {
+  visibility: hidden;
+  z-index:-2;
+  position: absolute;
+  top: 20px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url('https://cdn2.hubspot.net/hubfs/7048931/background%20images/dotted-background.png');
+  background-repeat: no-repeat;
+  background-position: left -10%;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+.row-lp > .span12 {
+  text-align: center;
+}
+
+.blue-bg:before {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #71C5E8;
+}
+
+@media screen and (min-width: 768px) {
+  .row-lp {
+    margin-bottom: 2.2em;
+  }
+  
+  .row-lp > .span12 {
+    text-align: left;
+  }
+  
+  .blue-bg:before {
+    display: block;
+    background-color: #71C5E8;
+  
+  }
+  
+  .meeting-col {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .row-lp:before {
+    visibility: visible;
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .row-lp:before {
+    width: 950px;
+    height: 950px;
+  }
+}

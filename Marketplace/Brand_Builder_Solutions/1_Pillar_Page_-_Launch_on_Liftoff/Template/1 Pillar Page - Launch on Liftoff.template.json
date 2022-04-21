@@ -1,0 +1,372 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/Brand_Builder_Solutions/1_Pillar_Page_-_Launch_on_Liftoff/Coded File/LO_Liftoff_Freemium_Site_Theme.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/Brand_Builder_Solutions/1_Pillar_Page_-_Launch_on_Liftoff/Coded File/LO_Liftoff_Freemium_Site_Child_Base.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "home-page-1",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "css_class" : "",
+          "cells" : [ ],
+          "css_style" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "cell" : false,
+          "css_id" : "",
+          "css_id_str" : "",
+          "ending_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1511888708120149",
+        "label" : "CM-TB2 Liftoff Freemium - Top Banner 2",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "schema_version" : 1,
+          "path" : "/Marketplace/Brand_Builder_Solutions/1_Pillar_Page_-_Launch_on_Liftoff/Custom Module/CM-TB2 Liftoff Freemium - Top Banner 2",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "CM-TB2 Liftoff Freemium - Top Banner 2",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1511907363631178",
+        "label" : "Page Center",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "generic-padding page-center",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 3,
+            "name" : "module_1511893584074239",
+            "label" : "Sticky Sidebar",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "sticky-sidebar sidebar-menu mobile-bottom-padding",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1511893581024237",
+                "label" : "Menu Header",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "sidebar-menu-header white-text",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "html" : "<h4>Menu Header</h4>",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : true
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "sidebar-menu-header white-text",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1511893701152242",
+                "label" : "Simple Menu",
+                "type" : "simple_menu",
+                "params" : {
+                  "css_class" : "",
+                  "menu_tree" : [ {
+                    "children" : [ ],
+                    "isPublished" : false,
+                    "isDeleted" : false,
+                    "linkLabel" : "Menu Item 1",
+                    "linkUrl" : "http://launch.liftoffhq.com/"
+                  }, {
+                    "children" : [ ],
+                    "isPublished" : false,
+                    "isDeleted" : false,
+                    "linkLabel" : "Menu Item 2",
+                    "linkUrl" : "http://launch.liftoffhq.com/"
+                  }, {
+                    "children" : [ ],
+                    "isPublished" : false,
+                    "isDeleted" : false,
+                    "linkLabel" : "Menu Item 3",
+                    "linkUrl" : "http://launch.liftoffhq.com/"
+                  }, {
+                    "children" : [ ],
+                    "isPublished" : false,
+                    "isDeleted" : false,
+                    "linkLabel" : "Menu Item 4",
+                    "linkUrl" : "http://launch.liftoffhq.com/"
+                  } ],
+                  "per_widget_wrapper_html" : "",
+                  "orientation" : "horizontal",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : true
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "sticky-sidebar sidebar-menu mobile-bottom-padding",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "3" : {
+            "x" : 3,
+            "w" : 9,
+            "name" : "module_1511893147097227",
+            "label" : "Content Group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "left-padding",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1511893142834224",
+                "label" : "Text Section",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "html" : "<h2>Quick Time to Launch</h2>\n<p>With clean code, variety of layouts, and easy customization capabilities, our templates help you get your job done faster and easier. Our goal is to provide you with what you need on time and on budget. We respect your budget and timeline so having expectations set ahead of time is necessary.</p>\n<h2>Templates Plus a Team</h2>\n<p>When you buy a template pack, you get a team. We have worked with many clients supporting them with our services beyond the template. This could be creating custom pages, ongoing hired development, or taking the template and working with you to launching your redesigned site.</p>\n<h2>Use The Color Picker To Change This Template's Colors &amp; Styles</h2>\n<p>Our new color picker feature makes it easier than ever to change your new site's styles to match your brand's look and feel! The Briefcase Template Pack was built for ease of customization on the site page level, making it simple to update styles and colors. If you need help getting set up, we have a full service development team available to offer<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\">help and support</a><span>&nbsp;</span>as needed.</p>\n<h3>Want More In Depth Customization?</h3>\n<p>Briefcase makes it extremely easy to<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\" target=\"_blank\">change simple styles, colors, and content</a><span>&nbsp;</span>throughout your site, but we understand that some users may want more in depth customization. If you are looking for this type of more specific customization,<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\" target=\"_blank\">let us know</a>! If Briefcase doesn't seem to fit your exact needs, we have a plenty of<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\" target=\"_blank\">other templates available</a><span>&nbsp;</span>that may be a better fit! Still not finding what you're looking for?<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\" target=\"_blank\">We can build a template just for you!</a></p>",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : true
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1511907489443275",
+                "label" : "Text Section",
+                "type" : "rich_text",
+                "params" : {
+                  "css_class" : "",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "html" : "<h2>Quick Time to Launch</h2>\n<p>With clean code, variety of layouts, and easy customization capabilities, our templates help you get your job done faster and easier. Our goal is to provide you with what you need on time and on budget. We respect your budget and timeline so having expectations set ahead of time is necessary.</p>\n<h2>Templates Plus a Team</h2>\n<p>When you buy a template pack, you get a team. We have worked with many clients supporting them with our services beyond the template. This could be creating custom pages, ongoing hired development, or taking the template and working with you to launching your redesigned site.</p>\n<h2>Use The Color Picker To Change This Template's Colors &amp; Styles</h2>\n<p>Our new color picker feature makes it easier than ever to change your new site's styles to match your brand's look and feel! The Briefcase Template Pack was built for ease of customization on the site page level, making it simple to update styles and colors. If you need help getting set up, we have a full service development team available to offer<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\">help and support</a><span>&nbsp;</span>as needed.</p>\n<h3>Want More In Depth Customization?</h3>\n<p>Briefcase makes it extremely easy to<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\" target=\"_blank\">change simple styles, colors, and content</a><span>&nbsp;</span>throughout your site, but we understand that some users may want more in depth customization. If you are looking for this type of more specific customization,<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\" target=\"_blank\">let us know</a>! If Briefcase doesn't seem to fit your exact needs, we have a plenty of<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\" target=\"_blank\">other templates available</a><span>&nbsp;</span>that may be a better fit! Still not finding what you're looking for?<span>&nbsp;</span><a href=\"http://launch.liftoffhq.com/\" target=\"_blank\">We can build a template just for you!</a></p>",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : true
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "left-padding",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "generic-padding page-center",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_151206073015950",
+        "label" : "Liftoff Freemium Site - Logo Bar",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "path" : "/Marketplace/Brand_Builder_Solutions/1_Pillar_Page_-_Launch_on_Liftoff/Template/Liftoff Freemium Site - Logo Bar.template.json",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "css_class" : "",
+          "cells" : [ ],
+          "css_style" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "cell" : false,
+          "css_id" : "",
+          "css_id_str" : "",
+          "ending_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1511888530010148",
+        "label" : "Liftoff Freemium Site - Footer",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "path" : "/Marketplace/Brand_Builder_Solutions/1_Pillar_Page_-_Launch_on_Liftoff/Template/Liftoff Freemium Site - Footer.template.json",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

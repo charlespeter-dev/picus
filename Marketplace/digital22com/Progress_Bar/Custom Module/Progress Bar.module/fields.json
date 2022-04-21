@@ -1,0 +1,36 @@
+[ {
+  "id" : "351e9cfb-1a51-44c7-a118-4d27a4e2d6e1",
+  "name" : "bar_color",
+  "display_width" : null,
+  "label" : "Bar Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3ac1cd",
+    "opacity" : 100
+  }
+}, {
+  "id" : "c75e9cc5-4ba4-24da-6029-2dc71030f171",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ccc",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b19eb967-e0ca-3d4c-0063-0a02754f9ac4",
+  "name" : "bar_thickness",
+  "display_width" : null,
+  "label" : "Bar Thickness",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "step" : 1,
+  "type" : "number",
+  "default" : 8
+} ]

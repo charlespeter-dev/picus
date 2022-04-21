@@ -1,0 +1,178 @@
+[ {
+  "id" : "f82afd0f-4fec-fada-f697-6a8787764428",
+  "name" : "select_blog",
+  "display_width" : null,
+  "label" : "Select Blog",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "162d1e71-56d3-a01a-f36a-dfa79fa8448a",
+    "controlling_value_regex" : "true",
+    "operator" : "NOT_EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "blog",
+  "default" : 25046622556
+}, {
+  "id" : "162d1e71-56d3-a01a-f36a-dfa79fa8448a",
+  "name" : "choose_featured_posts",
+  "display_width" : null,
+  "label" : "Choose Featured Posts",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "49a4e499-8d58-18f9-5ef8-c83b432a3f01",
+  "name" : "featured_posts",
+  "display_width" : null,
+  "label" : "Featured Posts",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "visibility" : {
+    "controlling_field" : "162d1e71-56d3-a01a-f36a-dfa79fa8448a",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "242c12ab-104d-ac99-4291-b41a9cae576c",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Featured post title"
+  }, {
+    "id" : "1d0484f5-bcf1-ff13-3dbc-63c1abce4272",
+    "name" : "summary",
+    "display_width" : null,
+    "label" : "Summary",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Brief summary of the post (optional)"
+  }, {
+    "id" : "c336dbae-b515-76da-d236-426d24e9165a",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 33781757487
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "95cb6e69-32b1-d33b-5cc0-a29d8a177a39",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/detection-alaytics-data-img-2.jpg",
+      "alt" : "detection-alaytics-data-img-2",
+      "width" : 1108,
+      "height" : 677,
+      "max_width" : 1108,
+      "max_height" : 677
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Featured post title",
+    "summary" : "Brief summary of the post (optional)",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 33781757487
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/detection-alaytics-data-img-2.jpg",
+      "alt" : "detection-alaytics-data-img-2",
+      "width" : 1108,
+      "height" : 677,
+      "max_width" : 1108,
+      "max_height" : 677
+    }
+  }, {
+    "title" : "Featured post title",
+    "summary" : "Brief summary of the post (optional)",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 33781757487
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/detection-alaytics-data-img-2.jpg",
+      "alt" : "detection-alaytics-data-img-2",
+      "width" : 1108,
+      "height" : 677,
+      "max_width" : 1108,
+      "max_height" : 677
+    }
+  }, {
+    "title" : "Featured post title",
+    "summary" : "Brief summary of the post (optional)",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 33781757487
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/detection-alaytics-data-img-2.jpg",
+      "alt" : "detection-alaytics-data-img-2",
+      "width" : 1108,
+      "height" : 677,
+      "max_width" : 1108,
+      "max_height" : 677
+    }
+  } ]
+} ]

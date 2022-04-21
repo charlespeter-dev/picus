@@ -1,0 +1,119 @@
+[ {
+  "id" : "a9e08733-30d0-a88a-d437-39d40df9b573",
+  "name" : "background_video_url",
+  "display_width" : null,
+  "label" : "Background Video URL(link of uploaded video file in HubSpot)",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://cdn2.hubspot.net/hubfs/4011849/Straightgrowth/BackgroundMarketingVideo.mp4"
+}, {
+  "id" : "c9c0dfd4-c02c-644e-e79f-a280f3556b6a",
+  "name" : "banner_text",
+  "display_width" : null,
+  "label" : "Banner Text",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b43c576e-cd9f-b2bf-c761-78591ac4a3e2",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Title color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "94ed8520-dfdb-e3eb-c67a-bcbb7d52f9e4",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Background Banner Video"
+  }, {
+    "id" : "4d612b2d-e15e-3169-9a49-7684678a8724",
+    "name" : "title_for_mobile",
+    "display_width" : null,
+    "label" : "Title for Mobile",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Background"
+  }, {
+    "id" : "4372f8cb-ac49-fa7f-cc17-e1fb006738c5",
+    "name" : "subtitle_color",
+    "display_width" : null,
+    "label" : "Subtitle color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "5d2432f8-fcbf-a597-425e-2cf2c80d566d",
+    "name" : "subtitle",
+    "display_width" : null,
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  }, {
+    "id" : "71fa1ec0-271c-e7e1-4ac8-8e4dc236b8b9",
+    "name" : "subtitle_for_mobile",
+    "display_width" : null,
+    "label" : "Subtitle for mobile",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "title" : "Background Banner Video",
+    "title_for_mobile" : "Background",
+    "subtitle_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "subtitle_for_mobile" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+}, {
+  "id" : "aca7f32d-c611-fdaf-7319-e9d3c3a809da",
+  "name" : "add_call_to_action",
+  "display_width" : null,
+  "label" : "Add Call-to-action",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "0886144d-47a0-4bec-bfa8-f58da46cb39b"
+} ]

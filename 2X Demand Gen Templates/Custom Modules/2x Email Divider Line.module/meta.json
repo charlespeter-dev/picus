@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "EMAIL" ],
+  "module_id" : 70969573241,
+  "label" : "2x Email Divider Line",
+  "is_available_for_new_content" : true
+}

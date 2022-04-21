@@ -1,0 +1,21 @@
+.event-speakers {
+  margin-top: 40px;
+}
+.event-speakers .speaker-photo img {
+  max-width: 100%;
+  border-radius: 100%;
+}
+.event-speakers .speaker-details {
+  padding-left: 20px;
+}
+.event-speakers .speaker-details h3 {
+  margin-top: 50px;
+  font-weight: 600;
+  margin-bottom: -25px;
+}
+.event-speakers .speaker-details p {
+  color: #788085;
+}
+.event-speakers .speaker {
+  margin-bottom: 30px;
+}

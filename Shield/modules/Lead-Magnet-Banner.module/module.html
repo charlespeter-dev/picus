@@ -1,0 +1,28 @@
+{% if module.options.display_on_desktop %}
+  <div class="lm-banner fadeIn mhide mobile-hidden" style="background-color: {{ module.options.background_color.color }};" >
+    <div class="lm-banner-contain">
+      <div class="lm-banner-content">
+          <div class="lm-img">
+          {% if module.content.lm_image.src %}
+            {% set sizeAttrs = 'width="{{ module.content.lm_image.width }}" height="{{ module.content.lm_image.height }}"' %}
+            {% if module.content.lm_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.content.lm_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.content.lm_image.max_width }}px; max-height: {{ module.content.lm_image.max_height }}px"' %}
+            {% endif %}
+            {% set loadingAttr = module.content.lm_image.loading != 'disabled' ? 'loading="{{ module.content.lm_image.loading }}"' : '' %}
+            <img src="{{ module.content.lm_image.src }}" alt="{{ module.content.lm_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          </div>  
+          <div class="lm-text">
+            {{ module.content.message }}
+          </div>
+          <div class="lm-cta">
+            {% cta guid="{{ module.content.cta_field }}" %}
+          </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+  

@@ -1,0 +1,449 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home
+  screenshotPath: ../images/template-previews/home.jpg
+-->
+{% extends "./layouts/mega-menu-base.html" %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--home', label='Main section' %}
+    {% module "module_16122024789842" path="/Shield/modules/Custom Lead Flow", label="Custom Lead Flow" %}
+    {# Top banner section #}
+    {% dnd_section
+      background_image = {
+        'backgroundPosition': 'TOP_CENTER',
+        'backgroundSize': 'cover',
+        'imageUrl': get_asset_url('../images/background-pattern-4.svg')
+      },
+      padding={
+        'top': 200
+      },
+      vertical_alignment='MIDDLE'
+    %}
+      {% dnd_column
+        width=5
+      %}
+        {% dnd_row %}
+          {% dnd_module path='@hubspot/rich_text'%}
+            {% module_attribute 'html' %}
+              <img src="https://cdn2.hubspot.net/hubfs/7048931/raw_assets/public/Shield/images/icons/shield-lock-icon.svg" style="margin-left: -8px;">
+              <p class="sub-heading">The PICUS Security Validation Platform</p>
+              <h1>ENSURE COMPLETE CYBER-SECURITY ALIGNMENT</h1>
+              <p>The Picus Platform provides insight on cyber-attack readiness across the whole defensive estate, aligns stakeholders within cyber-security and corporate environments, and pre-empts adversarial attempts.</p>
+              <p>{{cta('e1ab7ffb-d4d2-470e-ae14-07f4b51d1cf0')}}&nbsp;&nbsp;&nbsp;{{cta('0e264360-bd52-44fb-896a-859b35e71c0a')}}</p>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column
+        width=7,
+        offset=5
+      %}
+        {% dnd_row %}
+        {% dnd_module "module_15948171941699" path="/Shield/modules/animated-image", label="animated-image", 
+        image_field={
+          'alt': 'Screenshots of the Picus platform',
+          'size_type': 'auto',
+          'src': get_asset_url('../images/shield-home-screenshots@2x.png')
+        },
+        horizontal_alignment=CENTER %}
+        {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End form section #}
+
+    {# Two column blog feed right section #}
+    {% dnd_section
+      vertical_alignment='MIDDLE',
+      background_image = {
+        'backgroundPosition': 'TOP_CENTER',
+        'backgroundSize': 'cover',
+        'imageUrl': get_asset_url('../images/background-pattern-7.svg')
+      },
+      padding={ 'bottom': 0 },
+      full_width=true
+    %}
+    {% dnd_column width=1 %}
+    {% end_dnd_column %}
+      {% dnd_module path='@hubspot/rich_text',
+        offset=1,
+        width=5
+      %}
+        {% module_attribute 'html' %}
+          <div class="wow fadeIn">
+            <h2>IMPLANT RED TEAM CONTEXT INTO DEFENCE OPERATIONS</h2>
+            <p>With a fully automated and transparent modus operandi, the  Picus Platform shows pre-attack and post-compromise readiness levels against thousands of adversarial scenarios, along with the quickest mitigation options defense teams can apply within minutes.</p>
+            <p>{{cta('e89c5222-6b6d-45df-b21d-7cf12a728e9d')}}</p>
+          </div>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+      {% dnd_module "module_159515506310314" path="/Shield/modules/featured-resources", label="featured-resources", offset=6, width=6 %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
+    {# End two column image right section #}
+
+    {# Two Column Video Section #}
+    {% dnd_section
+      background_image = {
+        'backgroundPosition': 'TOP_CENTER',
+        'backgroundSize': 'cover',
+        'imageUrl': get_asset_url('../images/background-pattern-10.svg')
+      },
+      padding={
+        'bottom': 120
+      }
+      vertical_alignment='MIDDLE'
+    %}
+    {% dnd_column offset=0,
+      width=6,
+      padding={
+        'right': 30
+      } %}
+    {% dnd_row %}
+      {% dnd_module "module_159489206941612" path="/Shield/modules/animated-flexible-content", label="animated-flexible-content",
+      content='
+      <img src="https://cdn2.hubspot.net/hubfs/7048931/raw_assets/public/Shield/images/icons/shield-thumbprint.svg" style="margin-left: -8px;">
+      <h3 class="underline" style="color:#fff;">The Most Recent Adversarial <br>Context at your Fingertips</h3>
+      <p style="color:#fff;">Thanks to the Global Watch, Commonality Analysis, and Imminent Threat Research processes of Picus Threat Library, Picus customers find the samples of most recent adversarial techniques conveniently at their fingertips. Cybersecurity stakeholders such as SOC analysts, threat hunters, incident responders, security operations teams, the red team, and pen-test members can utilize the granular content of Echo for different scenarios they carry out or test.</p>
+      '
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}  
+    {% dnd_column offset=6,
+      width=6,
+      padding={
+        'left': 30,
+        'top': 50
+      } %}
+    {% dnd_row %}
+      {% dnd_module "module_159489206941612" path="/Shield/modules/animated-flexible-content", label="animated-flexible-content"
+      content='<div style="">
+        <div class="vidyard-player-container" uuid="VsbYHoPtfM2H1j1kUuDmf3" style="margin: auto; width: 100%; height: auto; overflow: hidden; display: block; max-width: 1920px; max-height: 1080px;"><div class="vidyard-div-VsbYHoPtfM2H1j1kUuDmf3" role="application" aria-label="media player" style="position: relative; padding-bottom: 56.25%; height: 0px; overflow: hidden; max-width: 100%;" max-width:="" 1920px;max-height:="" 1080px;=""><iframe allow="autoplay; fullscreen; picture-in-picture; camera; microphone; display-capture" allowfullscreen="" allowtransparency="true" aria-label="Video" class="vidyard-iframe-VsbYHoPtfM2H1j1kUuDmf3" frameborder="0" height="100%" width="100%" scrolling="no" src="https://play.vidyard.com/VsbYHoPtfM2H1j1kUuDmf3?disable_popouts=1&amp;v=4.2.20&amp;viral_sharing=0&amp;embed_button=0&amp;hide_playlist=1&amp;color=FFFFFF&amp;playlist_color=FFFFFF&amp;play_button_color=2A2A2A&amp;gdpr_enabled=1&amp;type=inline&amp;new_player_ui=1&amp;autoplay=0&amp;loop=0&amp;muted=0&amp;hidden_controls=0" title="Video" style="opacity: 1; background-color: transparent; position: absolute; top: 0px; left: 0px;"></iframe></div></div><img class="vidyard-player-embed" src="https://play.vidyard.com/VsbYHoPtfM2H1j1kUuDmf3.jpg" width="1920" height="1080" style="display: none; max-width: 100%; margin: 0px auto; width: 1920px; height: auto;" alt="Picus-RSA-MainComp-Rev-Audio-17032020-1" data-uuid="VsbYHoPtfM2H1j1kUuDmf3" data-v="4" data-width="1920" data-height="1080" data-viral_sharing="0" data-embed_button="0" data-hide_playlist="1" data-color="FFFFFF" data-playlist_color="FFFFFF" data-play_button_color="2A2A2A" data-gdpr_enabled="1" data-type="inline" data-new_player_ui="1" data-autoplay="0" data-loop="0" data-muted="0" data-hidden_controls="0" data-rendered="true"></div>' %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}   
+    {% end_dnd_section %}
+    {# End two column image left section #}
+
+    {# Resources Section #}
+    {% dnd_section
+      background_image = {
+        'backgroundPosition': 'TOP_RIGHT',
+        'backgroundSize': 'cover',
+        'imageUrl': get_asset_url('../images/background-pattern-11.svg')
+      },
+      vertical_alignment='MIDDLE'
+    %}
+    {% dnd_column %}
+    {% dnd_row %}
+    {% dnd_column width=3 %}
+    {% end_dnd_column %}
+      {% dnd_column 
+        offset=3,
+        width=6 %}
+        {% dnd_row
+          padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 40,
+            'left': 0
+          }
+        %}
+          {% dnd_module "module_15949044781941" path="/Shield/modules/animated-flexible-content", label="animated-flexible-content"
+          content='<img src="https://www.picussecurity.com/hubfs/Shield/Icons/shield-folder-icon.svg" alt="shield-folder-icon" width="58" style="width: 58px; display: block; margin-left: auto; margin-right: auto;">
+          <h2 style="text-align: center; text-transform: uppercase;">Resources</h2>
+          <p style="text-align: center;">Picus Labs is the research arm of Picus Security, a pioneering Breach and Attack Simulation provider. Our research is carried out using our own internal tools, as well as open source and commercial tools.</p>'
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column offset=9, width=3 %}
+      {% end_dnd_column %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module "module_15949091746586" path="/Shield/modules/product-card", label="product-card" width=6 %}
+        {% end_dnd_module %}
+        {% dnd_module "module_15949091746586" path="/Shield/modules/product-card", label="product-card" offset=6, width=6,
+        icon={
+          'src': get_asset_url('../images/icons/shield-target-icon.svg')
+        },
+        title='Picus Mitigation Library',
+        summary='<p>Picus Mitigation Library is an exemplary offering by Picus Labs, equipping security teams with the most precise mitigation insight based on an extensive Technology Alliance Network.</p>'
+        %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module "module_15949091746586" path="/Shield/modules/product-card", label="product-card" width=6,
+        icon={
+          'src': get_asset_url('../images/icons/shield-cycle-icon.svg')
+        },
+        title='Picus Threat Emulation',
+        summary='<p>Picus Threat Emulation has an automated design for  transparent threat emulation on cloud and on-premise, across network and endpoint controls, with a sleek UI and reporting.</p>'
+        %}
+        {% end_dnd_module %}
+        {% dnd_module "module_15949091746586" path="/Shield/modules/product-card", label="product-card" offset=6, width=6,
+        icon={
+          'src': get_asset_url('../images/icons/shield-graph-icon.svg')
+        },
+        title='Picus Detection Analytics',
+        summary='<p>Picus Detection Analytics bridges threat emulation with logging, detection, and alerting capabilities using advanced queries and deliver false-positive free insights.</p>'
+        %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% end_dnd_column %}
+      
+
+    {% end_dnd_section %}
+
+    {# Stats Section #}
+    {% dnd_section 
+       background_image = {
+      'backgroundPosition': 'MIDDLE_CENTER',
+      'backgroundSize': 'cover',
+      'imageUrl': get_asset_url('../images/background-pattern-12.svg')
+    },
+    padding={
+      top: '100',
+      bottom: '100'
+    }
+    vertical_alignment='MIDDLE'%}
+    {% dnd_column %}
+    {% dnd_row %}
+    {% dnd_column width=3 %}
+    {% end_dnd_column %}
+      {% dnd_column 
+        offset=3,
+        width=6 %}
+        {% dnd_row
+          padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 40,
+            'left': 0
+          }
+        %}
+          {% dnd_module "module_15949044781941" path="/Shield/modules/animated-flexible-content", label="animated-flexible-content"
+          content='<img src="https://cdn2.hubspot.net/hubfs/7048931/raw_assets/public/Shield/images/icons/shield-picus-icon-blue.svg" alt="shield-folder-icon" width="29" style="width: 29px; display: block; margin-left: auto; margin-right: auto;">
+          <p class="sub-heading" style="text-align: center; text-transform: uppercase; color: #1592E6;">Why Choose Picus</p>
+          <h3 style="text-align: center; color: #fff;">Build Organizational Capabilities for Optimizing Security Investments and  Achieving Cyber-attack Readiness</h3>'
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column offset=9, width=3 %}
+      {% end_dnd_column %}
+      {% end_dnd_row %}
+
+      {% dnd_row %}
+      {% dnd_column width=4 %}
+      {% dnd_row %}
+        {% dnd_module "module_159491602041117" path="/Shield/modules/simple-stat", label="simple-stat" %}
+        {% end_dnd_module %} 
+      {% end_dnd_row %}  
+      {% end_dnd_column %}
+      {% dnd_column offset=4, width=4 %}
+      {% dnd_row %}
+        {% dnd_module "module_159491602041117" path="/Shield/modules/simple-stat", label="simple-stat"
+        statistic='99%',
+        description='Picus increases cyber-security effectiveness' %}
+        {% end_dnd_module %} 
+      {% end_dnd_row %} 
+      {% end_dnd_column %}
+      {% dnd_column offset=8, width=4 %}
+      {% dnd_row %}
+        {% dnd_module "module_159491602041117" path="/Shield/modules/simple-stat", label="simple-stat"
+        statistic='15+',
+        description='Mitigation focused technology alliances'
+         %}
+        {% end_dnd_module %} 
+      {% end_dnd_row %} 
+      {% end_dnd_column %}
+      {% end_dnd_row %}
+      {% dnd_row padding={
+        'top': 80
+      } %}
+      {% dnd_module "cta" path="@hubspot/cta" guid="efc1b02f-cc99-44e8-843e-0e760c7aa3d5", horizontal_alignment=CENTER %}
+      {% end_dnd_module %}
+      {% end_dnd_row %}
+      
+
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+  {# Testimonial Module #}
+  {% dnd_section 
+    background_image = {
+            'backgroundPosition': 'TOP_CENTER',
+            'backgroundSize': 'cover',
+            'imageUrl': get_asset_url('../images/background-pattern-13.svg')
+          }
+    %}
+    {% dnd_column width=12 %}
+    {% dnd_row %}
+      {% dnd_module "module_159491897585018" path="/Shield/modules/animated-flexible-content", label="animated-flexible-content"
+      content='<h3 class="underline">The Most Recent Adversarial Context at your Fingertips</h3>' %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% dnd_row %}
+      {% dnd_module "module_159500470863511" path="/Shield/modules/testimonials", label="testimonials" %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}
+    {% end_dnd_section %}
+  
+  {# Logos Module #} 
+  {% dnd_section 
+    background_image = {
+            'backgroundPosition': 'TOP_CENTER',
+            'backgroundSize': 'cover',
+            'imageUrl': get_asset_url('../images/background-pattern-15.svg')
+          }
+    %}
+    {% dnd_column %}
+    {% dnd_row padding={ 'bottom': 30 } %}
+      {% dnd_module "module_159491897585018" path="/Shield/modules/animated-flexible-content", label="animated-flexible-content" horizontal_alignment=CENTER,
+      content='<h3 class="underline center" style="color: #fff;">Trusted by leading Global Companies</h3>' %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% dnd_row vertical_alignment=MIDDLE %}
+    {% dnd_module "module_15948171941699" path="/Shield/modules/animated-image", label="animated-image", width=2,
+    image_field={
+      'alt': 'Screenshots of the Picus platform',
+      'size_type': 'auto',
+      'src': get_asset_url('../images/logos/akbank.svg')
+    },
+    horizontal_alignment=CENTER,
+    animation_effect=fadeIn %}
+    {% end_dnd_module %}
+    {% dnd_module "module_15948171941699" path="/Shield/modules/animated-image", label="animated-image", width=2, offset=2,
+    image_field={
+      'alt': 'Screenshots of the Picus platform',
+      'size_type': 'auto',
+      'src': get_asset_url('../images/logos/qnb.svg')
+    },
+    horizontal_alignment=CENTER,
+    animation_effect=fadeIn,
+    padding={
+      'top': 15
+    } %}
+    {% end_dnd_module %}
+    {% dnd_module "module_15948171941699" path="/Shield/modules/animated-image", label="animated-image", width=2, offset=4,
+    image_field={
+      'alt': 'Screenshots of the Picus platform',
+      'size_type': 'auto',
+      'src': get_asset_url('../images/logos/exclusive-networks.svg')
+    },
+    horizontal_alignment=CENTER,
+    animation_effect=fadeIn %}
+    {% end_dnd_module %}
+    {% dnd_module "module_15948171941699" path="/Shield/modules/animated-image", label="animated-image", width=2, offset=6,
+    image_field={
+      'alt': 'Screenshots of the Picus platform',
+      'size_type': 'auto',
+      'src': get_asset_url('../images/logos/garanti.svg')
+    },
+    horizontal_alignment=CENTER,
+    animation_effect=fadeIn %}
+    {% end_dnd_module %}
+    {% dnd_module "module_15948171941699" path="/Shield/modules/animated-image", label="animated-image", width=2, offset=8,
+    image_field={
+      'alt': 'Screenshots of the Picus platform',
+      'size_type': 'auto',
+      'src': get_asset_url('../images/logos/ing-bank.svg')
+    },
+    horizontal_alignment=CENTER,
+    animation_effect=fadeIn %}
+    {% end_dnd_module %}
+    {% dnd_module "module_15948171941699" path="/Shield/modules/animated-image", label="animated-image", width=2, offset=10,
+    image_field={
+      'alt': 'Screenshots of the Picus platform',
+      'size_type': 'auto',
+      'src': get_asset_url('../images/logos/turkcell.svg')
+    },
+    horizontal_alignment=CENTER,
+    animation_effect=fadeIn %}
+    {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}
+    {% end_dnd_section %} 
+
+  {# Resources Module #}
+  {% dnd_section 
+    background_image = {
+            'backgroundPosition': 'TOP_RIGHT',
+            'backgroundSize': 'auto',
+            'imageUrl': get_asset_url('../images/background-pattern-17.svg')
+          },
+          padding={
+            'bottom': 0
+          }
+    %}
+
+    {% dnd_column %}
+    {% dnd_row %}
+      {% dnd_module "module_159491897585018" path="/Shield/modules/animated-flexible-content", label="animated-flexible-content"
+      content='<h2 class="underline" style="text-transform: uppercase;">Latest resources &amp; articles</h2>
+      <p style="max-width: 520px;">Picus Labs is the research arm of Picus Security, a pioneering Breach and Attack Simulation provider. Our research is carried out using our own internal tools, as well as open source and commercial tools.</p>' %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% dnd_row padding={
+      'bottom': 0
+    } %}
+      {% dnd_module "module_15949937968941" path="/Shield/modules/latest-resources", label="latest-resources" %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}
+
+    {% end_dnd_section %}
+
+{# CTA Module #}
+  {% dnd_section 
+    background_image = {
+            'backgroundPosition': 'TOP_CENTER',
+            'backgroundSize': 'cover',
+            'imageUrl': get_asset_url('../images/picus-cta-banner-blue.png')
+          }
+          ,vertical_alignment='MIDDLE',
+          padding={
+            'bottom': 40
+          }
+    %}
+    {% dnd_column %}
+      {% dnd_row %}
+      {% dnd_module "module_159491897585018" path="/Shield/modules/animated-flexible-content", label="animated-flexible-content", width=7,
+      content='<h4 style="text-transform: uppercase;">Ready to get started?</h2>
+      <h2 style="text-transform: uppercase; color: #fff; margin-top: -30px;">Get in touch or <br>book a demo today</h2>' %}
+      {% end_dnd_module %}
+        {% dnd_module "cta" path="@hubspot/cta", guid='e1ab7ffb-d4d2-470e-ae14-07f4b51d1cf0', offset=7, width=3, horizontal_alignment=RIGHT %}
+        {% end_dnd_module %}
+        {% dnd_module "cta" path="@hubspot/cta", guid='0e264360-bd52-44fb-896a-859b35e71c0a', offset=10, width=2 %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% end_dnd_column %}  
+  {% end_dnd_section %}
+
+  {% end_dnd_area %}
+
+</main>
+
+<!-- Gartner Script -->
+<script type="text/javascript"
+		src="https://www.gartner.com/reviews/public/Widget/js/widget.js">
+	</script>
+	<script type="text/javascript">
+        GartnerPI_Widget({
+			size: "large",
+			theme: "light",
+			sourcingLink: "",
+			widget_id: "OTU1NDcxMTQtYmIwOC00MWY4LTlhNjctYjFiNWQyZTZhZTJj",
+			version: "2",
+    		  container: document.getElementById("gartner")
+		})
+	</script>
+
+{% endblock body %}
+

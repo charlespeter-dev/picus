@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "adn",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 46819089270,
+  "label" : "Announcement Bar",
+  "is_available_for_new_content" : true
+}

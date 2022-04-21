@@ -1,0 +1,20 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+.container-flud,
+.header-container,
+.footer-container-wrapper
+{
+ padding:0px; 
+}
+.row-fluid [class*="span"]:first-child {
+    margin-left: auto;
+  margin-right:auto;
+}

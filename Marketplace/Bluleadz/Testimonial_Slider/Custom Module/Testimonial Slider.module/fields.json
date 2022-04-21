@@ -1,0 +1,411 @@
+[ {
+  "id" : "7bb0d942-4122-bafa-f5dd-8d2ce3352f72",
+  "name" : "styles",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "875ae88d-b76b-1479-94c4-2520f2e3dee7",
+    "name" : "section",
+    "display_width" : null,
+    "label" : "Section",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "20c5b127-dc46-3ab2-d1a2-cfab4f532df2",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "44cc5567-bf06-6a44-df56-b0471003a733",
+      "name" : "slider_max_width",
+      "display_width" : null,
+      "label" : "Slider Max Width",
+      "help_text" : "Leave blank for the slider to extend to the full width of the page.",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "min" : 900,
+      "max" : 2400,
+      "step" : 1,
+      "type" : "number"
+    }, {
+      "id" : "a9d01ff6-e9e9-49ce-77be-32b7e3dd19f3",
+      "name" : "arrow_color",
+      "display_width" : null,
+      "label" : "Arrow Color",
+      "help_text" : "Hex Value must equal 6 digits.",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#000",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "background_color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      },
+      "arrow_color" : {
+        "color" : "#000",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "bf17ff4f-2bc6-6fa9-5c3c-5193209d6b48",
+    "name" : "slides",
+    "display_width" : null,
+    "label" : "Slides",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "f17b8f6f-34c6-e459-f35d-817ec1ed331c",
+      "name" : "slide_width_px",
+      "display_width" : null,
+      "label" : "Slide Width (px)",
+      "help_text" : "*If set to an amount over 100% width of the container, it will be 100% width.",
+      "required" : false,
+      "locked" : false,
+      "display" : "slider",
+      "min" : 350,
+      "max" : 1200,
+      "step" : 1,
+      "type" : "number",
+      "default" : 400
+    }, {
+      "id" : "062071dc-15dc-5b63-7834-8a4bc3f3840b",
+      "name" : "image_size",
+      "display_width" : null,
+      "label" : "Image Size",
+      "required" : true,
+      "locked" : false,
+      "display" : "slider",
+      "min" : 50,
+      "max" : 200,
+      "step" : 1,
+      "type" : "number",
+      "default" : 100
+    }, {
+      "id" : "eae4898c-4d1e-b8a4-0b36-bb8f09936a3a",
+      "name" : "space_between_slides",
+      "display_width" : null,
+      "label" : "Space Between Slides",
+      "required" : true,
+      "locked" : false,
+      "display" : "text",
+      "min" : 1,
+      "max" : 10,
+      "step" : 1,
+      "type" : "number",
+      "default" : 1
+    }, {
+      "id" : "cb709452-887d-669a-3e90-799f17b276ab",
+      "name" : "all_slides_equal_height",
+      "display_width" : null,
+      "label" : "All Slides Equal Height",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "966cad22-b4b8-846a-ada3-0308febc1a9c",
+      "name" : "center_slide_content",
+      "display_width" : null,
+      "label" : "Center Slide Content",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "cb709452-887d-669a-3e90-799f17b276ab",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "slide_width_px" : 400,
+      "image_size" : 100,
+      "space_between_slides" : 1,
+      "all_slides_equal_height" : false,
+      "center_slide_content" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "section" : {
+      "background_color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      },
+      "arrow_color" : {
+        "color" : "#000",
+        "opacity" : 100
+      }
+    },
+    "slides" : {
+      "slide_width_px" : 400,
+      "image_size" : 100,
+      "space_between_slides" : 1,
+      "all_slides_equal_height" : false,
+      "center_slide_content" : false
+    }
+  }
+}, {
+  "id" : "2d127e08-2094-e4fb-e25a-0191007f9e93",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "36195a49-cb69-5bbf-250d-2c44279b15bc",
+    "name" : "intro_title",
+    "display_width" : null,
+    "label" : "Intro Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "What Our Clients Say"
+  }, {
+    "id" : "15d299fa-a633-143f-fdf7-c177d4cac471",
+    "name" : "intro_text",
+    "display_width" : null,
+    "label" : "Intro Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "fe1ca9e3-09ff-c8c0-6ac8-d9940658bd74",
+    "name" : "slides",
+    "display_width" : null,
+    "label" : "Slides",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 2,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "f2dd6094-b71a-859f-54f3-92bb8b8d96c5",
+      "name" : "slide_name",
+      "display_width" : null,
+      "label" : "Slide Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "John Smith"
+    }, {
+      "id" : "e1212e38-7a5e-a5ce-3b36-a8cbbcf775db",
+      "name" : "slide_subtitle",
+      "display_width" : null,
+      "label" : "Slide Subtitle",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Owner / CEO"
+    }, {
+      "id" : "512c6a12-bf9a-6e8b-45f5-bb9fd2d88350",
+      "name" : "slide_content",
+      "display_width" : null,
+      "label" : "Slide Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+    }, {
+      "id" : "a16d2f8e-35cc-ebb2-97bb-c8f39e2035cb",
+      "name" : "image_field",
+      "display_width" : null,
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    }, {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    }, {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    }, {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    }, {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "intro_title" : "What Our Clients Say",
+    "slides" : [ {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    }, {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    }, {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    }, {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    }, {
+      "slide_name" : "John Smith",
+      "slide_subtitle" : "Owner / CEO",
+      "slide_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "image_field" : {
+        "size_type" : "exact",
+        "src" : "https://www.bluleadz.com/hubfs/HS_Marketplace_Submissions/Mauris_Template_Pack/homepage-headshot-filler.jpeg",
+        "alt" : "homepage-headshot-filler",
+        "width" : 229,
+        "height" : 229,
+        "max_width" : 229,
+        "max_height" : 229
+      }
+    } ]
+  }
+} ]

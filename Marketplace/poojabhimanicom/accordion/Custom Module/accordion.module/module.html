@@ -1,0 +1,28 @@
+{% set accordionId =  '{{ name }}'  %}
+<div class="st-accordion "  id="{{ accordionId }}" >    {# << Should only one accordion be open at a time? #}
+  <ul>
+  {% for item in module.accordion %} {# << Loop through the accordians group #}
+    
+    <li class="st-accordion-wrapper">  
+       <a href="#">
+            {{  item.accordion_title }}
+         <span class="st-arrow">Open or Close</span>
+        </a>
+         <div class="st-content">
+           {{ item.content  }}
+            </div>
+    </li>   
+    {% endfor %}
+  </ul>
+ 
+</div>
+
+{% require_js %}
+<script>
+  jQuery('#{{ accordionId }}').accordion({
+				oneOpenedItem	: true,
+        open			: 0,
+        
+			});
+  </script>
+{% end_require_js %}

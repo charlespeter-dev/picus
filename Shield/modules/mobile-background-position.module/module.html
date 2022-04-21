@@ -1,0 +1,10 @@
+{% require_css %}
+<style>
+  @media (max-width: 767px) {
+    div.hs-site-page div.dnd_area-row-0-background-image:first-of-type {
+      background-size: {{ module.background_size }} !important;
+      background-position: {{ module.horizontal_position }}% {{ module.vertical_position }}% !important;
+    }
+  }
+</style>
+{% end_require_css %}

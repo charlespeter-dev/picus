@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "inline_help_text" : "Need help? Check our Knowledge Base and Support center at <a href=\"https://support.inboundlabs.co/\">https://support.inboundlabs.co/</a>",
+  "icon" : "https://cdn2.hubspot.net/hubfs/346178/logo-9f4f12d2dd%5B1%5D.svg",
+  "host_template_types" : [ "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 61976672046,
+  "is_available_for_new_content" : true
+}

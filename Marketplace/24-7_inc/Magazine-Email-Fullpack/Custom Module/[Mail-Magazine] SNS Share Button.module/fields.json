@@ -1,0 +1,53 @@
+[ {
+  "id" : "7104aeb2-4daf-40e5-973b-4e505e46d7ef",
+  "name" : "instagram_link",
+  "display_width" : null,
+  "label" : "instagram_link",
+  "help_text" : "This file is the area for entering the text of the instagram link.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.instagram.com/"
+}, {
+  "id" : "c1ebb104-a17b-7102-6980-a29454a9633d",
+  "name" : "facebook_link",
+  "display_width" : null,
+  "label" : "facebook_link",
+  "help_text" : "This file is the area for entering the text of the facebook link.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.facebook.com/"
+}, {
+  "id" : "afd6005f-141b-ef58-6da0-b912826a5a35",
+  "name" : "twitter_link",
+  "display_width" : null,
+  "label" : "twitter_link",
+  "help_text" : "This file is the area for entering the text of the twitter link.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://twitter.com/"
+}, {
+  "id" : "72be5180-1434-a1dc-ebb7-c49cb8be9f66",
+  "name" : "google_plus_link",
+  "display_width" : null,
+  "label" : "google_plus_link",
+  "help_text" : "This file is the area for entering the text of the google plus link.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://plus.google.com/"
+} ]

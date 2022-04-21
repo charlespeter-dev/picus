@@ -1,0 +1,58 @@
+[ {
+  "id" : "3afa1924-91b6-0a92-4336-9cb9cf5ac344",
+  "name" : "viewed_video_id",
+  "display_width" : null,
+  "label" : "VIEWED - Video ID",
+  "help_text" : "Please paste the Video ID for hubspot that you will find in the videos section on the Viewed platform. https://www.viewed.video",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "00407850015653532195d4d65030a972",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "00407850015653532195d4d65030a972"
+}, {
+  "id" : "2d0a8bad-0138-0631-b62d-3a53874abbca",
+  "name" : "video_setup",
+  "display_width" : null,
+  "label" : "Video Setup",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "15362ab9-9dc7-7a18-c5ca-f69a03693b4e",
+    "name" : "width",
+    "display_width" : null,
+    "label" : "Width",
+    "help_text" : "Enter the width in pixels<br>\nfor the desktop version<br>\nin your email template",
+    "required" : true,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "max" : 960,
+    "step" : 10,
+    "type" : "number",
+    "default" : 600
+  }, {
+    "id" : "c37ea7c7-3966-e588-2e75-01c18d06837a",
+    "name" : "height",
+    "display_width" : null,
+    "label" : "Height",
+    "help_text" : "Enter the height in pixels<br>\nfor the desktop version<br>\nin your email template",
+    "required" : true,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "max" : 960,
+    "step" : 10,
+    "type" : "number",
+    "default" : 338
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "width" : 600,
+    "height" : 338
+  }
+} ]

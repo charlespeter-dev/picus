@@ -1,0 +1,226 @@
+[ {
+  "id" : "a928347a-943a-25a2-55a5-5481a7fa3cf8",
+  "name" : "enable_related_posts",
+  "display_width" : null,
+  "label" : "Enable GI Related Posts",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "4031bb2d-80de-297d-b35e-cb62c4f005be",
+  "name" : "row_oriented",
+  "display_width" : null,
+  "label" : "Row oriented",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "a928347a-943a-25a2-55a5-5481a7fa3cf8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "329209d3-6d40-9b9c-0819-3587f0242a93",
+  "name" : "items_in_a_row",
+  "display_width" : null,
+  "label" : "Items in a row",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "4031bb2d-80de-297d-b35e-cb62c4f005be",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "text",
+  "min" : 2,
+  "max" : 4,
+  "step" : 1,
+  "type" : "number",
+  "default" : 3
+}, {
+  "id" : "6f3d0b06-eb12-6a68-9a77-37936cbddd07",
+  "name" : "number_of_related_posts",
+  "display_width" : null,
+  "label" : "Number of related posts",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "a928347a-943a-25a2-55a5-5481a7fa3cf8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "text",
+  "min" : 0,
+  "max" : 9,
+  "step" : 1,
+  "type" : "number",
+  "default" : 3
+}, {
+  "id" : "3e7f4e73-b589-fe2e-3017-48e0a0609df5",
+  "name" : "block_margin",
+  "display_width" : null,
+  "label" : "Block margins top and bottom",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "a928347a-943a-25a2-55a5-5481a7fa3cf8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "82fd464e-0067-4837-f226-b6cc4091ed1d",
+  "name" : "margin_top",
+  "display_width" : null,
+  "label" : "Block margin top",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "3e7f4e73-b589-fe2e-3017-48e0a0609df5",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 20
+}, {
+  "id" : "b9e9f993-dff3-4970-e125-66da85df325f",
+  "name" : "margin_bottom",
+  "display_width" : null,
+  "label" : "Block margin bottom",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "3e7f4e73-b589-fe2e-3017-48e0a0609df5",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 20
+}, {
+  "id" : "a7dcfea6-31e2-2b81-e455-c443fe7f07bf",
+  "name" : "enable_block_title",
+  "display_width" : null,
+  "label" : "Enable block title",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "a928347a-943a-25a2-55a5-5481a7fa3cf8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "f3b97ba4-e620-6224-c7ef-14073c8b54e2",
+  "name" : "block_title",
+  "display_width" : null,
+  "label" : "Block Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "a7dcfea6-31e2-2b81-e455-c443fe7f07bf",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "placeholder" : "Related posts",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Related posts"
+}, {
+  "id" : "574344f4-7bc4-0e85-104e-31cb39c1fbb0",
+  "name" : "enable_image_block",
+  "display_width" : null,
+  "label" : "Enable image block",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "a928347a-943a-25a2-55a5-5481a7fa3cf8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "300e914d-f152-d98e-8a98-5edabf880292",
+  "name" : "enable_tags_block",
+  "display_width" : null,
+  "label" : "Enable tags block",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "a928347a-943a-25a2-55a5-5481a7fa3cf8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "cc2c0b2f-efbc-a54a-c15f-5e192645ddd8",
+  "name" : "enable_author_block",
+  "display_width" : null,
+  "label" : "Enable author block",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "a928347a-943a-25a2-55a5-5481a7fa3cf8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "ae9657d1-e623-a64a-e119-f5c940ab11da",
+  "name" : "author_photo_rounded",
+  "display_width" : null,
+  "label" : "Author photo rounded",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "cc2c0b2f-efbc-a54a-c15f-5e192645ddd8",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

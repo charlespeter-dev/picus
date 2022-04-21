@@ -1,0 +1,64 @@
+{####################################
+    HubSpot Logo Carousel Module 
+##################################### 
+This module was provided as an easy
+to implement option for users, and 
+also serves as a simple example for 
+developers to learn from & work with.
+#-----------------------------------#}
+
+{# Load jQuery if not enabled in a portal #}
+{% if not site_settings.include_jquery %}
+  {{ require_js("//code.jquery.com/jquery-1.11.3.min.js", "footer") }}
+{% endif %}
+
+{{ require_js("https://design-assets.hubspot.com/hubfs/Assets/Slick/slick.min.js", "footer") }}
+
+{% if module.logos|map('image')|map('src')|join|length > 0 %}      {# << Only create slider if at least 1 image is added #}
+<div class="hs-logo-carousel">
+  {% for slide in module.logos %}
+  <div>
+    {{ "<a href='" ~ slide.page_url ~"'>" if slide.page_url }}
+    <div class="hs-logo-carousel__inner">
+      <img data-lazy="{{ slide.image.src }}" alt="{{ slide.image.alt }}">
+    </div>
+    {{ "</a>" if slide.page_url }}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% require_js %}
+<script>
+  $(document).ready(function() {
+    $('.hs-logo-carousel').slick({                                                   {# << Slick slider settings go here #}
+      dots: {{ module.settings.show_dots }},                    {# More info: http://kenwheeler.github.io/slick/ #}
+      arrows: {{ module.settings.show_arrows }},
+      autoplay: {{ module.settings.autoplay }},
+      infinite: true,
+      speed: {{ module.settings.scroll_speed }},
+      slidesToShow: {{ module.settings.logos_to_show }},
+      slidesToScroll: {{ module.settings.logos_to_scroll ? "1" : module.settings.logos_to_show }},
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+          slidesToShow: {{ module.settings.mobile_settings.logos_to_show }},
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: {{ module.settings.mobile_settings.show_arrows }},
+          dots: {{ module.settings.mobile_settings.show_dots }}
+         }
+       }
+      ]
+    });    
+  }); 
+</script>
+{% end_require_js %}
+{% require_css %}
+<style>
+  .hs-logo-carousel__inner {
+    padding: 0 {{ module.settings.padding / 2 }}px;
+  }
+</style>
+{% end_require_css %}

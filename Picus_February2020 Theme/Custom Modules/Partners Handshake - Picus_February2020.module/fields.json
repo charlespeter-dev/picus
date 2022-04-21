@@ -1,0 +1,30 @@
+[ {
+  "id" : "8576a2b7-f165-67e2-b7b5-0eaa0fbd6a75",
+  "name" : "icon_image",
+  "display_width" : null,
+  "label" : "Icon Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/handshake.svg",
+    "alt" : "Handshake",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }
+}, {
+  "id" : "1ad0f19f-f542-d7c7-5986-a4b5ec8958f3",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Whatever we do, we do with our partners.</p>"
+} ]

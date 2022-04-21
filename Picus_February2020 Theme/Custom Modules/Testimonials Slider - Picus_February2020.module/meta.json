@@ -1,0 +1,16 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 26116688525,
+  "css_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/css/slick.css",
+    "autoload" : true,
+    "name" : "slick.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/js/slick.js",
+    "autoload" : true,
+    "name" : "slick.js"
+  } ],
+  "is_available_for_new_content" : true
+}

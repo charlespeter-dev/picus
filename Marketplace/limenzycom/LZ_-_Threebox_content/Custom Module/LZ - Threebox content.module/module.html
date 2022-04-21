@@ -1,0 +1,78 @@
+{% set bgColor = module.background_color.color|convert_rgb %}
+{% set bgOpacity = module.background_color.opacity|int %}
+{% set bgOpacity = bgOpacity / 100 %}
+
+{% for item in module.three_box %}
+{% set bgColor1 = item.background_color.color|convert_rgb %}
+{% set bgOpacity1 = item.background_color.opacity|int %}
+{% set bgOpacity1 = bgOpacity / 100 %}
+{% endfor %}
+
+<section class="Threeboxes {{name}}">
+  <div class="page-center">
+    <div class="row-fluid">
+      {% if module.header_select %}
+      <div class="three-box-hedng">
+        {{ module.header }}
+      </div>
+      {% endif %}
+      <div class="box-with-content t-{{ count }}">
+        {% set count = 1 %}
+        {% for item in module.three_box %}
+        <div class="boxs t-{{ count }}">
+          <div class="top-image">
+            <img src="{{ item.top_image.src }}" alt="{{ item.top_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          </div>
+          <div class="bottom-content ">
+            {{ item.bottom_content }}
+          </div>
+          {% if item.cta_required %}
+          <div class="readmore-cta1 {{name}}">
+            {% cta guid="{{ item.read_more }}" %}
+          </div>
+          {% endif %}
+        </div>
+        {% set count= count + 1 %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  {% if module.font_selector %}
+  .Threeboxes.{{name}} {
+    font-family:{{ module.font_family.font }}; 
+    color: {{ module.font_family.color }}; 
+    font-size: {{ module.font_family.size }}px;
+  }
+  {% endif %}
+
+  .Threeboxes.{{name}}{
+    padding-top:{{ module.top_padding }}px;
+    padding-bottom:{{ module.bottom_padding }}px;
+    background-color:rgba({{ bgColor }}, {{ bgOpacity }});
+  }
+
+  {% set count = 1 %}
+  {% for item in module.three_box %}
+  .box-with-content .boxs.t-{{ count }}{
+    background-color: rgba({{ item.background_color.color|convert_rgb }}, {{ item.background_color.opacity }}%);
+
+  }
+  .redamore-email{
+    background-color:rgba({{ item.cta_background_color.color|convert_rgb }}, {{ item.cta_background_color.opacity }}%);
+    padding-top:{{ item.cta_top_bottom_padding }}px;
+    padding-bottom:{{ item.cta_top_bottom_padding }}px;
+    padding-left:{{ item.left_right_padding }}px;
+    padding-right:{{ item.left_right_padding }}px;
+/*     padding:15px 30px; */
+    text-decoration:none;
+    color:#fff;
+  }
+  {% set count = count + 1 %}
+  {% endfor %}
+  
+</style>
+
+

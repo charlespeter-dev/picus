@@ -1,0 +1,115 @@
+.testimonial-slider {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 413px;
+    width: 100%;
+}
+.testimonial-slider .slick-arrow:first-of-type {
+    position: absolute;
+    left: -50px;
+    top: 45%;
+}
+.testimonial-slider .slick-arrow:last-of-type {
+    position: absolute;
+    right: -50px;
+    top: 45%;
+}
+.testimonial-slider .quote {
+    background:#FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px #888888;
+    padding: 70px 30px 0;
+    margin: 15px 8px 50px;
+    height: 300px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.testimonial-slider .quote div.quote-contain {
+    position: relative;
+}
+.testimonial-slider .quote div.quote-contain:before {
+    position: absolute;
+    content: '';
+    background-image: url('https://www.picussecurity.com/hubfs/Shield/Icons/shield-quote-start.svg');
+    top: -40px;
+    width: 24px;
+    height: 55px;
+}
+.testimonial-slider .quote div.quote-contain:after {
+    position: absolute;
+    content: '';
+    background-image: url('https://www.picussecurity.com/hubfs/Shield/Icons/shield-quote-end.svg');
+    bottom: -40px;
+    right: 0;
+    width: 34px;
+    height: 55px;
+}
+.testimonial-slider .quote:after {
+    position: absolute;
+    content: '';
+    background: url('https://www.picussecurity.com/hubfs/Shield/Icons/other/shield-quote-arrow-soft.svg');
+    width: 54px;
+    height: 47px;
+    bottom: -34px;
+    left: 22px;
+}
+.testimonial-slider .quote p {
+    font-size: 15px;
+}
+.testimonial-slider .person-details {
+    display: flex;
+}
+.testimonial-slider .person-image {
+    width: 140px;
+}
+.testimonial-slider .person-image img {
+    width: 115px !important;
+    height: 115px;
+    margin-left: 5px;
+    border-radius: 100%;
+}
+.testimonial-slider .person-content img {
+    max-width: 120px !important;
+    margin-bottom: 10px;
+}
+.testimonial-slider .person-content p.name {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.testimonial-slider .person-content p.title {
+    font-size: 15px;
+    color: #005DBA;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1150px) and (min-width: 767px) {
+    .testimonial-slider .slick-arrow:first-of-type {
+        position: absolute;
+        left: -30px;
+        top: 33%;
+    }
+    .testimonial-slider .slick-arrow:last-of-type {
+        right: -30px;
+        top: 33%;
+    } 
+}
+
+@media (max-width: 767px) {
+    .testimonial-slider .quote {
+        height: 350px;
+        padding-bottom: 30px;
+    }
+    .testimonial-slider .quote p {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+    .testimonial-slider .person-image img {
+        width: 90px !important;
+    }
+    .testimonial-slider .person-content p.title {
+        font-size: 12px;
+    }
+    .testimonial-slider .person-image {
+        width: 115px;
+    }
+}

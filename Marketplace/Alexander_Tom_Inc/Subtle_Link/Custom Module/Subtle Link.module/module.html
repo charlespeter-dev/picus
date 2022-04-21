@@ -1,0 +1,53 @@
+{% set href = module.destination.url.href %}
+
+{% if module.destination.url.type is equalto "EMAIL_ADDRESS" %}
+
+	{% set href = "mailto:" + href %}
+
+{% endif %}
+
+<a id="{{ name }}" class="subtle-link-module" href="{{ href }}"
+	 {% if module.destination.open_in_new_tab %}target="_blank"{% endif %}
+	 {% if module.destination.no_follow %}rel="nofollow"{% endif %}
+   data-effect="{{ module.effect }}">
+  
+  <figure>
+    
+    {% if module.image.src %}
+
+      <img src="{{ module.image.src }}" alt="{{ module.image.alt }}">
+      <div class="overlay"></div>
+    
+    {% endif %}
+  
+    <figcaption>
+      <div class="heading"><span>{{ module.heading }}</span></div>
+      <div class="caption"><span>{{ module.caption }}</span></div>
+    </figcaption>
+    
+  </figure>
+  
+</a>
+
+<style>
+
+  #{{ name }} .overlay {
+    background-color: {{ module.overlay.color }};
+    opacity: {{ module.overlay.opacity / 100 }};
+  }
+  
+  #{{ name }} figcaption {
+    opacity: {{ module.foreground.opacity / 100 }};
+  }
+  
+  #{{ name }} figcaption::before,
+  #{{ name }} figcaption::after {
+    border-color: {{ module.foreground.color }};
+  }
+  
+  #{{ name }} .heading,
+  #{{ name }} .caption {
+    color: {{ module.foreground.color }};
+  }
+
+</style>

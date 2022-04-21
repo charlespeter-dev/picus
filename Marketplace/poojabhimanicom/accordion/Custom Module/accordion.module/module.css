@@ -1,0 +1,92 @@
+.st-accordion{
+    width:100%;
+    min-width:270px;
+    margin: 0 auto;
+}
+.st-accordion-wrapper{
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
+   -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.1);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.);
+    margin-top:20px;
+  border-radius:3px;
+}
+.st-accordion ul li{
+    height: 46px;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+}
+.st-accordion ul li:first-child{
+    border-top:none;
+}
+.st-accordion ul li > a{
+    font-size: 16px;
+	  color: #393939;
+    display: block;
+	position: relative;
+  line-height: 46px;
+	padding-left: 46px;
+	outline:none;
+   -webkit-transition:  color 0.2s ease-in-out;
+	-moz-transition:  color 0.2s ease-in-out;
+	-o-transition:  color 0.2s ease-in-out;
+	-ms-transition:  color 0.2s ease-in-out;
+	transition:  color 0.2s ease-in-out;
+	background-color: #fff;
+  text-decoration:none;
+  border-bottom : 1px solid #eee;
+  
+}
+.st-accordion ul li > a span{
+	background: transparent url({{ module_asset_url("plus-dark.png") }}) no-repeat center center;
+	text-indent:-9000px;
+	width: 26px;
+	height: 16px;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	margin-top: -8px;
+	margin-left: 16px;
+	opacity:1;
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
+}
+.st-accordion ul li > a:hover{
+    color: #393939;
+}
+.st-accordion ul li > a:hover span{
+	opacity:1;
+}
+.st-accordion ul li.st-open > a{
+    color: #393939;
+}
+.st-accordion ul li.st-open:first-child{height:auto!important;}
+.st-accordion ul li.st-open > a span{
+	background: transparent url({{ module_asset_url("minus-dark.png") }})  no-repeat center center;
+	right:0px;
+	opacity:1;
+	margin-top: -8px;
+}
+.st-accordion .st-content{
+    padding: 20px 20px 20px 0px;
+	  background: #fff;
+}
+.st-accordion .st-content p{
+	color: #727272;
+   font-size:  16px;
+	padding-left: 50px;
+}
+
+@media screen and (max-width: 768px){
+	.st-accordion ul li > a{
+		font-size:16px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.st-accordion ul li > a{
+		font-size:14px;
+	}
+}

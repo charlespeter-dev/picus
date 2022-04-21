@@ -1,0 +1,21 @@
+[ {
+  "id" : "a10cac47-abc9-4f55-bcf2-82770bc6db7d",
+  "name" : "arrow_image",
+  "display_width" : null,
+  "label" : "Arrow Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/raw_assets/public/Marketplace/Imagino_Solutions_Pvt_Ltd/Evoque_Back_To_Top_V1/Images/to=top.png",
+    "alt" : "to=top",
+    "width" : 512,
+    "height" : 512,
+    "max_width" : 512,
+    "max_height" : 512
+  }
+} ]

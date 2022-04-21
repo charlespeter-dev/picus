@@ -1,0 +1,13 @@
+{#
+Reference: https://app.asana.com/0/871479932186554/871479932186636
+Version: 1.1.0
+#}
+
+<div id="{{ name }}" class="vertical-spacer {{ module.spacer_height }} {% if module.visibility.show_on_mobile %}show-mobile{% endif %} {% if module.visibility.show_on_tablet %}show-tablet{% endif %} {% if module.visibility.show_on_desktop %}show-desktop{% endif %}" style="{% if module.spacer_height == "spacer-custom" %}padding-top: {{ module.custom_height / 2 }}px; padding-bottom: {{ module.custom_height / 2 }}px;{% endif %}">
+  {% if module.hr.horizontal_rule %}
+    <hr {% if module.hr.horizontal_rule_custom_color %}style="background: {{ module.hr.horizontal_rule_color.color }}; opacity: {{ module.hr.horizontal_rule_color.opacity / 100 }}"{% endif %}>
+  {% endif %}
+</div>
+<style>
+  .vertical-spacer hr { height: {{ module.hr.hr_height }}px; }
+</style>

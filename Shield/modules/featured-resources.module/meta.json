@@ -1,0 +1,17 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 32556530667,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../css/tools/slick.css",
+    "name" : "slick.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../js/slick.min.js",
+    "name" : "slick.min.js"
+  } ],
+  "label" : "Latest Resources",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,158 @@
+[ {
+  "id" : "b7af0233-b458-2448-6449-02110e2639b0",
+  "name" : "group_title",
+  "display_width" : null,
+  "label" : "Group Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Title"
+}, {
+  "id" : "d66eb7bd-38fc-58a6-200f-cd4ccdb02ae9",
+  "name" : "webinars",
+  "display_width" : null,
+  "label" : "Webinars",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "37f61e02-7bb8-0c4f-870f-dfe8718c3a55",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "f75c6f97-8e6d-35ce-4ed2-997878bd4440",
+    "name" : "featured_image",
+    "display_width" : null,
+    "label" : "Featured Image",
+    "help_text" : "509px x 217px recommended size",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Cyber%20Rangers-Banner%201-3-02.png",
+      "alt" : "Cyber Rangers-Banner 1-3-02",
+      "width" : 7000,
+      "height" : 2293,
+      "max_width" : 7000,
+      "max_height" : 2293
+    }
+  }, {
+    "id" : "37f61e02-7bb8-0c4f-870f-dfe8718c3a55",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Webinar Title"
+  }, {
+    "id" : "44968fda-833e-4c84-b91c-ec1ae78bbc24",
+    "name" : "date_field",
+    "display_width" : null,
+    "label" : "Date",
+    "required" : false,
+    "locked" : false,
+    "type" : "date",
+    "default" : 1591218000000
+  }, {
+    "id" : "e5c77d70-887f-c7a8-b6eb-f379742134b4",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut dolor in velit vulputate lobortis. Curabitur sit amet auctor sem, sagittis vestibulum quam.&nbsp;</span></p>"
+  }, {
+    "id" : "08f04cd5-8464-cf34-d8ff-a7daebcfb271",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "57286167-a68e-28d7-48e0-99d0001ceccc",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "Watch on demand", "Watch on demand" ], [ "Register now", "Register now" ] ],
+    "type" : "choice",
+    "default" : "Watch on demand"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "featured_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Cyber%20Rangers-Banner%201-3-02.png",
+      "alt" : "Cyber Rangers-Banner 1-3-02",
+      "width" : 7000,
+      "height" : 2293,
+      "max_width" : 7000,
+      "max_height" : 2293
+    },
+    "title" : "Webinar Title",
+    "date_field" : 1591218000000,
+    "description" : "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut dolor in velit vulputate lobortis. Curabitur sit amet auctor sem, sagittis vestibulum quam.&nbsp;</span></p>",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "link_text" : "Watch on demand"
+  }, {
+    "featured_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Cyber%20Rangers-Banner%201-3-02.png",
+      "alt" : "Cyber Rangers-Banner 1-3-02",
+      "width" : 7000,
+      "height" : 2293,
+      "max_width" : 7000,
+      "max_height" : 2293
+    },
+    "title" : "Webinar Title",
+    "date_field" : 1591218000000,
+    "description" : "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut dolor in velit vulputate lobortis. Curabitur sit amet auctor sem, sagittis vestibulum quam.&nbsp;</span></p>",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "link_text" : "Watch on demand"
+  } ]
+} ]

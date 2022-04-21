@@ -1,0 +1,107 @@
+.simple-faq-wrapper .faq-wrapper {
+  width: 100%;
+  padding: 0 1em;
+}
+.simple-faq-wrapper .faq-card {
+  background-color: white;
+  padding: 1.5em;
+  margin: 1em 0;
+  cursor: pointer;
+}
+.simple-faq-wrapper .faq-title-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.simple-faq-wrapper .faq-card svg {
+  height: 20px;
+  width: auto;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.simple-faq-wrapper .faq-card.open svg {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.simple-faq-wrapper .faq-answer {
+  display: none;
+  padding: 1em;
+}
+
+
+/* Section Styles */
+.section-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1em
+}
+.section-wrapper--medium {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1em;
+}
+.section-wrapper--narrow {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1em;
+}
+.section-wrapper--fw {
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.intro-text-align-center {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.intro-text-align-left {
+  width: 100%;
+  max-width: 700px;
+  padding: 1em;
+  margin-right: auto;
+}
+.intro-text-align-right {
+  width: 100%;
+  max-width: 700px;
+  padding: 1em;
+  margin-left: auto;
+  text-align: right;
+}

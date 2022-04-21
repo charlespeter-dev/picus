@@ -1,0 +1,16 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 42919354419,
+  "css_assets" : [ {
+    "url" : "Marketplace%2FAdhere_Creative%2FScrolling_Animations%2FAttached_asset%2Faos.css",
+    "autoload" : true,
+    "name" : "aos.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "Marketplace%2FAdhere_Creative%2FScrolling_Animations%2FAttached_asset%2Faos.js",
+    "autoload" : true,
+    "name" : "aos.js"
+  } ],
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,88 @@
+[ {
+  "id" : "d568f3cc-4048-1f8b-8c15-290afc10841a",
+  "name" : "set_height",
+  "display_width" : null,
+  "label" : "Set Height",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b62b04c1-dbd8-84fd-7771-12cfc0def59d",
+    "name" : "number_value",
+    "display_width" : null,
+    "label" : "Number Value",
+    "help_text" : "Set this as the value",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 0,
+    "step" : 1,
+    "type" : "number",
+    "default" : 3
+  }, {
+    "id" : "5215bb05-d0d8-8983-7a6d-712d5d00784c",
+    "name" : "css_unit",
+    "display_width" : null,
+    "label" : "CSS Unit",
+    "help_text" : "for help, see https://www.w3schools.com/cssref/css_units.asp",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "Search",
+    "choices" : [ [ "px", "px" ], [ "em", "em" ], [ "rem", "rem" ], [ "%", "%" ], [ "vh", "vh" ], [ "vw", "vw" ], [ "pt", "pt" ] ],
+    "type" : "choice",
+    "default" : "px"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "number_value" : 3,
+    "css_unit" : "px"
+  }
+}, {
+  "id" : "70769c4e-921d-24ed-56bb-551d4926d9b7",
+  "name" : "device_visibility",
+  "display_width" : null,
+  "label" : "Device Visibility",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "79df5803-e6b1-906f-dad4-c523928d6383",
+    "name" : "show_on_desktop",
+    "display_width" : null,
+    "label" : "Show On Desktop?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "e63879cd-9abf-af35-50e3-45e3e9e22056",
+    "name" : "show_on_tablet",
+    "display_width" : null,
+    "label" : "Show On Tablet?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "6eaa776d-4844-5cfc-abf6-8240eac01e55",
+    "name" : "show_on_mobile",
+    "display_width" : null,
+    "label" : "Show On Mobile?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "show_on_desktop" : true,
+    "show_on_tablet" : true,
+    "show_on_mobile" : true
+  }
+} ]

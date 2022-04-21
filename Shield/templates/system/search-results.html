@@ -1,0 +1,19 @@
+<!--
+  templateType: search_results_page
+  isAvailableForNewContent: true
+  label: Shield - search results
+  screenshotPath: ../../images/template-previews/search-results.png
+-->
+{% extends '../layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <section class="content-wrapper">
+    <div class="systems-page search-results">
+      <h2 class="underline">Results for "{{ request.query_dict.term|escape }}"</h2>
+      <br>
+      {% module "module_16086340415214" path="/picus_search_results", label="picus_search_results" %}
+    </div>
+  </section>
+</main>
+{% endblock body %}

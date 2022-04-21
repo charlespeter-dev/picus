@@ -1,0 +1,26 @@
+{% if widget.twitter_link || widget.facebook_link || widget.linkedin_link || widget.instagram_link %}
+<div class="event-follow-grid-container">
+    <div class="event-follow-grid">
+        {% if widget.twitter_link %}
+            <a class="event-follow-link" href="{{ widget.twitter_link }}">
+                <div class="event-follow-icon twitter"></div>
+            </a>
+        {% endif %}
+        {% if widget.facebook_link %}
+            <a class="event-follow-link" href="{{ widget.facebook_link }}">
+                <div class="event-follow-icon facebook"></div>
+            </a>
+        {% endif %}
+        {% if widget.linkedin_link %}
+            <a class="event-follow-link" href="{{ widget.linkedin_link }}">
+                <div class="event-follow-icon linkedin"></div>
+            </a>
+        {% endif %}
+        {% if widget.instagram_link %}
+            <a class="event-follow-link" href="{{ widget.instagram_link }}">
+                <div class="event-follow-icon instagram"></div>
+            </a>
+        {% endif %}
+    </div>
+</div>
+{% endif %}

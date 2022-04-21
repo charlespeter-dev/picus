@@ -1,0 +1,28 @@
+div#timer div {
+  display: inline-block;
+  line-height: 1;
+  font-size: 35px;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  min-width: 93px;
+  height: 115px;
+  position: relative;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+div#timer div span {
+  font-weight: 100;
+  display: block;
+  font-size: 16px;
+  padding: 10px 4px;
+  color: #00000f;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  min-width: 90px;
+}

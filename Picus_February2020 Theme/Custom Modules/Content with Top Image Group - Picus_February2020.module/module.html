@@ -1,0 +1,22 @@
+<div class="content-with-top-image-group-wrapper">
+  <div class="global-row mainpage-advantages">
+    <div class="page-center">
+      <div class="row">
+        <div class="colsm12 col-centered agile">
+          <h2>{{ module.title }}</h2>
+          <p>{{ module.content }}</p>
+          <div class="row agile-grid">
+            {% for item in module.items %}
+              <div class="colmd4 col12">
+                {% if item.image.src %}
+                  <img src="{{ item.image.src }}?noresize" alt="{{ item.image.alt }}" title="{{ item.image.alt }}" width="359">
+                {% endif %}
+                <p>{{ item.heading }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

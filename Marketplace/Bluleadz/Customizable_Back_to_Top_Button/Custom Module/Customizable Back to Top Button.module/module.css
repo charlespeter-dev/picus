@@ -1,0 +1,74 @@
+
+/* Back to Top */
+.back-to-top {
+  position: -webkit-sticky;
+  position: sticky;
+  right: calc((100vw - 1200px) / 2 - 150px);
+  bottom: 5%;
+  left: unset;
+  width: 150px;
+  width: fit-content;
+  max-width: 150px;
+  margin-left: auto;
+  opacity: 0;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  font-size: 13px;
+  color: #22518B;
+  cursor: default;
+}
+.back-to-top.visible {
+  opacity: 1;
+  cursor: pointer;
+}
+.back-to-top-svg-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.back-to-top svg {
+  width: 30px;
+  height: auto;
+  border-top: 3px solid #22518B;
+}
+.back-to-top svg path {
+  fill: #22518B;
+}
+.back-to-top-text {
+  text-align: center;
+}
+@media(max-width:1200px){
+  .back-to-top {
+    border-radius: 50%;
+    padding: .5em;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+  }
+  .back-to-top svg {
+    width: 25px;
+    height: auto;
+  }
+  .back-to-top-text {
+    display: none;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .back-to-top {
+    display: none;
+  }
+}

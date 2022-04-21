@@ -1,0 +1,29 @@
+[ {
+  "id" : "8ecc4d59-93b8-58b2-685f-7b0c642b4d15",
+  "name" : "alignment",
+  "display_width" : null,
+  "label" : "Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+  "type" : "choice",
+  "default" : "center"
+}, {
+  "id" : "104eaaaa-a45f-2f16-2e45-7d9d2ebd4210",
+  "name" : "page_logo",
+  "display_width" : null,
+  "label" : "Page Logo",
+  "help_text" : "Set this if you'd like to override the logo set in Content Settings. Leave blank if not.",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null
+  }
+} ]

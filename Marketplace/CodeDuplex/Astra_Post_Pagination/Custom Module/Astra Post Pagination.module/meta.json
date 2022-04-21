@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "icon" : "arrow-right",
+  "host_template_types" : [ "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 52972426517,
+  "is_available_for_new_content" : true
+}

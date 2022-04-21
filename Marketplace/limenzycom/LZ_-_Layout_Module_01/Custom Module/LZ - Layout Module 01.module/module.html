@@ -1,0 +1,73 @@
+{% set bgColor = module.backgroundcolor.color|convert_rgb %}
+{% set bgOpacity = module.backgroundcolor.opacity|int %}
+{% set bgOpacity = bgOpacity / 100 %}
+
+<section class="leftimg-rightcontent {{ name }}"  >
+  <div class="page-center">
+    <div class="row-fluid  leftsimg-rightsimg">
+      {% if module.position == "left" %}
+      <div class="span6 respcontent">
+        <div class="content contenthead">
+          {{ module.right_heading_content }}
+          {{ module.right_content }}
+        </div>
+        {% for item in module.multiple_cta %}
+        <div class="twobuttons">
+          {% if item.cta_required %}
+          {% cta guid="{{ item.button1 }}" %}
+          {% endif %}
+
+          {% if item.cta_required02 %}
+          {% cta guid="{{ item.button2 }}" %}
+          {% endif %}  
+        </div>
+        {% endfor %}
+      </div>     
+      <div class="span6 right-img">
+        <img src="{{ module.left_image.src }}" alt="{{ module.left_image.alt }}" {{ sizeAttrs }}>
+      </div>
+      {% else %}
+      <div class="span6 right-img">
+        <img src="{{ module.left_image.src }}" alt="{{ module.left_image.alt }}" {{ sizeAttrs }}>
+      </div>
+      <div class="span6 respcontent">
+        <div class="content contenthead">
+          {{ module.right_heading_content }}
+          {{ module.right_content }}
+        </div>
+        {% for item in module.multiple_cta %}
+        <div class="twobuttons">
+          	{% if item.cta_required %}
+          {% cta guid="{{ item.button1 }}" %}
+          {% endif %}
+
+          {% if item.cta_required02 %}
+          {% cta guid="{{ item.button2 }}" %}
+          {% endif %}  
+        </div>
+        {% endfor %}   
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+<style>
+  {% if module.font_selector %}
+  .leftimg-rightcontent.{{ name }}  {
+    font-family:{{ module.font_family.font }}; 
+    color: {{ module.font_family.color }}; 
+    font-size: {{ module.font_family.size }}px;
+  }
+  {% endif %}
+
+
+  .leftimg-rightcontent.{{ name }} {
+    padding-top:{{ module.top_space }}px;
+    padding-bottom:{{ module.bottom_space }}px;
+    background-color:rgba({{ bgColor }}, {{ bgOpacity }});
+
+  }
+
+</style>
+
+

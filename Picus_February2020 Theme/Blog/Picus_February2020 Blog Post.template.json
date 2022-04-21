@@ -1,0 +1,677 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 6,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Picus_February2020 Theme/Coded Files/Picus_February2020-style.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Picus_February2020 Theme/Coded Files/Picus_February2020-main.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "blog",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "HubSpot_Boilerplate Theme/Header",
+        "label" : "HubSpot_Boilerplate Theme/Header",
+        "type" : "global_group",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "path" : "/Picus_February2020 Theme/Global Groups/Picus_February2020 Header.template.json",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1582173794971728",
+        "label" : "Blog Banner Area - Picus_February2020",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "module_settings" : {
+            "include_overlay" : true
+          },
+          "overrideable" : true,
+          "path" : "/Picus_February2020 Theme/Custom Modules/Blog Banner Area - Picus_February2020",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Blog Banner Area - Picus_February2020",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_158220465840675",
+        "label" : "Listing Content - Picus_February2020",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "min-height: 0px;",
+          "overrideable" : true,
+          "path" : "/Picus_February2020 Theme/Custom Modules/Listing Content - Picus_February2020",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Listing Content - Picus_February2020",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "min-height: 0px;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1590061803943741",
+        "label" : "Custom Listing Image",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Picus_February2020 Theme/Custom Modules/Custom Listing Image",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Custom Listing Image",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1582113831427219",
+        "label" : "Body Section",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "blog-body-section",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1640595821449208",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1640596497331221",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1640595835966211",
+                    "label" : "Rich Text",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : true,
+                      "widget_name" : "Rich Text",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/rich_text"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_164059548000266",
+                    "label" : "Blog Content",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "per_widget_wrapper_html" : "",
+                      "overrideable" : false,
+                      "widget_name" : "Blog Content",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/blog_content"
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1640595821449207",
+                "label" : "Image",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "widget_name" : "Image",
+                  "schema_version" : 2,
+                  "path" : "@hubspot/linked_image",
+                  "img" : {
+                    "size_type" : "auto",
+                    "src" : "https://static.hubspot.com/final/img/content/email-template-images/placeholder_200x200.png",
+                    "alt" : "placeholder_200x200",
+                    "loading" : "disabled",
+                    "width" : 200,
+                    "height" : 200
+                  }
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "blog-body-section",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1582173870144769",
+        "label" : "Comments Form Wrapper",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "post-comments-form-wrapper global-row",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1582173859306742",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15821766646601082",
+                "label" : "Comment Form",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "form-module-wrapper",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1523032063950328",
+                    "label" : "Blog Comments",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "path" : "@hubspot/blog_comments",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Blog Comments",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "form-module-wrapper",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "page-center",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "post-comments-form-wrapper global-row",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1582113567985119",
+        "label" : "Logo Group - Picus_February2020",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "logo_group" : [ {
+            "image" : {
+              "alt" : "Akbank",
+              "height" : 74,
+              "max_height" : 74,
+              "max_width" : 580,
+              "size_type" : "auto",
+              "src" : "https://cdn2.hubspot.net/hubfs/7048931/akbank.png",
+              "width" : 580
+            }
+          }, {
+            "image" : {
+              "alt" : "Exclusive Networks",
+              "height" : 52,
+              "max_height" : 52,
+              "max_width" : 150,
+              "size_type" : "auto",
+              "src" : "https://cdn2.hubspot.net/hubfs/7048931/exclusivenetworks.png",
+              "width" : 150
+            }
+          }, {
+            "image" : {
+              "alt" : "Garanti",
+              "height" : 22,
+              "max_height" : 22,
+              "max_width" : 121,
+              "size_type" : "auto",
+              "src" : "https://cdn2.hubspot.net/hubfs/7048931/garanti_bbva.png",
+              "width" : 121
+            }
+          }, {
+            "image" : {
+              "alt" : "ING Bank",
+              "height" : 25,
+              "max_height" : 25,
+              "max_width" : 191,
+              "size_type" : "auto",
+              "src" : "https://cdn2.hubspot.net/hubfs/7048931/ingbank.png",
+              "width" : 191
+            }
+          }, {
+            "image" : {
+              "alt" : "QNB Finansbank",
+              "height" : 90,
+              "max_height" : 90,
+              "max_width" : 300,
+              "size_type" : "auto",
+              "src" : "https://cdn2.hubspot.net/hubfs/7048931/finansbank.png",
+              "width" : 300
+            }
+          }, {
+            "image" : {
+              "alt" : "Turkcell",
+              "height" : 35,
+              "max_height" : 35,
+              "max_width" : 150,
+              "size_type" : "auto",
+              "src" : "https://cdn2.hubspot.net/hubfs/7048931/turkcell.png",
+              "width" : 150
+            }
+          }, {
+            "image" : {
+              "alt" : "Vodafone",
+              "height" : 1191,
+              "max_height" : 1191,
+              "max_width" : 4800,
+              "size_type" : "auto",
+              "src" : "https://cdn2.hubspot.net/hubfs/7048931/vodafone.png",
+              "width" : 4800
+            }
+          }, {
+            "image" : {
+              "alt" : "Yapı Kredi",
+              "height" : 25,
+              "max_height" : 25,
+              "max_width" : 140,
+              "size_type" : "auto",
+              "src" : "https://cdn2.hubspot.net/hubfs/7048931/yapi-kredi.png",
+              "width" : 140
+            }
+          } ],
+          "overrideable" : false,
+          "path" : "/Picus_February2020 Theme/Custom Modules/Logo Group - Picus_February2020",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Logo Group - Picus_February2020",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1582113562431110",
+        "label" : "Button Group - Picus_February2020",
+        "type" : "custom_widget",
+        "params" : {
+          "button_group" : [ {
+            "button_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : true,
+              "url" : {
+                "href" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/pdf/DataSheet.pdf",
+                "type" : "FILE"
+              }
+            },
+            "button_text" : "Datasheet",
+            "select_button_type" : "standard"
+          }, {
+            "button_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "",
+                "type" : "CONTENT"
+              }
+            },
+            "select_button_type" : "cta",
+            "select_cta" : "99e4fc3b-e8f0-4ec0-afe1-c80a47e5680d"
+          }, {
+            "button_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "",
+                "type" : "CONTENT"
+              }
+            },
+            "select_button_type" : "cta",
+            "select_cta" : "bd1eaad0-63c2-4799-b7b4-1eca282b2b43"
+          } ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Picus_February2020 Theme/Custom Modules/Button Group - Picus_February2020",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Button Group - Picus_February2020",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "HubSpot_Boilerplate Theme/Footer",
+        "label" : "HubSpot_Boilerplate Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "path" : "/Picus_February2020 Theme/Global Groups/Picus_February2020 Footer.template.json",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

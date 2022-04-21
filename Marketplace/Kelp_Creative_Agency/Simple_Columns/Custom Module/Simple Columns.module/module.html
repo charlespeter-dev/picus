@@ -1,0 +1,9 @@
+<div class="columns-module-wrapper">
+	<div class="columns-module  columns-module__align-{{ module.vertical_alignment }}">
+		{% for item in module.column %}
+		<div class="columns-module-item" style="-ms-flex-preferred-size: {{ item.flex_basis }}px; flex-basis: {{ item.flex_basis }}px;">
+			{% inline_rich_text field="rich_text" value="{{ item.rich_text }}" %}
+		</div>
+		{% endfor %}	
+	</div>
+</div>

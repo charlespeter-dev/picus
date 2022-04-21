@@ -1,0 +1,116 @@
+[ {
+  "id" : "b99f4ec7-b9e5-4285-e1e2-69d923414d3e",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "2e8efba5-ea92-9839-d5bc-1dc2150259a9",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/rsa-conference.jpeg",
+      "alt" : "RSA Conference 2020",
+      "width" : 643,
+      "height" : 356,
+      "max_width" : 643,
+      "max_height" : 356
+    }
+  }, {
+    "id" : "256f5a54-d3d2-a4d1-ad70-7ccbda3e3f96",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "RSA Conference 2020"
+  }, {
+    "id" : "19215756-5a74-616a-e054-c0693b6e39e2",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "fe124393-2d76-5f0a-0af4-122dd38ab10c",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Read More"
+  }, {
+    "id" : "b1edeb3d-74a2-0503-fc58-b8268f75e4b4",
+    "name" : "read_more_link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/rsa-conference.jpeg",
+      "alt" : "RSA Conference 2020",
+      "width" : 643,
+      "height" : 356,
+      "max_width" : 643,
+      "max_height" : 356
+    },
+    "heading" : "RSA Conference 2020",
+    "description" : "",
+    "button_text" : "Read More",
+    "read_more_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

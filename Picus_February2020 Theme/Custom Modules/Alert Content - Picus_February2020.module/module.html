@@ -1,0 +1,19 @@
+{% if module.show_top_banner %}
+
+{% set href = module.alert_content_link.url.href %}
+{% if module.alert_content_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+{% if module.alert_content %}
+  {% if href %}<a href="{{ href }}"
+    {% if module.alert_content_link.open_in_new_tab %}target="_blank"{% endif %}
+    {% if module.alert_content_link.no_follow %}rel="nofollow"{% endif %}>{% endif %}
+    <div class="attck-banner">
+      <div class="text-center banner-text">
+        {{ module.alert_content }}
+      </div>
+    </div>
+  {% if href %}</a>{% endif %}
+{% endif %}
+
+{% endif %}

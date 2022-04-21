@@ -1,0 +1,30 @@
+[ {
+  "id" : "a39f2841-6f4e-9424-64d5-9d638e28e428",
+  "name" : "intro",
+  "display_width" : null,
+  "label" : "Intro",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See the Picus platform in action"
+}, {
+  "id" : "7e418bf8-e9da-640a-cfc4-c9941e726ceb",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "42dfebd1-0092-4dc3-9f2f-063146b08599",
+    "response_type" : "redirect",
+    "message" : "Thanks for submitting the form.",
+    "redirect_id" : 41092941706,
+    "redirect_url" : null,
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

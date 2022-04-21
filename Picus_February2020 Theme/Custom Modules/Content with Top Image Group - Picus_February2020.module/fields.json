@@ -1,0 +1,86 @@
+[ {
+  "id" : "54123061-989b-5eff-27e2-90d13f7c1c44",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Assess. Measure. Mitigate"
+}, {
+  "id" : "92c31893-db80-caf4-495b-c1aa2ea0491c",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Picus developed Agile SecOps methodology in order to help enterprises beat threats systematically and overcome the most common challenges they face everyday."
+}, {
+  "id" : "ce3d5d97-16b1-974c-24e5-aed0488732af",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "bbeb6817-67b0-f3bd-d388-e7dd48222a85",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/operations@3x.png",
+      "alt" : "Security investments are underutilized",
+      "width" : 1077,
+      "height" : 921,
+      "max_width" : 1077,
+      "max_height" : 921
+    }
+  }, {
+    "id" : "b2d78ad2-fc97-5677-7564-55392294e9ca",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Average utilization of security investments is 30%."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/operations@3x.png",
+      "alt" : "Security investments are underutilized",
+      "width" : 1077,
+      "height" : 921,
+      "max_width" : 1077,
+      "max_height" : 921
+    },
+    "heading" : "Average utilization of security investments is 30%."
+  }
+} ]

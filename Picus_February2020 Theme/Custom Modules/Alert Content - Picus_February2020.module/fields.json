@@ -1,0 +1,38 @@
+[ {
+  "id" : "c9e5d2a9-92b4-ae5d-7cfa-617abece35d9",
+  "name" : "alert_content",
+  "display_width" : null,
+  "label" : "Alert Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "We are in <strong>RSAC'20</strong> . Let's meet in booth <strong>#3139</strong>"
+}, {
+  "id" : "703db454-cae4-a298-f440-a1ee45277aad",
+  "name" : "alert_content_link",
+  "display_width" : null,
+  "label" : "Alert Content Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://rsa2020.picussecurity.com/rsa2020-meet-picus",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "0f59724f-3bfd-7689-fba5-cd7250f79487",
+  "name" : "show_top_banner",
+  "display_width" : null,
+  "label" : "Show Top Banner",
+  "required" : false,
+  "locked" : false,
+  "type" : "boolean",
+  "default" : false
+} ]

@@ -1,0 +1,60 @@
+<div class="tc-with-image-wrapper image-align-{{ module.module_settings.select_image_alignment }} column-ratio-{{ module.module_settings.select_column_ratio }}">
+  <div class="global-row manager-description" style="background-color: rgba({{ module.module_settings.background_color.color|convert_rgb  }},{{ module.module_settings.background_color.opacity/100 }});">
+    <div class="page-center">
+      
+      {% if module.module_settings.select_image_alignment == 'left' and module.module_settings.select_column_ratio == '4060' %}
+        {% set ColumnRight = 'colmd8' %}
+        {% set ColumnLeft = 'colmd8' %}
+        {% set contentCol = 'colmd4' %}
+      {% elif module.module_settings.select_image_alignment == 'left' and module.module_settings.select_column_ratio != '4060' %}
+        {% set ColumnLeft = 'collg6 col12' %}
+        {% set ColumnRight = 'collg6 col12' %}
+        {% set contentCol = 'collg6 col12' %}
+      {% elif module.module_settings.select_image_alignment != 'left' and module.module_settings.select_column_ratio == '4060' %}
+        {% set ColumnRight = 'colmd4' %}
+        {% set ColumnLeft = 'colmd8' %}
+        {% set contentCol = 'colmd4' %}
+      {% else %}
+        {% set ColumnLeft = 'collg6 col12' %}
+        {% set ColumnRight = 'collg6 col12' %}
+        {% set contentCol = 'collg6 col12' %}
+      {% endif %} 
+      
+      
+      <div class="row align-items-center">
+        {% if module.module_settings.select_image_alignment != 'left' %}
+          <div class="{{ ColumnLeft }} tc-description-content">
+            {% if module.content %}
+              <div class="description-block">
+                {{ module.content }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+        <div class="{{ contentCol }} description-image">
+          {% if module.image.src %}
+            {% set href = module.image_link.url.href %}
+            {% if module.image_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            {% if module.include_link_on_image %}{% if href %}<a href="{{ href }}"
+              {% if module.image_link.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.image_link.no_follow %}rel="nofollow"{% endif %}
+              >{% endif %}{% endif %}
+              <img src="{{ module.image.src }}?noresize" width="{{ module.image.width }}" alt="{{ module.image.alt }}" title="{{ module.image.alt }}">
+            {% if module.include_link_on_image %}{% if href %}</a>{% endif %}{% endif %}
+          {% endif %}
+        </div>
+        {% if module.module_settings.select_image_alignment == 'left' %}
+          <div class="{{ ColumnRight }} tc-description-content">
+            {% if module.content %}
+              <div class="description-block">
+                {{ module.content }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

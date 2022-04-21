@@ -1,0 +1,55 @@
+[ {
+  "id" : "6a7053a1-3433-8519-d93d-976c49896fdb",
+  "name" : "padding",
+  "display_width" : null,
+  "label" : "Padding",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "12px"
+}, {
+  "id" : "5a545c80-7921-01f3-8385-878061fa4c8d",
+  "name" : "border_bottom",
+  "display_width" : null,
+  "label" : "border-bottom",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "1px solid #C5CBD0"
+}, {
+  "id" : "4de643b8-c296-6196-87fa-8868ad500456",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://4883612.fs1.hubspotusercontent-na1.net/hubfs/4883612/2x/26/Primary-LogoAsset%206Grey-text_Purple.png",
+    "alt" : "Logically Logo",
+    "loading" : "lazy",
+    "width" : 318,
+    "height" : 97
+  }
+}, {
+  "id" : "1ebd1794-5e91-65c5-6010-ceb5c307bc71",
+  "name" : "image_width",
+  "display_width" : null,
+  "label" : "Image Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "121px"
+} ]

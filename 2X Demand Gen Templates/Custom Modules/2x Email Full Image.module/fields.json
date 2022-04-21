@@ -1,0 +1,19 @@
+[ {
+  "id" : "f4634ab0-0399-53b1-9ede-5c1efd0f748c",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://4883612.fs1.hubspotusercontent-na1.net/hubfs/4883612/2x/26/footer.png",
+    "alt" : "footer",
+    "loading" : "lazy",
+    "width" : 600,
+    "height" : 60
+  }
+} ]

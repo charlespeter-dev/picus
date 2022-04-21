@@ -1,0 +1,272 @@
+[ {
+  "id" : "b974117b-bd99-f6f6-7b68-1b3d8af72d94",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2b01020d-cc06-a997-d8a6-5109415025e1",
+    "name" : "font",
+    "display_width" : null,
+    "label" : "Base Font",
+    "help_text" : "Pick a base font for the module.",
+    "inline_help_text" : "This will be the default font and color for the module.",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "size" : 16,
+      "size_unit" : "px",
+      "color" : "#000",
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Roboto",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  }, {
+    "id" : "138159f5-bfd1-204a-8231-3765079ccc4f",
+    "name" : "background",
+    "display_width" : null,
+    "label" : "Background",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "00c5cb17-2022-3ace-120c-b5a44400bee7",
+    "name" : "client_color",
+    "display_width" : null,
+    "label" : "Client Name Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "5330a786-9fe1-83aa-5974-167cb5856d31",
+    "name" : "client_position_color",
+    "display_width" : null,
+    "label" : "Client Position Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#3695eb",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "55885128-54a6-3e16-0282-af5ca8cbd552",
+    "name" : "quote_icon_color",
+    "display_width" : null,
+    "label" : "Quote Icon Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#3695eb",
+      "opacity" : 30
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "font" : {
+      "size" : 16,
+      "size_unit" : "px",
+      "color" : "#000",
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Roboto",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    },
+    "background" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "client_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "client_position_color" : {
+      "color" : "#3695eb",
+      "opacity" : 100
+    },
+    "quote_icon_color" : {
+      "color" : "#3695eb",
+      "opacity" : 30
+    }
+  }
+}, {
+  "id" : "39eca2b9-b775-abe5-0c04-abe644c90711",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "help_text" : "Leave empty to remove.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Testimonials"
+}, {
+  "id" : "87ec40bc-d19e-da22-051f-c508fcc8966d",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 3,
+    "sorting_label_field" : "d3f75acc-4c5d-6cab-5082-88f5dbe89fbc",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "19b96d78-3120-6016-d6e5-a9188ecfa02f",
+    "name" : "testimonial",
+    "display_width" : null,
+    "label" : "Testimonial",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Just a quick note to say thank you so much for the care you took over my appointment today. I am very grateful for your high standard of care."
+  }, {
+    "id" : "d3f75acc-4c5d-6cab-5082-88f5dbe89fbc",
+    "name" : "client_name",
+    "display_width" : null,
+    "label" : "Client Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "John Doe"
+  }, {
+    "id" : "6168e8f2-815d-fed0-a04d-78a96da90b9b",
+    "name" : "client_position",
+    "display_width" : null,
+    "label" : "Client Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Founder at Demo Company"
+  }, {
+    "id" : "a00447f4-881a-815e-da45-1f2e6c90f5f2",
+    "name" : "client_photo",
+    "display_width" : null,
+    "label" : "Client Photo",
+    "help_text" : "Leave empty to remove.",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/6094355/team-2.jpg",
+      "alt" : "team-2",
+      "width" : 600,
+      "height" : 600,
+      "max_width" : 600,
+      "max_height" : 600
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "testimonial" : "Just a quick note to say thank you so much for the care you took over my appointment today. I am very grateful for your high standard of care.",
+    "client_name" : "John Doe",
+    "client_position" : "Founder at Demo Company",
+    "client_photo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/6094355/team-2.jpg",
+      "alt" : "team-2",
+      "width" : 600,
+      "height" : 600,
+      "max_width" : 600,
+      "max_height" : 600
+    }
+  }, {
+    "testimonial" : "Just a quick note to say thank you so much for the care you took over my appointment today. I am very grateful for your high standard of care.",
+    "client_name" : "John Doe",
+    "client_position" : "Founder at Demo Company",
+    "client_photo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/6094355/team-2.jpg",
+      "alt" : "team-2",
+      "width" : 600,
+      "height" : 600,
+      "max_width" : 600,
+      "max_height" : 600
+    }
+  }, {
+    "testimonial" : "Just a quick note to say thank you so much for the care you took over my appointment today. I am very grateful for your high standard of care.",
+    "client_name" : "John Doe",
+    "client_position" : "Founder at Demo Company",
+    "client_photo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/6094355/team-2.jpg",
+      "alt" : "team-2",
+      "width" : 600,
+      "height" : 600,
+      "max_width" : 600,
+      "max_height" : 600
+    }
+  } ]
+} ]

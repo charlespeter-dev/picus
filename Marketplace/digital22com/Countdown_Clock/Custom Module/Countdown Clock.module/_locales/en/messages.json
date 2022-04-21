@@ -1,0 +1,192 @@
+{
+  "border_radius.help_text" : {
+    "message" : "Border Radius",
+    "description" : "",
+    "placeholders" : null
+  },
+  "border_radius.label" : {
+    "message" : "Border Radius",
+    "description" : "",
+    "placeholders" : null
+  },
+  "clock_shadow.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "clock_shadow.label" : {
+    "message" : "Clock Shadow",
+    "description" : "",
+    "placeholders" : null
+  },
+  "countdown_background_color.help_text" : {
+    "message" : "Background Color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "countdown_background_color.label" : {
+    "message" : "Background Color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "datetime_font.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "datetime_font.label" : {
+    "message" : "DateTime Font",
+    "description" : "",
+    "placeholders" : null
+  },
+  "day_text.default" : {
+    "message" : "Days",
+    "description" : "",
+    "placeholders" : null
+  },
+  "day_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "day_text.label" : {
+    "message" : "Day Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "day_text.placeholder" : {
+    "message" : "Days",
+    "description" : "",
+    "placeholders" : null
+  },
+  "day_text.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header_font.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "header_font.label" : {
+    "message" : "Header Font",
+    "description" : "",
+    "placeholders" : null
+  },
+  "heading_padding.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "heading_padding.label" : {
+    "message" : "Heading Padding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "hour_text.default" : {
+    "message" : "Hours",
+    "description" : "",
+    "placeholders" : null
+  },
+  "hour_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "hour_text.label" : {
+    "message" : "Hour Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "hour_text.placeholder" : {
+    "message" : "Hours",
+    "description" : "",
+    "placeholders" : null
+  },
+  "hour_text.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "minutes_text.default" : {
+    "message" : "Minutes",
+    "description" : "",
+    "placeholders" : null
+  },
+  "minutes_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "minutes_text.label" : {
+    "message" : "Minutes Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "minutes_text.placeholder" : {
+    "message" : "Minutes",
+    "description" : "",
+    "placeholders" : null
+  },
+  "minutes_text.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Countdown Clock",
+    "description" : "",
+    "placeholders" : null
+  },
+  "seconds_text.default" : {
+    "message" : "Seconds",
+    "description" : "",
+    "placeholders" : null
+  },
+  "seconds_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "seconds_text.label" : {
+    "message" : "Seconds Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "seconds_text.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "seconds_text.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "target_date_time.help_text" : {
+    "message" : "Target Date & Time",
+    "description" : "",
+    "placeholders" : null
+  },
+  "target_date_time.label" : {
+    "message" : "Target Date & Time",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "<p style=\"font-size: 36px; text-align: center;\">Countdown Clock</p>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

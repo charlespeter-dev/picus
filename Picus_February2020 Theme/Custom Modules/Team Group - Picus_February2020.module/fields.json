@@ -1,0 +1,178 @@
+[ {
+  "id" : "1691edd0-4b69-eee4-d452-e14670ebd891",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Meet Our Team"
+}, {
+  "id" : "5e95e5bb-c7df-f8a7-3b86-2a1254780ed3",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "4ee6cce8-4573-df8b-a1e0-4ef8e0f8ad41",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Team Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Executive Team"
+  }, {
+    "id" : "934c106d-7445-2bb5-5fbd-5838ebd66ce0",
+    "name" : "members_group",
+    "display_width" : null,
+    "label" : "Members Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "5d5a68ec-0385-2c03-8f76-8650c75abb8e",
+      "name" : "member_image",
+      "display_width" : null,
+      "label" : "Member Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/team-alper-memis@3x.png",
+        "alt" : "H. Alper Memiş",
+        "width" : 450,
+        "height" : 450,
+        "max_width" : 450,
+        "max_height" : 450
+      }
+    }, {
+      "id" : "e30484d4-bd05-d50e-87cc-4cef4c115654",
+      "name" : "member_name",
+      "display_width" : null,
+      "label" : "Member Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "H. Alper Memiş"
+    }, {
+      "id" : "6a6ac28f-f0a0-29d1-0ea4-9b2e475f56fc",
+      "name" : "member_designation",
+      "display_width" : null,
+      "label" : "Member Designation",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "CEO, Founder"
+    }, {
+      "id" : "8dd8f081-8dab-e688-3e8d-16fe0cee67b4",
+      "name" : "linkedin_profile_link",
+      "display_width" : null,
+      "label" : "Linkedin Profile Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "member_image" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/team-alper-memis@3x.png",
+        "alt" : "H. Alper Memiş",
+        "width" : 450,
+        "height" : 450,
+        "max_width" : 450,
+        "max_height" : 450
+      },
+      "member_name" : "H. Alper Memiş",
+      "member_designation" : "CEO, Founder",
+      "linkedin_profile_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "heading" : "Executive Team",
+    "members_group" : {
+      "member_image" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/team-alper-memis@3x.png",
+        "alt" : "H. Alper Memiş",
+        "width" : 450,
+        "height" : 450,
+        "max_width" : 450,
+        "max_height" : 450
+      },
+      "member_name" : "H. Alper Memiş",
+      "member_designation" : "CEO, Founder",
+      "linkedin_profile_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "5b99bd14-9b19-a53b-f109-28fb6635e41e",
+  "name" : "bottom_content",
+  "display_width" : null,
+  "label" : "Bottom Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Or please send an email for more information:</p>\n<a href=\"mailto:info@picussecurity.com\">info@picussecurity.com</a>"
+} ]

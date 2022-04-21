@@ -1,0 +1,27 @@
+<div class="button-group-wrapper">
+  <div id="datasheet-demo">
+    <div id="datasheet-demo" class="global-row mainpage-buttons" style="background-color: rgba({{ module.background_color.color|convert_rgb  }},{{ module.background_color.opacity/100 }});">
+      {% for rows in module.button_group|batch(3, '') %}
+        <div class="col12">
+          {% for item in rows %}
+            {% if item.select_button_type %}
+              {% if item.select_button_type == 'standard' %}
+                {% set href = item.button_link.url.href %}
+                {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                {% endif %}
+                {% if item.button_text and href %}
+                  <a href="{{ href }}"
+                     {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if item.button_link.no_follow %}rel="nofollow"{% endif %} class="btn btn-white">{{ item.button_text }}</a>
+                {% endif %}
+              {% else %}
+                {% cta guid="{{ item.select_cta }}" %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

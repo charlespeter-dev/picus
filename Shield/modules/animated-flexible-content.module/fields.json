@@ -1,0 +1,34 @@
+[ {
+  "id" : "89eb5629-2c19-5165-99bb-2606ab38b2b7",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Add your content here</p>"
+}, {
+  "id" : "e62e1cbd-6af5-16d4-7a69-19073f4490f7",
+  "name" : "animation_effect",
+  "display_width" : null,
+  "label" : "Animation Effect",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "fadeIn", "Fade In" ], [ "fadeInRight", "Fade In Right" ], [ "fadeInLeft", "Fade In Left" ], [ "fadeInUp", "Fade In Top" ], [ "fadeInDown", "Fade In Bottom" ], [ "zoomIn", "Zoom In" ] ],
+  "type" : "choice",
+  "default" : "fadeIn"
+}, {
+  "id" : "65a8f996-55bf-5546-1c7e-bc4c73194865",
+  "name" : "animation_delay",
+  "display_width" : null,
+  "label" : "Animation Delay",
+  "help_text" : "Set the time (in seconds) that an animation should be delayed for on scroll",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "0.5"
+} ]

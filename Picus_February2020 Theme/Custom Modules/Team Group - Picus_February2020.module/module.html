@@ -1,0 +1,41 @@
+<div class="team-group-wrapper">
+  <div class="global-row company-team lightgraybg">
+    <div class="page-center">
+      <div class="row">
+        <div class="colsm12 col-centered">
+          {% if module.title %}<h2>{{ module.title }}</h2>{% endif %}
+          {% for item in module.items %}
+            {% if item.heading %}<h3>{{ item.heading }}</h3>{% endif %}
+            <div class="team-grid">
+              <div class="row {% if item.members_group|length < 7 %}advisory-team-row{% else %}justify-content-center{% endif %}">
+                {% for item2 in item.members_group %}
+                  <div class="col team-grid-item">
+                    {% if item2.member_image.src %}
+                      <img src="{{ item2.member_image.src }}" alt="{{ item2.member_image.alt }}" title="{{ item2.member_image.alt }}" />
+                    {% endif %}
+                    <p>{{ item2.member_name }}</p>
+                    <p class="title">{{ item2.member_designation }}</p>
+                    {% set href = item2.linkedin_profile_link.url.href %}
+                    {% if item2.linkedin_profile_link.url.type is equalto "EMAIL_ADDRESS" %}
+                      {% set href = "mailto:" + href %}
+                    {% endif %}
+                    {% if href %}<a class="linkedin" href="{{ href }}"
+                       {% if item2.linkedin_profile_link.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if item2.linkedin_profile_link.no_follow %}rel="nofollow"{% endif %}>
+                      <img src="//cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/linkedin-1.svg" alt="{{ item2.member_name }} - LinkedIn" title="{{ item2.member_name }} - LinkedIn">
+                    </a>{% endif %}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+          {% if module.bottom_content %}
+            <div class="team-contact">
+              {{ module.bottom_content }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

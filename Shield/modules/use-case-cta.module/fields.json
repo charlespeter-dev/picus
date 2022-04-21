@@ -1,0 +1,58 @@
+[ {
+  "id" : "4a5dc769-56f9-77ce-2a40-1a6691c391f8",
+  "name" : "display_banner",
+  "display_width" : null,
+  "label" : "Display Banner",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "17fb0332-f908-3f77-6cb4-3c8f8cdf75ea",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/Shield/Backgrounds/picus-cta-banner-blue.png",
+    "alt" : "picus-cta-banner-blue",
+    "width" : 1920,
+    "height" : 310,
+    "max_width" : 1920,
+    "max_height" : 310
+  }
+}, {
+  "id" : "02208c37-3bb7-45c8-2a5b-50e9016b3305",
+  "name" : "message",
+  "display_width" : null,
+  "label" : "Message",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h4 style=\"text-transform: uppercase;\">Ready to get started?</h4>\n<h2 style=\"text-transform: uppercase; color: #fff; margin-top: -30px;\">Get in touch or <br>book a demo today</h2>"
+}, {
+  "id" : "1d030d48-93a6-c9cb-5fe2-f458265fa23c",
+  "name" : "cta_1",
+  "display_width" : null,
+  "label" : "CTA 1",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "e1ab7ffb-d4d2-470e-ae14-07f4b51d1cf0"
+}, {
+  "id" : "7551d538-c7aa-ea76-ea65-3856cc692ead",
+  "name" : "cta_2",
+  "display_width" : null,
+  "label" : "CTA 2",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "0e264360-bd52-44fb-896a-859b35e71c0a"
+} ]

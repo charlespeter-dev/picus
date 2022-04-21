@@ -1,0 +1,62 @@
+{# 
+Reference: https://app.asana.com/0/871479932186554/871479932186628
+Version: 1.1.0
+#}
+
+<div id="{{ name }}" class="social-sharing">
+  <ul>
+    {% if module.title %}
+    <li class="social-sharing-title">{{ module.title }}</li>
+    {% endif %}
+    <li class="social-sharing-icon">
+      <a class="facebook customer share" href="https://www.facebook.com/sharer.php?u={% if module.share_url %}{{ module.share_url }}{% else %}{{ content.absolute_url }}{% endif %}" title="Facebook share" target="_blank"><i class="social-icon-facebook"></i></a>
+    </li>
+    <li class="social-sharing-icon">
+      <a class="twitter customer share" href="https://twitter.com/share?url={% if module.share_url %}{{ module.share_url }}{% else %}{{ content.absolute_url }}{% endif %}&amp;text={% if module.tweet_text %}{{ module.tweet_text }}{% else %}{{ page_meta.name }}{% endif %}&amp;hashtags={% if module.tweet_hashtags %}{{ module.tweet_hashtags }}{% else %}{{ site_settings.company_name }}{% endif %}" title="Twitter share" target="_blank"><i class="social-icon-twitter"></i></a>
+    </li>
+    <li class="social-sharing-icon">
+      <a class="google_plus customer share" href="https://plus.google.com/share?url={% if module.share_url %}{{ module.share_url }}{% else %}{{ content.absolute_url }}{% endif %}" title="Google Plus Share" target="_blank"><i class="social-icon-gplus"></i></a>
+    </li>
+    <li class="social-sharing-icon">
+      <a class="linkedin customer share" href="https://www.linkedin.com/shareArticle?mini=true&url={% if module.share_url %}{{ module.share_url }}{% else %}{{ content.absolute_url }}{% endif %}" title="linkedin Share" target="_blank"><i class="social-icon-linkedin"></i></a>
+    </li>
+  </ul>
+</div>
+
+<style>
+  #{{ name }}.social-sharing li.social-sharing-icon { font-size: {{ module.icon_size }}; }
+  {% if module.custom_styling %}
+  {% if module.network_brand_colours %}
+  	#{{ name }} i { transition: 0.3s all; }
+    #{{ name }} i.social-icon-twitter { background-color: #1a97f0!important; color: #fff!important; } 
+  	#{{ name }} i.social-icon-twitter:hover { background-color: #40a8f2!important; color: #fff!important; } 
+    #{{ name }} i.social-icon-facebook { background-color: #3B5998!important; color: #fff!important; } 
+  	#{{ name }} i.social-icon-facebook:hover { background-color: #4c6fb9!important; color: #fff!important; } 
+    #{{ name }} i.social-icon-gplus { background-color: #cc3333!important; color: #fff!important; } 
+  	#{{ name }} i.social-icon-gplus:hover { background-color: #d45555!important; color: #fff!important; } 
+    #{{ name }} i.social-icon-linkedin { background-color: #006cac!important; color: #fff!important; } 
+  	#{{ name }} i.social-icon-linkedin { background-color: #008fe5!important; color: #fff!important; } 
+	{% endif %}
+  #{{ name }}.social-sharing { font-size: {{ module.font_size }}; }
+  #{{ name }}.social-sharing a { color: {{ module.color.color }}; display: flex; justify-content: center; align-items: center; height: 100%; }
+  #{{ name}}.social-sharing i:hover { color: {{ module.hover_colour.color }}; }
+  {% if module.margin %}
+  #{{ name }}.social-sharing li.social-sharing-icon { margin: 0 {{ module.margin }} 6px {{ module.margin }}!important; }
+  {% endif %}
+  #{{ name }}.social-sharing i { 
+    transition: 0.3s all;
+    {% if module.icon_background_colour %} background-color: {{ module.background_colour.color }};{% endif %}
+    {% if module.circle_icon %}border-radius: 50%;{% endif %};
+    height: calc({{ module.icon_size }} * 1.8);
+    width: calc({{ module.icon_size }} * 1.8);
+    height: {{ module.icon_background_size }}!important;
+    width: {{ module.icon_background_size }}!important;
+  }
+  {% if module.icon_background_colour %}
+  	.social-sharing i:hover { background-color: {{ module.icon_background_hover_color.color }}!important; }
+  {% endif %}
+  #{{ name }}.social-sharing li.social-sharing-icon {
+    margin: 0 6px 6px;
+  }
+  {% endif %}
+</style>

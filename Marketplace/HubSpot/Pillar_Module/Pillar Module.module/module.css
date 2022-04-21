@@ -1,0 +1,21 @@
+/*******************************************/
+/*********  Pillar Module Style  ***********/
+/*******************************************/
+
+/*html {
+  scroll-behavior: smooth;
+}*/
+.pillar,
+.pillar a,
+.pillar__chapter {
+  outline: none;
+}
+.pillar__chapter {
+  padding: 20px 0;
+}
+.pillar__chapter .pillar__content {
+  padding: 20px 0;
+}
+.pillar__btc {
+  padding: 20px 0;
+}

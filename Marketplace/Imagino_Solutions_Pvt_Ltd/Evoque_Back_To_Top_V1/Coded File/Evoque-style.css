@@ -1,0 +1,432 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
+
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+
+
+/* Containers */
+{% set maxWidth = "1100px" %} /* Used on '.page-center' in 'Base' and in the 'Portrait tablet to landscape and desktop' media query */
+{% set maxWidth2 = "1000px" %}
+{% set maxWidth3 = "900px" %}
+{% set baseFontSize   = "16px" %}   /* {# Used on 'body' in 'Base'  |  Ex. "font-size: {{ baseFontSize }};" #} */
+{% set baseLineHeight   = "1.5" %}
+{% set baseColor    = "#646B79;" %}
+{% set headColor    = "#444444" %}
+{% set baseFontFamily    = "'DM Sans', sans-serif;" %}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+} 
+
+/* Website background color and default font styles */
+body {
+  background: #fff;
+  font-family: {{ baseFontFamily }};
+  font-size: {{ baseFontSize }};
+  line-height: {{ baseLineHeight }};
+  color:{{ baseColor }};
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * Page Center
+ *
+ * Apply .page-center to full-width modules.
+ */
+
+.container-fluid .row-fluid .page-center {
+  float: none;
+  max-width: {{ maxWidth }};
+  margin: 0 auto;
+}
+.container-fluid .row-fluid .page-center2 {
+  float: none;
+  max-width: {{ maxWidth2 }};
+  width: {{ maxWidth2 }};
+  margin: 0 auto;
+}
+.container-fluid .row-fluid .page-center3 {
+  float: none;
+  max-width: {{ maxWidth3 }};
+  margin: 0 auto;
+}
+
+.widget-span.widget-type-custom_widget {
+    min-height: 0px;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 { 
+    margin:0px;
+  	color:{{ headColor }}
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {  }
+
+h1 {
+    font-size: 50px;
+    line-height: 70px;
+    margin:0px;
+    font-family: {{ baseFontFamily}};
+    
+}
+h2 {
+    font-size: 35px;
+    margin:0px;
+    line-height: 40px;
+    font-family: {{ baseFontFamily }};
+}
+h3 {
+    font-size: 30px;
+    margin:0px;
+    line-height: 35px;
+    font-family: {{ baseFontFamily }};
+}
+h4 {
+    font-size: 24px;
+    margin:0px;
+    font-family: {{ baseFontFamily }};
+}
+h5 {
+    font-size: 20px;
+    margin:0px;
+    font-family: {{ baseFontFamily }};
+}
+h6 {
+    font-size:20px; !important
+    font-weight:500; !important
+    font-family: {{ baseFontFamily }};
+}
+a { text-decoration: none; }
+.clear { clear:both; }
+/******** Header 01 Styling ************/
+.EvoqueHeader.header_01{
+  padding: 15px 0px;
+}
+.EvoqueHeader.header_01 .logo{
+  width: 200px;
+}
+/******** Footer 01 Styling ************/
+.footer-bar-01 {
+    background: #444;
+    padding: 20px 0px;
+    text-align: center;
+    color: #fff;
+}
+.footer-bar-01 p, .footer-bar-01 a {
+    background: #444;
+    padding: 20px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+/***************iPhone Portrait**************/
+@media only screen and (max-width: 479px) and (min-width: 320px){
+.container-fluid .row-fluid .page-center{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+  	padding-right: 0px;
+  	padding-left: 0px;
+}
+.container-fluid .row-fluid .page-center2{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+  	padding-right: 0px;
+  	padding-left: 0px;
+} 
+  .container-fluid .row-fluid .page-center3{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+  	padding-right: 0px;
+  	padding-left: 0px;
+} 
+
+.header_cta{
+    display: none;
+}
+  
+}
+
+/***************iPhone Landscape*************/
+@media only screen and (max-width: 767px) and (min-width: 480px){
+.container-fluid .row-fluid .page-center{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+  	padding-right: 0px;
+  	padding-left: 0px;
+}
+.container-fluid .row-fluid .page-center2{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+  	padding-right: 0px;
+  	padding-left: 0px;
+}
+.container-fluid .row-fluid .page-center3{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+  	padding-right: 0px;
+  	padding-left: 0px;
+}
+  
+}
+
+/****************iPad Portrait***************/
+@media only screen and (max-width: 985px) and (min-width: 768px){
+.container-fluid .row-fluid .page-center{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+}
+.container-fluid .row-fluid .page-center2{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+}
+.container-fluid .row-fluid .page-center3{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+}
+  
+  
+}
+
+/**************iPad Landscape****************/
+@media only screen and ( max-width: 1024px ) and (min-width: 986px){
+.container-fluid .row-fluid .page-center{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+}
+.container-fluid .row-fluid .page-center2{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+}
+.container-fluid .row-fluid .page-center3{
+    width:95%;
+    max-width:95%;
+    box-sizing:border-box;
+}
+}
+/******************************************************************/
+
+
+
+/* -------CTA Styling-------- */
+
+/* ------- General CTA -------- */
+.EvoqueCTA a.cta_button{
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    -moz-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    background: #F57F20;
+    border-width: 0px;
+    color: #fff;
+    padding: 10px 30px;
+    text-shadow: none;
+    line-height: 1.5em;
+    border-radius: 6px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.EvoqueCTA a.cta_button:hover {
+  background: rgb(255,140,0);
+  color: rgb(255,255,255);
+}
+
+
+
+
+/*------ Form Styling ------*/
+.EvoqueForm form.hs-form label {
+    color: #3a506a;
+    font-size: 14px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.EvoqueForm form.hs-form input.hs-input{
+    background: #eee !important;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    height: 40px;
+    font-family: {{ FontFamilyMedium }};
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 10px;
+    position: relative;
+    color: #757575;
+}
+.EvoqueForm form.hs-form select.hs-input{
+    background: #eee;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    height: 40px;
+    font-family: {{ FontFamilyMedium }};
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 10px;
+    position: relative;
+    color: #757575;
+}
+.EvoqueForm form.hs-form input[type="checkbox"], .EvoqueForm form.hs-form input[type="radio"] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial; 
+    width: inherit !important;
+    height: inherit !important;
+    margin-bottom: 10px;
+}
+.EvoqueForm form.hs-form  .hs-fieldtype-booleancheckbox ul.inputs-list {
+    list-style: none;
+    padding-left: 20px;
+}
+.EvoqueForm form.hs-form  input[type="submit"] {
+    font-size: 16px !important;
+    margin-bottom: 0px !important;
+    font-family: {{ FontFamilyBold }};
+}
+.EvoqueForm form.hs-form fieldset.form-columns-2, .EvoqueForm  form.hs-form fieldset.form-columns-1, .EvoqueForm  form.hs-form fieldset.form-columns-3 {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+.EvoqueForm form.hs-form .hs-fieldtype-select.field.hs-form-field .input{
+    position: relative;
+}
+.EvoqueForm form.hs-form .hs-fieldtype-select.field.hs-form-field .input:after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 15px;
+    top: 20px;
+    z-index: 9999;
+}
+.EvoqueForm form.hs-form .hs-fieldtype-select.field.hs-form-field .input:before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: 9px;
+    top: 20px;
+    z-index: 9999;
+}
+.EvoqueForm form.hs-form span.hs-form-required {
+    display: none;
+}
+.EvoqueForm form.hs-form  fieldset.form-columns-1 .hs-input {
+    width: 100%;
+}
+.EvoqueForm form.hs-form .hs-error-msg {
+    font-size: 12px;
+}
+.EvoqueForm form.hs-form input .input{
+   padding-bottom: 16px;
+   padding-top: 7px;
+}
+
+.EvoqueForm form.hs-form textarea {
+    padding: 5px 5px;
+    height: 100px;
+    width: 100%;
+    border: none;
+    background: #eee;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: {{ FontFamilyMedium }};
+    color: #757575;
+}
+.EvoqueForm form.hs-form ul.no-list.hs-error-msgs.inputs-list {
+    padding-left: 0;
+    margin: 0px 0px 10px 0px;
+}
+.EvoqueForm form.hs-form ul.no-list.hs-error-msgs li {
+    list-style: none;
+    line-height: 10px;
+}
+.EvoqueForm form.hs-form .hs_submit input {
+    background: #f57f20;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 50px;
+    height: 40px !important;
+    cursor:pointer;
+    position: relative;
+    width:auto;
+    text-transform: uppercase;
+    
+}
+.EvoqueForm form.hs-form .hs_submit input:hover {
+    opacity: 0.8;
+}
+.EvoqueForm form.hs-form .hs_submit .actions{
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+/* .EvoqueForm form.hs-form .hs-form-field .hs-input {
+    width: 100% !important;
+} */
+.EvoqueForm form.hs-form .hs-fieldtype-checkbox ul.inputs-list, 
+.EvoqueForm form.hs-form .hs-fieldtype-radio ul.inputs-list,
+.EvoqueForm form.hs-form .hs-fieldtype-booleancheckbox ul.inputs-list{
+    list-style: none;
+    padding-left: 5px;
+/*     display: flex; */
+}
+
+.EvoqueForm .submitted-message {
+    text-align: center;
+    padding: 20px 0px;
+}
+.EvoqueForm input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

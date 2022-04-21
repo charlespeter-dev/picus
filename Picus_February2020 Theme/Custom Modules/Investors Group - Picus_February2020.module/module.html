@@ -1,0 +1,16 @@
+<div class="company-investors-group-wrapper">
+  <div class="global-row company-investors">
+    <div class="page-center">
+      {% if module.title %}<h2>{{ module.title }}</h2>{% endif %}
+      <div class="row align-items-center">
+        {% for item in module.items %}
+          {% if item.image.src %}
+            <div class="colsm4 col12">
+              <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" title="{{ item.image.alt }}" style="width: {{ item.image.width }}px;" />
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

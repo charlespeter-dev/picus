@@ -1,0 +1,271 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 2,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "<style>\n  {% include 'Marketplace/HubSpot/HubSpot_Migrations_Starter_Email_Pack/Coded_Files/migration_starter_emails.css' %}\n</style>",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15465416149581441",
+        "label" : "View As Web Page",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "html" : "<div style=\"padding-top: 15px; font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: right; font-size: 9px; line-height: 1.34em; color: {{ secondary_font_color }};\">Not rendering correctly? View this email as a web page <a class=\"hubspot-mergetag\" style=\"color: {{ secondary_font_color }}; text-decoration: underline; white-space: nowrap;\" data-viewaswebpage=\"true\" href=\"{{ view_as_page_url }}\">here</a>.</div>",
+          "overrideable" : true,
+          "path" : "@hubspot/email_view_as_web_page",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "View As Web Page",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_151371944479777",
+        "label" : "Migration Email Branding v1",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Marketplace/HubSpot/HubSpot_Migrations_Starter_Email_Pack/Custom_Modules/Migration Email Branding v1",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Migration Email Branding v1",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_151318054702417",
+        "label" : "Migration Newsletter Header v1",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Marketplace/HubSpot/HubSpot_Migrations_Starter_Email_Pack/Custom_Modules/Migration Newsletter Header v1",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Migration Newsletter Header v1",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_156095633662379",
+        "label" : "Migration Newsletter Article v1",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Marketplace/HubSpot/HubSpot_Migrations_Starter_Email_Pack/Custom_Modules/Migration Newsletter Article v1",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Migration Newsletter Article v1 copy",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1560956400330141",
+        "label" : "Migration Newsletter Article v1",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Marketplace/HubSpot/HubSpot_Migrations_Starter_Email_Pack/Custom_Modules/Migration Newsletter Article v1",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Migration Newsletter Article v1 copy",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15465416768661519",
+        "label" : "Follow Me - Email",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_margin_bottom" : "0",
+          "css_margin_left" : "0",
+          "css_margin_right" : "0",
+          "css_margin_top" : "0",
+          "css_padding_bottom" : "0",
+          "css_padding_left" : "0",
+          "css_padding_right" : "0",
+          "css_padding_top" : "0",
+          "css_style" : "padding-top: 10px;",
+          "overrideable" : true,
+          "path" : "@hubspot/follow_me_email",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "social" : [ {
+            "network" : "twitter",
+            "url" : "#"
+          } ],
+          "widget_name" : "Follow Me - Email",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15465417305191694",
+        "label" : "Office Location Information",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "html" : "<div id=\"footer\" style=\"margin-top: 30px; margin-bottom: 30px; text-align: center; font-size: 12px; line-height: 1.25em; color: {{ secondary_font_color }}; display: block;\">\n<p style=\"margin: .5em;\">{{ site_settings.company_name }}</p>\n<p style=\"margin: .5em;\">{{ site_settings.company_street_address_1 }} {{ site_settings.company_street_address_2 }} {{ site_settings.company_city }} {{ site_settings.company_state }} {{ site_settings.company_zip }} {{ site_settings.company_country }}</p>\n<p style=\"margin: .5em;\">You received this email because you are subscribed to {{ subscription_name }} from {{ site_settings.company_name }}.</p>\n<p style=\"margin: .5em;\">Update your <a target=\"_blank\" href=\"{{ unsubscribe_link }}\" style=\"text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};\" data-unsubscribe=\"true\">email preferences</a> to choose the types of emails you receive.</p>\n<p style=\"margin: .5em;\"><a target=\"_blank\" href=\"{{ unsubscribe_link_all }}\" style=\"text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};\" data-unsubscribe=\"true\">Unsubscribe from all future emails</a></p>\n</div>",
+          "overrideable" : true,
+          "path" : "@hubspot/email_can_spam",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Office Location Information",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

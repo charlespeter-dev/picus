@@ -1,0 +1,55 @@
+[ {
+  "id" : "8c16f7a7-0b59-fcdc-386b-b59f6603e196",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Select Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/picuslogowhite.svg",
+    "alt" : "Picus Security",
+    "width" : 120,
+    "height" : 120
+  }
+}, {
+  "id" : "46a9388d-31c3-30cc-c028-ef8f2978d977",
+  "name" : "select_sticky_logo",
+  "display_width" : null,
+  "label" : "Select Sticky Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/picuslogo.svg",
+    "alt" : "Picus Security",
+    "width" : 120,
+    "height" : 120
+  }
+}, {
+  "id" : "f4710275-0485-00b6-c58f-05f7f485793f",
+  "name" : "logo_url",
+  "display_width" : null,
+  "label" : "Logo URL",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "/"
+}, {
+  "id" : "b51f99c0-15d6-4529-daa6-b52dc5f08abd",
+  "name" : "open_link_in_new_tab",
+  "display_width" : null,
+  "label" : "Open link in new tab",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

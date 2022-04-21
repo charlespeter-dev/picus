@@ -1,0 +1,372 @@
+[ {
+  "id" : "7f355a15-c84e-2a79-54d9-35e680b6028e",
+  "name" : "hero",
+  "display_width" : null,
+  "label" : "Hero",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b0b0d351-f8ca-4ad8-e9f7-8a5b55a0e529",
+    "name" : "hero_cta",
+    "display_width" : null,
+    "label" : "Hero CTA",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "hero_cta" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "6ee91556-ac08-2a24-4279-528c2c4b21c9",
+  "name" : "speakers",
+  "display_width" : null,
+  "label" : "Speakers",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b692ec9f-d5fa-1b8d-c38e-a130c586934e",
+    "name" : "speaker_color",
+    "display_width" : null,
+    "label" : "Speaker Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "speaker_color" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "50b8f022-216a-439d-e498-3b12eda41b6c",
+  "name" : "agenda",
+  "display_width" : null,
+  "label" : "Agenda",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a46822f7-3b03-8a86-c769-7941bdbafc8b",
+    "name" : "agenda_time",
+    "display_width" : null,
+    "label" : "Agenda Time",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "aaf67df0-e3d3-5803-2210-cff90dc7f0ac",
+    "name" : "agenda_circles",
+    "display_width" : null,
+    "label" : "Agenda Circles",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "agenda_time" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    },
+    "agenda_circles" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "b3f5a470-1132-3338-d5de-0705049c51d8",
+  "name" : "save_your_seat_our_sponsors",
+  "display_width" : null,
+  "label" : "Save Your Seat / Our Sponsors",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "21dfcaad-e889-eb1e-c258-19134d596073",
+    "name" : "save_your_seat_cta_button",
+    "display_width" : null,
+    "label" : "Save Your Seat CTA Button",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "fcc92a6d-0f23-c1d5-702c-c1ed645268af",
+    "name" : "our_sponsors",
+    "display_width" : null,
+    "label" : "Our Sponsors",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "save_your_seat_cta_button" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    },
+    "our_sponsors" : {
+      "color" : "#db2761",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "912b984c-ddf8-90cf-7c31-a1720d716c1e",
+  "name" : "footer",
+  "display_width" : null,
+  "label" : "Footer",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f866910a-4cd8-ba44-1631-0da558f5fc01",
+    "name" : "footer_bg_color",
+    "display_width" : null,
+    "label" : "Footer BG Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#572c48",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "footer_bg_color" : {
+      "color" : "#572c48",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "6c78a71d-1ce6-7295-93d6-a8b0be2979e7",
+  "name" : "gradients",
+  "display_width" : null,
+  "label" : "Gradients BG (Hero and Event Form)",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2f4b29e4-0d05-8d90-51fc-2ba509c88291",
+    "name" : "degrees_hero",
+    "display_width" : null,
+    "label" : "Hero Gradient Angle",
+    "help_text" : "Choose a value from 0 to 180 degrees.",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 180,
+    "step" : 1,
+    "type" : "number",
+    "default" : 135
+  }, {
+    "id" : "33613795-f210-be85-3351-73bff22aa99e",
+    "name" : "hero_gradient_color_1",
+    "display_width" : null,
+    "label" : "Hero Gradient Color #1",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#0e395c",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "2ba71dab-25f3-d366-532e-8795acd8d6d9",
+    "name" : "hero_gradient_color_2",
+    "display_width" : null,
+    "label" : "Hero Gradient Color #2",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#263555",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "4fef9788-1c81-8aa9-c33f-6944e76320c3",
+    "name" : "hero_bg_color_position_2",
+    "display_width" : null,
+    "label" : "Hero BG Color Position 2",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 8
+  }, {
+    "id" : "1d6f2d68-8926-aac6-cbcd-0caa2eec14ec",
+    "name" : "hero_gradient_color_3",
+    "display_width" : null,
+    "label" : "Hero Gradient Color #3",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#3d314f",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "1f656d4e-fc27-2e28-f6fc-e29a27cef33b",
+    "name" : "hero_bg_color_position_3",
+    "display_width" : null,
+    "label" : "Hero BG Color Position 3",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 16
+  }, {
+    "id" : "d2545b46-6291-2fcb-4ee0-ea93c2b5c293",
+    "name" : "hero_gradient_color_4",
+    "display_width" : null,
+    "label" : "Hero Gradient Color #4",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#572c48",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "85a4e18f-4c93-8cab-8b68-d27c416a86fe",
+    "name" : "hero_bg_color_position_4",
+    "display_width" : null,
+    "label" : "Hero BG Color Position 4",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 28
+  }, {
+    "id" : "8d1c1193-d0c8-5b71-69ea-5437c06ef12f",
+    "name" : "hero_gradient_color_5",
+    "display_width" : null,
+    "label" : "Hero Gradient Color #5",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#79263f",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "03c5476b-2594-a3d0-0ee8-04444e2d23b2",
+    "name" : "hero_bg_color_position_5",
+    "display_width" : null,
+    "label" : "Hero BG Color Position 5",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 43
+  }, {
+    "id" : "218f475d-6b83-a3c2-423b-3d39b5dee3fe",
+    "name" : "hero_gradient_color_6",
+    "display_width" : null,
+    "label" : "Hero Gradient Color #6",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#c6182a",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "1ef472b8-22a3-3dba-1ce6-0f1f328f49c7",
+    "name" : "hero_bg_color_position_6",
+    "display_width" : null,
+    "label" : "Hero BG Color Position 6",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 100
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "degrees_hero" : 135,
+    "hero_gradient_color_1" : {
+      "color" : "#0e395c",
+      "opacity" : 100
+    },
+    "hero_gradient_color_2" : {
+      "color" : "#263555",
+      "opacity" : 100
+    },
+    "hero_bg_color_position_2" : 8,
+    "hero_gradient_color_3" : {
+      "color" : "#3d314f",
+      "opacity" : 100
+    },
+    "hero_bg_color_position_3" : 16,
+    "hero_gradient_color_4" : {
+      "color" : "#572c48",
+      "opacity" : 100
+    },
+    "hero_bg_color_position_4" : 28,
+    "hero_gradient_color_5" : {
+      "color" : "#79263f",
+      "opacity" : 100
+    },
+    "hero_bg_color_position_5" : 43,
+    "hero_gradient_color_6" : {
+      "color" : "#c6182a",
+      "opacity" : 100
+    },
+    "hero_bg_color_position_6" : 100
+  }
+} ]

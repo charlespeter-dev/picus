@@ -1,0 +1,48 @@
+<div class="tech-alliances-wrapper">
+  <div id="tech-alliances" class="global-row partners-alliances whitebg">
+    <div class="page-center">
+      {% if module.title %}<h2 class="mb-5">{{ module.title }}</h2>{% endif %}
+      <div class="row">
+        {% for rows in module.items|batch(2, '') %}
+          <div class="col12">
+            <div class="row">
+              {% for item in rows %}
+                {% set href = item.image_link.url.href %}
+                {% if item.image_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set href2 = item.caption_link.url.href %}
+                {% if item.caption_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href2 = "mailto:" + href2 %}
+                {% endif %}
+              
+                {% if item.image.src or item.caption %}
+                  <div class="colmd6 col12">
+                    <div class="row alliances-item {% if loop.first %}first{% endif %}">
+                      <div class="col">
+                        {% if item.image.src %}
+                          {% if href %}<a href="{{ href }}"
+                             {% if item.image_link.open_in_new_tab %}target="_blank"{% endif %}
+                             {% if item.image_link.no_follow %}rel="nofollow"{% endif %}>{% endif %}
+                            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" title="{{ item.image.alt }}" style="width: {{ item.image.width }}px;" />
+                          {% if href %}</a>{% endif %}
+                        {% endif %}
+                        {% if item.caption %}
+                          {% if href2 %}<a href="{{ href2 }}"
+                             {% if item.caption_link.open_in_new_tab %}target="_blank"{% endif %}
+                             {% if item.caption_link.no_follow %}rel="nofollow"{% endif %}>{% endif %}{{ item.caption }}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                          {% if href2 %}</a>{% endif %}
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

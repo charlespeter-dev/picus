@@ -1,0 +1,154 @@
+[ {
+  "id" : "7eb9b46c-6d30-1b0e-5b05-0ecc761b3319",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Text",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "DOWNLOAD NOW"
+}, {
+  "id" : "995dbe2f-bdb1-fb12-ce21-fe3f3e0e3ce0",
+  "name" : "font_size",
+  "display_width" : null,
+  "label" : "Font Size",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Font Size",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "16px"
+}, {
+  "id" : "e675dc64-4479-3d93-e1da-3c73ed97a54b",
+  "name" : "line_height",
+  "display_width" : null,
+  "label" : "Line Height",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Line Height",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "18px"
+}, {
+  "id" : "d14ab8f7-409d-1c7b-c8c2-1b14189e481b",
+  "name" : "font_weight",
+  "display_width" : null,
+  "label" : "Font Weight",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Font Weight",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "bold"
+}, {
+  "id" : "d5c52b93-28e5-89b7-d407-0cb5b0a0bda0",
+  "name" : "width",
+  "display_width" : null,
+  "label" : "Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Width",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "256px"
+}, {
+  "id" : "d0b3ce28-c22d-d932-f7fc-c353ee27ad0c",
+  "name" : "height",
+  "display_width" : null,
+  "label" : "Height",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Height",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "40px"
+}, {
+  "id" : "4fb992c8-56c6-9868-fa97-46512d319ed6",
+  "name" : "padding_top",
+  "display_width" : null,
+  "label" : "Padding Top",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Padding Top",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "20px"
+}, {
+  "id" : "a2c07d83-8a25-bf03-adcc-5e4bda28cdf8",
+  "name" : "padding_bottom",
+  "display_width" : null,
+  "label" : "Padding Bottom",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Padding Bottom",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "40px"
+}, {
+  "id" : "7ea48a2d-955c-b8af-3a79-c724a401f2f6",
+  "name" : "link",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Link",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "http://google.com"
+}, {
+  "id" : "19fe9990-b685-8cc4-cfae-872d353f93a1",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "21dfae05-6e4b-8d6b-54be-e5db52dca83f",
+  "name" : "cta_background_color",
+  "display_width" : null,
+  "label" : "CTA Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#D60059",
+    "opacity" : 100
+  }
+}, {
+  "id" : "43feda31-2c0c-f1ea-a3aa-6d7863b82eaa",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+} ]

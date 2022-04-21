@@ -1,0 +1,59 @@
+{% set overlay_opacity_1 = module.section.styles.overlay_color.opacity / 100 %}
+{% set overlay_opacity_2 = module.section.styles.gradient_color.opacity / 100 %}
+
+<style>
+  .section--{{ name }} .faq-card svg { 
+    color: {{ module.content.arrow_color.color }}
+  }
+</style>
+
+<section style="background-color: {{ module.section.styles.background_color.color }};"
+         class="section
+                simple-faq-wrapper
+                section--{{ name }}
+                padding-top__{{ module.section.styles.top_padding }}
+                padding-bottom__{{ module.section.styles.bottom_padding }}
+                {{ module.section.code.custom_classes }}"
+         id="{{ module.section.code.custom_id }}">
+  <div style="color: {{ module.section.styles.font_color.color }};
+       {% if module.section.styles.section_width == 'custom' %}
+       max-width:{{ module.section.styles.custom_width }};
+       {% endif %}"
+       class="section-wrapper
+              {% if module.section.styles.section_width != 'normal' %}
+              section-wrapper--{{ module.section.styles.section_width }}
+              {% endif %}">
+    
+    <div class="intro-text-align-{{ module.content.intro_text_alignment }}">
+      {% if module.content.section_title %}
+      <h2 class="section-title">
+        {{ module.content.section_title }}
+      </h2>
+      {% endif %}
+      {% if module.content.section_supporting_content %}
+      <div class="section-supporting-content">
+        {{ module.content.section_supporting_content }}
+      </div>
+      {% endif %}
+    </div>
+    
+    <div class="faq-wrapper">
+      {% for item in module.content.questions %}
+      <div class="faq-card">
+        <div class="faq-title-row">
+          <h5 class="faq-title">
+            {{ item.question }}
+          </h5>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10 fa-3x"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>
+        </div>
+        <div class="faq-answer">
+          {{ item.answer }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

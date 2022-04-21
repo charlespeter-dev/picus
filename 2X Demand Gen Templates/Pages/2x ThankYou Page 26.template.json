@@ -1,0 +1,448 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_v4.5.2.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_fontAwesome_4.7.0.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/override-hubspot_March2021.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/custom-Olympia_June2021.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "color:#1D1D1B;",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1647248159767433",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container px-0",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1647248145667417",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "mainContent",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1647248123403395",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "p-4 px-lg-5",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1647248106284390",
+                    "label" : "Image",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/linked_image",
+                      "img" : {
+                        "alt" : "Primary-LogoAsset 6Grey-text_Purple",
+                        "height" : 97,
+                        "loading" : "disabled",
+                        "max_height" : 97,
+                        "max_width" : 318,
+                        "size_type" : "auto",
+                        "src" : "https://f.hubspotusercontent10.net/hubfs/4883612/2x/26/Primary-LogoAsset%206Grey-text_Purple.png",
+                        "width" : 318
+                      },
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "max-width:131px;margin-left:0px;",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "widget_name" : "Image",
+                      "css_id_str" : "",
+                      "overrideable" : true
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "max-width:131px;margin-left:0px;",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "p-4 px-lg-5",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "mainContent",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "container px-0",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1647249455783538",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "border-bottom: 1px solid #C5CBD0;height:1px;min-height:1px;margin-bottom:41px;",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "border-bottom: 1px solid #C5CBD0;height:1px;min-height:1px;margin-bottom:41px;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1647313011982195",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container px-0",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 6,
+            "name" : "module_164731114887837",
+            "label" : "2x ThankYou Page 26",
+            "type" : "custom_widget",
+            "params" : {
+              "body_content_mobile" : [ {
+                "bottom_spacing_mobile" : "mb-4",
+                "content_text" : "Thank you for your interest!",
+                "font_color" : {
+                  "color" : "#405463",
+                  "opacity" : 100
+                },
+                "font_size" : "48px",
+                "font_weight" : "normal",
+                "line_height" : "56px"
+              }, {
+                "bottom_spacing_mobile" : "mb-3",
+                "content_text" : "A copy has also been sent to your email.",
+                "font_color" : {
+                  "color" : "#192126",
+                  "opacity" : 100
+                },
+                "font_size" : "18px",
+                "font_weight" : "normal",
+                "line_height" : "26px"
+              } ],
+              "css_style" : "",
+              "css_id" : "",
+              "body_content_desktop" : [ {
+                "bottom_spacing_desktop" : "mb-md-4",
+                "content_text" : "Thank you for your interest!",
+                "font_color" : {
+                  "color" : "#405463",
+                  "opacity" : 100
+                },
+                "font_size" : "48px",
+                "font_weight" : "normal",
+                "line_height" : "56px"
+              }, {
+                "bottom_spacing_desktop" : "mb-md-3",
+                "content_text" : "A copy has also been sent to your email.",
+                "font_color" : {
+                  "color" : "#192126",
+                  "opacity" : 100
+                },
+                "font_size" : "18px",
+                "font_weight" : "normal",
+                "line_height" : "26px"
+              } ],
+              "css_class" : "col-12 col-md-6 col-xl-8 pt-xl-5 px-0",
+              "information_text" : {
+                "icon_arrow" : {
+                  "src" : ""
+                },
+                "richtext_field" : "<p style=\"font-size: 18px; line-height: 26px;\">Need more information? Please <a href=\"https://www.logically.com/contact\" rel=\"noopener\"><span style=\"color: #0095a6;\">contact us</span></a>.</p>"
+              },
+              "schema_version" : 2,
+              "path" : "/2X Demand Gen Templates/Custom Modules/2x ThankYou_Page_Module_26",
+              "per_widget_wrapper_html" : "",
+              "logo_field" : {
+                "override_inherited_src" : true
+              },
+              "right_image" : {
+                "src" : ""
+              },
+              "wrapping_html" : "",
+              "widget_name" : "2x ThankYou_Page_Module_26",
+              "css_id_str" : "",
+              "overrideable" : true
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "col-12 col-md-6 col-xl-8 pt-xl-5 px-0",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "6" : {
+            "x" : 6,
+            "w" : 6,
+            "name" : "module_1647313025466198",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "custom-background col-12 col-md-6 col-xl-7 mb-5 pt-md-5",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1647313034757201",
+                "label" : "2x-put-background",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_style" : "display:none;",
+                  "background_size_mobile" : "cover",
+                  "css_id" : "",
+                  "css_class" : "",
+                  "schema_version" : 2,
+                  "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x-put-background",
+                  "per_widget_wrapper_html" : "",
+                  "background_size" : "contain",
+                  "background_image_field" : {
+                    "alt" : "purple",
+                    "height" : 1126,
+                    "loading" : "lazy",
+                    "max_height" : 1126,
+                    "max_width" : 1483,
+                    "size_type" : "auto",
+                    "src" : "https://4883612.fs1.hubspotusercontent-na1.net/hubfs/4883612/2x/26/purple.png",
+                    "width" : 1483
+                  },
+                  "wrapping_html" : "",
+                  "widget_name" : "2x-put-background",
+                  "css_id_str" : "",
+                  "overrideable" : true
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "display:none;",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1647313045893203",
+                "label" : "Image",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "custom-image",
+                  "schema_version" : 2,
+                  "path" : "@hubspot/linked_image",
+                  "img" : {
+                    "alt" : "Whitepaper - 6 Reasons - 2022",
+                    "height" : 3300,
+                    "loading" : "disabled",
+                    "max_height" : 3300,
+                    "max_width" : 2550,
+                    "size_type" : "auto",
+                    "src" : "https://4883612.fs1.hubspotusercontent-na1.net/hubfs/4883612/2x/26/Whitepaper%20-%206%20Reasons%20-%202022.png",
+                    "width" : 2550
+                  },
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "transform: matrix(0.99, 0.12, -0.12, 0.99, 0, 0);border: 8px solid #192126;border-radius: 10px;margin-right:auto;",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "widget_name" : "Image",
+                  "css_id_str" : "",
+                  "overrideable" : true
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "custom-image",
+                "cssStyle" : "transform: matrix(0.99, 0.12, -0.12, 0.99, 0, 0);border: 8px solid #192126;border-radius: 10px;margin-right:auto;",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "custom-background col-12 col-md-6 col-xl-7 mb-5 pt-md-5",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "container px-0",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1647312935154186",
+        "label" : "2x_footer",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "schema_version" : 2,
+          "path" : "/2X Demand Gen Templates/Custom Modules/2x_footer",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "2x_footer",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

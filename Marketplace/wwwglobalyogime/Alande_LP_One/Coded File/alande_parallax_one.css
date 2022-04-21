@@ -1,0 +1,85 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* These includes are optional, but helpful. */
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+/* @group ========= [ Alande.module.parallax-one.css ] ======== */
+/* @group Layout ---------------------------------------------- */
+    
+	.parallax.module {
+		text-align: center }
+	
+	.parallax.module .parallax-wrapper {
+		padding: 160px 30px;
+		background-color: rgba(0,0,0,0.4);
+		/*z-index: 1;*/
+        position: relative;
+        height:100%;
+        width:100%;
+	}
+	
+  .parallax.module.parallax-cta .parallax-wrapper {
+     padding: 85px 30px;
+     background-color: rgba(0,0,0,0.4);
+     /*z-index: 1;*/
+     position: relative;
+     height: 100%;
+     width: 100%;
+ }
+	
+	.parallax.module .parallax-frame {
+		float: none;
+		margin: 0 auto;
+		max-width: 1200px }
+	
+	.parallax.module h2 {
+		margin: 0 auto 0px auto;
+		max-width: 800px;
+		color: #fff;
+		font-size: 48px;
+		font-weight: 600 
+	}
+	
+	.parallax.module .text-block {
+		float: none;
+		margin: 0 auto 0px auto;
+		max-width: 100%;
+		font-size: 24px;
+		color:#fff;
+		/*color: {{ ligthColor }}; }
+
+/* @end */
+/* @group Responsive ----------------------------------------- */
+
+	@media (max-width:768px) {
+		
+		.parallax.module .parallax-wrapper {
+			padding: 60px 30px }
+		
+		.parallax.module h2 {
+			margin: 0 0 30px 0;
+			font-size: 38px }
+		
+		.parallax.module .text-block {
+			margin-bottom: 40px;
+			font-size: 18px }
+      
+	}
+
+/* @end */
+/* @end */

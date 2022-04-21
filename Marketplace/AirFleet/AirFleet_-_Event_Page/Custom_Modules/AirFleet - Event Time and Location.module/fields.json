@@ -1,0 +1,27 @@
+[ {
+  "id" : "084e2ca8-0c60-829b-d30e-83b21cbddea2",
+  "name" : "date",
+  "display_width" : null,
+  "label" : "Date",
+  "help_text" : "The date of the event",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "1.1.2018"
+}, {
+  "id" : "bb2dd7bb-6787-b368-1234-ee42808ecc2a",
+  "name" : "location",
+  "display_width" : null,
+  "label" : "Location",
+  "help_text" : "The location of the event",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Location"
+} ]

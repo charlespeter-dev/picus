@@ -1,0 +1,47 @@
+<div class="row-fluid banner-bg" style="background-image: url('{{ module.banner_background_image.src}}');">
+  <div class="span12 page-center">
+    
+    <div class="row-fluid">
+      <div class="span6 picus-logo">
+        {% if module.logo.src %}
+          {% set sizeAttrs = 'width="{{ module.logo.width }}" height="{{ module.logo.height }}"' %}
+          {% if module.logo.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.logo.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.logo.max_width }}px; max-height: {{ module.logo.max_height }}px"' %}
+          {% endif %}
+          <a href="https://www.picussecurity.com/" rel="noopener" target="_blank"><img src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" {{ sizeAttrs }} style="max-width: 120px;"></a>
+        {% endif %}
+      </div>
+      <div class="span6">
+        <div class="vendor-wrapper">
+          <div>
+            <div class="vendor-img">
+              {% if module.vendor_logo.src %}
+                {% set sizeAttrs = 'width="{{ module.vendor_logo.width }}" height="{{ module.vendor_logo.height }}"' %}
+                {% if module.vendor_logo.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.vendor_logo.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.vendor_logo.max_width }}px; max-height: {{ module.vendor_logo.max_height }}px"' %}
+                {% endif %}
+                <img src="{{ module.vendor_logo.src }}" alt="{{ module.vendor_logo.alt }}" {{ sizeAttrs }} style="max-width: 110px;">
+              {% endif %}
+            </div>
+            <div class="vendor-info">
+              {% inline_rich_text field="vendor_info" value="{{ module.vendor_info }}" %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span12">
+        <h1 style="text-align: center; font-size: 40px; margin-top: 30px; margin-bottom: 20px;"><span style="color: #ffffff;"> IDC Security Show İstanbul</span></h1>
+        <div style="text-align: center;"><span style="color: #ffffff; font-size: 25px; font-weight: 500;">4 Mart IDC Security Show İstanbul'a davetlisiniz!</div>
+        <div style="text-align: center;"><a href="#schedule-now" class="cta-schedule-now scrollTo">Toplantı Planla</a></div>
+      </div>
+    </div>
+    
+  </div>
+</div>

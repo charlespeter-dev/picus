@@ -1,0 +1,79 @@
+[ {
+  "id" : "4b355d01-58be-ccb0-29d3-bfa9175c7a18",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/logos/picus-logo-white.png",
+    "alt" : "Picus Security",
+    "width" : 334,
+    "height" : 83,
+    "max_width" : 334,
+    "max_height" : 83
+  }
+}, {
+  "id" : "4c07c172-be2f-1e16-158b-9d252a9f9e18",
+  "name" : "vendor_logo",
+  "display_width" : null,
+  "label" : "Vendor Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/gartner-cool-vendor-2019.png",
+    "alt" : "Gartner Cool Vendor 2019",
+    "width" : 410,
+    "height" : 368,
+    "max_width" : 410,
+    "max_height" : 368
+  }
+}, {
+  "id" : "7f6051c2-246c-2f68-a55a-0a7438f68e23",
+  "name" : "introduction",
+  "display_width" : null,
+  "label" : "Introduction",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<h1 style=\"text-align: center; font-size: 50px; margin-top: 30px; margin-bottom: 20px;\"><span style=\"color: #ffffff;\">Ready for the #RSAC?</span></h1>\n<div style=\"text-align: center;\"><span style=\"color: #ffffff; font-size: 25px; font-weight: 500;\">Come and join us at the <span style=\"color: #71c5e8;\">Booth#3129</span> to discuss<br>how Breach and Attack Simulation can help your business!</span></div>\n<div style=\"text-align: center;\"><a href=\"#schedule-now\" class=\"cta-schedule-now scrollTo\">Schedule Now</a></div>"
+}, {
+  "id" : "b4db3a13-44c1-8d69-4c0e-9c2d0ce77a45",
+  "name" : "banner_background_image",
+  "display_width" : null,
+  "label" : "Banner Background Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/background%20images/starry-sky.png",
+    "alt" : "",
+    "width" : 1500,
+    "height" : 434,
+    "max_width" : 1500,
+    "max_height" : 434
+  }
+}, {
+  "id" : "182192a5-d0d4-eea4-2b05-8114173974ba",
+  "name" : "vendor_info",
+  "display_width" : null,
+  "label" : "Vendor Info",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<span style=\"color: #ffffff; font-size: 13px;\">Recognized as a Cool Vendor in Security and Risk Management by Gartner</span>"
+} ]

@@ -1,0 +1,11 @@
+{
+  "global" : false,
+  "host_template_types" : [ "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 26070964983,
+  "js_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/js/InfiniteScroll-Masonry.js",
+    "autoload" : true,
+    "name" : "InfiniteScroll-Masonry.js"
+  } ],
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,476 @@
+[ {
+  "id" : "f22f0db8-0201-9f56-9048-ed9b343d0e66",
+  "name" : "listing",
+  "display_width" : null,
+  "label" : "Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "e0789ac4-24f8-5591-757c-a8e7b3d65483",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "97325173-e383-559f-2ddb-8d6847288369",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/listing-bg.png",
+      "alt" : null,
+      "loading" : "disabled"
+    }
+  }, {
+    "id" : "e0789ac4-24f8-5591-757c-a8e7b3d65483",
+    "name" : "details",
+    "display_width" : null,
+    "label" : "Details",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7fe90ad8-3e67-f130-dfa1-74dac1af99b6",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Title of item in the series goes here"
+    }, {
+      "id" : "8bb0711e-5098-4ac4-b4f5-bd5f6c1f1fa0",
+      "name" : "logo",
+      "display_width" : null,
+      "label" : "Logo",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.picussecurity.com/hubfs/listing-logo-picus.png",
+        "alt" : "listing-logo-picus",
+        "loading" : "disabled",
+        "width" : 70,
+        "height" : 18,
+        "max_width" : 70,
+        "max_height" : 18
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : "Title of item in the series goes here",
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://www.picussecurity.com/hubfs/listing-logo-picus.png",
+        "alt" : "listing-logo-picus",
+        "loading" : "disabled",
+        "width" : 70,
+        "height" : 18,
+        "max_width" : 70,
+        "max_height" : 18
+      }
+    }
+  }, {
+    "id" : "73cf13ea-b343-715c-52d2-f780d6aef69e",
+    "name" : "links",
+    "display_width" : null,
+    "label" : "Links",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "90dd7fa9-5574-dd52-27f2-41889e8ed00c",
+      "name" : "webinar_link",
+      "display_width" : null,
+      "label" : "Webinar Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "c416d043-0a8a-80a4-fb06-47ba4747470d",
+      "name" : "download_link",
+      "display_width" : null,
+      "label" : "Download Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "5422adf4-ad06-6a24-e779-cd82439e9da3",
+      "name" : "blog_link",
+      "display_width" : null,
+      "label" : "Blog Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "9402d330-7fee-f5e0-38c1-ebf87ada3f5d",
+      "name" : "webinar_link_detail",
+      "display_width" : null,
+      "label" : "Webinar Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "90dd7fa9-5574-dd52-27f2-41889e8ed00c",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "fd0337ff-5b9d-357c-717c-fe10ff0a5a71",
+      "name" : "download_link_detail",
+      "display_width" : null,
+      "label" : "Download Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "c416d043-0a8a-80a4-fb06-47ba4747470d",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "b2b2c44b-d600-027b-f829-929672e37b69",
+      "name" : "blog_link_detail",
+      "display_width" : null,
+      "label" : "Blog Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "5422adf4-ad06-6a24-e779-cd82439e9da3",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "webinar_link" : true,
+      "download_link" : true,
+      "blog_link" : true,
+      "webinar_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "blog_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/listing-bg.png",
+      "alt" : null,
+      "loading" : "disabled"
+    },
+    "details" : {
+      "title" : "Title of item in the series goes here",
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://www.picussecurity.com/hubfs/listing-logo-picus.png",
+        "alt" : "listing-logo-picus",
+        "loading" : "disabled",
+        "width" : 70,
+        "height" : 18,
+        "max_width" : 70,
+        "max_height" : 18
+      },
+      "background_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "disabled"
+      }
+    },
+    "links" : {
+      "webinar_link" : true,
+      "download_link" : true,
+      "blog_link" : true,
+      "webinar_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "blog_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/listing-bg.png",
+      "alt" : null,
+      "loading" : "disabled"
+    },
+    "details" : {
+      "title" : "Title of item in the series goes here",
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://www.picussecurity.com/hubfs/listing-logo-picus.png",
+        "alt" : "listing-logo-picus",
+        "loading" : "disabled",
+        "width" : 70,
+        "height" : 18,
+        "max_width" : 70,
+        "max_height" : 18
+      },
+      "background_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "disabled"
+      }
+    },
+    "links" : {
+      "webinar_link" : true,
+      "download_link" : true,
+      "blog_link" : true,
+      "webinar_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "blog_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/listing-bg.png",
+      "alt" : null,
+      "loading" : "disabled"
+    },
+    "details" : {
+      "title" : "Title of item in the series goes here",
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://www.picussecurity.com/hubfs/listing-logo-picus.png",
+        "alt" : "listing-logo-picus",
+        "loading" : "disabled",
+        "width" : 70,
+        "height" : 18,
+        "max_width" : 70,
+        "max_height" : 18
+      },
+      "background_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "disabled"
+      }
+    },
+    "links" : {
+      "webinar_link" : true,
+      "download_link" : true,
+      "blog_link" : true,
+      "webinar_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "blog_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Shield/Images/listing-bg.png",
+      "alt" : null,
+      "loading" : "disabled"
+    },
+    "details" : {
+      "title" : "Title of item in the series goes here",
+      "logo" : {
+        "size_type" : "auto",
+        "src" : "https://www.picussecurity.com/hubfs/listing-logo-picus.png",
+        "alt" : "listing-logo-picus",
+        "loading" : "disabled",
+        "width" : 70,
+        "height" : 18,
+        "max_width" : 70,
+        "max_height" : 18
+      },
+      "background_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "disabled"
+      }
+    },
+    "links" : {
+      "webinar_link" : true,
+      "download_link" : true,
+      "blog_link" : true,
+      "webinar_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "blog_link_detail" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ]
+} ]

@@ -1,0 +1,26 @@
+<div class="landing-speakers">
+  <div class="row-fluid">
+    {% set href = module.event.session_link.url.href %}
+{% set rel = [] %}
+{% if module.link_field.no_follow %}
+	{% do rel.append("nofollow") %}
+{% endif %}
+{% if module.link_field.open_in_new_tab %}
+	{% do rel.append("noopener") %}
+{% endif %}
+    <div class="span12 landing-event-details" style="background-color: {{ module.event.background_color.color }};">
+      <div>{{ module.event.event_details }}</div>
+    </div>
+      {% for item in module.speakers %}
+        <div class="span12 landing-event-speaker">
+          <div class="span4 speaker-image" style="background-image: url('{{ item.speaker_image.src }}');">
+            
+          </div>
+          <div class="span8 speaker-info">
+            <p class="speaker-name"><strong>{{ item.speaker_name }}</strong></p>
+            <p class="speaker-title">{{ item.speaker_job_title }}</p>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+</div>

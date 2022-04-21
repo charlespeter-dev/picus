@@ -1,0 +1,334 @@
+[ {
+  "id" : "c5f768cc-808a-eeea-7e53-4deb20e5b483",
+  "name" : "asset_alignment",
+  "display_width" : null,
+  "label" : "Asset Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+  "type" : "choice",
+  "default" : "center"
+}, {
+  "id" : "b3e051cc-df8a-217d-2207-f7976c0b2e75",
+  "name" : "first_text_group",
+  "display_width" : null,
+  "label" : "First Text Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "65540821-10f4-2fa5-7d4c-5bb0ee3c1e23",
+    "name" : "asset_font_size",
+    "display_width" : null,
+    "label" : "Asset Font Size",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Asset Font Size",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "18px"
+  }, {
+    "id" : "8e54f061-2290-26a8-d1cb-265e9313d19d",
+    "name" : "asset_line_height",
+    "display_width" : null,
+    "label" : "Asset Line Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Asset Line Height",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "21px"
+  }, {
+    "id" : "7409a0fe-c0d9-1809-8038-988cfbd9b000",
+    "name" : "asset_color",
+    "display_width" : null,
+    "label" : "Asset Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#D60059",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "fae4f191-7d62-fda9-c50c-b9c464e86b77",
+    "name" : "asset_text",
+    "display_width" : null,
+    "label" : "Asset Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "White paper",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "REPORT"
+  }, {
+    "id" : "097edc08-a448-bbe2-45f3-e6b33fda0b99",
+    "name" : "asset_font_weight",
+    "display_width" : null,
+    "label" : "Asset Font Weight",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Asset Font Weight",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "normal"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "asset_font_size" : "18px",
+    "asset_line_height" : "21px",
+    "asset_color" : {
+      "color" : "#D60059",
+      "opacity" : 100
+    },
+    "asset_text" : "REPORT",
+    "asset_font_weight" : "normal"
+  }
+}, {
+  "id" : "b7114f87-9e4c-c7c6-a9a9-8ae4bead8aad",
+  "name" : "second_text_group",
+  "display_width" : null,
+  "label" : "Second Text Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "09a6da80-51d7-980c-ff59-862b1e04014e",
+    "name" : "asset_title",
+    "display_width" : null,
+    "label" : "Asset Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Asset Title",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sed ut perspiciatis unde omnis iste natus error sit eiusmod tempor"
+  }, {
+    "id" : "68521481-beb7-1dae-8ee2-42bfa6bb3a1f",
+    "name" : "asset_title_color",
+    "display_width" : null,
+    "label" : "Asset Title Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#00395C",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "1e9e9950-afa6-6400-8b4b-deb7ae0b0d7a",
+    "name" : "asset_title_line_height",
+    "display_width" : null,
+    "label" : "Asset Title Line Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Asset Title Line Height",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "26px"
+  }, {
+    "id" : "c64942e6-00d1-7713-2aeb-fd23aeb9fd02",
+    "name" : "asset_title_font_size",
+    "display_width" : null,
+    "label" : "Asset Title Font Size",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Asset Title Font Size",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "22px"
+  }, {
+    "id" : "7ef1583f-4a58-cde5-6548-05a4ec2e5dc4",
+    "name" : "asset_title_font_weight",
+    "display_width" : null,
+    "label" : "Asset Title Font Weight",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Asset Title Font Weight",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "bold"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "asset_title" : "Sed ut perspiciatis unde omnis iste natus error sit eiusmod tempor",
+    "asset_title_color" : {
+      "color" : "#00395C",
+      "opacity" : 100
+    },
+    "asset_title_line_height" : "26px",
+    "asset_title_font_size" : "22px",
+    "asset_title_font_weight" : "bold"
+  }
+}, {
+  "id" : "1bafbf19-47b8-cf85-d0dc-eb10d84f4095",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "fab454ca-cd11-577f-d7a1-dc8a31672f18",
+    "name" : "cta_url",
+    "display_width" : null,
+    "label" : "CTA URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "df2d8d83-0285-2107-9d8b-0396ddcdbc99",
+    "name" : "cta_text",
+    "display_width" : null,
+    "label" : "CTA Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "CTA Text",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "DOWNLOAD NOW"
+  }, {
+    "id" : "72cbe9aa-da49-c1d5-e334-df169b363110",
+    "name" : "cta_background_color",
+    "display_width" : null,
+    "label" : "CTA Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#D60059",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "96d40e91-8000-5ad7-c841-0471cbc265d6",
+    "name" : "cta_color",
+    "display_width" : null,
+    "label" : "CTA Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "5b5ad45f-bc3a-92f6-390a-679224138dc4",
+    "name" : "cta_font_size",
+    "display_width" : null,
+    "label" : "CTA Font Size",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "CTA Font Size",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "16px"
+  }, {
+    "id" : "501bb2be-80bc-3a51-b7ba-65ca517c9fed",
+    "name" : "cta_line_height",
+    "display_width" : null,
+    "label" : "CTA Line Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "CTA Line Height",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "18px"
+  }, {
+    "id" : "dfe94ce0-0abc-f55b-ff33-3441b45baa33",
+    "name" : "cta_font_weight",
+    "display_width" : null,
+    "label" : "CTA Font Weight",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "CTA Font Weight",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "bold"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cta_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "cta_text" : "DOWNLOAD NOW",
+    "cta_background_color" : {
+      "color" : "#D60059",
+      "opacity" : 100
+    },
+    "cta_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "cta_font_size" : "16px",
+    "cta_line_height" : "18px",
+    "cta_font_weight" : "bold"
+  }
+}, {
+  "id" : "858887c6-b491-1248-bf89-1e1284a8eb40",
+  "name" : "thumbnail_image",
+  "display_width" : null,
+  "label" : "Thumbnail Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.picussecurity.com/hubfs/2x/38/Email_book%20thumbnail.png",
+    "alt" : "Email_book thumbnail",
+    "loading" : "lazy",
+    "width" : 240,
+    "height" : 174
+  }
+}, {
+  "id" : "efb60cb4-4be1-5b68-7f98-5d9c861afaf5",
+  "name" : "thumbnail_url",
+  "display_width" : null,
+  "label" : "Thumbnail URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+} ]

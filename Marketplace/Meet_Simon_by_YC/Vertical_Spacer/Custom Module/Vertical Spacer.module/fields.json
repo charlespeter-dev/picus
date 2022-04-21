@@ -1,0 +1,157 @@
+[ {
+  "id" : "5180e758-cef8-004b-165e-87f1d20126ad",
+  "name" : "spacer_height",
+  "display_width" : null,
+  "label" : "Spacer height",
+  "help_text" : "Set the height of the spacer.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "spacer-xs", "10px - Extra small" ], [ "spacer-sm", "30px - Small" ], [ "spacer-md", "60px - Medium" ], [ "spacer-lg", "80px - Large" ], [ "spacer-xl", "120px - Extra large" ], [ "spacer-custom", "Custom" ] ],
+  "type" : "choice",
+  "default" : "spacer-sm"
+}, {
+  "id" : "86ac61ed-b4a7-96a6-f0f1-b0619552d1de",
+  "name" : "custom_height",
+  "display_width" : null,
+  "label" : "Custom height",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "5180e758-cef8-004b-165e-87f1d20126ad",
+    "controlling_value_regex" : "spacer-custom",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "text",
+  "min" : 0,
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "b930b890-b599-07bb-c8a9-d7a408436eea",
+  "name" : "hr",
+  "display_width" : null,
+  "label" : "Horizontal rule",
+  "help_text" : "Appears at the midpoint of the space",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dfbffbb4-21af-7a0b-8c5d-4e9c83425b58",
+    "name" : "horizontal_rule",
+    "display_width" : null,
+    "label" : "Horizontal rule",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "dd120e2e-656f-a335-b168-6638c81d740a",
+    "name" : "horizontal_rule_custom_color",
+    "display_width" : null,
+    "label" : "Horizontal rule custom color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "dfbffbb4-21af-7a0b-8c5d-4e9c83425b58",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "e8b29970-107e-3b2f-08a4-55b47c51ca30",
+    "name" : "horizontal_rule_color",
+    "display_width" : null,
+    "label" : "Horizontal rule color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "dd120e2e-656f-a335-b168-6638c81d740a",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "80769b3e-022e-635a-8e03-21894b98978d",
+    "name" : "hr_height",
+    "display_width" : null,
+    "label" : "Horizontal rule height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "horizontal_rule" : false,
+    "horizontal_rule_custom_color" : false,
+    "horizontal_rule_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "hr_height" : "1"
+  }
+}, {
+  "id" : "f0facbcf-8c5e-be42-fc52-1f82c7e2584a",
+  "name" : "visibility",
+  "display_width" : null,
+  "label" : "Visibility",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "088756a9-40fe-9966-eef4-28c11ffe9727",
+    "name" : "show_on_desktop",
+    "display_width" : null,
+    "label" : "Show on desktop",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "681b6b58-1144-1108-5e6d-6394fc1d513d",
+    "name" : "show_on_tablet",
+    "display_width" : null,
+    "label" : "Show on Tablet",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "3ae5b6e6-a243-2282-8fd1-aeba79bfefde",
+    "name" : "show_on_mobile",
+    "display_width" : null,
+    "label" : "Show on mobile",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "show_on_desktop" : true,
+    "show_on_tablet" : true,
+    "show_on_mobile" : true
+  }
+} ]

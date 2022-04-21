@@ -1,0 +1,25 @@
+<div id="{{ module.section_name }}">
+  <div class="picus-team wow fadeIn{% if module.light_theme %} light{% endif %}" id="{{ name }}">
+    <div class="team-photo presenter" style="background-image: url({{ module.person_photo.src }});"></div>
+    <p class="team-name">{{ module.person_name }}</p>
+    <p class="team-job">{{ module.job_title }}</p>
+    <div class="bio">{{ module.bio }}</div>
+    <div class="team-links">
+    {% if module.linkedin_url != "" %}<a href="{{ module.linkedin_url }}" target="_blank"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/shield-team-linkedin-white.svg" /></a>{% endif %}
+    {% if module.github_url != "" %}<a href="{{ module.github_url }}" target="_blank"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/shield-team-github-white2.svg" /></a>{% endif %}
+    {% if module.twitter_url != "" %}<a href="{{ module.twitter_url }}" target="_blank"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/shield-team-twitter.svg" /></a>{% endif %}
+    </div>  
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  #{{ name}}.picus-team .team-photo:hover { 
+    background-image: url({{ module.person_photo.src }}) !important;
+    opacity: 1;
+  }
+  #{{ name}}.picus-team.light {
+    color: #fff;
+  }
+</style>
+{% end_require_css %}

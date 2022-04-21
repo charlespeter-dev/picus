@@ -1,0 +1,72 @@
+[ {
+  "id" : "b99f4ec7-b9e5-4285-e1e2-69d923414d3e",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "44694ad4-6a21-a3ee-add5-820fb341c146",
+    "name" : "quote",
+    "display_width" : null,
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "”Picus Security's innovative technology addresses a very important need in IT security and answers the key question after doing such massive Cyber Security investments : How secure am I?. Our partners gain and offer substantial added value using Picus. As Exclusive Networks Group, we are very happy to be part of Picus’ success.”"
+  }, {
+    "id" : "8caa0187-c621-603f-0d27-66b17a2fe2d5",
+    "name" : "author_name",
+    "display_width" : null,
+    "label" : "Author Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Laurent Daudré-Vignier"
+  }, {
+    "id" : "6f08ea14-79d3-ae0b-2a95-a795b6ae2a22",
+    "name" : "designation",
+    "display_width" : null,
+    "label" : "Designation",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Regional Director South EMEA"
+  }, {
+    "id" : "da7316d6-d996-dd09-003b-e75052df9eb6",
+    "name" : "company",
+    "display_width" : null,
+    "label" : "Company",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Exclusive GRP"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "quote" : "”Picus Security's innovative technology addresses a very important need in IT security and answers the key question after doing such massive Cyber Security investments : How secure am I?. Our partners gain and offer substantial added value using Picus. As Exclusive Networks Group, we are very happy to be part of Picus’ success.”",
+    "author_name" : "Laurent Daudré-Vignier",
+    "designation" : "Regional Director South EMEA",
+    "company" : "Exclusive GRP"
+  }
+} ]

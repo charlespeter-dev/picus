@@ -1,0 +1,9 @@
+<div id="scrolling-progress-container" 
+     class="progress-container {% if module.hide_on_mobile %} hide-progress-container-on-mobile {% endif %}" 
+     style="height:{{ module.height_px }}px;
+            background-color: {% if module.background_color == 'custom_color' %}rgba({{ module.background_color_custom.color|convert_rgb }}, {{module.background_color_custom.opacity / 100}}) {% else %} {{ module.background_color }} {% endif %};" >
+  <div style="background: linear-gradient(135deg, {{ module.color_field.color }} 0%, {% if module.add_gradient %} {{ module.second_color.color }} {% else %} {{ module.color_field.color }} {% endif %}) 100%;" 
+       id="progress-bar" class="progress-bar">
+    
+  </div>
+</div>

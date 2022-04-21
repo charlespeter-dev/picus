@@ -1,0 +1,52 @@
+<div class="product-card wow fadeIn" data-wow-delay="0.5s" id="{{ name }}">
+  {% if module.icon.src %}
+    {% set sizeAttrs = 'width="{{ module.icon.width }}" height="{{ module.icon.height }}"' %}
+    {% if module.icon.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif module.icon.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.icon.max_width }}px; max-height: {{ module.icon.max_height }}px"' %}
+    {% endif %}
+    <img class="icon" src="{{ module.icon.src }}" alt="{{ module.icon.alt }}" {{ sizeAttrs }}>
+  {% endif %}
+  <h3 class="underline; "style="color: white">{{ module.title }}</h3> <hor>
+  
+  
+  <div class="summary">
+    {{ module.summary }}
+  </div>
+  {% if module.button != '' %}
+  <div class="card-button">
+    {% cta guid="{{ module.button }}" %}
+  </div>
+  {% endif %}
+</div>
+
+{% if module.button == '' or module.add_background_image %}
+  {% require_css %}
+  <style>
+    {% if module.button == '' %}
+      #{{ name }}.product-card { padding-bottom: 20px; }
+    {% endif %}
+    {% if module.add_background_image %}
+      #{{ name }}.product-card { 
+        background-image: url({{ module.background_image.src }}); 
+        background-repeat: no-repeat;
+        background-position: left top;
+      }
+    {% endif %}
+  </style>
+  {% end_require_css %}
+{% endif %}  
+
+{% require_css %}
+  <style>
+    {% for item in module.custom_height %}
+      @media only screen and (max-width: {{ item.breakpoint }}px) {
+        #{{ name }}.product-card { min-height: {{ item.height }}px; }      
+      }
+    {% endfor %}
+      @media only screen and (max-width: 767px) {
+        #{{ name }}.product-card { min-height: 0px; }  
+      }
+   </style>
+{% end_require_css %}

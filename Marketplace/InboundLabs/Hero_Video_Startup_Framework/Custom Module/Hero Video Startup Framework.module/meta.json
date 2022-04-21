@@ -1,0 +1,42 @@
+{
+  "global" : false,
+  "inline_help_text" : "Need help? Check our Knowledge Base and Support center at <a href=\"https://support.inboundlabs.co/\">https://support.inboundlabs.co/</a>",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 48909908126,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Attached_asset/jquery.oembed.min.css",
+    "name" : "jquery.oembed.min.css"
+  }, {
+    "autoload" : true,
+    "path" : "../../Attached_asset/magnific-popup.min.css",
+    "name" : "magnific-popup.min.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Attached_asset/jquery.oembed.min.js",
+    "name" : "jquery.oembed.min.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../Attached_asset/jquery.magnific-popup.min.js",
+    "name" : "jquery.magnific-popup.min.js"
+  }, {
+    "url" : "Marketplace%2FInboundLabs%2FHero_Video_Startup_Framework%2FAttached_asset%2Fvideo.min.js",
+    "autoload" : true,
+    "name" : "video.min.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../Attached_asset/hero-video-deps.min.js",
+    "name" : "hero-video-deps.min.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../Attached_asset/hero-video-startup-kit-v2.min.js",
+    "name" : "hero-video-startup-kit-v2.min.js"
+  } ],
+  "other_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/346178/SUF%20Mar%202018/btn-play.png",
+    "autoload" : false,
+    "name" : "btn-play.png"
+  } ],
+  "is_available_for_new_content" : true
+}

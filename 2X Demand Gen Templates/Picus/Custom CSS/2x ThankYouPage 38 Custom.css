@@ -1,0 +1,18 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+@media (min-width: 769px)
+{
+  .thankyouContent .logo {
+    width: 200px;
+    top: 5px;
+  }
+}

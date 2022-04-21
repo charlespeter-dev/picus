@@ -1,0 +1,57 @@
+.series-listing-archive {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.series-listing-archive .listing-detail {
+  background-size: cover;
+  background-position: right center;
+  padding: 20px;
+  flex: 0 0 calc(50% - 0.5em);
+  margin-bottom: 20px;
+  position: relative;
+  height: 350px;
+}
+.series-listing-archive .listing-detail h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.35em;
+  padding-right: 25%;
+}
+.series-listing-archive .listing-detail .links {
+  position: absolute;
+  bottom: 0px;
+}
+.series-listing-archive .listing-detail .links a {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 0.85em;
+  position: relative;
+  transition: all 0.3s;
+}
+.series-listing-archive .listing-detail .links a:hover {
+  color: #FF0566;
+  text-decoration: none;
+}
+.series-listing-archive .listing-detail .links a:after {
+  position: absolute;
+  content: '';
+  background-image: url('https://www.picussecurity.com/hubfs/Shield/Images/series-link-icon.png');
+  background-size: contain;
+    width: 8px;
+    height: 7px;
+    right: -14px;
+    background-repeat: no-repeat;
+    top: 5px;
+}
+.series-listing-archive .listing-detail .links a.main-link:after {
+  background-image: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .series-listing-archive .listing-detail {
+    flex: 100%;
+  }
+}

@@ -1,0 +1,656 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_v4.5.2.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_fontAwesome_4.7.0.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/override-hubspot_March2021.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/custom-Olympia_107.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "color:#000000;",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1646106387783279",
+        "label" : "2x Full Image Width - Banner",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "schema_version" : 2,
+          "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Full Image Width - Banner",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "2x Full Image Width - Banner",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1646105300389179",
+        "label" : "Rich Text",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "schema_version" : 2,
+          "path" : "@hubspot/rich_text",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "html" : "<h2 style=\"text-align: center; font-size: 35px; line-height: 1.25;\"><span style=\"font-family: Arial, Helvetica, sans-serif;\"><strong>Join the Family to Get Exclusive Rewards</strong></span></h2>\n<p style=\"text-align: center; font-size: 24px; line-height: 1.15;\"><strong><span style=\"color: #dd3333; font-family: Arial, Helvetica, sans-serif;\">Copperfield Loyalty Program 2022</span></strong></p>\n<hr style=\"border: 1px solid #DD3333; width: 85%; max-width: 780px; margin-top: 40px; margin-bottom: 30px;\">",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "Rich Text",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1623960833626227",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container px-0 pt-md-3 bodyContent",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1623960848301233",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1623960866720235",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "mainContent",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 4,
+                    "name" : "module_1623960878235237",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "col-lg-3 col-12 text-center px-4 px-lg-3 thumbnailImg",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1623960962594319",
+                        "label" : "Image",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "my-2",
+                          "schema_version" : 2,
+                          "path" : "@hubspot/linked_image",
+                          "img" : {
+                            "alt" : "thumbnail",
+                            "height" : 328,
+                            "loading" : "disabled",
+                            "max_height" : 328,
+                            "max_width" : 230,
+                            "size_type" : "auto",
+                            "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/107/thumbnail.png",
+                            "width" : 230
+                          },
+                          "per_widget_wrapper_html" : "",
+                          "css_style" : "",
+                          "wrapping_html" : "",
+                          "css_id" : "",
+                          "widget_name" : "Image",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "my-2",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "col-lg-3 col-12 text-center px-4 px-lg-3 thumbnailImg",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "4" : {
+                    "x" : 4,
+                    "w" : 4,
+                    "name" : "module_1623960881255239",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "col-lg-5 col-12 p-4 px-lg-5 customRichText",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1623960995620359",
+                        "label" : "Rich Text",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "@hubspot/rich_text",
+                          "per_widget_wrapper_html" : "",
+                          "css_style" : "",
+                          "html" : "<h2 style=\"font-size: 16px; line-height: 1.5;\">Copperfield’s Loyalty Program 2022 is designed to help our partners like you grow your business with the industry’s best education and sales tools.</h2>",
+                          "wrapping_html" : "",
+                          "css_id" : "",
+                          "widget_name" : "Rich Text",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1646109527373756",
+                        "label" : "Rich Text",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "@hubspot/rich_text",
+                          "per_widget_wrapper_html" : "",
+                          "css_style" : "padding-top:15px;",
+                          "html" : "<h2 style=\"font-size: 16px; line-height: 1.5;\">Take advantage of business-building loyalty perks to help your company succeed while saving on costs!</h2>",
+                          "wrapping_html" : "",
+                          "css_id" : "",
+                          "widget_name" : "Rich Text",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding-top:15px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1646109530333758",
+                        "label" : "Rich Text",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "@hubspot/rich_text",
+                          "per_widget_wrapper_html" : "",
+                          "css_style" : "padding-top:15px;",
+                          "html" : "<h2 style=\"font-size: 16px; line-height: 1.5;\">Loyalty rewards just for you:</h2>",
+                          "wrapping_html" : "",
+                          "css_id" : "",
+                          "widget_name" : "Rich Text",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding-top:15px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_16461115866921160",
+                        "label" : "2x Icon-Text Module",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_style" : "padding-top:20px;",
+                          "richtext_field" : "<p style=\"font-size: 18px; line-height: 1.15;\"><strong>Free/Discounted Shipping</strong></p>",
+                          "css_id" : "",
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Icon-Text Module",
+                          "per_widget_wrapper_html" : "",
+                          "text_inline_style" : "padding-left:20px;",
+                          "wrapping_html" : "",
+                          "widget_name" : "2x Icon-Text Module",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding-top:20px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_16461119284401229",
+                        "label" : "2x Icon-Text Module",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_style" : "padding-top:20px;",
+                          "richtext_field" : "<p style=\"font-size: 18px; line-height: 1.15;\"><strong>Year-End Rebates</strong></p>",
+                          "css_id" : "",
+                          "image_field" : {
+                            "alt" : "icon_rebates",
+                            "height" : 40,
+                            "loading" : "lazy",
+                            "max_height" : 40,
+                            "max_width" : 40,
+                            "size_type" : "auto",
+                            "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/107/icon_rebates.png",
+                            "width" : 40
+                          },
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Icon-Text Module",
+                          "per_widget_wrapper_html" : "",
+                          "text_inline_style" : "padding-left:20px;",
+                          "wrapping_html" : "",
+                          "widget_name" : "2x Icon-Text Module",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding-top:20px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_16461120403201355",
+                        "label" : "2x Icon-Text Module",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_style" : "padding-top:20px;",
+                          "richtext_field" : "<p style=\"font-size: 18px; line-height: 1.15;\"><strong>Co-op Advertising Allowance</strong></p>",
+                          "css_id" : "",
+                          "image_field" : {
+                            "alt" : "icon_advertising",
+                            "height" : 40,
+                            "loading" : "lazy",
+                            "max_height" : 40,
+                            "max_width" : 40,
+                            "size_type" : "auto",
+                            "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/107/icon_advertising.png",
+                            "width" : 40
+                          },
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Icon-Text Module",
+                          "per_widget_wrapper_html" : "",
+                          "text_inline_style" : "padding-left:20px;",
+                          "wrapping_html" : "",
+                          "widget_name" : "2x Icon-Text Module",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding-top:20px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_16461120428151363",
+                        "label" : "2x Icon-Text Module",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_style" : "padding-top:20px;",
+                          "richtext_field" : "<p style=\"font-size: 18px; line-height: 1.15;\"><strong>Literature &amp; Apparel Allowance</strong></p>",
+                          "css_id" : "",
+                          "image_field" : {
+                            "alt" : "icon_literature",
+                            "height" : 40,
+                            "loading" : "lazy",
+                            "max_height" : 40,
+                            "max_width" : 40,
+                            "size_type" : "auto",
+                            "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/107/icon_literature.png",
+                            "width" : 40
+                          },
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Icon-Text Module",
+                          "per_widget_wrapper_html" : "",
+                          "text_inline_style" : "padding-left:20px;",
+                          "wrapping_html" : "",
+                          "widget_name" : "2x Icon-Text Module",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding-top:20px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_16461120452851371",
+                        "label" : "2x Icon-Text Module",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_style" : "padding-top:20px;",
+                          "richtext_field" : "<p style=\"font-size: 18px; line-height: 1.15;\"><strong>Free/Discounted Rates on Copperfield Academy Classes</strong></p>",
+                          "css_id" : "",
+                          "image_field" : {
+                            "alt" : "icon_academy",
+                            "height" : 40,
+                            "loading" : "lazy",
+                            "max_height" : 40,
+                            "max_width" : 40,
+                            "size_type" : "auto",
+                            "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/107/icon_academy.png",
+                            "width" : 40
+                          },
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "/2X Demand Gen Templates/Landing Page Custom Module/2x Icon-Text Module",
+                          "per_widget_wrapper_html" : "",
+                          "text_inline_style" : "padding-left:20px;",
+                          "wrapping_html" : "",
+                          "widget_name" : "2x Icon-Text Module",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "padding-top:20px;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "col-lg-5 col-12 p-4 px-lg-5 customRichText",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "8" : {
+                    "x" : 8,
+                    "w" : 4,
+                    "name" : "module_1623960898987261",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "col-lg-4 col-12 pb-5 pb-lg-0 p-4 p-lg-4 mt-0 mt-lg-0 mb-lg-5 formContainer hide-icons position relative borderRounded-D20px-M0px bg-grey",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "css_id" : "formSection",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1623961005358365",
+                        "label" : "Form",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_style" : "",
+                          "title" : "LOYALTY BENEFITS 2022",
+                          "css_id" : "",
+                          "css_class" : "",
+                          "schema_version" : 2,
+                          "path" : "@hubspot/form",
+                          "per_widget_wrapper_html" : "",
+                          "form" : {
+                            "form_id" : "96afcacf-1f92-4cb5-bfa4-59bd39963548",
+                            "form_type" : "HUBSPOT",
+                            "message" : "Thanks for submitting the form.",
+                            "response_type" : "inline"
+                          },
+                          "wrapping_html" : "",
+                          "widget_name" : "Form",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "formSection",
+                    "cssClass" : "col-lg-4 col-12 pb-5 pb-lg-0 p-4 p-lg-4 mt-0 mt-lg-0 mb-lg-5 formContainer hide-icons position relative borderRounded-D20px-M0px bg-grey",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "mainContent",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "container px-0 pt-md-3 bodyContent",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1623960820172225",
+        "label" : "Olympia_Footer_April2021",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "w-100 text-center text-white py-3",
+          "schema_version" : 2,
+          "path" : "/2X Demand Gen Templates/Custom Modules/2x_footer",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "Olympia_Footer_June2021",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "w-100 text-center text-white py-3",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

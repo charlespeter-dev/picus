@@ -1,0 +1,51 @@
+[ {
+  "id" : "a27c9583-5688-607b-566a-3dfeccf21262",
+  "name" : "title_text",
+  "display_width" : null,
+  "label" : "Title Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Let’s take your practice to the next level"
+}, {
+  "id" : "6b2f00a4-7917-5dd5-dc08-b40f7bfd6caa",
+  "name" : "content_text",
+  "display_width" : null,
+  "label" : "Content Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRequest a personalized demo today and take the first step toward improving profitability, physician satisfaction, and patient care."
+}, {
+  "id" : "48b06fff-56bd-ad0a-8850-55443afc7585",
+  "name" : "cta_text",
+  "display_width" : null,
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Schedule Your Demo"
+}, {
+  "id" : "29efa55b-86af-7ecf-6c8c-a58722b2833e",
+  "name" : "cta_url",
+  "display_width" : null,
+  "label" : "CTA URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "www.google.com",
+    "content_id" : null
+  }
+} ]

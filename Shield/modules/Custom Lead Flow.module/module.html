@@ -1,0 +1,171 @@
+{% if module.menu_type == 'light' %}
+  {% require_css %}
+  <style>
+    /* Right hand side lead flow */
+    div.leadinModal-theme-default.leadinModal-preview.leadinModal > div.leadinModal-content[role=dialog],
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] {
+        background-color: #E8E8E8 !important;
+    }
+    div.leadinModal-theme-default.leadinModal-preview.leadinModal > div.leadinModal-content[role=dialog] h4,
+    div.leadinModal-theme-default.leadinModal-preview.leadinModal > div.leadinModal-content[role=dialog] p,
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] h4,
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] p {
+        color: #002C46 !important;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview > div.leadinModal-content[role=dialog] h4,
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] h4 {
+        font-weight: 500;
+        max-width: 90%;
+        font-size: 1.5em;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview > div.leadinModal-content[role=dialog] h4,
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview > div.leadinModal-content[role=dialog] p {
+      text-align: center;
+    }
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] p {
+        max-width: 70%;
+    }
+    div.leadinModal-v3 > div.leadinModal-content[role=dialog] button.leadinModal-close:before,
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] button.leadinModal-close:before {
+        color: #E8055D !important;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button, 
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button {
+        color: #fff !important;
+        background: #E8055D !important;
+        max-width: 50%;
+        padding: 14px;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding-left: 35px;
+        position: relative;
+        transition: all 0.3s;
+        border-radius: 10px;
+        border-bottom: 3px solid #A70141;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button:hover, 
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button:hover {
+        background: #A70141 !important;
+    }
+    div.leadinModal.leadinModal.leadinModal-theme-default.leadinModal-preview div.leadinModal-content[role=dialog] div.advance-wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper {
+        background-image: url({{ module.right_hand_side_image.src }});
+        background-repeat: no-repeat;
+        background-position: 105% 101%;
+    }
+    div.leadinModal-v3.leadinModal.leadinModal-theme-default.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper {
+        background-image: url({{ module.centre_popup_image.src }});
+        background-repeat: no-repeat;
+        background-position: 50% 101%;
+        background-size: 100% !important;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button:before, 
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button:before {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        content: '';
+        background-image: url('https://www.picussecurity.com/hubfs/lead-flow-button-icon.svg');
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 19px;
+    }
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner div.leadinModal-content[role=dialog] .leadin-content-body .leadin-preview-wrapper {
+        padding: 1.5em 1.8em 5em !important;
+        padding-bottom: 5em !important;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3 div.leadinModal-content[role=dialog] .leadin-content-body .leadin-preview-wrapper {
+        padding: 3em 5.5em !important;
+        padding-bottom: 8em !important;
+    }
+  </style>
+  {% end_require_css %}
+{% elif module.menu_type == 'dark' %}
+  {% require_css %}
+  <style>
+    /* Right hand side lead flow */
+    div.leadinModal-theme-default.leadinModal-preview.leadinModal > div.leadinModal-content[role=dialog],
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] {
+        background-color: #002236 !important;
+    }
+    div.leadinModal-theme-default.leadinModal-preview.leadinModal > div.leadinModal-content[role=dialog] h4,
+    div.leadinModal-theme-default.leadinModal-preview.leadinModal > div.leadinModal-content[role=dialog] p,
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] h4,
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] p {
+        color: #fff !important;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview > div.leadinModal-content[role=dialog] h4,
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] h4 {
+        font-weight: 500;
+        max-width: 90%;
+        font-size: 1.5em;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview > div.leadinModal-content[role=dialog] h4,
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview > div.leadinModal-content[role=dialog] p {
+      text-align: center;
+    }
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] p {
+        max-width: 70%;
+    }
+    div.leadinModal-v3 > div.leadinModal-content[role=dialog] button.leadinModal-close:before,
+    div.leadinModal-theme-bottom-right-corner.leadinModal-preview.leadinModal-v3 > div.leadinModal-content[role=dialog] button.leadinModal-close:before {
+        color: #E8055D !important;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button, 
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button {
+        color: #fff !important;
+        background: #E8055D !important;
+        max-width: 50%;
+        padding: 14px;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding-left: 35px;
+        position: relative;
+        transition: all 0.3s;
+        border-radius: 10px;
+        border-bottom: 3px solid #A70141;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button:hover, 
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button:hover {
+        background: #A70141 !important;
+    }
+    div.leadinModal.leadinModal.leadinModal-theme-default.leadinModal-preview div.leadinModal-content[role=dialog] div.advance-wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper {
+        background-image: url({{ module.right_hand_side_image.src }});
+        background-repeat: no-repeat;
+        background-position: 105% 101%;
+    }
+    div.leadinModal-v3.leadinModal.leadinModal-theme-default.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper {
+        background-image: url({{ module.centre_popup_image.src }});
+        background-repeat: no-repeat;
+        background-position: 50% 101%;
+        background-size: 100% !important;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button:before, 
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner.leadinModal-preview div.leadinModal-content[role=dialog] .leadin-preview-wrapper .leadin-button:before {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        content: '';
+        background-image: url('https://www.picussecurity.com/hubfs/lead-flow-button-icon.svg');
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 19px;
+    }
+    div.leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner div.leadinModal-content[role=dialog] .leadin-content-body .leadin-preview-wrapper {
+        padding: 1.5em 1.8em 5em !important;
+        padding-bottom: 5em !important;
+    }
+    div.leadinModal.leadinModal-theme-default.leadinModal-v3 div.leadinModal-content[role=dialog] .leadin-content-body .leadin-preview-wrapper {
+        padding: 3em 5.5em !important;
+        padding-bottom: 8em !important;
+    }
+  </style>
+  {% end_require_css %}
+{% endif %}

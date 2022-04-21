@@ -1,0 +1,132 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Demo Page - Meeting Link
+  screenshotPath: ../images/template-previews/product-preview.png
+-->
+{% extends "./layouts/demo-base.html" %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--home', label='Main section' %}
+
+    {# Top banner section #}
+    {% dnd_section
+      background_image = {
+        'backgroundPosition': 'MIDDLE_CENTER',
+        'backgroundSize': 'cover',
+        'imageUrl': get_asset_url('../images/ml-header-bg.svg')
+      },
+      background_color={
+        r: 1,
+        g: 41,
+        b: 59,
+        a: 1.0
+      },
+      padding={
+        'top': 125, 
+        'bottom': 125
+      },
+      vertical_alignment='MIDDLE'
+    %}
+    {% dnd_column
+      width=3,
+      offset=0
+    %}
+    {% end_dnd_column %}
+      {% dnd_column
+        width=6,
+        offset=3,
+        padding={
+          'left': 0
+        }
+      %}
+        {% dnd_row %}
+          {% dnd_module "module_16119365556534" path="/Shield/modules/Demo Meeting Link", label="Demo Meeting Link" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %} 
+      {% end_dnd_column %}
+      {% dnd_column
+        width=3,
+        offset=9
+      %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# Reviews section #}
+    {% dnd_section vertical_alignment='MIDDLE',
+    background_image = {
+      'backgroundPosition': 'MIDDLE_LEFT',
+      'backgroundSize': 'contain',
+      'imageUrl': get_asset_url('../images/ml-reviews-bg2.svg')
+    } %}
+    {% dnd_column offset=0, width=6 %}
+      {% dnd_row %}
+        {% dnd_module path='@hubspot/rich_text'%}
+          {% module_attribute 'html' %}
+            <div id="gartner">&nbsp;</div>
+          {% end_module_attribute %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+    {% dnd_column offset=6, width=6 %}
+      {% dnd_row %}
+      {% dnd_module path='@hubspot/rich_text'%}
+          {% module_attribute 'html' %}
+          <h2>REAL REVIEWS FROM
+            REAL PEOPLE</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus accumsan purus nec rutrum. Mauris vehicula sem id tortor sollicitudin vehicula. Nam fermentum dapibus dapibus. Fusce urna risus, facilisis ac felis dictum, consectetur lobortis felis.</p>
+          {% end_module_attribute %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End Reviews section #}
+
+    
+    {# Getting Started Section #}
+    {% dnd_section
+      background_color={
+        r: 1,
+        g: 41,
+        b: 59,
+        a: 1.0
+      },
+      padding={
+        'top': 80,
+        'bottom': 80
+      }
+      vertical_alignment='MIDDLE'
+    %}
+    {% dnd_column %}
+    {% dnd_row %}
+      {% dnd_module path='@hubspot/rich_text'%}
+        {% module_attribute 'html' %}
+          <h2 style="color: #fff; text-align: center; text-transform: uppercase;">Getting started with Picus</h2>
+          <img src="http://www.picussecurity.com/hubfs/raw_assets/public/Shield/images/shield-threat-library-screenshot@2x.png" style="text-align: center;" />
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}   
+    {% end_dnd_section %}
+    {# End two column image left section #}
+
+  {% end_dnd_area %}
+
+  <!-- Gartner Script -->
+  <script type="text/javascript"
+  src="https://www.gartner.com/reviews/public/Widget/js/widget.js">
+</script>
+<script type="text/javascript">
+      GartnerPI_Widget({
+    size: "large",
+    theme: "light",
+    sourcingLink: "",
+    widget_id: "OTU1NDcxMTQtYmIwOC00MWY4LTlhNjctYjFiNWQyZTZhZTJj",
+    version: "2",
+        container: document.getElementById("gartner")
+  })
+</script>
+
+</main>
+{% endblock body %}

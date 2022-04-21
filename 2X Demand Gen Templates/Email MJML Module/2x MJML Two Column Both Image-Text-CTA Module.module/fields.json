@@ -1,0 +1,945 @@
+[ {
+  "id" : "21408f90-f845-20fe-df36-dc241653b624",
+  "name" : "left_column",
+  "display_width" : null,
+  "label" : "Left Column",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2be79145-303b-a444-7fef-a8c118f963c7",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://www.picussecurity.com/hubfs/2x/38/Email%20TY_thumbnail.png",
+      "alt" : "Email TY_thumbnail",
+      "loading" : "lazy",
+      "width" : 508,
+      "height" : 240
+    }
+  }, {
+    "id" : "e4714b95-f307-8b31-4a66-b6cc46ae6aae",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "92ec5dd4-629f-d435-d69c-a08b06d914dd",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Title Text",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    }, {
+      "id" : "21a3b741-cc98-192f-26f6-4cbbd00720bf",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Title Font Size",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "16px"
+    }, {
+      "id" : "a1283dfa-39e3-7ca5-88af-42139e3cf78d",
+      "name" : "line_height",
+      "display_width" : null,
+      "label" : "Line Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Title Line Height",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "22px"
+    }, {
+      "id" : "962023e2-8cce-6ea5-7816-9daf90c4512c",
+      "name" : "font_weight",
+      "display_width" : null,
+      "label" : "Font Weight",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Title Font Weight",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "bold"
+    }, {
+      "id" : "d22bee1e-9970-da1c-fa12-93117753421a",
+      "name" : "color_field",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "4a718662-b4f4-a0f9-4ea9-3e1fc3f2dc02",
+      "name" : "padding_top",
+      "display_width" : null,
+      "label" : "Padding Top",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Title Padding Top",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "20px"
+    }, {
+      "id" : "d082ca1d-9bb1-ac11-7040-bf36cac4c6f6",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text_field" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "font_size" : "16px",
+      "line_height" : "22px",
+      "font_weight" : "bold",
+      "color_field" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      },
+      "padding_top" : "20px",
+      "alignment" : "left"
+    }
+  }, {
+    "id" : "f7705c9e-1b24-024e-f24d-b4e3951498fd",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "33789789-b54e-6785-c849-8c04df9bfbab",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Content Text",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz."
+    }, {
+      "id" : "f628bbef-00da-e547-774d-ae45bf8fa7c8",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Content Font Size",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "14px"
+    }, {
+      "id" : "21dd6a67-7eb9-c587-913d-05bf0a85ae08",
+      "name" : "line_height",
+      "display_width" : null,
+      "label" : "Line Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Content Line Height",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "20px"
+    }, {
+      "id" : "32cda908-f40d-968e-3d4e-9da23d46f7ba",
+      "name" : "font_weight",
+      "display_width" : null,
+      "label" : "Font Weight",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Content Font Weight",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "normal"
+    }, {
+      "id" : "5eeee957-a42d-438c-d8e9-0fe0f08153aa",
+      "name" : "padding_top",
+      "display_width" : null,
+      "label" : "Padding Top",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column Content Padding Top",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "10px"
+    }, {
+      "id" : "35d65f2b-d7a5-b83b-3eb5-e685c2910de9",
+      "name" : "color_field",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "66388ff3-e317-ac34-caaa-e52a841b7aee",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text_field" : "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz.",
+      "font_size" : "14px",
+      "line_height" : "20px",
+      "font_weight" : "normal",
+      "padding_top" : "10px",
+      "color_field" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      },
+      "alignment" : "left"
+    }
+  }, {
+    "id" : "34ccd71c-e606-f713-f92d-76d3f83374d1",
+    "name" : "cta",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "fbcdac1b-5aaf-26c8-8f44-0ce505b201bb",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column CTA Text",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "READ MORE"
+    }, {
+      "id" : "b059b8c8-a5ba-e080-5da4-2b30b2ad1806",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column CTA Font Size",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "16px"
+    }, {
+      "id" : "3185f0e4-af98-7975-17ff-e5b77b3dc9b3",
+      "name" : "line_height",
+      "display_width" : null,
+      "label" : "Line Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column CTA Line Height",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "18px"
+    }, {
+      "id" : "2da0c9bf-51d2-3a18-21c5-d56c55e3b229",
+      "name" : "font_weight",
+      "display_width" : null,
+      "label" : "Font Weight",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column CTA Font Weight",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "bold"
+    }, {
+      "id" : "48c02618-3520-b3e4-d501-2a12d77a4d48",
+      "name" : "padding_top",
+      "display_width" : null,
+      "label" : "Padding Top",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column CTA Padding Top",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "20px"
+    }, {
+      "id" : "d06f4164-ebfb-dd34-93a7-37b49c0489fa",
+      "name" : "width",
+      "display_width" : null,
+      "label" : "Width",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column CTA Width",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "210px"
+    }, {
+      "id" : "5074b537-8102-73ed-05e7-a99dd34d793f",
+      "name" : "height",
+      "display_width" : null,
+      "label" : "Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column CTA Height",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "40px"
+    }, {
+      "id" : "44ffb46d-1f93-8315-fade-ff96c50e6691",
+      "name" : "color_field",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#D60059",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "eeb6d8b6-9bf7-ea73-36aa-66fea7ecac78",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#F2F4F6",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "927d5df1-1d1e-9932-9791-b11677381c35",
+      "name" : "border",
+      "display_width" : null,
+      "label" : "Border",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Left Column CTA Border",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "1.5px solid #D60059"
+    }, {
+      "id" : "8e32885f-c987-2a8b-4c98-e44b5ba722d9",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text_field" : "READ MORE",
+      "font_size" : "16px",
+      "line_height" : "18px",
+      "font_weight" : "bold",
+      "padding_top" : "20px",
+      "width" : "210px",
+      "height" : "40px",
+      "color_field" : {
+        "color" : "#D60059",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#F2F4F6",
+        "opacity" : 100
+      },
+      "border" : "1.5px solid #D60059",
+      "alignment" : "left"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "src" : "https://www.picussecurity.com/hubfs/2x/38/Email%20TY_thumbnail.png",
+      "alt" : "Email TY_thumbnail",
+      "loading" : "lazy",
+      "width" : 508,
+      "height" : 240
+    },
+    "title" : {
+      "text_field" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "font_size" : "16px",
+      "line_height" : "22px",
+      "font_weight" : "bold",
+      "color_field" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      },
+      "padding_top" : "20px",
+      "alignment" : "left"
+    },
+    "content" : {
+      "text_field" : "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz.",
+      "font_size" : "14px",
+      "line_height" : "20px",
+      "font_weight" : "normal",
+      "padding_top" : "10px",
+      "color_field" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      },
+      "alignment" : "left"
+    },
+    "cta" : {
+      "text_field" : "READ MORE",
+      "font_size" : "16px",
+      "line_height" : "18px",
+      "font_weight" : "bold",
+      "padding_top" : "20px",
+      "width" : "210px",
+      "height" : "40px",
+      "color_field" : {
+        "color" : "#D60059",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#F2F4F6",
+        "opacity" : 100
+      },
+      "border" : "1.5px solid #D60059",
+      "alignment" : "left"
+    }
+  }
+}, {
+  "id" : "b5d54173-c279-e81c-770b-41f0eb2b35f0",
+  "name" : "right_column",
+  "display_width" : null,
+  "label" : "Right Column",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5278e039-1028-d6d9-5629-e3dff4bf5f61",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://www.picussecurity.com/hubfs/2x/38/Email%20TY_thumbnail%202.png",
+      "alt" : "Email TY_thumbnail 2",
+      "loading" : "lazy",
+      "width" : 508,
+      "height" : 240
+    }
+  }, {
+    "id" : "fa6e5ae0-85da-b0f0-2d8f-153fc1ab9770",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "fde8ae1e-9c56-9dca-613f-efe86f9df3ae",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Title Text",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    }, {
+      "id" : "74695bd0-4c11-8a49-1e10-f738e0884a8b",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Title Font Size",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "16px"
+    }, {
+      "id" : "74390525-23d5-37cf-29f9-7a636d76bfbe",
+      "name" : "line_height",
+      "display_width" : null,
+      "label" : "Line Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Title Line Height",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "22px"
+    }, {
+      "id" : "02eea249-4a8b-caeb-0239-61227c0ba3d2",
+      "name" : "font_weight",
+      "display_width" : null,
+      "label" : "Font Weight",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Title Font Weight",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "bold"
+    }, {
+      "id" : "2e56292c-c5f1-63d1-0f62-838d93f4e69c",
+      "name" : "color_field",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "35f45acd-2b92-a051-73e5-be943c796edb",
+      "name" : "padding_top",
+      "display_width" : null,
+      "label" : "Padding Top",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Title Padding Top",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "20px"
+    }, {
+      "id" : "a30b5c4d-1206-d801-6d60-2cefb71457bc",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text_field" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "font_size" : "16px",
+      "line_height" : "22px",
+      "font_weight" : "bold",
+      "color_field" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      },
+      "padding_top" : "20px",
+      "alignment" : "left"
+    }
+  }, {
+    "id" : "6d2187d8-6263-e161-ec88-d70399ca491e",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "9460601d-4d63-1c3d-0a2f-cb775509b4da",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Content Text",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz."
+    }, {
+      "id" : "9e86e3d5-df6a-5ccf-65a0-870b4e6c5d66",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Content Font Size",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "14px"
+    }, {
+      "id" : "506174fd-330e-b975-2c0d-9e48aa05bb90",
+      "name" : "line_height",
+      "display_width" : null,
+      "label" : "Line Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Content Line Height",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "20px"
+    }, {
+      "id" : "88f94951-a906-68ff-a2cb-2ba886d0f748",
+      "name" : "font_weight",
+      "display_width" : null,
+      "label" : "Font Weight",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Content Font Weight",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "normal"
+    }, {
+      "id" : "02743001-58c1-dcbd-55e4-430c1fb50da9",
+      "name" : "padding_top",
+      "display_width" : null,
+      "label" : "Padding Top",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column Content Padding Top",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "10px"
+    }, {
+      "id" : "664ed8e7-b626-cf4e-9090-412d288b1cf9",
+      "name" : "color_field",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "cc0000bc-4964-8d4f-8b8c-fb3006fa3d5d",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text_field" : "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz.",
+      "font_size" : "14px",
+      "line_height" : "20px",
+      "font_weight" : "normal",
+      "padding_top" : "10px",
+      "color_field" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      },
+      "alignment" : "left"
+    }
+  }, {
+    "id" : "a0bf5d5f-8fa7-c31c-7802-3cacaca95f40",
+    "name" : "cta",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "8174f27f-adb6-8a3b-c64d-628850d75206",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column CTA Text",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "READ MORE"
+    }, {
+      "id" : "f2b7862b-8ee1-d41a-6e88-53255fdb28d0",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column CTA Font Size",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "16px"
+    }, {
+      "id" : "57b688de-b2a8-5bc5-a72b-f304176ab131",
+      "name" : "line_height",
+      "display_width" : null,
+      "label" : "Line Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column CTA Line Height",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "18px"
+    }, {
+      "id" : "77765398-ab0d-b344-a61a-13d6f645ad7f",
+      "name" : "font_weight",
+      "display_width" : null,
+      "label" : "Font Weight",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column CTA Font Weight",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "bold"
+    }, {
+      "id" : "72eda6c8-0cd4-d8ed-160e-e7c703da7e78",
+      "name" : "padding_top",
+      "display_width" : null,
+      "label" : "Padding Top",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column CTA Padding Top",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "20px"
+    }, {
+      "id" : "bd8f2721-33d8-6367-38ac-32561e197b48",
+      "name" : "width",
+      "display_width" : null,
+      "label" : "Width",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column CTA Width",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "210px"
+    }, {
+      "id" : "510a9070-e540-1633-09c0-19eae78bddf0",
+      "name" : "height",
+      "display_width" : null,
+      "label" : "Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column CTA Height",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "40px"
+    }, {
+      "id" : "e0c2749b-01fd-54ac-4a5c-6e2367e32c8a",
+      "name" : "color_field",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#D60059",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "6d33449c-7a85-fde0-e72a-294782d29957",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#F2F4F6",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "cdfd7f3c-a1fb-fa82-bfdc-5436f87afc46",
+      "name" : "border",
+      "display_width" : null,
+      "label" : "Border",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Right Column CTA Border",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "1.5px solid #D60059"
+    }, {
+      "id" : "f7534965-59d0-395f-c9cf-983ee45986db",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text_field" : "READ MORE",
+      "font_size" : "16px",
+      "line_height" : "18px",
+      "font_weight" : "bold",
+      "padding_top" : "20px",
+      "width" : "210px",
+      "height" : "40px",
+      "color_field" : {
+        "color" : "#D60059",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#F2F4F6",
+        "opacity" : 100
+      },
+      "border" : "1.5px solid #D60059",
+      "alignment" : "left"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "src" : "https://www.picussecurity.com/hubfs/2x/38/Email%20TY_thumbnail%202.png",
+      "alt" : "Email TY_thumbnail 2",
+      "loading" : "lazy",
+      "width" : 508,
+      "height" : 240
+    },
+    "title" : {
+      "text_field" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "font_size" : "16px",
+      "line_height" : "22px",
+      "font_weight" : "bold",
+      "color_field" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      },
+      "padding_top" : "20px",
+      "alignment" : "left"
+    },
+    "content" : {
+      "text_field" : "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz.",
+      "font_size" : "14px",
+      "line_height" : "20px",
+      "font_weight" : "normal",
+      "padding_top" : "10px",
+      "color_field" : {
+        "color" : "#3C3C3B",
+        "opacity" : 100
+      },
+      "alignment" : "left"
+    },
+    "cta" : {
+      "text_field" : "READ MORE",
+      "font_size" : "16px",
+      "line_height" : "18px",
+      "font_weight" : "bold",
+      "padding_top" : "20px",
+      "width" : "210px",
+      "height" : "40px",
+      "color_field" : {
+        "color" : "#D60059",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#F2F4F6",
+        "opacity" : 100
+      },
+      "border" : "1.5px solid #D60059",
+      "alignment" : "left"
+    }
+  }
+} ]

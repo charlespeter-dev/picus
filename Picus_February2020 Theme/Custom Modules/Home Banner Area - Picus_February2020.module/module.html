@@ -1,0 +1,35 @@
+<div class="home-banner-area">
+  {% if module.logo_image.src or module.logo_description %}
+    <div class="home-banner-top-logo-wrapper">
+      <div class="page-center cool">
+        <div class="cool-content">
+          {% if module.logo_image.src %}<div class="cool" style="background-image: url('{{ module.logo_image.src }}');"></div>{% endif %}
+          {% if module.logo_description %}<div class="cool-text dnone d-sm-block">{{ module.logo_description }}</div>{% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  <div class="global-hero mainpage-hero" style="background-image: url('{{ module.background_image.src }}');">
+    <div class="page-center">
+      <div class="content">
+        <h1>{{ module.banner_title }}</h1>
+        <p>{{ module.banner_subtitle }}</p>
+        {% if module.select_button_type %}
+          {% if module.select_button_type == 'standard' %}
+            {% set href = module.button_link.url.href %}
+            {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            {% if module.button_text and href %}
+              <a href="{{ href }}"
+                 {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.button_link.no_follow %}rel="nofollow"{% endif %} class="btn btn-default">{{ module.button_text }}</a>
+            {% endif %}
+          {% else %}
+            {% cta guid="{{ module.select_cta }}" %}
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

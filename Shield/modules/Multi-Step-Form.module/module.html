@@ -1,0 +1,22 @@
+<div class="multi-step-form {% if dark_mode %}dark-mode{% endif %}">
+  {% for item in module.form_headings %}
+   <h3>{{ item }}</h3>
+  {% endfor %}
+{% form
+	form_to_use="{{ module.select_form.form_id }}"
+	response_response_type="{{ module.select_form.response_type }}"
+	response_message="{{ module.select_form.message }}"
+	response_redirect_id="{{ module.select_form.redirect_id }}"
+	response_redirect_url="{{module.select_form.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.select_form.gotowebinar_webinar_key }}"
+  sfdc_campaign="{{ module.salesforce_campaign_id }}"
+  follow_up_type_simple="{{ module.follow_up_email }}"
+%}
+<input type="submit" value="Next" class="hs-button primary large multi-step-next">
+  <div id="multi-step-nav">
+
+  </div>
+  <section class="multi-step-progress">
+    <div></div>
+  </section>
+</div>  

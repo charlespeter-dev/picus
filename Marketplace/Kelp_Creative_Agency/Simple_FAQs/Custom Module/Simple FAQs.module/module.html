@@ -1,0 +1,34 @@
+{# adds schema markup #}
+{% require_js %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ request.scheme }}://{{ request.domain }}{{ request.path }}#faq-{{ name }}",
+  "mainEntity": [
+      {% for item in module.faqs %}
+	    {
+			"@type": "Question",
+			"name": "{{ item.the_question }}",
+			"acceptedAnswer": {
+			  "@type": "Answer",
+			  "text": "{{ item.the_answer|striptags|escape }}"
+			}
+		}{% unless loop.last %},{% endunless %}
+	  {% endfor %}
+  ]
+}
+</script>
+{% end_require_js %}
+<dl class="simple-faqs" id="faq-{{ name }}">
+	{% for item in module.faqs %}
+	<div class="simple-faqs-item {% if item.expanded %}simple-faqs-item--open{% endif %}">
+		<dt class="simple-faqs-item-question">
+			{{ item.the_question }}
+		</dt>
+		<dd class="simple-faqs-item-answer">
+			{{ item.the_answer }}
+		</dd>
+	</div>
+	{% endfor %}
+</dl>

@@ -1,0 +1,21 @@
+<div class="logo-group-wrapper">
+  <div id="trusted" class="global-row mainpage-trusted">
+    <div class="page-center">
+      {% if module.title %}<h2>{{ module.title }}</h2>{% endif %}
+      <div class="logo-group-grid">
+        <div class="row align-items-center justify-content-center">
+          {% for item in module.logo_group %}
+            {% if item.image.src %}
+              <div class="col12 colmd4 colxl2 logo-group-item">
+                <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" title="{{ item.image.alt }}">    
+              </div>
+            {% endif %}
+            {% if loop.index == 5 %}
+              <div class="w100 dnone dxlblock"></div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

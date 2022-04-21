@@ -1,0 +1,27 @@
+{% if module.background_image.src or module.title or module.subtitle or module.include_links and module.links %}
+<div class="banner-area {% if module.include_links %}banner-with-links{% endif %}">
+    <div class="global-hero subpage-hero offensive-manager" {% if module.background_image.src or module.module_settings.select_background_image_position %}style="background-image: url('{{ module.background_image.src }}'); background-position: {{ module.module_settings.select_background_image_position }};"{% endif %}>
+      <div class="page-center">        
+        {% if module.include_links %}
+          <div class="hero-header">
+            {%  simple_menu menu_tree="{{ module.links }}" %}
+          </div>
+        {% endif %}
+        {% if module.title or module.subtitle %}
+          <div class="content">
+            {% if module.module_settings.select_content_width == 'three-four' %}
+            <div class="row">
+              <div class="collg9 col12">{% endif %}
+                {% if module.title %}<h1 style="color: {{ module.module_settings.heading_colour.color }};">{{ module.title }}</h1>{% endif %}
+                {% if module.subtitle %}<p style="color: {{ module.module_settings.sub_heading_colour.color }};">{{ module.subtitle }}</p>{% endif %}
+              {% if module.module_settings.select_content_width == 'three-four' %}</div>
+            </div>{% endif %}
+          </div>
+        {% endif %}
+        <div id="click" class="text-center visible-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" style="width: 48px; height: 48px"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

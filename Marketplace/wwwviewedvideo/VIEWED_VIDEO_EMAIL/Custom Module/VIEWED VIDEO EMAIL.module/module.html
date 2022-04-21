@@ -1,0 +1,29 @@
+{% set padding_responsive = (module.video_setup.height/module.video_setup.width)*100 %}
+<!--BOCVIWOM-->
+<!--ALL RIGHTS RESERVED. This code contains material protected under International Copyright Laws and Treaties. Any unauthorized reprint or use of this material is prohibited. No part of this code may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, or by any information storage and retrieval system without express written permission from VIEWED.-->
+<!-- 18.0 -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+	style="width:100%;border:none;max-width:{{ module.video_setup.width }}px;" class="viewed-box">
+	<tr align="center">
+		<td>
+			<div class="viewed-video"
+				style="text-align:center;background-image:url('https://d3kl85ostynfb4.cloudfront.net/viewed/app/spin/spin.gif');background-size:20%;background-repeat:no-repeat;background-position:center center;margin:0 auto;position:relative;height:0;max-height:0;padding-bottom:{{ padding_responsive|round(2,"floor") }}%;">
+				<a href="https://track.viwomail.com/videoemail/LP/{{ module.viewed_video_id }}/video.html"
+					style="border:none;">
+					<picture width="{{ module.video_setup.width }}" height="{{ module.video_setup.height }}"
+						style="max-width:{{ module.video_setup.width }}px; width:100%; max-height: auto; height: auto; ">
+						<source
+							srcset="https://track.viwomail.com/videoemail/C/{{ module.viewed_video_id }}/trackem/envio"
+							type="video/mp4">
+						<!--[if !mso]><!-- --> <img style="width:100%;border:none;max-width:{{ module.video_setup.width }}px;"
+							src="https://track.viwomail.com/videoemail/C/{{ module.viewed_video_id }}/trackan/envio"
+							alt="VIDEO">
+						<!--<![endif]-->
+						<!--[if lte mso 16]> <img alt="VIDEO" border="0" src="https://track.viwomail.com/videoemail/C/{{ module.viewed_video_id }}/trackan/envio" style="border:none;width:0px;max-height:0px;height:0px;overflow:hidden;text-align:center;" width="{{ module.video_setup.width }}" height="{{ module.video_setup.height }}"/> <![endif]-->
+					</picture>
+				</a> </div>
+		</td>
+	</tr>
+</table>
+<!--EOCVIWOM-->
+

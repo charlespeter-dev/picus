@@ -1,0 +1,21 @@
+[ {
+  "id" : "2978443b-37d9-3048-1ff6-085e3c1a90bc",
+  "name" : "background_colour",
+  "display_width" : null,
+  "label" : "Background Colour",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#f1f1f1",
+    "opacity" : 100
+  }
+}, {
+  "id" : "fb30056a-890e-1ca5-087e-17ea8c8bfd11",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]

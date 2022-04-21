@@ -1,0 +1,84 @@
+[ {
+  "id" : "6e8de12f-d0e3-d91e-fed8-6366ab21eeaa",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Speakers"
+}, {
+  "id" : "e94f007d-ec98-fd94-1ddf-08199822daf3",
+  "name" : "speakers",
+  "display_width" : null,
+  "label" : "Speakers",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : null,
+    "sorting_label_field" : "9bcc2e14-1cb0-7d53-35a8-1791d8e48a5d",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "086b81f9-9849-bbe0-656a-8bbf3c9a9dcd",
+    "name" : "photo",
+    "display_width" : null,
+    "label" : "Photo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/profiles/dr-suleyman-ozarslan.png",
+      "alt" : "Dr. Süleyman Özarslan",
+      "width" : 309,
+      "height" : 309,
+      "max_width" : 309,
+      "max_height" : 309
+    }
+  }, {
+    "id" : "0df52982-9e75-fab6-a540-90cac7b22dc3",
+    "name" : "speaker_name",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Speaker Name"
+  }, {
+    "id" : "9bcc2e14-1cb0-7d53-35a8-1791d8e48a5d",
+    "name" : "speaker_title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Job title, Department, <strong>Company</strong></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/profiles/dr-suleyman-ozarslan.png",
+      "alt" : "Dr. Süleyman Özarslan",
+      "width" : 309,
+      "height" : 309,
+      "max_width" : 309,
+      "max_height" : 309
+    },
+    "speaker_name" : "Speaker Name",
+    "speaker_title" : "<p>Job title, Department, <strong>Company</strong></p>"
+  } ]
+} ]

@@ -1,0 +1,89 @@
+[ {
+  "id" : "bbad9650-e0b7-d56b-ede3-52d131b2190f",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your secondary form title encouraging submission"
+}, {
+  "id" : "f3568d82-6841-d959-52de-8937d25d9899",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "0d34562e-a61d-4971-9b7a-8bbd0b882309",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "85b3a248-9a8a-76f6-fcbc-83b2c1b95007",
+  "name" : "options",
+  "display_width" : null,
+  "label" : "Options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c775d4a3-9f82-3192-4ffa-c273cf984110",
+    "name" : "background_colour",
+    "display_width" : null,
+    "label" : "Background Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#0A0E21",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "e3dd90f0-eb3c-9444-b933-912d328458c2",
+    "name" : "text_colour",
+    "display_width" : null,
+    "label" : "Text Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "56f650ea-0426-9573-70e2-a498be38a3c3",
+    "name" : "border_colour",
+    "display_width" : null,
+    "label" : "Border Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#E8055D",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_colour" : {
+      "color" : "#0A0E21",
+      "opacity" : 100
+    },
+    "text_colour" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "border_colour" : {
+      "color" : "#E8055D",
+      "opacity" : 100
+    }
+  }
+} ]

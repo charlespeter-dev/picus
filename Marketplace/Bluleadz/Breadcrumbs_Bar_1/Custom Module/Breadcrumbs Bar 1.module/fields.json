@@ -1,0 +1,277 @@
+[ {
+  "id" : "2f59816d-282f-bae4-569b-381f6e883cd5",
+  "name" : "breadcrumbs",
+  "display_width" : null,
+  "label" : "Breadcrumbs",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "b0a8905e-31f7-143c-7c4c-cb208755cd98",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "b0a8905e-31f7-143c-7c4c-cb208755cd98",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Home"
+  }, {
+    "id" : "8c1ddffb-4e7b-f539-05d4-9be990627c96",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "1dfa03bf-1254-7a80-f1b9-d22617d7fc61",
+    "name" : "icon_field",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.0.10",
+    "type" : "icon",
+    "default" : {
+      "name" : "home",
+      "unicode" : "f015",
+      "type" : "SOLID"
+    }
+  }, {
+    "id" : "3ad6ad9a-e2a9-ebf3-1cf9-e89bf127c13a",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#EEEEEE",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "0f96db2f-83b3-6de2-b957-5845267f11df",
+    "name" : "hover_background_color",
+    "display_width" : null,
+    "label" : "Hover Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#60afe1",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "1f410ee8-5305-b052-2549-fdb0c0010c08",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "88dd8003-a28a-1c10-a187-df56c053f365",
+    "name" : "hover_text_color",
+    "display_width" : null,
+    "label" : "Hover Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text" : "Home",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon_field" : {
+      "name" : "home",
+      "unicode" : "f015",
+      "type" : "SOLID"
+    },
+    "background_color" : {
+      "color" : "#EEEEEE",
+      "opacity" : 100
+    },
+    "hover_background_color" : {
+      "color" : "#60afe1",
+      "opacity" : 100
+    },
+    "text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "hover_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "text" : "Home",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon_field" : {
+      "name" : "home",
+      "unicode" : "f015",
+      "type" : "SOLID"
+    },
+    "background_color" : {
+      "color" : "#EEEEEE",
+      "opacity" : 100
+    },
+    "hover_background_color" : {
+      "color" : "#60afe1",
+      "opacity" : 100
+    },
+    "text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "hover_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "text" : "Home",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon_field" : {
+      "name" : "home",
+      "unicode" : "f015",
+      "type" : "SOLID"
+    },
+    "background_color" : {
+      "color" : "#EEEEEE",
+      "opacity" : 100
+    },
+    "hover_background_color" : {
+      "color" : "#60afe1",
+      "opacity" : 100
+    },
+    "text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "hover_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "text" : "Home",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "icon_field" : {
+      "name" : "home",
+      "unicode" : "f015",
+      "type" : "SOLID"
+    },
+    "background_color" : {
+      "color" : "#EEEEEE",
+      "opacity" : 100
+    },
+    "hover_background_color" : {
+      "color" : "#60afe1",
+      "opacity" : 100
+    },
+    "text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "hover_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  } ]
+}, {
+  "id" : "706afd30-f783-2d23-8f56-ad98055c6f09",
+  "name" : "vertical_section_padding_px",
+  "display_width" : null,
+  "label" : "Vertical Section Padding (px)",
+  "required" : true,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 0,
+  "max" : 60,
+  "step" : 1,
+  "type" : "number",
+  "default" : 12
+}, {
+  "id" : "d22ec84a-745c-da87-3359-9f436177c37d",
+  "name" : "section_max_width",
+  "display_width" : null,
+  "label" : "Section Max Width (Optional)",
+  "help_text" : "Leave blank for the breadcrumb bar to be left aligned in the screen. <br> Measured in pixels.",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 800,
+  "max" : 1800,
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "6ba8b3ec-5b51-dcd2-d874-1b2acfc53138",
+  "name" : "alignment",
+  "display_width" : null,
+  "label" : "Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+  "type" : "choice",
+  "default" : "left"
+} ]

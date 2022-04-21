@@ -1,0 +1,243 @@
+<!--
+  templateType: blog
+  isAvailableForNewContent: true
+  label: Shield - blog post
+  screenshotPath: ../images/template-previews/blog-post.png
+-->
+{% extends "./layouts/mega-menu-base.html" %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <div class="body-container body-container--blog-post">
+
+    {# Blog header #}
+    {% text "sub_heading" label="Sub Heading", value="" export_to_template_context=True %}
+    {% choice "header_text" label='Header Title Alignment', value='Centre', choices='Centre, Left' export_to_template_context=True %}
+    {% choice "header_overlay" label='Header Overlay', value='Enabled', choices='Enabled, Disabled' export_to_template_context=True %}
+    {% text "custom_header_height" label="Custom Header Height", value="450" export_to_template_context=True %}
+    {% if widget_data.use_background_image.value == "false" %}
+      {% image "social_image" label="Social Media Image" export_to_template_context=True %}
+    {% endif %}
+    {% image "background_image" label="Custom Background Image" export_to_template_context=True %}
+    {% boolean "use_background_image" label="Use Custom Background Image" value="false" export_to_template_context=True %}
+    {% boolean "listing_image_centre" label="Centre Align Listing Image" value="false" export_to_template_context=True %}
+    {% boolean "secondary_author_display" label="Secondary Author (Refresh to view)" value="false" export_to_template_context=True %}
+    {% if widget_data.secondary_author_display.value == "true" %}
+      {% text "secondary_author" label='Secondary Author Name', value="" export_to_template_context=True %}
+    {% endif %}
+    {% require_head %}
+    {% if widget_data.use_background_image.value == "true" %}
+      <meta property='og:image' content='{{ widget_data.social_image.src }}'/>
+    {% else %}
+      <meta property='og:image' content='{{ content.featured_image }}'/>
+    {% endif %}
+    {% choice "read_more_section" label='Read More Section', value='Enabled', choices='Enabled, Disabled' export_to_template_context=True %}
+    {% choice "table_styling" label='Apply Table Styling', value='None', choices='None,Default,Blue' export_to_template_context=True %}
+    {% text "custom_blog_post_1" label="Custom Related Blog Post 1", value="" export_to_template_context=True %}
+    {% text "custom_blog_post_2" label="Custom Related Blog Post 2", value="" export_to_template_context=True %}
+    {% text "custom_blog_post_3" label="Custom Related Blog Post 3", value="" export_to_template_context=True %}
+    {% end_require_head %}
+    {% text "blog_subscribe_header" label="Subscribe Title", value="Keep up to date with latest blog posts" export_to_template_context=True %}
+    {% text "blog_subscribe_form" label="Blog Subscribe Form", value="10a2d0b0-9f91-4cd7-a1e0-1cff39706638" export_to_template_context=True %}
+    {% if widget_data.table_styling.value != "None" %}
+      {% if widget_data.table_styling.value == "Default" %}
+        <style>
+          .blog-post__body_contain table {
+            border-color: #99acc2; 
+            border-collapse: collapse; 
+            table-layout: fixed; 
+            height: 340px; 
+            width: 100%;
+            margin-left: auto; 
+            margin-right: auto; 
+            display: table;
+          }
+          .blog-post__body_contain table tbody tr {
+            height: 85px;
+          }
+        </style>
+      {% endif %}
+      {% if widget_data.table_styling.value == "Blue" %}
+        <style>
+          .blog-post__body_contain table {
+            border-color: #ffffff;
+            border-collapse: collapse;
+            table-layout: fixed;
+            border-style: solid;
+            width: 100%;
+          }
+          .blog-post__body_contain table tbody tr {
+            height: 103px;
+          }
+          .blog-post__body_contain table tbody tr td {
+            background-color: #0c5394;
+            vertical-align: middle;
+          }
+          .blog-post__body_contain table tbody tr td p {
+            color: #fff;
+            font-size: 16px;
+          }
+        </style>
+      {% endif %}
+    {% endif %}
+    <div class="blog-header" 
+         {% if widget_data.use_background_image.value == "true" %} style="background-image: {% if widget_data.header_overlay.value == "Enabled" %}linear-gradient(rgba(0,-1,0,0.5), rgba(0,0,0,0.7)),{% endif %}url('{{ widget_data.background_image.src }}'); {% if widget_data.custom_header_height.value != '450'%}height: {{ widget_data.custom_header_height.value }}px; padding-top:{{ widget_data.custom_header_height.value / 3 }}px;{% endif %}"{% else %}
+         {% if content.featured_image %} style="background-image: {% if widget_data.header_overlay.value == "Enabled" %}linear-gradient(rgba(0,-1,0,0.5), rgba(0,0,0,0.7)),{% endif %}url('{{ content.featured_image }}'); {% if widget_data.custom_header_height.value != '450'%}height: {{ widget_data.custom_header_height.value }}px; padding-top:{{ widget_data.custom_header_height.value / 3 }}px;{% endif %}"{% endif %}{% endif %}
+         >
+      <div class="blog-header__inner{% if widget_data.header_text.value == "Left" %} left{% endif %}">
+        <h1>{{ content.name }}</h1>
+        <h2 style="color: #fff; font-weight: 100; font-size: 0.9em;">{{ widget_data.sub_heading.value }}</h2>
+      </div>
+    </div>
+    {# End blog header #}
+    {% if 'Reports' in content.topic_list|map('name') %}
+    {% else %}
+    <div class="blog-post__meta">
+        {% for tag in content.tag_list %}
+            {% if tag.name == "Webinar" %}
+                {% if content.widgets.type_of_webinar.body.value == "Register now" %}
+                  {% module "webinar_date" path="@hubspot/text" label="Webinar Date" value="August 20, Thursday 3 PM GMT+1, London Time" %}
+                {% endif %}
+              {% else %}
+              <p><a href="../author/{{ content.blog_post_author.slug }}" class="author-link">{{ content.blog_post_author.display_name }}</a>{% if widget_data.secondary_author_display.value == "true" %}
+     &amp; {{ widget_data.secondary_author.value }}
+    {% endif %} | {{ content.publish_date_local_time.strftime('%B %d, %Y') }}</p>
+            {% endif %}
+          {% endfor %}
+    </div>
+    {% endif %}
+    {# Blog post #}
+    <div class="content-background">
+    <div class="content-wrapper">
+      <article class="blog-post {% for tag in content.tag_list %}{% if tag.name == 'Webinar' or 'Reports & Guides' %}{{ tag.slug }} {% endif %}{% endfor %}">
+        <div class="blog-post__body">
+          <div class="blog-post__body_contain">
+            {% if 'Article' in content.topic_list|map('name') %}
+            <section class="form-step-1 blog-post-subscribe">
+              <h3>{{ widget_data.blog_subscribe_header.value }}</h3>
+              {% form
+                form_to_use="{{ widget_data.blog_subscribe_form.value }}"
+                response_response_type="redirect"
+                response_message="Thank you"
+                
+              %}
+            </section>  
+            {% endif %}
+            {{ content.post_body }}
+            {% for tag in content.tag_list %}
+              {% if tag.name == "Webinar" %}
+                {% module "module_15979930373608" path="/Shield/modules/event-speakers", label="Event Speakers" %}
+                {% choice "type_of_webinar" label='Webinar Type', value='Register now', choices='Register now, Watch on demand' export_to_template_context=True %}
+              {% endif %}
+              {% if tag.name == "Reports" %}
+                {% choice "type_of_report" label='Report or Guide CTA', value='Download now', choices='Download now, Read now' export_to_template_context=True %}
+              {% endif %}
+            {% endfor %}
+            <div class="social-share">
+              <h3 class="share-title underline">Share this:</h3>
+              <p>
+                <a target="_blank" href="https://twitter.com/intent/tweet?url={{content.absolute_url}}&text={{ content.name | striptags }}"><img src="//cdn2.hubspot.net/hubfs/7048931/twitter_black.svg" alt="Twitter" title="Twitter" width="30px"></a>
+                <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url={{ content.absolute_url }}"><img src="//cdn2.hubspot.net/hubfs/7048931/linkedin_black.svg" alt="LinkedIn" title="LinkedIn" width="26px"></a>
+                <a target="_blank" href="http://www.facebook.com/share.php?u={{ content.absolute_url }}"><img src="//cdn2.hubspot.net/hubfs/7048931/facebook_black.svg" alt="Facebook" title="Facebook" width="14px"></a>
+              </p>
+              <br>
+            </div>
+          </div>
+          {% for tag in content.tag_list %}
+            {% if tag.name == "Webinar" %}
+            <div class="webinar-form">
+              {% module "form" path="@hubspot/form" label="Form" %}
+            </div>  
+            {% endif %}
+            {% if tag.name == "Reports" %}
+            <div class="download-form">
+              {% module "form" path="@hubspot/form" label="Form" %}
+            </div>  
+            {% endif %}
+          {% endfor %}
+        </div>
+        </div>
+      </article>
+      {% if group.allow_comments %}
+        <div class="blog-comments">
+          {% module 'blog_comments'
+            path='@hubspot/blog_comments',
+            label="Blog comments"
+          %}
+        </div>
+      {% endif %}
+    </div>
+    </div>
+    {# End blog post #}
+
+    {# Recent posts listing #}
+    {# This macro is used to format each recent post card and
+      gets passed to the 'related_blog_posts' tag below #}
+    {% macro recent_post(post) %}
+      <a href="{{ post.absolute_url }}" class="blog-recent-posts__post">
+        <div class="blog-recent-posts__image" style="background-image: url('{{ post.featuredImage }}');"></div>
+        <h3 class="blog-recent-posts__title">{{post.title}}</h3>
+        <p class="latest-read-more"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/latest-read-more.png" alt="read-more"></p>
+      </a>
+    {% endmacro %}
+  
+    {% set custom_blog_posts = "{{ widget_data.custom_blog_post_1.value }},{{ widget_data.custom_blog_post_2.value }},{{ widget_data.custom_blog_post_3.value }}" %}
+    
+    {% if widget_data.read_more_section.value == "Enabled" %}
+    <div class="blog-recent-posts">
+      <div class="content-wrapper">
+       <!-- <h3 class="center">Read more from Picus Security</h3> changed in June,16 by Enes Çınar due to homepage revise -->
+         <h2 style="text-align: center;">
+                <span style="color: #ffffff;">
+                  DISCOVER
+                  <br>
+                  <span style="color: #c62c64;">MORE RESOURCES</span>
+                </span>
+              </h2>
+        <div class="blog-recent-posts__list">
+          {% related_blog_posts
+            limit=3,
+            no_wrapper=True,
+            post_formatter="recent_post",
+            blog_post_override="{{ custom_blog_posts }}"
+          %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {# End recent posts listing #}
+
+  </div>
+  {% if 'Article' in content.topic_list|map('name') %}
+  {# CTA Module #}
+  <div class="row-fluid-wrapper row-depth-1 row-number-28 dnd_area-row-7-vertical-alignment dnd-section dnd_area-row-7-background-image dnd_area-row-7-padding" style="background-image: url('https://www.picussecurity.com/hubfs/raw_assets/public/Shield/images/picus-cta-banner-blue.png'); background-size: cover;">
+    <div class="row-fluid ">
+      <div class="span12 widget-span widget-type-cell dnd-column dnd_area-column-47-vertical-alignment" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+      <div class="row-fluid-wrapper row-depth-1 row-number-29 dnd-row">
+        <div class="row-fluid ">
+        <div class="span6 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="6">
+        <div id="hs_cos_wrapper_dnd_area-module-48" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="wow fadeIn" data-wow-delay="0.5" style="visibility: visible; animation-name: fadeIn;">
+            <h4 style="text-transform: uppercase;">Subscribe</h4>
+        <h2 style="text-transform: uppercase; color: #fff; margin-top: -30px;">{{ widget_data.blog_subscribe_header.value }}</h2>
+        </div></div>
+
+        </div><!--end widget-span -->
+        <div class="span6 widget-span widget-type-custom_widget dnd_area-module-49-flexbox-positioning dnd-module" style="" data-widget-type="custom_widget" data-x="6" data-w="3">
+          <section class="form-step-1 blog-banner">
+          {% form
+            form_to_use="{{ widget_data.blog_subscribe_form.value }}"
+            response_response_type="redirect"
+            response_message="Thank you for subscribing"
+          %}
+          </section>  
+        </div><!--end widget-span -->
+        </div><!--end row-->
+        </div><!--end row-wrapper -->
+
+      </div><!--end widget-span -->
+    </div><!--end row-->
+  </div>
+  {% endif %}
+</main>
+{% endblock body %}

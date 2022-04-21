@@ -1,0 +1,24 @@
+<div class="bbs-cb1-background {{name}} {{ module.custom_css_class }}">
+  <div class="bbs-cb1-container bbs-page-center">
+    <div class="bbs-cb1-header">
+      {% inline_rich_text field="header" value="{{ module.header }}" %}
+    </div>
+    <div class="bbs-cb1-ctas">
+      {% for item in module.cta %}
+				{% cta guid="{{ item }}" %}
+			{% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% require_css %}
+<style>
+  .bbs-cb1-background.{{name}} {
+    background-color: {{ module.background_color.color }};
+  }
+  .{{name}} .bbs-cb1-header * {
+  	color: {{ module.text_color.color }};
+  }
+</style>
+{% end_require_css %}

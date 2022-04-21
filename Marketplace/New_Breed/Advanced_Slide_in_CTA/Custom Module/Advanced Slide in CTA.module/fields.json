@@ -1,0 +1,169 @@
+[ {
+  "id" : "c452ec7e-38ef-048d-9e43-2e813194192b",
+  "name" : "show_slide_in_cta",
+  "display_width" : null,
+  "label" : "Show Slide in CTA",
+  "help_text" : "Checked box means CTA will be visible. Unchecked box will remove the slide in CTA.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "169b25d9-10e9-14df-6eed-6f59cfda5561",
+  "name" : "cta_image",
+  "display_width" : null,
+  "label" : "CTA Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.picussecurity.com/hubfs/raw_assets/public/Marketplace/New_Breed/Advanced_Slide_in_CTA/Images/Advanced-Lead-Flow-Image.png",
+    "alt" : "Advanced-Lead-Flow-Image",
+    "width" : 599,
+    "height" : 300
+  }
+}, {
+  "id" : "8a3b27cf-5f67-a23b-bd94-872ee3313edb",
+  "name" : "cta_type",
+  "display_width" : null,
+  "label" : "CTA Type",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Webinar"
+}, {
+  "id" : "4b09f817-e089-98a6-6327-9a8953a5368a",
+  "name" : "cta_title",
+  "display_width" : null,
+  "label" : "CTA Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "How to Drive Inbound Growth Through Outbound Methods"
+}, {
+  "id" : "9a4e065b-6232-7abf-5f2d-91789a9d99e5",
+  "name" : "cta_content",
+  "display_width" : null,
+  "label" : "CTA Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "New Breed will discuss how to seamlessly integrate outbound tactics into your inbound strategy"
+}, {
+  "id" : "d8669554-4056-ac1b-7fec-b96da8ad7c07",
+  "name" : "cta_button",
+  "display_width" : null,
+  "label" : "CTA Button",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta"
+}, {
+  "id" : "9bd1d311-61a6-d947-8ce7-47e03101c883",
+  "name" : "cta_button_color",
+  "display_width" : null,
+  "label" : "CTA Button Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3ad531",
+    "opacity" : 100
+  }
+}, {
+  "id" : "aeac3f77-11cc-a61a-3957-bd927c5098be",
+  "name" : "cta_button_hover_color",
+  "display_width" : null,
+  "label" : "CTA Button Hover Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#373a36",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b38b57fb-7019-a33f-1132-5c1ac7f20cab",
+  "name" : "button_text_color",
+  "display_width" : null,
+  "label" : "Button Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "cf7a50b7-aab1-98ec-2f58-20461f3e755d",
+  "name" : "card_background_color",
+  "display_width" : null,
+  "label" : "Card Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "e85f1630-7144-d5b6-12ad-b8638ee5a38a",
+  "name" : "card_content_color",
+  "display_width" : null,
+  "label" : "Card Content Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#212121",
+    "opacity" : 100
+  }
+}, {
+  "id" : "a1cd39dc-d756-a039-d87c-164eb6b40831",
+  "name" : "align_card_left_or_right",
+  "display_width" : null,
+  "label" : "Align Card Left or Right",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "align-right", "Align Right" ], [ "align-left", "Align Left" ] ],
+  "type" : "choice",
+  "default" : "align-right"
+}, {
+  "id" : "f6e7a812-2852-87a7-34bf-4581017a1354",
+  "name" : "cookie_expiration_days",
+  "display_width" : null,
+  "label" : "Cookie Expiration Days",
+  "help_text" : "Input number of days that this CTA will not show if closed out by user",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 1,
+  "step" : 1,
+  "type" : "number",
+  "default" : 30
+}, {
+  "id" : "119b3e3f-4f34-14e9-1b70-80387ea82e7b",
+  "name" : "hide_cta_on_mobile",
+  "display_width" : null,
+  "label" : "Hide CTA on Mobile",
+  "help_text" : "Check to remove Slide in CTA on screens less than 767px wide",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

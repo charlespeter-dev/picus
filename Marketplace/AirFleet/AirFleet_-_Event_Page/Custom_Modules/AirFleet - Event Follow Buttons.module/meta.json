@@ -1,0 +1,29 @@
+{
+  "content_tags" : [ {
+    "name" : "MULTI_ROW",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "EVENT",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "FORM",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "HERO_IMAGE",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "MAP",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "DRAG_AND_DROP",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "OTHER_INDUSTRY",
+    "source" : "MARKETPLACE"
+  } ],
+  "global" : false,
+  "icon" : "https://cdn2.hubspot.net/hubfs/4078036/rss-square.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 2002434,
+  "is_available_for_new_content" : true
+}

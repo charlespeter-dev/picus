@@ -1,0 +1,59 @@
+.responsive-table {
+overflow-x: auto; max-width: 100%; margin: 0px;
+}
+@media only screen and (min-width: 800px) {
+  .responsive-table {
+  width: 40%;
+  }
+}  
+.hs-hero {
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  position: relative;
+  
+}
+
+.hs-hero.parallax {
+   background-attachment:fixed;
+   background-size: 100% auto;
+ }
+
+@media only screen and (min-width: 401px) {
+  .hs-hero {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+.hs-hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .2;
+}
+.hs-hero__content {
+  position: relative;
+  z-index: 1;
+  padding: 0 1em;
+
+}
+@media only screen and (min-width: 401px) {
+  .hs-hero__content {
+    padding: 0 10%;
+  } 
+}
+
+.hs-hero__content--center {
+  text-align: center;
+}
+.hs-hero__content--right {
+  text-align: right;
+}
+
+.hs-hero__content--left {
+  text-align: left;
+}

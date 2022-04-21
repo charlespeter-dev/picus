@@ -1,0 +1,27 @@
+[ {
+  "id" : "f1e24e74-2e64-e3bd-0557-7dfeae5aecbf",
+  "name" : "custom_css_class",
+  "display_width" : null,
+  "label" : "Custom CSS Class",
+  "help_text" : "If you want to further customize the module, enter your own custom CSS class here. The class will be applied to the outermost wrapper of the module.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "b929a632-3212-4548-30d1-9f6af8762032",
+  "name" : "icon",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.0.10",
+  "type" : "icon",
+  "default" : {
+    "name" : "chevron-up",
+    "unicode" : "f077",
+    "type" : "SOLID"
+  }
+} ]

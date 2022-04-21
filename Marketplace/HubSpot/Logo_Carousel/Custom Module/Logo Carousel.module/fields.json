@@ -1,0 +1,237 @@
+[ {
+  "id" : "cb05872a-af9c-3c95-21a6-531af76a39a0",
+  "name" : "logos",
+  "display_width" : null,
+  "label" : "Logos",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "328463f5-2e93-2093-7b5f-8bd2efd0ba27",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "328463f5-2e93-2093-7b5f-8bd2efd0ba27",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://design-assets.hubspot.com/hubfs/HubSpot-Projects-Attachments/HubSpot_Logo.png",
+      "alt" : "HubSpot_Logo",
+      "width" : 1024,
+      "height" : 297
+    }
+  }, {
+    "id" : "d2857ee0-75c6-a848-ace4-18d0426b967a",
+    "name" : "page_url",
+    "display_width" : null,
+    "label" : "External URL",
+    "help_text" : "Enter a valid url to link a slide to. To choose a page from the COS, leave this field blank.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+    "placeholder" : "http://",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "https://design-assets.hubspot.com/hubfs/HubSpot-Projects-Attachments/HubSpot_Logo.png",
+      "alt" : "HubSpot_Logo",
+      "width" : 1024,
+      "height" : 297
+    }
+  }, {
+    "image" : {
+      "src" : "https://design-assets.hubspot.com/hubfs/HubSpot-Projects-Attachments/HubSpot_Logo.png",
+      "alt" : "HubSpot_Logo",
+      "width" : 1024,
+      "height" : 297
+    }
+  }, {
+    "image" : {
+      "src" : "https://design-assets.hubspot.com/hubfs/HubSpot-Projects-Attachments/HubSpot_Logo.png",
+      "alt" : "HubSpot_Logo",
+      "width" : 1024,
+      "height" : 297
+    }
+  }, {
+    "image" : {
+      "src" : "https://design-assets.hubspot.com/hubfs/HubSpot-Projects-Attachments/HubSpot_Logo.png",
+      "alt" : "HubSpot_Logo",
+      "width" : 1024,
+      "height" : 297
+    }
+  } ]
+}, {
+  "id" : "5112bd03-6d8f-ee73-a2d2-c8d42a053947",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0fcc49e8-6861-1f07-502c-4446e3091da1",
+    "name" : "logos_to_show",
+    "display_width" : null,
+    "label" : "Logos to show at once",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "step" : 1,
+    "type" : "number",
+    "default" : 4
+  }, {
+    "id" : "82d4fd97-2fe4-7f7e-aece-4fc7488b77f1",
+    "name" : "logos_to_scroll",
+    "display_width" : null,
+    "label" : "Logos to scroll at once",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Search",
+    "choices" : [ [ "true", "Just one" ], [ "false", "All visible" ] ],
+    "type" : "choice",
+    "default" : "true"
+  }, {
+    "id" : "a358e30e-af36-7cba-0c77-9aa9c19ec731",
+    "name" : "padding",
+    "display_width" : null,
+    "label" : "Padding between logos in pixels",
+    "required" : true,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 50
+  }, {
+    "id" : "4d669287-14ed-e2d4-4ee8-f5b4a7d7678b",
+    "name" : "autoplay",
+    "display_width" : null,
+    "label" : "Autoplay",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "54dcede9-3d5d-0720-1d20-259b2e21c33a",
+    "name" : "show_dots",
+    "display_width" : null,
+    "label" : "Dot navigation",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "a8d32b74-adfc-508b-c033-725358923de4",
+    "name" : "show_arrows",
+    "display_width" : null,
+    "label" : "Arrow navigation",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "ee9dc959-c21a-cc37-6335-5e69fb3614a5",
+    "name" : "scroll_speed",
+    "display_width" : null,
+    "label" : "Scroll speed",
+    "required" : true,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 100,
+    "max" : 1000,
+    "step" : 1,
+    "type" : "number",
+    "default" : 300
+  }, {
+    "id" : "af27e65f-cf18-b48f-7871-3b56a95b28b4",
+    "name" : "mobile_settings",
+    "display_width" : null,
+    "label" : "Mobile settings",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c31c6d22-a7e0-1dc9-fa9e-58a4e3e995ac",
+      "name" : "logos_to_show",
+      "display_width" : null,
+      "label" : "Logos to show at once",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "min" : 1,
+      "step" : 1,
+      "type" : "number",
+      "default" : 2
+    }, {
+      "id" : "f2163e4e-4e2f-9115-ce98-2e7a6cb1ea66",
+      "name" : "show_arrows",
+      "display_width" : null,
+      "label" : "Arrow navigation",
+      "help_text" : "",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "9b19665e-4c24-d52d-a957-e2ca451d81a7",
+      "name" : "show_dots",
+      "display_width" : null,
+      "label" : "Dot navigation",
+      "help_text" : "",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "logos_to_show" : 2,
+      "show_arrows" : false,
+      "show_dots" : true
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "logos_to_show" : 4,
+    "logos_to_scroll" : "true",
+    "padding" : 50,
+    "autoplay" : true,
+    "show_dots" : true,
+    "show_arrows" : false,
+    "scroll_speed" : 300,
+    "mobile_settings" : {
+      "logos_to_show" : 2,
+      "show_arrows" : false,
+      "show_dots" : true
+    }
+  }
+} ]

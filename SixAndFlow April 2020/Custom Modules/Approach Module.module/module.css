@@ -1,0 +1,27 @@
+.apporach_sec { padding: 100px 0 105px; text-align: center; }
+.apporach_sec.common h2{margin-bottom:35px;}
+.apporach_sec.common h2:after {background:#DA3964;}
+.apporch_cons{margin-bottom:75px;color:#505050;}
+.apporach_sec.common .ap_cardinner h3{color:#24214D; margin:0;position: relative;}
+.ap_cardinner:before { position: absolute; content: ""; width: 100%; height: 100%;left: 0; top: 0; opacity: 0.4;  background-color: #fff; }
+.ap_cardinner { padding:23px 15px; position:relative; }
+.apporch_card {width: 32%;margin-right: 2%; margin-bottom:30px;position:relative;}
+.apporach_sec .dis-flex{justify-content: center;}
+.apporch_card:last-child,.apporch_card:nth-child(3n){margin-right:0%;}
+.ap_cardcons { padding: 40px 35px; text-align: left; }
+
+@media(max-width:1200px){
+  .ap_cardcons { padding: 40px 30px; }  
+  .apporach_sec { padding: 90px 0 70px;}  
+}
+
+@media(max-width:1024px){
+  .apporach_sec {padding: 70px 0 40px;}
+  .apporch_cons {margin-bottom: 50px;}
+  .ap_cardcons {padding: 30px 20px;}
+}
+
+@media(max-width:991px){
+  .apporach_sec .dis-flex {max-width: 550px; margin: 0 auto; }
+  .apporch_card{width:100%; margin-right:0%; margin-bottom:25px;}
+}

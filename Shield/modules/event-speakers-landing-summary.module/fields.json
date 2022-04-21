@@ -1,0 +1,171 @@
+[ {
+  "id" : "6e0786ea-8185-073c-22a8-35f032e936bd",
+  "name" : "event",
+  "display_width" : null,
+  "label" : "Event",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "71d86cef-c144-0d7b-548c-4587284f5bd5",
+    "name" : "event_details",
+    "display_width" : null,
+    "label" : "Event Details",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Security is not an island</h3>"
+  }, {
+    "id" : "b560f673-3d0d-c6a6-9812-0dcaa816501b",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/grey.png",
+      "alt" : "grey",
+      "width" : 565,
+      "height" : 944,
+      "max_width" : 565,
+      "max_height" : 944
+    }
+  }, {
+    "id" : "aa6cd7e9-9f21-ec06-7b37-32a9d1f6ffdd",
+    "name" : "session_link",
+    "display_width" : null,
+    "label" : "Session Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "a4952580-f69a-aaa3-e6f2-f1414140e084",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#b8dbff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "event_details" : "<h3>Security is not an island</h3>",
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/grey.png",
+      "alt" : "grey",
+      "width" : 565,
+      "height" : 944,
+      "max_width" : 565,
+      "max_height" : 944
+    },
+    "session_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "background_color" : {
+      "color" : "#b8dbff",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "cbb0dc6b-3baf-e46e-d7c5-95e9619c65d0",
+  "name" : "speakers",
+  "display_width" : null,
+  "label" : "Speakers",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 2,
+    "sorting_label_field" : "b12f0df0-e0c1-173e-25d3-ebd2466fc666",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "df832541-db49-ce0d-d8cc-d7e3ea8b369e",
+    "name" : "speaker_image",
+    "display_width" : null,
+    "label" : "Speaker Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/d.png",
+      "alt" : "d",
+      "width" : 1900,
+      "height" : 1690,
+      "max_width" : 1900,
+      "max_height" : 1690
+    }
+  }, {
+    "id" : "b12f0df0-e0c1-173e-25d3-ebd2466fc666",
+    "name" : "speaker_name",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Pete Shoard"
+  }, {
+    "id" : "5a4ceb3a-4a7e-c27a-fb2f-fbc8e8f491c2",
+    "name" : "speaker_job_title",
+    "display_width" : null,
+    "label" : "Speaker Job Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Senior Director Analyst"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "speaker_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/d.png",
+      "alt" : "d",
+      "width" : 1900,
+      "height" : 1690,
+      "max_width" : 1900,
+      "max_height" : 1690
+    },
+    "speaker_name" : "Pete Shoard",
+    "speaker_job_title" : "Senior Director Analyst"
+  } ]
+} ]

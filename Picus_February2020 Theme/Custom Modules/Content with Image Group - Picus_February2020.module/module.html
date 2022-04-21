@@ -1,0 +1,24 @@
+<div class="content-with-image-group-wrapper">
+  <div class="global-row platform-block">
+    <div class="page-center">
+      <div class="row align-items-center">
+        <div class="colmd5 col12">
+          {% if module.content %}
+            <div class="description-block">
+              {{ module.content }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="colmd6 offsetmd1 col12 description-image platform-companies">
+          <div class="row">
+            {% for item in module.image_group %}
+              <div class="col6 dmdflex align-items-center">
+                <img src="{{ item.image.src }}?noresize" width="{{ item.image.width }}" alt="{{ item.image.alt }}" title="{{ item.image.alt }}">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

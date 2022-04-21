@@ -1,0 +1,31 @@
+<div class="tc-with-image-platform-wrapper tc-platform-{{ name }} image-align-{{ module.module_settings.select_image_alignment }}">
+  <div class="global-row platform-block" style="background-color: rgba({{ module.module_settings.background_color.color|convert_rgb  }},{{ module.module_settings.background_color.opacity/100 }});">
+    <div class="page-center">
+      <div class="row align-items-center">
+        {% if module.module_settings.select_image_alignment != 'left' %}
+          <div class="colmd5 col12 description-content">
+            {% if module.content %}
+              <div class="description-block">
+                {{ module.content }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+        {% if module.image.src %}
+          <div class="colmd7 col12 description-image">
+            <img src="{{ module.image.src }}?noresize" width="{{ module.image.width }}" alt="{{ module.image.alt }}" title="{{ module.image.alt }}">
+          </div>
+        {% endif %}
+        {% if module.module_settings.select_image_alignment == 'left' %}
+          <div class="colmd5 col12 description-content">
+            {% if module.content %}
+              <div class="description-block">
+                {{ module.content }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

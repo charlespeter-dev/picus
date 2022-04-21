@@ -1,0 +1,57 @@
+<section class="section-{{ name }}">
+  <div class="shell">
+    {% if module.title  %}
+    <h1 class="section---title text-center">{{ module.title }}</h1>
+    <hr class="divider bg-mantis">
+    {% endif %}
+    
+    <div class="c-testi-row c-d-flex">
+      {% for item in module.items %}
+      <div class="cell-sm-9 cell-md-4">
+        <blockquote class="quote quote-classic">
+          <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" height="54" viewBox="0 0 24 24" width="54"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" fill="currentColor"></path></svg>
+          <div class="quote-body">
+            <p>
+              <q>{{ item.testimonial }}</q>
+            </p>
+            <div class="quote-meta c-d-flex">
+              {% if item.client_photo.src %}
+              <div class="unit-left"><img class="img-circle quote-img" width="80" height="80" src="{{ item.client_photo.src }}" alt="{{ item.client_photo.alt }}" /></div>
+              {% endif %}
+              <div class="unit-body c-pl-20">
+                <h6 class="quote-author text-uppercase">
+                  <cite class="text-normal">{{ item.client_name }}</cite>
+                </h6>
+                <p class="quote-desc text-uppercase text-info">{{ item.client_position }}</p>
+              </div>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+      {% endfor %}
+      
+    </div>
+    
+  </div>
+</section>
+
+{% require_css %}
+<style>
+  .section-{{ name }} {
+    padding:90px 0;
+    font-family: {{ module.settings.font.font }}; {{ module.settings.font.style }}; 
+    color: {{ module.settings.font.color }}; 
+    font-size: {{ module.settings.font.size }}{{module.settings.font.size_unit }};
+    background-color:rgba({{ module.settings.background.color|convert_rgb }},{{ module.settings.background.opacity }});
+  }
+  .section-{{ name }} .quote-author {
+    color:{{ module.settings.client_color.color }};
+  }
+  .section-{{ name }} .text-info {
+    color:{{ module.settings.client_position_color.color }};
+  }
+  .section-{{ name }} .quote-icon {
+    color:rgba({{ module.settings.quote_icon_color.color|convert_rgb }},{{ module.settings.quote_icon_color.opacity }});
+  }
+</style>
+{% end_require_css %}

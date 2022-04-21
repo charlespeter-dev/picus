@@ -1,0 +1,63 @@
+{% if module.choose_featured_posts %}
+
+	<!-- For curated posts -->
+  <div id="{{ name }}" class="featured-slider wow fadeIn">
+    {% for item in module.featured_posts %}
+      <div>
+        <div class="latest-post">
+        <p class="title"><a href="{{ item.link_field.url.href }}">{{ item.title|striptags|truncate(75) }}</a></p>
+        <a href="{{ item.link_field.url.href }}"><div class="blog-post-image" style="background-image: url({{ resize_image_url( item.image_field.src,0,350 ) }});"></div></a>
+        {% if item.summary %}<p class="blog-post-summary">{{ item.summary|striptags|truncate(95) }}</p>{% endif %}
+        <p class="latest-read-more"><a href="{{ item.link_field.url.href }}"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/featured-read-more.png" /></a></p>
+        </div>
+      </div>
+    {% endfor %}
+  
+{% else %}
+  <!-- For latest posts -->
+
+  {% set number_of_posts = 5 %}
+  {% set posts = blog_recent_posts(module.select_blog, number_of_posts) %}
+  {% if module.specific_tag_topic %}
+    {% set posts = blog_recent_topic_posts(module.select_blog, module.tag, number_of_posts) %}
+  {% endif %}
+
+  <div id="{{ name }}" class="featured-slider wow fadeIn">
+    {% for post in posts %}
+      <div>
+        <div class="latest-post">
+        <p class="title"><a href="{{ post.absolute_url }}">{{ post.name|striptags|truncate(95) }}</a></p>
+        <p class="blog-post-date">{{ post.publish_date|datetimeformat('%B %e, %Y')|upper }}</p>  
+        <a href="{{ post.absolute_url }}"><div class="blog-post-image" style="background-image: url({{ resize_image_url( post.featured_image,0,350 ) }});"></div></a>
+        {% if post.post_summary != "" %}<p class="blog-post-summary">{{ post.post_summary|striptags|truncate(95) }}</p>{% endif %}  
+        <p class="latest-read-more"><a href="{{ post.absolute_url }}"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/featured-read-more.png" /></a></p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endif %}
+
+{% require_js %}
+    <script>
+      $('#{{ name }}.featured-slider').slick({
+        infinite: true,
+        centerMode: false,
+        autoplay: true,
+        arrows: true,
+        prevArrow: '<img src="https://www.picussecurity.com/hubfs/Shield/Icons/slider-arrow-prev.svg" />',
+        nextArrow: '<img src="https://www.picussecurity.com/hubfs/Shield/Icons/slider-arrow-next.svg" />',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1150,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    </script>
+{% end_require_js %}

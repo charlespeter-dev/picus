@@ -1,0 +1,298 @@
+[ {
+  "id" : "2abb602f-3fa0-da2c-92cd-0ad9291b05a6",
+  "name" : "section",
+  "display_width" : null,
+  "label" : "Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "37df9d19-0f96-a3dc-1dc3-48cebfcea552",
+    "name" : "code",
+    "display_width" : null,
+    "label" : "Code",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7daa61d8-c8d1-d6ef-4589-715c03961005",
+      "name" : "custom_id",
+      "display_width" : null,
+      "label" : "Custom ID",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "ca59047e-896c-1f4b-30ce-5baa159f9304",
+      "name" : "custom_classes",
+      "display_width" : null,
+      "label" : "Custom Classes",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : { }
+  }, {
+    "id" : "656de7a3-2b44-5e59-bb05-d095ec20ec11",
+    "name" : "styles",
+    "display_width" : null,
+    "label" : "Styles",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7142b393-d37b-d58c-7ac5-4ab7a2254a37",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#F1F1F1",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "72d0d70f-12a3-fa20-c058-7127ff369334",
+      "name" : "section_width",
+      "display_width" : null,
+      "label" : "Section Width",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "normal", "Normal" ], [ "medium", "Medium" ], [ "narrow", "Narrow" ], [ "fw", "Full Width" ], [ "touch-right", "Touch Right" ], [ "touch-left", "Touch Left" ], [ "custom", "Custom" ] ],
+      "type" : "choice",
+      "default" : "normal"
+    }, {
+      "id" : "0adb2da8-5d02-b146-3698-23c57c5c2d01",
+      "name" : "custom_width",
+      "display_width" : null,
+      "label" : "Custom Width",
+      "help_text" : "You must include the full amount that would appear in CSS code. (Ex. 1200px)\n\nDo not include a colon at the end.",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "72d0d70f-12a3-fa20-c058-7127ff369334",
+        "controlling_value_regex" : "custom",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "db2a4713-c09b-a671-c03b-8f57cdec3882",
+      "name" : "top_padding",
+      "display_width" : null,
+      "label" : "Top Padding",
+      "required" : true,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "none", "None" ], [ "small", "Small" ], [ "medium", "Medium" ], [ "large", "Large" ], [ "xl", "XL" ], [ "xxl", "XXL" ] ],
+      "type" : "choice",
+      "default" : "medium"
+    }, {
+      "id" : "b763070a-2c6c-8951-37b2-46f1960ae197",
+      "name" : "bottom_padding",
+      "display_width" : null,
+      "label" : "Bottom Padding",
+      "required" : true,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "none", "None" ], [ "small", "Small" ], [ "medium", "Medium" ], [ "large", "Large" ], [ "xl", "XL" ], [ "xxl", "XXL" ] ],
+      "type" : "choice",
+      "default" : "medium"
+    }, {
+      "id" : "c21447f0-a846-8b8c-b7f5-20003052ed73",
+      "name" : "font_color",
+      "display_width" : null,
+      "label" : "Font Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#000",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "background_color" : {
+        "color" : "#F1F1F1",
+        "opacity" : 100
+      },
+      "section_width" : "normal",
+      "top_padding" : "medium",
+      "bottom_padding" : "medium",
+      "font_color" : {
+        "color" : "#000",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "code" : { },
+    "styles" : {
+      "background_color" : {
+        "color" : "#F1F1F1",
+        "opacity" : 100
+      },
+      "section_width" : "normal",
+      "top_padding" : "medium",
+      "bottom_padding" : "medium",
+      "font_color" : {
+        "color" : "#000",
+        "opacity" : 100
+      }
+    }
+  }
+}, {
+  "id" : "3bd65b97-f6c5-c345-b705-0efc83f8a8be",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d33b0330-a735-cdb8-7bd2-be9a3d295523",
+    "name" : "section_title",
+    "display_width" : null,
+    "label" : "Section Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "5ff57b65-e7e3-8924-5b14-2294f85d40a4",
+    "name" : "section_supporting_content",
+    "display_width" : null,
+    "label" : "Section Supporting Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "c9475a9a-0e5a-ec85-da48-2f332ae8fba2",
+    "name" : "intro_text_alignment",
+    "display_width" : null,
+    "label" : "Intro Text Alignment",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "type" : "choice",
+    "default" : "center"
+  }, {
+    "id" : "5b4a8eaf-3f38-fd73-c3d6-a98283893ab9",
+    "name" : "questions",
+    "display_width" : null,
+    "label" : "Questions",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 2,
+      "max" : null,
+      "sorting_label_field" : "b650d7f5-b547-ca27-d6d7-f6b0175afc22",
+      "default" : 6
+    },
+    "children" : [ {
+      "id" : "b650d7f5-b547-ca27-d6d7-f6b0175afc22",
+      "name" : "question",
+      "display_width" : null,
+      "label" : "Question",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Question Goes Here"
+    }, {
+      "id" : "0551c4da-df60-fee6-8db4-2a486b577d31",
+      "name" : "answer",
+      "display_width" : null,
+      "label" : "Answer",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    } ]
+  }, {
+    "id" : "d62b386c-ba49-6372-5a2d-c8d74f33ee2b",
+    "name" : "arrow_color",
+    "display_width" : null,
+    "label" : "Arrow Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#56A0E0",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "intro_text_alignment" : "center",
+    "questions" : [ {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    }, {
+      "question" : "Question Goes Here",
+      "answer" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    } ],
+    "arrow_color" : {
+      "color" : "#56A0E0",
+      "opacity" : 100
+    }
+  }
+} ]

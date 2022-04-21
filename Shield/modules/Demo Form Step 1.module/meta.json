@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 41095241985,
+  "label" : "Demo Form Step 1",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,122 @@
+<div id="{{ name }}countdown_clock" class="{{ name }}countdown_clock">
+	{% inline_rich_text field="title" value="{{ module.title }}" %}
+  <div id="{{ name }}countdown_clock_inner" class="{{ name }}countdown_clock_inner">
+    <div class="{{ name }}countdown_clock_box">
+			<span class="{{ name }}countdown_header" style="font-family: {{ module.header_font.font }}; {{ module.header_font.style }}; color: {{ module.header_font.color }}; font-size: {{ module.header_font.size }}{{module.header_font.size_unit }};">{% inline_text field="day_text" value="{{ module.day_text }}" %}</span>
+			<br>
+			<span id="{{ name }}countdown_days" style="font-family: {{ module.datetime_font.font }}; {{ module.datetime_font.style }}; color: {{ module.datetime_font.color }}; font-size: {{ module.datetime_font.size }}{{module.datetime_font.size_unit }};"></span>
+    </div>
+    <div class="{{ name }}countdown_clock_box">
+			<span class="{{ name }}countdown_header" style="font-family: {{ module.header_font.font }}; {{ module.header_font.style }}; color: {{ module.header_font.color }}; font-size: {{ module.header_font.size }}{{module.header_font.size_unit }};">{% inline_text field="hour_text" value="{{ module.hour_text }}" %}</span>
+			<br>
+			<span id="{{ name }}countdown_hours" style="font-family: {{ module.datetime_font.font }}; {{ module.datetime_font.style }}; color: {{ module.datetime_font.color }}; font-size: {{ module.datetime_font.size }}{{module.datetime_font.size_unit }};"></span>
+    </div>
+    <div class="{{ name }}countdown_clock_box">
+			<span class="{{ name }}countdown_header" style="font-family: {{ module.header_font.font }}; {{ module.header_font.style }}; color: {{ module.header_font.color }}; font-size: {{ module.header_font.size }}{{module.header_font.size_unit }};">{% inline_text field="minutes_text" value="{{ module.minutes_text }}" %}</span>
+			<br>
+			<span id="{{ name }}countdown_minutes" style="font-family: {{ module.datetime_font.font }}; {{ module.datetime_font.style }}; color: {{ module.datetime_font.color }}; font-size: {{ module.datetime_font.size }}{{module.datetime_font.size_unit }};"></span>
+    </div>
+    <div class="{{ name }}countdown_clock_box">
+			<span class="{{ name }}countdown_header" style="font-family: {{ module.header_font.font }}; {{ module.header_font.style }}; color: {{ module.header_font.color }}; font-size: {{ module.header_font.size }}{{module.header_font.size_unit }};">{% inline_text field="seconds_text" value="{{ module.seconds_text }}" %}</span>
+			<br>
+			<span id="{{ name }}countdown_seconds" style="font-family: {{ module.datetime_font.font }}; {{ module.datetime_font.style }}; color: {{ module.datetime_font.color }}; font-size: {{ module.datetime_font.size }}{{module.datetime_font.size_unit }};"></span>
+    </div>
+  </div>
+</div>
+
+{% require_js %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	var countDownClock = document.getElementById("{{ name }}countdown_clock");
+																							 
+	if(countDownClock.offsetWidth < 470){
+			document.getElementById("{{ name }}countdown_clock_inner").style.columnCount = 1;
+		}else{
+			document.getElementById("{{ name }}countdown_clock_inner").style.columnCount = 4;
+		}
+	
+	$( window ).resize(function() {
+																								 
+		if(countDownClock.offsetWidth < 470){
+			document.getElementById("{{ name }}countdown_clock_inner").style.columnCount = 1;
+		}else{
+			document.getElementById("{{ name }}countdown_clock_inner").style.columnCount = 4;
+		}
+	
+	console.log(countDownClock.offsetWidth);
+});
+	
+	setInterval(function(){
+		var targetDate = new Date(`{{ module.target_date_time }}`);
+
+		var currentDate = new Date();
+
+		var difference = targetDate - currentDate;
+
+		var days = Math.floor(difference / (1000 * 3600 * 24));
+		var hours = Math.floor(((difference / (1000 * 3600 * 24)) - days) * 24);
+		var minutes = Math.floor(((((difference / (1000 * 3600 * 24)) - days) * 24) - hours) * 60);
+		var seconds = Math.round(((((((difference / (1000 * 3600 * 24)) - days) * 24) - hours) * 60) -       minutes) * 60);
+		
+		var countdown_days = document.getElementById('{{ name }}countdown_days');
+		var countdown_hours = document.getElementById('{{ name }}countdown_hours');
+		var countdown_minutes = document.getElementById('{{ name }}countdown_minutes');
+		var countdown_seconds = document.getElementById('{{ name }}countdown_seconds');
+		
+		if(countdown_days){
+			countdown_days.innerText = days;
+		}
+		if(countdown_hours){
+			countdown_hours.innerText = hours;
+		}
+		if(countdown_minutes){
+			countdown_minutes.innerText = minutes;
+		}
+		if(countdown_seconds){
+			countdown_seconds.innerText = seconds;
+		}
+	}, 100);
+  
+</script>
+{% end_require_js %}
+
+{% require_css %}
+<style>
+  .{{ name }}countdown_clock{
+    background-color: rgba({{ module.countdown_background_color.color|convert_rgb }},
+      {{ module.countdown_background_color.opacity/100 }});
+		box-shadow: {{ module.clock_shadow }}px {{ module.clock_shadow }}px {{ module.clock_shadow }}px #888888;
+		border-radius: {{ module.border_radius }}px;
+		position: relative;
+		padding: 20px;
+		text-align: center;
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		min-width: 300px !important;
+		margin: auto;
+  }
+	
+	.{{ name }}countdown_header{
+		display: block;
+		padding: {{ module.heading_padding }}px;
+	}
+	
+	.{{ name }}countdown_clock_inner{
+	position: relative;
+  column-count: 4;
+	column-width: 25%;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+  overflow: hidden;
+}
+
+.{{ name }}countdown_clock_box{
+	position: relative;
+  overflow: hidden;
+	margin: auto;
+	display: block;
+}
+</style>
+{% end_require_css %}

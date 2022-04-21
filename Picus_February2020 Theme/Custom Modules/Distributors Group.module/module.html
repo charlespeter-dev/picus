@@ -1,0 +1,20 @@
+<div class="distributors-group-wrapper">
+  <div id="distributors" class="global-row partners-distributors lightgraybg">
+    <div class="page-center">
+      {% if module.title %}<h2>{{ module.title }}</h2>{% endif %}
+      <div class="row">
+        <div class="colsm10 col12 col-centered">
+          <div class="row align-items-center">
+            {% for item in module.items %}
+              {% if item.image.src %}
+                <div class="colmd3">
+                  <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" title="{{ item.image.alt }}" style="width: {{ item.image.width }}px">
+                </div>
+            	{% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

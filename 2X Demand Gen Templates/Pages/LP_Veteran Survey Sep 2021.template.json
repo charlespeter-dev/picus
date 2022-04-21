@@ -1,0 +1,360 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_v4.5.2.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_fontAwesome_4.7.0.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/override-hubspot_March2021.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/custom-Olympia_June2021.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_162393243547246",
+        "label" : "Olympia_Simple_Banner_April2021",
+        "type" : "custom_widget",
+        "params" : {
+          "banner_options" : {
+            "background_image" : {
+              "alt" : "LP-banner",
+              "height" : 1250,
+              "loading" : "lazy",
+              "max_height" : 1250,
+              "max_width" : 4200,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent00.net/hubfs/8398403/LP-banner.jpg",
+              "width" : 4200
+            },
+            "background_type" : "image",
+            "padding_space_desktop" : "p-md-5"
+          },
+          "css_style" : "",
+          "content_options" : [ {
+            "bottom_spacing_desktop" : "mb-md-3",
+            "bottom_spacing_mobile_logo" : "mb-1",
+            "font_size_desktop" : "20PX",
+            "font_weight_desktop" : "bold",
+            "header_content" : "White paper",
+            "header_tag" : "h1",
+            "line_height_desktop" : "30px",
+            "text_color_desktop" : {
+              "color" : "#1D1D1B",
+              "opacity" : 100
+            }
+          }, {
+            "bottom_spacing_desktop" : "mb-md-1",
+            "bottom_spacing_mobile_logo" : "mb-1",
+            "font_size_desktop" : "25PX",
+            "font_weight_desktop" : "bold",
+            "header_content" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
+            "header_tag" : "h1",
+            "line_height_desktop" : "30px",
+            "text_color_desktop" : {
+              "color" : "#1D1D1B",
+              "opacity" : 100
+            }
+          } ],
+          "banner_logo" : {
+            "bottom_spacing_desktop_logo" : "mb-md-5",
+            "logo_field" : {
+              "alt" : "Logo",
+              "height" : 152,
+              "override_inherited_src" : true,
+              "src" : "https://f.hubspotusercontent00.net/hubfs/8398403/Logo.png",
+              "width" : 595
+            }
+          },
+          "content_options_mobile" : [ {
+            "bottom_spacing_mobile" : "mb-2",
+            "font_size_mobile" : "18px",
+            "font_weight_mobile" : "normal",
+            "header_tag_mobile" : "h1",
+            "line_height_mobile" : "21px",
+            "mobile_content" : "White paper",
+            "text_color_mobile" : {
+              "color" : "#DD3333",
+              "opacity" : 100
+            }
+          }, {
+            "bottom_spacing_mobile" : "mb-4",
+            "font_size_mobile" : "24px",
+            "font_weight_mobile" : "bold",
+            "header_tag_mobile" : "h1",
+            "line_height_mobile" : "28px",
+            "mobile_content" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
+            "text_color_mobile" : {
+              "color" : "#1D1D1B",
+              "opacity" : 100
+            }
+          } ],
+          "css_id" : "",
+          "css_class" : "",
+          "schema_version" : 2,
+          "path" : "/2X Demand Gen Templates/Custom Modules/Olympia_Simple_Banner_June2021",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : "",
+          "widget_name" : "Olympia_Simple_Banner_June2021",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1623960833626227",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container px-0 pt-md-3 bodyContent",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1623960848301233",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1623960866720235",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "mainContent",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1623960898987261",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "css_id" : "formSection",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 6,
+                        "name" : "module_1630901293381172",
+                        "label" : "Module group",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "col-lg-3 col-0",
+                          "per_widget_wrapper_html" : "",
+                          "css_style" : "margin-left:unset;",
+                          "wrapping_html" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "overrideable" : false
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "col-lg-3 col-0",
+                        "cssStyle" : "margin-left:unset;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "6" : {
+                        "x" : 6,
+                        "w" : 6,
+                        "name" : "module_1623961005358365",
+                        "label" : "Form",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_style" : "",
+                          "title" : "Download our free white paper today!",
+                          "css_id" : "",
+                          "css_class" : "col-lg-6 col-12 pb-5 pb-lg-0 p-4 p-lg-4 mt-0 mt-lg-0 formContainer hide-icons position relative borderRounded-D20px-M0px bg-grey top-D--110px-M0px",
+                          "schema_version" : 2,
+                          "path" : "@hubspot/form",
+                          "per_widget_wrapper_html" : "",
+                          "form" : {
+                            "form_id" : "cc3e916d-4e9a-4d97-9fc1-576d94f994de",
+                            "form_type" : "HUBSPOT",
+                            "message" : "<p>Thanks for updating your information!</p>",
+                            "response_type" : "inline"
+                          },
+                          "wrapping_html" : "",
+                          "widget_name" : "Form",
+                          "css_id_str" : "",
+                          "overrideable" : true
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "col-lg-6 col-12 pb-5 pb-lg-0 p-4 p-lg-4 mt-0 mt-lg-0 formContainer hide-icons position relative borderRounded-D20px-M0px bg-grey top-D--110px-M0px",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "formSection",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "mainContent",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "container px-0 pt-md-3 bodyContent",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1623960820172225",
+        "label" : "Olympia_Footer_April2021",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "w-100 text-center text-white py-3",
+          "schema_version" : 2,
+          "path" : "/2X Demand Gen Templates/Custom Modules/2x_footer",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "widget_name" : "Olympia_Footer_June2021",
+          "css_id_str" : "",
+          "overrideable" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "w-100 text-center text-white py-3",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

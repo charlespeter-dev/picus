@@ -1,0 +1,150 @@
+[ {
+  "id" : "f3ad3f1b-0ae9-0f6b-f6b9-4aee73005b13",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Catchy and Descriptive Headline"
+}, {
+  "id" : "fa3131a1-3108-0834-ea06-782170819044",
+  "name" : "main_content",
+  "display_width" : null,
+  "label" : "Main content",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>Supporting content. Use this content to add context to the headline and to encourage people to click the CTA. Keep it short and use the rest of the page for more granular details.</span></p>"
+}, {
+  "id" : "b1eddb1e-10fa-7734-650d-d1975c8c89b9",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "c42cd95e-b6fa-43d6-a381-6eb009d625e0"
+}, {
+  "id" : "24d8aa56-92d4-2802-6808-61bbc1444cfd",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "01dd8128-b15c-8d90-f744-335ce161cd2f",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background image",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "http://design-assets.hubspot.com/hubfs/laptop_bg.jpg",
+      "alt" : "laptop_bg",
+      "width" : 1200,
+      "height" : 777
+    }
+  }, {
+    "id" : "a9325c75-6cff-636c-e4b7-c9f6c0cacc1a",
+    "name" : "overlay_color",
+    "display_width" : null,
+    "label" : "Overlay color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : "#252731"
+  }, {
+    "id" : "7fb51a1d-f212-dc35-923b-3b10cc3f3858",
+    "name" : "overlay_opacity",
+    "display_width" : null,
+    "label" : "Overlay opacity %",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 80
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_image" : {
+      "src" : "http://design-assets.hubspot.com/hubfs/laptop_bg.jpg",
+      "alt" : "laptop_bg",
+      "width" : 1200,
+      "height" : 777
+    },
+    "overlay_color" : "#252731",
+    "overlay_opacity" : 80
+  }
+}, {
+  "id" : "74ee9f89-14a1-5cf8-c967-d249b725b6b8",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "Settings",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c2da7858-dda5-6de3-c232-ddb758949a24",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text color",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : "#fff"
+  }, {
+    "id" : "714aa279-8656-508f-97b7-0d3867d27dc8",
+    "name" : "size",
+    "display_width" : null,
+    "label" : "Banner padding in pixels",
+    "help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 500,
+    "step" : 1,
+    "type" : "number",
+    "default" : 100
+  }, {
+    "id" : "29e184ff-a563-bfb2-2ba0-935eaed1bb65",
+    "name" : "button_alignment",
+    "display_width" : null,
+    "label" : "Button alignment",
+    "help_text" : "",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "Search",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "type" : "choice",
+    "default" : "center"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_color" : "#fff",
+    "size" : 100,
+    "button_alignment" : "center"
+  }
+} ]

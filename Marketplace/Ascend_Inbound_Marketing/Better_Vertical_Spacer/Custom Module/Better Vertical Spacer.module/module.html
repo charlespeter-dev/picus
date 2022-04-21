@@ -1,0 +1,5 @@
+<div class="{%- if module.device_visibility.show_on_desktop %}{% else %}aim-bvs_hide-desktop {% endif -%}
+            {%- if module.device_visibility.show_on_tablet %}{% else %}aim-bvs_hide-tablet {% endif -%}
+            {%- if module.device_visibility.show_on_mobile %}{% else %}aim-bvs_hide-phone {% endif -%}"
+     style="padding-bottom:{{ module.set_height.number_value }}{{ module.set_height.css_unit }};">
+</div>

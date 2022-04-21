@@ -1,0 +1,153 @@
+.breadcrumbs-outer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+#breadcrumbs-bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#breadcrumbs-bar * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#breadcrumbs-bar .breadcrumbs-bar__wrapper {
+	 display:-webkit-box;
+	 display:-ms-flexbox;
+	 display:flex;
+  flex-wrap: wrap;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb {
+	 display: inline;
+   margin: .2rem 0;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb a {
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+	 height: 40px;
+	 background: var(--bg-color);
+	 text-align: center;
+	 padding: 30px 20px 30px 50px;
+	 position: relative;
+	 margin: 0 10px 0 0;
+	 font-size: 20px;
+	 text-decoration: none;
+	 color: var(--text-color);
+}
+#breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb:first-of-type a {
+  padding-left: 40px;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb a:after {
+	 content: "";
+	 border-top: 30px solid transparent;
+	 border-bottom: 30px solid transparent;
+	 border-left: 30px solid var(--bg-color);
+	 position: absolute;
+	 right: -30px;
+	 top: 0;
+	 z-index: 1;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb a:before {
+	 content: "";
+	 border-top: 30px solid transparent;
+	 border-bottom: 30px solid transparent;
+	 border-left: 30px solid #fff;
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb:first-child a {
+	 border-top-left-radius: 10px;
+	 border-bottom-left-radius: 10px;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb:first-child a:before {
+	 display: none;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb:last-child a {
+	 padding-right: 40px;
+	 border-top-right-radius: 10px;
+	 border-bottom-right-radius: 10px;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb:last-child a:after {
+	 display: none;
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb a:hover {
+	 background: var(--hover-bg-color);
+	 color: var(--hover-text-color);
+}
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb a:hover:after {
+	 border-left-color: var(--hover-bg-color);
+	 color: var(--hover-text-color);
+}
+ #breadcrumbs-bar .breadcrumb svg {
+   height: 1rem;
+   width: auto;
+   margin-right: .3rem;
+   margin-bottom: -1px;
+   fill: var(--text-color);
+}
+ #breadcrumbs-bar .breadcrumb a:hover svg {
+   fill: var(--hover-text-color);
+}
+@media(max-width: 650px) {
+  .breadcrumbs-bar__wrapper {
+    justify-content: center;
+  }
+  #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb {
+    width: calc(100% - 60px);
+    text-align: center;
+  }
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb:last-child a:after {
+	 display: block;
+  }
+ #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb a {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   height: 30px !important;
+   background: var(--bg-color);
+   text-align: center;
+   padding: 10px 20px 10px 50px !important;
+   position: relative;
+   margin: 0 10px 0 0 !important;
+   font-size: 15px;
+   text-decoration: none;
+   color: var(--text-color);
+   border-top-right-radius: 0px !important;
+   border-bottom-right-radius: 0px !important;
+   border-top-left-radius: 0px !important;
+	 border-bottom-left-radius: 0px !important;
+   text-align: center;
+  }
+   #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb:first-child a:before {
+     display: block;
+  }
+   #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb a:before {
+     border-top: 15px solid transparent;
+     border-bottom: 15px solid transparent;
+     border-left: 15px solid #fff;
+  }
+   #breadcrumbs-bar .breadcrumbs-bar__wrapper .breadcrumb a:after {
+     content: "";
+     border-top: 15px solid transparent;
+     border-bottom: 15px solid transparent;
+     border-left: 15px solid var(--bg-color);
+     right: -15px;
+  }
+}
+ 

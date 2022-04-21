@@ -1,0 +1,115 @@
+.clear{ clear:both; }
+.clients-logo .page-center {
+    float: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clients-logo .full-width{
+  padding: 0 30px;
+  width: 100%;
+}
+.clients-logo .logo_images:focus{
+  outline: none !important;
+}
+section.clients-logo .top-headers{
+  margin-bottom: 50px;
+}
+/******************* TalantOn - Logos Carousel  *******************/
+section.clients-logo{
+/*   padding: 30px 0 30px 0px !important; */
+  width: 100%;
+}
+.clients-logo .logo_images {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+}
+.clients-logo .div-inner {
+/*     min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.logo-scroll-module{
+  padding:50px 0px; 
+}
+.clients-logo .logo_responsive {
+    width: 100%;
+    margin: 0px auto;
+    padding:0 !important;
+}
+.clients-logo .slick-slide {
+    margin: 0px 20px;
+}
+.clients-logo .slick-slide img {
+    width: 180px;
+    height:auto;
+    margin:auto;
+    float:none;
+}
+.clients-logo{
+    display:-webkit-box;
+/*     padding:50px 0 !important; */
+}
+.clients-logo img.left_arrow {
+    width: 10px;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    z-index: 99999;
+    cursor: pointer;
+  transform: rotate(180deg);
+}
+.clients-logo img.right_arrow {
+    width: 10px;
+    top: 45%;
+    position: absolute;
+    right: 0;
+    z-index: 99999;
+    cursor: pointer;
+}
+.clients-logo button.slick-prev.slick-arrow{
+   display: none !important;
+}
+.clients-logo button.slick-next.slick-arrow{
+  display: none !important;
+}
+/***************iPhone Portrait**************/
+@media only screen and (max-width: 479px) and (min-width: 320px){
+.clients-logo .page-center{
+    max-width:100%;
+}
+.clients-logo .logo-slider{
+    width:100% !important;
+}
+}
+/***************iPhone Landscape*************/
+@media only screen and (max-width: 767px) and (min-width: 480px){
+.clients-logo .page-center{
+    max-width:100%;
+}
+.clients-logo .logo-slider{
+    width:100% !important;
+}
+}
+/****************iPad Portrait***************/
+@media only screen and (max-width: 985px) and (min-width: 768px){
+.clients-logo .page-center{
+    max-width:100%;
+}
+/* .clients-logo .section6{
+    width:100% !important;
+} */
+}
+/**************iPad Landscape****************/
+@media only screen and (max-width: 1024px) and (min-width: 986px){
+.clients-logo .page-center{
+    max-width:100%;
+}
+/* .clients-logo .section6{
+    width:100% !important;
+} */
+}
+/*****************************************************************/

@@ -1,0 +1,68 @@
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+    <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:0px;padding-left:{{ module.parent_padding.padding_left }};padding-right:{{ module.parent_padding.padding_right }};padding-top:{{ module.parent_padding.padding_top }};padding-bottom:{{ module.parent_padding.padding_bottom }};text-align:center;">
+          <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:259px;" ><![endif]-->
+          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+              <tbody>
+                <tr>
+                  <td style="vertical-align:top;padding-top:{{ module.left_column.padding.padding_top }};">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                      <tbody>
+                        {% for item in module.left_column.text_field %}
+                        <tr>
+                          <td align="left" style="font-size:0px;padding:0px;padding-bottom:{{ item.padding_column_left.padding_bottom }};padding-top:{{ item.padding_column_left.padding_top }};padding-right:{{ item.padding_column_left.padding_right }};padding-left:{{ item.padding_column_left.padding_left }};word-break:break-word;">
+                            <div style="font-family:Arial;font-size:{{ item.font_size }};font-weight:{{ item.font_weight }};line-height:{{ item.line_height }};text-align:left;color:{{ item.font_color }};">{{ item.text_field }}</div>
+                          </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                          <td align="center" vertical-align="middle" style="font-size:0px;padding:0px;padding-top:{{ module.left_column.button_field.padding.padding_top }};padding-bottom:{{ module.left_column.button_field.padding.padding_bottom }};padding-left:{{ module.left_column.button_field.padding.padding_left }};padding-right:{{ module.left_column.button_field.padding.padding_right }};word-break:break-word;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;width:{{ module.left_column.button_field.button_width }};line-height:100%;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" bgcolor="{{ module.left_column.button_field.background_color }}" role="presentation" style="border:none;border-radius:0px;cursor:auto;height:{{ module.left_column.button_field.button_height }};mso-padding-alt:10px 25px;background:{{ module.left_column.button_field.background_color }};" valign="middle">
+                                    <a href="{{ module.left_column.button_field.button_link }}" style="display:inline-block;width:198px;background:{{ module.left_column.button_field.background_color }};color:{{ module.left_column.button_field.font_color }};font-family:Arial;font-size:{{ module.left_column.button_field.font_size }};font-weight:{{ module.left_column.button_field.font_weight }};line-height:{{ module.left_column.button_field.line_height }};margin:0;text-decoration:none;text-transform:capitalize;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;" target="_blank" data-hs-link-id="1"> {{ module.left_column.button_field.button_text }} </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:259px;" ><![endif]-->
+          <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tbody>
+                <tr>
+                  <td align="{{ module.right_column.image_alignment }}" style="font-size:0px;padding:0px;word-break:break-word;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                      <tbody>
+                        <tr>
+                          <td style="width:259px;">
+                            <img src="{{ module.right_column.image_field.src }}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="259" srcset="https://4883612.fs1.hubspotusercontent-na1.net/hub/4883612/hubfs/2x/26/book.png?upscale=true&amp;width=518&amp;upscale=true&amp;name=book.png 259w, https://4883612.fs1.hubspotusercontent-na1.net/hub/4883612/hubfs/2x/26/book.png?upscale=true&amp;width=1036&amp;upscale=true&amp;name=book.png 518w" sizes="(max-width: 259px) 100vw, 259px">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->

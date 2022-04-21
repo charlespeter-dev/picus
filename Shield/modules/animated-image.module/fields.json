@@ -1,0 +1,163 @@
+[ {
+  "id" : "e343b65d-eb94-ac9e-d3d9-ec293bdbc760",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/grayscale-mountain.png",
+    "alt" : "grayscale-mountain",
+    "width" : 605,
+    "height" : 451,
+    "max_width" : 605,
+    "max_height" : 451
+  }
+}, {
+  "id" : "e62e1cbd-6af5-16d4-7a69-19073f4490f7",
+  "name" : "animation_effect",
+  "display_width" : null,
+  "label" : "Animation Effect",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "fadeIn", "Fade In" ], [ "fadeInRight", "Fade In Right" ], [ "fadeInLeft", "Fade In Left" ], [ "fadeInUp", "Fade In Top" ], [ "fadeInDown", "Fade In Bottom" ], [ "zoomIn", "Zoom In" ] ],
+  "type" : "choice",
+  "default" : "fadeIn"
+}, {
+  "id" : "65a8f996-55bf-5546-1c7e-bc4c73194865",
+  "name" : "animation_delay",
+  "display_width" : null,
+  "label" : "Animation Delay",
+  "help_text" : "Set the time (in seconds) that an animation should be delayed for on scroll",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "0.5"
+}, {
+  "id" : "5f1839bc-a957-998b-2674-f5f243433a3d",
+  "name" : "mobile_image_display",
+  "display_width" : null,
+  "label" : "Mobile Image",
+  "help_text" : "Check this option to display a different image on mobile devices",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "96d86e9f-62ee-eee6-424b-5c3165ecda0a",
+  "name" : "mobile_image",
+  "display_width" : null,
+  "label" : "Mobile Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "5f1839bc-a957-998b-2674-f5f243433a3d",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "8c065425-a97a-6ed7-fda6-fc5ae07d1f9f",
+  "name" : "add_link",
+  "display_width" : null,
+  "label" : "Add Link",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "7005b6f7-64c4-8588-3222-80f201a20f8e",
+  "name" : "link_field",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "8c065425-a97a-6ed7-fda6-fc5ae07d1f9f",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "350d71e1-545d-b604-7689-9bc62ef2eb39",
+  "name" : "custom_margin",
+  "display_width" : null,
+  "label" : "Custom Margin",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "2bde1225-f5b8-241e-d27b-669f89028ea6",
+  "name" : "margin_left",
+  "display_width" : null,
+  "label" : "Margin Left",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "350d71e1-545d-b604-7689-9bc62ef2eb39",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "0"
+}, {
+  "id" : "616e2aab-9f38-e919-c5ac-34854f932414",
+  "name" : "margin_right",
+  "display_width" : null,
+  "label" : "Margin Right",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "350d71e1-545d-b604-7689-9bc62ef2eb39",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "0"
+} ]

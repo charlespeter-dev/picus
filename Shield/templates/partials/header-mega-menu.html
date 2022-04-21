@@ -1,0 +1,35 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+<script>
+document.querySelector("#hs-link-site_logo_hs_logo_widget > img").alt='Picus Security Logo';
+</script>
+<header class="header">
+  <div class="header__container content-wrapper">
+
+    {# Header logo column #}
+    <div class="header__logo header__logo--main">
+  <!-- test3-->
+      {% module 'site_logo' path='@hubspot/logo' link='https://www.picussecurity.com/' %}
+    </div>
+    {# End header logo column #}
+
+    {# Header navigation column #}
+    <div class="header__column">
+
+      {# Header navigation row one #}
+      <div class="header__row-1 custom-menu-primary-mega">
+        {% module "module_16085570629671" path="/Shield/modules/Mega_Menu", label="Mega_Menu" %}
+      </div>
+      {# End header navigation row one #}
+    
+    </div>
+    {# End header navigation column #}
+    <div class="desktop-hidden dt-mobile-burger">
+      <img class="burger" src="https://www.picussecurity.com/hubfs/Shield/Images/mega-nav-burger.svg" alt="mega-menu-burger" />
+      <img class="close" src="https://www.picussecurity.com/hubfs/Shield/Images/mega-nav-close.svg" alt="mega-menu-close" />
+    </div>
+  </div>
+</header> 
+{% module "module_16085751669212" path="/Shield/modules/Lead-Magnet-Banner", label="Lead-Magnet-Banner" %}

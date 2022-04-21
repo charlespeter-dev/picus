@@ -1,0 +1,136 @@
+[ {
+  "id" : "03f415eb-8b6c-c565-c5da-4a121768199e",
+  "name" : "testimonial",
+  "display_width" : null,
+  "label" : "Testimonial",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : null,
+    "sorting_label_field" : "293e9147-cb46-690a-7c84-d566a17c68cc",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "4f18ebfc-5059-f733-64c7-aa78d8fe2df7",
+    "name" : "quote",
+    "display_width" : null,
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Picus Security’s innovative technology addresses a very important need in IT security and answers the key question after doing such massive Cyber Security investments : How secure am I?. Our partners gain and offer substantial added value using Picus. As Exclusive Networks Group, we are very happy to be part of Picus’ success.</p>"
+  }, {
+    "id" : "445170a1-bce6-7505-b12a-a6303e7f4c77",
+    "name" : "photo",
+    "display_width" : null,
+    "label" : "Photo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Picus_February2020/images/team-alper-memis@3x.png",
+      "alt" : "team-alper-memis@3x",
+      "width" : 450,
+      "height" : 450,
+      "max_width" : 450,
+      "max_height" : 450
+    }
+  }, {
+    "id" : "d1b30f04-c09c-1e76-4b2c-7ba2e6243b36",
+    "name" : "company_logo",
+    "display_width" : null,
+    "label" : "Company Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/pillar-page-graphics/picus-logo-small.png",
+      "alt" : "picus-logo-small",
+      "width" : 200,
+      "height" : 134,
+      "max_width" : 200,
+      "max_height" : 134
+    }
+  }, {
+    "id" : "293e9147-cb46-690a-7c84-d566a17c68cc",
+    "name" : "person_name",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Forename Surname"
+  }, {
+    "id" : "b2102dcc-8802-7f28-e330-cb88d9d901d1",
+    "name" : "job_title",
+    "display_width" : null,
+    "label" : "Job Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Job title at Company Name"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "quote" : "<p>Picus Security’s innovative technology addresses a very important need in IT security and answers the key question after doing such massive Cyber Security investments : How secure am I?. Our partners gain and offer substantial added value using Picus. As Exclusive Networks Group, we are very happy to be part of Picus’ success.</p>",
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Picus_February2020/images/team-alper-memis@3x.png",
+      "alt" : "team-alper-memis@3x",
+      "width" : 450,
+      "height" : 450,
+      "max_width" : 450,
+      "max_height" : 450
+    },
+    "company_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/pillar-page-graphics/picus-logo-small.png",
+      "alt" : "picus-logo-small",
+      "width" : 200,
+      "height" : 134,
+      "max_width" : 200,
+      "max_height" : 134
+    },
+    "person_name" : "Forename Surname",
+    "job_title" : "Job title at Company Name"
+  }, {
+    "quote" : "<p>Picus Security’s innovative technology addresses a very important need in IT security and answers the key question after doing such massive Cyber Security investments : How secure am I?. Our partners gain and offer substantial added value using Picus. As Exclusive Networks Group, we are very happy to be part of Picus’ success.</p>",
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/Picus_February2020/images/team-alper-memis@3x.png",
+      "alt" : "team-alper-memis@3x",
+      "width" : 450,
+      "height" : 450,
+      "max_width" : 450,
+      "max_height" : 450
+    },
+    "company_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.picussecurity.com/hubfs/pillar-page-graphics/picus-logo-small.png",
+      "alt" : "picus-logo-small",
+      "width" : 200,
+      "height" : 134,
+      "max_width" : 200,
+      "max_height" : 134
+    },
+    "person_name" : "Forename Surname",
+    "job_title" : "Job title at Company Name"
+  } ]
+} ]

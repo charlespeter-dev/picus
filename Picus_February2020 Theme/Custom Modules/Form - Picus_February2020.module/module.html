@@ -1,0 +1,25 @@
+{% if module.form_title or module.select_form.form_id %}
+  <div class="form-module-wrapper">
+    <div class="global-row contact-form lightgraybg">
+      <div class="page-center">
+        <div class="col12">
+          <div class="col">
+            {% if module.form_title %}<h2>{{ module.form_title }}</h2>{% endif %}
+            {% if module.select_form.form_id %}
+              <div class="form-module-form">
+                {% form
+                  form_to_use="{{ module.select_form.form_id }}"
+                  response_response_type="{{ module.select_form.response_type }}"
+                  response_message="{{ module.select_form.message }}"
+                  response_redirect_id="{{ module.select_form.redirect_id }}"
+                  response_redirect_url="{{module.select_form.redirect_url}}"
+                  gotowebinar_webinar_key="{{ module.select_form.gotowebinar_webinar_key }}"
+                %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

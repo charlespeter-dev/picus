@@ -1,0 +1,61 @@
+[ {
+  "id" : "0a9c77d4-c5ab-d4aa-c135-04f94d597fad",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Trusted by Leading Global Companies"
+}, {
+  "id" : "addc3d6d-ffdc-1503-84d4-6cd8a822e17f",
+  "name" : "logo_group",
+  "display_width" : null,
+  "label" : "Logo Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "aac17489-2a3b-a27e-561a-d00e83510163",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/akbank.png",
+      "alt" : "Akbank",
+      "width" : 580,
+      "height" : 74,
+      "max_width" : 580,
+      "max_height" : 74
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/akbank.png",
+      "alt" : "Akbank",
+      "width" : 580,
+      "height" : 74,
+      "max_width" : 580,
+      "max_height" : 74
+    }
+  }
+} ]

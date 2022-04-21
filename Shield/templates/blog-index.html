@@ -1,0 +1,337 @@
+<!--
+  templateType: blog
+  isAvailableForNewContent: true
+  label: Shield - blog listing
+  screenshotPath: ../images/template-previews/blog-index.png
+-->
+{% extends "./layouts/mega-menu-base.html" %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <div class="body-container body-container--blog-index">
+
+    {# Blog author listing #}
+    {% if blog_author %}
+      <div class="blog-header">
+        <div class="blog-header__inner">
+          {% if blog_author.avatar %}
+            <div class="blog-header__author-avatar" style="background-image: url('{{ blog_author.avatar }}');"></div>
+          {% endif %}
+          <h1 class="blog-header__title author-title">{{ blog_author.display_name }}</h1>
+          {% if blog_author.bio %}
+            <h4 class="blog-header__subtitle">{{ blog_author.bio }}</h4>
+          {% endif %}
+          {% if blog_author.has_social_profiles %}
+            <div class="blog-header__author-social-links">
+              {% if blog_author.website %}
+                <a href="{{ blog_author.website }}" target="_blank" rel="noopener">
+                  {% icon
+                    name='link',
+                    purpose='semantic',
+                    style='SOLID',
+                    title='Follow me on my website',
+                    width='10'
+                  %}
+                </a>
+              {% endif %}
+              {% if blog_author.facebook %}
+                <a href="{{ blog_author.facebook }}" target="_blank" rel="noopener">
+                  {% icon
+                    name='facebook-f',
+                    purpose='semantic',
+                    style='SOLID',
+                    title='Follow me on Facebook',
+                    width='10'
+                  %}
+                </a>
+              {% endif %}
+              {% if blog_author.linkedin %}
+                <a href="{{ blog_author.linkedin }}" target="_blank" rel="noopener">
+                  {% icon
+                    name='linkedin-in',
+                    purpose='semantic',
+                    style='SOLID',
+                    title='Follow me on LinkedIn',
+                    width='10'
+                  %}
+                </a>
+              {% endif %}
+              {% if blog_author.twitter %}
+                <a href="{{ blog_author.twitter }}" target="_blank" rel="noopener">
+                  {% icon
+                    name='twitter',
+                    purpose='semantic',
+                    style='SOLID',
+                    title='Follow me on Twitter',
+                    width='10'
+                  %}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% elif tag %}
+    {# End blog author listing #}
+
+    {# Blog tag listing #}
+    <meta property="og:image" content="https://www.picussecurity.com/hubfs/1200x630.jpg#keepProtocol">
+      <div class="tags-header">
+        <div class="content-wrapper">
+          <h1 class="underline">{% if page_meta.html_title|split(' | ')|last == "Article" %}Picus Security Blog{% else %}{{ page_meta.html_title|split(' | ')|last }}{% endif %}{% if page_meta.html_title|split(' | ')|last == "Webinar" %}s{% endif %}{% if page_meta.html_title|split(' | ')|last == "Reports" %} &amp; Case Studies{% endif %}</h1>
+          {% if page_meta.html_title|split(' | ')|last == "Webinar" %}<p>Upcoming and on-demand webinars from Picus Security</p>{% endif %}
+          {% if page_meta.html_title|split(' | ')|last == "Reports" %}<p>Download case studies &amp; reports from Picus and our partners</p>{% endif %}
+        </div>  
+      </div>
+    <div class="blog-functions">
+      <div class="content-wrapper">
+        <div class="blog-search">
+          {% module "search_input" path="@hubspot/search_input" content_types={ "website_pages": false } placeholder="Search all resources" %}
+        </div>
+        <div class="blog-filter">
+          <p>Filter:</p>
+          {% set my_topics = blog_topics('default', 250) %}
+          <select id="blog-topics">
+            <option>Filter by...</option>
+            {% for item in my_topics %}
+              {% if item.slug == 'article' %}
+              {% elif item.slug == 'webinar' %}
+              {% elif item.slug == 'reports' %}
+              {% elif item.slug == 'news' %}
+              {% elif item.slug == 'featured' %}
+              {% else %}
+              <option value="{{ blog_tag_url(group.id, item.slug) }}">{{ item }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+          <script>
+            $(function(){
+              $('#blog-topics').on('change', function(){
+                var link = $(this).val();
+                if(link != "Show only..."){
+                  window.location.href = link;
+                }
+              });
+            });
+          </script>
+        
+        </div>
+       
+          <section class="form-step-1">
+            {% form
+              form_to_use="5fc0dd80-ea2a-4a15-9035-a0066b97f37c"
+              response_response_type="redirect"
+              response_message="Thank you for subscribing"
+            %}
+            </section>   
+        </div> -->
+      </div>
+    </div>
+    {% else %}
+    {# End blog tag listing #}
+
+    {# Blog header #}
+    <div class="featured-blog-contain">
+      <div class="content-wrapper featured-blog">
+            <h1 style="text-align:center;">Resources</h1>
+        {% set tag_posts = blog_recent_tag_posts('default', 'featured', 1) %}
+        {% for tag_post in tag_posts %}
+            <article class="featured-resource">
+              <div class="detail">
+                <p class="resource-type">
+              {% for topic in tag_post.tag_list %}
+                  {% if loop.first %}
+                    {{ topic.name }}
+                  {% endif %}
+              {% endfor %}
+                </p>
+                <h2>{{ tag_post.name }}</h2>
+                <p>{{ tag_post.post_list_content|truncatehtml(135)|striptags }}</p>
+                <a href="{{ tag_post.absolute_url }}"><p class="latest-read-more"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/latest-read-more.png" alt="read-more"></p></a>
+              </div>
+              <div class="image" style="background-image: url('{{ tag_post.featuredImage }}');">
+
+              </div>
+            </article>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="blog-functions">
+      <div class="content-wrapper">
+        <div class="blog-search">
+          {% module "search_input" path="@hubspot/search_input" content_types={ "website_pages": false } placeholder="Search all resources" %}
+        </div>
+        <!-- Resources Type Filter -->
+        <div class="blog-filter">
+          <p>Filter:</p>
+          {% set my_topics = blog_topics('default', 250) %}
+          <select id="blog-topics">
+            <option>Filter by...</option>
+            <option value="../resource/tag/article">Article</option>
+            <option value="../resource/tag/webinar">Webinar</option>
+            <option value="../resource/tag/reports">Reports</option>
+            <option value="../resource/tag/news">News</option>
+          </select>
+        
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(function(){
+        $('#blog-topics').on('change', function(){
+          var link = $(this).val();
+          if(link != "Show only..."){
+            window.location.href = link;
+          }
+        });
+      });
+    </script>
+    {% endif %}
+    {# End blog header #}
+    
+    <div class="content-background">
+    <div class="content-wrapper">
+
+      {# Blog listing section #}
+      <section class="blog-index">
+
+        {# Blog listing #}
+        {% for content in contents %}
+            <article class="blog-index__post blog-index__post--small wow fadeIn {% if content.widgets.listing_image_centre.body.value == true %}listing-center-align{% endif %}" id="post-{{ content.id }}">
+              <a href="{{ content.absolute_url }}" class="blog-recent-posts__post">
+                <div class="blog-recent-posts__image" style="background-image: url('{{ content.featuredImage }}');"></div>
+                <h3 class="blog-recent-posts__title">
+                  {{content.title}}
+                  {% if 'Webinar' in content.topic_list|map('name') %}
+                    {% if content.widgets.type_of_webinar.body.value == "Register now" %}
+                    <br><span class="webinar-date">{{ content.widgets.webinar_date.body.value }}</span>
+                    {% endif %}
+                  {% endif %}
+                </h3>
+                {% if 'Webinar' in content.topic_list|map('name') %}
+                  {% if content.widgets.type_of_webinar.body.value == "Register now" %}
+                  <p class="latest-read-more"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/register-now.png" alt="register-now"></p>
+                    {% elif content.widgets.type_of_webinar.body.value == "Watch on demand" %}
+                  <p class="latest-read-more"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/watch-on-demand.png" alt="watch-now"></p>
+                  {% endif %}
+                {% elif 'Case Studies & Reports' in content.topic_list|map('name') %}
+                  {% if content.widgets.type_of_report.body.value == "Download now" %}
+                  <p class="latest-read-more"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/download-now.png" alt="download"></p>
+                    {% elif content.widgets.type_of_report.body.value == "Read now" %}
+                  <p class="latest-read-more"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/read-now.svg" alt="read-now"></p>
+                  {% endif %}
+                {% else %}
+                <p class="latest-read-more"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/latest-read-more.png" alt="read-more"></p>
+                {% endif %}
+                {% if page_meta.html_title|split(' | ')|last == "Article" %}
+                  {% if content.tag_list %}
+                    {% for tag in content.tag_list %}
+                        {% if tag.slug == 'article' %}
+                        {% elif tag.slug == 'webinar' %}
+                        {% elif tag.slug == 'reports' %}
+                        {% elif tag.slug == 'news' %}
+                        {% elif tag.slug == 'featured' %}
+                        {% else %}
+                         <a href="../tag/{{ tag.slug }}" class="tag-link"><p class="blog-tag">{{ tag.name }}</p></a>
+                        {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                {% else %}
+                  {% if content.tag_list %}
+                    {% for tag in content.tag_list %}
+                        {% if tag.slug == 'article' %}
+                        <p class="blog-tag">{{ tag.name }}</p>
+                        {% elif tag.slug == 'webinar' %}
+                        <p class="blog-tag">{{ tag.name }}</p>
+                        {% elif tag.slug == 'reports' %}
+                        <p class="blog-tag">{{ tag.name }}</p>
+                        {% elif tag.slug == 'news' %}
+                        <p class="blog-tag">{{ tag.name }}</p>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+                {% endif %}
+              </a>
+            </article>
+        {% endfor %}
+        {# End blog listing #}
+
+      </section>
+      {# End blog listing section #}
+
+      {# Blog pagination #}
+      {% if contents.total_page_count > 1 %}
+        <div class="blog-pagination">
+          {% set page_list = [-2, -1, 0, 1, 2] %}
+          {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+          {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+          {% elif current_page_num == 2 %}{% set offset = 1 %}
+          {% elif current_page_num == 1 %}{% set offset = 2 %}
+          {% else %}{% set offset = 0 %}{% endif %}
+
+          <a class="blog-pagination__link blog-pagination__prev-link {{ 'blog-pagination__prev-link--disabled' if !last_page_num }}" href="{{ blog_page_link(last_page_num) }}">
+            {% icon
+              name='chevron-left',
+              no_wrapper=True,
+              purpose='decorative',
+              style='SOLID',
+              width='13'
+            %}
+            Prev
+          </a>
+          {% for page in page_list %}
+            {% set this_page = current_page_num + page + offset %}
+            {% if this_page > 0 and this_page <= contents.total_page_count %}
+              <a class="blog-pagination__link blog-pagination__number-link {{ 'blog-pagination__link--active' if this_page == current_page_num }}" href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+            {% endif %}
+          {% endfor %}
+          <a class="blog-pagination__link blog-pagination__next-link {{ 'blog-pagination__next-link--disabled' if !next_page_num }}" href="{{ blog_page_link(current_page_num + 1) }}">
+            Next
+            {% icon
+              name='chevron-right',
+              no_wrapper=True,
+              purpose='decorative',
+              style='SOLID',
+              width='13'
+            %}
+          </a>
+        </div>
+      {% endif %}
+      {# End blog pagination #}
+
+    </div>
+  </div>
+
+  </div>
+  {# CTA Module #}
+  <div class="row-fluid-wrapper row-depth-1 row-number-28 dnd_area-row-7-vertical-alignment dnd-section dnd_area-row-7-background-image dnd_area-row-7-padding" style="background-image: url('https://www.picussecurity.com/hubfs/raw_assets/public/Shield/images/picus-cta-banner-blue.png'); background-size: cover;">
+    <div class="row-fluid ">
+      <div class="span12 widget-span widget-type-cell dnd-column dnd_area-column-47-vertical-alignment" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+      <div class="row-fluid-wrapper row-depth-1 row-number-29 dnd-row">
+        <div class="row-fluid ">
+        <div class="span6 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="6">
+        <div id="hs_cos_wrapper_dnd_area-module-48" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="wow fadeIn" data-wow-delay="0.5" style="visibility: visible; animation-name: fadeIn;">
+            <h4 style="text-transform: uppercase;">Subscribe</h4>
+        <h2 style="text-transform: uppercase; color: #fff; margin-top: -30px;">Receive regular updates <br>from Picus</h2>
+        </div></div>
+
+        </div><!--end widget-span -->
+        <div class="span6 widget-span widget-type-custom_widget dnd_area-module-49-flexbox-positioning dnd-module" style="" data-widget-type="custom_widget" data-x="6" data-w="3">
+          <section class="form-step-1 blog-banner">
+          {% form
+            form_to_use="10a2d0b0-9f91-4cd7-a1e0-1cff39706638"
+            response_response_type="redirect"
+            response_message="Thank you for subscribing"
+          %}
+          </section>  
+        </div><!--end widget-span -->
+        </div><!--end row-->
+        </div><!--end row-wrapper -->
+
+      </div><!--end widget-span -->
+    </div><!--end row-->
+  </div>
+</main>
+{% endblock body %}

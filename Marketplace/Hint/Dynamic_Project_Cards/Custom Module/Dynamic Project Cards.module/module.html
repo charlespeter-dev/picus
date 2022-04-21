@@ -1,0 +1,25 @@
+<div class="tiles" style="background-image: url('{{ module.background_image.src }}'); ">
+  <h2 class="module_title" style="color:{{ module.title_color.color }}; opactity:{{ module.title_color.opacity }};">{% inline_text field="module_name" value="{{ module.module_name }}" %}</h2>
+  {% for item in module.project_cards %}
+	{% if item.imagen_1.src %}
+    {% if item.imagen_1.size_type == 'auto' %}
+			{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+		    {% elif item.imagen_1.size_type == 'auto_custom_max' %}
+			  {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.imagen_1.max_width }}px; max-height: {{ item.imagen_1.max_height }}px"' %}
+		{% endif %}
+  {% set href = item.link_field.url.href %}
+	{% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+		{% set href = "mailto:" + href %}
+	{% endif %}
+		<a class="tile" href="{{ href }}"><img src="{{ item.imagen_1.src }}" alt="{{ item.imagen_1.alt }}" {{ sizeAttrs }}>
+	{% endif %}
+	<div class="details"><span class="title" style="color:{{ item.title_color.color }}; opacity:{{ item.title_color.opacity }};">{% inline_text field="title_1" value="{{ item.title_1 }}" %}</span><span class="info" style="color:{{ item.info_color.color }}; opacity: {{ item.info_color.opacity }};">{% inline_text field="text_description" value="{{ item.text_description }}" %}</span>
+  </div>
+      {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+		{% if item.link_field.no_follow %}rel="nofollow"{% endif %}
+    </a>
+  {% endfor %}
+</div>
+
+<!------------------------------------------------------>
+

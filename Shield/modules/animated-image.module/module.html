@@ -1,0 +1,41 @@
+{% if module.image_field.src %}
+	{% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+	{% if module.image_field.size_type == 'auto' %}
+		{% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	{% elif module.image_field.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.image_field.max_width }}px; max-height: {{ module.image_field.max_height }}px"' %}
+	{% endif %}
+  {% if module.add_link %}
+	{% set href = module.link_field.url.href %}
+{% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.link_field.no_follow %}rel="nofollow"{% endif %}
+	>
+{% endif %}
+	<img class="wow {{ module.animation_effect }} {% if module.mobile_image_display %}mobile-hidden{% endif %}" data-wow-delay="{{ module.animation_delay }}" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ sizeAttrs }} {% if module.custom_margin %}style="margin-left:{{ module.margin_left }}px; margin-right:{{ module.margin_right }}px;"{% endif %}>{% if module.add_link %}</a>{% endif %}
+{% endif %}
+
+{% if module.mobile_image_display %}
+  {% if module.mobile_image.src %}
+    {% set sizeAttrs = 'width="{{ module.mobile_image.width }}" height="{{ module.mobile_image.height }}"' %}
+    {% if module.mobile_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif module.mobile_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.mobile_image.max_width }}px; max-height: {{ module.mobile_image.max_height }}px"' %}
+    {% endif %}
+      {% if module.add_link %}
+	{% set href = module.link_field.url.href %}
+{% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.link_field.no_follow %}rel="nofollow"{% endif %}
+	>
+{% endif %}
+    <img class="desktop-hidden"  src="{{ module.mobile_image.src }}" alt="{{ module.mobile_image.alt }}" {{ sizeAttrs }}>{% if module.add_link %}</a>{% endif %}
+  {% endif %}
+{% endif %}

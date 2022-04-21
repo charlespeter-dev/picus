@@ -1,0 +1,6 @@
+{
+  "label": "Shield Theme for Picus",
+  "preview_path": "./templates/home.html",
+  "screenshot_path": "./images/template-previews/shield-theme-preview.png",
+  "enable_domain_stylesheets": false
+}

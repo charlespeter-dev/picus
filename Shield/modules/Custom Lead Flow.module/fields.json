@@ -1,0 +1,54 @@
+[ {
+  "id" : "df160242-a1a4-bfd0-4c66-684177b5c49c",
+  "name" : "menu_type",
+  "display_width" : null,
+  "label" : "Menu Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "default", "Hubspot Default" ], [ "light", "Light Theme" ], [ "dark", "Dark Theme" ] ],
+  "type" : "choice",
+  "default" : "default"
+}, {
+  "id" : "8e5d3af3-d91a-5c39-ade0-d5830642c4d0",
+  "name" : "right_hand_side_image",
+  "display_width" : null,
+  "label" : "Right Hand Side Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/lead-flow-bg.svg",
+    "alt" : "lead-flow-bg",
+    "loading" : "lazy",
+    "width" : 185,
+    "height" : 193,
+    "max_width" : 185,
+    "max_height" : 193
+  }
+}, {
+  "id" : "dc6dc215-0063-2545-a9e5-97344c2ca436",
+  "name" : "centre_popup_image",
+  "display_width" : null,
+  "label" : "Centre Popup Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/lead-flow-centre-bg2.svg",
+    "alt" : "lead-flow-centre-bg2",
+    "loading" : "lazy",
+    "width" : 458,
+    "height" : 160,
+    "max_width" : 458,
+    "max_height" : 160
+  }
+} ]

@@ -1,0 +1,68 @@
+[ {
+  "id" : "9f4a8984-dc95-7bb9-8e5e-7a55f6ec473a",
+  "name" : "speed",
+  "display_width" : null,
+  "label" : "Speed",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "5", "Fast" ], [ "10", "Medium" ], [ "20", "Slow" ] ],
+  "type" : "choice",
+  "default" : "10"
+}, {
+  "id" : "d2ef9e47-a2ca-0ebb-52b5-0502033a0b84",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 4,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "src" : "https://cdn2.hubspot.net/hubfs/213882/Template_Images/LiftOff%20Freemium%20Launch%20Theme/liftoff%20gray-01.png",
+    "alt" : "liftoff gray-01",
+    "width" : 151,
+    "height" : 60
+  }, {
+    "src" : "https://cdn2.hubspot.net/hubfs/213882/Template_Images/LiftOff%20Freemium%20Launch%20Theme/liftoff%20gray-01.png",
+    "alt" : "liftoff gray-01",
+    "width" : 151,
+    "height" : 60
+  }, {
+    "src" : "https://cdn2.hubspot.net/hubfs/213882/Template_Images/LiftOff%20Freemium%20Launch%20Theme/liftoff%20gray-01.png",
+    "alt" : "liftoff gray-01",
+    "width" : 151,
+    "height" : 60
+  }, {
+    "src" : "https://cdn2.hubspot.net/hubfs/213882/Template_Images/LiftOff%20Freemium%20Launch%20Theme/liftoff%20gray-01.png",
+    "alt" : "liftoff gray-01",
+    "width" : 151,
+    "height" : 60
+  }, {
+    "src" : "https://cdn2.hubspot.net/hubfs/213882/Template_Images/LiftOff%20Freemium%20Launch%20Theme/liftoff%20gray-01.png",
+    "alt" : "liftoff gray-01",
+    "width" : 151,
+    "height" : 60
+  } ]
+}, {
+  "id" : "9b412e94-e049-5076-308e-7a644c6d77d6",
+  "name" : "custom_css_class",
+  "display_width" : null,
+  "label" : "Custom CSS Class",
+  "help_text" : "If you want to further customize the module, enter your own custom CSS class here. The class will be applied to the outermost wrapper of the module.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

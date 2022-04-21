@@ -1,0 +1,127 @@
+[ {
+  "id" : "ee9e95da-d9f4-8cc1-9571-02d2deb7ccc1",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "How Does Picus Work?"
+}, {
+  "id" : "f52a474a-f0c7-2821-d1a8-c819685c7486",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "c964cba4-c15e-4587-2a0d-d2729f9bfb8d",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/deploy@3x.png",
+      "alt" : "Deploy",
+      "width" : 342,
+      "height" : 342,
+      "max_width" : 342,
+      "max_height" : 342
+    }
+  }, {
+    "id" : "cccf6f98-fda3-744a-060c-2e82809431d8",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Deploy"
+  }, {
+    "id" : "0b818b1b-d9e9-13ea-f28c-d98ca646f5a8",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Picus promises an off-the-shelf software solution that can be installed and configured in hours. After software deployment, our users get their results within only minutes."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/deploy@3x.png",
+      "alt" : "Deploy",
+      "width" : 342,
+      "height" : 342,
+      "max_width" : 342,
+      "max_height" : 342
+    },
+    "heading" : "Deploy",
+    "description" : "Picus promises an off-the-shelf software solution that can be installed and configured in hours. After software deployment, our users get their results within only minutes."
+  }
+}, {
+  "id" : "1c2f0a6b-6129-b5fe-0227-1aff09a68bc0",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/bg.png",
+    "alt" : "How Does Picus Work?",
+    "width" : 1680,
+    "height" : 736,
+    "max_width" : 1680,
+    "max_height" : 736
+  }
+}, {
+  "id" : "2fd8f4ba-3ec6-5789-f818-910832170c09",
+  "name" : "bottom_image",
+  "display_width" : null,
+  "label" : "Bottom Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/simulation-img.png",
+    "alt" : "Dashboard",
+    "width" : 2598,
+    "height" : 1550,
+    "max_width" : 2598,
+    "max_height" : 1550
+  }
+} ]

@@ -1,0 +1,68 @@
+[ {
+  "id" : "banner_heading",
+  "name" : "banner_heading",
+  "display_width" : null,
+  "label" : "Banner heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h4>Lorem ipsum dolor sit amet, consectetur.</h4>"
+}, {
+  "id" : "banner_images",
+  "name" : "banner_images",
+  "display_width" : null,
+  "label" : "Banner images",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "banner_images.banner_image",
+    "name" : "banner_image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null,
+      "size_type" : null,
+      "width" : null,
+      "height" : null,
+      "max_width" : null,
+      "max_height" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "banner_image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/7303166/Logos/color/cloud_city.png",
+      "alt" : "Cloud City logo"
+    }
+  }, {
+    "banner_image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/7303166/Logos/color/agriflora.png",
+      "alt" : "Agriflora logo"
+    }
+  }, {
+    "banner_image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/7303166/Logos/color/craftscan.png",
+      "alt" : "Craftscan logo"
+    }
+  }, {
+    "banner_image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/7303166/Logos/color/vedantra_studio.png",
+      "alt" : "Vedantra Studio logo"
+    }
+  } ]
+} ]

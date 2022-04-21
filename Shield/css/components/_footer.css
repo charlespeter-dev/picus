@@ -1,0 +1,27 @@
+.footer { 
+  background-image: url('https://www.picussecurity.com/hubfs/Shield/Backgrounds/background-pattern-footer.svg');
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; 
+}
+.footer__main {
+  color: #fff;
+  padding-top: 120px;
+}
+.footer__logo {
+  margin-bottom: 80px;
+}
+.footer__logo img {
+  max-width: 125px;
+}
+.footer__container.content-wrapper {
+  padding: 1rem 0;
+}
+.footer .footer__copyright div {
+  font-size: 0.5rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.footer .footer__copyright a {
+  color: #1592E6;
+}

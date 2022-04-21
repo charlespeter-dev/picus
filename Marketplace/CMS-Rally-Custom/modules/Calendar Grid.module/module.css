@@ -1,0 +1,26 @@
+.calendar-box { 
+  display: inline-block;
+  width: 24.3%;
+}
+.calendar-box img { 
+  padding: 1% 1.5%;
+  filter: drop-shadow(2px 3px 3px #fff);
+  transition: filter 0.3s ease;
+}
+.calendar-box img:hover { 
+  filter: drop-shadow(2px 3px 3px #999);
+}
+.calendar-box img.archive { 
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .calendar-box { 
+    width: 32.3%
+  }
+}
+@media only screen and (max-width: 600px) {
+  .calendar-box { 
+    width: 32.3%
+  }
+}

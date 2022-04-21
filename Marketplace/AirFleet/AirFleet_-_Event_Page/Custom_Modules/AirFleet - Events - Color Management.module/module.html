@@ -1,0 +1,34 @@
+
+<style type="text/css">
+  html body .af-event-hero:before, html body .af-event-form {
+    background: linear-gradient({{ module.gradients.degrees_hero }}deg,{{ module.gradients.hero_gradient_color_1.color }} 0%,{{ module.gradients.hero_gradient_color_2.color }} {{ module.gradients.hero_bg_color_position_2 }}%,{{ module.gradients.hero_gradient_color_3.color }} {{ module.gradients.hero_bg_color_position_3 }}%,{{ module.gradients.hero_gradient_color_4.color }} {{ module.gradients.hero_bg_color_position_4 }}%,{{ module.gradients.hero_gradient_color_5.color }} {{ module.gradients.hero_bg_color_position_5 }}%,{{ module.gradients.hero_gradient_color_6.color }} {{ module.gradients.hero_bg_color_position_6 }}%);
+  }
+  
+  html body .af-event-hero .hero-container .btn-register {
+    background: {{ module.hero.hero_cta.color }};
+  }
+  
+  html body .af-event-speakers .event-speaker .speaker-name {
+    color: {{ module.speakers.speaker_color.color }};
+  }
+  
+  html body .af-event-agenda .agenda-list .agenda-item-container .agenda-item-time {
+    color: {{ module.agenda.agenda_time.color }};
+  }
+  
+  html body .af-event-agenda .agenda-list .agenda-item-container .agenda-item-content:before {
+    border: 2px solid {{ module.agenda.agenda_circles.color }};
+  }
+  
+  body .af-event-form .hs-button.primary, .af-event-form input[type="submit"], .af-event-form input[type="button"] {
+    background: {{ module.save_your_seat_our_sponsors.save_your_seat_cta_button.color }};
+  }
+  
+  body .af-event-form .af-event-sponsors h4 {
+    color: {{ module.save_your_seat_our_sponsors.our_sponsors.color }};
+  }
+  
+  body .af-event-footer {
+    background-color: {{ module.footer.footer_bg_color.color }};
+  }
+</style>

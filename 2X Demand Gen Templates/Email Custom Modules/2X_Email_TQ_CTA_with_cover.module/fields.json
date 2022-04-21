@@ -1,0 +1,396 @@
+[ {
+  "id" : "1ab1083d-6a35-1f18-e534-0800e4c8a755",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c325bef4-839b-46d0-d564-426d76b547d5",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Title",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Thank you for your interest"
+  }, {
+    "id" : "88d1ca5e-d3e3-9ddf-3790-2b875936e9ee",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Title Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#D60059",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "dfef31db-0804-98e5-b975-2e4582104cae",
+    "name" : "title_font_size",
+    "display_width" : null,
+    "label" : "Title Font Size",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Title Font Size",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "22px"
+  }, {
+    "id" : "e59471cf-a58f-0304-8d02-3ba7a155192f",
+    "name" : "title_line_height",
+    "display_width" : null,
+    "label" : "Title Line Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Title Line Height",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "26px"
+  }, {
+    "id" : "b4e2d2f2-4a3e-6299-1507-67a4add1d5c6",
+    "name" : "title_font_weight",
+    "display_width" : null,
+    "label" : "Title Font Weight",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Title Font Weight",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "bold"
+  }, {
+    "id" : "3116be00-023e-3444-3ec8-e3ffbf19e91e",
+    "name" : "title_alignment",
+    "display_width" : null,
+    "label" : "Title Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+    "type" : "choice",
+    "default" : "center"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Thank you for your interest",
+    "title_color" : {
+      "color" : "#D60059",
+      "opacity" : 100
+    },
+    "title_font_size" : "22px",
+    "title_line_height" : "26px",
+    "title_font_weight" : "bold",
+    "title_alignment" : "center"
+  }
+}, {
+  "id" : "425533fa-47d6-6440-1c24-168c94fc38c9",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "566ba353-b59f-88a8-5668-4ece740656ba",
+    "name" : "subtitle_text",
+    "display_width" : null,
+    "label" : "Subtitle Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Subtitle Text",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "You can download the assets by clicking on the button below."
+  }, {
+    "id" : "f18d1278-9c66-df45-ab9d-380893c28017",
+    "name" : "subtitle_font_size",
+    "display_width" : null,
+    "label" : "Subtitle Font Size",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Subtitle Font Size",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "16px"
+  }, {
+    "id" : "747bfb30-8798-45a3-da18-55c768c5c777",
+    "name" : "subtitle_line_height",
+    "display_width" : null,
+    "label" : "Subtitle Line Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Subtitle Line Height",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "24px"
+  }, {
+    "id" : "47e65ffd-4597-ad66-e77f-add4088a7b02",
+    "name" : "subtitle_color",
+    "display_width" : null,
+    "label" : "Subtitle Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#00395C",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "4536c7a0-6f48-6f00-7257-e768a514b14a",
+    "name" : "subtitle_font_weight",
+    "display_width" : null,
+    "label" : "Subtitle Font Weight",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Subtitle Font Weight",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "normal"
+  }, {
+    "id" : "6b2e6e1d-a070-d56e-beaf-1ea95bfffc92",
+    "name" : "subtitle_alignment",
+    "display_width" : null,
+    "label" : "Subtitle Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+    "type" : "choice",
+    "default" : "center"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "subtitle_text" : "You can download the assets by clicking on the button below.",
+    "subtitle_font_size" : "16px",
+    "subtitle_line_height" : "24px",
+    "subtitle_color" : {
+      "color" : "#00395C",
+      "opacity" : 100
+    },
+    "subtitle_font_weight" : "normal",
+    "subtitle_alignment" : "center"
+  }
+}, {
+  "id" : "5a6ef197-8950-b22f-b188-5374de53f856",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e3ae46ad-bf36-b400-9cdd-92fff4b24f34",
+    "name" : "cta_text",
+    "display_width" : null,
+    "label" : "CTA text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Download Now",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "DOWNLOAD NOW"
+  }, {
+    "id" : "f83f1e1f-a39a-4c62-87f9-285873a235fc",
+    "name" : "cta_url",
+    "display_width" : null,
+    "label" : "CTA URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "3b6c9917-78cc-760d-0f26-5b9ef69759f9",
+    "name" : "cta_background_color",
+    "display_width" : null,
+    "label" : "CTA Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#D60059",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "4688c0a2-43d1-c740-3cdb-12eb6be56c16",
+    "name" : "cta_color",
+    "display_width" : null,
+    "label" : "CTA Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cta_text" : "DOWNLOAD NOW",
+    "cta_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "cta_background_color" : {
+      "color" : "#D60059",
+      "opacity" : 100
+    },
+    "cta_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "cd3d22cb-2e04-478d-4c20-e6b3d75701da",
+  "name" : "thumbnail_image",
+  "display_width" : null,
+  "label" : "Thumbnail Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.picussecurity.com/hubfs/2x/38/Email_book%20thumbnail.png",
+    "alt" : "Email_book thumbnail",
+    "loading" : "lazy",
+    "width" : 246,
+    "height" : 178
+  }
+}, {
+  "id" : "7125ea38-e56b-7ae9-55a6-643ced509c0f",
+  "name" : "last_text",
+  "display_width" : null,
+  "label" : "Last Text",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e644881f-2718-d25a-656d-945c57de65f1",
+    "name" : "desktop",
+    "display_width" : null,
+    "label" : "desktop",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c3e7f656-73e5-f26d-5386-764bd6664753",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<span style=\"color: #00395c;\">Need more information? Please <a style=\"color: #00395c;\" href=\"www.hubspot.com\"> <span style=\"color: #d60059;\"><strong>contact us</strong></span></a><span style=\"color: #d60059;\"><strong>.</strong></span></span>"
+    }, {
+      "id" : "60c027a2-9425-4d03-3646-04aff4b73067",
+      "name" : "alignment",
+      "display_width" : null,
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text" : "<span style=\"color: #00395c;\">Need more information? Please <a style=\"color: #00395c;\" href=\"www.hubspot.com\"> <span style=\"color: #d60059;\"><strong>contact us</strong></span></a><span style=\"color: #d60059;\"><strong>.</strong></span></span>",
+      "alignment" : "left"
+    }
+  }, {
+    "id" : "750dc561-c478-8ef3-4870-ffefac469f6b",
+    "name" : "mobile",
+    "display_width" : null,
+    "label" : "mobile",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d09e0fe6-581b-c0dd-126b-bb431a7ad81c",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<span style=\"color: #00395c;\">Need more information? Please <a style=\"color: #00395c;\" href=\"www.hubspot.com\"> <span style=\"color: #d60059;\"><strong>contact us</strong></span></a><span style=\"color: #d60059;\"><strong>.</strong></span></span>"
+    }, {
+      "id" : "2e9ffc00-9e13-1c95-6d57-0b8b13881ae8",
+      "name" : "choice_field",
+      "display_width" : null,
+      "label" : "Choice",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+      "type" : "choice",
+      "default" : "center"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text" : "<span style=\"color: #00395c;\">Need more information? Please <a style=\"color: #00395c;\" href=\"www.hubspot.com\"> <span style=\"color: #d60059;\"><strong>contact us</strong></span></a><span style=\"color: #d60059;\"><strong>.</strong></span></span>",
+      "choice_field" : "center"
+    }
+  }, {
+    "id" : "61e8080b-5c64-6855-4375-f2ef86e309e4",
+    "name" : "height",
+    "display_width" : null,
+    "label" : "Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Height",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "120"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "desktop" : {
+      "text" : "<span style=\"color: #00395c;\">Need more information? Please <a style=\"color: #00395c;\" href=\"www.hubspot.com\"> <span style=\"color: #d60059;\"><strong>contact us</strong></span></a><span style=\"color: #d60059;\"><strong>.</strong></span></span>",
+      "alignment" : "left"
+    },
+    "mobile" : {
+      "text" : "<span style=\"color: #00395c;\">Need more information? Please <a style=\"color: #00395c;\" href=\"www.hubspot.com\"> <span style=\"color: #d60059;\"><strong>contact us</strong></span></a><span style=\"color: #d60059;\"><strong>.</strong></span></span>",
+      "choice_field" : "center"
+    },
+    "height" : "120"
+  }
+} ]

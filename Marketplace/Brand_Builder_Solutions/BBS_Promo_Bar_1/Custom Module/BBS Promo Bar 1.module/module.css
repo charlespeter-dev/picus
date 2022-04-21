@@ -1,0 +1,34 @@
+.bbs-page-center {
+    float: none !important;
+    max-width: 1145px !important;
+    margin: 0 auto !important;
+}
+
+.bbs-cb1-container {
+  padding: 40px 15px;
+}
+
+.bbs-cb1-header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.bbs-cb1-ctas {
+  display: flex;
+  justify-content: center;
+}
+
+.bbs-cb1-ctas > span {
+  padding: 0 10px;
+}
+
+@media(max-width: 767px) {
+  .bbs-cb1-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bbs-cb1-ctas .hs_cos_wrapper_type_cta {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,20 @@
+<!--
+  templateType: email_subscription_preferences_page
+  isAvailableForNewContent: true
+  label: Boilerplate - email subscription preferences
+  screenshotPath: ../../images/template-previews/subscription-preferences.png
+-->
+
+{% extends "../layouts/mega-menu-base.html" %}
+
+{% block body %}
+<main class="body-container-wrapper" style="background-image: url('https://www.picussecurity.com/hubfs/raw_assets/public/Shield/images/background-pattern-11.svg'); background-size: cover; background-position: 50% 2%;">
+  <section class="content-wrapper">
+    <div class="systems-page">
+      {% module 'subscription_preferences'
+        path='@hubspot/email_subscriptions'
+      %}
+    </div>
+  </section>
+</main>
+{% endblock body %}

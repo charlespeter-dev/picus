@@ -1,0 +1,15 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 61977562036,
+  "other_assets" : [ {
+    "url" : "https://www.youandco.com.au/hubfs/Copied%20Assets/Social%20Share%20v2/social-icons.woff2",
+    "autoload" : false,
+    "name" : "social-icons.woff2"
+  }, {
+    "url" : "https://www.youandco.com.au/hubfs/Copied%20Assets/Social%20Share%20v2/social-icons.woff",
+    "autoload" : false,
+    "name" : "social-icons.woff"
+  } ],
+  "is_available_for_new_content" : true
+}

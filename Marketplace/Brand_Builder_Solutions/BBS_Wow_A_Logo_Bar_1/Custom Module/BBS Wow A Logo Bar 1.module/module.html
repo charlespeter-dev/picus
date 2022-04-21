@@ -1,0 +1,12 @@
+<div id="bbs-slideshow" class="bbs-slideshow bbs-page-center {{ module.custom_css_class }}" data-speed="{{ module.speed }}">
+  {% for item in module.logo %}
+    {% if item.src %}
+      <span class="bbs-image-container">
+        <img src="{{ item.src }}" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}">
+  		</span>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+    

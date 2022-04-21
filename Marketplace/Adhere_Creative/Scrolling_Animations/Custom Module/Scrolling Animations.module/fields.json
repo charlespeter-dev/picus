@@ -1,0 +1,265 @@
+[ {
+  "id" : "7821a3d5-ef52-04bf-bdc9-b71ad3b519a8",
+  "name" : "animation",
+  "display_width" : null,
+  "label" : "Animation",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "1a7d23ff-50d7-4868-1dfe-64e65385ffbb",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "1a7d23ff-50d7-4868-1dfe-64e65385ffbb",
+    "name" : "element_selector",
+    "display_width" : null,
+    "label" : "Element Selector",
+    "help_text" : "Use any Valid jQuery selector",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "#id or .class",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "3ac9036b-2eaa-0dbc-11ac-1cda711b3932",
+    "name" : "ani_cat",
+    "display_width" : null,
+    "label" : "Animation Catagory",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "placeholder" : "Choose Animation Catagory",
+    "choices" : [ [ "fade", "Fade" ], [ "flip", "Flip" ], [ "slide", "Slide" ], [ "zoom", "Zoom" ] ],
+    "type" : "choice"
+  }, {
+    "id" : "dbe94e81-6441-4014-0867-3ff3e27ea3d7",
+    "name" : "fade_options",
+    "display_width" : null,
+    "label" : "Fade Options",
+    "help_text" : "Select a Fade Animation Option",
+    "required" : true,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3ac9036b-2eaa-0dbc-11ac-1cda711b3932",
+      "controlling_value_regex" : "fade",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "placeholder" : "Select a Fade Option",
+    "choices" : [ [ "fade", "Fade" ], [ "fade-up", "Fade-Up" ], [ "fade-down", "Fade-Down" ], [ "fade-left", "Fade-Left" ], [ "fade-right", "Fade-Right" ], [ "fade-up-right", "Fade-Up-Right" ], [ "fade-up-left", "Fade-Up-Left" ], [ "fade-down-right", "Fade-Down-Right" ], [ "fade-down-left", "Fade-Down-Left" ] ],
+    "type" : "choice"
+  }, {
+    "id" : "52dc03db-1939-ee79-2e9d-b65abbf1b93a",
+    "name" : "flip_options",
+    "display_width" : null,
+    "label" : "Flip Options",
+    "help_text" : "Select a Flip Animation Option",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3ac9036b-2eaa-0dbc-11ac-1cda711b3932",
+      "controlling_value_regex" : "flip",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "placeholder" : "Select a Flip Option",
+    "choices" : [ [ "flip-up", "Flip-Up" ], [ "flip-down", "Flip-Down" ], [ "flip-left", "Flip-Left" ], [ "flip-right", "Flip-Right" ] ],
+    "type" : "choice"
+  }, {
+    "id" : "be089f93-32df-e1bd-ca93-442b22e5d244",
+    "name" : "slide_options",
+    "display_width" : null,
+    "label" : "Slide Options",
+    "help_text" : "Select a Flip Animation Option",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3ac9036b-2eaa-0dbc-11ac-1cda711b3932",
+      "controlling_value_regex" : "slide",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "placeholder" : "Select a Slide Option",
+    "choices" : [ [ "slide-up", "Slide-Up" ], [ "slide-down", "Slide-Down" ], [ "slide-left", "Slide-Left" ], [ "slide-right", "Slide-Right" ] ],
+    "type" : "choice"
+  }, {
+    "id" : "4691874a-a868-b49a-e69a-29c870d5dfa7",
+    "name" : "zoom_options",
+    "display_width" : null,
+    "label" : "Zoom Options",
+    "help_text" : "Select a Zoom Animation Option",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3ac9036b-2eaa-0dbc-11ac-1cda711b3932",
+      "controlling_value_regex" : "zoom",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "placeholder" : "Select a Zoom Option",
+    "choices" : [ [ "zoom-in", "zoom-in" ], [ "zoom-in-up", "zoom-in-up" ], [ "zoom-in-down", "zoom-in-down" ], [ "zoom-in-left", "zoom-in-left" ], [ "zoom-in-right", "zoom-in-right" ], [ "zoom-out", "zoom-out" ], [ "zoom-out-up", "zoom-out-up" ], [ "zoom-out-down", "zoom-out-down" ], [ "zoom-out-left", "zoom-out-left" ], [ "zoom-out-right", "zoom-out-right" ] ],
+    "type" : "choice"
+  }, {
+    "id" : "e868a59b-03b8-71c6-f118-0d16112e23eb",
+    "name" : "show_advanced_options",
+    "display_width" : null,
+    "label" : "Show Advanced Options",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "07bfacf0-f6f8-0ee8-9b2e-8b57b8ff7b69",
+    "name" : "advanced_options",
+    "display_width" : null,
+    "label" : "Advanced Options",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "e868a59b-03b8-71c6-f118-0d16112e23eb",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "333b4757-e069-814f-8b54-27ac6b7eea25",
+      "name" : "animate_once",
+      "display_width" : null,
+      "label" : "Animate Once",
+      "help_text" : "Choose whether animation should fire once, or every time you scroll up/down to element",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "eb7c09b9-4241-1df7-db6c-168baed75b22",
+      "name" : "animation_delay",
+      "display_width" : null,
+      "label" : "Animation Delay",
+      "help_text" : "Delay animation (ms)",
+      "required" : false,
+      "locked" : false,
+      "display" : "slider",
+      "min" : 0,
+      "max" : 10000,
+      "step" : 1,
+      "type" : "number",
+      "default" : 0
+    }, {
+      "id" : "4d7c7a6e-b60b-492e-31eb-237e4f169566",
+      "name" : "animation_duration",
+      "display_width" : null,
+      "label" : "Animation Duration",
+      "help_text" : "*Duration of animation (ms)",
+      "required" : false,
+      "locked" : false,
+      "display" : "slider",
+      "min" : 50,
+      "max" : 3000,
+      "step" : 50,
+      "type" : "number",
+      "default" : 400
+    }, {
+      "id" : "8035aaa6-d6fd-b50b-2da1-8d73952d6133",
+      "name" : "trigger_offset",
+      "display_width" : null,
+      "label" : "Trigger Offset",
+      "help_text" : "Change offset to trigger animations sooner or later (px)",
+      "required" : false,
+      "locked" : false,
+      "display" : "slider",
+      "min" : 0,
+      "max" : 1000,
+      "step" : 1,
+      "type" : "number",
+      "default" : 400
+    }, {
+      "id" : "844aafea-bf23-59fa-8d56-29e46daaeca6",
+      "name" : "easing_functions",
+      "display_width" : null,
+      "label" : "Easing Functions",
+      "help_text" : "You can choose one of these timing function to animate elements nicely",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "placeholder" : "Select an Easing Function",
+      "choices" : [ [ "linear", "linear" ], [ "ease", "ease" ], [ "ease-in", "ease-in" ], [ "ease-out", "ease-out" ], [ "ease-in-out", "ease-in-out" ], [ "ease-in-back", "ease-in-back" ], [ "ease-out-back", "ease-out-back" ], [ "ease-in-out-back", "ease-in-out-back" ], [ "ease-in-sine", "ease-in-sine" ], [ "ease-out-sine", "ease-out-sine" ], [ "ease-in-out-sine", "ease-in-out-sine" ], [ "ease-in-quad", "ease-in-quad" ], [ "ease-out-quad", "ease-out-quad" ], [ "ease-in-out-quad", "ease-in-out-quad" ], [ "ease-in-cubic", "ease-in-cubic" ], [ "ease-out-cubic", "ease-out-cubic" ], [ "ease-in-out-cubic", "ease-in-out-cubic" ], [ "ease-in-quart", "ease-in-quart" ], [ "ease-out-quart", "ease-out-quart" ], [ "ease-in-out-quart", "ease-in-out-quart" ] ],
+      "type" : "choice",
+      "default" : "ease"
+    }, {
+      "id" : "ccb66285-674f-f842-0fde-998efa298397",
+      "name" : "anchor_placement",
+      "display_width" : null,
+      "label" : "Anchor Placement",
+      "help_text" : "You can set different placement option on each element, the principle is pretty simple, each anchor-placement option contains two words i.e. top-center. This means that animation will be triggered when top of element will reach center of the window. bottom-top means that animation will be triggered when bottom of an element reach top of the window, and so on.",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "placeholder" : "Select An Anchor Placement",
+      "choices" : [ [ "top-bottom", "top-bottom" ], [ "top-center", "top-center" ], [ "top-top", "top-top" ], [ "center-bottom", "center-bottom" ], [ "center-center", "center-center" ], [ "center-top", "center-top" ], [ "bottom-bottom", "bottom-bottom" ], [ "bottom-center", "bottom-center" ], [ "bottom-top", "bottom-top" ] ],
+      "type" : "choice"
+    }, {
+      "id" : "2c7e2413-73f5-137d-700f-586b75a8156b",
+      "name" : "anchor_selector",
+      "display_width" : null,
+      "label" : "Anchor Selector",
+      "help_text" : "Anchor element, whose offset will be counted to trigger animation instead of actual elements offset",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "#id or .class",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "animate_once" : false,
+      "animation_delay" : 0,
+      "animation_duration" : 400,
+      "trigger_offset" : 400,
+      "easing_functions" : "ease"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "show_advanced_options" : false,
+    "advanced_options" : {
+      "animate_once" : false,
+      "animation_delay" : 0,
+      "animation_duration" : 400,
+      "trigger_offset" : 400,
+      "easing_functions" : "ease"
+    }
+  } ]
+}, {
+  "id" : "ebd1194e-ca1f-504b-d0fa-3367c4ec5fdf",
+  "name" : "disable_animations_on_mobile",
+  "display_width" : null,
+  "label" : "Disable Animations On Mobile",
+  "help_text" : "This option will prevent all elements from animating on mobile",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

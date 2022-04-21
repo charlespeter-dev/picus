@@ -1,0 +1,114 @@
+[ {
+  "id" : "3abb5b63-0c3a-e513-1e65-4caa14667bb8",
+  "name" : "padding",
+  "display_width" : null,
+  "label" : "Padding",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "beda7294-1d29-6d34-0e10-e72981d0fb39",
+    "name" : "padding_top",
+    "display_width" : null,
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "30px"
+  }, {
+    "id" : "05e21cf8-0764-2476-e459-99a2b5ef7405",
+    "name" : "padding_bottom",
+    "display_width" : null,
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "30px"
+  }, {
+    "id" : "42f43262-a97c-fa5d-4edc-9387c2f63525",
+    "name" : "padding_left",
+    "display_width" : null,
+    "label" : "Padding Left",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "0px"
+  }, {
+    "id" : "ffd6b36c-9633-a3d2-f923-ddc48b23903d",
+    "name" : "padding_right",
+    "display_width" : null,
+    "label" : "Padding Right",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "0px"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "padding_top" : "30px",
+    "padding_bottom" : "30px",
+    "padding_left" : "0px",
+    "padding_right" : "0px"
+  }
+}, {
+  "id" : "e0abd122-742a-2317-63a0-02875f2b4ff4",
+  "name" : "font_size",
+  "display_width" : null,
+  "label" : "Font Size",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "14px"
+}, {
+  "id" : "9bc8972e-6f3b-0f7c-24c0-9d1cde4749c0",
+  "name" : "line_height",
+  "display_width" : null,
+  "label" : "Line Height",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "20px"
+}, {
+  "id" : "1ea22f4f-5e9c-0957-6a6b-a0e877db695a",
+  "name" : "font_color",
+  "display_width" : null,
+  "label" : "Font Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#405463",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7bf7374c-b610-8002-e998-86705c9873cf",
+  "name" : "link_color",
+  "display_width" : null,
+  "label" : "Link Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#0095A6",
+    "opacity" : 100
+  }
+} ]

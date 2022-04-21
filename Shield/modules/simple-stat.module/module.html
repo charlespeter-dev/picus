@@ -1,0 +1,29 @@
+<div class="simple-stat wow fadeIn" id="{{ name }}">
+  <h3>{{ module.statistic }}</h3>
+  <div class="separator"></div>
+  <p>{{ module.description }}</p>
+</div>
+
+{% require_css %}
+<style>
+  .simple-stat {
+    text-align: center;
+  }
+  #{{ name }}.simple-stat h3 {
+    color: {{ module.options.stat_colour.color }};
+    font-weight: 800;
+    font-size: 42px;
+  }
+  #{{ name }}.simple-stat p {
+    color: {{ module.options.description_colour.color }};
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  #{{ name }}.simple-stat .separator {
+    width: 150px;
+    margin: 0 auto 20px;
+    height: 1px;
+    background: {{ module.options.stat_colour.color }};
+  }
+</style>
+{% end_require_css %}

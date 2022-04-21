@@ -1,0 +1,171 @@
+{#  -----------------------------------------------------------------------
+    Developed By  : GiantFocal
+    Website       : https://www.giantfocal.com/
+    Support       : admin@giantfocal.com
+------------------------------------------------------------------------- #}
+
+{% if module.enable_section %}
+{# Start #}
+
+<div id="{{ module.settings.layout.custom_id }}" class="ark {{ name }} ark-features-01  {% if module.settings.background_setting.background_type == 'image' && module.settings.background_setting.parallax %}ark-parallax{% endif %} {% if module.settings.background_setting.background_type == 'image' and module.settings.background_setting.overlay %}ark-overlay{% endif %} {{ module.settings.layout.custom_css_classes }}" 
+	{% if module.settings.background_setting.background_type == 'solid' %}style="background-color:{{ module.settings.background_setting.solid_color.color }};"
+	{% elif module.settings.background_setting.background_type == 'gradient' %}
+	{% elif module.settings.background_setting.background_type == 'image' %}style="background-image:url('{{ module.settings.background_setting.background_image.src }}');"
+	{% else %}
+	{% endif %}>
+  
+  
+  {# ----- Parallax ----- #}
+  {% if module.settings.background_setting.background_type == 'image' and module.settings.background_setting.parallax %}
+  	<img class="ark-parallax-img" src="{{ module.settings.background_setting.background_image.src }}" alt="">
+  {% endif %}
+  {# ----- /Parallax ----- #}
+
+  {# ----- Section Intro ----- #}
+  {% if module.content.section_intro.enable_intro %}
+    <div class="ark-section-intro ark-element-animation">
+      {# ----- Page Center ----- #}
+      <div class="ark-page-center ark-text-align-center {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %}">
+        {% if module.content.section_intro.sub_heading_text %}<p class="ark-section-intro-subheading">{{ module.content.section_intro.sub_heading_text }}</p>{% endif %}
+        {% if module.content.section_intro.heading_text %}
+          {% if module.content.section_intro.heading_size == 'h1' %}
+            <h1 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h1>
+          {% elif module.content.section_intro.heading_size == 'h2' %}
+            <h2 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h2>
+          {% elif module.content.section_intro.heading_size == 'h3' %}
+            <h3 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h3>
+          {% else %}
+            <h4 class="ark-section-intro-heading">{{ module.content.section_intro.heading_text }}</h4>
+          {% endif %}
+        {% endif %}
+        {% if module.content.section_intro.description_text %}
+          <div class="ark-section-intro-description">
+            {{ module.content.section_intro.description_text }}
+          </div>
+        {% endif %}
+      </div>
+      {# ----- /Page Center ----- #}
+    </div>
+  {% endif %}
+  {# ----- /Section Intro ----- #}
+  
+  
+  {# ----- Features ----- #}
+  <div class="{% if module.settings.layout.enable_page_center %}ark-page-center{% endif %}">
+    <div class="ark-features-01-repeater {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %}">
+      {# ----- Features Repeater ----- #}
+      {% for item in module.content.features_repeater %}
+        <div class="ark-features-01-box ark-element-animation">
+          {% if module.content.features_repeater_settings.choose_image_or_icon == 'image' %}
+          	<img class="ark-features-01-box-image" src="{{ item.image_icon.src }}" alt="{{ item.image_icon.alt }}" width="{{ item.image_icon.width }}" height="{{ item.image_icon.height }}">
+          {% else %}
+          	<p class="ark-features-01-box-icon">
+              {% icon
+                name="{{ item.icon.name }}"
+                style="{{ item.icon.type }}"
+                unicode="{{ item.icon.unicode }}"
+              %}
+          	</p>
+          {% endif %}
+          <h4>{{ item.title }}</h4>
+          <p class="ark-features-01-box-text">{{ item.short_description_text }}</p>
+        </div>
+      {% endfor %}
+      {# ----- /Features Repeater ----- #}
+    </div>
+  </div>
+  {# ----- /Features ----- #}
+
+
+  {# ----- Section Footer ----- #}
+  {% if module.content.section_footer.enable_section_footer %}
+    <div class="ark-section-footer {% if module.settings.typography.font_color == 'white' %}ark-color-white{% endif %} ark-element-animation">
+      <div class="ark-page-center">
+        {{ module.content.section_footer.section_footer_text }}
+      </div>
+    </div>
+  {% endif %}
+  {# ----- /Section Footer ----- #}  
+
+</div>
+
+
+
+{# =============== CSS Styling =============== #}
+{% require_css %}
+  <style>
+    
+    {# Section padding size #}
+    .{{ name }} {
+      padding: {{ (module.settings.layout.top_padding / 16) }}em 0 {{ (module.settings.layout.bottom_padding / 16) }}em;
+    }
+
+    {# Image overlay #}
+    {% if module.settings.background_setting.overlay and module.settings.background_setting.background_type == 'image' %}
+      .{{ name }}:before {
+        background: {{ module.settings.background_setting.overlay_color.color }};
+        opacity: {{ module.settings.background_setting.overlay_color.opacity/100 }};
+      }
+		{% endif %}
+
+    {# Typography - Font Color #}
+    {% if module.settings.typography.font_color == 'custom' %}
+      .{{ name }} *:not(a) {
+        color: {{ module.settings.typography.custom_font_color.color }};
+      }
+    {% endif %}
+    
+    {# Overwrite page center size #}
+    {% if module.settings.layout.overwrite_page_center %}
+      .{{ name }} .ark-page-center {
+        max-width: {{ module.settings.layout.page_center_size }}px;
+      }
+    {% endif %}
+		
+		{# Gradient BG #}
+    {% if module.settings.background_setting.background_type == 'gradient' %}
+      .{{ name }} {
+        background: {{ module.settings.background_setting.gradient_color_01.color }}; 
+        background: -moz-linear-gradient(-45deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%, {{ module.settings.background_setting.gradient_color_02.color }} 100%); 
+        background: -webkit-linear-gradient(-45deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%,{{ module.settings.background_setting.gradient_color_02.color }} 100%); 
+        background: linear-gradient(135deg, {{ module.settings.background_setting.gradient_color_01.color }} 0%,{{ module.settings.background_setting.gradient_color_02.color }} 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{ module.settings.background_setting.gradient_color_01.color }}', endColorstr='{{ module.settings.background_setting.gradient_color_02.color }}',GradientType=1 );
+      }
+    {% endif %}
+    
+    
+    {# Features number of Column #}
+    {% if module.content.features_repeater_settings.features_repeater_grid == 'three-column' %}
+      @media (min-width:768px) {
+        .{{ name }} .ark-features-01-box  {
+          -ms-flex-preferred-size: 33%;
+      		flex-basis: 33%;
+          margin: 0 0 1.250em;
+        }
+      }
+    {% endif %}
+    {% if module.content.features_repeater_settings.features_repeater_grid == 'four-column' %}
+    	@media (min-width:768px) {
+        .{{ name }} .ark-features-01-box {
+          -ms-flex-preferred-size: 25%;
+      		flex-basis: 25%;
+          margin: 0 0 1.250em;
+        }
+    	}
+    {% endif %}
+
+    {# Icon Color #}
+    {% if module.content.features_repeater_settings.choose_image_or_icon == 'icon' %}
+      .{{ name }} .ark-features-01-box-icon svg {
+       	fill: {{ module.content.features_repeater_settings.icon_color_and_opacity.color }};
+        opacity: {{ module.content.features_repeater_settings.icon_color_and_opacity.opacity/100 }};
+      }
+    {% endif %}
+
+  </style>
+{% end_require_css %}
+{# =============== /CSS Styling =============== #}
+
+
+{# End #}
+{% endif %}

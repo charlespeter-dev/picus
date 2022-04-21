@@ -1,0 +1,85 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<!-- DESKTOP -->
+<div class="container-fluid bannerCustom {{module.banner_options.padding_space_desktop}} {{module.banner_options.padding_space_mobile}}"
+{% if module.banner_options.background_type == "image" %} 
+  style="padding:0;background-image: url('{{ module.banner_options.background_image.src }}'); background-size: cover;"
+{% elif module.banner_options.background_type == "color" %}
+  style="background-color: {{ module.banner_options.gradient_start_color.color }};
+  background-image: linear-gradient(rgba({{ module.banner_options.gradient_start_color.color|convert_rgb  }},{{ module.banner_options.gradient_start_color.opacity/100 }}) 70%,rgba({{ module.banner_options.gradient_end_color.color|convert_rgb  }},{{ module.banner_options.gradient_end_color.opacity/100 }}) 100%) right bottom no-repeat; background-size:cover;" 
+{% endif %}>
+  <div class="gradient-back" style="z-index:0"></div>
+  <div class="container pt-px40-6" style="{{ module.banner_options.banner_text_style_inline }}">
+    <div class=" logoBanner {{module.banner_logo.bottom_spacing_mobile_logo}} {{module.banner_logo.bottom_spacing_desktop_logo}}">
+      <img src='{{ module.banner_logo.logo_field.src }}'>
+    </div>
+    <div class="d-none d-lg-block textHeader">
+      {% for item in module.content_options %}
+      
+        
+        <{{ item.header_tag }}
+
+            class="{{item.bottom_spacing_desktop}}"
+            style="color:{{item.text_color_desktop.color}}; 
+            font-weight:{{item.font_weight_desktop}}; 
+            font-size:{{ item.font_size_desktop}};
+            font-family:{{ module.font_family_1 }};
+            line-height:{{ item.line_height_desktop}};
+            max-width:488px; 
+              ">
+                  {{ item.header_content}}
+
+          </{{ item.header_tag }}>
+    {% endfor %}
+    </div>
+      
+  </div>
+</div>
+  <div id="dash-banner"></div>
+  
+<!--  mobile content  -->
+<div class="container bannerCustomMobile {{ module.show_or_hide_mobile }}" style="margin:auto;margin-bottom:40px;">
+   <div class="textHeader">
+    
+      {% for item in module.content_options_mobile %}
+     
+      <{{ item.header_tag_mobile }}   
+            class="{{item.bottom_spacing_mobile}}" 
+            style="color:{{item.text_color_mobile.color}}; 
+              font-weight:{{item.font_weight_mobile}};
+              font-size:{{ item.font_size_mobile }};
+              font-family:{{ module.font_family_1 }};
+              line-height:{{ item.line_height_mobile}};">
+                  {{ item.mobile_content }}
+      </{{ item.header_tag_mobile }}>
+      {% endfor %}
+   </div>
+     
+     {% if module.button_text_mobile %}
+        <div class=" btn btn-outline w-100 btnDownload cta-button ">
+          <a href="#formSection" style="display:block;">{{ module.button_text_mobile }}</a>
+        </div>
+     {% endif %}
+ </div>
+ 
+<style>
+#dash-banner
+{
+  width:100%;
+  height:10px;
+  background:url({{ module.dash_image.src }}) repeat-x;
+  margin-bottom:40px;
+}
+@media (min-width: 960px)
+{
+  #dash-banner
+  {
+    height:15px;
+  }
+  #formSection
+  {
+    top:-{{ module.form_top_position }}px;  
+  }
+}
+</style>

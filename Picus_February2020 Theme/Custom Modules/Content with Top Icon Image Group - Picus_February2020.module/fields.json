@@ -1,0 +1,176 @@
+[ {
+  "id" : "a22fcead-a108-b5c5-dd09-af1493a859c4",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Picus Breach and Attack Simulation"
+}, {
+  "id" : "4e83d323-b3ad-51ed-3f1f-a315ba1e9c9e",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/simulation-img%20(1).png",
+    "alt" : "Simulation Dashboard",
+    "width" : 2598,
+    "height" : 1550,
+    "max_width" : 2598,
+    "max_height" : 1550
+  }
+}, {
+  "id" : "476bff35-66da-fc89-7ae9-f8b9b3732836",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "6c47216f-ed57-d01e-b3af-2dba66a31129",
+    "name" : "icon_image",
+    "display_width" : null,
+    "label" : "Icon Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/challenge@3x.png",
+      "alt" : "Challenge Your Security",
+      "width" : 180,
+      "height" : 180,
+      "max_width" : 180,
+      "max_height" : 180
+    }
+  }, {
+    "id" : "a27f9e28-0022-9079-8787-7619a9451c03",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Challenge Your Security"
+  }, {
+    "id" : "a3a08a60-f46e-dd34-b890-9ff0d171ad7c",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Allow your security teams to challenge their security controls with real attacks before cybercriminals do."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon_image" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/challenge@3x.png",
+      "alt" : "Challenge Your Security",
+      "width" : 180,
+      "height" : 180,
+      "max_width" : 180,
+      "max_height" : 180
+    },
+    "heading" : "Challenge Your Security",
+    "description" : "Allow your security teams to challenge their security controls with real attacks before cybercriminals do."
+  }
+}, {
+  "id" : "c6b0e554-3711-8ddd-722f-ce05dbbcff36",
+  "name" : "select_button_type",
+  "display_width" : null,
+  "label" : "Select Button Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "standard", "Standard Button" ], [ "cta", "Call to Action" ] ],
+  "type" : "choice"
+}, {
+  "id" : "94d94edc-ea60-3c53-b1ec-8f930d6519f9",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "c6b0e554-3711-8ddd-722f-ce05dbbcff36",
+    "controlling_value_regex" : "standard",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "fa9ea48a-1fb8-3703-eabb-97e36b3d25a8",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "c6b0e554-3711-8ddd-722f-ce05dbbcff36",
+    "controlling_value_regex" : "standard",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "278e10d1-dc4f-4956-5355-b286e2c33d0d",
+  "name" : "select_cta",
+  "display_width" : null,
+  "label" : "Select CTA",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "c6b0e554-3711-8ddd-722f-ce05dbbcff36",
+    "controlling_value_regex" : "cta",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "cta"
+} ]

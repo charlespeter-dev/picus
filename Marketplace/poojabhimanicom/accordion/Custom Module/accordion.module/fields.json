@@ -1,0 +1,49 @@
+[ {
+  "id" : "fcc0ce70-5982-c514-d467-eda3f4c55750",
+  "name" : "accordion",
+  "display_width" : null,
+  "label" : "Accordion",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "dd38c83c-e021-73d7-981f-0cc6bdf7af1f",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "dd38c83c-e021-73d7-981f-0cc6bdf7af1f",
+    "name" : "accordion_title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Accordion Title"
+  }, {
+    "id" : "c4310407-5d75-acfa-c8db-24f5a6a0bfce",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "content",
+    "required" : true,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Put some clear and concise content in here. Keep your reader in mind. What are they trying to do? What are they hoping to learn? Why are they reading this? Help them out and use the tone and voice of your organization.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "accordion_title" : "Accordion Title",
+    "content" : "<p>Put some clear and concise content in here. Keep your reader in mind. What are they trying to do? What are they hoping to learn? Why are they reading this? Help them out and use the tone and voice of your organization.</p>"
+  }, {
+    "accordion_title" : "Accordion Title",
+    "content" : "<p>Put some clear and concise content in here. Keep your reader in mind. What are they trying to do? What are they hoping to learn? Why are they reading this? Help them out and use the tone and voice of your organization.</p>"
+  }, {
+    "accordion_title" : "Accordion Title",
+    "content" : "<p>Put some clear and concise content in here. Keep your reader in mind. What are they trying to do? What are they hoping to learn? Why are they reading this? Help them out and use the tone and voice of your organization.</p>"
+  } ]
+} ]

@@ -1,0 +1,301 @@
+[ {
+  "id" : "d38ad7e7-4ee1-1855-6928-cf21fde183ef",
+  "name" : "news_group",
+  "display_width" : null,
+  "label" : "News Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5894fffc-05a6-bf85-cc9f-8c5f16f5158a",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "News"
+  }, {
+    "id" : "47fee00b-2f77-edc6-8eec-7a6da56ba948",
+    "name" : "items",
+    "display_width" : null,
+    "label" : "Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "747e23a6-3978-20eb-da04-2a41f202f6cf",
+      "name" : "image",
+      "display_width" : null,
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/vulnerability-scanning-big.png",
+        "alt" : "Vulnerability Scanning, Pentesting, Red Teaming… What’s Next?",
+        "width" : 1920,
+        "height" : 1005,
+        "max_width" : 1920,
+        "max_height" : 1005
+      }
+    }, {
+      "id" : "0b2b3dfa-a229-2977-bbc0-08589b24a9ca",
+      "name" : "heading",
+      "display_width" : null,
+      "label" : "Heading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Vulnerability Scanning, Pentesting, Red Teaming… What’s Next?            "
+    }, {
+      "id" : "5a09deb8-294c-319b-adab-1d24d5dea475",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "image" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/vulnerability-scanning-big.png",
+        "alt" : "Vulnerability Scanning, Pentesting, Red Teaming… What’s Next?",
+        "width" : 1920,
+        "height" : 1005,
+        "max_width" : 1920,
+        "max_height" : 1005
+      },
+      "heading" : "Vulnerability Scanning, Pentesting, Red Teaming… What’s Next?            ",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "News",
+    "items" : {
+      "image" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/vulnerability-scanning-big.png",
+        "alt" : "Vulnerability Scanning, Pentesting, Red Teaming… What’s Next?",
+        "width" : 1920,
+        "height" : 1005,
+        "max_width" : 1920,
+        "max_height" : 1005
+      },
+      "heading" : "Vulnerability Scanning, Pentesting, Red Teaming… What’s Next?            ",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "66b281aa-2575-3a11-9648-c1a6b1106dd8",
+  "name" : "events_group",
+  "display_width" : null,
+  "label" : "Events Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "34591be0-2e7a-3520-10b3-f03ab116f1fe",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Events"
+  }, {
+    "id" : "df987cce-ab3e-49b6-7bd9-925e5b9aa031",
+    "name" : "items",
+    "display_width" : null,
+    "label" : "Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "2533c5b5-0ae0-88c5-87a0-22543aeca40c",
+      "name" : "image",
+      "display_width" : null,
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/vulnerability-scanning-big.png",
+        "alt" : "Gitex Technology Week 2019",
+        "width" : 1920,
+        "height" : 1005,
+        "max_width" : 1920,
+        "max_height" : 1005
+      }
+    }, {
+      "id" : "26795a1a-1f51-0c9d-f296-1f331cc505c8",
+      "name" : "heading",
+      "display_width" : null,
+      "label" : "Event Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Gitex Technology Week 2019"
+    }, {
+      "id" : "e970a74e-df22-74f5-c750-fd69399fe62c",
+      "name" : "location",
+      "display_width" : null,
+      "label" : "Event Location",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "World Trade Center, Dubai"
+    }, {
+      "id" : "c092b99b-f508-0f09-dd01-fcd9a33e79d8",
+      "name" : "event_date",
+      "display_width" : null,
+      "label" : "Event Date",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "October 06-10,2019"
+    }, {
+      "id" : "1da79887-bf3d-b4a4-ca8e-493142cbbbc3",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "image" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/vulnerability-scanning-big.png",
+        "alt" : "Gitex Technology Week 2019",
+        "width" : 1920,
+        "height" : 1005,
+        "max_width" : 1920,
+        "max_height" : 1005
+      },
+      "heading" : "Gitex Technology Week 2019",
+      "location" : "World Trade Center, Dubai",
+      "event_date" : "October 06-10,2019",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Events",
+    "items" : {
+      "image" : {
+        "size_type" : "auto",
+        "src" : "https://cdn2.hubspot.net/hubfs/7048931/vulnerability-scanning-big.png",
+        "alt" : "Gitex Technology Week 2019",
+        "width" : 1920,
+        "height" : 1005,
+        "max_width" : 1920,
+        "max_height" : 1005
+      },
+      "heading" : "Gitex Technology Week 2019",
+      "location" : "World Trade Center, Dubai",
+      "event_date" : "October 06-10,2019",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+} ]

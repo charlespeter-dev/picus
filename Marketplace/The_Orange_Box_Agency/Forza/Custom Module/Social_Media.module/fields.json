@@ -1,0 +1,34 @@
+[ {
+  "id" : "39ea00fd-bdbc-5d23-3e73-a56a7dc3c972",
+  "name" : "link_facebook",
+  "display_width" : null,
+  "label" : "Link Facebook",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "7d99cc2b-9b1f-1f16-fe7c-7165c31a801a",
+  "name" : "link_instagram",
+  "display_width" : null,
+  "label" : "Link Instagram",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c1710c68-b11e-303c-0352-5979db737fb2",
+  "name" : "link_twitter",
+  "display_width" : null,
+  "label" : "Link Twitter",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

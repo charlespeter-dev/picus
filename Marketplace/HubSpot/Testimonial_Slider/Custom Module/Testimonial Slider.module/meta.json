@@ -1,0 +1,33 @@
+{
+  "global" : false,
+  "icon" : "https://design-assets.hubspot.com/hubfs/image2vector.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 66042013608,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Attached_asset/slick.min.css",
+    "name" : "slick.min.css"
+  } ],
+  "other_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/slick.woff",
+    "autoload" : false,
+    "name" : "slick.woff"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/slick.ttf",
+    "autoload" : false,
+    "name" : "slick.ttf"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/slick.eot",
+    "autoload" : false,
+    "name" : "slick.eot"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/slick.svg",
+    "autoload" : false,
+    "name" : "slick.svg"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/ajax-loader.gif",
+    "autoload" : false,
+    "name" : "ajax-loader.gif"
+  } ],
+  "is_available_for_new_content" : true
+}

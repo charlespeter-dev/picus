@@ -1,0 +1,98 @@
+[ {
+  "id" : "d73945aa-501f-5ee5-584f-3f6b6d18779f",
+  "name" : "address_group",
+  "display_width" : null,
+  "label" : "Address Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "50b99cb5-7530-2423-cfa5-59528e6dc8f2",
+    "name" : "city_name",
+    "display_width" : null,
+    "label" : "City",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "San Francisco"
+  }, {
+    "id" : "db110ec6-d1fc-d564-79e1-39fc48ff3389",
+    "name" : "location",
+    "display_width" : null,
+    "label" : "Address",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "415  Jackson St., Suite B,\t\t\t\t\t\t\t<br>San Francisco,\t\t\t\t\t\t\t<br>CA 94111 USA"
+  }, {
+    "id" : "b62e901f-fcb2-4c35-0731-34275f096067",
+    "name" : "telephone_number",
+    "display_width" : null,
+    "label" : "Telephone Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "+1 (415) 8905105"
+  }, {
+    "id" : "6a3d0aa2-41cf-9d49-05bf-c8746842ad89",
+    "name" : "email_address",
+    "display_width" : null,
+    "label" : "Email Address",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "info@picussecurity.com"
+  }, {
+    "id" : "c482e8de-8937-c5c2-bfc6-350165e5d81f",
+    "name" : "map_location",
+    "display_width" : null,
+    "label" : "Map Location",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "415 Jackson St Suite B"
+  }, {
+    "id" : "8a0f43d3-b9d3-f8a9-1783-ae7564914082",
+    "name" : "map_zoom",
+    "display_width" : null,
+    "label" : "Map Zoom",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 0,
+    "step" : 1,
+    "type" : "number",
+    "default" : 16
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "city_name" : "San Francisco",
+    "location" : "415  Jackson St., Suite B,\t\t\t\t\t\t\t<br>San Francisco,\t\t\t\t\t\t\t<br>CA 94111 USA",
+    "telephone_number" : "+1 (415) 8905105",
+    "email_address" : "info@picussecurity.com",
+    "map_location" : "415 Jackson St Suite B",
+    "map_zoom" : 16
+  }
+} ]

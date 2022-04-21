@@ -1,0 +1,19 @@
+<div>
+    <div>
+        {% if widget.check_no_images %}
+            {% if widget.column1_link %}
+            <a href="{{ widget.column1_link }}"><img src="{{ widget.column1img.src }}" style="width:100%;"/></a>
+            {% else %}
+            <img src="{{ widget.column1img.src }}" style="width:100%;"/>
+            {% endif %}
+        {% endif %}
+    </div>
+    <h2 style="color: #111111; font-family: Arial; font-size: 22px; font-weight: 700; margin-top:20px;">{{ widget.column1_title }}</h2>
+    <p style="color: #666666; font-family: Arial; font-size: 14px; font-weight: 400; line-height: 20px;">{{ widget.column1_txt }}</p>
+    {% if widget.call_to_action_button %}
+        <a href="{{ widget.column1_link }}" target="_blank" style="color:#fff; font-family: Arial; font-size: 16px; font-weight: 700; line-height: 20px; background-color:#111; text-align:center; padding:15px; margin:0 auto; width:50%; display:block; text-decoration:none; border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px; -o-border-radius:30px; -ms-border-radius:30px; margin-top:20px; margin-bottom:40px;">{{ widget.column1_link_txt }}
+</a>
+    {% endif %}
+</div>
+
+

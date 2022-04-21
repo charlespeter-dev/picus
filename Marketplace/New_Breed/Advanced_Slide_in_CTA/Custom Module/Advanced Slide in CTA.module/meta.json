@@ -1,0 +1,11 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 42894154319,
+  "js_assets" : [ {
+    "url" : "Marketplace%2FNew_Breed%2FAdvanced_Slide_in_CTA%2FAttached_asset%2Fjs.cookie.min.js",
+    "autoload" : true,
+    "name" : "js.cookie.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

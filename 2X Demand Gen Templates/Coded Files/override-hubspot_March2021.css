@@ -1,0 +1,417 @@
+/**** Placed After Bootstrap CSS ****/
+
+
+
+.row-fluid {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    *zoom: 1
+}
+
+.row-fluid:before,
+.row-fluid:after {
+    display: table;
+    content: ""
+}
+
+.row-fluid:after {
+    clear: both
+}
+
+.row-fluid [class*="span"] {
+    display: block;
+    float: none;
+    width: 100%;
+    min-height: 28px;
+    margin-left: 0;
+    *margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.row-fluid [class*="span"]:first-child {
+    margin-left: auto;
+    width: 100%;
+}
+
+.row-fluid .span12 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span11 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span10 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span9 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span8 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span7 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span6 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span5 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span4 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span3 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span2 {
+    width: auto;
+    *width: auto
+}
+
+.row-fluid .span1 {
+    width: auto;
+    *width: auto
+}
+
+.container-fluid {
+    *zoom: 1
+}
+
+.container-fluid:before,
+.container-fluid:after {
+    display: table;
+    content: ""
+}
+
+.container-fluid:after {
+    clear: both
+}
+
+@media(max-width:767px) {
+    .row-fluid {
+        width: auto;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .row-fluid [class*="span"] {
+        display: block;
+        float: none;
+        width: auto;
+        margin-left: 0
+    }
+}
+
+@media(min-width:768px) and (max-width:1139px) {
+    .row-fluid {
+        width: auto;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+        *zoom: 1
+    }
+
+    .row-fluid:before,
+    .row-fluid:after {
+        display: table;
+        content: ""
+    }
+
+    .row-fluid:after {
+        clear: both
+    }
+
+    .row-fluid [class*="span"] {
+        display: block;
+        float: none;
+        width: 100%;
+        min-height: 28px;
+        margin-left: 0%;
+        *margin-left: 0%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .row-fluid [class*="span"]:first-child {
+        margin-left: auto;
+        width: 100%;    
+    }
+
+    .row-fluid .span12 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span11 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span10 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span9 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span8 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span7 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span6 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span5 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span4 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span3 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span2 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span1 {
+        width: auto;
+        *width: auto
+    }
+}
+
+@media(min-width:1280px) {
+    .row-fluid {
+        width: auto;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+        *zoom: 1
+    }
+
+    .row-fluid:before,
+    .row-fluid:after {
+        display: table;
+        content: ""
+    }
+
+    .row-fluid:after {
+        clear: both
+    }
+
+    .row-fluid [class*="span"] {
+        display: block;
+        float: none;
+        width: 100%;
+        min-height: 28px;
+        margin-left: 0%;
+        *margin-left: 0%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .row-fluid [class*="span"]:first-child {
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .row-fluid .span12 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span11 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span10 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span9 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span8 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span7 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span6 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span5 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span4 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span3 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span2 {
+        width: auto;
+        *width: auto
+    }
+
+    .row-fluid .span1 {
+        width: auto;
+        *width: auto
+    }
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: ""
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.hide {
+    display: none
+}
+
+.show {
+    display: block
+}
+
+.invisible {
+    visibility: hidden
+}
+
+.hidden {
+    display: none;
+    visibility: hidden
+}
+
+.visible-phone {
+    display: none !important
+}
+
+.visible-tablet {
+    display: none !important
+}
+
+.hidden-desktop {
+    display: none !important
+}
+
+@media(max-width:767px) {
+    .visible-phone {
+        display: inherit !important
+    }
+
+    .hidden-phone {
+        display: none !important
+    }
+
+    .hidden-desktop {
+        display: inherit !important
+    }
+
+    .visible-desktop {
+        display: none !important
+    }
+}
+
+@media(min-width:768px) and (max-width:1139px) {
+    .visible-tablet {
+        display: inherit !important
+    }
+
+    .hidden-tablet {
+        display: none !important
+    }
+
+    .hidden-desktop {
+        display: inherit !important
+    }
+
+    .visible-desktop {
+        display: none !important
+    }
+}

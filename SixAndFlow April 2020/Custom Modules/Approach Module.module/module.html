@@ -1,0 +1,28 @@
+<div class="apporach_sec common" style="background-color:{{ module.background_color.color }}">
+  <div class="container">
+    {% if module.header_text %}
+    <h2>{{ module.header_text }}</h2>
+    {% endif %}
+    {% if module.content_section  %}
+    <div class="apporch_cons detail-content">
+      {{ module.content_section }}
+    </div>
+    {% endif %}
+    <div class="dis-flex">
+      {% for item in module.card_group %}
+      <div class="apporch_card " style="background-color:{{ item.card_background_color.color }}">
+        {% if item.card_header_text %}
+        <div class="ap_cardinner">  
+          <h3>{{ item.card_header_text }}</h3>
+        </div>  
+        {% endif %}
+        {% if item.copy_text  %}
+        <div class="ap_cardcons detail-content" style="color:{{ item.text_color.color }}">
+          {{ item.copy_text }}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

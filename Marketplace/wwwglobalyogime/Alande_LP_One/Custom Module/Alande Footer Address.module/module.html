@@ -1,0 +1,34 @@
+<div class="span4">
+    <div class="address">
+        <p>
+            <span><i class="fa {{ widget.fa_icon }}" style="font-size:{{ widget.icon_size }}"></i></span>
+            <span>{{ widget.address }}</span>
+        </p>
+    </div>        
+</div>
+
+<div class="span4">
+    <div class="address">
+        <p style="text-align: center;" >
+            <span><i class="fa {{ widget.fa_phone_icon }}" style="font-size:{{ widget.address_icon_size }}"></i></span>
+            {{ widget.phone_number_one }}
+        </p>
+        <p style="text-align: center;">
+            <span><i class="fa {{ widget.fa_mobile_icon  }}" style="font-size:{{ widget.address_icon_size }}"></i></span>
+            {{ widget.phone_number_two }}
+        </p>
+    </div>        
+</div>
+
+<div class="span4">
+    <div class="email-address">
+        <p>
+            <i class="fa {{ widget.select_email_icon  }}" style="font-size:{{ widget.address_icon_size }}"></i>
+            {{ widget.email_address  }}
+        </p>
+        <p>
+            <i class="fa {{ widget.select_website_icon }}" style="font-size:{{ widget.address_icon_size }}"></i>
+            {{ widget.website_url  }}
+        </p>
+    </div>
+</div>

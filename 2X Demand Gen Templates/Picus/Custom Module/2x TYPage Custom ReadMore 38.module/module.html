@@ -1,0 +1,21 @@
+{% set href = module.link_field.url.href %}
+{% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.link_field.rel %}rel="{{ module.link_field.rel }}"{% endif %}
+   class="readmore"
+	>
+	<table>
+      <tr>
+        <td style="border-bottom:1px solid #D60059;">
+          READ MORE
+        </td>
+        <td style="padding-left:14px;">
+          <span style="color:#D60059;width:9px;font-weight:normal;">&#8594;</span>
+        </td>
+      </tr>
+  </table>
+</a>
+<!--  &#10140; &#10132; -->

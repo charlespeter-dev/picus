@@ -1,0 +1,26 @@
+<div class="span12 widget-span parallax-banner-2">
+<div class="span12 widget-span {{ widget.color_background_or_image }} tb-2">
+    <div class="span12 widget-span {{ widget.overlay_color }}">
+     <div class="span12 widget-span widget-type-cell page-center {{ widget.text_alignment }}">
+         <div class="{{ widget.banner_size }} global-sticky-header-offset widget-span span12">
+            <div class="span12 widget-span banner-content">
+                <div class="span8 widget-span banner-content-wrapper">
+                    <div class="banner-text white-text">{{ widget.banner_content }}</div>
+                    <div class="banner-ctas">{{ widget.banner_ctas }}</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+    .tb-2.banner-bkg {
+        background-image: url('{{ widget.hero_bkg1.src }}');
+    }
+    .custom-bkg {
+        background-color: {{ widget.custom_background_hex_code }};
+    }
+    
+</style>

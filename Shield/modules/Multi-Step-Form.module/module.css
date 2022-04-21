@@ -1,0 +1,47 @@
+.multi-step-form {
+  position: relative;
+}
+.multi-step-form fieldset:not(:first-child),
+.multi-step-form h3:not(:first-child),
+.multi-step-form div.hs-submit {
+  display: none;
+}
+.multi-step-form h3 {
+  font-weight: 700;
+}
+.multi-step-form input.multi-step-next {
+  cursor: pointer;
+  background-color: #e80458 !important;
+  border: none !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .92rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  padding: 15px 53px;
+}
+.multi-step-form input.multi-step-next:disabled {
+  background-color: grey !important;
+}
+.hs_recaptcha {
+  float: right;
+}
+.multi-step-form div#multi-step-nav {
+  position: absolute;
+  top: 0;
+  right: 4px;
+}
+.multi-step-form div#multi-step-nav div.nav-step {
+  width: 10px;
+  height: 10px;
+  background: #D1D6DC;
+  border-radius: 3px;
+  float: left;
+  margin-right: 5px;
+}
+.multi-step-form div#multi-step-nav div.nav-step:nth-of-type(1),
+.multi-step-form div#multi-step-nav div.nav-step.complete {
+  background: #23496E;
+}

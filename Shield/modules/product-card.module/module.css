@@ -1,0 +1,46 @@
+.product-card {
+  width: 100%;
+  min-height: 399px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+  padding: 40px 40px 85px;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+.product-card:hover {
+  border: 1px solid #005DBA;
+}
+.product-card .card-button {
+  position: absolute;
+  z-index: 10;
+}
+.product-card ul.ticks {
+  padding-left: 26px;
+  padding-right: 12px;
+  margin-left: 0;
+  list-style-type: none;  
+}
+.product-card ul.ticks li {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  position: relative;
+  line-height: 1.2em;
+}
+.product-card ul.ticks li:before {
+  position: absolute;
+  content: '';
+  height: 17px;
+  width: 17px;
+  background: url('https://www.picussecurity.com/hubfs/Shield/Icons/shield-list-ticks.svg');
+  left: -27px;
+  top: 2px;
+}
+
+@media (max-width: 1150px) and (min-width: 767px) {
+  .product-card {
+    padding: 20px 20px 60px;
+  }
+}

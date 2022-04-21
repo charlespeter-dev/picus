@@ -1,0 +1,84 @@
+[ {
+  "id" : "header_text",
+  "name" : "header_text",
+  "display_width" : null,
+  "label" : "Header text",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We've helped companies like:"
+}, {
+  "id" : "logo_images",
+  "name" : "logo_images",
+  "display_width" : null,
+  "label" : "Logo images",
+  "help_text" : "Upload logo images here",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "src" : "https://cdn2.hubspot.net/hubfs/7303166/Logos/white/agriflora.png",
+    "alt" : "Agriflora logo",
+    "height" : 50
+  }, {
+    "src" : "https://cdn2.hubspot.net/hubfs/7303166/Logos/white/cloud_city.png",
+    "alt" : "Cloud City logo",
+    "height" : 50
+  }, {
+    "src" : "https://cdn2.hubspot.net/hubfs/7303166/Logos/white/craftscan.png",
+    "alt" : "Craftscan logo",
+    "width" : 59,
+    "height" : 46
+  }, {
+    "src" : "https://cdn2.hubspot.net/hubfs/7303166/Logos/white/vedantra_studio.png",
+    "alt" : "Vedantra Studio logo",
+    "height" : 50
+  } ]
+}, {
+  "id" : "style",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "style.banner_bg_color",
+    "name" : "banner_bg_color",
+    "display_width" : null,
+    "label" : "Banner background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "style.banner_fg_color",
+    "name" : "banner_fg_color",
+    "display_width" : null,
+    "label" : "Banner foreground Cclor",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 40
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

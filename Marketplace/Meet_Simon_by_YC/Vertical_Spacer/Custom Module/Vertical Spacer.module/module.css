@@ -1,0 +1,17 @@
+.spacer-xs { padding-top: 5px; padding-bottom: 5px; }
+.spacer-sm { padding-top: 15px; padding-bottom: 15px; }
+.spacer-md { padding-top: 30px; padding-bottom: 30px; }
+.spacer-lg { padding-top: 40px; padding-bottom: 40px; }
+.spacer-xl { padding-top: 60px; padding-bottom: 60px; }
+.vertical-spacer hr { box-sizing: content-box; height: 1px; border: none; margin: 0; }
+
+.vertical-spacer { display: none; }
+@media (max-width: 767px) {
+	.vertical-spacer.show-mobile { display: block; }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.vertical-spacer.show-tablet { display: block; }
+}
+@media (min-width: 1200px) {
+	.vertical-spacer.show-desktop { display: block; }
+}

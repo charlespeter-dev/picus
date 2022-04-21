@@ -1,0 +1,43 @@
+{% if module.alignment == 'left' %}
+{% set flex_alignment = 'flex-start' %}
+{% elif module.alignment == 'right' %}
+{% set flex_alignment = 'flex-end' %}
+{% else %}
+{% set flex_alignment = 'center' %}
+{% endif %}
+
+<div style="padding: {{ module.vertical_section_padding_px }}px 0;" class="breadcrumbs-outer-wrapper">
+  <div style="max-width: {{ module.section_max_width }}px; 
+              text-align: {{ module.alignment }};
+              justify-content: {{ flex_alignment }}" 
+       
+       id="breadcrumbs-bar">
+    <div class="breadcrumbs-bar__wrapper">
+      {% for item in module.breadcrumbs %}
+      <div style="--bg-color: rgba({{ item.background_color.color|convert_rgb }}, {{ item.background_color.opacity }});
+                  --hover-bg-color: rgba({{ item.hover_background_color.color|convert_rgb }}, {{ item.hover_background_color.opacity }});
+                  --text-color: rgba({{ item.text_color.color|convert_rgb }}, {{ item.text_color.opacity }});
+                  --hover-text-color: rgba({{ item.hover_text_color.color|convert_rgb }}, {{ item.hover_text_color.opacity }});" 
+           class="breadcrumb">
+        {% set href = item.link_field.url.href %}
+        {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+          {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+          {% if item.link_field.no_follow %}rel="nofollow"{% endif %}
+          >
+          {% if item.icon_field.name %}
+          {% icon
+            name="{{ item.icon_field.name }}"
+            style="{{ item.icon_field.type }}"
+            unicode="{{ item.icon_field.unicode }}"
+          %}
+          {% endif %}
+          {{ item.text }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

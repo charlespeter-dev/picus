@@ -1,0 +1,21 @@
+{% if module.display_benefits %}
+	<div class="benefits-3-col" id="{{ name }}" style="background-image: url('{{ module.background_image.src }}'); background-color: {{ module.background_colour.color }};">
+    <div class="content-wrapper">
+      {% for item in module.benefit %}
+      <div class="benefit-item">
+        <img src="{{ item.benefits_icon.src }}" alt="{{ item.benefits_icon.alt }}" {{ sizeAttrs }}>
+        <h3 class="underline center">{{ item.benefits_title }}</h3>
+        {{ item.description }}
+      </div>  
+      {% endfor %}
+    </div>  
+  </div>
+{% endif %}
+
+{% if module.text_color.color != '#ffffff' %}
+  <style>
+    #{{ name }}.benefits-3-col div.benefit-item h3, #{{ name }}.benefits-3-col div.benefit-item {
+      color: {{ module.text_color.color }};
+    }
+  </style>
+{% endif %}

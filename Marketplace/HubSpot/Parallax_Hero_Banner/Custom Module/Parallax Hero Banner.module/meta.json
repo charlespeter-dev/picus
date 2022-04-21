@@ -1,0 +1,12 @@
+{
+  "global" : false,
+  "icon" : "https://cdn2.hubspot.net/hubfs/298884/Module%20Icons/header-01.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 46575132795,
+  "js_assets" : [ {
+    "url" : "Marketplace%2FHubSpot%2FParallax_Hero_Banner%2FAttached_asset%2Fparaxify.min.js",
+    "autoload" : true,
+    "name" : "paraxify.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

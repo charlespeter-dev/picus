@@ -1,0 +1,30 @@
+.use-case-cta {
+  background-size: cover;
+  padding: 60px 10px 30px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+.use-case-cta .message {
+  width: 70%;
+  float: left;
+}
+.use-case-cta .cta-one {
+  width: 15%;
+  float: left;
+  padding-top: 25px;
+}
+.use-case-cta .cta-two {
+  width: 15%;
+  float: left;
+  padding-top: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .use-case-cta .message {
+    width: 100%;
+  }
+  .use-case-cta .cta-one, .use-case-cta .cta-two {
+    width: 100%;
+  }
+}

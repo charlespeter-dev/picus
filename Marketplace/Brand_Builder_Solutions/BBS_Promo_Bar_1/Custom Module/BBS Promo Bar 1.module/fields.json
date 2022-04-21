@@ -1,0 +1,61 @@
+[ {
+  "id" : "53bd41f0-f393-773a-3e44-27f7bbf929f8",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#4386f5",
+    "opacity" : 100
+  }
+}, {
+  "id" : "71230668-0e74-e9ef-708b-e7e63c0c1499",
+  "name" : "text_color",
+  "display_width" : null,
+  "label" : "Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7f6146ed-a73c-0ab1-4efe-a9a5f130edcf",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Call to Action Header Goes Here</h2>"
+}, {
+  "id" : "b2b6dcd3-bfd2-e5ce-bf2e-428cc1cb19cc",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "type" : "cta",
+  "default" : [ "2946232e-beda-4ec8-a0f2-9a64d0e17173", "2946232e-beda-4ec8-a0f2-9a64d0e17173" ]
+}, {
+  "id" : "500ec261-f5ef-2efd-05cc-eb3468abbbf6",
+  "name" : "custom_css_class",
+  "display_width" : null,
+  "label" : "Custom CSS Class",
+  "help_text" : "If you want to further customize the module, enter your own custom CSS class here. The class will be applied to the outermost wrapper of the module.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

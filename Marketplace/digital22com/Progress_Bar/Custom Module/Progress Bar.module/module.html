@@ -1,0 +1,27 @@
+{% set mid = module | pprint | md5 %}
+  <div class="progress-container" style="background: rgba({{ module.background_color.color|convert_rgb }},{{ module.background_color.opacity/100 }});height: {{ module.bar_thickness }}px;">
+    <div id="{{ mid }}progressBar" style="background: rgba({{ module.bar_color.color|convert_rgb }},{{ module.bar_color.opacity/100 }});height: {{ module.bar_thickness }}px;" class="progress-bar"></div>
+  </div>
+{% require_js %}
+<script>
+$(window).scroll(function(){
+  myFunction{{ mid }}();
+})
+
+function myFunction{{ mid }}() {
+  
+  var maxwidth  = $('#{{ mid }}progressBar').closest('.progress-container').parent().width();
+  $('#{{ mid }}progressBar').closest('.progress-container').css('max-width',maxwidth);
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("{{ mid }}progressBar").style.width = scrolled + "%";
+}
+</script>
+{% end_require_js %}
+
+{% require_css %}
+<style>
+ 
+</style>
+{% end_require_css %}

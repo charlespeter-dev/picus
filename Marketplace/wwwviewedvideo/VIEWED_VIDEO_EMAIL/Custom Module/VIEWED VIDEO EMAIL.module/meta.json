@@ -1,0 +1,18 @@
+{
+  "content_tags" : [ {
+    "name" : "VIDEO",
+    "source" : "USER"
+  }, {
+    "name" : "EMAIL",
+    "source" : "USER"
+  }, {
+    "name" : "CODE",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "icon" : "https://cdn2.hubspot.net/hubfs/6235269/viewed-icon.svg",
+  "host_template_types" : [ "EMAIL" ],
+  "module_id" : 62059255934,
+  "label" : "VIDEO EMAIL VIEWED",
+  "is_available_for_new_content" : true
+}

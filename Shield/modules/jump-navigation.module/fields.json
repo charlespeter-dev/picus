@@ -1,0 +1,76 @@
+[ {
+  "id" : "6ca423c6-1bf4-fe6b-041f-b78c4c3cd421",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Meet our people"
+}, {
+  "id" : "e80b660e-679a-571a-d745-f1907109b0cc",
+  "name" : "jumplink",
+  "display_width" : null,
+  "label" : "Jumplink",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : "57af1093-6ca9-d32f-668b-d2d995c6d81c",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "57af1093-6ca9-d32f-668b-d2d995c6d81c",
+    "name" : "link_title",
+    "display_width" : null,
+    "label" : "Link Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "LINK"
+  }, {
+    "id" : "c7c5b0af-9a28-d10d-3575-011659346ebe",
+    "name" : "section_id",
+    "display_width" : null,
+    "label" : "Section ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "team"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "link_title" : "LINK",
+    "section_id" : "team"
+  }, {
+    "link_title" : "LINK",
+    "section_id" : "team"
+  }, {
+    "link_title" : "LINK",
+    "section_id" : "team"
+  } ]
+}, {
+  "id" : "bfea8eac-1b61-745f-1e56-3869882a1acd",
+  "name" : "link_colour",
+  "display_width" : null,
+  "label" : "Link Colour",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#003C5D",
+    "opacity" : 100
+  }
+} ]

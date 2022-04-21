@@ -1,0 +1,18 @@
+<div class="event-speakers">
+  <div class="row-fluid">
+    <div class="span12">
+      <h2>{{ module.title }}</h2>
+    </div>
+  </div>
+  {% for item in module.speakers %}
+    <div class="row-fluid speaker">
+      <div class="span3 speaker-photo">
+        <img src="{{ item.photo.src }}"  alt=" {{ item.speaker_name }} />
+      </div>
+      <div class="span9 speaker-details">
+        <h3>{{ item.speaker_name }}</h3>
+        <p>{{ item.speaker_title }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,16 @@
+{
+  "content_tags" : [ {
+    "name" : "LAYOUT",
+    "source" : "USER"
+  }, {
+    "name" : "ANIMATION",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "inline_help_text" : "Countdown timer to help users add coming soon section on their pages",
+  "icon" : "clock",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 53903038280,
+  "label" : "Countdown Timer",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,204 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1581679448417297",
+        "label" : "Header Wrapper",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "custom-header-wrapper",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1581679439205264",
+            "label" : "Header",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "custom-header",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_13884995577962947",
+                "label" : "Page Center",
+                "type" : "cell",
+                "params" : {
+                  "cell" : false,
+                  "cells" : [ ],
+                  "css_class" : "page-center",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "root" : false,
+                  "row" : false,
+                  "starting_html" : "",
+                  "value" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 3,
+                    "name" : "module_1581679218825121",
+                    "label" : "Logo",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "cm-logo-wrapper",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1581679216896114",
+                        "label" : "Logo - Picus_February2020",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "logo_url" : "https://www.picussecurity.com",
+                          "overrideable" : false,
+                          "path" : "/Picus_February2020 Theme/Custom Modules/Logo - Picus_February2020",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Logo - Picus_February2020",
+                          "wrapping_html" : "",
+                          "select_sticky_logo" : {
+                            "override_inherited_src" : true,
+                            "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/picuslogo.svg",
+                            "alt" : "Picus Security Logo",
+                            "width" : 120,
+                            "height" : 120
+                          },
+                          "logo" : {
+                            "override_inherited_src" : true,
+                            "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/picuslogowhite.svg",
+                            "alt" : "Picus Security Logo",
+                            "width" : 120,
+                            "height" : 120
+                          }
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "3" : {
+                    "x" : 3,
+                    "w" : 9,
+                    "name" : "module_151811933987828",
+                    "label" : "Menu",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "custom-menu-primary",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "id" : 25850202719,
+                      "overrideable" : false,
+                      "path" : "@hubspot/menu",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Menu",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

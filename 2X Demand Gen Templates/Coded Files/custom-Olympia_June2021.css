@@ -1,0 +1,485 @@
+.formContainer .actions
+{
+    width:fit-content !important; 
+}
+@media (min-width: 769px)
+{
+  .formContainer .actions
+  {
+      width: fit-content !important;
+  }
+}
+.bodyContent .hs-error-msg:before
+{
+  content:"*"; 
+}
+.bodyContent .hs-error-msg
+{
+    font-style: italic; 
+    color:red;
+}
+.bodyContent ul
+{
+    padding-left:0px; 
+}
+.bodyContent ul li input[type=radio]
+{
+    width:auto;
+    height: 10px;
+    margin-right: 10px;
+}
+.bodyContent ul li::before {
+    display:none !important;
+}
+/** Place After Override Hubspot CSS **/
+
+@import url('//fonts.googleapis.com/css?family=Arial:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic|Poppins:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic|Open+Sans:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic&subset=latin,latin-ext');
+@import url('//fonts.googleapis.com/css?family=OpenSans:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic|Poppins:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic|Open+Sans:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic&subset=latin,latin-ext');
+
+
+/* @import url('//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  color: #010101;
+  font-size: 16px;
+  font-family: Open Sans,sans-serif;
+  line-height: 26px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+}
+
+
+h1{
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 20px; 
+}
+
+
+.fontFamily-Arial{
+   font-family: Arial,sans-serif; 
+}
+
+/**FONT SIZE**/
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-24{
+  font-size: 24px;
+}
+
+.fs-20{
+  font-size: 20px; 
+}
+
+
+/*line height*/
+
+.lh-46{
+  line-height:46px;
+}
+
+.lh-32{
+  line-height:32px;
+}
+
+
+/*colors*/
+
+.bg-black{
+  background: #000;
+}
+
+.bg-grey{
+ background:#F5F5F6; 
+}
+
+.bg-yellow{
+  background: #FDBB4F; 
+}
+
+.bg-red{
+  background:#DD3333;
+}
+
+.text-darkBlue{
+  color:#0C4166;
+}
+
+.text-blue{
+  color:#1689CA;
+}
+
+.text-red{
+  color:#DD3333;
+}
+
+/** text deco**/
+
+.textUnderline {
+  text-decoration: underline;
+}
+
+
+/* margins */
+.mx--15{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+
+/** BORDER RADIUS **/
+
+.borderRounded-D20px-M0px{
+  border-radius:0px;
+}
+
+
+/** positions **/
+
+.top-D--110px-M0px{
+  top:0px;
+}
+
+.top-D--140px-M0px{
+  top:0px;
+}
+
+.top-D--76px-M0px{
+  top: 0px;
+}
+
+.Left-D--100px-M0px{
+  left: 0px;
+}
+
+
+
+
+/* banners */
+.header-container-wrapper .row-fluid , .header-container-wrapper .header-container , .body-container-wrapper .body-container{
+  display:block; 
+  padding: 0!important;
+/*   width: 100%; */
+}
+
+.bannerCustom {
+  width: 100%;
+  min-height: 92px;
+  margin: 0; 
+}
+
+.bannerCustom .textHeader{
+  width: 66vh;
+}
+
+.textHeader h6 {
+  letter-spacing: 2.4px;
+}
+
+.textHeader h2{
+  line-height: 28px;
+  font-size: 24px;
+}
+
+.bannerCustomMobile {
+  width: 100%;
+  margin: 0; 
+}
+
+.bannerCustomMobile .textMobile:nth-child(1){
+  font-size: 16px;
+}
+
+.bannerCustomMobile .textMobile:nth-child(2){
+  font-size: 32px;
+}
+
+.logoBanner img {
+  width: 110px;
+  margin-top: 20px;
+}
+  
+.btnDownload{
+  border: 3px solid #DD3333;  
+  max-width: 100%;
+  height: 40px;
+  padding: 4px 20px;
+}
+
+.btnDownload a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight:bold;
+}
+
+.btnDownload a:hover{
+  text-decoration: none;
+}
+
+.thumbnailImg img{
+  width: 70%;
+}
+
+.bodyContent ul {
+  list-style: none;
+}
+
+.bodyContent ul li::before {
+  content: "\2022";
+  color: #000000;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+/* custom Form section */
+.formContainer .form-title{
+  margin-top: 18px;
+  margin-bottom: 20px;
+  color:#000000;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.formContainer .hs-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer label {
+  display:block;
+  font-size: 14px;
+  color:#000000;
+}
+
+.formContainer .hs-error-msg {
+  display:inline-block;
+}
+
+.formContainer  .actions{
+  border: 3px solid #DD3333;
+  background: #DD3333;
+  border-radius: 5px;
+  text-align: center;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.formContainer  .hs-button{
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight:800;
+}
+
+.formContainer  .hs-button:focus{
+  outline:transparent;
+}
+
+.formContainer .input {
+  display: block;
+  height: auto;
+  font-size: 14px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.formContainer .input:before {
+  display: block;
+  content: " ";
+  background-image: url(https://f.hubspotusercontent10.net/hubfs/5914566/icon5-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+
+.formContainer.hide-icons .input:before{
+  display:none;
+}
+
+.formContainer.hide-icons .input input{
+  padding: 5px 10px 5px 10px;
+}
+
+.formContainer .input input{
+  border: 0px solid #B9B9B9;
+  height: 40px;
+  width: 100%;
+  padding: 5px 10px 5px 50px;
+}
+
+.formContainer .input input:focus{
+  outline: transparent;
+}
+
+.formContainer ::-webkit-input-placeholder { /* Edge */
+  color: #B9B9B9;
+  font-weight: 700;
+}
+
+.formContainer :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #B9B9B9;
+  font-weight: 700;
+}
+
+.formContainer ::placeholder {
+  color: #B9B9B9;
+  font-weight: 700;
+}
+
+
+.formContainer  .hs_firstname .input:before {
+  background-image: url(https://f.hubspotusercontent10.net/hubfs/5914566/HRsoft_march2021/icon-name-grey.png);
+}
+
+.formContainer  .hs_lastname .input:before {
+  background-image: url(https://f.hubspotusercontent10.net/hubfs/5914566/HRsoft_march2021/icon-name-grey.png);
+}
+
+.formContainer  .hs_email .input:before {
+  background-image: url(https://f.hubspotusercontent10.net/hubfs/5914566/2X%20Demand%20Gen%20Files/Test/icon-email.png);
+}
+.formContainer  .hs_company .input:before {
+  background-image: url(https://f.hubspotusercontent10.net/hubfs/5914566/HRsoft_march2021/icon-company-grey.png);
+}
+
+.hs_phone .input:before {
+  background-image: url(https://f.hubspotusercontent10.net/hubfs/5914566/HRsoft_march2021/icon-contact-grey.png);
+}
+
+
+
+/* thankyou page */
+.thankyouContent {
+  width: 100%;
+  height: auto;
+} 
+.thankyouContent .leftContent .hs-image-widget{
+  width: 100px;
+}
+
+.thankyouContent .logo{
+  width: 80%;
+}
+
+.thankyouContent .btnDownload {
+  width: 100%;
+}
+
+/*RESPONSIVE*/
+
+
+@media (min-width: 769px){
+
+  .borderRounded-D20px-M0px{
+    border-radius:20px;
+  }
+  
+  .top-D--110px-M0px{
+    top:-110px;
+  }
+  .top-D--140px-M0px{
+    top:-140px;
+  }
+  
+  
+ .top-D--76px-M0px{
+  top: -76px;
+}
+
+.Left-D--100px-M0px{
+  left: -100px;
+}
+
+  
+  
+  .btnDownload{
+    max-width: 50%;
+  }
+  
+  .thumbnailImg img{
+     width: 50%;
+  }
+  
+  .formContainer .actions {
+    width: 100%;
+  }
+  
+  .textHeader h2{
+    line-height: 46px;
+    font-size: 36px;
+  }
+  
+  .thankyouContent .leftContent .hs-image-widget{
+    width: 176px;
+  }
+  
+  
+  .thankyouContent {
+    width: 100%;
+    height: 93vh;
+  } 
+
+  .thankyouContent .logo{
+    width: 310px;
+    top: 5px;
+  }
+
+  .thankyouContent .btnDownload {
+    width: 45%;
+  } 
+
+}
+
+
+@media (min-width: 992px){
+  
+  .bannerCustom {
+    width: 100%;
+    min-height: 300px;
+    margin: 0px; 
+  }
+  
+  .logoBanner img{
+    width: 202px;
+    margin-top:0px;
+  }
+
+  .thumbnailImg img{
+    width: 100%;
+  }
+  
+}
+
+
+
+

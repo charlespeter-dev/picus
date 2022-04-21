@@ -1,0 +1,53 @@
+[ {
+  "id" : "ebd5f521-dc51-c50a-de08-7f2cc59d6df1",
+  "name" : "facebook_link",
+  "display_width" : null,
+  "label" : "Facebook Link",
+  "help_text" : "The event or company Facebook page to follow",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+}, {
+  "id" : "1c2db86d-cbf9-9331-b77f-a637ca4f765a",
+  "name" : "twitter_link",
+  "display_width" : null,
+  "label" : "Twitter Link",
+  "help_text" : "The event or company Twitter link to follow",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+}, {
+  "id" : "235c8f77-d413-708c-273a-8dd77f988b26",
+  "name" : "linkedin_link",
+  "display_width" : null,
+  "label" : "LinkedIn Link",
+  "help_text" : "The event or company LinkedIn link to follow",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+}, {
+  "id" : "725682af-a03d-dedf-1f6e-c2c63bc06c59",
+  "name" : "instagram_link",
+  "display_width" : null,
+  "label" : "Instagram Link",
+  "help_text" : "The event or company Instagram account to follow",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+} ]

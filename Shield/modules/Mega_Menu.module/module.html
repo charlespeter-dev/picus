@@ -1,0 +1,78 @@
+    <div class="custom-menu-primary-mega header__navigation header--element">
+      {% for item in module.menu_items %}
+          {% if item.enable_sub_menu %}
+          <div class="dropdown">
+          {% endif %}  
+          <div class="hs-menu-item hs-menu-depth-1{% if item.enable_sub_menu %} hs-item-has-children{% else %} menu-button{% endif %}">
+            <a href="{% if item.enable_top_level_link %}{{ item.link_field.url.href }}{% endif %}" class="top-nav {{ item.menu_title|lower|replace(' ', '-') }}">{{ item.menu_title }}</a>
+          </div>
+              {% if item.enable_sub_menu %}
+              <div class="dropdown-content">
+                <div class="page-center">
+                  <img src="https://www.picussecurity.com/hubfs/Shield/Images/dt-menu-arrow-back.svg" alt="menu-arrow" class="sub-menu-back desktop-hidden" />
+                  {% if item.sub_menu_content.menu_width == "2col" %}
+                  <div class="menu-type two-col">
+                    <div class="menu1">
+                      <h3>{{ item.sub_menu_content.column_1_title }}</h3>
+                      {% simple_menu menu_tree="{{ item.sub_menu_content.column_1_menu }}" %}
+                    </div>
+                    <div class="menu2">
+                      <h3>{{ item.sub_menu_content.column_2_title }}</h3>
+                      {% simple_menu menu_tree="{{ item.sub_menu_content.column_2_menu }}" %}
+                    </div>
+                    <div class="overview">
+                      {{ item.sub_menu_content.featured_content }}
+                    </div>
+                  </div>
+                  {% elif item.sub_menu_content.menu_width == "3col" %}
+                  <div class="menu-type three-col">
+                    <div class="menu1">
+                      <h3>{{ item.sub_menu_content.column_1_title }}</h3>
+                      {% simple_menu menu_tree="{{ item.sub_menu_content.column_1_menu }}" %}
+                    </div>
+                    <div class="menu2">
+                      <h3>{{ item.sub_menu_content.column_2_title }}</h3>
+                      {% simple_menu menu_tree="{{ item.sub_menu_content.column_2_menu }}" %}
+                    </div>
+                    <div class="menu3">
+                      <h3>{{ item.sub_menu_content.column_3_title }}</h3>
+                      {% simple_menu menu_tree="{{ item.sub_menu_content.column_3_menu }}" %}
+                    </div>
+                    <div class="overview">
+                      {{ item.sub_menu_content.featured_content }}
+                    </div>
+                  </div>
+                  {% else %}
+                  <div class="menu-type resources three-col">
+                    {% set posts = blog_recent_posts('35190412163', 2) %}
+                    {% for post in posts %}
+                    <div class="menu{{ loop.index }}">
+                        <div class="resource-post">
+                          <a href="{{ post.absolute_url }}">
+                            <div class="post-image" style="background-image: url({{ post.featured_image }});">
+
+                            </div>
+                          </a>
+                          <div class="menu-post-content">
+                            <a href="{{ post.absolute_url }}"><h4>{{ post.name }}</h4></a>
+                            <a href="{{ post.absolute_url }}"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/latest-read-more.png" alt="read-more-icon" ></a>
+                          </div>
+                        </div>
+                    </div>    
+                    {% endfor %}
+                    <div class="menu3">
+                      {% simple_menu menu_tree="{{ item.sub_menu_content.additional_menu }}" %}
+                    </div>
+                    <div class="overview">
+                      {{ item.sub_menu_content.featured_content }}
+                    </div>
+                  </div>
+                  {% endif %}
+                </div>  
+              </div>
+              {% endif %}
+          {% if item.enable_sub_menu %}  
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>

@@ -1,0 +1,22 @@
+{% require_css %}
+<style>
+.Evoque_progressBar { 
+  background-color:{{ module.progress_bar_color.color }} !important;
+}
+.Evoque_progressFull {
+  height:{{ module.progress_bar_height }}px !important;
+}  
+</style>
+{% end_require_css %}
+{% require_js position="footer" %}
+<script>  
+$(window).load(function(){
+  $(document.body).append('<div class="Evoque_progressFull"><div class="Evoque_progressBar"></div></div>')
+  $(window).scroll(function() {
+    var wintop = $(window).scrollTop(), docheight = $('body').height(), winheight = $(window).height();
+    var totalScroll = (wintop/(docheight-winheight))*100;
+    $(".Evoque_progressBar").css("width",totalScroll+"%");
+  });
+}); 
+</script>
+{% end_require_js %}

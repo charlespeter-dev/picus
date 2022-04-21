@@ -1,0 +1,82 @@
+  <div class="container-fluid d-flex flex-column justify-content-center pb-4 ">
+
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-7 text-center text-lg-left mt-md-5 fontFamily-Arial">
+          <div class="mt-4 mb-5">
+
+            {% for item in module.body_content_desktop %}
+            <p class=" d-none d-md-block col-md-11 p-0 {{ item.bottom_spacing_desktop }}"
+               style="color:{{ item.font_color.color }}; 
+                      font-size:{{ item.font_size }}; 
+                      font-weight: {{ item.font_weight }};
+                      line-height:{{ item.line_height }}; ">
+              {{ item.content_text }}
+            </p>
+            {% endfor %}
+            
+            <!--mobile -->
+            {% for item in module.body_content_mobile %}
+            <p class=" d-md-none d-block {{ item.bottom_spacing_mobile }}  "
+               style="color:{{ item.font_color.color }}; 
+                      font-size:{{ item.font_size }}; 
+                      font-weight: {{ item.font_weight }};
+                      line-height:{{ item.line_height }}; ">
+              {{ item.content_text }}
+            </p>
+            {% endfor %}
+
+            {% if module.button_text %}
+            <div class=" btn btn-outline  btnDownload bg-red fontFamily-Arial ">
+              <a href="{{ module.button_text_link }}" style="display:block;">{{ module.button_text }}</a>
+            </div>
+            {% endif %}
+
+            <!--desktop info-->
+            <div class="mt-3 pt-md-2 d-none d-lg-block">
+              <div class="text-black font-weight-normal col-md-10 p-0 pr-md-3 ">
+             {#  
+               {{ module.information_text.info_text}} 
+               <a class="text-red fontFamily-Arial"  href="{{ module.information_text.info_link}}">
+                <span style="text-decoration:underline;"> {{ module.information_text.link_name}}</span>.
+               </a>
+              #}
+                
+                {{ module.information_text.richtext_field }}
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-5" align="center">
+          <img style="{{ module.right_image_inline_style }}" class="w-100 px-3 px-md-2 mt-4 mb-3 mb-md-0 position-relative" src="{{ module.right_image.src}}">
+      
+          <!-- mobile info -->
+          <div class="mt-5 mb-3 d-block d-lg-none">
+            
+            <div class="text-black font-weight-normal px-3 text-center fontFamily-Arial">
+              {#           
+              {{ module.information_text.info_text}}  
+               <a class="text-red  fontFamily-Arial " href="{{ module.information_text.info_link}}">
+                <span style="text-decoration:underline;">{{ module.information_text.link_name}}</span>.
+              </a>
+             #}
+             
+              {{ module.information_text.richtext_field }}
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    
+    
+  </div>

@@ -1,0 +1,66 @@
+<div class="">
+  <div class="global-row mainpage-notifications">
+    <div class="row">
+      <div id="news" class="colmd6 col12 notifications-left midgraybg">
+        <div class="row">
+          <div class="collg8 colmd11 colsm12 col12 offsetlg4 offsetmd1">
+            <h2>{{ module.news_group.title }}</h2>
+            {% for item in module.news_group.items %}
+              <div class="news-item">
+                {% set href = item.link.url.href %}
+                {% if item.link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                {% endif %}
+                {% if href %}<a href="{{ href }}"
+                   {% if item.link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if item.link.no_follow %}rel="nofollow"{% endif %}>{% endif %}
+                  <div class="row">
+                    <div class="colsm7 col12">
+                      <p class="news-header">{{ item.heading }}</p>
+                    </div>
+                    <div class="colsm5 col12">
+                      {% if item.image.src %}
+                        <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" />
+                      {% endif %}
+                    </div>
+                  </div>
+                {% if href %}</a>{% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div id="events" class="colmd6 col12 notifications-right lightgraybg">
+        <div class="row">
+          <div class="collg8 colmd11 col12">
+            <h2>{{ module.events_group.title }}</h2>
+            {% for item in module.events_group.items %}
+              {% set href = item.link.url.href %}
+              {% if item.link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              <div class="news-item">
+                {% if href %}<a href="{{ href }}"
+                 {% if item.link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if item.link.no_follow %}rel="nofollow"{% endif %}>{% endif %}
+                  <div class="row">
+                    <div class="colsm7 col12">
+                      <p class="news-header">{{ item.heading }}</p>
+                      <p>{{ item.location }}</p>
+                      <p>{{ item.event_date }}</p>
+                    </div>
+                    <div class="colsm5 col12">
+                      {% if item.image.src %}
+                        <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" title="{{ item.image.alt }}" />
+                      {% endif %}
+                    </div>
+                  </div>
+                  {% if href %}</a>{% endif %}
+              </div>
+            {% endfor %}          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

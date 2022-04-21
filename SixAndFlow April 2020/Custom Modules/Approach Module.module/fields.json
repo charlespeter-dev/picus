@@ -1,0 +1,130 @@
+[ {
+  "id" : "b43a92af-9587-eccc-9bd8-c88d346794ef",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F2F2F2",
+    "opacity" : 100
+  }
+}, {
+  "id" : "579e9ed2-da92-bef0-3c8b-7272e853cf28",
+  "name" : "header_text",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "OUR APPROACH TO Marketing as a service"
+}, {
+  "id" : "b2174189-a8ac-2210-524f-36393c0bc06c",
+  "name" : "content_section",
+  "display_width" : null,
+  "label" : "Copy Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>For inbound marketing to be really effective, it should be multi-channel and built around a long-term strategy. We have plenty of experience in making it work, but we know that every business is different, so you can use the services that suit you best.</p>"
+}, {
+  "id" : "439cbe4e-5a52-6e16-0350-a287b35c9d64",
+  "name" : "card_group",
+  "display_width" : null,
+  "label" : "Card Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "26554a21-8871-5092-8d6d-eb856cda35fc",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "26554a21-8871-5092-8d6d-eb856cda35fc",
+    "name" : "card_header_text",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "INBOUND MARKETING"
+  }, {
+    "id" : "5fa0e2f6-ad69-4da9-3a97-4111a1db4e0a",
+    "name" : "copy_text",
+    "display_width" : null,
+    "label" : "Copy Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<ul>\n<li>Content Marketing</li>\n<li>Social Media Marketing</li>\n<li>Pay Per Click Advertising</li>\n<li>Paid Social Media Advertising</li>\n<li>Growth-Driven Website Design</li>\n<li>Search Engine Optimisation</li>\n<li>Digital PR</li>\n<li>Influencer Marketing &amp; Outreach</li>\n<li>Marketing Automation</li>\n</ul>"
+  }, {
+    "id" : "9932d543-5802-486b-30d2-a31a9825ff19",
+    "name" : "card_background_color",
+    "display_width" : null,
+    "label" : "Card Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#F4C540",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "df2fdd67-5905-1de6-cc3c-99820f45c4b7",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "card_header_text" : "INBOUND MARKETING",
+    "copy_text" : "<ul>\n<li>Content Marketing</li>\n<li>Social Media Marketing</li>\n<li>Pay Per Click Advertising</li>\n<li>Paid Social Media Advertising</li>\n<li>Growth-Driven Website Design</li>\n<li>Search Engine Optimisation</li>\n<li>Digital PR</li>\n<li>Influencer Marketing &amp; Outreach</li>\n<li>Marketing Automation</li>\n</ul>",
+    "card_background_color" : {
+      "color" : "#F4C540",
+      "opacity" : 100
+    },
+    "color_field" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "card_header_text" : "INBOUND MARKETING",
+    "copy_text" : "<ul>\n<li>Content Marketing</li>\n<li>Social Media Marketing</li>\n<li>Pay Per Click Advertising</li>\n<li>Paid Social Media Advertising</li>\n<li>Growth-Driven Website Design</li>\n<li>Search Engine Optimisation</li>\n<li>Digital PR</li>\n<li>Influencer Marketing &amp; Outreach</li>\n<li>Marketing Automation</li>\n</ul>",
+    "card_background_color" : {
+      "color" : "#F4C540",
+      "opacity" : 100
+    },
+    "text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "card_header_text" : "INBOUND MARKETING",
+    "copy_text" : "<ul>\n<li>Content Marketing</li>\n<li>Social Media Marketing</li>\n<li>Pay Per Click Advertising</li>\n<li>Paid Social Media Advertising</li>\n<li>Growth-Driven Website Design</li>\n<li>Search Engine Optimisation</li>\n<li>Digital PR</li>\n<li>Influencer Marketing &amp; Outreach</li>\n<li>Marketing Automation</li>\n</ul>",
+    "card_background_color" : {
+      "color" : "#F4C540",
+      "opacity" : 100
+    },
+    "text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  } ]
+} ]

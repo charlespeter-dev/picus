@@ -1,0 +1,29 @@
+{
+  "global" : false,
+  "icon" : "plus-square",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 60506393162,
+  "js_assets" : [ {
+    "url" : "Marketplace%2Fpoojabhimanicom%2Faccordion%2FAttached_asset%2FjQuery.js",
+    "autoload" : true,
+    "name" : "jQuery.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../Coded File/jquery_easing.js",
+    "name" : "jquery_easing.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../Coded File/jquery_accordion.js",
+    "name" : "jquery_accordion.js"
+  } ],
+  "other_assets" : [ {
+    "url" : "https://f.hubspotusercontent20.net/hubfs/8316329/minus-dark.png",
+    "autoload" : false,
+    "name" : "minus-dark.png"
+  }, {
+    "url" : "https://f.hubspotusercontent20.net/hubfs/8316329/plus-dark.png",
+    "autoload" : false,
+    "name" : "plus-dark.png"
+  } ],
+  "is_available_for_new_content" : true
+}

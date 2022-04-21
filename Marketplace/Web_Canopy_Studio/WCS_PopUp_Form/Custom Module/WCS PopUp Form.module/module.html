@@ -1,0 +1,33 @@
+<div class="wcs">
+  <div class="wcs-col-12 wcs-pop-the-form" style="background-color: {{ module.background_color.color }}">
+    <div class="wcs-col-12 wcs-page-center">
+      {% inline_rich_text field="callout_text" value="{{ module.callout_text }}" %}
+      <p style="text-align: center;">
+        <a class="wcs-cta-button" href="#tmp{{ name }}" rel="modal:open">{{ module.button_text }}</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="wcs">
+  <div id="tmp{{ name }}" class="wcs wcs-modal" style="display: none;">
+    <div class="wcs-col-12">
+        <div class="wcs-col-12">
+          {% inline_rich_text field="popup_form_title" value="{{ module.popup_form_title }}" %}
+        </div>
+        <div class="wcs-col-6">
+          {% inline_rich_text field="left_rich_text_field" value="{{ module.left_rich_text_field }}" %}
+        </div>
+        <div class="wcs-col-6 wcs-pform">
+          {% form
+            form_key="0e793ff6-6165-3ce5-7457-b0254042d467"
+            form_to_use="{{ module.popup_form.form_id }}"
+            response_response_type="{{ module.popup_form.response_type }}"
+            response_message="{{ module.popup_form.message }}"
+            response_redirect_id="{{ module.popup_form.redirect_id }}"
+            response_redirect_url="{{module.popup_form.redirect_url}}"
+          %}
+        </div>
+    </div>
+  </div>
+</div>

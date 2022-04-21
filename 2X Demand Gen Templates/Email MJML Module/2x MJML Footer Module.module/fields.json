@@ -1,0 +1,173 @@
+[ {
+  "id" : "3aa64959-aef3-477e-d431-9baa414d42b2",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#00395C",
+    "opacity" : 100
+  }
+}, {
+  "id" : "5b34dae1-cefa-55d1-61d6-5f2942a3b54c",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.picussecurity.com/hubfs/2x/38/logo.png",
+    "alt" : "logo",
+    "loading" : "lazy",
+    "width" : 101,
+    "height" : 25
+  }
+}, {
+  "id" : "28707d30-2db6-7b69-a913-fb36d18cad1a",
+  "name" : "font_size",
+  "display_width" : null,
+  "label" : "Font Size",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Font Size",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "12px"
+}, {
+  "id" : "613c04f2-ce01-edbd-5d85-d1980b5a66ae",
+  "name" : "line_height",
+  "display_width" : null,
+  "label" : "Line Height",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Line Height",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "14px"
+}, {
+  "id" : "e57ac3e4-7cf7-b58b-2a64-5f6d2e57846f",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#E6EAED",
+    "opacity" : 100
+  }
+}, {
+  "id" : "775da80d-183d-cc04-91db-fa62c68bef1e",
+  "name" : "padding_left",
+  "display_width" : null,
+  "label" : "Padding Left",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Padding Left",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "41px"
+}, {
+  "id" : "e66f62af-5c81-e5f1-f5d0-97cd4bac4fb1",
+  "name" : "padding_right",
+  "display_width" : null,
+  "label" : "Padding Right",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Padding Right",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "41px"
+}, {
+  "id" : "fcc6e8bc-2b66-01bb-e705-c1dd9847de24",
+  "name" : "footer_padding_top",
+  "display_width" : null,
+  "label" : "Footer Padding Top",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Footer Padding Top",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "40px"
+}, {
+  "id" : "95b50943-6004-ee59-3937-eb75492aa3b8",
+  "name" : "footer_padding_bottom",
+  "display_width" : null,
+  "label" : "Footer Padding Bottom",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Footer Padding Bottom",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "32px"
+}, {
+  "id" : "a0da3396-4809-1f95-afdc-361ce257760a",
+  "name" : "company_padding_top",
+  "display_width" : null,
+  "label" : "Company Padding Top",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Company Padding Top",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "16px"
+}, {
+  "id" : "bd0f27c0-3b00-46ef-9b1d-ff4464f3d83b",
+  "name" : "copyright_padding_top",
+  "display_width" : null,
+  "label" : "Copyright Padding Top",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Company Padding Top",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "10px"
+}, {
+  "id" : "93c66b2f-756f-ed57-be02-1e5ec2ef25bb",
+  "name" : "subscription_padding_top",
+  "display_width" : null,
+  "label" : "Subscription Padding Top",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Subscription Padding Top",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "20px"
+}, {
+  "id" : "699e01cf-f9bf-4cab-d393-2ee298829502",
+  "name" : "copyright_text",
+  "display_width" : null,
+  "label" : "Copyright Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Copyright Text",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "&#169; 2021 Copperfield - All rights reserved"
+} ]

@@ -1,0 +1,19 @@
+{% set href = module.cta_link.url.href %}
+{% if module.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.cta_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.cta_link.rel %}rel="{{ module.cta_link.rel }}"{% endif %}
+	>
+	<button type="button" style="
+   background-color:{{ module.background_color.color }};
+   color:{{ module.color_field.color }};
+   border:none;
+   width:{{ module.cta_width }};
+   height:{{ module.cta_height }};
+   border-radius:{{ module.border_radius }};
+  ">
+    {{ module.cta_text }}
+  </button>
+</a>

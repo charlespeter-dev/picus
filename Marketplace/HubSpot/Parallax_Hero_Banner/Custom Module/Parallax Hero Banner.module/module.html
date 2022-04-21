@@ -1,0 +1,33 @@
+{####################################
+     HubSpot Parallax Hero Banner 
+#####################################
+This module was provided as an easy
+to implement option for users, and 
+also serves as a simple example for 
+developers to learn from & work with.
+#-----------------------------------#}
+
+
+<div id="hs-hero-{{ name }}" class="hs-hero" style="background-image: url('{{ module.background.background_image.src }}'); padding-top: {{ module.settings.size }}px; padding-bottom: {{ module.settings.size }}px;">
+  <div class="hs-hero__content hs-hero__content--{{ module.settings.button_alignment }}">
+    <main>
+      <h1>{% inline_text field="heading" value="{{ module.heading }}" %}</h1>
+      {% inline_rich_text field="main_content" value="{{ module.main_content }}" %}
+    </main>
+    <footer>
+      {% cta guid="{{ module.cta }}" %}
+    </footer>
+  </div>
+</div>
+{% require_css %}
+<style>
+  /* Dynamic Background Styles */
+  #hs-hero-{{ name }}.hs-hero:before {
+    background-color: {{ module.background.overlay_color }};
+    opacity: .{{ module.background.overlay_opacity }};
+  }
+  #hs-hero-{{ name }}.hs-hero {
+    color: {{ module.settings.text_color }};
+  }
+</style>
+{% end_require_css %}

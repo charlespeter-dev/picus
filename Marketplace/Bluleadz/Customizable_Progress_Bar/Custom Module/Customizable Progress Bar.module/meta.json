@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "icon" : "https://www.bluleadz.com/hubfs/Icons/icon--tools.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 61863347334,
+  "is_available_for_new_content" : true
+}

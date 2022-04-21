@@ -1,0 +1,59 @@
+[ {
+  "id" : "33c03bed-5481-14d3-b8df-da0ead0ef229",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/bg.png",
+    "alt" : "Platform",
+    "width" : 1680,
+    "height" : 736,
+    "max_width" : 1680,
+    "max_height" : 736
+  }
+}, {
+  "id" : "586aab34-380e-682e-c5bc-d24c531e97d2",
+  "name" : "left_content",
+  "display_width" : null,
+  "label" : "Left Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>Solution</h3>\n<p>By continuously testing defense layers with real cyber-attacks in production environments, Picus critically enhances the cyber-attack readiness of an enterprise.</p>"
+}, {
+  "id" : "ccf17108-8e08-35c7-6eb3-33538a4038dd",
+  "name" : "right_content",
+  "display_width" : null,
+  "label" : "Right Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>How is it beneficial?</h3>\n<p>Companies can study their security strengths and weaknesses with our trend reports. This allows them to decide on their next security investments with high precision. Additionally, incident and change management is improved by validating the outcomes of the actions taken.</p>"
+}, {
+  "id" : "a008434d-050d-3385-bc39-66e0d366900f",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/simulation-img.png",
+    "alt" : "Dashboard",
+    "width" : 2598,
+    "height" : 1550,
+    "max_width" : 2598,
+    "max_height" : 1550
+  }
+} ]

@@ -1,0 +1,16 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 42891027769,
+  "css_assets" : [ {
+    "url" : "Marketplace%2FWeb_Canopy_Studio%2FWCS_PopUp_Form%2FAttached_asset%2FJquery-Modal.css",
+    "autoload" : true,
+    "name" : "Jquery-Modal.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "Marketplace%2FWeb_Canopy_Studio%2FWCS_PopUp_Form%2FAttached_asset%2FJquery-Modal-Script.js",
+    "autoload" : true,
+    "name" : "Jquery-Modal-Script.js"
+  } ],
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,33 @@
+[ {
+  "id" : "9fd04576-c748-b09e-a73e-6e4a9de2b1b0",
+  "name" : "use_featured_image",
+  "display_width" : null,
+  "label" : "Use Featured Image",
+  "required" : false,
+  "locked" : false,
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "0cd4905a-0cf5-cb4b-d533-737dd1784ea4",
+  "name" : "custom_listing_image",
+  "display_width" : null,
+  "label" : "Custom Listing Image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "9fd04576-c748-b09e-a73e-6e4a9de2b1b0",
+    "controlling_value_regex" : "true",
+    "operator" : "NOT_EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }
+} ]

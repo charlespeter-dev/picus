@@ -1,0 +1,16 @@
+{
+  "content_tags" : [ {
+    "name" : "SINGLE_COLUMN",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "DRAG_AND_DROP",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "OTHER_INDUSTRY",
+    "source" : "MARKETPLACE"
+  } ],
+  "global" : false,
+  "host_template_types" : [ "EMAIL" ],
+  "module_id" : 2126598,
+  "is_available_for_new_content" : true
+}

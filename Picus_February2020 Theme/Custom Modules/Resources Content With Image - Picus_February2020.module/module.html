@@ -1,0 +1,32 @@
+<div class="resources-content-with-image-wrapper">
+  <div class="global-row resources-content">
+    <div class="page-center">
+      <div class="row align-items-center">
+        <div class="colmd7 col12">
+          {% if module.title %}<h1>{{ module.title }}</h1>{% endif %}
+          {{ module.content }}
+          {% if module.select_button_type %}
+            {% if module.select_button_type == 'standard' %}
+              {% set href = module.button_link.url.href %}
+              {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% if module.button_text and href %}
+              <a href="{{ href }}"
+                 {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.button_link.no_follow %}rel="nofollow"{% endif %} class="btn btn-white">{{ module.button_text }}</a>
+              {% endif %}
+            {% else %}
+              {% cta guid="{{ module.select_cta }}" %}
+            {% endif %}
+          {% endif %}
+        </div>
+        <div class="colmd5 col12 text-center pt-md-3">
+          {% if module.image.src %}
+            <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" title="{{ module.image.alt }}">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

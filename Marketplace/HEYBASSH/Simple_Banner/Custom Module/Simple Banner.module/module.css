@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+.hero-banner{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  padding: 120px 30px 100px;
+}
+.hero-banner h1,
+.hero-banner .hero-banner--subheading p,
+.hero-banner .hero-banner--subheading{
+  color: white;
+}
+.hero-banner h1 {
+  font-size: 60px;
+}
+.hero-banner .hero-banner--subheading p,
+.hero-banner .hero-banner--subheading {
+  font-size: 24px;
+}
+.hero-banner--container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.obj--center{
+  text-align:center;
+}
+.obj--left{
+  text-align:left;
+}
+.obj--right{
+  text-align:right;
+}
+.hero-banner--button {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 30px;
+  background-color: purple;
+  margin-top:20px;
+  display: inline-block;
+}

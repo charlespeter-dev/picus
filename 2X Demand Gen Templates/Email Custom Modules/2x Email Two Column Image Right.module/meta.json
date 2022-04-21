@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "EMAIL" ],
+  "module_id" : 68870084505,
+  "label" : "2x Email Two Column Image Right",
+  "is_available_for_new_content" : true
+}

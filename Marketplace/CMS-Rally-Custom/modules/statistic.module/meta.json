@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "../../images/module-icons/generate-chart.svg",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 30799787147,
+  "label" : "Statistic",
+  "is_available_for_new_content" : true
+}

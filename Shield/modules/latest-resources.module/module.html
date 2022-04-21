@@ -1,0 +1,43 @@
+{% if module.choose_featured_posts %}
+
+	<!-- For curated posts -->
+  <div class="resource-slider wow fadeIn">
+    {% for item in module.featured_posts %}
+      <div>
+        <div class="latest-post">
+          <a href="{{ item.link_field.url.href }}"><div class="blog-post-image" style="background-image: url({{ resize_image_url( item.image_field.src,0,350 ) }});"></div></a>
+          <p style="margin-bottom: 10px;"><a href="{{ item.link_field.url.href }}">{{ item.title }}</a></p>
+          <p class="latest-read-more"><a href="{{ item.link_field.url.href }}"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/latest-read-more.png" alt="read-more-icon" /></a></p>
+          <p class="source">{{ item.post_tag }}</p>  
+        </div>
+      </div>
+    {% endfor %}
+  
+{% else %}
+
+{% set number_of_posts = 9 %}
+{% set posts = blog_recent_posts(module.select_blog, number_of_posts) %}
+{% if module.specific_tag_topic %}
+	{% set posts = blog_recent_topic_posts(module.select_blog, module.tag, number_of_posts) %}
+    
+{% endif %}
+
+<div class="resource-slider wow fadeIn">
+  {% for post in posts %}
+    <div>
+      <div class="latest-post">
+      <a href="{{ post.absolute_url }}"><div class="blog-post-image" style="background-image: url({{ resize_image_url( post.featured_image,0,350 ) }});"></div></a>
+      <p style="margin-bottom: 10px;"><a href="{{ post.absolute_url }}">{{ post.name }}</a></p>
+      <p class="latest-read-more"><a href="{{ post.absolute_url }}"><img src="https://www.picussecurity.com/hubfs/Shield/Icons/other/latest-read-more.png" alt="read-more-icon" /></a></p>
+      <p class="source">
+      {% if post.topic_list %}
+                {% for topic in post.topic_list|first %}
+                          {{ topic.name }}
+                {% endfor %}
+            {% endif %}
+      </p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}    

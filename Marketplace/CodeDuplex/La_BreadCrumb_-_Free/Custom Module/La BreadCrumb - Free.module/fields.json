@@ -1,0 +1,84 @@
+[ {
+  "id" : "db18ab30-150d-cd1f-b4da-3939997df769",
+  "name" : "select_menu",
+  "display_width" : null,
+  "label" : "Select Menu",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "default" : 45092039077
+}, {
+  "id" : "1abd6d39-87ed-6aad-189c-5de40877a02b",
+  "name" : "customize",
+  "display_width" : null,
+  "label" : "Customize",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8f8842e6-054f-3edc-38cb-29b6c8794918",
+    "name" : "select_breadcrumb_style",
+    "display_width" : null,
+    "label" : "Select BreadCrumb Style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "default", "Default" ], [ "minimal", "Minimal" ], [ "cut_up", "Cut - Up" ], [ "progressive", "Progressive" ] ],
+    "type" : "choice",
+    "default" : "default"
+  }, {
+    "id" : "d9cfe9e0-5771-8be9-cf84-e439c7b3e10d",
+    "name" : "separator",
+    "display_width" : null,
+    "label" : "Custom Separator",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "›"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "select_breadcrumb_style" : "default",
+    "separator" : "›"
+  }
+}, {
+  "id" : "132525ef-4836-abca-8b9c-b82f1c11bf7e",
+  "name" : "settings",
+  "display_width" : null,
+  "label" : "Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "01478726-fac4-e89b-4b80-a2afeaf769c2",
+    "name" : "enable_smart_ellipses",
+    "display_width" : null,
+    "label" : "Enable Smart Ellipses",
+    "inline_help_text" : "May not work with some predefined style.",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "7f2082f1-8089-38a0-ca69-681e3a07fd51",
+    "name" : "enable_home_icon",
+    "display_width" : null,
+    "label" : "Enable Home Icon",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_smart_ellipses" : false,
+    "enable_home_icon" : false
+  }
+} ]

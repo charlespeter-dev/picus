@@ -1,0 +1,25 @@
+{
+  "global" : false,
+  "icon" : "https://www.wx.agency/hubfs/Dev_icon.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 42904755351,
+  "css_assets" : [ {
+    "url" : "Marketplace%2FWX_Digital_Agency%2F_Logo_Slider_M01%2FAttached_asset%2Fanimate.css",
+    "autoload" : true,
+    "name" : "animate.css"
+  }, {
+    "url" : "Marketplace%2FWX_Digital_Agency%2F_Logo_Slider_M01%2FAttached_asset%2Ffont-awsome.css",
+    "autoload" : true,
+    "name" : "font-awsome.css"
+  }, {
+    "url" : "Marketplace%2FWX_Digital_Agency%2F_Logo_Slider_M01%2FAttached_asset%2FModularized_base_style.css",
+    "autoload" : true,
+    "name" : "Modularized_base_style.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "Marketplace%2FWX_Digital_Agency%2F_Logo_Slider_M01%2FAttached_asset%2Fwow.js",
+    "autoload" : true,
+    "name" : "wow.js"
+  } ],
+  "is_available_for_new_content" : true
+}

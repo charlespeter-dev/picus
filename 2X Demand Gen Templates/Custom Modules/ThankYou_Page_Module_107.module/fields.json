@@ -1,0 +1,362 @@
+[ {
+  "id" : "85229f06-4c4c-aa72-2eee-295bea87ae50",
+  "name" : "logo_field",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8398403/Loyalty.jpg",
+    "alt" : "Loyalty",
+    "width" : 5000,
+    "height" : 2083
+  }
+}, {
+  "id" : "5cbbfdeb-8b13-8bc8-8ba6-ddea9230f17d",
+  "name" : "body_content_desktop",
+  "display_width" : null,
+  "label" : "Body Content Desktop",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "3b457f2d-9f15-ad08-6e20-47de389b23f8",
+    "name" : "content_text",
+    "display_width" : null,
+    "label" : "Content Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Thank you"
+  }, {
+    "id" : "25ead5fd-afe1-02f8-3d2d-ef5af8e69885",
+    "name" : "font_color",
+    "display_width" : null,
+    "label" : "Font Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#45818E",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "9e584ee5-4520-58e5-884c-f39b1e1c3baf",
+    "name" : "font_weight",
+    "display_width" : null,
+    "label" : "Font Weight",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "normal", "normal" ], [ "bold", "bold" ], [ "bolder", "bolder" ] ],
+    "type" : "choice",
+    "default" : "normal"
+  }, {
+    "id" : "5c91b3c4-a9e4-e970-233d-cb3e887de894",
+    "name" : "font_size",
+    "display_width" : null,
+    "label" : "Font Size",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "30px"
+  }, {
+    "id" : "6d4fcb6c-941c-796b-e29c-89cb4730c83a",
+    "name" : "line_height",
+    "display_width" : null,
+    "label" : "Line Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "30px"
+  }, {
+    "id" : "2a5325bd-2e3e-2492-67dc-b53f69a7af37",
+    "name" : "bottom_spacing_desktop",
+    "display_width" : null,
+    "label" : "Bottom Spacing Desktop",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "mb-md-1", "mb-md-1" ], [ "mb-md-2", "mb-md-2" ], [ "mb-md-3", "mb-md-3" ], [ "mb-md-4", "mb-md-4" ], [ "mb-md-5", "mb-md-5" ] ],
+    "type" : "choice",
+    "default" : "mb-md-1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "content_text" : "Thank you",
+    "font_color" : {
+      "color" : "#45818E",
+      "opacity" : 100
+    },
+    "font_weight" : "normal",
+    "font_size" : "30px",
+    "line_height" : "30px",
+    "bottom_spacing_desktop" : "mb-md-1"
+  }
+}, {
+  "id" : "f882d7b6-89a6-12f8-0a93-e8104439c889",
+  "name" : "body_content_mobile",
+  "display_width" : null,
+  "label" : "Body Content Mobile",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1a642a05-890b-7d3b-7344-e21a77801ff2",
+    "name" : "content_text",
+    "display_width" : null,
+    "label" : "Content Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Thank you"
+  }, {
+    "id" : "5a2ada91-7954-2e02-e029-c243fd620e1f",
+    "name" : "font_color",
+    "display_width" : null,
+    "label" : "Font Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#45818E",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "716a92d4-23ed-c195-810a-266afffc1f7a",
+    "name" : "font_weight",
+    "display_width" : null,
+    "label" : "Font Weight",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "normal", "normal" ], [ "bold", "bold" ], [ "bolder", "bolder" ] ],
+    "type" : "choice",
+    "default" : "normal"
+  }, {
+    "id" : "48f231bb-3307-bfab-b706-19ae7519b05e",
+    "name" : "font_size",
+    "display_width" : null,
+    "label" : "Font Size",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "30px"
+  }, {
+    "id" : "b0595331-b5cd-41c2-caa7-b82e2ecfeea1",
+    "name" : "line_height",
+    "display_width" : null,
+    "label" : "Line Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "30px"
+  }, {
+    "id" : "2bb1d56b-1d56-fadf-31ac-3adbfbbddfd2",
+    "name" : "bottom_spacing_mobile",
+    "display_width" : null,
+    "label" : "Bottom Spacing Mobile",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "mb-1", "mb-1" ], [ "mb-2", "mb-2" ], [ "mb-3", "mb-3" ], [ "mb-4", "mb-4" ], [ "mb-5", "mb-5" ] ],
+    "type" : "choice",
+    "default" : "mb-1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "content_text" : "Thank you",
+    "font_color" : {
+      "color" : "#45818E",
+      "opacity" : 100
+    },
+    "font_weight" : "normal",
+    "font_size" : "30px",
+    "line_height" : "30px",
+    "bottom_spacing_mobile" : "mb-1"
+  }
+}, {
+  "id" : "2b338e99-a5fc-bd34-7b70-e233b6e3f687",
+  "name" : "right_image",
+  "display_width" : null,
+  "label" : "Right Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8398403/New%20Update-1.jpg",
+    "alt" : "New Update-1",
+    "loading" : "lazy",
+    "width" : 1830,
+    "height" : 1568,
+    "max_width" : 1830,
+    "max_height" : 1568
+  }
+}, {
+  "id" : "2a3d7d1f-f208-eecc-7bf1-63250ef1ac05",
+  "name" : "right_image_inline_style",
+  "display_width" : null,
+  "label" : "Right Image Inline Style",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "91f8fe5d-00b9-9b3a-3521-4eb69385f2be",
+  "name" : "information_text",
+  "display_width" : null,
+  "label" : "Information Text",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "70c66003-5e25-8604-25d9-ae05e5c6955d",
+    "name" : "info_text",
+    "display_width" : null,
+    "label" : "Info Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Info text"
+  }, {
+    "id" : "9f8316bf-7e5c-8101-79df-2dde30f6e924",
+    "name" : "info_link",
+    "display_width" : null,
+    "label" : "Info Link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "google.com"
+  }, {
+    "id" : "433990f6-a369-ebb4-8f70-4d1c5df35836",
+    "name" : "link_name",
+    "display_width" : null,
+    "label" : "Link Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "linkname"
+  }, {
+    "id" : "f5e0bd70-864e-7e24-b2da-c2ea4129dc0a",
+    "name" : "icon_arrow",
+    "display_width" : null,
+    "label" : "Icon Arrow",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8398403/New%20Update-1.jpg",
+      "alt" : "New Update-1",
+      "loading" : "lazy",
+      "width" : 1830,
+      "height" : 1568,
+      "max_width" : 1830,
+      "max_height" : 1568
+    }
+  }, {
+    "id" : "a8008f38-a9d9-6a1c-2208-ce829a86e4c9",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p style=\"font-size: 16px; line-height: 20px;\">Need more information? Contact us via email at <a style=\"color: #dd3333; text-decoration: underline;\" href=\"mailto:loyalty@copperfield.com\">loyalty@copperfield.com</a> or give us a call at <a style=\"color: #dd3333; text-decoration: underline;\" href=\"tel:800-247-3305\">800-247-3305</a>.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "info_text" : "Info text",
+    "info_link" : "google.com",
+    "link_name" : "linkname",
+    "icon_arrow" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8398403/New%20Update-1.jpg",
+      "alt" : "New Update-1",
+      "loading" : "lazy",
+      "width" : 1830,
+      "height" : 1568,
+      "max_width" : 1830,
+      "max_height" : 1568
+    },
+    "richtext_field" : "<p style=\"font-size: 16px; line-height: 20px;\">Need more information? Contact us via email at <a style=\"color: #dd3333; text-decoration: underline;\" href=\"mailto:loyalty@copperfield.com\">loyalty@copperfield.com</a> or give us a call at <a style=\"color: #dd3333; text-decoration: underline;\" href=\"tel:800-247-3305\">800-247-3305</a>.</p>"
+  }
+}, {
+  "id" : "1e3d90bb-ca23-b9df-9866-49a56b17b65e",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Download Now"
+}, {
+  "id" : "698db7fb-1d39-5ad2-532b-cacd5f03d40f",
+  "name" : "button_text_link",
+  "display_width" : null,
+  "label" : "Button Text Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "google.com"
+} ]

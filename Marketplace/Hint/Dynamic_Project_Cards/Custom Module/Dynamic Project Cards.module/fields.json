@@ -1,0 +1,261 @@
+[ {
+  "id" : "b2d23d06-0665-bbd2-d427-78cba82cf7f3",
+  "name" : "module_name",
+  "display_width" : null,
+  "label" : "Section title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "This is the title"
+}, {
+  "id" : "800760a8-b2da-c199-cee7-5dd99256607d",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "907a74aa-cba9-3be4-e73b-c00a829622b7",
+  "name" : "project_cards",
+  "display_width" : null,
+  "label" : "Project Card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "ae94140c-7dad-02be-05bc-5548c9446f11",
+    "name" : "imagen_1",
+    "display_width" : null,
+    "label" : "Imagen 1",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/2661669/350x350.png",
+      "alt" : "350x350",
+      "width" : 350,
+      "height" : 350,
+      "max_width" : 350,
+      "max_height" : 350
+    }
+  }, {
+    "id" : "f22db163-617d-89e9-7c6e-b561e9a3e62b",
+    "name" : "title_1",
+    "display_width" : null,
+    "label" : "Title 1",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "image title"
+  }, {
+    "id" : "ef3b2598-0058-5ddf-2514-cee531e82ed4",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Title color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "a83fb402-f895-2c1e-ff9a-edfb0d744d06",
+    "name" : "text_description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "c98cc7f9-25de-9aa2-81d1-88c8c6270ffd",
+    "name" : "info_color",
+    "display_width" : null,
+    "label" : "Info Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "fbd7e536-6fb8-ac0c-8d57-8b77ad8ad434",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "imagen_1" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/2661669/350x350.png",
+      "alt" : "350x350",
+      "width" : 350,
+      "height" : 350,
+      "max_width" : 350,
+      "max_height" : 350
+    },
+    "title_1" : "image title",
+    "title_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "info_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "imagen_1" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/2661669/350x350.png",
+      "alt" : "350x350",
+      "width" : 350,
+      "height" : 350,
+      "max_width" : 350,
+      "max_height" : 350
+    },
+    "title_1" : "image title",
+    "title_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "info_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "imagen_1" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/2661669/350x350.png",
+      "alt" : "350x350",
+      "width" : 350,
+      "height" : 350,
+      "max_width" : 350,
+      "max_height" : 350
+    },
+    "title_1" : "image title",
+    "title_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "info_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "imagen_1" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/2661669/350x350.png",
+      "alt" : "350x350",
+      "width" : 350,
+      "height" : 350,
+      "max_width" : 350,
+      "max_height" : 350
+    },
+    "title_1" : "image title",
+    "title_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "info_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "76538748-46f7-86a0-d8e2-24d2166f2eee",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "Marketplace/Hint/Dynamic_Project_Cards/Images/3840x2160-dark-gray-solid-color-background.jpg",
+    "alt" : "image alt title",
+    "width" : 3840,
+    "height" : 2160,
+    "max_width" : 3840,
+    "max_height" : 2160
+  }
+} ]

@@ -1,0 +1,43 @@
+[ {
+  "id" : "e799a7fd-0159-bb5a-2ae7-9c6d896fad9c",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.picussecurity.com/hubfs/raw_assets/public/Marketplace/The_Orange_Box_Agency/Forza/Images/HIRING%20PEOPLE-1.jpg",
+    "alt" : "HIRING PEOPLE-1",
+    "size_type" : "auto",
+    "width" : 5616,
+    "height" : 3744,
+    "max_width" : 5616,
+    "max_height" : 3744
+  }
+}, {
+  "id" : "296a1884-40dc-a477-55d0-578cdbba972c",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "2085f7c0-a4f6-b3cc-bf2f-75797aefa3cd",
+  "name" : "subheading",
+  "display_width" : null,
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

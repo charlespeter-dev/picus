@@ -1,0 +1,19 @@
+.bbs-slideshow {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bbs-image-container {
+  width: 300px !important;
+  height: auto;
+}
+
+.bbs-image-container {
+  margin: 0 30px;
+}
+
+.bbs-page-center {
+    float: none !important;
+    max-width: 1145px !important;
+    margin: 0 auto !important;
+}

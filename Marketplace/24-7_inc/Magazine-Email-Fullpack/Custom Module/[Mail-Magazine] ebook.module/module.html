@@ -1,0 +1,13 @@
+<div style="background-color:#000; padding:40px; margin:20px 0px;" class="bl_ebook">
+    <h2 style="color: #ffffff; font-family: Arial; font-size: 24px; font-weight: 700; line-height: 25px; text-align:center; padding:20px 0px; border-top:1px solid #fff; border-bottom:1px solid #fff;">{{ widget.ebook_title }}</h2>
+    <table style="margin-top:20px; display:block;">
+        <tbody>
+            <td width="55%" valign="top" style="padding-right: 5%;">
+                <p style="font-size:14px; font-family:Arial; font-weight:400; line-height:28px; color:#fff; margin:0px;">{{ widget.ebook_text }}</p>
+            </td>
+            <td width="30%" valign="top"><img src="{{ widget.ebook_images.src }}" alt="{{ widget.ebook_images.alt }}" width="100%"/></td>
+        </tbody>
+    </table>
+    <a href="{{ widget.download_button_link }}" target="_blank" style="color:#000; font-family: Arial; font-size: 16px; font-weight: 700; line-height: 20px; background-color:#fff; text-align:center; padding:15px; margin:0 auto; width:50%; display:block; text-decoration:none; border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px; -o-border-radius:30px; -ms-border-radius:30px; margin-top:20px;">{{ widget.download_button_text }}
+</a>
+</div>

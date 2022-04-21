@@ -1,0 +1,24 @@
+{% set mid = module | pprint | md5 %}
+<div  id="m{{ mid }}">
+  {% set href = module.link.url.href %}
+{% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.link.no_follow %}rel="nofollow"{% endif %} class="custom-btn btn-color w3-{{ module.button_shape }} w3-{{ module.button_size }}"
+	>
+	{{ module.link_text }}
+</a>
+</div>
+<style>
+  #m{{ mid }} .btn-color {
+    background-color:rgba({{ module.background_color.color|convert_rgb }},{{ module.background_color.opacity/100 }});
+    color:rgba({{ module.text_color.color|convert_rgb }},{{ module.text_color.opacity/100 }});
+  }
+  #m{{ mid }} .btn-color:hover {
+    background-color:rgba({{ module.hover_background.color|convert_rgb }},{{ module.hover_background.opacity/100 }}) !important;
+    color:rgba({{ module.hover_text_color.color|convert_rgb }},{{ module.hover_text_color.opacity|convert_rgb }}) !important;
+}
+</style>
+

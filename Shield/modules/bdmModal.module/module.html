@@ -1,0 +1,35 @@
+<div class="modal-outer">
+  <div class="modal 
+    {% if module.modal_type == "video_embed" %} video {%elif module.modal_type == "form_embed" %} form {% endif %}" >
+    <a id="close" href="#0" aria-label="close"></a>
+    {% if module.modal_type == "text_embed" %}
+      {{ module.textModal }}
+    {% elif module.modal_type == "video_embed" %}
+    
+      {% if module.video_source == "vimeo" %}
+        {{ module.vimeo_embed }}
+      {% else %}
+      <div style="padding:56.25% 0 0 0;position:relative;">
+        {% if  module.video_source == "file_upload" %}
+        <video width="" height="" controls>
+          <source src="{{ module.file_field }}">
+         Your browser does not support the video tag.
+        </video> 
+        {% elif  module.video_source == "iframe" %}
+        {{ module.iframe_embed }}
+        {% endif%}
+      </div>
+      {% endif %}
+
+    {% else %}
+    {% if module.form_title %}
+    <h3>
+      {{ module.form_title }}
+    </h3>
+    {% endif %}
+    {%form module.form_embed form%}
+    
+    {% endif %}
+  </div>
+</div>
+<span id="clickerName" style="display:none">{{ module.clickerName }}</span>

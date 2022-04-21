@@ -1,0 +1,12 @@
+.picus-team {
+    margin-top: 30px;
+}
+.picus-team .team-photo.presenter {
+    width: 122px;
+    height: 122px;
+}
+.picus-team .bio p {
+    font-size: 0.6em;
+    line-height: 1.5em;
+    padding: 0 15px;
+}

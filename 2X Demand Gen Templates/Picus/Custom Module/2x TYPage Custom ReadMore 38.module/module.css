@@ -1,0 +1,11 @@
+a.readmore,
+a.readmore:hover,
+a.readmore:active,
+a.readmore:focus
+{
+  text-decoration:none;
+  color:#00395C;
+  font-weight:bold;
+  font-size:18px;
+  line-height:21px;
+}

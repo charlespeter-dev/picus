@@ -1,0 +1,32 @@
+[ {
+  "id" : "3ccac49d-7db2-e9a0-0250-cef4662e6cc4",
+  "name" : "name_post",
+  "display_width" : null,
+  "label" : "Name Post",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "LOREM IPSUM",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c4d5d58f-8a0b-503c-d02d-591d3e9059a3",
+  "name" : "description_post",
+  "display_width" : null,
+  "label" : "Description Post",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "75cd6355-c0c2-9d60-550a-60404007027a",
+  "name" : "url_post",
+  "display_width" : null,
+  "label" : "URL Post",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

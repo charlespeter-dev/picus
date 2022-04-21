@@ -1,0 +1,24 @@
+<div class="tc-with-left-icon-image-wrapper">
+  <div class="global-row partners-handshake lightgraybg">
+    <div class="page-center">
+      <div class="row align-items-center justify-content-center">
+        <div class="col12 colmdauto">
+          <div class="row text-center">
+            <div class="col">
+              {% if module.icon_image.src %}
+                <img src="{{ module.icon_image.src }}" alt="{{ module.icon_image.alt }}" title="{{ module.icon_image.alt }}" width="80px">
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="col12 colmdauto">
+          <div class="row">
+            <div class="col text-center">
+              {{ module.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div id="{{ module.checklist_id }}">
+{% for item in module.item_label %}
+	<label class="container">{% inline_text field="text_field" value="{{ item.text_field }}" %}
+	<input type="checkbox" {% if item.checked %} checked="checked" {% endif %}>
+    <span class="checkmark"></span>
+</label>
+{% endfor %}
+</div>
+
+{% require_css %} 
+<style>
+  #{{ module.checklist_id }} .checkmark {
+  background-color: rgba({{ module.unchecked_background.color|convert_rgb }},{{ module.unchecked_background.opacity/100 }});
+}
+  #{{ module.checklist_id }} .container:hover input ~ .checkmark {
+  background-color: rgba({{ module.unchecked_background_hover.color|convert_rgb }},{{ module.unchecked_background_hover.opacity/100 }});
+}
+  #{{ module.checklist_id }} .container input:checked ~ .checkmark {
+  background-color: rgba({{ module.checked_background.color|convert_rgb }},{{ module.checked_background.opacity/100 }});
+}
+  #{{ module.checklist_id }} .container .checkmark::after {
+  border: solid rgba({{ module.checkmark.color|convert_rgb }},{{ module.checkmark.opacity/100 }});
+  border-width: 0 3px 3px 0;
+}
+  
+</style>
+{% end_require_css %}

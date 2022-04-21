@@ -1,0 +1,20 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 26115502960,
+  "css_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/css/slick.css",
+    "autoload" : true,
+    "name" : "slick.css"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/css/slick-theme.css",
+    "autoload" : true,
+    "name" : "slick-theme.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/js/slick.js",
+    "autoload" : true,
+    "name" : "slick.js"
+  } ],
+  "is_available_for_new_content" : true
+}

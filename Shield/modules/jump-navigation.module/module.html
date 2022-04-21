@@ -1,0 +1,41 @@
+<div class="jumplink-nav" id="{{ name }}">
+  <h2 class="underline center">{{ module.heading }}</h2>
+  <div class="links">
+    {% for item in module.jumplink %}
+      <a href="#{{ item.section_id }}">{{ item.link_title }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  #{{ name }} .links a { 
+    color: {{ module.link_colour.color }}; 
+    display: inline-block; 
+    margin-right: 25px;
+  }
+  #{{ name }} .links a:last-of-type {
+    margin-right: 0;
+  }
+  #{{ name }} .links { 
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+    padding: 0 15px 15px;
+    font-size: 0.7em;
+    font-weight: 600; 
+  }
+  .jumplink-nav h2 { 
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  @media (max-width: 767px) {
+    #{{ name }} .links a { 
+      margin-bottom: 20px;
+    }
+  }
+</style>
+{% end_require_css %}

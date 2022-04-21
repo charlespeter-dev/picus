@@ -1,0 +1,14 @@
+<style>
+{% for item in module.fonts %}
+  .{{ item.class_name }}
+  {
+    {{ item.desktop_font }}
+  }
+  @media only screen and (max-width: 768px) {
+    .{{ item.class_name }}
+    {
+      {{ item.mobile_font }}
+    }
+  }
+{% endfor %}
+</style>

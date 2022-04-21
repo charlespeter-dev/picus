@@ -1,0 +1,333 @@
+/**
+ * TABLE OF CONTENTS
+    
+    1. Filters
+    2. Displays
+    3. Flexbox
+    4. Hyphens
+    5. Multicolumn
+    6. Transforms
+    7. Appearance
+    8. Font Size
+    9. Transition
+    
+ *
+ */
+
+
+
+/**
+ * 1. Filters
+ */ 
+
+{% macro filter(value) %} 
+    -webkit-filter: {{ value }};
+        filter: {{ value }};
+{% endmacro %}
+
+/**
+ * 2. Displays
+ */ 
+
+{% macro display(value) %}
+    {% if value == 'flex' %}
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: -webkit-flex!important;
+            display: flex!important;
+    {% else %}
+        display: {{ value }};
+    {% endif %}
+{% endmacro %}
+
+
+/**
+ * 3. Flexbox
+ */ 
+
+/* 3.1 Align content */
+{% macro align_content(value) %} 
+    -ms-flex-line-pack: {{ value }};
+    align-content: {{ value }};
+{% endmacro %}
+ 
+/* 3.2 Align Items */
+{% macro align_items(value) %} 
+    {% if value == 'flex-start' %}
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    {% elif value == 'flex-end' %}
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    {% else %}
+        -webkit-box-align: {{ value }};
+        -ms-flex-align: {{ value }};
+            align-items: {{ value }};
+    {% endif %}
+{% endmacro %}
+
+/* 3.3 Align Self */
+{% macro align_self(value) %} 
+    {% if value == 'flex-start' %}
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    {% elif value == 'flex-end' %}
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    {% else %}
+        -ms-flex-item-align: {{ value }};
+            align-self: {{ value }};
+    {% endif %}
+{% endmacro %}
+
+/* 2.4 Flex */
+{% macro flex(flex_grow, flex_shrink, flex_basis) %}
+    {% if flex_shrink && flex_basis %}
+        -webkit-box-flex: {{ flex_grow }};
+        -ms-flex: {{ flex_grow }} {{ flex_shrink }} {{ flex_basis }};
+            flex: {{ flex_grow }} {{ flex_shrink }} {{ flex_basis }};
+    {% else %}
+        {% if flex_grow == 'auto' %}
+            -webkit-box-flex: 1;
+            -ms-flex: auto;
+                flex: auto;
+        {% elif flex_grow == 'none' %}
+            -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+        {% else %}
+            -webkit-box-flex: {{ flex_grow }};
+            -ms-flex: {{ flex_grow }};
+                flex: {{ flex_grow }};
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+
+/* 3.5 Flex Basis */
+{% macro flex_basis(value) %} 
+    -ms-flex-preferred-size: {{ value }};
+        flex-basis: {{ value }};
+{% endmacro %}
+
+
+/* 3.6 Flex Direction */
+{% macro flex_direction(value) %} 
+    {% if value == 'row' %}
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    {% elif value == 'row-reverse' %}
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+    {% elif value == 'column' %}
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    {% elif value == 'column-reverse' %}
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    {% else %}
+        -webkit-box-orient: {{ value }};
+        -webkit-box-direction: {{ value }};
+            -ms-flex-direction: {{ value }};
+                flex-direction: {{ value }};
+    {% endif %}
+{% endmacro %}
+
+
+/* 3.7 Flex Flow */
+{% macro flex_flow(flex_direction, flex_wrap) %}
+    {% if flex_wrap %}
+        {% if flex_direction == 'row' %}
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row {{ flex_wrap }};
+                flex-flow: row {{ flex_wrap }};
+        {% elif flex_direction == 'row-reverse' %}
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -ms-flex-flow: row-reverse {{ flex_wrap }};
+                flex-flow: row-reverse {{ flex_wrap }};
+        {% elif flex_direction == 'column' %}
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: column {{ flex_wrap }};
+                    flex-flow: column {{ flex_wrap }};
+        {% elif flex_direction == 'column-reverse' %}
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+            -ms-flex-flow: column-reverse {{ flex_wrap }};
+                flex-flow: column-reverse {{ flex_wrap }};
+        {% elif flex_direction == 'initial' %}
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: initial {{ flex_wrap }};
+                flex-flow: initial {{ flex_wrap }};
+        {% elif flex_direction == 'inherit' %}
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: inherit {{ flex_wrap }};
+                flex-flow: inherit {{ flex_wrap }};
+        {% endif %}
+    {% else %}
+        {% if flex_direction == 'initial' %}
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: initial;
+                flex-flow: initial;
+        {% elif flex_direction == 'inherit' %}
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: inherit;
+                flex-flow: inherit;
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+
+
+/* 3.8 Flex Grow */
+{% macro flex_grow(value) %} 
+    -webkit-box-flex: {{ value }};
+    -ms-flex-positive: {{ value }};
+        flex-grow: {{ value }};
+{% endmacro %}
+
+/* 3.9 Flex Shrink */
+{% macro flex_shrink(value) %} 
+   -ms-flex-negative: {{ value }};
+    flex-shrink: {{ value  }};
+{% endmacro %}
+
+/* 3.10 Flex Wrap */
+{% macro flex_wrap(value) %} 
+   -ms-flex-wrap: {{ value }};
+    flex-wrap: {{ value }};
+{% endmacro %}
+
+/* 3.11 Justify Content */
+{% macro justify_content(value) %}
+    {% if value == 'space-between' %}
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    {% elif value == 'flex-start' %}
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    {% elif value == 'flex-end' %}
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    {% else %}
+        -webkit-box-pack: {{ value }};
+        -ms-flex-pack: {{ value }};
+            justify-content: {{ value }};
+    {% endif %}
+{% endmacro %}
+
+/* 3.12 Order */
+{% macro order(value) %}
+    {% if (value == 'initial') || (value == 'inherit') %}
+        -webkit-box-ordinal-group: {{ value }};
+        -ms-flex-order: {{ value }};
+            order: {{ value }};
+    {% else %}
+        -webkit-box-ordinal-group: {{ value|add(1) }};
+        -ms-flex-order: {{ value }};
+            order: {{ value }};
+    {% endif %}
+{% endmacro %}
+
+
+/**
+ * 4. Hyphens
+ */ 
+
+{% macro word_break(value) %}
+    -ms-word-break: {{ value }};
+        word-break: {{ value }};
+{% endmacro %}
+
+{% macro hyphens(value) %} 
+    -webkit-hyphens: {{ value }};
+    -moz-hyphens: {{ value }};
+    -ms-hyphens: {{ value }};
+        hyphens: {{ value }};
+{% endmacro %}
+
+
+/**
+ * 5. Multicolumn
+ */ 
+
+/* 5.1 Column Count */
+{% macro column_count(value) %} 
+    -webkit-column-count: {{ value }};
+    -moz-column-count: {{ value }};
+        column-count: {{ value }};
+{% endmacro %}
+
+/* 5.2 Column Gap */
+{% macro column_gap(value) %} 
+    -webkit-column-gap: {{ value }};
+    -moz-column-gap: {{ value }};
+        column-gap: {{ value }};
+{% endmacro %}
+
+/* 5.3 Column Rule */
+{% macro column_rule(value) %} 
+    -webkit-column-rule: {{ value }};
+    -moz-column-rule: {{ value }};
+        column-rule: {{ value }};
+{% endmacro %}
+
+/**
+ * 6. Transforms
+ */ 
+
+{% macro transform(value) %}
+    -webkit-transform: {{ value }};
+    -ms-transform: {{ value }};
+        transform: {{ value }};
+{% endmacro %}
+
+
+/**
+ * 7. Appearance
+ */ 
+
+{% macro appearance(value) %}
+    -webkit-appearance: {{ value }};
+    -moz-appearance: {{ value }};
+        appearance: {{ value }};
+{% endmacro %}
+
+
+/**
+ * 8. Font Size
+ */ 
+{% macro font_size(value) %}
+    {% set font_size = value / baseFontSize %}
+    font-size: {{ font_size }}em;
+{% endmacro %}
+
+
+/**
+ * 9. Transition
+ */  
+
+{% macro transition(value) %} 
+    -webkit-transition: {{ value }};
+    -moz-transition: {{ value }};
+    -o-transition: {{ value }};
+    -ms-transition: {{ value }};
+        transition: {{ value }};
+{% endmacro %}

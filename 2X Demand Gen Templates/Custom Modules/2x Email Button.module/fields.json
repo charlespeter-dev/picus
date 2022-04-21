@@ -1,0 +1,217 @@
+[ {
+  "id" : "3769525c-6f5f-db9a-0a31-c6505d70089c",
+  "name" : "padding",
+  "display_width" : null,
+  "label" : "Padding",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f34b7dbf-be38-87fa-de17-1beab4d59142",
+    "name" : "padding_top",
+    "display_width" : null,
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "30px"
+  }, {
+    "id" : "f4a546c6-dc38-88a5-69b3-0e2c3240ba5a",
+    "name" : "padding_bottom",
+    "display_width" : null,
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "50px"
+  }, {
+    "id" : "bb7247ac-00b5-982f-d273-4bf6e446977e",
+    "name" : "padding_left",
+    "display_width" : null,
+    "label" : "Padding Left",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "0px"
+  }, {
+    "id" : "da3271a1-eed2-db53-0067-d8672e262fce",
+    "name" : "padding_right",
+    "display_width" : null,
+    "label" : "Padding Right",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "0px"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "padding_top" : "30px",
+    "padding_bottom" : "50px",
+    "padding_left" : "0px",
+    "padding_right" : "0px"
+  }
+}, {
+  "id" : "aa0d4488-df54-9e50-6751-d36fd05699da",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ecc7d777-947f-d6a2-dbaa-89c68e5a08dd",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Download Now"
+  }, {
+    "id" : "1c544124-cd97-10fc-afce-7691fc302f17",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://google.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "61367881-92b6-7f33-ce8a-1cbe3dd69ede",
+    "name" : "font_size",
+    "display_width" : null,
+    "label" : "Font Size",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "18px"
+  }, {
+    "id" : "2c6524b3-acfe-04fb-5e89-d188ea442345",
+    "name" : "line_height",
+    "display_width" : null,
+    "label" : "Line Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "21px"
+  }, {
+    "id" : "fcee8b92-57fd-566f-bc32-c0744f7fb109",
+    "name" : "font_weight",
+    "display_width" : null,
+    "label" : "Font Weight",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "bold"
+  }, {
+    "id" : "ed5d70c7-3d34-cc96-0bd0-9081701b528f",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#0095A6",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "149e19a9-09d9-d6d7-e47c-ea673db07746",
+    "name" : "font_color",
+    "display_width" : null,
+    "label" : "Font Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "ea75c74a-2669-9517-bca1-4df19bee84d7",
+    "name" : "button_height",
+    "display_width" : null,
+    "label" : "Button Height",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "50px"
+  }, {
+    "id" : "f8a9825c-4869-7130-796e-177db9269ef5",
+    "name" : "button_width",
+    "display_width" : null,
+    "label" : "Button Width",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "248px"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "Download Now",
+    "button_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://google.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "font_size" : "18px",
+    "line_height" : "21px",
+    "font_weight" : "bold",
+    "background_color" : {
+      "color" : "#0095A6",
+      "opacity" : 100
+    },
+    "font_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "button_height" : "50px",
+    "button_width" : "248px"
+  }
+} ]

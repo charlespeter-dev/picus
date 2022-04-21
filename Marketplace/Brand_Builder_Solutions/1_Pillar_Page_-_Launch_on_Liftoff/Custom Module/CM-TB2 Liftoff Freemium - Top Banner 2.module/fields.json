@@ -1,0 +1,100 @@
+[ {
+  "id" : "a7b083e9-36ce-4319-dd70-b16f4b15a2c8",
+  "name" : "color_background_or_image",
+  "display_width" : null,
+  "label" : "Color Background or Image",
+  "help_text" : "Note: If you are choosing a solid color background, make sure you select No Overlay.",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "banner-bkg", "Image Background" ], [ "colorBkg-t1", "Primary Color Background" ], [ "colorBkg-t2", "Second Color Background" ], [ "colorBkg-t3", "Third Color Background" ], [ "colorBkg-t4", "Fourth Color Background" ], [ "lightBkg-t1", "Light Background Color" ], [ "darkBkg-t1", "Dark Background Color" ], [ "custom-bkg", "Custom Background Color" ] ],
+  "type" : "choice",
+  "default" : "banner-bkg"
+}, {
+  "id" : "f9b7c4b0-94d4-df1d-3eba-8c9b694cc648",
+  "name" : "custom_background_hex_code",
+  "display_width" : null,
+  "label" : "Custom Background Hex Code",
+  "help_text" : "If you want a custom color, make sure you have custom toggled in the selector above.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#a500ff"
+}, {
+  "id" : "e410766c-b8c8-6cf0-3221-cbdddb16cca4",
+  "name" : "overlay_color",
+  "display_width" : null,
+  "label" : "Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "null2", "No Overlay" ], [ "overlay-t1", "Overlay Color 1" ], [ "overlay-t2", "Overlay Color 2" ], [ "overlay-t3", "Overlay Color 3" ] ],
+  "type" : "choice",
+  "default" : "overlay-t1"
+}, {
+  "id" : "9970d87e-6a98-c197-ab20-8d5217916d3f",
+  "name" : "banner_size",
+  "display_width" : null,
+  "label" : "Banner Size?",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "banner-padding", "Tall Banner" ], [ "banner-padding-short", "Short Banner" ] ],
+  "type" : "choice",
+  "default" : "banner-padding"
+}, {
+  "id" : "cf175c01-76ae-b10f-0e96-cc6945d89a66",
+  "name" : "text_alignment",
+  "display_width" : null,
+  "label" : "Full Width Text or Text to the Side?",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Search",
+  "choices" : [ [ "full-width", "Full Width" ], [ "null", "Text to the Side" ] ],
+  "type" : "choice",
+  "default" : "null"
+}, {
+  "id" : "ca0df258-0e78-ee34-3230-c99cec593a8e",
+  "name" : "hero_bkg1",
+  "display_width" : null,
+  "label" : "Hero Banner Background Image",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "Marketplace/Brand_Builder_Solutions/1_Pillar_Page_-_Launch_on_Liftoff/Images/launch_on_liftoff.jpg",
+    "alt" : "launch_on_liftoff.jpg",
+    "width" : "2000",
+    "height" : "1333"
+  }
+}, {
+  "id" : "3c4baa24-8b90-d316-545d-b3f914367d30",
+  "name" : "banner_content",
+  "display_width" : null,
+  "label" : "Banner Content",
+  "help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>Liftoff Freemium Framework</h1>"
+}, {
+  "id" : "06725d52-4c1b-760a-e3ff-7c6491ee2697",
+  "name" : "banner_ctas",
+  "display_width" : null,
+  "label" : "Banner CTAs",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "{{cta('01efd8e1-74e1-4fe1-ae95-7e8c7e67cf62')}}"
+} ]

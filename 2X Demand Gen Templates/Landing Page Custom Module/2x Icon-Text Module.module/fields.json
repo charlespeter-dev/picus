@@ -1,0 +1,56 @@
+[ {
+  "id" : "a6e3e4ae-d998-2667-12b3-7e51c96c5a19",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/107/icon_shipping.png",
+    "alt" : "icon_shipping",
+    "loading" : "lazy",
+    "width" : 40,
+    "height" : 40,
+    "max_width" : 40,
+    "max_height" : 40
+  }
+}, {
+  "id" : "617bf9bf-f3e8-8fd8-a175-f2248d8f93a4",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Free/Discounted Shipping</p>"
+}, {
+  "id" : "2d954a6d-6d44-5e8f-d26a-903ff7719adc",
+  "name" : "icon_size",
+  "display_width" : null,
+  "label" : "Icon Size",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Width in px or %",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "40px"
+}, {
+  "id" : "41b16a30-1436-02f0-74b7-3aa21c1ba405",
+  "name" : "text_inline_style",
+  "display_width" : null,
+  "label" : "Text Inline Style",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Inline Style of Text",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

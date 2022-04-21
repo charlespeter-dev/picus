@@ -1,0 +1,58 @@
+{% if widget.show_slide_in_cta %}
+    <div class="m-slide-in-cta {{ module.align_card_left_or_right }}">
+        <div class="close-btn"><span>x</span></div>
+      <div class="cta-wrap">
+      	<div class="m-slide-in-image" style="background-image: url('{{ module.cta_image.src }}');"></div>
+				<div class="m-slide-in-content">
+          <h5>{{ module.cta_type }}</h5>
+          <h3>{{ module.cta_title }}</h3>
+          <p>{{ module.cta_content }}</p>
+          {% cta guid="{{ module.cta_button }}" %}
+        </div>
+      </div>
+    </div>
+{% endif %}
+
+{% require_css %}
+  <style>
+    .m-slide-in-cta button {
+      background-color:{{ module.cta_button_color.color }};
+      color:{{ module.button_text_color.color }};
+    }
+
+    .cta-wrap .m-slide-in-content {
+      background-color: {{ module.card_background_color.color }};
+    }
+
+    .cta-wrap .m-slide-in-content h3, .cta-wrap .m-slide-in-content p, .cta-wrap .m-slide-in-content h5 {
+      color:{{ module.card_content_color.color }};
+    }
+    .m-slide-in-cta button:hover{
+      background-color:{{ module.cta_button_hover_color.color }};
+    }
+  </style>
+{% end_require_css %}
+
+{% require_js %}
+  <script>
+    $(document).ready(function() {
+      $("#hs_cos_wrapper_{{ name }} .close-btn").click(function() {
+          Cookies.set('close_slide_cta', 'yes', { expires: {{ module.cookie_expiration_days }} });
+          $("html").addClass("close-slide-cta");
+      });
+
+      $checker = Cookies.get('close_slide_cta');
+
+      if ($checker == 'yes') {
+          console.log('page loaded with the cookie "close_slide_cta" having a value of "yes" ');
+          $( "#hs_cos_wrapper_{{ name }} .m-slide-in-cta" ).remove();
+      }
+  });
+
+  {% if module.hide_cta_on_mobile %}
+    if($(window).width() < 768){
+        $('.m-slide-in-cta ').remove();
+    }
+  {% endif %}
+  </script>
+{% end_require_js %}

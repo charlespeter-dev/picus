@@ -1,0 +1,64 @@
+<div class="video-container ">
+ 
+	<!-- setting video property -->
+  <div class="video-object">
+     <video loop muted  autoplay id="video">
+       {% if module.background_video_url is string_containing ".webm" %}
+          <source src="{{ module.background_video_url }}" type = "video/webm">
+       {% elif module.background_video_url is string_containing ".mp4" %}
+          <source src="{{ module.background_video_url }}" type = "video/mp4">
+       {% elif module.background_video_url is string_containing ".ogg"  %}
+          <source src="{{ module.background_video_url }}" type = "video/ogg">
+       {% else %}
+            Your browser does not support HTML5 video. Please upload supported video file type (webm / mp4 / ogg)
+       {% endif %}
+  </video>
+  </div>
+
+  
+  <div id="{{name}}_overlayText" style="text-align: center;" class="container">
+     <div id="content-desktop" class="hero">
+       <div class="title">
+          <h2 style="color: {{ module.banner_text.title_color.color }}">
+            {{ module.banner_text.title }}
+          </h2>
+       </div>
+        <div class="lead">
+           <p style="color: {{ module.banner_text.subtitle_color.color }}">
+             {{ module.banner_text.subtitle }}
+          </p>
+       </div>
+     
+      <div class="cta-sec">
+          {% cta guid="{{ module.add_call_to_action }}" %}
+      </div>   
+    </div>
+
+     <div id="content-mobile" class="hero">
+      <div class="title">
+          <h2 style="color: {{ module.banner_text.title_color.color }}">
+            {{ module.banner_text.title_for_mobile }}
+          </h2>
+       </div>
+        <div class="lead">
+           <p style="color: {{ module.banner_text.subtitle_color.color }}">
+             {{  module.banner_text.subtitle_for_mobile  }}
+          </p>
+       </div>
+     
+      <div class="cta-sec">
+          {% cta guid="{{ module.add_call_to_action }}" %}
+      </div>
+    </div>
+  </div> 
+</div>
+<style>
+#{{name}}_overlayText {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+</style>
+

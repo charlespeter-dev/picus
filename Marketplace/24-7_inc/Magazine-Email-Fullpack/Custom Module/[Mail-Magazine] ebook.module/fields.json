@@ -1,0 +1,68 @@
+[ {
+  "id" : "e539ddee-b2ed-e950-01f7-140a5b670133",
+  "name" : "ebook_title",
+  "display_width" : null,
+  "label" : "Ebook Title",
+  "help_text" : "This field is the area where you enter title.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "ebook title"
+}, {
+  "id" : "4c889029-794d-ad09-6f6e-c536bc113b3c",
+  "name" : "ebook_text",
+  "display_width" : null,
+  "label" : "Ebook Text",
+  "help_text" : "This field is the area where you enter text.",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing"
+}, {
+  "id" : "c51910a4-8820-5eac-2780-635e814974d6",
+  "name" : "ebook_images",
+  "display_width" : null,
+  "label" : "Ebook Images",
+  "help_text" : "This field is the area where images are placed.",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "Marketplace/24-7_inc/Magazine-Email-Fullpack/Images/tfs-magazine_img14.jpg",
+    "alt" : "tfs-magazine_img14.jpg",
+    "width" : "160",
+    "height" : "200"
+  }
+}, {
+  "id" : "7720be3a-608e-e46a-309f-6d13d5774f9e",
+  "name" : "download_button_text",
+  "display_width" : null,
+  "label" : "Download Button Text",
+  "help_text" : "This file is the area for entering the text of the link.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Download"
+}, {
+  "id" : "e12fccfd-1251-d94c-d25a-ca8010a98dab",
+  "name" : "download_button_link",
+  "display_width" : null,
+  "label" : "Download Button Link",
+  "help_text" : "This field is the area where you enter the link destination.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.hubspot.com/"
+} ]

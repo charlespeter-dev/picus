@@ -1,0 +1,22 @@
+[ {
+  "id" : "d8081c37-ef61-d3f9-1826-7444ebbafcb4",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://fs.hubspotusercontent00.net/hubfs/8398403/2X%20Demand%20Gen%20Files/107/Landing%20page%20banner.png",
+    "alt" : "Landing page banner",
+    "loading" : "lazy",
+    "width" : 1366,
+    "height" : 271,
+    "max_width" : 1366,
+    "max_height" : 271
+  }
+} ]

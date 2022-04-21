@@ -1,0 +1,197 @@
+[ {
+  "id" : "3dd61316-0045-2067-d516-8c644752ba2b",
+  "name" : "top_space",
+  "display_width" : null,
+  "label" : "Top space",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "max" : 300,
+  "step" : 1,
+  "type" : "number",
+  "default" : 50
+}, {
+  "id" : "de880fe6-5424-7bf9-1660-90e9eeac69a0",
+  "name" : "bottom_space",
+  "display_width" : null,
+  "label" : "Bottom space",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "max" : 300,
+  "step" : 1,
+  "type" : "number",
+  "default" : 50
+}, {
+  "id" : "13870d93-a26b-bc0c-ed95-b3d525b8f265",
+  "name" : "font_selector",
+  "display_width" : null,
+  "label" : "Font selector",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "69ec1b64-bb30-acff-f016-126c1e83686a",
+  "name" : "font_family",
+  "display_width" : null,
+  "label" : "Font family",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "13870d93-a26b-bc0c-ed95-b3d525b8f265",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "size" : 14,
+    "size_unit" : "px",
+    "color" : "#000",
+    "styles" : { },
+    "variant" : "regular",
+    "font" : "Montserrat",
+    "fallback" : "sans-serif",
+    "font_set" : "GOOGLE"
+  }
+}, {
+  "id" : "8a9c38df-9b82-4db9-97fd-4d415ac1d9f3",
+  "name" : "backgroundcolor",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "1a7f0fbe-98c3-2c36-b2af-502b0f55519b",
+  "name" : "position",
+  "display_width" : null,
+  "label" : "Position",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "Left" ], [ "right", "Right" ] ],
+  "type" : "choice",
+  "default" : "left"
+}, {
+  "id" : "4e4989d4-3a3d-6438-21bd-f240133abea7",
+  "name" : "left_image",
+  "display_width" : null,
+  "label" : "Left-image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/raw_assets/public/Marketplace/limenzycom/LZ_-_Layout_Module_01/Images/imag3-1.jpg",
+    "alt" : "imag3-1",
+    "width" : 586,
+    "height" : 451,
+    "max_width" : 586,
+    "max_height" : 451
+  }
+}, {
+  "id" : "2064d422-a617-167a-8fb5-b5b57872b51f",
+  "name" : "right_content",
+  "display_width" : null,
+  "label" : "Right content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p style=\"line-height: 2;\"><span>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span></p>\n<p style=\"line-height: 2;\"><span>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</span></p>"
+}, {
+  "id" : "8a3d994d-d8a1-953a-78ce-e4e626680b32",
+  "name" : "right_heading_content",
+  "display_width" : null,
+  "label" : "Right heading content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1 style=\"line-height: 1.5;\"><span><strong><span style=\"font-size: 20px;\">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</span>&nbsp;</strong></span></h1>"
+}, {
+  "id" : "2ad6a3fe-c6f3-12c6-5ca4-030bf110d108",
+  "name" : "multiple_cta",
+  "display_width" : null,
+  "label" : "multiple cta",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "a026c2f0-34bc-96a6-d198-f964ee6c15a9",
+    "name" : "cta_required",
+    "display_width" : null,
+    "label" : "Cta required",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "55c7a1e2-9e89-f9b6-4345-055c7ba7897b",
+    "name" : "button1",
+    "display_width" : null,
+    "label" : "Button1",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a026c2f0-34bc-96a6-d198-f964ee6c15a9",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "cta",
+    "default" : "bcaa611c-46dd-43f5-83d4-c6875994ae2e"
+  }, {
+    "id" : "3ffe7f1e-30f0-7c3b-6700-ed7b29e749e2",
+    "name" : "cta_required02",
+    "display_width" : null,
+    "label" : "Cta required02",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "00d921df-0da7-7b4e-3cc3-867891c6874e",
+    "name" : "button2",
+    "display_width" : null,
+    "label" : "Button2",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "3ffe7f1e-30f0-7c3b-6700-ed7b29e749e2",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "cta",
+    "default" : "9bfc14c4-3521-45ea-9c32-c27d5757252a"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "cta_required" : true,
+    "button1" : "bcaa611c-46dd-43f5-83d4-c6875994ae2e",
+    "cta_required02" : true,
+    "button2" : "9bfc14c4-3521-45ea-9c32-c27d5757252a"
+  } ]
+} ]

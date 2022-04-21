@@ -1,0 +1,37 @@
+[ {
+  "id" : "21402244-98fa-2539-cbd8-32a2c2affc57",
+  "name" : "line_height",
+  "display_width" : null,
+  "label" : "Line Height",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "1px"
+}, {
+  "id" : "df171aee-0f32-ecca-d995-9aa237440448",
+  "name" : "line_color",
+  "display_width" : null,
+  "label" : "Line Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#C5CBD0",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ab0a4260-f0e7-c933-89cb-7b7e10e10807",
+  "name" : "line_width_percentage",
+  "display_width" : null,
+  "label" : "Line Width Percentage",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "100%"
+} ]

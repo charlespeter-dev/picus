@@ -1,0 +1,112 @@
+[ {
+  "id" : "bcb4ce92-b535-99a5-7ccb-fece7ab7902b",
+  "name" : "heading_text",
+  "display_width" : null,
+  "label" : "Heading Text",
+  "help_text" : "Enter coming soon messege",
+  "inline_help_text" : "Enter coming soon messege",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "enter heading messege",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Coming Soon"
+}, {
+  "id" : "e9328924-67d3-99b6-0ceb-099d96d059a2",
+  "name" : "date_field",
+  "display_width" : null,
+  "label" : "Date",
+  "help_text" : "Please Enter a date greater than current date",
+  "inline_help_text" : "Date must be greater than current date",
+  "required" : true,
+  "locked" : false,
+  "type" : "date",
+  "default" : 1626633000000
+}, {
+  "id" : "61cae0fa-8637-50fb-72bc-c039238b9ca5",
+  "name" : "section_name",
+  "display_width" : null,
+  "label" : "Section_name",
+  "inline_help_text" : "Enter section name here",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "^\\S+$",
+  "placeholder" : "Section Name",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "section1"
+}, {
+  "id" : "a6bafa3e-01c2-3f40-f0a7-2297b6a7e865",
+  "name" : "font_color",
+  "display_width" : null,
+  "label" : "Heading Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "bcb4ce92-b535-99a5-7ccb-fece7ab7902b",
+    "controlling_value_regex" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "00251346-ec35-7fc5-aa4b-618eb94a0763",
+  "name" : "timer_color",
+  "display_width" : null,
+  "label" : "Timer color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "03060b3a-5917-9a05-7abd-cd524026e1a5",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#E06666",
+    "opacity" : 100
+  }
+}, {
+  "id" : "8c2827ce-1590-b479-2cb4-84a077b92ee1",
+  "name" : "bg_image",
+  "display_width" : null,
+  "label" : "Bg image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "Marketplace/digitalwoodsnet/Countdown_Timer/Images/",
+    "alt" : null
+  }
+}, {
+  "id" : "36347397-369a-3c74-f303-07e921aea664",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "End Time",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "This promotion has expired"
+} ]

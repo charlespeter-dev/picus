@@ -1,0 +1,146 @@
+[ {
+  "id" : "5c4d30b5-688a-bec7-d5dd-17f6c49e48a1",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/bg%20(1).png",
+    "alt" : "Picus Security",
+    "width" : 1920,
+    "height" : 755,
+    "max_width" : 1920,
+    "max_height" : 755
+  }
+}, {
+  "id" : "5137774b-db12-9320-aaa4-8f3fba1daa05",
+  "name" : "logo_image",
+  "display_width" : null,
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/coolnew.png",
+    "alt" : "Gartner",
+    "width" : 410,
+    "height" : 368,
+    "max_width" : 410,
+    "max_height" : 368
+  }
+}, {
+  "id" : "c9319220-cee5-2a0b-af82-4147a73c11a0",
+  "name" : "logo_description",
+  "display_width" : null,
+  "label" : "Logo Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Recognized as a Cool Vendor in Security and Risk Management by Gartner"
+}, {
+  "id" : "a29d18f8-09ab-d98d-d3cf-20547bfa2655",
+  "name" : "banner_title",
+  "display_width" : null,
+  "label" : "Banner Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Verified Security.<br>Now Possible."
+}, {
+  "id" : "f7fed7f6-5c5d-0c31-6d4d-c057eedf12ed",
+  "name" : "banner_subtitle",
+  "display_width" : null,
+  "label" : "Banner Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Can you stay ahead of cybercriminals?"
+}, {
+  "id" : "922f57bc-66c6-a2b2-a21f-46611536db02",
+  "name" : "select_button_type",
+  "display_width" : null,
+  "label" : "Select Button Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "standard", "Standard Button" ], [ "cta", "Call to Action" ] ],
+  "type" : "choice"
+}, {
+  "id" : "6c91ab82-f93b-a056-02d1-3b0382496c90",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "922f57bc-66c6-a2b2-a21f-46611536db02",
+    "controlling_value_regex" : "standard",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "0537605a-3263-ce66-030d-0f2e38e646ce",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "922f57bc-66c6-a2b2-a21f-46611536db02",
+    "controlling_value_regex" : "standard",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "6022e3ca-1973-c390-9015-bc6ea87261c7",
+  "name" : "select_cta",
+  "display_width" : null,
+  "label" : "Select CTA",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "922f57bc-66c6-a2b2-a21f-46611536db02",
+    "controlling_value_regex" : "cta",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "cta"
+} ]

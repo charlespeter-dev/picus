@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "icon" : "https://www.hint.mx/hubfs/hint_logo_cm.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 42891133559,
+  "is_available_for_new_content" : true
+}

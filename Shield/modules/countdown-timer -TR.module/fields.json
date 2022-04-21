@@ -1,0 +1,23 @@
+[ {
+  "id" : "98d3ce72-110a-6b22-8898-bb1b062e7d6a",
+  "name" : "datetime_field",
+  "display_width" : null,
+  "label" : "Date and time",
+  "required" : false,
+  "locked" : false,
+  "step" : 30,
+  "type" : "datetime",
+  "default" : 1602630000000
+}, {
+  "id" : "f2c757d5-0687-cd19-1f43-4a31da3d4712",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#012A3B",
+    "opacity" : 100
+  }
+} ]

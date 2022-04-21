@@ -1,0 +1,353 @@
+<!--
+  templateType: "email"
+  isAvailableForNewContent: true
+-->
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <title>{{ site_settings.company_name }}</title>
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table,
+    td {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    p {
+      display: block;
+      margin: 13px 0;
+    }
+
+  </style>
+  <!--[if mso]>
+        <noscript>
+        <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+        </noscript>
+        <![endif]-->
+  <!--[if lte mso 11]>
+        <style type="text/css">
+          .mj-outlook-group-fix { width:100% !important; }
+        </style>
+        <![endif]-->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+  </style>
+  <!--<![endif]-->
+  <style type="text/css">
+    @media only screen and (min-width:480px) {
+      .mj-column-per-100 {
+        width: 100% !important;
+        max-width: 100%;
+      }
+
+      .mj-column-per-50 {
+        width: 50% !important;
+        max-width: 50%;
+      }
+    }
+
+  </style>
+  <style media="screen and (min-width:480px)">
+    .moz-text-html .mj-column-per-100 {
+      width: 100% !important;
+      max-width: 100%;
+    }
+
+    .moz-text-html .mj-column-per-50 {
+      width: 50% !important;
+      max-width: 50%;
+    }
+
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width:480px) {
+      table.mj-full-width-mobile {
+        width: 100% !important;
+      }
+
+      td.mj-full-width-mobile {
+        width: auto !important;
+      }
+    }
+
+  </style>
+  <style type="text/css">
+    .bullet {
+      width: 7px;
+      height: 7px;
+      padding-left: 13px;
+      padding-right: 24px;
+      padding-top: 6px;
+    }
+
+    .td-1 {
+      width: 44px;
+      vertical-align: top;
+    }
+
+    .td-2 {
+      font-size: 16px;
+      color: #091E2F;
+      line-height: 24px;
+      align: left;
+    }
+
+  </style>
+</head>
+
+<body style="word-spacing:normal;background-color:f1f1f1;">
+  <div style="background-color:f1f1f1;">
+    
+    
+<!-- banner section -->
+{% module "2x MJML Banner Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Banner Module", label="2x MJML Banner Module" 
+  banner_image={
+   "src": "https://www.picussecurity.com/hubfs/2x/38/Email_Banner.png",
+   "alt": "Email_Banner",
+   "loading": "lazy",
+   "width": 1200,
+   "height": 300
+  }
+%}
+
+<!-- two-column section -->
+{% module "2x MJML Two Column Text-CTA Image Right Module" path='/2X Demand Gen Templates/Email MJML Module/2x MJML Two Column Text-CTA Image Right Module', label="2x MJML Two Column Text-CTA Image Right Module" 
+  image_field: {
+   "src": "https://www.picussecurity.com/hubfs/2x/38/Email_book%20thumbnail.png"
+  }
+  image_padding="40px"
+  title={
+   "padding-top": "40px",
+   "text": "Thank you for your interest",
+   "color_field": {
+    "color": "#D60059"
+   },
+   "font_size": "22px",
+   "line_height": "26px",
+   "font_weight": "bold",
+   "alignment": "left"
+  }
+  subtitle={
+   "text_field": "You can download the assets by clicking on the button below.",
+   "color_field": {
+    "color": "#00395C"
+   },
+   "font_size": "16px",
+   "line_height": "24px",
+   "font_weight": "normal",
+   "alignment": "left",
+   "padding_top": "20px"
+  }
+  cta={
+   "text_field": "DOWNLOAD NOW",
+   "font_size": "16px",
+   "line_height": "18px",
+   "font_weight": "bold",
+   "width": "270px",
+   "height": "40px",
+   "cta_padding_top": "20px",
+   "cta_padding_bottom": "40px",
+   "color_field": {
+    "color": "#FFFFFF"
+   },
+   "background_color": {
+    "color": "#D60059"
+   },
+   "link_field": {
+    "url": {
+     "href": "http://google.com"
+    }
+   }
+  }
+  padding_top="0px"
+  padding_left="41px"
+  padding_right="41px"
+  background_color={
+   "color": "#FFFFFF",
+   "opacity": 100
+  }
+%}
+
+<!-- rich text section -->
+{% module_block module "2x MJML Rich Text Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Rich Text Module", label="2x MJML Rich Text Module"
+   background_color={
+     "color": "#FFFFFF"
+   }
+   padding_top="0px"
+   padding_bottom="40px"
+   padding_left="41px"
+   padding_right="41px"
+%}
+  {% module_attribute "richtext_field" %}
+    <span style="color: #00395c;">Need more information? Please <span style="color: #d60059;"><strong><a href="http://google.com" rel="noopener" style="color: #d60059;">contact us.</a></strong></span></span>
+  {% end_module_attribute %}
+{% end_module_block %}
+
+<!-- rich text section -->
+{% module_block module "2x MJML Rich Text Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Rich Text Module", label="2x MJML Rich Text Module"
+   background_color={
+     "color": "#F2F4F6"
+   }
+   padding_top="40px"
+   padding_bottom="0px"
+   padding_left="41px"
+   padding_right="41px"
+%}
+  {% module_attribute "richtext_field" %}
+    <div style="text-align: center; line-height: 1.25;"><span style="color: #00395c;"><span style="font-size: 22px;"><strong>Related Resources</strong></span><br><span style="color: #d60059;"></span></span></div>
+  {% end_module_attribute %}
+{% end_module_block %}
+
+<!-- two-column section -->
+{% module "2x MJML Two Column Both Image-Text-CTA Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Two Column Both Image-Text-CTA Module", label="2x MJML Two Column Both Image-Text-CTA Module" 
+  left_column={
+   "image_field": {
+    "src": "https://www.picussecurity.com/hubfs/2x/38/Email%20TY_thumbnail.png",
+    "alt": "Email TY_thumbnail",
+    "loading": "lazy",
+    "width": 508,
+    "height": 240
+   },
+   "title": {
+    "text_field": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "font_size": "16px",
+    "line_height": "22px",
+    "font_weight": "bold",
+    "color_field": {
+     "color": "#3C3C3B",
+     "opacity": 100
+    },
+    "padding_top": "20px",
+    "alignment": "left"
+   },
+   "content": {
+    "text_field": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz.",
+    "font_size": "14px",
+    "line_height": "20px",
+    "font_weight": "normal",
+    "padding_top": "10px",
+    "color_field": {
+     "color": "#3C3C3B",
+     "opacity": 100
+    },
+    "alignment": "left"
+   },
+   "cta": {
+    "text_field": "READ MORE",
+    "font_size": "16px",
+    "line_height": "18px",
+    "font_weight": "bold",
+    "padding_top": "20px",
+    "width": "210px",
+    "height": "40px",
+    "color_field": {
+     "color": "#D60059",
+     "opacity": 100
+    },
+    "background_color": {
+     "color": "#F2F4F6",
+     "opacity": 100
+    },
+    "border": "1.5px solid #D60059",
+    "alignment": "left"
+   }
+  }
+  
+  right_column={
+     "image_field": {
+      "src": "https://www.picussecurity.com/hubfs/2x/38/Email%20TY_thumbnail%202.png",
+      "alt": "Email TY_thumbnail 2",
+      "loading": "lazy",
+      "width": 508,
+      "height": 240
+     },
+     "title": {
+      "text_field": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "font_size": "16px",
+      "line_height": "22px",
+      "font_weight": "bold",
+      "color_field": {
+       "color": "#3C3C3B",
+       "opacity": 100
+      },
+      "padding_top": "20px",
+      "alignment": "left"
+     },
+     "content": {
+      "text_field": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz.",
+      "font_size": "14px",
+      "line_height": "20px",
+      "font_weight": "normal",
+      "padding_top": "10px",
+      "color_field": {
+       "color": "#3C3C3B",
+       "opacity": 100
+      },
+      "alignment": "left"
+     },
+     "cta": {
+      "text_field": "READ MORE",
+      "font_size": "16px",
+      "line_height": "18px",
+      "font_weight": "bold",
+      "padding_top": "20px",
+      "width": "210px",
+      "height": "40px",
+      "color_field": {
+       "color": "#D60059",
+       "opacity": 100
+      },
+      "background_color": {
+       "color": "#F2F4F6",
+       "opacity": 100
+      },
+      "border": "1.5px solid #D60059",
+      "alignment": "left"
+     }
+  }
+
+
+%}
+
+<!-- footer section -->
+{% module "2x MJML Footer Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Footer Module", label="2x MJML Footer Module" %}
+
+
+  </div>
+</body>
+</html>

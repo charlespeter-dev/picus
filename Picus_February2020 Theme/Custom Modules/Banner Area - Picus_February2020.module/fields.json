@@ -1,0 +1,143 @@
+[ {
+  "id" : "bec0b1c4-77b1-9f42-deb7-92b824ae54ce",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "fbd4cda7-1e30-f284-44be-fadb9c69eb38",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Banner Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "A clear and bold header"
+}, {
+  "id" : "d9b20f86-7894-0093-1640-1e61a135c451",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Banner Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "A more subdued subheader"
+}, {
+  "id" : "8c5e8f95-876b-160a-52be-7562ae92e255",
+  "name" : "include_links",
+  "display_width" : null,
+  "label" : "Include Links",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "664c5bc3-1ddb-53ab-31c9-e408fd031493",
+  "name" : "links",
+  "display_width" : null,
+  "label" : "Links",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "8c5e8f95-876b-160a-52be-7562ae92e255",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "simplemenu",
+  "default" : [ ]
+}, {
+  "id" : "a1929969-31ab-3017-3b2c-9e85daee6b27",
+  "name" : "module_settings",
+  "display_width" : null,
+  "label" : "Module Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "56d37eba-54d9-e882-616b-ee4802bde2bc",
+    "name" : "select_background_image_position",
+    "display_width" : null,
+    "label" : "Select Background Image Position",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bec0b1c4-77b1-9f42-deb7-92b824ae54ce",
+      "controlling_value_regex" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "left top", "Left Top" ], [ "left center", "Left Center" ], [ "left bottom", "Left Bottom" ], [ "right top", "Right Top" ], [ "right center", "Right Center" ], [ "right bottom", "Right Bottom" ], [ "center top", "Center Top" ], [ "center center", "Center Center" ], [ "center bottom", "Center Bottom" ] ],
+    "type" : "choice",
+    "default" : "center center"
+  }, {
+    "id" : "609f228e-a729-e91f-7523-35c5f0ffe0d3",
+    "name" : "select_content_width",
+    "display_width" : null,
+    "label" : "Select Content Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "three-four", "75% (3/4th of Container Width)" ], [ "full", "100% (Total Available Width)" ] ],
+    "type" : "choice",
+    "default" : "full"
+  }, {
+    "id" : "5349cdbd-6478-9cc5-996a-cc9e876992da",
+    "name" : "heading_colour",
+    "display_width" : null,
+    "label" : "Heading Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#00293b",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "844967d4-f354-c25b-4d6d-6ae3eb09ab7a",
+    "name" : "sub_heading_colour",
+    "display_width" : null,
+    "label" : "Sub-Heading Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#00293b",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "select_background_image_position" : "center center",
+    "select_content_width" : "full",
+    "heading_colour" : {
+      "color" : "#00293b",
+      "opacity" : 100
+    },
+    "sub_heading_colour" : {
+      "color" : "#00293b",
+      "opacity" : 100
+    }
+  }
+} ]

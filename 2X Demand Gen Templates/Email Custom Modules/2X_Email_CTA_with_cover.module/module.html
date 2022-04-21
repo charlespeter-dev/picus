@@ -1,0 +1,153 @@
+<table align="center" border="0"
+       cellpadding="0" cellspacing="0"
+       width="100%">
+  <tbody>
+    <tr>
+      <td align="center"
+          valign="top">
+        <table
+               align="center"
+               border="0"
+               cellpadding="0"
+               cellspacing="0"
+               class="em_wrapper"
+               style="width:510px;"
+               width="510">
+          <tbody>
+            <tr>
+              <td align="center"
+                  valign="top">
+                <table
+                       align="left"
+                       border="0"
+                       cellpadding="0"
+                       cellspacing="0"
+                       class="em_wrapper"
+                       style="width:270px;"
+                       width="270">
+                  <tbody>
+
+                    <tr>
+                      <td height="18"
+                          style="height:16px; line-height:0px; font-size:0px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <tr
+                        style="">
+                      <td align="{{ module.asset_alignment }}"
+                          class="em_blk"
+                          pardot-region="half_width_heading"
+                          style="font-family: Arial, sans-serif; 
+                                 font-size:{{ module.first_text_group.asset_font_size }}; line-height:{{ module.first_text_group.asset_line_height }}; letter-spacing: 0px; color:{{ module.first_text_group.asset_color.color }}; font-weight:{{ module.first_text_group.asset_font_weight }};">
+                          {{ module.first_text_group.asset_text }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="13"
+                          style="height:13px; line-height:0px; font-size:0px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <tr
+                        style="">
+                      <td align="{{ module.asset_alignment }}"
+                          class=""
+                          style="font-family: Arial, sans-serif; font-size:{{ module.second_text_group.asset_title_font_size }}; line-height:{{ module.second_text_group.asset_title_line_height }}; color:{{ module.second_text_group.asset_title_color.color }}; font-weight:{{ module.second_text_group.asset_title_font_weight }};">
+                          {{ module.second_text_group.asset_title }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="15"
+                          style="height:15px; line-height:0px; font-size:0px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top">
+                        <!--CTA-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="center" bgcolor="#DD3333" style="background:#DD3333; border:0px solid #DD3333; color:#ffffff;" valign="top">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" height="40"  bgcolor="#DD3333"
+                                          style="font-family:Arial, sans-serif; background:{{ module.cta.cta_background_color.color }}!important; font-size:{{ module.cta.cta_font_size }}; color:{{ module.cta.cta_color.color }}; font-weight:{{ module.cta.cta_font_weight }};"
+                                          valign="middle">
+                                        <a href="{{ module.cta.cta_url.href }}"  
+                                          style="text-decoration:none; background:{{ module.cta.cta_background_color.color }}; color:{{ module.cta.cta_color.color }}; display:block; line-height:{{ module.cta.cta_line_height }}; font-size:{{ module.cta.cta_font_size }}; " 
+                                           target="_blank">{{ module.cta.cta_text }}</a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!--CTA-->
+                      </td>
+                    </tr>                    
+                  </tbody>
+                </table>
+
+
+                <table
+                       align="right"
+                       border="0"
+                       cellpadding="0"
+                       cellspacing="0"
+                       class="em_wrapper"
+                       style="width:220px;"
+                       width="220">
+                  <tbody>
+                    <tr
+                        style="">
+                      <td align="center"
+                          class="em_pad"
+                          pardot-region="half_width_image"
+                          valign="top">
+                        {% if module.thumbnail_image.src %}
+                          {% set sizeAttrs = 'width="{{ module.thumbnail_image.width }}" height="{{ module.thumbnail_image.height }}"' %}
+                          {% if module.thumbnail_image.size_type == 'auto' %}
+                            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                          {% elif module.thumbnail_image.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ module.thumbnail_image.max_width }}" 
+                                                height="{{ module.thumbnail_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                          {% endif %}
+                         {% set loadingAttr = module.thumbnail_image.loading != 'disabled' ? 'loading="{{ module.thumbnail_image.loading }}"' : '' %}
+                          <a href="{{ module.thumbnail_url.href }}" target="_blank">
+                            <img class="custom_img" src="{{ module.thumbnail_image.src }}" 
+                                 alt="{{ module.thumbnail_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}></a>
+                        {% endif %}
+<!--                         <img alt=""
+                             border="0"
+                             class="custom_img"
+                             height="176"
+                             src="https://f.hubspotusercontent10.net/hubfs/5914566/HRsoft_march2021/hrsoft-thumbnail.png"
+                             style="display: block; width: 222px; height: auto; border-width: 0px; border-style: solid;"
+                             width="220"> -->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="20"
+          style="height:20px; line-height:0px; font-size:0px;">
+        &nbsp;</td>
+    </tr>
+<!--     <tr>
+      <td height="20" class="desktop_tr"
+          style="height:20px; line-height:0px; font-size:0px;">
+        &nbsp;</td>
+    </tr> -->
+  </tbody>
+</table>

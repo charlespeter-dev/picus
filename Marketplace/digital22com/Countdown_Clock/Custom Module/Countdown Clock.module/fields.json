@@ -1,0 +1,150 @@
+[ {
+  "id" : "2e975f30-5077-1cc7-90f3-a8befff0c59f",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "help_text" : "Countdown Clock Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p style=\"font-size: 36px; text-align: center;\">Countdown Clock</p>"
+}, {
+  "id" : "f83d67db-6727-9f5e-3ee7-48dad36d8f58",
+  "name" : "target_date_time",
+  "display_width" : null,
+  "label" : "Target Date & Time",
+  "help_text" : "Target Date & Time",
+  "required" : false,
+  "locked" : false,
+  "step" : 1,
+  "type" : "datetime",
+  "default" : 1592971200000
+}, {
+  "id" : "49fe8297-63df-f211-6273-6588c28929b0",
+  "name" : "countdown_background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "help_text" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "84b649fa-664d-f4b5-0f65-cb065580b960",
+  "name" : "header_font",
+  "display_width" : null,
+  "label" : "Header Font",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "size" : 24,
+    "size_unit" : "px",
+    "color" : "#000",
+    "styles" : { }
+  }
+}, {
+  "id" : "53046ef1-0f7c-0b1d-9700-3f42fb88b086",
+  "name" : "heading_padding",
+  "display_width" : null,
+  "label" : "Heading Padding",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 15
+}, {
+  "id" : "c7138ade-359c-fa27-04bb-9bd7fcfa3d62",
+  "name" : "datetime_font",
+  "display_width" : null,
+  "label" : "DateTime Font",
+  "required" : false,
+  "locked" : false,
+  "load_external_fonts" : true,
+  "type" : "font",
+  "default" : {
+    "size" : 20,
+    "size_unit" : "px",
+    "color" : "#000",
+    "styles" : { }
+  }
+}, {
+  "id" : "e3b30277-5948-5b06-a0cc-ab6391ffceff",
+  "name" : "clock_shadow",
+  "display_width" : null,
+  "label" : "Clock Shadow",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 0
+}, {
+  "id" : "c299756d-06ed-44ca-d916-a11d675176a0",
+  "name" : "border_radius",
+  "display_width" : null,
+  "label" : "Border Radius",
+  "help_text" : "Border Radius",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 0
+}, {
+  "id" : "f130656c-e6f2-839e-952e-c3ed1b5ce300",
+  "name" : "day_text",
+  "display_width" : null,
+  "label" : "Day Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Days",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Days"
+}, {
+  "id" : "b5b05ea9-7c0b-c5b7-73b0-9c75ecf7f285",
+  "name" : "hour_text",
+  "display_width" : null,
+  "label" : "Hour Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Hours",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Hours"
+}, {
+  "id" : "be1ff132-a7b2-1137-88d5-6cfaa477a1f6",
+  "name" : "minutes_text",
+  "display_width" : null,
+  "label" : "Minutes Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Minutes",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Minutes"
+}, {
+  "id" : "eb94e6ac-586c-364d-1c07-4c55b042697e",
+  "name" : "seconds_text",
+  "display_width" : null,
+  "label" : "Seconds Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Seconds"
+} ]

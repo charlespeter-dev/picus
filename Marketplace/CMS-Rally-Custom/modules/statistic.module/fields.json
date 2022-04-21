@@ -1,0 +1,136 @@
+[ {
+  "id" : "statistic_number",
+  "name" : "statistic_number",
+  "display_width" : null,
+  "label" : "Statistic number",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "min" : 0,
+  "max" : 1000,
+  "step" : 1,
+  "type" : "number",
+  "default" : 10
+}, {
+  "id" : "statistic_unit",
+  "name" : "statistic_unit",
+  "display_width" : null,
+  "label" : "Statistic unit",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "k"
+}, {
+  "id" : "statistic_percentage",
+  "name" : "statistic_percentage",
+  "display_width" : null,
+  "label" : "Statistic percentage",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "min" : 0,
+  "max" : 100,
+  "step" : 1,
+  "type" : "number",
+  "default" : 50
+}, {
+  "id" : "statistic_description",
+  "name" : "statistic_description",
+  "display_width" : null,
+  "label" : "Statistic description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Customer satisfaction rating</p>"
+}, {
+  "id" : "override_default_style",
+  "name" : "override_default_style",
+  "display_width" : null,
+  "label" : "Override default style",
+  "help_text" : "Enabling this option will allow you to override default theme styles. Disabling this option will reconnect the module back to the default theme styles.",
+  "required" : false,
+  "locked" : false,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "style",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style options",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "override_default_style",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "style.bar_color",
+    "name" : "bar_color",
+    "display_width" : null,
+    "label" : "Bar color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#D0D0D0"
+    }
+  }, {
+    "id" : "style.bar_fill_color",
+    "name" : "bar_fill_color",
+    "display_width" : null,
+    "label" : "Bar fill color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#EB4E54"
+    }
+  }, {
+    "id" : "style.statistic_text_color",
+    "name" : "statistic_text_color",
+    "display_width" : null,
+    "label" : "Statistic text color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : null,
+      "access" : null,
+      "hidden_subfields" : {
+        "opacity" : true
+      }
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#EB4E54"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

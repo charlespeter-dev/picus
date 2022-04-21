@@ -1,0 +1,61 @@
+
+
+<!-- DESKTOP -->
+<div class="container-fluid bannerCustom mb-4 {{module.banner_options.padding_space_desktop}} {{module.banner_options.padding_space_mobile}}"
+{% if module.banner_options.background_type == "image" %} 
+  style="background-image: url('{{ module.banner_options.background_image.src }}'); background-size: cover;"
+{% elif module.banner_options.background_type == "color" %}
+  style="background-color: {{ module.banner_options.gradient_start_color.color }};
+  background-image: linear-gradient(rgba({{ module.banner_options.gradient_start_color.color|convert_rgb  }},{{ module.banner_options.gradient_start_color.opacity/100 }}) 70%,rgba({{ module.banner_options.gradient_end_color.color|convert_rgb  }},{{ module.banner_options.gradient_end_color.opacity/100 }}) 100%) right bottom no-repeat; background-size:cover;" 
+{% endif %}>
+
+  <div class="container">
+    <div class=" logoBanner {{module.banner_logo.bottom_spacing_mobile_logo}} {{module.banner_logo.bottom_spacing_desktop_logo}}">
+      <img src='{{ module.banner_logo.logo_field.src }}'>
+    </div>
+    
+    <div class="d-none d-lg-block textHeader fontFamily-Arial">
+      {% for item in module.content_options %}
+      <{{ item.header_tag }} 
+          class="{{item.bottom_spacing_desktop}}"  
+          style="color:{{item.text_color_desktop.color}}; 
+          font-weight:{{item.font_weight_desktop}}; 
+          font-size:{{ item.font_size_desktop}};
+          line-height:{{ item.line_height_desktop}};">
+      
+                {{ item.header_content}}
+      
+        </{{ item.header_tag }}>
+    {% endfor %}
+    </div>
+      
+  </div>
+</div>
+  
+  
+<!--  mobile content  -->
+<div class="container-fluid d-block d-lg-none bannerCustomMobile text-center my-3 p-1">
+  <div class="container">
+    <div class="text-left textHeader fontFamily-Arial">
+    
+      {% for item in module.content_options_mobile %}
+      <{{ item.header_tag_mobile }}   
+            class="{{item.bottom_spacing_mobile}}" 
+            style="color:{{item.text_color_mobile.color}}; 
+              font-weight:{{item.font_weight_mobile}};
+              font-size:{{ item.font_size_mobile }};
+              line-height:{{ item.line_height_mobile}};">
+                  {{ item.mobile_content }}
+      </{{ item.header_tag_mobile }}>
+      {% endfor %}
+   </div>
+     
+     {% if module.button_text_mobile %}
+        <div class=" btn btn-outline  w-100 btnDownload bg-red fontFamily-Arial ">
+          <a href="#formSection" style="display:block;">{{ module.button_text_mobile }}</a>
+        </div>
+     {% endif %}
+  </div>
+   
+ </div>  
+  

@@ -1,0 +1,76 @@
+a.link-click {
+  -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    -moz-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    background: rgb(232,5,93);
+    border-radius: 6px;
+    border-width: 0px;
+    color: rgb(255,255,255);
+    font-family: sans-serif;
+    height: auto;
+    transition: all .4s ease;
+    padding: 8px 15px;
+    text-shadow: none;
+    width: auto;
+    font-size: 24px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Inter',sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.title-resource {
+  width: 100%;
+}
+.title-resource .video-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.8); 
+}
+.title-resource.active .video-modal {
+  display: block;
+}
+.title-resource .video-modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 15px;
+  border: 1px solid #888;
+  width: 60%; 
+  position: relative;
+}
+.title-resource .video-modal-content p.video-modal-close {
+  float: right;
+  font-weight: bold;
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  background: #FF3587;
+  border-radius: 100%;
+  padding: 1px 11px 3px;
+  top: -15px;
+  right: -15px;
+}
+.title-resource .video-modal-content p.video-modal-close:hover,
+.title-resource .video-modal-content p.video-modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

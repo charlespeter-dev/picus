@@ -1,0 +1,49 @@
+[ {
+  "id" : "5f5cb849-c396-45e2-32e9-d1fb12935b8b",
+  "name" : "start_time",
+  "display_width" : null,
+  "label" : "Start Time",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "00:00"
+}, {
+  "id" : "ebcd8fe3-97f2-2979-8752-4aa369113034",
+  "name" : "end_time",
+  "display_width" : null,
+  "label" : "End Time",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "00:00"
+}, {
+  "id" : "f4c9bcea-e8ca-1798-5f27-bc05f1f76de0",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem ipsum dolor sit amet"
+}, {
+  "id" : "87b2c932-9931-6274-6ee7-588fa4d6a8b3",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel sem eu lectus aliquet maximus in a tellus. Mauris congue placerat aliquam. Nam in ex at tellus sagittis viverra."
+} ]

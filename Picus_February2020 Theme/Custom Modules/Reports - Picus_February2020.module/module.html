@@ -1,0 +1,25 @@
+{% if module.group_title %}
+<div class="cm-webinars row-fluid page-center">
+  <h2>{{ module.group_title }}</h2>
+</div>
+{% endif %}
+<div class="cm-webinars-listing justify-content-center page-center blog-content post-listing">
+  {% for item in module.reports %}
+  {% set href = item.link_field.url.href %}
+  <div class="col colmd6 col12 mb-5 px-4 post-item">
+    <div class="card text-white bg-card-dark text-center">
+      <a href="{{ href }}">
+      <img class="card-img-top default" src="{{ item.featured_image.src }}" alt="T1055 Process Injection">
+      </a>
+        <div class="card-body">
+          <div class="card-title-wrapper mt-2">
+          <a href="{{ href }}"><h2>{{ item.title }}</h2></a>
+          </div>
+          {% if item.link_text == "Register now" %}<div class="card-date-wrapper"><h3 class="card-date-wrapper">{{ item.date_field|datetimeformat('%B %e, %Y') }}</h3></div>{% endif %}
+          <div class="card-text">{{ item.description }}</div>
+          <a href="{{ href }}" class="btn btn-default align-self-center">{{ item.link_text }}</a>
+        </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

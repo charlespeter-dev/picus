@@ -1,0 +1,41 @@
+.social-sharing { font-size: 18px; }
+.social-sharing ul { list-style: none; padding: 0; margin: 0 -5px; }
+.social-sharing li { display: inline-block; margin: 0 5px; }
+.social-sharing li a { transition: all 0.2s; text-decoration: none; }
+.social-sharing i { display: flex; justify-content: center; align-items: center; }
+
+@font-face {
+  font-family: 'social-icons';
+  src: url({{ module_asset_url("social-icons.woff2") }}) format('woff2'),
+       url({{ module_asset_url("social-icons.woff") }}) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="social-icon-"]:before, [class*=" social-icon-"]:before {
+  font-family: "social-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.social-icon-twitter:before { content: '\f099'; } /* '' */
+.social-icon-facebook:before { content: '\f09a'; } /* '' */
+.social-icon-gplus:before { content: '\f0d5'; } /* '' */
+.social-icon-linkedin:before { content: '\f0e1'; } /* '' */
+.social-icon-youtube-play:before { content: '\f16a'; } /* '' */
+.social-icon-instagram:before { content: '\f16d'; } /* '' */
+.social-icon-skype:before { content: '\f17e'; } /* '' */
+.social-icon-slack:before { content: '\f198'; } /* '' */
+.social-icon-pinterest:before { content: '\f231'; } /* '' */
+.social-icon-whatsapp:before { content: '\f232'; } /* '' */

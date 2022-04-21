@@ -1,0 +1,24 @@
+.hsc-alert {
+  width: 100%;
+  display: block;
+  font-family: 'Arial';
+}
+.hsc-alert-container {
+  margin: 0 auto;
+}
+.hsc-alert-content {
+  margin: 0 auto;
+  float: none;
+}
+.hsc-alert-content .hs_cos_wrapper_type_icon {
+  float: left;
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+}
+/* RESPONSIVE STYLES */
+
+@media (max-width: 767px) {
+
+  
+}

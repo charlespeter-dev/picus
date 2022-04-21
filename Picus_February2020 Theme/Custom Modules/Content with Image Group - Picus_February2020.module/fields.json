@@ -1,0 +1,58 @@
+[ {
+  "id" : "efe4b11e-ba70-5bcd-3382-db6796b99642",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Industry-Leading Mitigation Suggestions</h2>\n<p>Picus mitigation suggestions are designed to deliver an actionable to-do list to increase your security level. Proposed actions are customized for existing security infrastructures. The easy-to-apply signatures are always ready for use. Picus also ships with an open source remediation know-how that can be consumed by your security technologies.</p>"
+}, {
+  "id" : "7f2bdcac-e674-91c9-3a03-687e81eb9f38",
+  "name" : "image_group",
+  "display_width" : null,
+  "label" : "Image Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "155a2924-a596-0907-741b-db04c0bdcd59",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/checkpoint@3x.png",
+      "alt" : "Check Point Software Technologies LTD",
+      "width" : 185,
+      "height" : 32,
+      "max_width" : 417,
+      "max_height" : 72
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "exact",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/checkpoint@3x.png",
+      "alt" : "Check Point Software Technologies LTD",
+      "width" : 185,
+      "height" : 32,
+      "max_width" : 417,
+      "max_height" : 72
+    }
+  }
+} ]

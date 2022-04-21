@@ -1,0 +1,508 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_v4.5.2.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/bootstrap_fontAwesome_4.7.0.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/override-hubspot_March2021.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Coded Files/custom-Olympia_June2021.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/2X Demand Gen Templates/Picus/Custom CSS/2x LandingPage 38 Custom.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_162393243547246",
+        "label" : "Olympia_Simple_Banner_April2021",
+        "type" : "custom_widget",
+        "params" : {
+          "banner_logo" : {
+            "bottom_spacing_desktop_logo" : "mb-md-5",
+            "logo_field" : {
+              "alt" : "logo",
+              "height" : 50,
+              "override_inherited_src" : true,
+              "src" : "https://www.picussecurity.com/hubfs/2x/38/logo.png",
+              "width" : 204
+            }
+          },
+          "banner_options" : {
+            "background_image" : {
+              "alt" : "LP_Banner",
+              "height" : 1250,
+              "loading" : "lazy",
+              "max_height" : 1250,
+              "max_width" : 4500,
+              "size_type" : "auto",
+              "src" : "https://www.picussecurity.com/hubfs/2x/38/LP_Banner.jpg",
+              "width" : 4500
+            },
+            "background_type" : "image",
+            "padding_space_desktop" : "p-md-5"
+          },
+          "content_options" : [ {
+            "bottom_spacing_desktop" : "mb-md-3",
+            "bottom_spacing_mobile_logo" : "mb-1",
+            "font_size_desktop" : "20px",
+            "font_weight_desktop" : "normal",
+            "header_content" : "WHITE PAPER",
+            "header_tag" : "h1",
+            "line_height_desktop" : "24px",
+            "text_color_desktop" : {
+              "color" : "#FFFFFF",
+              "opacity" : 100
+            }
+          }, {
+            "bottom_spacing_desktop" : "mb-md-1",
+            "bottom_spacing_mobile_logo" : "mb-1",
+            "font_size_desktop" : "42px",
+            "font_weight_desktop" : "bold",
+            "header_content" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
+            "header_tag" : "h1",
+            "line_height_desktop" : "52px",
+            "text_color_desktop" : {
+              "color" : "#FFFFFF",
+              "opacity" : 100
+            }
+          } ],
+          "content_options_mobile" : [ {
+            "bottom_spacing_mobile" : "mb-2",
+            "font_size_mobile" : "20px",
+            "font_weight_mobile" : "normal",
+            "header_tag_mobile" : "h1",
+            "line_height_mobile" : "24px",
+            "mobile_content" : "WHITE PAPER",
+            "text_color_mobile" : {
+              "color" : "#D60059",
+              "opacity" : 100
+            }
+          }, {
+            "bottom_spacing_mobile" : "mb-4",
+            "font_size_mobile" : "42px",
+            "font_weight_mobile" : "bold",
+            "header_tag_mobile" : "h1",
+            "line_height_mobile" : "52px",
+            "mobile_content" : "Sed ut perspiciatis unde omnis iste natus error sit qui",
+            "text_color_mobile" : {
+              "color" : "#00395C",
+              "opacity" : 100
+            }
+          } ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/2X Demand Gen Templates/Custom Modules/Olympia_Simple_Banner_June2021",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Olympia_Simple_Banner_June2021",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1623960833626227",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container px-0 pt-md-3 bodyContent",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1623960848301233",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1623960866720235",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "mainContent",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 8,
+                    "name" : "module_1649917037460582",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "col-12 col-lg-8 text-area",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1649917044820590",
+                        "label" : "Rich Text",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "html" : "<p style=\"line-height: 1.15; font-size: 24px;\"><strong><span style=\"color: #d60059;\">Sed ut perspiciatis unde omnis iste natus error sit</span></strong></p>\n<p style=\"font-size: 18px; line-height: 1.5;\"><span style=\"color: #00395c;\"><strong>At vero eos et accusamus et iusto</strong> odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz.</span></p>\n<p style=\"font-size: 18px; line-height: 1.5;\"><span style=\"color: #00395c;\">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>",
+                          "overrideable" : true,
+                          "path" : "@hubspot/rich_text",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Rich Text",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 6,
+                        "name" : "module_1623960878235237",
+                        "label" : "Module group",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "col-lg-5 col-12 text-center px-4 px-lg-3 thumbnailImg",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_1623960962594319",
+                            "label" : "Image",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "my-2",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "img" : {
+                                "alt" : "LP and TYP_book Thumbnail",
+                                "height" : 500,
+                                "loading" : "disabled",
+                                "max_height" : 500,
+                                "max_width" : 820,
+                                "size_type" : "auto",
+                                "src" : "https://www.picussecurity.com/hubfs/2x/38/LP%20and%20TYP_book%20Thumbnail.png",
+                                "width" : 820
+                              },
+                              "overrideable" : true,
+                              "path" : "@hubspot/linked_image",
+                              "per_widget_wrapper_html" : "",
+                              "schema_version" : 2,
+                              "widget_name" : "Image",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "my-2",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "col-lg-5 col-12 text-center px-4 px-lg-3 thumbnailImg",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      },
+                      "6" : {
+                        "x" : 6,
+                        "w" : 6,
+                        "name" : "module_1623960881255239",
+                        "label" : "Module group",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "col-lg-7 col-12 px-lg-3 customRichText",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_1623960995620359",
+                            "label" : "Rich Text",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "html" : "<h2 style=\"font-size: 18px; line-height: 1.75;\"><span style=\"color: #00395c;\"><strong>Sed ut perspiciatis unde omnis iste natus error sit volupt:</strong></span></h2>\n<ul style=\"list-style-type: square; font-size: 18px; line-height: 1.75;\">\n<li><span style=\"color: #00395c;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span><br><span style=\"color: #00395c;\"></span></li>\n<li><span style=\"color: #00395c;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span><br><span style=\"color: #00395c;\"></span></li>\n<li><span style=\"color: #00395c;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span></li>\n</ul>",
+                              "overrideable" : true,
+                              "path" : "@hubspot/rich_text",
+                              "per_widget_wrapper_html" : "",
+                              "schema_version" : 2,
+                              "widget_name" : "Rich Text",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "col-lg-7 col-12 px-lg-3 customRichText",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "col-12 col-lg-8 text-area",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "8" : {
+                    "x" : 8,
+                    "w" : 4,
+                    "name" : "module_1623960898987261",
+                    "label" : "Module group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "col-lg-4 col-12 pb-5 pb-lg-0 p-3 p-lg-3 mt-0 mt-lg-0 formContainer hide-icons position relative borderRounded-D20px-M0px bg-grey",
+                      "css_id" : "formSection",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1623961005358365",
+                        "label" : "Form",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "form" : {
+                            "form_id" : "ee2d48c9-7b37-46ce-8420-a7f678c7e20c",
+                            "form_type" : "HUBSPOT",
+                            "message" : "Thanks for submitting the form.",
+                            "response_type" : "inline"
+                          },
+                          "overrideable" : true,
+                          "path" : "@hubspot/form",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "title" : "Sed ut perspiciatis unde omnis",
+                          "widget_name" : "Form",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "formSection",
+                    "cssClass" : "col-lg-4 col-12 pb-5 pb-lg-0 p-3 p-lg-3 mt-0 mt-lg-0 formContainer hide-icons position relative borderRounded-D20px-M0px bg-grey",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "mainContent",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "container px-0 pt-md-3 bodyContent",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1623960820172225",
+        "label" : "Olympia_Footer_April2021",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "w-100 text-center text-white py-3",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/2X Demand Gen Templates/Custom Modules/2x_footer",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Olympia_Footer_June2021",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "w-100 text-center text-white py-3",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

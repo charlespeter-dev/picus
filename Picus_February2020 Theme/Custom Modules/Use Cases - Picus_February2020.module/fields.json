@@ -1,0 +1,144 @@
+[ {
+  "id" : "29054bfa-c7d2-f06b-6872-ffe6d9df4187",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Use Cases"
+}, {
+  "id" : "0de1d642-e31a-b9ad-4b8b-c052dd208d13",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "27203ef5-90d0-dedb-bec6-dd0879dc4738",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/underutilized.jpg",
+      "alt" : "Underutilized Security Investments",
+      "width" : 1650,
+      "height" : 1000,
+      "max_width" : 1650,
+      "max_height" : 1000
+    }
+  }, {
+    "id" : "daf2cd91-6f6c-61b4-e680-376655383d38",
+    "name" : "logo_image",
+    "display_width" : null,
+    "label" : "Logo Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/picuslogowhite.svg",
+      "alt" : "Picus Security",
+      "width" : 400,
+      "height" : 400,
+      "max_width" : 400,
+      "max_height" : 400
+    }
+  }, {
+    "id" : "3c65f6f3-7179-0e31-a8ac-636273308c5d",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Underutilized\t\t\t\t\t\t\t\t\t<br>Security\t\t\t\t\t\t\t\t\t<br> Investments."
+  }, {
+    "id" : "72da973b-ae9c-23c5-2f9a-c17337eec629",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Can you utilize your security infrastructure to its maximum?"
+  }, {
+    "id" : "fe01adcb-7676-9cd6-2df2-e4ad9ffe2270",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Read More Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/underutilized.jpg",
+      "alt" : "Underutilized Security Investments",
+      "width" : 1650,
+      "height" : 1000,
+      "max_width" : 1650,
+      "max_height" : 1000
+    },
+    "logo_image" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/picuslogowhite.svg",
+      "alt" : "Picus Security",
+      "width" : 400,
+      "height" : 400,
+      "max_width" : 400,
+      "max_height" : 400
+    },
+    "heading" : "Underutilized\t\t\t\t\t\t\t\t\t<br>Security\t\t\t\t\t\t\t\t\t<br> Investments.",
+    "description" : "Can you utilize your security infrastructure to its maximum?",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

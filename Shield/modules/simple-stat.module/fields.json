@@ -1,0 +1,70 @@
+[ {
+  "id" : "4dcbe199-50ba-023e-1de1-3b9e3d7e39bb",
+  "name" : "statistic",
+  "display_width" : null,
+  "label" : "Statistic",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "100+"
+}, {
+  "id" : "eb9fa5c6-41cc-8896-528c-19f3c8393369",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Customers trust Picus Solutions globally"
+}, {
+  "id" : "7d2fb7e3-dc2f-0d09-6138-d8fb7d78819b",
+  "name" : "options",
+  "display_width" : null,
+  "label" : "Options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2650a9eb-caa2-e0c8-0821-5e39c729f435",
+    "name" : "stat_colour",
+    "display_width" : null,
+    "label" : "Stat Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#1592E6",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "f5956a6c-70dc-54da-ff4b-b78964336f30",
+    "name" : "description_colour",
+    "display_width" : null,
+    "label" : "Description Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "stat_colour" : {
+      "color" : "#1592E6",
+      "opacity" : 100
+    },
+    "description_colour" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }
+} ]

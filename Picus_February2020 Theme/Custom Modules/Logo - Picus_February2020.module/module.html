@@ -1,0 +1,15 @@
+<div class="cm-logo">
+ <a href="{{ module.logo_url }}" {% if module.open_link_in_new_tab %}target="_blank"{% endif %}> 
+   {% if module.logo.override_inherited_src %}
+     {% if module.logo.src %}<img id="standard-logo" src="{{ module.logo.src }}" alt="{{ module.logo.alt }}">{% endif %}
+   <!--  module.logo.alt } -->
+   {% else %}
+     {% if site_settings.logo_src %}<img id="settings-logo" src="{{ site_settings.logo_src }}" alt="{{ site_settings.logo_alt }}">{% endif %}
+   {% endif %}
+   {% if module.select_sticky_logo.override_inherited_src %}
+     {% if module.select_sticky_logo.src %}<img id="sticky-logo" src="{{ module.select_sticky_logo.src }}" alt="{{ module.select_sticky_logo.alt }}">{% endif %}
+   {% else %}
+     {% if site_settings.logo_src %}<img id="settings-logo" src="{{ site_settings.logo_src }}" alt="{{ site_settings.logo_alt }}">{% endif %}
+   {% endif %}
+ </a>
+</div>

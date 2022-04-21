@@ -1,0 +1,26 @@
+[ {
+  "id" : "0ee1b0c8-2345-db15-0e59-c9b4b610fdb1",
+  "name" : "href",
+  "display_width" : null,
+  "label" : "Form Container ID or Link",
+  "help_text" : "Form container ID to scroll down to or an external link to navigate to.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#register-form"
+}, {
+  "id" : "e51678c9-1a21-f3f6-4461-248c0d29a747",
+  "name" : "button_caption",
+  "display_width" : null,
+  "label" : "Button Caption",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Register Now"
+} ]

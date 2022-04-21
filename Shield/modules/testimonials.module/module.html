@@ -1,0 +1,36 @@
+<div class="testimonial-slider wow fadeIn">
+  {% for item in module.testimonial %}
+  <div>
+  <div class="quote">
+          <div class="quote-contain">{{ item.quote }}</div>
+  </div>
+  <div class="person-details">    
+  <div class="person-image">
+  {% if item.photo.src %}
+        {% set sizeAttrs = 'width="{{ item.photo.width }}" height="{{ item.photo.height }}"' %}
+        {% if item.photo.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.photo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.photo.max_width }}px; max-height: {{ item.photo.max_height }}px"' %}
+        {% endif %}
+        <img src="{{ item.photo.src }}" alt="{{ item.photo.alt }}" {{ sizeAttrs }}>
+  {% endif %}
+    </div>
+  <div class="person-content">
+  {% if item.company_logo.src %}
+    {% set sizeAttrs = 'width="{{ item.company_logo.width }}" height="{{ item.company_logo.height }}"' %}
+    {% if item.company_logo.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif item.company_logo.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.company_logo.max_width }}px; max-height: {{ item.company_logo.max_height }}px"' %}
+    {% endif %}
+    <img src="{{ item.company_logo.src }}" alt="{{ item.company_logo.alt }}" {{ sizeAttrs }}>   
+  {% endif %} 
+  <p class="name">{{ item.person_name }}</p>
+  <p class="title">{{ item.job_title }}</p>
+    </div>
+  </div>  
+
+  </div>
+{% endfor %}
+</div>

@@ -1,0 +1,61 @@
+[ {
+  "id" : "14821b27-68af-002e-608e-f8c0716ac74b",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Investors"
+}, {
+  "id" : "ead63364-7ece-6f84-9d4c-80592fb1ca3b",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "38272d2c-8426-85bf-19eb-52899e7b94bd",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/earlybird.png",
+      "alt" : "Earlybird Digital East",
+      "width" : 350,
+      "height" : 67,
+      "max_width" : 2480,
+      "max_height" : 472
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "exact",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/Picus_February2020/images/earlybird.png",
+      "alt" : "Earlybird Digital East",
+      "width" : 350,
+      "height" : 67,
+      "max_width" : 2480,
+      "max_height" : 472
+    }
+  }
+} ]

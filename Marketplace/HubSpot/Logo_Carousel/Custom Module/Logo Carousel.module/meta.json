@@ -1,0 +1,34 @@
+{
+  "extra_classes" : "widget-type_meatball",
+  "global" : false,
+  "icon" : "https://design-assets.hubspot.com/hubfs/slider.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 43692128319,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Coded File/slick.min.css",
+    "name" : "slick.min.css"
+  } ],
+  "other_assets" : [ {
+    "url" : "https://f.hubspotusercontent30.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/slick.woff",
+    "autoload" : false,
+    "name" : "slick.woff"
+  }, {
+    "url" : "https://f.hubspotusercontent30.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/slick.svg",
+    "autoload" : false,
+    "name" : "slick.svg"
+  }, {
+    "url" : "https://f.hubspotusercontent30.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/slick.ttf",
+    "autoload" : false,
+    "name" : "slick.ttf"
+  }, {
+    "url" : "https://f.hubspotusercontent30.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/slick.eot",
+    "autoload" : false,
+    "name" : "slick.eot"
+  }, {
+    "url" : "https://f.hubspotusercontent30.net/hubfs/298884/HubSpot%20Modules/Logo%20Carousel/ajax-loader.gif",
+    "autoload" : false,
+    "name" : "ajax-loader.gif"
+  } ],
+  "is_available_for_new_content" : true
+}

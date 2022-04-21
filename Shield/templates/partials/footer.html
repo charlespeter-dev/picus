@@ -1,0 +1,78 @@
+<!--
+  templateType: global_partial
+  label: Footer
+-->
+<footer class="footer">
+  <div class="footer__main dnd-section">
+    <div class="row-fluid">
+      <div class="span3 footer__logo">
+        {% module "Footer Logo" path="@hubspot/logo", img={ 
+          "override_inherited_src": true,
+          "src": 'https://www.picussecurity.com/hubfs/Logo_White.png' 
+        }
+        link='http://www-picussecurity-com.sandbox.hs-sites.com/-temporary-slug-88361285-053d-49c2-9d3c-26333634ceda' %}
+      </div>
+    </div>
+    <div class="row-fluid span12">
+      <div class="span4">{% module "Offices" label="Office Information" path="@hubspot/rich_text", html='
+        <p><strong>San Francisco</strong></p>
+        <address>415 Jackson St, Suite B,<br> San Francisco, CA 94111, USA</address>
+        <p><a href="tel:+4158905105" class="phone">+(415) 8905 105</a></p>
+        <p><strong>Ankara</strong></p>
+        <address>Hacettepe Teknokent, AR-GE 1,<br>
+          No: 12 06800 - Çankaya Ankara, TR</address>
+          <p><a href="tel:+4158905105" class="phone">+(415) 8905 105</a></p>
+        <p><strong>London</strong></p>
+        <address>Farnborough, Orpington,<br> BR6 7BX, UK</address>
+        <p><a href="tel:+4158905105" class="phone">+(415) 8905 105</a></p>
+        ' %}</div>
+      <div class="span3">
+        <p><strong>Products</strong></p>
+        {% module "Products Menu" label="Products Menu" path="@hubspot/menu" id="32488279843" flow="vertical" %}
+        <p><strong>Solutions</strong></p>
+        {% module "Solutions Menu" label="Solutions Menu" path="@hubspot/menu" id="32488279910" flow="vertical"  %}
+        <p><strong>Use Cases</strong></p>
+        {% module "Use Cases Menu" label="Use Cases Menu" path="@hubspot/menu" id="34050730072" flow="vertical"  %}
+      </div>
+      <div class="span3">
+        <p><strong>Resources</strong></p>
+        {% module "Resources Menu" label="Resources Menu" path="@hubspot/menu" id="32488136213" flow="vertical"  %}
+        <p><strong>Partners</strong></p>
+        {% module "Partners Menu" label="Partners Menu" path="@hubspot/menu" id="32488106257" flow="vertical"  %}
+      </div>
+      <div class="span2">
+        <p><strong>Company</strong></p>
+        {% module "Company Menu" label="Company Menu" path="@hubspot/menu" id="32488280065" flow="vertical"  %}
+      </div>
+    </div>
+  </div>
+  <div class="footer__container content-wrapper">
+
+    {# Social follow section #}
+    {% module_block module 'footer_social' label="Social Icons" path='../../modules/social-follow',
+      label='Social follow'
+    %}
+      {% module_attribute 'social_link' is_json=True %}
+        [
+          {"social_account": "facebook-f"},
+          {"social_account": "linkedin-in"},
+          {"social_account": "twitter"},
+          {"social_account": "instagram"}
+        ]
+      {% end_module_attribute %}
+    {% end_module_block %}
+    {# End social follow section #}
+
+    {# Copyright information section #}
+    <div class="footer__copyright wow fadeIn">
+      {% module_block module 'footer_copyright_text' label="Copyright" path='@hubspot/text' %}
+        {% module_attribute 'value' %}© {{ year }} Copyright 2020. All rights reserved.{% end_module_attribute %}
+      {% end_module_block %}
+      {% module_block module 'footer_privacy_link' label="Privacy" path='@hubspot/text' %}
+        {% module_attribute 'value' %}<a href="../privacy">Privacy</a>{% end_module_attribute %}
+      {% end_module_block %}
+    </div>
+    {# End copyright information section #}
+
+  </div>
+</footer>

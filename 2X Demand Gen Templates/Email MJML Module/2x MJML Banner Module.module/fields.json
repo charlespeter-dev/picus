@@ -1,0 +1,19 @@
+[ {
+  "id" : "7402deff-9878-dade-59d7-1c37c6d8f322",
+  "name" : "banner_image",
+  "display_width" : null,
+  "label" : "Banner Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.picussecurity.com/hubfs/2x/38/Email_Banner.png",
+    "alt" : "Email_Banner",
+    "loading" : "lazy",
+    "width" : 1200,
+    "height" : 300
+  }
+} ]

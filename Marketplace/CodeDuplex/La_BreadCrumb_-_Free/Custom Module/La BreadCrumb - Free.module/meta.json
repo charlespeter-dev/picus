@@ -1,0 +1,14 @@
+{
+  "content_tags" : [ {
+    "name" : "MENU",
+    "source" : "USER"
+  }, {
+    "name" : "NAVIGATION",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "icon" : "https://f.hubspotusercontent20.net/hubfs/4755974/Marketplace/Modules/La%20BreadCrumb/La%20BreadCrumb%20Paid/Icon.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 61864500293,
+  "is_available_for_new_content" : true
+}

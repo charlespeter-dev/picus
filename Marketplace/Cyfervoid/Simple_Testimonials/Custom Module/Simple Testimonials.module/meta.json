@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "https://f.hubspotusercontent00.net/hubfs/6094355/hs_marketplace_assets/negosyo/review.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 66038769527,
+  "label" : "Simple Testimonials",
+  "is_available_for_new_content" : true
+}

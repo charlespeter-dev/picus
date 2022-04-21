@@ -1,0 +1,586 @@
+[ {
+  "id" : "01de1310-ae38-cce9-043e-d536859be657",
+  "name" : "parent_padding",
+  "display_width" : null,
+  "label" : "Parent Padding",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "51a4a707-3241-91f1-86c3-8012e63b256f",
+    "name" : "padding_left",
+    "display_width" : null,
+    "label" : "Padding Left",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "41px"
+  }, {
+    "id" : "ebab64e7-40f2-3e32-f08d-23f2d1d77367",
+    "name" : "padding_right",
+    "display_width" : null,
+    "label" : "Padding Right",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "41px"
+  }, {
+    "id" : "502c8fcd-1a7f-b770-9ef7-b34c15e5ea9d",
+    "name" : "padding_top",
+    "display_width" : null,
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "40px"
+  }, {
+    "id" : "77b712c9-1eee-f869-14b2-f887fbefdc7e",
+    "name" : "padding_bottom",
+    "display_width" : null,
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "0px"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "padding_left" : "41px",
+    "padding_right" : "41px",
+    "padding_top" : "40px",
+    "padding_bottom" : "0px"
+  }
+}, {
+  "id" : "ddc7800c-b483-25e6-1794-ddab3b9bcff3",
+  "name" : "left_column",
+  "display_width" : null,
+  "label" : "Left Column",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f0eabc34-2b73-0976-f893-dbc6b87cfca9",
+    "name" : "padding",
+    "display_width" : null,
+    "label" : "Padding",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "9c070759-1db8-e351-c2e0-342e8f3bb462",
+      "name" : "padding_top",
+      "display_width" : null,
+      "label" : "Padding Top",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "15px"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "padding_top" : "15px"
+    }
+  }, {
+    "id" : "65027d2a-e599-c9ad-7eda-30728842cb65",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text Field",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "d278f65c-99cf-490a-4acf-a5c0144feb7d",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "White Paper"
+    }, {
+      "id" : "eb0a827f-1eab-6fac-eca1-b70b2cecca38",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "18px"
+    }, {
+      "id" : "2b29d26e-d9b7-e5ff-ccfc-d870a6eba143",
+      "name" : "line_height",
+      "display_width" : null,
+      "label" : "Line Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "24px"
+    }, {
+      "id" : "62f1c2a2-f21e-ad9f-eea7-dba50f4b03c4",
+      "name" : "font_weight",
+      "display_width" : null,
+      "label" : "Font Weight",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "bold"
+    }, {
+      "id" : "32b43d8d-c762-34c0-eec0-ac24f7cbab37",
+      "name" : "font_color",
+      "display_width" : null,
+      "label" : "Font Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#851F55",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "e59e1e39-5307-be43-1684-848b7d696db5",
+      "name" : "padding_column_left",
+      "display_width" : null,
+      "label" : "Padding",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "15ee9a3e-18d8-9bae-592d-11f81925c895",
+        "name" : "padding_top",
+        "display_width" : null,
+        "label" : "Padding Top",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "3px"
+      }, {
+        "id" : "1031e269-37ad-2cf0-1944-ecdc5f9f79c4",
+        "name" : "padding_left",
+        "display_width" : null,
+        "label" : "Padding Left",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "0px"
+      }, {
+        "id" : "ed50067f-c2a7-c630-e0d5-62faa905d888",
+        "name" : "padding_right",
+        "display_width" : null,
+        "label" : "Padding Right",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "0px"
+      }, {
+        "id" : "79124ca8-7470-6907-2830-8c4946703cf5",
+        "name" : "padding_bottom",
+        "display_width" : null,
+        "label" : "Padding Bottom",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "0px"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "padding_top" : "3px",
+        "padding_left" : "0px",
+        "padding_right" : "0px",
+        "padding_bottom" : "0px"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text_field" : "White Paper",
+      "font_size" : "18px",
+      "line_height" : "24px",
+      "font_weight" : "bold",
+      "font_color" : {
+        "color" : "#851F55",
+        "opacity" : 100
+      },
+      "padding_column_left" : {
+        "padding_top" : "3px",
+        "padding_left" : "0px",
+        "padding_right" : "0px",
+        "padding_bottom" : "0px"
+      }
+    }
+  }, {
+    "id" : "05f3421f-2df2-978d-6439-50d0543858f7",
+    "name" : "button_field",
+    "display_width" : null,
+    "label" : "Button Field",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "77914ef9-6d7f-a31b-e352-9bfda4b5e392",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Download Now"
+    }, {
+      "id" : "ce563dfe-4d65-1863-2ad7-693d424e96a2",
+      "name" : "font_size",
+      "display_width" : null,
+      "label" : "Font Size",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "18px"
+    }, {
+      "id" : "7efe0d45-0cca-ca1f-a46f-16c60557f168",
+      "name" : "font_weight",
+      "display_width" : null,
+      "label" : "Font Weight",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "bold"
+    }, {
+      "id" : "a9072803-295f-c895-8808-2a77ecfc1ce2",
+      "name" : "line_height",
+      "display_width" : null,
+      "label" : "Line Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "21px"
+    }, {
+      "id" : "d94aab7d-9944-b1af-9e66-330023f2320a",
+      "name" : "font_color",
+      "display_width" : null,
+      "label" : "Font Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "07f58263-2485-b7b7-a66c-aca3e7fa4f1c",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#0095A6",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "c1b11b5c-fcb9-ad47-29e4-22b4abdda88c",
+      "name" : "button_height",
+      "display_width" : null,
+      "label" : "Button Height",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "50px"
+    }, {
+      "id" : "b619438f-d85a-6404-54cf-a16d32cf296d",
+      "name" : "button_width",
+      "display_width" : null,
+      "label" : "Button Width",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "248px"
+    }, {
+      "id" : "1aa26091-cc95-9ab3-0c91-872f921500a4",
+      "name" : "button_link",
+      "display_width" : null,
+      "label" : "Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://google.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "41154bc9-dbe4-b36b-bc7c-30b4e029d500",
+      "name" : "padding",
+      "display_width" : null,
+      "label" : "Padding",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "08e6184c-f083-323e-46e9-eacb5a71bbae",
+        "name" : "padding_top",
+        "display_width" : null,
+        "label" : "Padding Top",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "20px"
+      }, {
+        "id" : "6a54d8d2-2098-8cea-eec5-6db191f18d6c",
+        "name" : "padding_bottom",
+        "display_width" : null,
+        "label" : "Padding Bottom",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "0px"
+      }, {
+        "id" : "8c956c32-8929-d0b7-5249-dfb710e8bf05",
+        "name" : "padding_left",
+        "display_width" : null,
+        "label" : "Padding Left",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "0px"
+      }, {
+        "id" : "9dc6fede-82e1-8f8c-ad7d-f5de609a10af",
+        "name" : "padding_right",
+        "display_width" : null,
+        "label" : "Padding Right",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "0px"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "padding_top" : "20px",
+        "padding_bottom" : "0px",
+        "padding_left" : "0px",
+        "padding_right" : "0px"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "button_text" : "Download Now",
+      "font_size" : "18px",
+      "font_weight" : "bold",
+      "line_height" : "21px",
+      "font_color" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#0095A6",
+        "opacity" : 100
+      },
+      "button_height" : "50px",
+      "button_width" : "248px",
+      "button_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://google.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "padding" : {
+        "padding_top" : "20px",
+        "padding_bottom" : "0px",
+        "padding_left" : "0px",
+        "padding_right" : "0px"
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "padding" : {
+      "padding_top" : "15px"
+    },
+    "text_field" : {
+      "text_field" : "White Paper",
+      "font_size" : "18px",
+      "line_height" : "24px",
+      "font_weight" : "bold",
+      "font_color" : {
+        "color" : "#851F55",
+        "opacity" : 100
+      },
+      "padding_column_left" : {
+        "padding_top" : "3px",
+        "padding_left" : "0px",
+        "padding_right" : "0px",
+        "padding_bottom" : "0px"
+      }
+    },
+    "button_field" : {
+      "button_text" : "Download Now",
+      "font_size" : "18px",
+      "font_weight" : "bold",
+      "line_height" : "21px",
+      "font_color" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#0095A6",
+        "opacity" : 100
+      },
+      "button_height" : "50px",
+      "button_width" : "248px",
+      "button_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://google.com",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "padding" : {
+        "padding_top" : "20px",
+        "padding_bottom" : "0px",
+        "padding_left" : "0px",
+        "padding_right" : "0px"
+      }
+    }
+  }
+}, {
+  "id" : "ec1f58ef-b4b8-a3d7-4e75-7920fb408069",
+  "name" : "right_column",
+  "display_width" : null,
+  "label" : "Right Column",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d6a7b589-7814-6003-200f-bed9c9029783",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://4883612.fs1.hubspotusercontent-na1.net/hubfs/4883612/2x/26/book.png",
+      "alt" : "book",
+      "loading" : "lazy",
+      "width" : 300,
+      "height" : 280
+    }
+  }, {
+    "id" : "71e4ce2e-2cba-9f95-7e99-1b3327938090",
+    "name" : "image_alignment",
+    "display_width" : null,
+    "label" : "Image Alignment",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "center"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "src" : "https://4883612.fs1.hubspotusercontent-na1.net/hubfs/4883612/2x/26/book.png",
+      "alt" : "book",
+      "loading" : "lazy",
+      "width" : 300,
+      "height" : 280
+    },
+    "image_alignment" : "center"
+  }
+} ]

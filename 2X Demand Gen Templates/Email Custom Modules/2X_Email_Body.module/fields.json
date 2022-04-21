@@ -1,0 +1,10 @@
+[ {
+  "id" : "598ef017-b353-eea5-15c8-7e01b2dd77ed",
+  "name" : "email_body",
+  "display_width" : null,
+  "label" : "Email Body",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p style=\"margin-bottom: 0px !important; padding-bottom: 0px !important; font-size: 16px; line-height: 1.5;\">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiz.</p>\n<p style=\"margin-bottom: 0px !important; padding-bottom: 0px !important; font-size: 16px; line-height: 1.5;\"><strong>Sed ut perspiciatis unde omnis iste natus error sit volupt:</strong></p>\n<ul style=\"font-size: 16px; list-style-type: square;\">\n<li style=\"line-height: 1.5;\"><span style=\"color: #444444;\">Aenean aliquam imperdiet nisi, non finibus velit mollis malesuada.euismod sem ac magna porta .</span><br><br></li>\n<li style=\"line-height: 1.5;\"><span style=\"color: #444444;\">Aenean aliquam imperdiet nisi, non finibus velit mollis malesuada.euismod sem ac magna porta. test</span><br><br></li>\n<li style=\"line-height: 1.5;\"><span style=\"color: #444444;\">Aenean aliquam imperdiet nisi, non finibus velit mollis malesuada.euismod sem ac magna porta .</span><br><br><br></li>\n</ul>"
+} ]

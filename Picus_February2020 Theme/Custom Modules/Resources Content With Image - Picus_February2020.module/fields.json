@@ -1,0 +1,111 @@
+[ {
+  "id" : "78657cab-52bf-4723-cf51-ff96b9de518d",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/7048931/datasheet.jpg",
+    "alt" : "Datasheet",
+    "width" : 625,
+    "height" : 872,
+    "max_width" : 625,
+    "max_height" : 872
+  }
+}, {
+  "id" : "7ca530a5-162f-9f34-3b79-74e07bec70ff",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Datasheet"
+}, {
+  "id" : "0121a4de-93c0-ba70-20c6-65385e2a1a04",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Picus Continuous Security Validation Software For <br><strong>Automated Cyber-Threat Simulation &amp; Mitigation</strong></h2>\n<p>Continuously challenge your readiness to emerging threats, identify your weak and strong security measures in real-time and mitigate findings in minutes.</p>"
+}, {
+  "id" : "c03ef175-df4b-3b8c-3499-c166d8255eff",
+  "name" : "select_button_type",
+  "display_width" : null,
+  "label" : "Select Button Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "standard", "Standard Button" ], [ "cta", "Call to Action" ] ],
+  "type" : "choice"
+}, {
+  "id" : "698c57c1-ad0f-e323-53cd-f8d38903e291",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "c03ef175-df4b-3b8c-3499-c166d8255eff",
+    "controlling_value_regex" : "standard",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "de7e1d94-f9cd-8968-d003-a5e54665e84a",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "c03ef175-df4b-3b8c-3499-c166d8255eff",
+    "controlling_value_regex" : "standard",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "FILE"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "c6e0b4c7-5205-62be-3598-230a41dfad47",
+  "name" : "select_cta",
+  "display_width" : null,
+  "label" : "Select CTA",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "c03ef175-df4b-3b8c-3499-c166d8255eff",
+    "controlling_value_regex" : "cta",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "cta"
+} ]

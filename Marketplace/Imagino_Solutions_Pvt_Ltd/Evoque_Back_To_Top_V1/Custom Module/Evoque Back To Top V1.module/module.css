@@ -1,0 +1,31 @@
+a.Evoque_scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    display: none;
+    /* background: url(icon_top.png) no-repeat; */
+    cursor: pointer;
+    z-index: 99999999;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}

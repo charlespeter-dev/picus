@@ -1,0 +1,41 @@
+<!--
+Thanks!! For Purchasing
+Astra Post Pagination 
+Provided By CodeDuplex
+Visit us at www.codeduplex.com
+Licence & Copyright - CodeDuplex
+Product Page - https://codeduplex.com/product/astra-post-pagination-module/
+Support Page - https://help.codeduplex.com/
+-->
+
+{% if not is_listing_view %}
+<nav class="cd-post-pagination clearfix">
+  {% if content.next_post_slug %}
+  <a href="/{{ content.next_post_slug }}" class="cd-post-pagination-link cd-post-pagination-link--prev">
+    <svg class="cd-post-pagination-link-icon" viewBox="0 0 23 48">
+      <g class="svg-icon">
+        <polyline fill="none" stroke-miterlimit="10" points="21.5,1.3 2.6,23.4 21.5,45.7 "></polyline>
+      </g>
+    </svg>
+    <div class="cd-post-pagination-link-content">
+      <div class="cd-post-pagination-link-label">Previous</div>
+      <h4 class="cd-post-pagination-link-title">{{ content.next_post_name }}</h4>
+    </div>
+  </a>
+  {% endif %}
+
+  {% if content.previous_post_slug %}
+  <a href="/{{ content.previous_post_slug }}" class="cd-post-pagination-link cd-post-pagination-link--next">
+    <div class="cd-post-pagination-link-content">
+      <div class="cd-post-pagination-link-label">Next</div>
+      <h4 class="cd-post-pagination-link-title">{{ content.previous_post_name }}</h4>
+    </div>
+    <svg class="cd-post-pagination-link-icon" viewBox="0 0 23 48">
+      <g class="svg-icon">
+        <polyline fill="none" stroke-miterlimit="10" points="1.5,45.7 20.4,23.5 1.5,1.3 "></polyline>
+      </g>
+    </svg>
+  </a>
+  {% endif %}
+</nav>
+{% endif %}

@@ -1,0 +1,31 @@
+<div class="key-benefits-wrapper">
+  <div class="global-row platform-block lightgraybg">
+    <div class="page-center">
+      <div id="key-benefits" class="platform-navigator"></div>
+      <div class="row align-items-center">
+        {% if module.title %}
+          <div class="col text-center benefits-header">
+            <h1>{{ module.title }}</h1>
+          </div>
+        {% endif %}
+        {% if module.heading %}
+          <div class="col12">
+            <h2>{{ module.heading }}</h2>
+          </div>
+        {% endif %}
+        {% if module.content %}
+          <div class="colmd5 col12">
+            <div class="description-block">
+              {{ module.content }}
+            </div>
+          </div>
+        {% endif %}
+        {% if module.image.src %}
+        <div class="colmd6 offsetmd1 col12">
+          <img class="img-fluid w100" src="{{ module.image.src }}?noresize" width="{{ module.image.width }}" alt="{{ module.image.alt }}" title="{{ module.image.alt }}">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

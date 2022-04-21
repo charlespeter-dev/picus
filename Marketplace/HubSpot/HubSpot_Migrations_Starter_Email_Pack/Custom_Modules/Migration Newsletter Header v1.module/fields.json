@@ -1,0 +1,25 @@
+[ {
+  "id" : "8763cd78-662f-dbc5-c046-64b2ce137c25",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Newsletter"
+}, {
+  "id" : "c1eb2c65-1c47-250c-057a-c2dfeba654e8",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Here's some optional supporting text that helps introduce the things you will say in this newsletter. Use it to convince the reader that there is value in reading the rest of your content."
+} ]

@@ -1,0 +1,13 @@
+{% if module.content %}
+<div class="fw-content-with-background-wrapper content-width-{{ module.module_settings.select_content_width }}" {% if module.module_settings.bottom_margin %}style="margin-bottom: {{ module.module_settings.bottom_margin }}px;"{% endif %}>
+  <div class="global-row privacy-description" style="background-color: rgba({{ module.background_color.color|convert_rgb  }},{{ module.background_color.opacity/100 }});">
+    <div class="page-center">
+      <div class="row">
+        <div class="{% if module.module_settings.select_content_width == '83' %}colsm10{% elif module.module_settings.select_content_width == '92' %}colmd11{% else %}col{% endif %} col12">
+          {{ module.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

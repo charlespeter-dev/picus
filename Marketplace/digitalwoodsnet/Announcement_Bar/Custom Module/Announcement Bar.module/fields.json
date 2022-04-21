@@ -1,0 +1,482 @@
+[ {
+  "id" : "067d017c-9b07-c1a9-112b-b38433cbd1ef",
+  "name" : "section_name",
+  "display_width" : null,
+  "label" : "Section name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Enter Name",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "demo"
+}, {
+  "id" : "e98f2051-23f7-bba8-f2cb-ccc6c3cae843",
+  "name" : "section_style",
+  "display_width" : null,
+  "label" : "Section Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4caeca46-00c4-f6b4-263a-4200eebb454b",
+    "name" : "section_background_color",
+    "display_width" : null,
+    "label" : "Section Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "cbe764c4-fb87-4bf0-9725-4d2501c67b74",
+    "name" : "font_color",
+    "display_width" : null,
+    "label" : "Font Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#eb5424",
+      "opacity" : 10
+    }
+  }, {
+    "id" : "150cb66c-0bd9-42e5-076c-ae6d03afc218",
+    "name" : "position",
+    "display_width" : null,
+    "label" : "Position",
+    "help_text" : "Choose announce bar position",
+    "inline_help_text" : "Choose announce bar position",
+    "required" : true,
+    "locked" : false,
+    "display" : "radio",
+    "placeholder" : "Choose announce bar position",
+    "choices" : [ [ "true", "Top" ], [ "false", "Bottom" ] ],
+    "type" : "choice",
+    "default" : "true"
+  }, {
+    "id" : "fc8646bf-a65e-75b3-53e3-ff9d6ec1a1d6",
+    "name" : "padding_left_right",
+    "display_width" : null,
+    "label" : "Padding Left & Right",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 35,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 35
+  }, {
+    "id" : "ade27be5-3851-5981-fe04-5b86a226e50c",
+    "name" : "padding_top_bottom",
+    "display_width" : null,
+    "label" : "Padding Top & Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 0
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "section_background_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "font_color" : {
+      "color" : "#eb5424",
+      "opacity" : 10
+    },
+    "position" : "true",
+    "padding_left_right" : 35,
+    "padding_top_bottom" : 0
+  }
+}, {
+  "id" : "dfbc7e8e-4fac-01f5-7989-8e5064a994ac",
+  "name" : "timer_style",
+  "display_width" : null,
+  "label" : "Timer Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "10ad3748-aa48-a526-de07-66aa8ad4b84d",
+    "name" : "type_of_time_set",
+    "display_width" : null,
+    "label" : "Type Of Time Set",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "{{ module.timer_style.timer_date }}", "Date Only" ], [ "{{ module.timer_style.announce_time }}", "Date & Time" ] ],
+    "type" : "choice",
+    "default" : "{{ module.timer_style.timer_date }}"
+  }, {
+    "id" : "aa12a978-05d1-31e6-bee0-c2cb55ea12b2",
+    "name" : "timer_date",
+    "display_width" : null,
+    "label" : "Timer Date",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "10ad3748-aa48-a526-de07-66aa8ad4b84d",
+      "controlling_value_regex" : "{{ module.timer_style.timer_date }}",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "date",
+    "default" : 1612069200000
+  }, {
+    "id" : "1a4acf35-286d-2a7c-9359-8f4b49219c2d",
+    "name" : "announce_time",
+    "display_width" : null,
+    "label" : "Announce time",
+    "required" : true,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "10ad3748-aa48-a526-de07-66aa8ad4b84d",
+      "controlling_value_regex" : "{{ module.timer_style.announce_time }}",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "step" : 3,
+    "type" : "datetime",
+    "default" : 1614488940000
+  }, {
+    "id" : "b94425a2-c546-6e49-00bf-b6e22f33ce45",
+    "name" : "timer_text_color",
+    "display_width" : null,
+    "label" : "Timer Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "3ee306a3-2cce-74bd-434f-2889e04f2a38",
+    "name" : "timer_background_color",
+    "display_width" : null,
+    "label" : "Timer Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "490c28b7-e082-c55d-9780-6b77efa526cb",
+    "name" : "timer_label_text_color",
+    "display_width" : null,
+    "label" : "Timer Label Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "938a631a-9841-7915-0b8f-a7b441412e90",
+    "name" : "timer_show_or_hide",
+    "display_width" : null,
+    "label" : "Timer show or hide",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "type_of_time_set" : "{{ module.timer_style.timer_date }}",
+    "timer_date" : 1612069200000,
+    "announce_time" : 1614488940000,
+    "timer_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "timer_background_color" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    },
+    "timer_label_text_color" : {
+      "color" : "#000",
+      "opacity" : 100
+    },
+    "timer_show_or_hide" : true
+  }
+}, {
+  "id" : "6fd5cdb4-3054-5034-7374-89fc7991e6d7",
+  "name" : "announcement_details",
+  "display_width" : null,
+  "label" : "Announcement Description Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "79bf7868-d690-c074-caf5-8d3704956373",
+    "name" : "announcebar_text",
+    "display_width" : null,
+    "label" : "Announcebar Text",
+    "required" : true,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p style=\"font-size: 24px;\">Sale! Sale! Buy Product and Get <span style=\"font-size: 30px; color: #0600ff;\">40% OFF</span></p>"
+  }, {
+    "id" : "7693c896-ef4f-8195-ddba-ec7bc9f95017",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "announcebar_text" : "<p style=\"font-size: 24px;\">Sale! Sale! Buy Product and Get <span style=\"font-size: 30px; color: #0600ff;\">40% OFF</span></p>",
+    "text_color" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "a8d4095c-9c90-812a-ead9-b56a38ba045d",
+  "name" : "button_style",
+  "display_width" : null,
+  "label" : "Button Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "00b85571-b716-820d-118e-81a2578187b4",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get Started"
+  }, {
+    "id" : "a89030c7-0de8-7bae-c2fd-43de00a01feb",
+    "name" : "button_type",
+    "display_width" : null,
+    "label" : "Button Type",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_value_regex" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "external_url", "External website URL" ], [ "metting_link", "Metting link" ], [ "page_or_blog", "Hubspot page or blog post" ], [ "phone_number", "Phone number" ] ],
+    "type" : "choice",
+    "default" : "external_url"
+  }, {
+    "id" : "965290e7-7d0c-67dc-0781-409d4e6d3059",
+    "name" : "external_website_url",
+    "display_width" : null,
+    "label" : "External website URL",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a89030c7-0de8-7bae-c2fd-43de00a01feb",
+      "controlling_value_regex" : "external_url",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "925ba4c7-5b12-0f6c-5c13-f23820ba0445",
+    "name" : "blog_field",
+    "display_width" : null,
+    "label" : "Blog",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a89030c7-0de8-7bae-c2fd-43de00a01feb",
+      "controlling_value_regex" : "page_or_blog",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "blog",
+    "default" : 34622229648
+  }, {
+    "id" : "3735c101-1b53-ba11-3dfd-f0239dd1d5b5",
+    "name" : "meeting_link",
+    "display_width" : null,
+    "label" : "Meeting link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "a89030c7-0de8-7bae-c2fd-43de00a01feb",
+      "controlling_value_regex" : "metting_link",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "embeddable" : false,
+    "type" : "meeting"
+  }, {
+    "id" : "c6dd5469-c4ab-1ede-ba99-bdf53e676c8d",
+    "name" : "phone_number",
+    "display_width" : null,
+    "label" : "Phone number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "a89030c7-0de8-7bae-c2fd-43de00a01feb",
+      "controlling_value_regex" : "phone_number",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "placeholder" : "Enter Mobile Number",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "9832098320"
+  }, {
+    "id" : "273a0f4e-6a82-f30f-aa0d-cca00194893c",
+    "name" : "button_background_color",
+    "display_width" : null,
+    "label" : "Button Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "9de3ec99-bd14-13f2-33b4-91c10dc5c781",
+    "name" : "button_text_color",
+    "display_width" : null,
+    "label" : "Button Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "35fbb641-15b7-0886-b438-befb9f10de8a",
+    "name" : "button_hover_color",
+    "display_width" : null,
+    "label" : "Button Background Hover Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "367cfb88-212d-11fe-0e2c-69af6e44fffe",
+    "name" : "shaky_button",
+    "display_width" : null,
+    "label" : "Disable Shaky Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "Get Started",
+    "button_type" : "external_url",
+    "external_website_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "blog_field" : 34622229648,
+    "phone_number" : "9832098320",
+    "button_background_color" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "button_hover_color" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    },
+    "shaky_button" : true
+  }
+}, {
+  "id" : "c5abe6ea-fbe2-87b1-1608-82c9872b7e18",
+  "name" : "cross_button_style",
+  "display_width" : null,
+  "label" : "Cross Button Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c777339b-7a06-7183-6ac3-dceacb03af8d",
+    "name" : "cross_button_color",
+    "display_width" : null,
+    "label" : "Cross Button Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cross_button_color" : {
+      "color" : "#eb5424",
+      "opacity" : 100
+    }
+  }
+} ]

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="109.878" height="25" viewBox="0 0 109.878 25">
+  <g id="Group_69" data-name="Group 69" transform="translate(-530 -5722)">
+    <text id="Read_more" data-name="Read more" transform="translate(530 5722)" fill="#00395c" font-size="14" font-family="Inter" font-weight="600"><tspan x="0" y="14">READ MORE</tspan></text>
+    <line id="Line_117" data-name="Line 117" x2="79" transform="translate(531.5 5746.5)" fill="none" stroke="#e80458" stroke-width="1" opacity="0.699"/>
+    <g id="arrow_forward-24px" transform="translate(622.122 5722.122)">
+      <path id="Path_278" data-name="Path 278" d="M0,0H17.756V17.756H0Z" fill="none"/>
+      <path id="Path_279" data-name="Path 279" d="M9.919,4,8.875,5.043,13,9.179H4v1.48h9L8.875,14.794l1.043,1.043,5.919-5.919Z" transform="translate(-1.041 -1.041)" fill="#ed4d88"/>
+    </g>
+  </g>
+</svg>

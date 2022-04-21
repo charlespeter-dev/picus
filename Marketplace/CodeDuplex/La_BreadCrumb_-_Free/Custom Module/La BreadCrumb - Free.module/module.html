@@ -1,0 +1,45 @@
+<!--
+PAID VERSION ALSO AVAILABLE FOR MORE CUSTOMIZATION 
+Provided By CodeDuplex
+Visit us at www.codeduplex.com
+Licence & Copyright - CodeDuplex
+Product Page - https://codeduplex.com/la-breadcrumb/
+Quick Guide Video - https://youtu.be/nK5CfHJ6MuY
+Refund Policy - https://help.codeduplex.com/knowledgebase.php?article=1
+-->
+
+<!-- Below Files are required for module to work properly -->
+<!-- For Home Icon -->
+<style>
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+</style>
+<!-- To Make La Breadcrumb More Useable -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="cd-breadcrumbs {% if module.settings.enable_home_icon %}home-enabled {% endif %}cd_bread_style_{{ module.customize.select_breadcrumb_style }} {% if module.settings.enable_smart_ellipses %}flex-ellipse{% endif %}" id="cd_bread_{{name}}">
+  {% menu id="{{ module.select_menu }}", root_type='breadcrumb' %}
+</div>
+
+<style>
+  #cd_bread_{{name}} .cd-breadcrumb-menu-divider:before{
+    content: '{{ module.customize.separator }}';
+  }
+</style>
+
+<script>
+  $($('#cd_bread_{{name}} ul > li').get().reverse()).each(function (e) {
+      var n = $(this)
+    n.css('z-index',e++);
+  });
+
+  var navlinks = document.querySelectorAll('#cd_bread_{{name}} .hs-breadcrumb-label');
+  var navlinks_parent = document.querySelectorAll('#cd_bread_{{name}} .hs-breadcrumb-menu-item');
+  var sep_html = "<span class='cd-breadcrumb-menu-divider'></span>"
+  for (var i = 0; i < navlinks.length; i++) {
+    var menu_name = navlinks[i].innerText.replace(/ /g,'_').toLowerCase();
+    navlinks[i].parentElement.classList.add(menu_name);
+  }
+  for (var i = 0; i < (navlinks_parent.length - 1); i++) {
+    navlinks_parent[i].insertAdjacentHTML("afterend", sep_html );
+  }
+</script>

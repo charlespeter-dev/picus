@@ -1,0 +1,98 @@
+[ {
+  "id" : "a7806eef-e449-dd11-959d-214c881e5f80",
+  "name" : "effect",
+  "display_width" : null,
+  "label" : "Effect",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "placeholder" : "Select an effect",
+  "choices" : [ [ "lily", "Lily" ], [ "layla", "Layla" ], [ "oscar", "Oscar" ], [ "marley", "Marley" ], [ "ruby", "Ruby" ], [ "roxy", "Roxy" ], [ "bubba", "Bubba" ], [ "romeo", "Romeo" ], [ "sarah", "Sarah" ], [ "chico", "Chico" ], [ "milo", "Milo" ] ],
+  "type" : "choice",
+  "default" : "lily"
+}, {
+  "id" : "6182ba77-29e2-f054-13d9-23fe4a6ded79",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Subtle <strong>Link</strong>"
+}, {
+  "id" : "5531268f-fa67-df63-9c32-876f2c1e9100",
+  "name" : "caption",
+  "display_width" : null,
+  "label" : "Caption",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Call-to-action module with a suite of impactful hover and focus effects."
+}, {
+  "id" : "ddaddbc2-1526-d629-9733-ee04b33a36f0",
+  "name" : "foreground",
+  "display_width" : null,
+  "label" : "Foreground",
+  "required" : true,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "585573d5-2929-61b6-a78f-b60cb3c2b9d4",
+  "name" : "overlay",
+  "display_width" : null,
+  "label" : "Overlay",
+  "required" : true,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#000000",
+    "opacity" : 25
+  }
+}, {
+  "id" : "7507d99d-004c-f135-4f32-e6a24e7db313",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : true,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "Marketplace/Alexander_Tom_Inc/Subtle_Link/Images/Example.jpg",
+    "alt" : "Example",
+    "width" : 1920,
+    "height" : 1280
+  }
+}, {
+  "id" : "6c4ea0cd-a75d-439f-8401-fc81947048e0",
+  "name" : "destination",
+  "display_width" : null,
+  "label" : "Destination",
+  "required" : true,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

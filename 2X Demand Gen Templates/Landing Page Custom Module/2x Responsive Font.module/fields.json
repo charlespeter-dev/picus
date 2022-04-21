@@ -1,0 +1,59 @@
+[ {
+  "id" : "a7bdacd9-9810-bb1e-872f-caa1003c4f86",
+  "name" : "fonts",
+  "display_width" : null,
+  "label" : "fonts",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "e2eebb83-fc7a-d13f-7e56-1a8c46cc667b",
+    "name" : "class_name",
+    "display_width" : null,
+    "label" : "Class Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "font"
+  }, {
+    "id" : "7029e2b7-b0d0-cab5-2280-22c0429bb5ba",
+    "name" : "desktop_font",
+    "display_width" : null,
+    "label" : "desktop_font",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "font-size:18px;line-height:21px;"
+  }, {
+    "id" : "f55bbc4b-383d-9df0-4dd8-77e237cea1af",
+    "name" : "mobile_font",
+    "display_width" : null,
+    "label" : "mobile_font",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "font-size:15px;line-height:18px;"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "class_name" : "font",
+    "desktop_font" : "font-size:18px;line-height:21px;",
+    "mobile_font" : "font-size:15px;line-height:18px;"
+  }
+} ]

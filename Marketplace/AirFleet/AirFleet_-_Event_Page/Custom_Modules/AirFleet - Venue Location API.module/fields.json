@@ -1,0 +1,79 @@
+[ {
+  "id" : "2875dc5e-5d38-2607-3cc5-9828451a39d1",
+  "name" : "api_key",
+  "display_width" : null,
+  "label" : "API Key",
+  "help_text" : "Enter your API key. If you do not have one follow this link: https://cloud.google.com/maps-platform/#get-started - Make sure you have billing enabled on your Google account. For more details visit this link: https://developers.google.com/maps/documentation/maps-static/get-api-key",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "AIzaSyDO_r4Cc5HHegI0PZhUEBb5MpPrxrvMeAE"
+}, {
+  "id" : "4fec3444-4784-dbf9-68ea-8068955f003b",
+  "name" : "map_address",
+  "display_width" : null,
+  "label" : "Venue Address",
+  "help_text" : "To use this field you need to have Geocoding API enabled in your Google Maps API. Check this guide to do that: https://developers.google.com/maps/documentation/geocoding/get-api-key ",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "New York, New York"
+}, {
+  "id" : "c7c62d37-e988-8833-f435-41198699eafa",
+  "name" : "map_latitude",
+  "display_width" : null,
+  "label" : "Latitude",
+  "help_text" : "If you input the latitude and longitude data the Venue Address field will be ignored. To get the numbers, follow this guide: https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=en",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "1d72ecec-33f5-3876-5d70-0652b019412b",
+  "name" : "map_longitude",
+  "display_width" : null,
+  "label" : "Longitude",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "55084292-799d-58dc-f159-fe50dfca9d14",
+  "name" : "marker",
+  "display_width" : null,
+  "label" : "Marker",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4078036/events%20template/Marker-1.png",
+    "alt" : "Marker-1.png",
+    "width" : "49",
+    "height" : "58"
+  }
+}, {
+  "id" : "cbfeb540-f7e2-5ac4-6978-e40ee238328f",
+  "name" : "venue_name",
+  "display_width" : null,
+  "label" : "Venue Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Venue Name"
+} ]

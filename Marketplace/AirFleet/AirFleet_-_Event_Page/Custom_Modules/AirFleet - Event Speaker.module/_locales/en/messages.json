@@ -1,0 +1,72 @@
+{
+  "name" : {
+    "message" : "AirFleet - Event Speaker",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_image.default.alt" : {
+    "message" : "Speaker Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_image.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_image.label" : {
+    "message" : "Speaker Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_name.default" : {
+    "message" : "Speaker Name",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_name.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_name.label" : {
+    "message" : "Speaker Name",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_name.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_name.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_title.default" : {
+    "message" : "Speaker Title, Company",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_title.label" : {
+    "message" : "Speaker Title",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "speaker_title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

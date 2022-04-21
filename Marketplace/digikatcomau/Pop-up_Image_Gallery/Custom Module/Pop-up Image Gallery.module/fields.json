@@ -1,0 +1,75 @@
+[ {
+  "id" : "f93ef37b-2139-b1ac-1b7c-8ecc67af84a6",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 4,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4277803/DigiKat%20Website.png",
+    "alt" : "DigiKat Website",
+    "width" : 703,
+    "height" : 700,
+    "max_width" : 703,
+    "max_height" : 700
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4277803/DigiKat%20Website.png",
+    "alt" : "DigiKat Website",
+    "width" : 703,
+    "height" : 700,
+    "max_width" : 703,
+    "max_height" : 700
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4277803/DigiKat%20Website.png",
+    "alt" : "DigiKat Website",
+    "width" : 703,
+    "height" : 700,
+    "max_width" : 703,
+    "max_height" : 700
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/4277803/DigiKat%20Website.png",
+    "alt" : "DigiKat Website",
+    "width" : 703,
+    "height" : 700,
+    "max_width" : 703,
+    "max_height" : 700
+  } ]
+}, {
+  "id" : "77fdf65d-66c0-47c8-80ee-95f12ac27342",
+  "name" : "initshow",
+  "display_width" : null,
+  "label" : "Initial Number",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 2,
+  "max" : 30,
+  "step" : 1,
+  "type" : "number",
+  "default" : 20
+}, {
+  "id" : "4c68fc9a-4c3d-915a-5a0e-8ccfd6e895b7",
+  "name" : "images_per_row",
+  "display_width" : null,
+  "label" : "Images Per Row",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "col-6 col-md-3", "Four" ], [ "col-6 col-md-4", "Three" ] ],
+  "type" : "choice",
+  "default" : "col-6 col-md-3"
+} ]

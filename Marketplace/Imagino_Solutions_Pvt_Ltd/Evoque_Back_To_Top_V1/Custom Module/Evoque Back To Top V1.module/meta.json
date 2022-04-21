@@ -1,0 +1,11 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 61643502519,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Coded File/Evoque-style.css",
+    "name" : "Evoque-style.css"
+  } ],
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,25 @@
+[ {
+  "id" : "ac166cdf-8151-9b14-9940-ea8a0b7d96dc",
+  "name" : "form_title",
+  "display_width" : null,
+  "label" : "Form Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Request Form"
+}, {
+  "id" : "934730da-00ad-563d-55ed-6fe0d55c13d6",
+  "name" : "select_form",
+  "display_width" : null,
+  "label" : "Select Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form."
+  }
+} ]

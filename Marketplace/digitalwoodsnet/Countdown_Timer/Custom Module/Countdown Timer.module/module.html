@@ -1,0 +1,113 @@
+<div id="parent" class=dw_timer_{{module.section_name}}>
+  <h1 class="main-heading">
+    {{ module.heading_text }}
+  </h1>
+  <div id="timer" class="timer-divs">
+  <div id="days" class="timer-divs"></div>
+  <div id="hours" class="timer-divs"></div>
+  <div id="minutes" class="timer-divs"></div>
+  <div id="seconds" class="timer-divs"></div>
+</div>
+</div>
+
+
+
+{{ require_js("https://code.jquery.com/jquery-3.5.1.js", "head") }}
+{% require_js %}
+<script>
+  $(document).ready(function(){
+  function makeTimer(date) {       
+			var endTime = new Date(date);	
+			endTime = (Date.parse(endTime) / 1000);
+			var now = new Date();
+			now = (Date.parse(now) / 1000);
+
+			var timeLeft = endTime - now;
+    
+      if(timeLeft < 1){
+        $(".dw_timer_{{module.section_name}} > #timer > #days ").html("<span> {{ module.text_field }} </span>");
+          $('#hours').hide();
+          $('#minutes').hide();
+          $('#seconds').hide();
+        return;
+      }
+
+      console.log(timeLeft, "timeleft");
+
+			var days = Math.floor(timeLeft / 86400); 
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
+			
+      $(".dw_timer_{{module.section_name}} > #timer > #days ").html(days + "<span>Days</span>");
+			$(".dw_timer_{{module.section_name}} > #timer > #hours").html(hours + "<span>Hours</span>");
+			$(".dw_timer_{{module.section_name}} > #timer > #minutes").html(minutes + "<span>Minutes</span>");
+			$(".dw_timer_{{module.section_name}} > #timer > #seconds").html(seconds + "<span>Seconds</span>");
+	}
+        
+	 setInterval(function() { makeTimer( "{{module.date_field}}".replace(/-/g, "/") ) }, 1000);});
+    
+   
+</script>
+
+{% end_require_js %}
+
+{% require_css %}
+<style>
+#parent.dw_timer_{{module.section_name }}{
+  font-family: 'Titillium Web', cursive;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background: {{ module.background_color.color }};
+  font-weight: 100;
+  background-image: url("{{ module.bg_image.src }}");
+    background-size: cover;
+    background-position: center center;
+}
+
+#parent.dw_timer_{{module.section_name }} .main-heading{
+    font-size:50px;
+    font-family: 'Titillium Web', cursive;
+    margin:0;
+    font-weight:300;  
+    color:{{ module.font_color.color }};
+  
+}
+
+#parent.dw_timer_{{module.section_name }} .timer-divs {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 40px;
+}
+
+#parent.dw_timer_{{module.section_name }} span {
+  display: block;
+  font-size: 20px;
+  color: color: {{ module.timer_color.color }};
+}
+
+#parent.dw_timer_{{module.section_name }} #days {
+  font-size: 100px;
+  color: {{ module.timer_color.color }};
+}
+#parent.dw_timer_{{module.section_name }} #hours {
+  font-size: 100px;
+  color:  {{ module.timer_color.color }};
+}
+#parent.dw_timer_{{module.section_name }} #minutes {
+  font-size: 100px;
+  color:  {{ module.timer_color.color }};
+}
+#parent.dw_timer_{{module.section_name }} #seconds {
+  font-size: 50px;
+  color:  {{ module.timer_color.color }};
+}
+</style>
+{% end_require_css %}

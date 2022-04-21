@@ -1,0 +1,768 @@
+.subtle-link-module,
+.subtle-link-module * {
+  box-sizing: border-box;
+}
+
+.subtle-link-module {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  text-decoration: none !important;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.subtle-link-module b,
+.subtle-link-module strong {
+  font-weight: 700;
+}
+
+.subtle-link-module img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subtle-link-module .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.subtle-link-module figcaption {
+  overflow: hidden;
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.subtle-link-module figcaption::before,
+.subtle-link-module figcaption::after {
+	pointer-events: none;
+}
+
+.subtle-link-module .heading {
+  line-height: 26px;
+  font-size: 38px;
+}
+
+.subtle-link-module .caption {
+  line-height: 24px;
+  font-size: 18px;
+}
+
+/* Shared Image Transitions */
+
+.subtle-link-module[data-effect="lily"] img,
+.subtle-link-module[data-effect="roxy"] img,
+.subtle-link-module[data-effect="sarah"] img {
+	width: calc(100% + 40px);
+	transform: translate3d(-40px, 0, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="lily"]:hover img,
+.subtle-link-module[data-effect="lily"]:focus img,
+.subtle-link-module[data-effect="roxy"]:hover img,
+.subtle-link-module[data-effect="roxy"]:focus img,
+.subtle-link-module[data-effect="sarah"]:hover img,
+.subtle-link-module[data-effect="sarah"]:focus img {
+	transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="layla"] img {
+	height: calc(100% + 40px);
+	transform: translate3d(0, -40px, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="layla"]:hover img,
+.subtle-link-module[data-effect="layla"]:focus img {
+	transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="ruby"] img,
+.subtle-link-module[data-effect="romeo"] img,
+.subtle-link-module[data-effect="chico"] img {
+	transform: scale(1.1);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="romeo"] img {
+	transform: scale(1.3);
+}
+
+.subtle-link-module[data-effect="ruby"]:hover img,
+.subtle-link-module[data-effect="ruby"]:focus img,
+.subtle-link-module[data-effect="romeo"]:hover img,
+.subtle-link-module[data-effect="romeo"]:focus img,
+.subtle-link-module[data-effect="chico"]:hover img,
+.subtle-link-module[data-effect="chico"]:focus img {
+	transform: scale(1);
+}
+
+/* Lily */
+
+.subtle-link-module[data-effect="lily"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 60px 40px;
+  transform: translate3d(0, 72px, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="lily"]:hover figcaption,
+.subtle-link-module[data-effect="lily"]:focus figcaption {
+  transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="lily"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  max-height: calc(100% - 82px);
+  margin-bottom: 10px;
+}
+
+.subtle-link-module[data-effect="lily"] .caption {
+  overflow: hidden;
+  min-height: 72px;
+  max-height: 72px;
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="lily"]:hover .caption,
+.subtle-link-module[data-effect="lily"]:focus .caption {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* Layla */
+
+.subtle-link-module[data-effect="layla"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px;
+  transform: translate3d(0, -26px, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="layla"]:hover figcaption,
+.subtle-link-module[data-effect="layla"]:focus figcaption {
+  transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="layla"] figcaption::before,
+.subtle-link-module[data-effect="layla"] figcaption::after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+  border-color: inherit;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="layla"] figcaption::before {
+	top: 50px;
+	right: 30px;
+	bottom: 50px;
+	left: 30px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	transform: scale(0, 1);
+	transform-origin: 0 0;
+}
+
+.subtle-link-module[data-effect="layla"] figcaption::after {
+	top: 30px;
+	right: 50px;
+	bottom: 30px;
+	left: 50px;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	transform: scale(1, 0);
+	transform-origin: 100% 0;
+}
+
+.subtle-link-module[data-effect="layla"]:hover figcaption::before,
+.subtle-link-module[data-effect="layla"]:focus figcaption::before,
+.subtle-link-module[data-effect="layla"]:hover figcaption::after,
+.subtle-link-module[data-effect="layla"]:focus figcaption::after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.subtle-link-module[data-effect="layla"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: calc(50% - 5px);
+  max-height: calc(50% - 5px);
+  margin-bottom: 5px;
+}
+
+.subtle-link-module[data-effect="layla"] .caption {
+  overflow: hidden;
+  min-height: calc(50% - 5px);
+  max-height: calc(50% - 5px);
+  margin-top: 5px;
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="layla"]:hover .caption,
+.subtle-link-module[data-effect="layla"]:focus .caption {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Oscar */
+
+.subtle-link-module[data-effect="oscar"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  text-align: center;
+  transform: translate3d(0, 26px, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="oscar"]:hover figcaption,
+.subtle-link-module[data-effect="oscar"]:focus figcaption {
+  transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="oscar"] figcaption::before {
+  position: absolute;
+	top: 40px;
+	right: 40px;
+	bottom: 40px;
+	left: 40px;
+  content: '';
+  border-color: inherit;
+	border: 1px solid;
+}
+
+.subtle-link-module[data-effect="oscar"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: calc(50% - 5px);
+  max-height: calc(50% - 5px);
+  margin-bottom: 5px;
+}
+
+.subtle-link-module[data-effect="oscar"] .caption {
+  overflow: hidden;
+  min-height: calc(50% - 5px);
+  max-height: calc(50% - 5px);
+  margin-top: 5px;
+}
+
+.subtle-link-module[data-effect="oscar"] figcaption::before,
+.subtle-link-module[data-effect="oscar"] .caption {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="oscar"]:hover figcaption::before,
+.subtle-link-module[data-effect="oscar"]:focus figcaption::before,
+.subtle-link-module[data-effect="oscar"]:hover .caption,
+.subtle-link-module[data-effect="oscar"]:focus .caption {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Marley */
+
+.subtle-link-module[data-effect="marley"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  padding: 60px 40px;
+  text-align: right;
+  transform: translate3d(0, 26px, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="marley"]:hover figcaption,
+.subtle-link-module[data-effect="marley"]:focus figcaption {
+  transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="marley"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  width: 100%;
+  min-height: 26px;
+  max-height: 26px;
+}
+
+.subtle-link-module[data-effect="marley"] .caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: calc(100% - 46px);
+  max-height: calc(100% - 46px);
+  padding-top: 20px;
+  margin-top: 20px;
+  border-color: inherit;
+  border-top: 3px solid;
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="marley"]:hover .caption,
+.subtle-link-module[data-effect="marley"]:focus .caption {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="marley"] .caption span {
+  overflow: hidden;
+  max-height: 100%;
+}
+
+/* Ruby */
+
+.subtle-link-module[data-effect="ruby"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  text-align: center;
+  transform: translate3d(0, 26px, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="ruby"]:hover figcaption,
+.subtle-link-module[data-effect="ruby"]:focus figcaption {
+  transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="ruby"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  max-width: 600px;
+  min-height: calc(40% - 10px);
+  max-height: calc(40% - 10px);
+  margin-bottom: 10px;
+}
+
+.subtle-link-module[data-effect="ruby"] .caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 600px;
+  min-height: calc(60% - 10px);
+  max-height: calc(60% - 10px);
+  margin-top: 10px;
+  border-color: inherit;
+  border: 1px solid;
+  opacity: 0;
+  transform-origin: 50% 0;
+  transform: scale(1.1);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="ruby"]:hover .caption,
+.subtle-link-module[data-effect="ruby"]:focus .caption {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.subtle-link-module[data-effect="ruby"] .caption span {
+  overflow: hidden;
+  max-height: 72px;
+  padding: 0 20px;
+}
+
+/* Roxy */
+
+.subtle-link-module[data-effect="roxy"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+
+.subtle-link-module[data-effect="roxy"] figcaption::before {
+  position: absolute;
+	top: 40px;
+	right: 40px;
+	bottom: 40px;
+	left: 40px;
+  content: '';
+  border-color: inherit;
+	border: 1px solid;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.subtle-link-module[data-effect="roxy"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: calc(50% - 5px);
+  max-height: calc(50% - 5px);
+  margin-bottom: 5px;
+}
+
+.subtle-link-module[data-effect="roxy"] .caption {
+  overflow: hidden;
+  min-height: calc(50% - 5px);
+  max-height: calc(50% - 5px);
+  margin-top: 5px;
+  transform: translate3d(-15px, 0, 0);
+}
+
+.subtle-link-module[data-effect="roxy"] figcaption::before,
+.subtle-link-module[data-effect="roxy"] .caption {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="roxy"]:hover figcaption::before,
+.subtle-link-module[data-effect="roxy"]:focus figcaption::before,
+.subtle-link-module[data-effect="roxy"]:hover .caption,
+.subtle-link-module[data-effect="roxy"]:focus .caption {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Bubba */
+
+.subtle-link-module[data-effect="bubba"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  text-align: center;
+}
+
+.subtle-link-module[data-effect="bubba"] figcaption::before,
+.subtle-link-module[data-effect="bubba"] figcaption::after {
+  position: absolute;
+	top: 40px;
+	right: 40px;
+	bottom: 40px;
+	left: 40px;
+  content: '';
+  border-color: inherit;
+  border-style: solid;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="bubba"] figcaption::before {
+  border-width: 1px 0;
+  transform: scale(0, 1);
+}
+
+.subtle-link-module[data-effect="bubba"] figcaption::after {
+  border-width: 0 1px;
+  transform: scale(1, 0);
+}
+
+.subtle-link-module[data-effect="bubba"]:hover figcaption::before,
+.subtle-link-module[data-effect="bubba"]:focus figcaption::before,
+.subtle-link-module[data-effect="bubba"]:hover figcaption::after,
+.subtle-link-module[data-effect="bubba"]:focus figcaption::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.subtle-link-module[data-effect="bubba"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: calc(50% - 5px);
+  max-height: calc(50% - 5px);
+  margin-bottom: 5px;
+  transform: translate3d(0, -26px, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="bubba"] .caption {
+  overflow: hidden;
+  min-height: calc(50% - 5px);
+  max-height: calc(50% - 5px);
+  margin-top: 5px;
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="bubba"]:hover .heading,
+.subtle-link-module[data-effect="bubba"]:focus .heading,
+.subtle-link-module[data-effect="bubba"]:hover .caption,
+.subtle-link-module[data-effect="bubba"]:focus .caption {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Romeo */
+
+.subtle-link-module[data-effect="romeo"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.subtle-link-module[data-effect="romeo"] figcaption::before,
+.subtle-link-module[data-effect="romeo"] figcaption::after {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  right: 40px;
+  content: '';
+  border-color: inherit;
+  border-top: 1px solid;
+  transform: translateY(-50%);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="romeo"]:hover figcaption::before,
+.subtle-link-module[data-effect="romeo"]:focus figcaption::before {
+  opacity: 0.5;
+  transform: rotate(-45deg) translateY(-50%);
+}
+
+.subtle-link-module[data-effect="romeo"]:hover figcaption::after,
+.subtle-link-module[data-effect="romeo"]:focus figcaption::after {
+  opacity: 0.5;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.subtle-link-module[data-effect="romeo"] .heading,
+.subtle-link-module[data-effect="romeo"] .caption {
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="romeo"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: calc(50% - 10px);
+  max-height: calc(50% - 10px);
+  margin-bottom: 10px;
+  transform: translate3d(0, -26px, 0);
+}
+
+.subtle-link-module[data-effect="romeo"] .caption {
+  overflow: hidden;
+  min-height: calc(50% - 10px);
+  max-height: calc(50% - 10px);
+  margin-top: 10px;
+  transform: translate3d(0, 24px, 0);
+}
+
+.subtle-link-module[data-effect="romeo"]:hover .heading,
+.subtle-link-module[data-effect="romeo"]:focus .heading,
+.subtle-link-module[data-effect="romeo"]:hover .caption,
+.subtle-link-module[data-effect="romeo"]:focus .caption {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Sarah */
+
+.subtle-link-module[data-effect="sarah"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 40px;
+}
+
+.subtle-link-module[data-effect="sarah"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: 58px;
+  max-height: 58px;
+  margin-bottom: 18px;
+}
+
+.subtle-link-module[data-effect="sarah"] .heading::after {
+  width: 100%;
+  margin-top: 22px;
+  content: '';
+  border-color: inherit;
+  border: 2px solid;
+  transform-origin: 0 50%;
+  transform: scale(0, 1);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="sarah"]:hover .heading::after,
+.subtle-link-module[data-effect="sarah"]:focus .heading::after {
+  transform: scale(1);
+}
+
+.subtle-link-module[data-effect="sarah"] .heading span {
+  overflow: hidden;
+  height: 26px;
+}
+
+.subtle-link-module[data-effect="sarah"] .caption {
+  overflow: hidden;
+  min-height: calc(100% - 76px);
+  max-height: calc(100% - 76px);
+  transform: translate3d(calc(100% + 40px), 0, 0);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="sarah"]:hover .caption,
+.subtle-link-module[data-effect="sarah"]:focus .caption {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Chico */
+
+.subtle-link-module[data-effect="chico"] figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  text-align: center;
+}
+
+.subtle-link-module[data-effect="chico"] figcaption::before {
+  position: absolute;
+	top: 40px;
+	right: 40px;
+	bottom: 40px;
+	left: 40px;
+  content: '';
+  border-color: inherit;
+  border: 1px solid;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="chico"]:hover figcaption::before,
+.subtle-link-module[data-effect="chico"]:focus figcaption::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.subtle-link-module[data-effect="chico"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: calc(50% - 10px);
+  max-height: calc(50% - 10px);
+  margin-bottom: 10px;
+}
+
+.subtle-link-module[data-effect="chico"] .caption {
+  overflow: hidden;
+  min-height: calc(50% - 10px);
+  max-height: calc(50% - 10px);
+  margin-top: 10px;
+  opacity: 0;
+  transform: scale(1.3);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="chico"]:hover .caption,
+.subtle-link-module[data-effect="chico"]:focus .caption {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Milo */
+
+.subtle-link-module[data-effect="milo"] img {
+  transform-origin: 100% 50%;
+  transform: scale(1.1);
+  transition: transform 0.35s;
+}
+
+.subtle-link-module[data-effect="milo"]:hover img,
+.subtle-link-module[data-effect="milo"]:focus img {
+	transform: scale(1);
+}
+
+.subtle-link-module[data-effect="milo"] figcaption {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40px;
+  text-align: right;
+}
+
+.subtle-link-module[data-effect="milo"] .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-height: 26px;
+  max-height: 26px;
+  margin-top: 20px;
+}
+
+.subtle-link-module[data-effect="milo"] .caption {
+  overflow: hidden;
+  width: 50%;
+  min-width: 240px;
+  max-width: 400px;
+  min-height: calc(100% - 46px);
+  max-height: calc(100% - 46px);
+  opacity: 0;
+  transform: translate3d(-40px, 0, 0);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.subtle-link-module[data-effect="milo"]:hover .caption,
+.subtle-link-module[data-effect="milo"]:focus .caption {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.subtle-link-module[data-effect="milo"] .caption span {
+  display: block;
+  padding-right: 10px;
+  border-color: inherit;
+  border-right: 1px solid;
+}

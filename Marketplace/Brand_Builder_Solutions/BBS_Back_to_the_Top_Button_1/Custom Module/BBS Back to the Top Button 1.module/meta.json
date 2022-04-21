@@ -1,0 +1,12 @@
+{
+  "global" : false,
+  "icon" : "https://cdn2.hubspot.net/hubfs/213882/Logos/Marketplace%20Module%20Logo.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 61643475129,
+  "js_assets" : [ {
+    "url" : "Marketplace%2FBrand_Builder_Solutions%2FBBS_Back_to_the_Top_Button_1%2FAttached_asset%2Fjquery-3.3.1.min.js",
+    "autoload" : true,
+    "name" : "jquery-3.3.1.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,142 @@
+[ {
+  "id" : "f58c0a64-a65f-b6f8-2fad-9d4b784480ba",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Technology Alliances"
+}, {
+  "id" : "d00eb094-ce8f-0ff9-2829-7bbcbb1b64fe",
+  "name" : "items",
+  "display_width" : null,
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "be812225-119e-b9af-1bdf-ef2776952a39",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/aws.png",
+      "alt" : "AWS",
+      "width" : 140,
+      "height" : 134,
+      "max_width" : 2052,
+      "max_height" : 1960
+    }
+  }, {
+    "id" : "cc44fb0b-bf2a-11fa-f2e6-f219bd48b8ef",
+    "name" : "image_link",
+    "display_width" : null,
+    "label" : "Image Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "be812225-119e-b9af-1bdf-ef2776952a39",
+      "controlling_value_regex" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "e379ff83-cbba-7b05-3011-d43f64212a48",
+    "name" : "caption",
+    "display_width" : null,
+    "label" : "Caption",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "2f74753b-40eb-e0a0-4a75-b37a87cd708d",
+    "name" : "caption_link",
+    "display_width" : null,
+    "label" : "Caption Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "e379ff83-cbba-7b05-3011-d43f64212a48",
+      "controlling_value_regex" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "exact",
+      "src" : "https://cdn2.hubspot.net/hubfs/7048931/aws.png",
+      "alt" : "AWS",
+      "width" : 140,
+      "height" : 134,
+      "max_width" : 2052,
+      "max_height" : 1960
+    },
+    "image_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "caption_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

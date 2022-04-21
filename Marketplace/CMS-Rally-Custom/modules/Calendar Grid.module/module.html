@@ -1,0 +1,25 @@
+<section class="calendar-contain">
+  {% for item in module.calendar_box %}
+      <div class="calendar-box">
+      <a href="{{ href }}"
+        {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+        {% if item.link_field.no_follow %}rel="nofollow"{% endif %}
+      >
+      {% if item.calendar_image.src %}
+        {% set sizeAttrs = 'width="{{ item.calendar_image.width }}" height="{{ item.calendar_image.height }}"' %}
+        {% if item.calendar_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.calendar_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.calendar_image.max_width }}px; max-height: {{ item.calendar_image.max_height }}px"' %}
+        {% endif %}
+        <img src="{{ item.calendar_image.src }}" alt="{{ item.title }}" {{ sizeAttrs }} class="	{% if item.archive %}archive{% endif %}">
+      {% endif %}
+      {% set href = item.link_field.url.href %}
+      {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+      {% endif %}
+
+      </a>
+    </div>
+  {% endfor %}
+</section>

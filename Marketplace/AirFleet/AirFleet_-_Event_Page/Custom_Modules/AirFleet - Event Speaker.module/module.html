@@ -1,0 +1,13 @@
+<div class="event-speaker">
+    {% if widget.speaker_image.src %}
+        <div class="speaker-img">
+            <img class="speaker-img" src="{{ widget.speaker_image.src }}" width="{{ widget.speaker_image.width }}" height="{{ widget.speaker_image.height }}" alt="{{ widget.speaker_image.alt }}">    
+        </div>
+    {% endif %}
+    <div class="speaker-name">
+        {{ widget.speaker_name }}
+    </div> 
+    <div class="speaker-title">
+        {{ widget.speaker_title }}
+    </div>
+</div>

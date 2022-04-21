@@ -1,0 +1,77 @@
+[ {
+  "id" : "5d86ed3f-9602-8ff5-ce1f-89da2c7585d3",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : true,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#22518B",
+    "opacity" : 100
+  }
+}, {
+  "id" : "42da0b65-5848-151e-3148-43d53922a22d",
+  "name" : "icon_style",
+  "display_width" : null,
+  "label" : "Icon Style",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "arrow", "Arrow" ], [ "hand", "Hand" ], [ "chevron", "Chevron" ] ],
+  "type" : "choice",
+  "default" : "arrow"
+}, {
+  "id" : "0c3e65e2-61be-50be-6340-f6ee1e53df86",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Back to Top"
+}, {
+  "id" : "91209de1-333b-1de5-4683-8653ebc464c5",
+  "name" : "size",
+  "display_width" : null,
+  "label" : "Size",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 5,
+  "max" : 20,
+  "step" : 1,
+  "type" : "number",
+  "default" : 10
+}, {
+  "id" : "6772cce0-8013-b4db-307e-10c37a03d3f4",
+  "name" : "distance_from_right_side",
+  "display_width" : null,
+  "label" : "Distance From Right Side",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "min" : 10,
+  "max" : 150,
+  "step" : 10,
+  "type" : "number",
+  "default" : 50
+}, {
+  "id" : "fd1b59ba-39e5-5516-aab4-40b3eafc4c40",
+  "name" : "hide_until_scrolled_amount",
+  "display_width" : null,
+  "label" : "Hide Until Scrolled Amount (Pixels)",
+  "help_text" : "This will hide the back to top button until the user has scrolled down the page the specified amount of pixels.",
+  "inline_help_text" : "Recommended between 400-600 pixels.",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 0,
+  "max" : 1000,
+  "step" : 10,
+  "type" : "number",
+  "default" : 0
+} ]

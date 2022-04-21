@@ -1,0 +1,92 @@
+[ {
+  "id" : "select_blog",
+  "name" : "select_blog",
+  "display_width" : null,
+  "label" : "Select blog",
+  "help_text" : "Select the blog that you would like to feature posts from",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog"
+}, {
+  "id" : "select_tag",
+  "name" : "select_tag",
+  "display_width" : null,
+  "label" : "Select tag",
+  "help_text" : "If you would like to feature only a specific tag from your blog, select it here.",
+  "required" : false,
+  "locked" : false,
+  "tag_value" : "SLUG",
+  "type" : "tag"
+}, {
+  "id" : "blog_post_colors",
+  "name" : "blog_post_colors",
+  "display_width" : null,
+  "label" : "Post colors",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "blog_post_colors.color",
+    "name" : "color",
+    "display_width" : null,
+    "label" : "",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 3,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "type" : "color",
+    "default" : [ {
+      "color" : "#884A7D",
+      "opacity" : 100
+    }, {
+      "color" : "#8FDE49",
+      "opacity" : 100
+    }, {
+      "color" : "#312B30",
+      "opacity" : 100
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+}, {
+  "id" : "blog_link",
+  "name" : "blog_link",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "blog_link.link_text",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum"
+  }, {
+    "id" : "blog_link.link_icon",
+    "name" : "link_icon",
+    "display_width" : null,
+    "label" : "Link icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.0.10",
+    "type" : "icon",
+    "default" : {
+      "name" : "long-arrow-alt-right",
+      "unicode" : "f30b",
+      "type" : "SOLID"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

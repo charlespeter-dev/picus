@@ -1,0 +1,90 @@
+[ {
+  "id" : "e2c90e5c-f869-da7c-d037-b8749b9ee3ba",
+  "name" : "video_url",
+  "display_width" : null,
+  "label" : "HubSpot, Youtube, Wistia, or Vimeo URL",
+  "help_text" : "Enter the full url of your YouTube or Wistia Video, or Link to File instead of External for HubSpot videos.",
+  "required" : true,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "FILE" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "036a9385-6e0b-e375-ca1b-e9d007e088e6",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Say something that makes them click me!",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Play me! You know you want to."
+}, {
+  "id" : "fa3b6018-76ad-5df3-b7f1-9ab9843786c2",
+  "name" : "styles",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5feefac2-bf6d-7c2c-2704-ffd474a18289",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#3EB984",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "65fe7d6c-8161-336f-ea71-e151a1128780",
+    "name" : "play_icon_color",
+    "display_width" : null,
+    "label" : "Play Icon Color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "886d5ce8-d45d-de45-9022-da8338807581",
+    "name" : "button_color",
+    "display_width" : null,
+    "label" : "Button Color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#3EB984",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_color" : {
+      "color" : "#3EB984",
+      "opacity" : 100
+    },
+    "play_icon_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "button_color" : {
+      "color" : "#3EB984",
+      "opacity" : 100
+    }
+  }
+} ]

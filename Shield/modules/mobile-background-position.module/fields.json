@@ -1,0 +1,36 @@
+[ {
+  "id" : "712c8381-0d29-50e3-5551-6c856cc40c5c",
+  "name" : "background_size",
+  "display_width" : null,
+  "label" : "Background Size",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "contain", "Contain" ], [ "cover", "Cover" ] ],
+  "type" : "choice",
+  "default" : "cover"
+}, {
+  "id" : "5e838d3d-5fb8-68ba-7131-59ed0881c8b0",
+  "name" : "horizontal_position",
+  "display_width" : null,
+  "label" : "Horizontal Position",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "50"
+}, {
+  "id" : "aa8bfbf1-31d9-5d55-1753-03f8a354e3c0",
+  "name" : "vertical_position",
+  "display_width" : null,
+  "label" : "Vertical Position",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "50"
+} ]

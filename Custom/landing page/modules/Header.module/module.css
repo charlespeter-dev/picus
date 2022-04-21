@@ -1,0 +1,84 @@
+.banner-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+
+.banner-bg > .page-center {
+  padding: 30px;
+}
+
+.picus-logo {
+  text-align: center;
+}
+
+.picus-logo a {
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.vendor-wrapper > div {
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+.vendor-img {
+  display: inline-block;
+  float: left;
+}
+
+.vendor-info {
+  display: inline-block;
+  max-width: 145px;
+  text-align: left;
+}
+
+.booth-no {
+  color: #71C5E8 !important;
+}
+
+a.cta-schedule-now:link, a.cta-schedule-now:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: #71C5E8;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 45px;
+  margin: 30px auto 20px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+a.cta-schedule-now:hover, a.cta-schedule-now:active {
+  background-color: #2c92ca;
+}
+
+@media screen and (min-width: 768px) {
+  .picus-logo {
+    margin-top: 16px;
+  }
+  
+  .picus-logo {
+    text-align: left; 
+  }
+  
+  .vendor-wrapper > div {
+    margin-right: 0;
+    margin-left: 0;
+    float: right;
+  }
+  
+  .vendor-info {
+    margin-left: 20px;
+  }
+}

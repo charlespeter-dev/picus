@@ -1,0 +1,1087 @@
+/* Order of files */
+/* this file is theme */
+/* 1 LO_variables import to theme - styles - core */
+/* 2 LO_styles include in theme */
+/* 3 LO_theme include in core */
+/* 4 LO_core attach to LO_master */
+ 
+ 
+ {% import "Custom/page/Templates/LO_Liftoff_Freemium_Site_Variables.html" as bbsvar %}
+ 
+ {% include "Custom/page/Templates/LO_Liftoff_Freemium_Site_Core.css" %} 
+ 
+  
+ 
+ 
+ 
+
+/* ===================================================== */
+/* ===================================================== */
+/* ================== Begin Theme Styles =============== */
+/* ===================================================== */
+/* ===================================================== */ 
+/* Theme styles are specific to the Launch Theme */
+
+  
+ 
+  
+/* ===================================================== */
+/* ================ Begin Theme Fonts ================== */
+/* ===================================================== */
+
+p, p span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2em;
+    color: #595959;
+    padding: 0;
+    margin: 0 0 25px;
+}
+
+div, span {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Headings */
+h1, h1 span, h2, h2 span, h3, h3 span, h4, h4 span, h5, h5 span, h6, h6 span {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 200;
+    line-height: 1.25em;
+    color: #595959;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {}
+
+h1, h1 span {
+    font-size: 48px;
+}
+h2, h2 span {
+    font-size: 36px;
+}
+h3, h3 span {
+    font-size: 32px;
+}
+h4, h4 span {
+    font-size: 28px;
+}
+h5, h5 span {
+    font-size: 24px;
+}
+h6, h6 span {
+    font-size: 20px;
+}
+
+/* Lists */
+ul, ol {
+    padding: 0 0 0 30px;
+    margin: 0 0 10px 0;
+}
+li {
+    color: #333;
+    padding: 5px 0;
+    margin: 0;
+}
+li p {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+     h3 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 480px) {
+     h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h5 {
+        font-size: 18px;
+    } 
+}
+
+/* ===================================================== */
+/* ================== End Theme Fonts ================== */
+/* ===================================================== */
+ 
+
+
+
+ 
+/* =============== Global Theme Header and Footer Styles =============== */
+
+/* ===================================================== */
+/* ================= Begin Header Styles================ */
+/* ===================================================== */
+
+.nav-wrapper {
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+.nav-wrapper .main-header {
+    padding: 0 20px;
+}
+.global-sticky-header-offset, .solid-nav .body-container-wrapper {
+    margin-top: 63px;
+}
+
+@media(max-width: 1060px) {
+    .global-sticky-header-offset, .solid-nav .body-container-wrapper {
+        margin-top: 0;
+    } 
+}
+
+/* Logo styling */
+.nav-wrapper .logo {}
+
+.nav-wrapper .logo img {
+    margin:15px 0;
+}
+
+
+/* Menu */
+.nav-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal {
+    float: right;
+}
+
+/* Menu link font family and basic padding including drop down links */
+.nav-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal > ul li {
+    padding: 0;
+    margin: 0;
+}
+.nav-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #3b3b3b;
+    border-top: 3px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    text-decoration: none;
+    max-width: 250px;
+    padding: 13px 20px 10px;
+    margin: 15px 0;
+}
+.nav-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a:hover,
+.nav-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper li a:hover {
+    border-top: 3px solid {{ bbsvar.secondColor }};
+}
+.nav-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal> ul li.hs-item-has-children ul.hs-menu-children-wrapper {
+    top: 70px;
+}
+.nav-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper li a {
+    overflow: visible;
+    text-overflow: clip;
+    width: 100%;
+    max-width: 250px;
+    background: #fff;
+    text-align: left;
+    padding: 15px;
+    margin: 0;
+}
+
+@media(max-width: 1060px) {
+    .nav-wrapper .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {
+        padding: 0 20px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 775px) {
+    .nav-wrapper .page-center {
+        padding: 5px 15px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper .logo img {
+        max-width: 300px;
+        padding-top: 10px;
+        z-index: -10;
+        margin: 0;
+    }
+    .nav-wrapper {
+        height: 80px;
+    }
+}
+
+@media(max-width: 480px) {
+    .nav-wrapper .logo img, .footer-container .logo img {
+        max-width: 150px !important;
+    }
+    .nav-wrapper .logo, .footer-container .logo {
+        text-align: center;
+    }
+}
+
+/* ===================================================== */
+/* ================== End Header Styles ================ */
+/* ===================================================== */
+
+
+/* ===================================================== */
+/* ================= Begin Footer Styles================ */
+/* ===================================================== */
+
+.footer-background {
+    background-color: {{ bbsvar.darkBkgColor }};
+}
+.footer-background .page-center {
+    padding: 45px 15px 5%;
+}
+.footer-background p, .footer-background a {
+    font-weight: 300;
+    line-height: 1.15em;
+    color: {{ bbsvar.footerText }};
+    border-bottom: 3px solid transparent;
+    padding: 5px 0;
+    margin: 0;
+    text-decoration: none;
+}
+.footer-background a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid {{ bbsvar.primaryColor }};
+}
+.copyright-background {
+    background-color: #f1f1f1;
+}
+.copyright-background .page-center  {
+    padding: 13px 0 5px;
+}
+.copyright-background span {
+    font-weight: 300;
+    font-size: 14px;
+}
+.copyright-background .copyright-text {
+    padding-top: 10px;
+}
+.footer-background .logo {
+    padding-bottom: 5%;
+}
+.fa-circle {
+    color: #fff;
+} 
+.footer-background .footer-socials {
+    padding-top: 10px;
+}
+.footer-background .fa-footer-links a {
+    text-decoration: none;
+}
+.footer-background .fa-footer-links a:hover {
+    text-decoration: none;
+    border-bottom: 0;
+}
+.footer-background .fa {
+    margin: 0 7px;
+}
+.footer-background .inline-subscribe h3.form-title {
+    display: none;
+}
+
+
+@media(max-width: 767px) {
+    .footer-background .logo img {
+        max-width: 200px;
+    }
+}
+
+/* ===================================================== */
+/* ================== End Footer Styles ================ */
+/* ===================================================== */
+
+
+/* =============== End Global Theme Header and Footer Styles =============== */
+
+
+ 
+ 
+
+/* =============== Begin Theme Specific Styles ============================= */
+
+/* ===================================================== */
+/* ============= Begin Generic Theme Styles ============ */
+/* ===================================================== */
+
+/* ====== Freemium Specific Styles ====== */
+.small-bottom-padding {
+    padding-bottom: 20px;
+}
+.small-left-padding {
+    padding-left: 20px;
+}
+.small-right-padding {
+    padding-right: 20px;
+}
+.overlay-t2 {
+    background: {{ bbsvar.overlaySecondColor }};
+}
+.overlay-t3 {
+    background: {{ bbsvar.overlayThirdColor }};
+}
+
+@media(max-width: 767px) {
+    .small-left-padding {
+        padding-left: 0;
+    }
+    .small-right-padding {
+        padding-right: 0;
+    }
+}
+
+
+/* ====== Custom Module - CM-TB2 Styling ====== */
+.tb-2 .banner-content-wrapper.center-align {
+    padding: 0 15%;
+}
+.parallax-banner-2 .banner-padding-short {
+    padding: 6% 15px 4%;
+}
+.parallax-banner-2 .banner-padding {
+    padding: 14% 15px;
+} 
+
+@media(max-width: 767px) {
+    .tb-2 .banner-content-wrapper.center-align {
+        padding: 0;
+    }
+    .parallax-banner-2 .banner-padding-short {
+        padding: 5% 15px;
+    }
+}
+
+/* ====== Custom Module - CM-B6 Styling ====== */
+.b6.custom-bkg .overlay-t1, .b6.colorBkg-t1 .overlay-t1, .b6.colorBkg-t2 .overlay-t1, 
+.b6.colorBkg-t3 .overlay-t1, .b6.colorBkg-t4 .overlay-t1 {
+    background: rgba(0,0,0,0);   
+}
+.b6 .full-width .banner-text, .b6 .full-width .banner-ctas {
+    padding: 0 5%;
+}
+
+@media(max-width: 767px) {
+    .b6 .full-width .banner-content-wrapper {
+        padding: 0 15px;   
+    }
+    .b6 .full-width .banner-text, .b6 .full-width .banner-ctas {
+        padding: 0;
+    }
+}
+
+/* ====== Custom Module - CM-BU1 Styling ====== */
+.cm-bu1.generic-bucket {
+    padding: 7% 20px;
+}
+
+@media (max-width: 767px) {
+    .cm-bu1.generic-bucket .icon-block {
+        padding-bottom: 0 !important;
+    }
+    .generic-bucket .text-block {
+        padding: 0;
+    }
+}
+
+
+
+/* ====== Custom Module - CM-BU7 Styling ====== */
+.cm-bu7 {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.13);
+    padding: 25px;
+}
+.cm-bu7 .text-block {
+    margin-left: 0 !important;
+}
+
+@media(max-width: 767px) {
+    .cm-bu7 {
+        margin: 20px 0;
+    }
+    .cm-bu7 .text-block {
+        padding: 25px 0;
+    }
+}
+ 
+ 
+/* ====== Menu Sidebar Styling ====== */
+.sticky-sidebar {
+    position: sticky;
+    top: 105px;
+}
+.sidebar-menu .sidebar-menu-header {
+    background: {{ bbsvar.primaryColor }};
+    border-radius: {{ bbsvar.borderRadius }} {{ bbsvar.borderRadius }} 0 0;
+    padding: 10px 10px 0;
+}
+.sidebar-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li a {
+    color: #595959;
+    padding: 10px 10px 5px;
+    margin: 0;
+}
+.sidebar-menu .hs-menu-wrapper.hs-menu-flow-horizontal > ul li {
+    width: 100%;
+    background-color: {{ bbsvar.lightBkgColor }};
+    border-bottom: {{ bbsvar.borderWidth }} solid {{ bbsvar.borderColor }};
+}
+.sidebar-menu .hs-menu-wrapper.hs-menu-flow-horizontal > ul li:hover {
+    background-color: #f1f1f1;
+}
+.sidebar-menu .hs-menu-wrapper.hs-menu-flow-horizontal > ul li:last-child {
+    border-bottom: 0;
+}
+
+@media(max-width: 767px) {
+    .sticky-sidebar {
+        position: initial;
+    }
+    .sidebar-menu .sidebar-menu-header {
+        padding: 10px 10px 5px;
+    }
+}
+
+/* ====== Secondary Menu Styling ====== */
+.second-menu .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {
+    color: #595959;
+}
+
+/* ====== System Pages ====== */
+.checkbox-row span {
+    margin: 0;
+    line-height: 1em;
+}
+.widget-type-email_subscriptions h1, 
+.widget-type-email_simple_subscription h1 {
+    font-size: 48px;
+    line-height: 1.25em;
+}
+.widget-type-email_subscriptions_confirmation h2 {
+    font-size: 36px;
+    line-height: 1.25em;
+}
+#email-prefs-form h3 {
+    font-style: normal;
+}
+.email-prefs .item p {
+    text-align: left !important;
+}
+.system-page-padding {
+    padding: 10% 15px 6%;
+}
+
+/* ====== Tablet Styles ======*/
+@media (max-width: 950px) {
+    .banner-bkg{
+        -webkit-background-attachment: initial !important;
+        -moz-background-attachment: initial !important;
+        background-attachment: initial !important;
+        background-position: center !important;
+    }
+    .horiz-spacer {
+        display: none !important;
+    }
+}
+
+/* ====== Mobile Styles ====== */
+@media(max-width: 767px) {
+    .rightBorder-t1 {
+        border-right: 0;
+    }
+}
+
+
+/* ===================================================== */
+/* ============= End Generic Theme Styles ============== */
+/* ===================================================== */
+
+
+
+
+
+
+
+/* ===================================================== */
+/* ============ Begin Theme Form Styles ================ */
+/* ===================================================== */
+
+/* Labels */
+.hs-form-required {
+   display: none;
+}
+
+.hs_cos_wrapper_type_form label {}
+.hs_cos_wrapper_type_form .hs-form-field > label {
+    margin: 10px 0 5px;
+}
+
+/* One Line Inputs */
+.hs_cos_wrapper_type_form input[type="text"],
+.hs_cos_wrapper_type_form input[type="password"], 
+.hs_cos_wrapper_type_form input[type="datetime"], 
+.hs_cos_wrapper_type_form input[type="datetime-local"], 
+.hs_cos_wrapper_type_form input[type="date"], 
+.hs_cos_wrapper_type_form input[type="month"], 
+.hs_cos_wrapper_type_form input[type="time"], 
+.hs_cos_wrapper_type_form input[type="week"], 
+.hs_cos_wrapper_type_form input[type="number"], 
+.hs_cos_wrapper_type_form input[type="email"], 
+.hs_cos_wrapper_type_form input[type="url"], 
+.hs_cos_wrapper_type_form input[type="search"], 
+.hs_cos_wrapper_type_form input[type="tel"], 
+.hs_cos_wrapper_type_form input[type="color"],
+.hs_cos_wrapper_type_form input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100% !important;
+    border-radius: {{ bbsvar.borderRadius }};
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4d4d4d;
+    padding: 13px 10px !important;
+    margin: 0 0 15px;
+    height: initial !important; 
+}
+
+.hs_cos_wrapper_type_form input[type="text"]:focus,
+.hs_cos_wrapper_type_form input[type="password"]:focus, 
+.hs_cos_wrapper_type_form input[type="datetime"]:focus, 
+.hs_cos_wrapper_type_form input[type="datetime-local"]:focus, 
+.hs_cos_wrapper_type_form input[type="date"]:focus, 
+.hs_cos_wrapper_type_form input[type="month"]:focus, 
+.hs_cos_wrapper_type_form input[type="time"]:focus, 
+.hs_cos_wrapper_type_form input[type="week"]:focus, 
+.hs_cos_wrapper_type_form input[type="number"]:focus, 
+.hs_cos_wrapper_type_form input[type="email"]:focus, 
+.hs_cos_wrapper_type_form input[type="url"]:focus, 
+.hs_cos_wrapper_type_form input[type="search"]:focus, 
+.hs_cos_wrapper_type_form input[type="tel"]:focus, 
+.hs_cos_wrapper_type_form input[type="color"]:focus {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: {{ bbsvar.borderRadius }};
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4d4d4d;
+    padding: 13px 10px !important;
+    margin: 0 0 15px;
+    
+}
+
+/* Multiple Line Inputs */
+.hs_cos_wrapper_type_form textarea, textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: {{ bbsvar.borderRadius }};
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4d4d4d;
+    padding: 13px 10px;
+    margin: 5px 0 15px;
+}
+.hs_cos_wrapper_type_form textarea:focus {}
+
+/* Multiple Selection Inputs */
+.hs_cos_wrapper_type_form form.hs-form .hs-form-field ul.inputs-list li input {}
+.hs_cos_wrapper_type_form ul.inputs-list {
+    list-style-type: none;
+    width: initial;
+    padding-left: 0;
+}
+.hs_cos_wrapper_type_form input[type="checkbox"], input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    appearance: checkbox;
+    width: auto !important;
+    margin: 0 5px 10px 0;
+}
+.hs_cos_wrapper_type_form input[type="radio"], input[type="radio"] {
+    -webkit-appearance: radio;
+    appearance: radio;
+    width: auto !important;
+    margin: 0 5px 10px 0;
+}
+
+/* Drop Downs */
+.hs_cos_wrapper_type_form select {}
+.hs_cos_wrapper_type_form select:focus {}
+
+select.hs-input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(http://cdn2.hubspot.net/hubfs/298849/Training/form-dropdown-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4d4d4d;
+    height: 45px;
+    padding: 10px;
+    margin: 5px 0 15px;
+}
+
+/* Multiple Columns */
+.hs-form fieldset.form-columns-2 .hs-form-field {
+    width: 49.8% !important;
+    padding: 0;
+    margin: 0;
+}
+.hs-form fieldset.form-columns-3 .hs-form-field {
+    width: 32.3% !important;
+    padding: 0;
+}
+.hs-form fieldset.form-columns-1 div.input > .hs-input {
+    width: 100% !important;
+}
+
+.inline-subscribe .hs-button.primary.large {
+    margin-top: 5px !important;
+}
+.inline-subscribe  div.hs_submit {
+    width: 20%;
+}
+.inline-subscribe  div.input {
+    width: 80%;
+}
+.side-form h3.form-title {
+    display: none;
+}
+ 
+@media(max-width: 767px) {
+    .inline-subscribe .hs-button.primary.large {
+        margin-top: 0 !important;
+    }
+}
+
+
+
+/* All Global Buttons (Excluding CTAs) */
+body .hs-button.primary,
+body input[type="submit"],
+body input[type="button"] {
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-user-select: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: {{ bbsvar.primaryColor }};
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block !important;
+    width: 100%;
+    padding: 12px 10% !important;
+    margin-top: 10px !important;
+}
+div.actions {
+    text-align: left;
+}
+
+.inline-subscribe .hs-button.primary.large {
+    font-size: 11px;
+}
+
+@media (max-width: 768px) {
+    .hs-form fieldset.form-columns-2 .input {
+        width: 97.5%;
+    } 
+}
+
+@media(max-width: 767px) {
+    .hs-form fieldset.form-columns-1 .hs-form-field,
+    .hs-form fieldset.form-columns-2 .hs-form-field,
+    .hs-form fieldset.form-columns-3 .hs-form-field,
+    div.input > .hs-input {
+        width: 100% !important;
+        margin: 0;
+    }
+    .hs-form fieldset.form-columns-1 .input {
+        margin: 0 8px 10px 0 !important;
+    }
+    .hs-form fieldset.form-columns-2 .input {
+        margin: 0 17px 10px 0 !important;
+    }    
+}
+
+@media(max-width: 480px) {
+    .hs-form fieldset.form-columns-2 .input {
+        margin: 0 10px 10px 0 !important;
+        width: 97.25%;
+    }
+}
+
+/* ===================================================== */
+/* ============== End Theme Form Styles ================ */
+/* ===================================================== */
+
+
+
+/* ===================================================== */
+/* =============== Begin Mobile Menu =================== */
+/* ===================================================== */
+/**
+ * Special Note
+ *
+ * When the menu is open, a class of .mobile-open is applied to the body. You can 
+ * use this for custom styling on any element when the menu is in the open position.                     
+ */
+ 
+ /*Variables*/
+  {% set menuColorMobile     =  "{{ bbsvar.primaryColor }}" %}  /* Set Mobile Menu Background Color */
+   {% set aColorMobile        =  "#ffffff" %}  /* Set Mobile Link Color */
+   {% set aColorHoverMobile   =  "{{ bbsvar.primaryColor }}" %}  /* Set Mobile Link Hover Color */
+
+ 
+ 
+@media (min-width: 1061px){
+  a.mobile-trigger, a.child-trigger {
+      display: none !important; /* Hide button on Desktop */
+  }
+}
+
+@media (max-width: 1060px){
+  /* Menu Reset - Remove styling from desktop version of custom-menu-primary */
+  /* Place any additional CSS you want removed from the mobile menu in this reset */
+  .custom-menu-primary, .custom-menu-primary *{
+    display: block;
+    float: none;
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    padding: 0px;
+    margin: 0px;
+    background-image: none;
+    background-color: #fff;
+    border: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none; 
+    max-width: none;
+    width: 100%;
+    height: auto;
+    line-height: 1;  
+    font-weight: normal;
+    text-decoration: none;
+    text-indent: 0px;
+    text-align: left;
+    color: {{aColorMobile}};
+    }
+
+  /* Toggle Button
+     ========================================================================== */
+  a.mobile-trigger {
+      display: inline-block !important; /* Hide button on Desktop */
+      cursor: pointer; /* Mouse pointer type on hover */
+      position: absolute; /*******************************************/
+      top: 0px;          /* Position Button at top right of screen  */
+      right: 10px;        /*******************************************/
+      width: auto; /* Button width */
+      height: auto; /* Button height */      
+      padding: 12px 10px;
+      z-index: 99999999999; /* Z-index to keep button on top of other layers */
+      -webkit-transition: background-color 0.2s linear; /* Button color transition effect */
+      font-size: 16px;
+      font-weight: normal;
+      text-align: left;
+      text-transform: uppercase;
+      -webkit-border-bottom-right-radius: 6px;
+      -webkit-border-bottom-left-radius: 6px;
+      -moz-border-radius-bottomright: 6px;
+      -moz-border-radius-bottomleft: 6px;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      -webkit-transition:color .2s ease-in; 
+      -moz-transition:color .2s ease-in;
+      transition:color .2s ease-in;
+      background: {{ menuColorMobile }}; /* Background color */
+  }
+  a.mobile-trigger:hover {
+      text-decoration: none; /* Removes link text underline on button */
+      color: {{ aColorHoverMobile }};
+  }
+  a.mobile-trigger span{
+      display: inline;
+  }
+  a.mobile-trigger span:before{
+      position: absolute;
+      content: ''; /* Change the text on the closed toggle button */
+  }
+  a.mobile-trigger span:after{
+      position: relative;
+      right: 2px;
+      content: ''; /* Change the text on the open toggle button */
+      background-color: {{ menuColorMobile }};
+      opacity: 0;
+      transition: opacity .4s ease-in-out;
+      -moz-transition: opacity .4s ease-in-out;
+      -webkit-transition: opacity .4s ease-in-out; 
+  }
+
+  /* Change button when menu is open */
+  .mobile-open a.mobile-trigger{
+      -webkit-transition:background-color 0.2s linear; /* Button color transition effect */
+      -moz-transition:background-color 0.2s linear; /* Button color transition effect */
+      transition:background-color 0.2s linear; /* Button color transition effect */
+      background: ; /* Changes button background of open menu color */  
+  }
+  .mobile-open a.mobile-trigger span:after{
+     opacity: 1; 
+  }
+  
+  /* Toggle Button Icon & Animations
+     ========================================================================== */
+  a.mobile-trigger i {
+      display: inline;
+      position: relative;
+      top: -5px;
+      margin-left: 0;
+      -webkit-transition-duration: 0s;
+      -webkit-transition-delay: .2s;
+      -moz-transition-duration: 0s;
+      -moz-transition-delay: .2s;
+      transition-duration: 0s;
+      transition-delay: .2s;
+  }
+  a.mobile-trigger  i:before, a.mobile-trigger i:after {
+      position: absolute;
+      content: '';
+  }
+  a.mobile-trigger  i, a.mobile-trigger  i:before, a.mobile-trigger  i:after {
+      width: 15px; /* Icon line width */
+      height: 2px; /* Icon line height */
+      background-color: {{ aColorMobile }}; /* Icon color */
+      display: inline-block;
+  }
+  a.mobile-trigger  i:before {
+      margin-top: -6px; /* Position top line */
+      -webkit-transition-property: margin, -webkit-transform;
+      -webkit-transition-duration: .2s;
+      -webkit-transition-delay: .2s, 0;
+  }
+  a.mobile-trigger  i:after {
+      margin-top: 6px; /* Position bottom line */
+      -webkit-transition-property: margin, -webkit-transform;
+      -webkit-transition-duration: .2s;
+      -webkit-transition-delay: .2s, 0;
+  }
+  .mobile-open a.mobile-trigger i {
+      background-color: rgba(0,0,0,0.0);
+      -webkit-transition-delay: .2s;
+      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
+      -moz-box-shadow:    0px 1px 1px rgba(0, 0, 0, 0);
+      box-shadow:         0px 1px 1px rgba(0, 0, 0, 0);
+  }
+  .mobile-open a.mobile-trigger i:before {
+      margin-top: 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transition-delay: 0, .2s;
+      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
+      -moz-box-shadow:    0px 1px 1px rgba(0, 0, 0, 0);
+      box-shadow:         0px 1px 1px rgba(0, 0, 0, 0);
+  }
+  .mobile-open a.mobile-trigger i:after {
+      margin-top: 0;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transition-delay: 0, .2s;
+      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
+      -moz-box-shadow:    0px 1px 1px rgba(0, 0, 0, 0);
+      box-shadow:         0px 1px 1px rgba(0, 0, 0, 0);
+  }
+
+  /* Child Toggle Button
+     ========================================================================== */
+  a.child-trigger {
+      display: block !important; /* Hide button on Desktop */
+      cursor: pointer; /* Mouse pointer type on hover */
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 55px !important; /* Button width */
+      min-width: 55px !important;
+      height: 45px !important; /* Button height */  
+      padding: 0 !important;
+      border-left: 1px dotted rgba(255, 255, 255, .20);
+  }
+  a.child-trigger:hover {
+      text-decoration: none;
+  }
+
+  /* Child Toggle Button Icon & Animations
+     ========================================================================== */
+  a.child-trigger span {
+      position: relative;
+      top: 50%; /* Centers icon inside button */
+      margin: 0 auto !important;
+      -webkit-transition-duration: .2s;
+      -moz-transition-duration: .2s;
+      transition-duration: .2s;
+  }
+  a.child-trigger span:after {
+      position: absolute;
+      content: '';
+  }
+  a.child-trigger span, a.child-trigger span:after {
+      width: 10px; /* Icon line width */
+      height: 1px; /* Icon line height */
+      background-color: {{ bbsvar.primaryColor }}; /* Icon color */
+      display: block;
+  }
+  a.child-trigger span:after {
+      -webkit-transform: rotate(-90deg);
+       -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+       -webkit-transition-duration: .2s;
+       -moz-transition-duration: .2s;
+      transition-duration: .2s;
+  }
+  a.child-trigger.child-open span:after {
+      -webkit-transform: rotate(-180deg);
+       -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+       -webkit-transition-duration: .2s;
+       -moz-transition-duration: .2s;
+      transition-duration: .2s;
+  }
+  a.child-trigger.child-open span {
+      -webkit-transform: rotate(180deg);
+       -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+       -webkit-transition-duration: .2s;
+       -moz-transition-duration: .2s;
+      transition-duration: .2s;
+  }
+
+  /* Menu Styles on Mobile Devices
+     ========================================================================== */  
+  /* Hide menu on mobile */
+  .custom-menu-primary.js-enabled .hs-menu-flow-horizontal,
+  .custom-menu-primary.js-enabled .hs-menu-children-wrapper{
+      display: none;
+  }  
+  .custom-menu-primary.js-enabled{
+      margin-top: -28px;
+  }
+  /* Make child lists appear below parent items */
+  .custom-menu-primary ul.hs-menu-children-wrapper {
+      visibility: visible !important;
+      opacity: 1 !important;
+      position: static !important;
+      display: none;
+  }
+
+  /* Mobile Menu Styles */
+  .custom-menu-primary.js-enabled .hs-menu-flow-horizontal{
+      position: absolute; /**************************************************************/
+      top: 0;             /* Positions the menu to drop from the very top of the screen */
+      left: 0px;          /**************************************************************/                                              
+      width: 100%;   
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.65);
+      -moz-box-shadow:    0px 5px 5px 0px rgba(0, 0, 0, 0.65);
+      box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.65); 
+  }
+  .custom-menu-primary .hs-menu-flow-horizontal{
+      padding: 80px 0 0 0; /* Padding to add room for close button */
+      background-color: transparent; /* Menu background color set off global mobile-menuColor variable */
+      width: 100%; /* Full screen width */
+      z-index: 8888;
+  }
+  .custom-menu-primary .hs-menu-wrapper.hs-menu-flow-horizontal>ul li a {
+      border-top: 3px solid transparent;
+  }
+  .custom-menu-primary .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a:hover,
+  .custom-menu-primary .hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper li a:hover {
+    border-top: 3px solid transparent;
+}
+
+   /* Level 1 Menu List Styles */
+  .custom-menu-primary .hs-menu-flow-horizontal > ul > li{
+      position: relative;
+   }
+  .custom-menu-primary .hs-menu-flow-horizontal > ul > li a{
+      font-size: 16px; /* Font size of top level list items */
+      line-height: 45px;
+      overflow: visible;
+  }
+
+  /* Level 1 and Higher Menu List Styles */
+  .custom-menu-primary .hs-menu-flow-horizontal ul li{}
+  .custom-menu-primary .hs-menu-flow-horizontal ul li a{
+      color: #3b3b3b;
+      padding: 5px 15px;
+      margin: 0;
+  }
+  .custom-menu-primary .hs-menu-flow-horizontal ul li a:hover{
+      color: #3b3b3b;
+      background: none;
+  }
+
+  /* Level 2 and Higher Menu List Styles */
+  .custom-menu-primary .hs-menu-flow-horizontal > ul ul li{
+     background-color: rgba(255, 255, 255, .08);
+  }
+  .custom-menu-primary .hs-menu-flow-horizontal > ul ul li a{
+      text-indent: 10px; /* Indent Child lists */
+      font-size: 16px; /* Font size of child lists */
+      color: #3b3b3b; 
+  }
+  .custom-menu-primary .hs-menu-flow-horizontal > ul ul li a:hover{
+      color: #3b3b3b; 
+  }
+  .custom-menu-primary .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-item-has-children ul.hs-menu-children-wrapper li a {
+      background-color: transparent;
+      max-width: 100%;
+      padding: 5px 15px;
+  }
+
+  /* Level 3 and Higher Menu List Styles */
+  .custom-menu-primary .hs-menu-flow-horizontal > ul ul ul li a{
+      text-indent: 30px; /* Indent Child lists */
+  }
+  .custom-menu-primary .hs-menu-flow-horizontal > ul ul ul ul li a{
+      text-indent: 50px; /* Indent Child lists */
+  }
+}
+
+/* ===================================================== */
+/* ================= End Mobile Menu =================== */
+/* ===================================================== */
+
+/* ===================================================== */
+/* ===================================================== */
+/* ==================== End Theme Styles =============== */
+/* ===================================================== */
+/* ===================================================== */ 
+
+

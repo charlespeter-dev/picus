@@ -1,0 +1,42 @@
+{% if is_listing_view %}
+  <div class="banner-area listing-banner-area {% if module.module_settings.include_overlay %} banner-with-overlay{% endif %}">
+    <div class="global-hero subpage-hero offensive-manager" {% if module.background_image.src or module.module_settings.select_background_image_position %}style="background-image: url('{{ module.background_image.src }}'); background-position: {{ module.module_settings.select_background_image_position }};"{% endif %}>
+      <div class="page-center">
+        <div class="content">
+          {% if group.public_title %}<h1>{{ group.public_title }}</h1>{% endif %}
+        </div>
+      </div>
+      <div id="click" class="text-center visible-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" style="width: 48px; height: 48px"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+    </div>
+  </div>
+{% else %}
+  <div class="banner-area post-banner-area {% if module.module_settings.include_overlay %} banner-with-overlay{% endif %}">
+    {% if module.module_settings.include_overlay %}<div class="banner-with-overlay-div" style="background-color: rgba({{ module.module_settings.overlay_color.color|convert_rgb  }},{{ module.module_settings.overlay_color.opacity/100 }});"></div>{% endif %}
+    <div class="global-hero subpage-hero offensive-manager" {% if module.background_image.src or module.module_settings.select_background_image_position %}style="background-image: url('{{ module.background_image.src }}'); background-position: {{ module.module_settings.select_background_image_position }};"{% endif %}>
+      <div class="page-center">
+        <div class="content">          
+          {% if module.logo_image.src %}
+            <div class="row">
+              <div class="colmd4 col-centered blog-article-hero-cool-vendor-border">
+                <div class="text-center">
+                    <img class="blog-article-hero-cool-vendor-header-img" src="{{ module.logo_image.src }}" alt="{{ module.logo_image.alt }}" title="{{ module.logo_image.alt }}">
+                  </div>
+              </div>
+              <div class="colmd8 col-centered my-auto">
+                {% if content.name %}<h1 class="text-center font-weight-light">{{ content.name }}</h1>{% endif %}
+              </div>
+            </div>
+          {% else %}
+            {% if content.name %}<h1 class="text-center">{{ content.name }}</h1>{% endif %}  
+            {% if module.include_sub_heading %}<h2 class="text-center">{{ module.sub_heading }}</h2>{% endif %}
+          {% endif %}          
+        </div>
+      </div>
+      <div id="click" class="text-center visible-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" style="width: 48px; height: 48px"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+    </div>
+  </div>
+{% endif %}

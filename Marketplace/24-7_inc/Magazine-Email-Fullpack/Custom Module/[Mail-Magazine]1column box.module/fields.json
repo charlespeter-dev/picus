@@ -1,0 +1,90 @@
+[ {
+  "id" : "3210fb27-4458-d2c4-73f5-940b9b205bfe",
+  "name" : "column1img",
+  "display_width" : null,
+  "label" : "Image field",
+  "help_text" : "This field is the area where images are placed.",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "Marketplace/24-7_inc/Magazine-Email-Fullpack/Images/tfs-magazine_img01.jpg",
+    "alt" : "tfs-magazine_img01.jpg",
+    "width" : "550",
+    "height" : "250"
+  }
+}, {
+  "id" : "e1b63927-463a-9022-d1fc-12b41ddff34b",
+  "name" : "column1_title",
+  "display_width" : null,
+  "label" : "1column-title",
+  "help_text" : "This field is the area where you enter title.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem ipsum dolor sit amet"
+}, {
+  "id" : "e4f230da-abd6-fe1b-c529-fa19f2ee8fde",
+  "name" : "column1_txt",
+  "display_width" : null,
+  "label" : "column1-txt",
+  "help_text" : "This field is the area where you enter text.",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+}, {
+  "id" : "14df56d7-786e-a047-a301-a806df4c127c",
+  "name" : "check_no_images",
+  "display_width" : null,
+  "label" : "Check_no_images",
+  "help_text" : "When this is checked, the image is hidden.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "8b2b86d2-208e-b6a9-23a1-fdd2ad470a64",
+  "name" : "column1_link",
+  "display_width" : null,
+  "label" : "column1 link",
+  "help_text" : "This field is the area where you enter the link destination.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.hubspot.com"
+}, {
+  "id" : "671d531c-3c7c-18fa-b64e-f9f0c4d63572",
+  "name" : "column1_link_txt",
+  "display_width" : null,
+  "label" : "column1 link txt",
+  "help_text" : "This file is the area for entering the text of the link.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read More"
+}, {
+  "id" : "64c14037-a32d-2509-3902-d7f503e5f96e",
+  "name" : "call_to_action_button",
+  "display_width" : null,
+  "label" : "Call to Action button",
+  "help_text" : "When this is checked, the Call To Action button will be placed.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

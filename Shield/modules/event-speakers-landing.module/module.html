@@ -1,0 +1,35 @@
+<div class="landing-speakers">
+  <div class="row-fluid">
+    {% set href = module.event.session_link.url.href %}
+{% set rel = [] %}
+{% if module.link_field.no_follow %}
+	{% do rel.append("nofollow") %}
+{% endif %}
+{% if module.link_field.open_in_new_tab %}
+	{% do rel.append("noopener") %}
+{% endif %}
+    <div class="span3 landing-event-details" style="background-image: url('{{ module.event.background_image.src }}');">
+      <div>{{ module.event.event_details }}</div>
+    </div>
+      {% for item in module.speakers %}
+        <div class="span4 landing-event-speaker">
+          <div class="speaker-image" style="background-image: url('{{ item.speaker_image.src }}');">
+            
+          </div>
+          <div class="speaker-info">
+            <p class="speaker-name"><strong>{{ item.speaker_name }}</strong></p>
+            <p class="speaker-title">{{ item.speaker_job_title }}</p>
+            {% if item.company_logo.src %}
+              {% set sizeAttrs = 'width="{{ item.company_logo.width }}" height="{{ item.company_logo.height }}"' %}
+              {% if item.company_logo.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif item.company_logo.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.company_logo.max_width }}px; max-height: {{ item.company_logo.max_height }}px"' %}
+              {% endif %}
+              <img src="{{ item.company_logo.src }}" class="company-logo" alt="{{ item.company_logo.alt }}" {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+</div>

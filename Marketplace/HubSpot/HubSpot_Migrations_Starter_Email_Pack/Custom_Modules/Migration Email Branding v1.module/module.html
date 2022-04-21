@@ -1,0 +1,10 @@
+<div style="text-align: {{ module.alignment }}; padding-bottom: 30px;">
+    {% if module.page_logo.src %}
+	    <img src="{{ module.page_logo.src }}" width="{{ module.page_logo.width }}" height="{{ module.page_logo.height }}" alt="{{ module.page_logo.alt }}">
+    {% elif site_settings.logoSrc %}
+        <img src="{{ site_settings.logoSrc }}" width="{{ site_settings.logoWidth }}" height="{{ site_settings.logoHeight }}" alt="{{ site_settings.logoAlt }}">
+    {% else %}
+        <img src="https://cdn2.hubspot.net/hubfs/2574624/HubSpot-Migrations-Site-Logo.png"><!-- migrations logo as hardwired fallback -->
+    {% endif %}
+</div>
+

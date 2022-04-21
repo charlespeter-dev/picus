@@ -1,0 +1,133 @@
+[ {
+  "id" : "206b1f66-4ee8-e3a5-1ad0-b59c0ec70af6",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "My Welcome Title Text"
+}, {
+  "id" : "20a891a1-548c-04c8-739e-03dc6fba44db",
+  "name" : "subheading",
+  "display_width" : null,
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritat.</p>"
+}, {
+  "id" : "e457b61c-1866-cc35-e8d2-145ccbbd6cba",
+  "name" : "banner_image",
+  "display_width" : null,
+  "label" : "Banner Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "Marketplace/HEYBASSH/Simple_Banner/Images/pexels-photo-839465.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "alt" : "pexels-photo-839465",
+    "width" : 500,
+    "height" : 333
+  }
+}, {
+  "id" : "df02468d-5ffb-4709-f866-04eb0d047b55",
+  "name" : "alignment",
+  "display_width" : null,
+  "label" : "Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "obj--left", "left" ], [ "obj--right", "right" ], [ "obj--center", "center" ] ],
+  "type" : "choice",
+  "default" : "obj--center"
+}, {
+  "id" : "fbddef72-f23f-c921-e751-df975945e320",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "GET IN TOUCH"
+}, {
+  "id" : "3c673032-0e53-b3c6-5183-603298598697",
+  "name" : "button_link_field",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.hubspot.com",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "de06f744-2886-427c-7943-a56a74597c70",
+  "name" : "style_settings",
+  "display_width" : null,
+  "label" : "Style Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dfb26ad0-c6b5-80c6-e95b-2b3fe6fdf22f",
+    "name" : "minimum_banner_height",
+    "display_width" : null,
+    "label" : "Minimum banner height",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 20,
+    "step" : 10,
+    "type" : "number",
+    "default" : 400
+  }, {
+    "id" : "300258c2-2e38-dddb-5097-a8b141fffdeb",
+    "name" : "top_space_banner",
+    "display_width" : null,
+    "label" : "Top Space Banner",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 20,
+    "step" : 10,
+    "type" : "number",
+    "default" : 120
+  }, {
+    "id" : "0d1d8fa7-2fd6-9957-79df-899530c4a821",
+    "name" : "bottom_space_banner",
+    "display_width" : null,
+    "label" : "Bottom Space Banner",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 20,
+    "step" : 10,
+    "type" : "number",
+    "default" : 100
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "minimum_banner_height" : 400,
+    "top_space_banner" : 120,
+    "bottom_space_banner" : 100
+  }
+} ]

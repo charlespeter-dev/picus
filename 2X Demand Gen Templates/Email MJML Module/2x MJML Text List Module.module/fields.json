@@ -1,0 +1,153 @@
+[ {
+  "id" : "0b565399-f672-c31a-260e-a2abdb1cfc7b",
+  "name" : "list",
+  "display_width" : null,
+  "label" : "List",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "8bfef051-7872-a8eb-ab00-3293cd9c3c76",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text_field" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  } ]
+}, {
+  "id" : "64ce15de-4b41-493d-7d43-ecbffdc7da5d",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.picussecurity.com/hubfs/2x/38/bullet%20point.jpg",
+    "alt" : "bullet point",
+    "loading" : "lazy",
+    "width" : 7,
+    "height" : 7
+  }
+}, {
+  "id" : "6ebc013a-634e-2eba-64cd-fe9b224c634a",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#00395C",
+    "opacity" : 100
+  }
+}, {
+  "id" : "d662a079-2d0c-bbc5-724b-ca842174927b",
+  "name" : "font_size",
+  "display_width" : null,
+  "label" : "Font Size",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Font Size",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "16px"
+}, {
+  "id" : "336d7eac-edd0-2a40-7d2d-5cd397705ef3",
+  "name" : "line_height",
+  "display_width" : null,
+  "label" : "Line Height",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Line Height",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "24px"
+}, {
+  "id" : "04ef0b53-bdd3-2347-6a6e-725535fdc78c",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "8c88742b-51d7-cea7-52b5-42ea185c9ba1",
+  "name" : "padding_left",
+  "display_width" : null,
+  "label" : "Padding Left",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Padding Left",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "41px"
+}, {
+  "id" : "338509f4-cdae-dda6-357f-6bbecc90953c",
+  "name" : "padding_right",
+  "display_width" : null,
+  "label" : "Padding Right",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Padding Right",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "41px"
+}, {
+  "id" : "205fddac-0d44-b282-7469-b6b185912b62",
+  "name" : "padding_top",
+  "display_width" : null,
+  "label" : "Padding Top",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Padding Top",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "20px"
+}, {
+  "id" : "93a42841-f8f5-2034-4ffd-3009c13f9301",
+  "name" : "padding_bottom",
+  "display_width" : null,
+  "label" : "Padding Bottom",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Padding Bottom",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "0px"
+} ]

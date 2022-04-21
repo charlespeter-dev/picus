@@ -1,0 +1,19 @@
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2147483637;
+  max-height: 0;
+}
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: red;
+}
+@media(max-width: 620px) {
+  .hide-progress-container-on-mobile {
+    display: none;
+  }
+}

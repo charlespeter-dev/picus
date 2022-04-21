@@ -1,0 +1,20 @@
+[ {
+  "id" : "7e5b87d9-cb93-5130-65b8-f4f1a1514992",
+  "name" : "intro",
+  "display_width" : null,
+  "label" : "Intro",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2 style=\"text-align: center; font-weight: 500;\">You’re on your way to better cyber security, just pick a time for your demo</h2>\n<p style=\"text-align: center;\">Our experts will give you a live demo of the Picus platform at a time that suits you, we just need a few details.</p>"
+}, {
+  "id" : "768e1b30-a3d2-1e84-4788-b893bb14c8f5",
+  "name" : "meeting_field",
+  "display_width" : null,
+  "label" : "Meeting",
+  "required" : false,
+  "locked" : false,
+  "embeddable" : false,
+  "type" : "meeting",
+  "default" : "https://meetings.hubspot.com/nils-folkesson"
+} ]

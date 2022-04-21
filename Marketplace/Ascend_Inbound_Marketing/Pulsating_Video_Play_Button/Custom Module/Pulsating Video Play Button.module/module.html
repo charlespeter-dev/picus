@@ -1,0 +1,51 @@
+{# set link #}
+{% set wistia = false %}
+{%- if module.video_url.type == 'EXTERNAL' -%}
+  {%- if module.video_url.href is string_containing 'wistia.com' -%}
+    {%- set wistia = true -%}
+    {%- set video_link = '#' -%}
+    {%- set wistia_url = module.video_url.href -%}
+    {%- set wistia_id = wistia_url|regex_replace('(http*s:)//','')|replace('/','.')|split('.')|last -%}
+  {%- else -%}
+    {%- set video_link = module.video_url.href|replace('https://youtu.be/','https://www.youtube.com/watch?v=')-%}
+  {%- endif -%}
+{%- elif module.video_url.type == 'FILE' -%}
+  {%- set video_link = module.video_url.href -%}
+{%- endif -%}
+
+{# dynamic styles #}
+{%- require_css -%}
+<style>
+  #aimPulser{{ name }} {
+    color: {{ module.styles.button_color.color }};
+  }
+  #aimPulser{{ name }} .aim-pulser-play-link__icon:before, 
+  #aimPulser{{ name }} .aim-pulser-play-link__icon:after {
+    border-color: {{ module.styles.button_color.color }};
+    background-color: rgba({{ module.styles.button_color.color|convert_rgb }}, .5);
+  }
+  #aimPulser{{ name }} .aim-pulser-play-link__inner-wrap {
+    background-color: {{ module.styles.button_color.color }};
+  }
+</style>
+{%- end_require_css -%}
+
+{%- if wistia -%}
+<script src="https://fast.wistia.com/embed/medias/{{ wistia_id }}.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<span class="wistia_embed wistia_async_ym42dm538z popover=true popoverContent=link" style="display:inline;position:relative">
+{%- endif -%}
+  <a class="aim-pulser-play-link" 
+     {{ 'data-lity' if ! wistia }}
+     href="{{ video_link }}"
+     id="aimPulser{{ name }}">
+    <span class="aim-pulser-play-link__icon">
+      <span class="aim-pulser-play-link__inner-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" aria-hidden="true"><path fill="{{ module.styles.play_icon_color.color }}" d="M0-1.79v800L600 395 0-1.79z"/></svg>
+      </span>
+    </span>
+    <span class="aim-pulser-play-link__link-text" style="color:{{ module.styles.text_color.color }}">{{ module.button_text }}</span>
+  </a>
+{%- if wistia -%}
+</span>
+{%- endif -%}

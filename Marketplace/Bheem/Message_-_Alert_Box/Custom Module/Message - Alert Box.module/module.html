@@ -1,0 +1,28 @@
+{% if module.enable_alert == "true" %} 
+<div class="hsc-alert hsc-alert-{{name}}">
+  <div class="hsc-alert-container" style='max-width:{{ module.alert_style.spacing.container_max_width }};color: rgba({{ module.alert_style.appearance.text_color.color|convert_rgb }}, {{ module.alert_style.appearance.text_color.opacity / 100}});{% if module.alert_style.appearance.background_type == "image" %} background: url("{{ module.alert_style.appearance.background_image.src }}") no-repeat right top / cover;{% elif module.alert_style.appearance.background_type == "color" %}background: rgba({{ module.alert_style.appearance.background_color.color|convert_rgb }}, {{ module.alert_style.appearance.background_color.opacity / 100}});{% elif module.alert_style.appearance.background_type == "gradient" %}background-image: linear-gradient(to right, rgba({{ module.alert_style.appearance.gradient_color_1.color|convert_rgb }}, {{ module.alert_style.appearance.gradient_color_1.opacity / 100}}), rgba({{ module.alert_style.appearance.gradient_color_2.color|convert_rgb }},{{ module.alert_style.appearance.gradient_color_2.opacity }}));{% endif %}padding-top: {{ module.alert_style.spacing.padding_top }};padding-bottom: {{ module.alert_style.spacing.padding_bottom }};padding-left: {{ module.alert_style.spacing.padding_left }};padding-right: {{ module.alert_style.spacing.padding_right }};'>
+    <div class="hsc-alert-content" style='max-width: {{ module.alert_style.spacing.content_max_width }};font-size: {{ module.alert_style.typography.text_size }}px;line-height: {{ module.alert_style.typography.text_line_height }}px;{% if module.alert_style.typography.text_bold == "true" %}font-weight: bold!important;{% endif %}{% if module.alert_style.typography.text_italic == "true" %}font-style: italic!important;{% endif %}'>
+        {% icon
+          name="{{ module.alert_content.content.icon.name }}"
+          style="{{ module.alert_content.content.icon.type }}"
+          unicode="{{ module.alert_content.content.icon.unicode }}"
+        %}
+      	{{ module.alert_content.content.alert_text }}
+    </div>
+  </div>
+</div>
+{% require_css %}
+  <style>
+    .hsc-alert-{{name}} .hs_cos_wrapper_type_icon svg {
+      height: {{ module.alert_style.icon.icon_size }}px;
+      fill: rgba({{ module.alert_style.appearance.icon_color.color|convert_rgb }}, {{ module.alert_style.appearance.icon_color.opacity / 100}});
+    }
+    .hsc-alert-{{name}} .hs_cos_wrapper_type_icon {
+      padding-top: {{ module.alert_style.icon.padding_top }};
+      padding-bottom: {{ module.alert_style.icon.padding_bottom }};
+      padding-right: {{ module.alert_style.icon.padding_right }};
+      padding-left: {{ module.alert_style.icon.padding_left }};
+    }
+  </style>
+{% end_require_css %}
+{% endif %}

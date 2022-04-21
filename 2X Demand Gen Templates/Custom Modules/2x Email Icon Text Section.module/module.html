@@ -1,0 +1,34 @@
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+    <tbody>
+      <tr>
+        <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+          <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+          <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+              <tbody>
+                {% for item in module.icon_text_boxes %}
+                <tr>
+                  <td align="left" style="font-size:0px;padding:0px;padding-top:{{ item.padding.padding_top }};padding-bottom:{{ item.padding.padding_bottom }};padding-right:{{ item.padding.padding_right }};padding-left:{{ item.padding.padding_left }};word-break:break-word;">
+                    <table cellpadding="0" cellspacing="0" width="100%" border="0" style="color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;border:none;">
+                      <tbody><tr>
+                        <td style="width:{{ item.left_column.column_width }};vertical-align:{{ item.left_column.vertical_align }};">
+                          <img style="width:{{ item.left_column.icon.icon_width }};height:{{ item.left_column.icon.icon_height }};padding-left:{{ item.left_column.padding.padding_left }};padding-right:{{ item.left_column.padding.padding_right }};padding-top:{{ item.left_column.padding.padding_top }};padding-bottom:{{ item.left_column.padding.padding_bottom }};" src="{{ item.left_column.icon.icon.src }}">
+                        </td>
+                        <td style="font-size:{{ item.right_column.font_size }};line-height:{{ item.right_column.line_height }};color:{{ item.right_column.font_color.color }};"> {{ item.right_column.text_field }} </td>
+                        </tr>
+                      </tbody></table>
+                  </td>
+                </tr>                  
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->

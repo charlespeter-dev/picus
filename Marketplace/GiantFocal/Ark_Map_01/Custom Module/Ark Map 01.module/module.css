@@ -1,0 +1,100 @@
+
+.ark-map-01-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.ark-map-01-wrapper img.ark-map-01-main-image {
+  position: relative;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+/* Trigger */
+.ark-map-01-marker {
+  position: absolute;
+  z-index: 3;
+  width: 10%;
+  font-size: 16px;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.ark-map-01-marker:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.ark-map-01-marker i {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  font-size: 2.5em;
+  line-height: 1;
+  color: #0fb5b3;
+  padding: 10px;
+  border-radius: 100%;
+  -webkit-transform-origin: 18px 5px;
+  -ms-transform-origin: 18px 5px;
+  transform-origin: 18px 5px;
+  z-index: 4;
+  
+  -webkit-animation: map_one 0.7s infinite;
+  
+          animation: map_one 0.7s infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes map_one {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes map_one {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@media (max-width:767px) {
+  .ark-map-01-marker i {
+    font-size: 2em;
+    }
+}
+@media (max-width:480px) {
+  .ark-map-01-marker i {
+    font-size: 1.2em;
+    }
+}

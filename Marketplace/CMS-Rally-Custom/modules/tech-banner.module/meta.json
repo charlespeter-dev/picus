@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "../../images/module-icons/grid.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 30799787151,
+  "label" : "Image grid",
+  "is_available_for_new_content" : true
+}

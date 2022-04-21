@@ -1,0 +1,19 @@
+<!--
+  templateType: email_subscriptions_confirmation_page
+  isAvailableForNewContent: true
+  label: Boilerplate - email subscriptions confirmation
+  screenshotPath: ../../images/template-previews/subscriptions-confirmation.png
+-->
+{% extends "../layouts/mega-menu-base.html" %}
+
+{% block body %}
+<main class="body-container-wrapper" style="background-image: url('https://www.picussecurity.com/hubfs/raw_assets/public/Shield/images/background-pattern-11.svg'); background-size: cover; background-position: 50% 2%;">
+  <section class="content-wrapper">
+    <div class="systems-page">
+      {% module 'subscriptions_confirmation'
+        path='@hubspot/email_subscriptions_confirmation'
+      %}
+    </div>
+  </section>
+</main>
+{% endblock body %}

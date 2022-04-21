@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "EMAIL" ],
+  "module_id" : 68873314997,
+  "label" : "2x Email Text Section",
+  "is_available_for_new_content" : true
+}
