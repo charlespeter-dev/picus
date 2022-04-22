@@ -11,8 +11,11 @@
     "path" : "/2X Demand Gen Templates/Coded Files/override-hubspot_March2021.css",
     "type" : "cos_extension_resource"
   }, {
+    "path" : "/2X Demand Gen Templates/Picus/Custom CSS/2x Remove HubSpot Page Style.css",
+    "type" : "cos_extension_resource"
+  }, {
     "type" : "cos_extension_resource",
-    "path" : "/2X Demand Gen Templates/Picus/Custom CSS/2x Remove HubSpot Page Style.css"
+    "path" : "/2X Demand Gen Templates/Picus/Custom CSS/2x ThankYouPage 38 Custom.css"
   } ],
   "attachedJs" : [ ],
   "customHead" : "",

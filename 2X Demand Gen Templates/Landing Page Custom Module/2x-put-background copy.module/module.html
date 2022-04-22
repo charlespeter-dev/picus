@@ -1,0 +1,15 @@
+<style>
+.{{ module.class_name }}
+{
+  background:url({{ module.background_image_field.src }});
+  background-repeat: {{ module.background_repeat }};
+  background-size:{{ module.background_size }};
+  background-position:{{ module.background_position }};
+}
+@media only screen and (max-width: 768px) {
+  .{{ module.class_name }} {
+    background-size:{{ module.background_size_mobile }};
+    background-position:{{ module.background_position_mobile }};
+  }
+}
+</style>
