@@ -26,7 +26,7 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
-  "default" : "#"
+  "default" : ""
 }, {
   "id" : "43844c23-4256-8cf7-5ad7-6a3fd990b9d4",
   "name" : "image_padding",
