@@ -95,17 +95,40 @@ li
 {
   color:#D60059; 
 }
+
+.body-container-wrapper {
+  padding-bottom: 30px;
+}
+
 .footer-container-wrapper
 {
-  padding:0px;
+  padding: 0;
   background:#00395C;
 }
+
 .footer-container-wrapper p
 {
   color:#E6EAED;
   font-size:12px;
   line-height:15px;
 }
+
+.hs-submit {
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #formSection .hs-input[type=text],
 #formSection .hs-input[type=email],
 #formSection .hs-input[type=tel]

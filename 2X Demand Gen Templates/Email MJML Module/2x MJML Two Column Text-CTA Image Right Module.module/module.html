@@ -25,7 +25,7 @@
                           <tbody>
                             <tr>
                               <td align="center" bgcolor="{{ module.cta.background_color.color }}" role="presentation" style="border:none;border-radius:0px;cursor:auto;height:{{ module.cta.height }};mso-padding-alt:10px 25px;background:{{ module.cta.background_color.color }};" valign="middle">
-                                <a href="{{ module.cta.link_field.href }}" style="display:inline-block;width:206px;background:{{ module.cta.background_color.color }};color:{{ module.cta.color_field.color }};font-family:Arial;font-size:{{ module.cta.font_size }};font-weight:{{ module.cta.font_weight }};line-height:{{ module.cta.line_height }};margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;" target="_blank">{{ module.cta.text_field }}</a>
+                                <a href="{{ module.cta.link_field.url.href }}" style="display:inline-block;width:206px;background:{{ module.cta.background_color.color }};color:{{ module.cta.color_field.color }};font-family:Arial;font-size:{{ module.cta.font_size }};font-weight:{{ module.cta.font_weight }};line-height:{{ module.cta.line_height }};margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;" target="_blank">{{ module.cta.text_field }}</a>
                               </td>
                             </tr>
                           </tbody>
@@ -35,17 +35,21 @@
                   </tbody>
                 </table>
               </div>
-              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:259px;" ><![endif]-->
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:100%;" ><![endif]-->
               <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" style="font-size:0px;padding:{{ module.image_padding }};word-break:break-word;">
+                      <td align="center" style="font-size:0px;padding:{{ module.image_padding }};word-break:break-word;" class="thumb">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                           <tbody>
                             <tr>
-                              <td style="width:259px;">
-                                <img height="auto" src="{{ module.image_field.src }}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="259">
+                              <td style="width:100%;">
+                                {% if module.image_url %}
+                                  <a href="{{ module.image_url }}"><img height="auto" src="{{ module.image_field.src }}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="100%"></a>
+                                {% else %}
+                                  <img height="auto" src="{{ module.image_field.src }}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="100%">
+                                {% endif %}
                               </td>
                             </tr>
                           </tbody>

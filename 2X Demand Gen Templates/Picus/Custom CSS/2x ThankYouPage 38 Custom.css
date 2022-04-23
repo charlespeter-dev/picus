@@ -16,3 +16,31 @@
     top: 5px;
   }
 }
+
+@media (min-width: 992px)
+{
+  html {
+    height: 100vh;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  .footer-container-wrapper {
+    position: fixed;
+  }
+  
+  .row-fluid-wrapper.row-depth-1.row-number-5 {
+    height: 90vh;
+    display: flex;
+  }
+  
+  .download-confirm {
+    width: 70%;
+  }
+}
+
+.row-fluid {
+  align-items: center;
+}

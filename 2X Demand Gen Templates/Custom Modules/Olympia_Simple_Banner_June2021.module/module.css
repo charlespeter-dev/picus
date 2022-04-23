@@ -2,3 +2,8 @@
     list-style: auto !important;
     list-style-type: disc !important;
 }
+
+.bannerCustom {
+  background-repeat: no-repeat;
+  background-position: 50%;
+}

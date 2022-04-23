@@ -10,12 +10,23 @@
   "show_loading" : false,
   "type" : "image",
   "default" : {
-    "src" : "https://www.picussecurity.com/hubfs/2x/38/Email_book%20thumbnail.png",
-    "alt" : "Email_book thumbnail",
-    "loading" : "lazy",
-    "width" : 472,
-    "height" : 342
+    "src" : "https://www.picussecurity.com/hubfs/BAS%20whitepaper_thumbnail-1.png",
+    "alt" : "BAS whitepaper_thumbnail-1",
+    "width" : 512,
+    "height" : 330
   }
+}, {
+  "id" : "d959bf30-10ed-77bd-7b81-2d33565513b6",
+  "name" : "image_url",
+  "display_width" : null,
+  "label" : "Image Url",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
 }, {
   "id" : "43844c23-4256-8cf7-5ad7-6a3fd990b9d4",
   "name" : "image_padding",
@@ -28,7 +39,7 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
-  "default" : "30px"
+  "default" : "50px 0 0 0"
 }, {
   "id" : "0fd90aa9-2256-4cd7-dee1-4db4536ac16f",
   "name" : "title",
