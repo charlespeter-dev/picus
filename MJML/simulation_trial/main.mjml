@@ -1,0 +1,48 @@
+<mjml>
+
+  <mj-head>
+    <mj-attributes>
+      <mj-wrapper background-color="#eeeeee" />
+      <mj-section background-color="#ffffff" />
+      <mj-text font-family="Arial, san-serif" font-size="16px" line-height="22px" color="#00395C" />
+      <mj-table font-family="Arial, san-serif" font-size="16px" line-height="22px" color="#00395C" />
+      <mj-button font-family="Arial, san-serif" font-size="18px" line-height="21px" font-weight="700" color="#FFFFFF" background-color="#D60059" width="65%" border-radius="0" />
+      <mj-class name="h3" font-size="24px" line-height="31px" color="#D60059" align="center" />
+      <mj-class name="h1" font-size="24px" line-height="31px" font-weight="700" color="#00395C" align="center" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body>
+    <mj-wrapper full-width="full-width">
+
+      <mj-section padding="0">
+        <mj-column>
+          <mj-image src="https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/Email%20Header.jpg" alt="" padding="0" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text mj-class="h3">
+            LIVE DEMO
+          </mj-text>
+          <mj-text mj-class="h1">
+            Assess Your Security Posture Against Ransomware Attack Scenarios
+          </mj-text>
+          <mj-button href="https://www.picussecurity.com/">
+            START MY FREE TRIAL
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text>
+            <p>Nam dictum massa vestibulum est rutrum, et luctus mauris consequat. Proin imperdiet molestie arcu vitae mattis. Donec dolor libero, vulputate eget rhoncus non, eleifend a nulla. Donec bibendum ligula enim, nec luctus massa ultrices sed. Nulla varius ex quis augue tincidunt, vel auctor risus luctus. Aenean vestibulum nibh ut mollis ornare.</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>
