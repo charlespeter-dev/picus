@@ -88,6 +88,7 @@ li
   font-weight:400;
   font-size:12px;
   line-height:18px;
+  color: #00395c;
 }
 #formSection a,
 #formSection a:active,
@@ -117,21 +118,19 @@ li
   margin-top: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 #formSection .hs-input[type=text],
 #formSection .hs-input[type=email],
 #formSection .hs-input[type=tel]
 {
  width:100%; 
 }
+
+.legal-consent-container > div > p > strong,
+.bodyContent .hs-error-msg:before {
+  color: #D60059 !important;
+  font-weight: bold;
+}
+
+
+
+

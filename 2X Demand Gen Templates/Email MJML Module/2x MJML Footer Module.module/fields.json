@@ -170,4 +170,26 @@
   "show_emoji_picker" : false,
   "type" : "text",
   "default" : "&#169; 2021 Copperfield - All rights reserved"
+}, {
+  "id" : "d73fd76f-8664-0ef7-7f13-6b0bba4d2db8",
+  "name" : "phone_number",
+  "display_width" : null,
+  "label" : "Phone Number",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "+1 (415) 8905105"
+}, {
+  "id" : "53c59aba-5d14-483e-fdba-4fbfee034622",
+  "name" : "show_phone_number",
+  "display_width" : null,
+  "label" : "Show Phone Number",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
 } ]

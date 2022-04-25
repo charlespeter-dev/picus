@@ -1,0 +1,91 @@
+[ {
+  "id" : "42858936-ae34-4da1-78f3-e869afea12e2",
+  "name" : "icon_1",
+  "display_width" : null,
+  "label" : "Icon 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/ST_ICON%202.png",
+    "alt" : "Icon 1",
+    "loading" : "disabled",
+    "width" : 200,
+    "height" : 200,
+    "max_width" : 200,
+    "max_height" : 200
+  }
+}, {
+  "id" : "2fcb40ac-9238-6612-84cb-f0cc66bc4684",
+  "name" : "list_1",
+  "display_width" : null,
+  "label" : "List 1",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h4><strong>SIMULATE</strong> real-world threats continuously and on-demand</h4>\n<ul>\n<li>A library of 3500+ threats covering the entire MITRE ATT&amp;CK framework —updated daily</li>\n<li>Assess malware and ransomware readiness within minutes</li>\n<li>Risk-free way to simulate</li>\n</ul>"
+}, {
+  "id" : "9bdb50b5-b0c3-35ec-2d09-67ca945a9d07",
+  "name" : "icon_2",
+  "display_width" : null,
+  "label" : "Icon 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/ST_ICON%204.png",
+    "alt" : "Icon 2",
+    "loading" : "lazy",
+    "width" : 200,
+    "height" : 200,
+    "max_width" : 200,
+    "max_height" : 200
+  }
+}, {
+  "id" : "1f141571-72a3-360c-0834-90f9d09086e6",
+  "name" : "list_2",
+  "display_width" : null,
+  "label" : "List 2",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h4><strong>VALIDATE</strong> the effectiveness of your network security and detection controls</h4>\n<ul>\n<li>In the network, at the endpoint and in the cloud</li>\n<li>Firewalls, Web and Email Gateways, SIEM, EDR &amp; SOAR tools</li>\n<li>View real-time security scores</li>\n</ul>"
+}, {
+  "id" : "d2aa07bc-a695-5b69-b7bd-cd370121774c",
+  "name" : "icon_3",
+  "display_width" : null,
+  "label" : "Icon 3",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/ST_ICON%201.png",
+    "alt" : "Icon 3",
+    "loading" : "disabled",
+    "width" : 200,
+    "height" : 200,
+    "max_width" : 200,
+    "max_height" : 200
+  }
+}, {
+  "id" : "d1d7e101-6e90-4e70-664b-8cc84f1c1140",
+  "name" : "list_3",
+  "display_width" : null,
+  "label" : "List 3",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h4><strong>MITIGATE</strong> security gaps to enhance resilience</h4>\n<ul>\n<li>Mitigation library with more than 70k actionable recommendations</li>\n<li>Mitigation suggestions for quick wins</li>\n<li>Vendor-specific mitigation suggestions tailored to your environment</li>\n</ul>"
+} ]
