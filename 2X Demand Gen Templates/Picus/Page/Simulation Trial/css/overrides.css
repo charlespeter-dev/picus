@@ -1,0 +1,329 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+body {
+    --bs-gutter-x: 0;
+    --bs-body-font-family: 'Inter', sans-serif;
+    --bs-body-font-size: 18px;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 26px;
+    --bs-body-color: #00395C;
+    --bs-body-text-align: left;
+    --bs-body-bg: #ffffff;
+
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    overflow: hidden;
+    background-color: #00395C;
+}
+
+header .logo {
+    margin-bottom: 50px;
+}
+
+header .heading-container {
+    height: 333.33px;
+}
+
+header h1 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+header .subheading {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #00395C;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer img {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+footer .footer-text,
+footer .footer-img,
+footer .footer-copyr {
+    text-align: center;
+    color: #ffffff;
+}
+
+footer .footer-copyr {
+    padding-top: 10px;
+}
+
+#ty footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#ty footer .footer-copyr {
+    padding-top: 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+main .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main .list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .list-item {
+    margin-bottom: 30px;
+}
+
+main .list-img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main .list-img img {
+    width: 50px;
+}
+
+main .companies-text {
+    display: block;
+    text-align: center;
+}
+
+main .companies-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main .companies-img img {
+    width: 70%;
+}
+
+main .endorsed-by-text {
+    display: block;
+    text-align: center;
+}
+
+main .endorsed-by-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main .hr {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+hr {
+    width: 80%;
+    margin: 50px auto;
+}
+
+#hs_cos_wrapper_2x_form {
+    background-color: #F2F4F6;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+label span:nth-of-type(1) {
+    color: #00395C;
+}
+
+label span:nth-of-type(2) {
+    color: #D60059;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    background-color: #D60059;
+    color: #ffffff;
+    border: 1px solid #D60059;
+    padding: 7px;
+    width: 100%;
+}
+
+.hs-submit {
+    text-align: center;
+}
+
+form>div {
+    margin-bottom: 20px;
+}
+
+#hs_cos_wrapper_2x_form ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#hs_cos_wrapper_2x_form ul>li label>span {
+    padding-left: .5rem;
+}
+
+.ty-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.top-text {
+    margin-bottom: 50px;
+}
+
+.middle-text p {
+    margin-bottom: 0;
+}
+
+.bottom-text {
+    margin-top: 30px;
+}
+
+.bottom-text p {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    width: 320px;
+}
+
+.btn-primary,
+.btn-primary:hover {
+
+    background-color: #D60059;
+    border-color: #D60059;
+}
+
+@media screen and (min-width: 992px) {
+
+    header {
+        background-position: 0;
+    }
+
+    .heading-container {
+        height: 533.33px;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    main .col-left {
+        padding-right: 90px;
+    }
+
+    main .list-img img {
+        width: 60px;
+    }
+
+    main .companies-img {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    main .companies-img img {
+        width: 150px;
+        margin: 10px;
+    }
+
+    main .endorsed-by {
+        margin-bottom: 100px;
+    }
+
+    main .endorsed-by-img {
+        flex-direction: row;
+    }
+
+    main .endorsed-by-img img {
+        width: 170px;
+    }
+
+    main .endorsed-by-img img:nth-of-type(1) {
+        margin-right: 10px;
+    }
+
+    main .endorsed-by-img img:nth-of-type(2) {
+        margin-left: 10px;
+    }
+
+    /* emulate <br> behavior */
+
+    span.br-before::before {
+        content: "\a";
+        white-space: pre;
+    }
+
+    span.br-after::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #hs_cos_wrapper_2x_form {
+        background-color: #F2F4F6;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: -70px;
+    }
+}

@@ -1,0 +1,94 @@
+[ {
+  "id" : "5688b681-b072-9f4b-4afc-7b3b6d954977",
+  "name" : "companies_text",
+  "display_width" : null,
+  "label" : "Companies Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<span class=\"br-after\"><strong>Trusted by Leading Global Companies</strong></span> 300+ Companies Worldwide"
+}, {
+  "id" : "e92088c7-1e97-a7a7-ac13-290fc0aec340",
+  "name" : "company_logo_1",
+  "display_width" : null,
+  "label" : "Company Logo 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/ST_Thumb_1.png",
+    "alt" : "Company Logo 1",
+    "loading" : "disabled",
+    "width" : 279,
+    "height" : 120,
+    "max_width" : 279,
+    "max_height" : 120
+  }
+}, {
+  "id" : "376f7c78-6550-1fa3-1a15-671251d74b0e",
+  "name" : "company_logo_2",
+  "display_width" : null,
+  "label" : "Company Logo 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/ST_Thumb_2.png",
+    "alt" : "Company Logo 2",
+    "loading" : "disabled",
+    "width" : 279,
+    "height" : 120,
+    "max_width" : 279,
+    "max_height" : 120
+  }
+}, {
+  "id" : "7ced8d3e-be82-a9ec-87d8-8fab73cf3df1",
+  "name" : "company_logo_3",
+  "display_width" : null,
+  "label" : "Company Logo 3",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/ST_Thumb_3.png",
+    "alt" : "Company Logo 3",
+    "loading" : "disabled",
+    "width" : 387,
+    "height" : 120,
+    "max_width" : 387,
+    "max_height" : 120
+  }
+}, {
+  "id" : "494ab401-6511-5df0-6255-09c831e86545",
+  "name" : "company_logo_4",
+  "display_width" : null,
+  "label" : "Company Logo 4",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/ST_Thumb_4.png",
+    "alt" : "Company Logo 4",
+    "loading" : "disabled",
+    "width" : 279,
+    "height" : 120,
+    "max_width" : 279,
+    "max_height" : 120
+  }
+} ]

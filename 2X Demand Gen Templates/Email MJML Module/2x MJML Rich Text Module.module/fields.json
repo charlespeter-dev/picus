@@ -6,7 +6,7 @@
   "required" : false,
   "locked" : false,
   "type" : "richtext",
-  "default" : "<div style=\"text-align: center; line-height: 1.25;\"><span style=\"color: #00395c;\"><span style=\"font-size: 22px;\"><strong>Related Resources</strong></span><br><span style=\"color: #d60059;\"></span></span></div>"
+  "default" : "<div style=\"line-height: 1.5; text-align: left;\"><span style=\"color: #00395c;\"><strong><span style=\"font-size: 16px;\">Sed ut perspiciatis unde omnis iste natus error sit volupt:</span></strong><br><span style=\"color: #d60059;\"></span></span></div>"
 }, {
   "id" : "4962764f-ef8b-2ae5-e477-74a85c062ead",
   "name" : "background_color",

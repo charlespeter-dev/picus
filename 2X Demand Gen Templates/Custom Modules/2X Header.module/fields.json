@@ -1,0 +1,31 @@
+[ {
+  "id" : "a4745d43-8a19-efdf-6567-cf245aa033b1",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/Banner_LP_laptop.jpg",
+    "alt" : "Background Image",
+    "loading" : "disabled",
+    "width" : 4500,
+    "height" : 1250,
+    "max_width" : 4500,
+    "max_height" : 1250
+  }
+}, {
+  "id" : "31d70178-7d45-736a-3e98-a48c27763b03",
+  "name" : "heading_text",
+  "display_width" : null,
+  "label" : "Heading Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<span class=\"br-after\">Assess Your Security Posture</span> <span class=\"br-after\">Against Ransomware Attack</span> Scenarios"
+} ]

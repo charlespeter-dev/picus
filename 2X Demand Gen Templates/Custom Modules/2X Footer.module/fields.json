@@ -1,0 +1,40 @@
+[ {
+  "id" : "d70e2e14-b3c1-6d06-1d07-40d3b1cc4ad1",
+  "name" : "footer_image",
+  "display_width" : null,
+  "label" : "Footer Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/footer-transparent.png",
+    "alt" : "Footer Image",
+    "loading" : "lazy",
+    "width" : 1089,
+    "height" : 278,
+    "max_width" : 1089,
+    "max_height" : 278
+  }
+}, {
+  "id" : "85d4e8b5-8f37-27d8-9f6f-319a0e60c235",
+  "name" : "footer_text",
+  "display_width" : null,
+  "label" : "Footer Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>Trust Center</h3>\n<p>We ensure we meet your needs. We strived to achieve the highest security and quality practices.</p>"
+}, {
+  "id" : "9f961cf3-3985-3b1f-e654-04fa57b88364",
+  "name" : "footer_copyr",
+  "display_width" : null,
+  "label" : "Footer Copyr",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>© 2022 Picus Security. All rights reserved.</p>"
+} ]

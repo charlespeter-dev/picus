@@ -1,6 +1,7 @@
 <!--
   templateType: "email"
   isAvailableForNewContent: true
+  label: Simulation Trial Main Email Template
 -->
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -110,6 +111,14 @@
     .bullet {
       width: 7px;
       height: 7px;
+      padding-left: 13px;
+      padding-right: 24px;
+      padding-top: 6px;
+    }
+
+    .td-1 {
+      width: 44px;
+      vertical-align: top;
     }
 
     .td-2 {
@@ -122,7 +131,7 @@
   </style>
 </head>
 
-<body style="word-spacing:normal;background-color:#eeeeee;">
+<body style="word-spacing:normal; background-color:#eeeeee;">
   
     <div id="preview_text" style="display:none;font-size:1px;color:{{background_color}};line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">{% text "preview_text" label="Preview Text", value="", no_wrapper=True %}</div>
 
@@ -138,7 +147,8 @@
     
     
 <!-- banner section -->
-{%  module "2x MJML Banner Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Banner Module", label="2x MJML Banner Module",
+{%  module "2x_MJML_Banner_Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Banner Module",
+    label="2x MJML Banner Module",
     banner_image={
      "src": "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/Email%20Header.jpg",
      "alt": "Email_Banner",
@@ -147,83 +157,83 @@
      "height": 300
     }
 %}
-
-<!-- two-column section -->
-{%  module "2x MJML Two Column Text-CTA Image Right Module" path='/2X Demand Gen Templates/Email MJML Module/2x MJML Two Column Text-CTA Image Right Module', label="2x MJML Two Column Text-CTA Image Right Module" 
-    image_field={
-     "src": "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/BAS%20whitepaper_thumbnail.png"
-    }
-    image_url="https://www.picussecurity.com/"
-    image_padding="50px 0 0 0"
-    title={
-     "padding-top": "40px",
-     "text": "WHITE PAPER",
-     "color_field": {
-      "color": "#D60059"
-     },
-     "font_size": "18px",
-     "line_height": "21px",
-     "font_weight": "normal",
-     "alignment": "center"
-    }
-    subtitle={
-     "text_field": "Hack Yourself for Elevated Cyber Resilience—Find Out How",
-     "color_field": {
-      "color": "#00395C"
-     },
-     "font_size": "23px",
-     "line_height": "26px",
-     "font_weight": "bold",
-     "alignment": "center",
-     "padding_top": "10px"
-    }
-    cta={
-     "text_field": "GET THE WHITE PAPER",
-     "font_size": "16px",
-     "line_height": "18px",
-     "font_weight": "bold",
-     "width": "270px",
-     "height": "40px",
-     "cta_padding_top": "20px",
-     "cta_padding_bottom": "40px",
-     "color_field": {
+    
+<!-- rich text section 1 -->
+{% module_block module "2x_MJML_Rich_Text_Module_1" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Rich Text Module",
+    label="2x MJML Rich Text Module",
+    background_color={
       "color": "#FFFFFF"
-     },
-     "background_color": {
-      "color": "#D60059"
-     },
-     "link_field": {
-      "url": {
-       "href": "http://google.com"
-      }
-     }
     }
     padding_top="0px"
-    padding_left="41px"
-    padding_right="41px"
+    padding_bottom="0px"
+    padding_left="40px"
+    padding_right="40px"
+%}
+    {% module_attribute "richtext_field" %}
+ 
+    <p style="font-size: 24px; line-height: 31px; text-align: center; color: #D60059;">
+      LIVE DEMO
+    </p>
+    
+    <h1 style="font-size: 24px; line-height: 31px; text-align: center;">
+      Assess Your Security Posture Against Ransomware Attack Scenarios
+    </h1>
+    
+    {% end_module_attribute %}
+
+{% end_module_block %}
+    
+    <!-- button section 1 -->
+{%  module "2x_MJML_Button_Module_1" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Button Module",
+    label="2x MJML Button Module"
+    text_field="START MY FREE TRIAL"
+    font_size="16px"
+    line_height="18px"
+    font_weight="bold"
+    width="256px"
+    height="40px"
+    padding_top="20px"
+    padding_bottom="40px"
+    link="http://google.com"
+    color_field={
+     "color": "#FFFFFF"
+    }
+    cta_background_color={
+     "color": "#D60059"
+    }
     background_color={
-     "color": "#FFFFFF",
-     "opacity": 100
+     "color": "#ffffff"
     }
 %}
-
-<!-- rich text section -->
-{% module_block module "2x MJML Rich Text Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Rich Text Module", label="2x MJML Rich Text Module", background_color={color:"#FFFFFF"} 
-   background_color={
-     "color": "#FFFFFF"
-   }
-   padding_top="0px"
-   padding_bottom="10px"
-   padding_left="41px"
-   padding_right="41px"
+    
+<!-- rich text section 2 -->
+{% module_block module "2x_MJML_Rich_Text_Module_2" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Rich Text Module",
+    label="2x MJML Rich Text Module",
+    background_color={
+      "color": "#FFFFFF"
+    }
+    padding_top="0px"
+    padding_bottom="0px"
+    padding_left="40px"
+    padding_right="40px"
 %}
-  {% module_attribute "richtext_field" %}
-    <div style="line-height: 1.5; text-align: left;"><span style="color: #00395c; font-size: 16px;">You have done your due diligence—increasing the number of security controls to combat the increasing risk of a cyberattack—but how effective are they against adversaries that are evolving every second? It’s not enough to simply have defenses in place—they need to be battle-tested continuously to ensure consistent protection against both long-standing and emerging threats.</span></div>
-  {% end_module_attribute %}
+    {% module_attribute "richtext_field" %}
+      <p>
+        Nam dictum massa vestibulum est rutrum, et luctus mauris consequat. Proin imperdiet molestie arcu vitae mattis. Donec dolor libero, vulputate eget rhoncus non, eleifend a nulla. Donec bibendum ligula enim, nec luctus massa ultrices sed. Nulla varius ex quis augue tincidunt, vel auctor risus luctus. Aenean vestibulum nibh ut mollis ornare.
+    </p>
+    <img style="max-width:100%;" src="https://discover.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/Product%20thumbnail.png" alt="">
+    
+    <p>
+      <strong>Read this white paper to learn,</strong>
+    </p>
+    
+    {% end_module_attribute %}
+
 {% end_module_block %}
 
 <!-- list -->
-{%  module "2x MJML Text List Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Text List Module", label="2x MJML Text List Module" 
+{%  module "2x_MJML_Text_List_Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Text List Module",
+    label="2x MJML Text List Module" 
     list=[
      {
       "text_field": "How a threat-centric approach empowers you to think like threat actors and assess your defenses accordingly."
@@ -249,13 +259,34 @@
     }
     padding_left="41px"
     padding_right="41px"
-    padding_top="20px"
+    padding_top="10px"
     padding_bottom="0px"
 %}
 
-<!-- button section -->
-{%  module "2x MJML Button Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Button Module", label="2x MJML Button Module" 
-    text_field="GET THE WHITE PAPER"
+<!-- rich text section 3 -->
+{% module_block module "2x_MJML_Rich_Text_Module_3" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Rich Text Module",
+    label="2x MJML Rich Text Module",
+    background_color={
+      "color": "#FFFFFF"
+    }
+    padding_top="10px"
+    padding_bottom="0px"
+    padding_left="40px"
+    padding_right="40px"
+%}
+    {% module_attribute "richtext_field" %}
+    <p style="text-align: center;">
+      <strong>Sed nisi sapien, suscipit sit amet varius eu, tempor in quam. Mauris ultrices ut quam ut hendrerit.</strong>
+    </p>
+    
+    {% end_module_attribute %}
+
+{% end_module_block %}
+
+<!-- button section 2 -->
+{%  module "2x_MJML_Button_Module_2" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Button Module",
+    label="2x MJML Button Module"
+    text_field="START MY FREE TRIAL"
     font_size="16px"
     line_height="18px"
     font_weight="bold"
@@ -276,7 +307,7 @@
 %}
 
 <!-- footer section -->
-{% module "2x MJML Footer Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Footer Module", label="2x MJML Footer Module" %}
+{% module "2x_MJML_Footer_Module" path="/2X Demand Gen Templates/Email MJML Module/2x MJML Footer Module", label="2x MJML Footer Module" %}
     
     
   </div>

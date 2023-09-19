@@ -1,0 +1,31 @@
+[ {
+  "id" : "b192d485-eef7-5109-a8a2-b8fc4629969a",
+  "name" : "top_content",
+  "display_width" : null,
+  "label" : "Top Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Start simulating your adversaries’ actions to validate security controls—with up-to-date malware attack scenarios—in minutes. See how you can gain a holistic view of your security posture through Picus’s award-winning platform today.</p>"
+}, {
+  "id" : "cfe65f2b-50f9-21c9-5fbd-90bc1c20c83e",
+  "name" : "thumbnail",
+  "display_width" : null,
+  "label" : "Thumbnail",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/Simulation_Trial_Product_Thumbnail.png",
+    "alt" : "Simulation Trial Product Thumbnail",
+    "loading" : "disabled",
+    "width" : 1097,
+    "height" : 581,
+    "max_width" : 1097,
+    "max_height" : 581
+  }
+} ]

@@ -1,0 +1,52 @@
+[ {
+  "id" : "2f9c69d8-9e8c-17da-b7e4-c9f051ba1de2",
+  "name" : "endorsed_by_text",
+  "display_width" : null,
+  "label" : "Endorsed By Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<strong>Endorsed By</strong>"
+}, {
+  "id" : "1fea5e46-2550-456b-2278-d9c562b50a3b",
+  "name" : "endorsed_by_img_1",
+  "display_width" : null,
+  "label" : "Endorsed By Img 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/endorsed-by-1.png",
+    "alt" : "Endorsed By Image 1",
+    "loading" : "disabled",
+    "width" : 200,
+    "height" : 200,
+    "max_width" : 200,
+    "max_height" : 200
+  }
+}, {
+  "id" : "73bb8687-3263-8c8f-65ee-b1e9357af307",
+  "name" : "endorsed_by_img_2",
+  "display_width" : null,
+  "label" : "Endorsed By Img 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.picussecurity.com/hubfs/2x%20Demand%20Gen%20Files/38/endorsed-by-2.png",
+    "alt" : "endorsed-by-2",
+    "loading" : "disabled",
+    "width" : 200,
+    "height" : 200,
+    "max_width" : 200,
+    "max_height" : 200
+  }
+} ]
